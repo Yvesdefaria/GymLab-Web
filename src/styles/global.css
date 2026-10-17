@@ -333,4 +333,19 @@
     background: color-mix(in srgb, var(--color-cta) 24%, transparent);
     mix-blend-mode: soft-light;
   }
+
+  /* Legal pages typography ("legal prose"): documents read like documents —
+     display font headings with the soft-gold accent, muted body text. */
+  .legal-prose h2 {
+    margin-top: 2.5rem;
+    font-size: 1.2rem;
+    color: var(--color-accent-soft);
+  }
+
+  .legal-prose p {
+    margin-top: 0.65rem;
+    font-size: 0.95rem;
+    line-height: 1.65;
+    color: var(--color-muted);
+  }
 }

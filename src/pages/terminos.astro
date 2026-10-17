@@ -1,0 +1,27 @@
+---
+import LegalLayout from '../layouts/LegalLayout.astro';
+
+const sections = [
+  'Propósito',
+  'Tus datos',
+  'Permisos del dispositivo',
+  'Responsabilidad',
+  'Uso aceptable',
+  'Menores de edad',
+  'Licencia',
+  'Cambios en estos términos',
+];
+---
+<LegalLayout
+  title="Términos y Condiciones"
+  description="Términos y condiciones de uso de GymLab."
+>
+  {
+    sections.map((name, index) => (
+      <section>
+        <h2>{`${index + 1}. ${name}`}</h2>
+        <p>Contenido en preparación.</p>
+      </section>
+    ))
+  }
+</LegalLayout>

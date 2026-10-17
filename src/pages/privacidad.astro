@@ -1,0 +1,30 @@
+---
+import LegalLayout from '../layouts/LegalLayout.astro';
+
+const sections = [
+  'Responsable',
+  'Datos que trata GymLab',
+  'Compras integradas',
+  'Publicidad',
+  'Medición y análisis',
+  'Permisos del dispositivo',
+  'Seguridad y conservación',
+  'Tus derechos',
+  'Menores de edad',
+  'Cambios en esta política',
+  'Contacto',
+];
+---
+<LegalLayout
+  title="Política de Privacidad"
+  description="Política de privacidad de GymLab: qué datos trata la app, dónde se guardan y cuáles son tus derechos."
+>
+  {
+    sections.map((name, index) => (
+      <section>
+        <h2>{`${index + 1}. ${name}`}</h2>
+        <p>Contenido en preparación.</p>
+      </section>
+    ))
+  }
+</LegalLayout>
