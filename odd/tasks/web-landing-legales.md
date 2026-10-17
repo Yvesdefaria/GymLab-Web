@@ -31,7 +31,7 @@ Public Spanish website for GymLab: marketing landing + `/privacidad` + `/termino
 - [x] T4 — Layout: base layout, nav, footer, panel/grain primitives (`3fd745d`)
 - [x] T5 — Landing sections: hero, features (8), showcase, local-first strip → `/privacidad`, FAQ (`82eb765`)
 - [x] T6 — Screenshots: capture real app screenshots (Playwright + demo data) (`f561fd4`)
-- [ ] T7 — Legal pages structure: `/privacidad`, `/terminos` (heading skeleton; content in phase 3)
+- [x] T7 — Legal pages structure: `/privacidad`, `/terminos` (heading skeleton; content in phase 3) (`f7c917e`)
 - [ ] T8 — SEO: per-page meta/OG, sitemap, robots (+ optimize screenshots: webp/responsive)
 - [ ] T9 — Deploy: Cloudflare Pages + Web Analytics + custom domain (blocked: user phase 0 — buy `gymlab.dev` + free CF account)
 - [ ] T10 — Phase 3: legal drafting with real identity data (blocked: user data)
@@ -64,3 +64,5 @@ Public Spanish website for GymLab: marketing landing + `/privacidad` + `/termino
 - 2026-10-17 — Push `6d53ee3..82eb765` (T4 + push policy + T5).
 - 2026-10-17 — T5 done: `82eb765` — hero with photo atmosphere (`home-hero.jpg` copied from the app), 8 numbered feature panels, showcase with placeholders (real captures in T6), local-first strip → `/privacidad`, native FAQ (`<details>`). Spanish copy with no price/date claims. Check: build green; ids `#features`/`#capturas`/`#faq`, 4 `<details>`, hero img in `dist`; utilities (`text-on-gold`, `scroll-mt-24`, `aspect-ratio`) present.
 - 2026-10-17 — T6 done: `f561fd4` — `scripts/capture-screens.py` (Python Playwright, viewport 375×812 @DPR2, run under the app's `tests/e2e/scripts/with_server.py`; skips first-run onboarding via "Ya entreno aquí", dismisses per-page on-ramp cards, captures the live workout via the home routine card). 6 shots in `public/screens/`; showcase now uses `entrenamiento` (session + timer), `rutinas` (68 templates), `ejercicios` (873 catalog). Check: build green, screens in `dist`, HTML references the 3 images. Follow-up in T8: optimize screenshots (webp/responsive).
+- 2026-10-17 — T7 done: `f7c917e` — `LegalLayout` (draft notice panel + `legal-prose` typography added to `global.css`), `/privacidad` (11 sections mirroring the app's privacy structure) and `/terminos` (8 sections from the app's `legal.ts`) as skeletons; footer links now resolve. Check: build green (3 pages), sitemap lists all 3 URLs, section counts 11/8.
+- Phase 3 notes (legal drafting): the existing `legal/privacidad.html` text is solid and reusable — it covers AdMob/IAP (future states), Sentry/PostHog (consent toggle), device permissions (activity, location), age 14+, "not a medical device". Open points for drafting: legal identity (owner name/NIF + jurisdiction), replace placeholder email with `gymlab@gymlab.dev`, align Android-only framing with the planned iOS/App Store release.
