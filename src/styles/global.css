@@ -1,7 +1,102 @@
 @import "tailwindcss";
 
-/*
- * Brand tokens live here (Tailwind v4 @theme), ported from the GymLab app:
- * `gymlab-app/src/index.css` is the source of truth (dark gold #d9b384 on #121214,
- * Oswald display + Barlow body, self-hosted woff2). Full token port lands in T3.
- */
+/* Self-hosted typography — subset woff2 copies from the GymLab app (offline-first,
+   no runtime Google Fonts). Faces and weights mirror `gymlab-app/src/index.css`. */
+@font-face {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/fonts/oswald-500.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/fonts/oswald-600.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/fonts/oswald-700.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/barlow-400.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/fonts/barlow-500.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/fonts/barlow-600.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/fonts/barlow-700.woff2") format("woff2");
+}
+
+/* Brand tokens — ported verbatim from the GymLab app (`gymlab-app/src/index.css` @theme).
+   The web uses only the default combination: gold palette × night theme. */
+@theme {
+  --color-bg: #121214;
+  --color-bg-elevated: #242422;
+  --color-fg: #f8fafc;
+  --color-accent: #d9b384;
+  --color-accent-soft: #fdddb4;
+  --color-gold: #d9b384;
+  --color-gold-bright: #fdddb4;
+  --color-cta: #d9b384;
+  --color-cta-deep: #b99050;
+  --color-success: #22c55e;
+  --color-warning: #f59e0b;
+  --color-danger: #ef4444;
+  --color-info: #3b82f6;
+  --color-border: #3a352b;
+  --color-muted: #a39b8c;
+  --color-on-gold: #121214;
+
+  --font-display: "Oswald", sans-serif;
+  --font-body: "Barlow", system-ui, sans-serif;
+}
+
+@layer base {
+  body {
+    background-color: var(--color-bg);
+    color: var(--color-fg);
+    font-family: var(--font-body);
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-display);
+    font-weight: 600;
+    letter-spacing: 0.02em;
+  }
+}
