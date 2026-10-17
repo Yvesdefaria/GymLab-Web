@@ -2,7 +2,7 @@
 
 - Feature: `web-landing-legales`
 - Status: in progress
-- Branch: `main` (solo-project; pushes gated by user approval)
+- Branch: `main` (solo-project; work-unit pushes standing-authorized by the owner, announced per push)
 - Delivery strategy: `ask-on-risk` (forecast ~350–550 authored lines; chain strategy confirmed with the user before exceeding ~400)
 - Route per task: T1–T2 inline (mechanical bootstrap, contents pre-resolved from recon); later tasks routed per evidence
 
@@ -29,7 +29,7 @@ Public Spanish website for GymLab: marketing landing + `/privacidad` + `/termino
 - [x] T2 — Scaffold: Astro + MDX + Tailwind v4 + sitemap; `npm run build` green (`9da9180`)
 - [x] T3 — Brand foundation: port @theme tokens, self-host fonts (Oswald/Barlow woff2), logos, brand favicon (`aeb59c0`)
 - [x] T4 — Layout: base layout, nav, footer, panel/grain primitives (`3fd745d`)
-- [ ] T5 — Landing sections: hero, features (8), showcase, local-first strip → `/privacidad`, FAQ
+- [x] T5 — Landing sections: hero, features (8), showcase, local-first strip → `/privacidad`, FAQ (`82eb765`)
 - [ ] T6 — Screenshots: capture real app screenshots (Playwright + demo data)
 - [ ] T7 — Legal pages structure: `/privacidad`, `/terminos` (heading skeleton; content in phase 3)
 - [ ] T8 — SEO: per-page meta/OG, sitemap, robots
@@ -60,3 +60,6 @@ Public Spanish website for GymLab: marketing landing + `/privacidad` + `/termino
 - 2026-10-17 — T3 done: commit `aeb59c0` — 16 color tokens + 2 font vars ported verbatim from the app's `@theme` (gold × night only), 7 self-hosted woff2 faces copied, logos/icons in `public/brand/`, branded favicon wired to `icon-192.png`. Check: `npm run build` green; `dist/fonts` + `dist/brand` emitted.
 - 2026-10-17 — T3 pushed to `origin/main`: `f9dd63a..6d53ee3`.
 - 2026-10-17 — T4 done: commit `3fd745d` — `BaseLayout` (imports `global.css`), sticky `Header`, `Footer`, index placeholder using primitives; `global.css` extended with the app's surface system (`gold-gradient`/`gold-text`/`gold-border-glow`, `panel`/`panel-light`/`panel-floating`/`panel-hero`/`panel-elevated`, `kicker`, `stat-value`, `chip`, `hero-atmosphere`) + body radial tints + grain. App-only pieces intentionally skipped (charts, routine cards, scroll hijack). Gold logo variant generated from `logo_simbolo.svg` (paths untouched, fill → brand gold, inline width stripped). Learned: first T4 build emitted no CSS — `BaseLayout` was missing the `global.css` import; fixed and re-verified (18.9 KB bundle, stylesheet linked from HTML).
+- 2026-10-17 — Push policy granted by owner (option b): work-unit pushes to `main` are standing-authorized, announced per push; recorded in AGENTS.md (`79ac4c8`). Delivery: direct-to-main stream — no PR layer by owner decision, so work-unit commits are the slices (the ~400-line chain gate is moot without PRs).
+- 2026-10-17 — Push `6d53ee3..82eb765` (T4 + push policy + T5).
+- 2026-10-17 — T5 done: `82eb765` — hero with photo atmosphere (`home-hero.jpg` copied from the app), 8 numbered feature panels, showcase with placeholders (real captures in T6), local-first strip → `/privacidad`, native FAQ (`<details>`). Spanish copy with no price/date claims. Check: build green; ids `#features`/`#capturas`/`#faq`, 4 `<details>`, hero img in `dist`; utilities (`text-on-gold`, `scroll-mt-24`, `aspect-ratio`) present.
