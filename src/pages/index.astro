@@ -1,20 +1,18 @@
 ---
-import '../styles/global.css';
+import BaseLayout from '../layouts/BaseLayout.astro';
 ---
-<!doctype html>
-<html lang="es">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="generator" content={Astro.generator} />
-    <link rel="icon" type="image/png" href="/brand/icon-192.png" />
-    <link rel="apple-touch-icon" href="/brand/icon-192.png" />
-    <title>GymLab — Entrena mejor con datos</title>
-  </head>
-  <body>
-    <main class="mx-auto max-w-3xl px-6 py-24">
-      <h1 class="text-4xl">GymLab</h1>
-      <p class="mt-4 text-muted">Scaffold en marcha. La landing se construye en T4–T5.</p>
-    </main>
-  </body>
-</html>
+<BaseLayout>
+  <section class="mx-auto max-w-5xl px-6 py-24 md:py-32">
+    <p class="kicker">En construcción</p>
+    <h1 class="gold-text mt-3 text-5xl font-bold md:text-7xl">GymLab</h1>
+    <p class="mt-6 max-w-xl text-lg text-muted">
+      Entrena mejor con datos. La landing completa llega en T5; el layout, la navegación y el
+      sistema de superficies ya están en marcha.
+    </p>
+    <div class="mt-10 flex flex-wrap gap-3">
+      <span class="chip">Local-first</span>
+      <span class="chip">873 ejercicios</span>
+      <span class="chip">9 calculadoras</span>
+    </div>
+  </section>
+</BaseLayout>
