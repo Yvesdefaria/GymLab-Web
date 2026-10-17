@@ -1,0 +1,7 @@
+@import "tailwindcss";
+
+/*
+ * Brand tokens live here (Tailwind v4 @theme), ported from the GymLab app:
+ * `gymlab-app/src/index.css` is the source of truth (dark gold #d9b384 on #121214,
+ * Oswald display + Barlow body, self-hosted woff2). Full token port lands in T3.
+ */
