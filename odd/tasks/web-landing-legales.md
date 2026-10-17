@@ -25,8 +25,8 @@ Public Spanish website for GymLab: marketing landing + `/privacidad` + `/termino
 
 ## Tasks
 
-- [ ] T1 — Bootstrap: clone repo, AGENTS.md, ODD task doc, toolchain check
-- [ ] T2 — Scaffold: Astro + MDX + Tailwind v4 + sitemap; `npm run build` green
+- [x] T1 — Bootstrap: clone repo, AGENTS.md, ODD task doc, toolchain check (`7187dcc`)
+- [x] T2 — Scaffold: Astro + MDX + Tailwind v4 + sitemap; `npm run build` green (`9da9180`)
 - [ ] T3 — Brand foundation: port @theme tokens, self-host fonts (Oswald/Barlow woff2), logos, brand favicon
 - [ ] T4 — Layout: base layout, nav, footer, panel/grain primitives
 - [ ] T5 — Landing sections: hero, features (8), showcase, local-first strip → `/privacidad`, FAQ
@@ -54,3 +54,5 @@ Public Spanish website for GymLab: marketing landing + `/privacidad` + `/termino
 - 2026-10-17 — Recon of app repo (theme tokens, legal artifacts, assets, distribution). Engram: `webgymlab` project, obs "Recon GymLab…".
 - 2026-10-17 — Grilling closed; full design accepted by user (domain `gymlab.dev`, canonical legal on web, CTA "coming soon", screenshot capture in-house). Engram: obs "Web GymLab: diseño cerrado…".
 - 2026-10-17 — Repo `Yvesdefaria/GymLab-Web` cloned (public, `main`, initial README-only commit `488263e`).
+- 2026-10-17 — T1 done: docs commit `7187dcc` (AGENTS.md + this plan). Toolchain verified: git 2.47, Node v25.0.0, npm 11.6.2, gh authed as `Yvesdefaria`.
+- 2026-10-17 — T2 done: scaffold commit `9da9180` (Astro + MDX + sitemap + Tailwind v4; 214 packages installed). Check: `npm run build` green — 1 page + `sitemap-index.xml` emitted to `dist/`.
