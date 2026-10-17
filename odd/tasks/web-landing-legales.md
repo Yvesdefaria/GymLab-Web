@@ -2,7 +2,7 @@
 
 - Feature: `web-landing-legales`
 - Status: in progress
-- Branch: `main` (initial bootstrap); feature branches from T3 onward
+- Branch: `main` (solo-project; pushes gated by user approval)
 - Delivery strategy: `ask-on-risk` (forecast ~350–550 authored lines; chain strategy confirmed with the user before exceeding ~400)
 - Route per task: T1–T2 inline (mechanical bootstrap, contents pre-resolved from recon); later tasks routed per evidence
 
@@ -28,7 +28,7 @@ Public Spanish website for GymLab: marketing landing + `/privacidad` + `/termino
 - [x] T1 — Bootstrap: clone repo, AGENTS.md, ODD task doc, toolchain check (`7187dcc`)
 - [x] T2 — Scaffold: Astro + MDX + Tailwind v4 + sitemap; `npm run build` green (`9da9180`)
 - [x] T3 — Brand foundation: port @theme tokens, self-host fonts (Oswald/Barlow woff2), logos, brand favicon (`aeb59c0`)
-- [ ] T4 — Layout: base layout, nav, footer, panel/grain primitives
+- [x] T4 — Layout: base layout, nav, footer, panel/grain primitives (`3fd745d`)
 - [ ] T5 — Landing sections: hero, features (8), showcase, local-first strip → `/privacidad`, FAQ
 - [ ] T6 — Screenshots: capture real app screenshots (Playwright + demo data)
 - [ ] T7 — Legal pages structure: `/privacidad`, `/terminos` (heading skeleton; content in phase 3)
@@ -58,3 +58,5 @@ Public Spanish website for GymLab: marketing landing + `/privacidad` + `/termino
 - 2026-10-17 — T2 done: scaffold commit `9da9180` (Astro + MDX + sitemap + Tailwind v4; 214 packages installed). Check: `npm run build` green — 1 page + `sitemap-index.xml` emitted to `dist/`.
 - 2026-10-17 — Fase 1 pushed to `origin/main`: `488263e..f9dd63a`.
 - 2026-10-17 — T3 done: commit `aeb59c0` — 16 color tokens + 2 font vars ported verbatim from the app's `@theme` (gold × night only), 7 self-hosted woff2 faces copied, logos/icons in `public/brand/`, branded favicon wired to `icon-192.png`. Check: `npm run build` green; `dist/fonts` + `dist/brand` emitted.
+- 2026-10-17 — T3 pushed to `origin/main`: `f9dd63a..6d53ee3`.
+- 2026-10-17 — T4 done: commit `3fd745d` — `BaseLayout` (imports `global.css`), sticky `Header`, `Footer`, index placeholder using primitives; `global.css` extended with the app's surface system (`gold-gradient`/`gold-text`/`gold-border-glow`, `panel`/`panel-light`/`panel-floating`/`panel-hero`/`panel-elevated`, `kicker`, `stat-value`, `chip`, `hero-atmosphere`) + body radial tints + grain. App-only pieces intentionally skipped (charts, routine cards, scroll hijack). Gold logo variant generated from `logo_simbolo.svg` (paths untouched, fill → brand gold, inline width stripped). Learned: first T4 build emitted no CSS — `BaseLayout` was missing the `global.css` import; fixed and re-verified (18.9 KB bundle, stylesheet linked from HTML).
