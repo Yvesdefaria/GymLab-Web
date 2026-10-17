@@ -1,18 +1,172 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+
+const features = [
+  {
+    n: '01',
+    title: 'Constructor de rutinas',
+    text: 'Crea rutinas por objetivo y nivel, o parte de las predefinidas y ajústalas a tu semana.',
+  },
+  {
+    n: '02',
+    title: 'Entrenamiento en vivo',
+    text: 'Registra cada serie, repetición y peso mientras entrenás, sin fricción y sin conexión.',
+  },
+  {
+    n: '03',
+    title: 'Estadísticas y gráficos',
+    text: 'Tu progreso por ejercicio, grupo muscular y periodo — visual, no en una libreta.',
+  },
+  {
+    n: '04',
+    title: '9 calculadoras',
+    text: 'IMC, calorías y macros, 1RM, grasa corporal, agua, medidas y más.',
+  },
+  {
+    n: '05',
+    title: '873 ejercicios con foto',
+    text: 'Catálogo completo con guía visual, filtros por músculo, equipo y categoría.',
+  },
+  {
+    n: '06',
+    title: 'Fotos de progreso',
+    text: 'Registra tu evolución y compárala en el tiempo. Tu espejo con memoria.',
+  },
+  {
+    n: '07',
+    title: 'Pasos y wearables',
+    text: 'Pasos diarios, widgets para Android y sincronización con tus dispositivos.',
+  },
+  {
+    n: '08',
+    title: 'Logros',
+    text: 'Constancia que se nota: objetivos, rachas y logros que celebran tu progreso.',
+  },
+];
+
+const faqs = [
+  {
+    q: '¿Funciona sin conexión?',
+    a: 'Sí. GymLab es local-first: entrena, registra y consulta sin depender de internet. Tu gimnasio no siempre tiene señal — la app, sí.',
+  },
+  {
+    q: '¿Dónde se guardan mis datos?',
+    a: 'En tu dispositivo. GymLab no te pide crear cuentas para entrenar, y tu historial no se sube a servidores de terceros. El detalle está en la política de privacidad.',
+  },
+  {
+    q: '¿Qué incluye el catálogo de ejercicios?',
+    a: '873 ejercicios con foto y guía, filtrables por músculo, categoría y equipamiento disponible.',
+  },
+  {
+    q: '¿Cuándo y en qué tiendas sale?',
+    a: 'Estamos preparando el lanzamiento para Google Play y App Store. Si querés enterarte del día uno, escribinos a gymlab@gymlab.dev.',
+  },
+];
 ---
 <BaseLayout>
-  <section class="mx-auto max-w-5xl px-6 py-24 md:py-32">
-    <p class="kicker">En construcción</p>
-    <h1 class="gold-text mt-3 text-5xl font-bold md:text-7xl">GymLab</h1>
-    <p class="mt-6 max-w-xl text-lg text-muted">
-      Entrena mejor con datos. La landing completa llega en T5; el layout, la navegación y el
-      sistema de superficies ya están en marcha.
-    </p>
-    <div class="mt-10 flex flex-wrap gap-3">
-      <span class="chip">Local-first</span>
-      <span class="chip">873 ejercicios</span>
-      <span class="chip">9 calculadoras</span>
+  <!-- Hero -->
+  <section class="relative overflow-hidden">
+    <div class="hero-atmosphere" aria-hidden="true">
+      <img src="/images/home-hero.jpg" alt="" />
+    </div>
+    <div class="relative z-10 mx-auto max-w-5xl px-6 pb-20 pt-16 md:pb-28 md:pt-24">
+      <p class="kicker">App de entrenamiento · Local-first</p>
+      <h1 class="mt-4 max-w-2xl text-4xl font-bold leading-tight md:text-6xl">
+        Entrena mejor <span class="gold-text">con datos</span>
+      </h1>
+      <p class="mt-6 max-w-xl text-lg text-muted">
+        Planifica tus rutinas, registra cada serie y mira tu progreso crecer. Todo en tu
+        dispositivo, sin cuentas y sin nube.
+      </p>
+      <div class="mt-8 flex flex-wrap items-center gap-3">
+        <span class="chip">Próximamente en Google Play</span>
+        <span class="chip">Próximamente en App Store</span>
+      </div>
+      <div class="mt-10 flex flex-wrap gap-4">
+        <a
+          href="#features"
+          class="gold-gradient rounded-full px-6 py-3 font-semibold text-on-gold transition-transform hover:-translate-y-0.5"
+        >
+          Ver funciones
+        </a>
+        <a
+          href="#faq"
+          class="rounded-full border border-border px-6 py-3 font-medium text-fg transition-colors hover:border-accent hover:text-accent"
+        >
+          Preguntas frecuentes
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section id="features" class="mx-auto max-w-5xl scroll-mt-24 px-6 py-20 md:py-24">
+    <p class="kicker">Funciones</p>
+    <h2 class="mt-3 text-3xl font-semibold md:text-4xl">Todo tu entrenamiento, en un solo lugar</h2>
+    <div class="mt-12 grid gap-5 sm:grid-cols-2">
+      {
+        features.map((feature) => (
+          <article class="panel p-6">
+            <span class="stat-value text-2xl">{feature.n}</span>
+            <h3 class="mt-3 text-xl">{feature.title}</h3>
+            <p class="mt-2 text-sm text-muted">{feature.text}</p>
+          </article>
+        ))
+      }
+    </div>
+  </section>
+
+  <!-- Showcase -->
+  <section id="capturas" class="mx-auto max-w-5xl scroll-mt-24 px-6 py-20 md:py-24">
+    <p class="kicker">Capturas</p>
+    <h2 class="mt-3 text-3xl font-semibold md:text-4xl">Así se ve mientras entrenás</h2>
+    <div class="mt-12 grid gap-6 md:grid-cols-3">
+      {
+        ['Entrenamiento en vivo', 'Estadísticas', 'Calculadoras'].map((caption) => (
+          <figure class="panel-floating p-3">
+            <div class="flex aspect-[9/16] items-center justify-center rounded-lg bg-bg/60">
+              <span class="kicker text-center">Captura real — próxima entrega</span>
+            </div>
+            <figcaption class="px-2 pt-3 text-sm text-muted">{caption}</figcaption>
+          </figure>
+        ))
+      }
+    </div>
+  </section>
+
+  <!-- Local-first strip -->
+  <section class="mx-auto max-w-5xl px-6 py-10">
+    <div class="panel panel-hero rounded-3xl p-8 md:p-12">
+      <p class="kicker">Privacidad por diseño</p>
+      <h2 class="mt-3 max-w-2xl text-3xl font-semibold md:text-4xl">
+        Tus datos no salen de tu teléfono
+      </h2>
+      <p class="mt-4 max-w-2xl text-muted">
+        GymLab es local-first: tu historial de entrenamiento vive en tu dispositivo, no en una
+        cuenta ajena. Sin registro obligatorio, sin venta de datos, sin sorpresas.
+      </p>
+      <a
+        href="/privacidad"
+        class="mt-6 inline-block font-medium text-accent underline-offset-4 hover:underline"
+      >
+        Leer la política de privacidad →
+      </a>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="mx-auto max-w-5xl scroll-mt-24 px-6 py-20 md:py-24">
+    <p class="kicker">FAQ</p>
+    <h2 class="mt-3 text-3xl font-semibold md:text-4xl">Preguntas frecuentes</h2>
+    <div class="mt-10 flex flex-col gap-3">
+      {
+        faqs.map((item) => (
+          <details class="panel group p-5">
+            <summary class="cursor-pointer list-none font-medium">{item.q}</summary>
+            <p class="mt-3 text-sm text-muted">{item.a}</p>
+          </details>
+        ))
+      }
     </div>
   </section>
 </BaseLayout>
