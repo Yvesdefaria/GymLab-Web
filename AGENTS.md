@@ -38,4 +38,6 @@ Public website for **GymLab** (local-first training app; app repo: `ProyectoGymL
 
 ## Roadmap
 
-See `odd/tasks/web-landing-legales.md`. Blocked items: Cloudflare deploy (needs domain + CF account), legal text (needs identity data).
+- Continuation plan: `PLAN.md` (remaining steps, blockers, resume instructions)
+- Task history + evidence: `odd/tasks/web-landing-legales.md`
+- Blocked items: Cloudflare deploy (needs domain + CF account), legal text (needs identity data).
