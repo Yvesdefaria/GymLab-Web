@@ -32,7 +32,7 @@ Public website for **GymLab** (local-first training app; app repo: `ProyectoGymL
 ## Conventions
 
 - Conventional Commits; no AI attribution in commits; work-unit commits
-- Push / PRs / merges are human decisions
+- Work-unit pushes to `main` are standing-authorized by the repo owner (announced per push); force-push, PRs, and merges remain owner decisions
 - Feature plan + evidence: `odd/tasks/web-landing-legales.md`
 - Engram: project `webgymlab`
 
