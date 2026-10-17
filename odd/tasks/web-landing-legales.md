@@ -27,7 +27,7 @@ Public Spanish website for GymLab: marketing landing + `/privacidad` + `/termino
 
 - [x] T1 — Bootstrap: clone repo, AGENTS.md, ODD task doc, toolchain check (`7187dcc`)
 - [x] T2 — Scaffold: Astro + MDX + Tailwind v4 + sitemap; `npm run build` green (`9da9180`)
-- [ ] T3 — Brand foundation: port @theme tokens, self-host fonts (Oswald/Barlow woff2), logos, brand favicon
+- [x] T3 — Brand foundation: port @theme tokens, self-host fonts (Oswald/Barlow woff2), logos, brand favicon (`aeb59c0`)
 - [ ] T4 — Layout: base layout, nav, footer, panel/grain primitives
 - [ ] T5 — Landing sections: hero, features (8), showcase, local-first strip → `/privacidad`, FAQ
 - [ ] T6 — Screenshots: capture real app screenshots (Playwright + demo data)
@@ -56,3 +56,5 @@ Public Spanish website for GymLab: marketing landing + `/privacidad` + `/termino
 - 2026-10-17 — Repo `Yvesdefaria/GymLab-Web` cloned (public, `main`, initial README-only commit `488263e`).
 - 2026-10-17 — T1 done: docs commit `7187dcc` (AGENTS.md + this plan). Toolchain verified: git 2.47, Node v25.0.0, npm 11.6.2, gh authed as `Yvesdefaria`.
 - 2026-10-17 — T2 done: scaffold commit `9da9180` (Astro + MDX + sitemap + Tailwind v4; 214 packages installed). Check: `npm run build` green — 1 page + `sitemap-index.xml` emitted to `dist/`.
+- 2026-10-17 — Fase 1 pushed to `origin/main`: `488263e..f9dd63a`.
+- 2026-10-17 — T3 done: commit `aeb59c0` — 16 color tokens + 2 font vars ported verbatim from the app's `@theme` (gold × night only), 7 self-hosted woff2 faces copied, logos/icons in `public/brand/`, branded favicon wired to `icon-192.png`. Check: `npm run build` green; `dist/fonts` + `dist/brand` emitted.
