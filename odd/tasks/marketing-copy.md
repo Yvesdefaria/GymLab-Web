@@ -1,9 +1,9 @@
 # Marketing copy v2 — landing
 
 - Feature: `marketing-copy`
-- Status: in progress
+- Status: done (RDD slice pending: medium risk, under budget)
 - Branch: `main` (solo-project; work-unit pushes standing-authorized by the owner, announced per push)
-- Delivery strategy: `exception-ok` — direct-to-main work-unit stream by owner decision; forecast ~180 authored lines (docs included), under the ~400-line advisory
+- Delivery strategy: `exception-ok` — direct-to-main work-unit stream by owner decision; ~310 authored lines including docs, under the ~400-line advisory
 - Route per task: T1–T5 inline (copy surface fully read; single creative file edit plus two one-line string updates; no research needed)
 
 ## Objective
@@ -55,3 +55,5 @@ Rewrite the landing's marketing copy using the installed marketing skills (`prod
 - 2026-10-18 — T1 done: `.agents/product-marketing.md` v1 auto-drafted from repo evidence; pricing and launch date marked undecided.
 - 2026-10-18 — T2–T4 done: hero ("Dejá de entrenar de memoria"), 8 benefit-led feature titles/texts, showcase captions, privacy strip, 5 FAQs, meta defaults, footer tagline. Claims kept: 873 ejercicios, 9 calculadoras, 68 plantillas, timer, fotos de progreso, pasos/wearables, logros, sin cuenta, sin subida a terceros. No price or launch-date claims.
 - 2026-10-18 — T5 checks: `npm run build` green (3 pages); `dist/index.html` contains all new strings, 5 `<details>`, ids `features`/`capturas`/`faq`, mailto CTA; meta without "local-first"; AI-tell sweep clean (no banned patterns in `src`).
+- 2026-10-18 — Work-unit commit `c3bddb2` — `feat(copy): rewrite landing messaging around training progress`.
+- 2026-10-18 — RDD assess on `c3bddb2` (base `fbaef58`, committed-only): risk `medium`, `review_due: false`, reason `under_budget`; untracked `.atl/` excluded as pre-existing. No review due; slice stays pending until a later commit reaches the budget.
