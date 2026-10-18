@@ -1,6 +1,6 @@
 # Product Marketing Context
 
-**Document version:** v1
+**Document version:** v2
 **Last updated:** 2026-10-18
 
 ## Product Overview
@@ -101,12 +101,12 @@ N/A (B2C). Core user: Spanish-speaking lifter, beginner to intermediate, trains 
 - "no sé si estoy progresando"
 
 **How they describe us:**
-- "entrena mejor con datos" (current tagline)
-- "tu espejo con memoria" (current progress-photos line)
+- "entrena mejor con datos" (previous tagline)
+- "tu espejo con memoria" (progress-photos line)
 
-**Words to use:** serie, repeticiones, peso, rutina, progreso, gráficos, plantillas, ejercicios, tu teléfono.
+**Words to use:** serie, repeticiones, peso, rutina, progreso, gráficos, plantillas, ejercicios, gimnasio, tu teléfono.
 
-**Words to avoid:** local-first, solución, potenciá, revolucionario, sinergia, seamless.
+**Words to avoid:** local-first, solución, potenciá, revolucionario, sinergia, seamless, voseo and regionalisms (vos, tenés, querés, escribinos, gym).
 
 **Glossary:**
 | Term | Meaning |
@@ -118,9 +118,9 @@ N/A (B2C). Core user: Spanish-speaking lifter, beginner to intermediate, trains 
 
 | Attribute | Means | Doesn't mean | Example line |
 |-----------|-------|--------------|--------------|
-| Direct | Short declarative sentences | Blunt or cold | "Registrá cada serie sin cortar el ritmo." |
+| Direct | Short declarative sentences | Blunt or cold | "Registra cada serie sin cortar el ritmo." |
 | Concrete | Numbers, exercises, actions | Technical jargon | "873 ejercicios con foto." |
-| Motivating | Progress-focused and honest | Hype | "Un empujón para volver el día que no tenés ganas." |
+| Motivating | Progress-focused and honest | Hype | "Un empujón para volver el día que no tienes ganas." |
 | Honest | Pre-launch status, no invented proof | Apologetic | "Próximamente en Google Play." |
 
 **Tone by context:**
@@ -132,7 +132,7 @@ N/A (B2C). Core user: Spanish-speaking lifter, beginner to intermediate, trains 
 
 **Terms we own:** "entrenar de memoria" (the problem), "serie por serie".
 
-**Never use (and why):** "local-first" (implementation detail), "revolucionario" / "potenciá" (hype), rhetorical negation lists ("sin X, sin Y, sin Z" — AI tell).
+**Never use (and why):** "local-first" (implementation detail), "revolucionario" / "potenciá" (hype), rhetorical negation lists ("sin X, sin Y, sin Z" — AI tell), voseo and regionalisms (neutral Spanish is a project convention).
 
 ## Proof Points
 
@@ -167,4 +167,5 @@ Skipped — no ads running.
 
 ## Changelog
 
+- v2 (2026-10-18) — Switched brand voice to neutral/professional Spanish (tú) and removed Rioplatense voseo from all guidance after user correction; added voseo/regionalisms to "never use"; "gym" → "gimnasio".
 - v1 (2026-10-18) — Initial context auto-drafted from the web repo and `odd/tasks/web-landing-legales.md`. Pricing and launch date marked undecided.

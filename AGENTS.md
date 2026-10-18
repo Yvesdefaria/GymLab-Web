@@ -3,7 +3,7 @@
 Public website for **GymLab** (local-first training app; app repo: `ProyectoGymLab`, app lives in `gymlab-app/`). This repo holds the marketing landing + legal pages.
 
 - Production: `https://gymlab.dev` (Cloudflare Pages)
-- Language: site content in **Spanish** (neutral/professional); code, comments, docs in **English**
+- Language: site content in **Spanish, neutral/professional — no voseo or regionalisms**; code, comments, docs in **English**
 
 ## Stack
 
