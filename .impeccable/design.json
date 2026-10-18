@@ -1,0 +1,495 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-18T21:38:41+01:00",
+  "title": "Design System: GymLab Marketing Site",
+  "extensions": {
+    "colorMeta": {
+      "warm-brass": {
+        "role": "primary",
+        "displayName": "Warm Brass",
+        "canonical": "oklch(78.9% 0.0762 72.3)",
+        "tonalRamp": [
+          "oklch(15.0% 0.0762 72.3)",
+          "oklch(26.0% 0.0762 72.3)",
+          "oklch(37.0% 0.0762 72.3)",
+          "oklch(48.0% 0.0762 72.3)",
+          "oklch(60.0% 0.0762 72.3)",
+          "oklch(72.0% 0.0762 72.3)",
+          "oklch(84.0% 0.0762 72.3)",
+          "oklch(95.0% 0.0762 72.3)"
+        ]
+      },
+      "pale-brass": {
+        "role": "primary",
+        "displayName": "Pale Brass",
+        "canonical": "oklch(91.4% 0.0642 73.7)",
+        "tonalRamp": [
+          "oklch(15.0% 0.0642 73.7)",
+          "oklch(26.0% 0.0642 73.7)",
+          "oklch(37.0% 0.0642 73.7)",
+          "oklch(48.0% 0.0642 73.7)",
+          "oklch(60.0% 0.0642 73.7)",
+          "oklch(72.0% 0.0642 73.7)",
+          "oklch(84.0% 0.0642 73.7)",
+          "oklch(95.0% 0.0642 73.7)"
+        ]
+      },
+      "deep-brass": {
+        "role": "primary",
+        "displayName": "Deep Brass",
+        "canonical": "oklch(67.9% 0.0958 77.1)",
+        "tonalRamp": [
+          "oklch(15.0% 0.0958 77.1)",
+          "oklch(26.0% 0.0958 77.1)",
+          "oklch(37.0% 0.0958 77.1)",
+          "oklch(48.0% 0.0958 77.1)",
+          "oklch(60.0% 0.0958 77.1)",
+          "oklch(72.0% 0.0958 77.1)",
+          "oklch(84.0% 0.0958 77.1)",
+          "oklch(95.0% 0.0958 77.1)"
+        ]
+      },
+      "faint-brass-line": {
+        "role": "primary",
+        "displayName": "Faint Brass Line",
+        "canonical": "oklch(78.9% 0.0762 72.3 / 0.16)",
+        "tonalRamp": [
+          "oklch(15.0% 0.0762 72.3 / 0.16)",
+          "oklch(26.0% 0.0762 72.3 / 0.16)",
+          "oklch(37.0% 0.0762 72.3 / 0.16)",
+          "oklch(48.0% 0.0762 72.3 / 0.16)",
+          "oklch(60.0% 0.0762 72.3 / 0.16)",
+          "oklch(72.0% 0.0762 72.3 / 0.16)",
+          "oklch(84.0% 0.0762 72.3 / 0.16)",
+          "oklch(95.0% 0.0762 72.3 / 0.16)"
+        ]
+      },
+      "strong-brass-rule": {
+        "role": "primary",
+        "displayName": "Strong Brass Rule",
+        "canonical": "oklch(78.9% 0.0762 72.3 / 0.34)",
+        "tonalRamp": [
+          "oklch(15.0% 0.0762 72.3 / 0.34)",
+          "oklch(26.0% 0.0762 72.3 / 0.34)",
+          "oklch(37.0% 0.0762 72.3 / 0.34)",
+          "oklch(48.0% 0.0762 72.3 / 0.34)",
+          "oklch(60.0% 0.0762 72.3 / 0.34)",
+          "oklch(72.0% 0.0762 72.3 / 0.34)",
+          "oklch(84.0% 0.0762 72.3 / 0.34)",
+          "oklch(95.0% 0.0762 72.3 / 0.34)"
+        ]
+      },
+      "floor-black": {
+        "role": "neutral",
+        "displayName": "Floor Black",
+        "canonical": "oklch(18.3% 0.0040 286.0)",
+        "tonalRamp": [
+          "oklch(15.0% 0.0040 286.0)",
+          "oklch(26.0% 0.0040 286.0)",
+          "oklch(37.0% 0.0040 286.0)",
+          "oklch(48.0% 0.0040 286.0)",
+          "oklch(60.0% 0.0040 286.0)",
+          "oklch(72.0% 0.0040 286.0)",
+          "oklch(84.0% 0.0040 286.0)",
+          "oklch(95.0% 0.0040 286.0)"
+        ]
+      },
+      "plate-charcoal": {
+        "role": "neutral",
+        "displayName": "Plate Charcoal",
+        "canonical": "oklch(26.0% 0.0037 106.7)",
+        "tonalRamp": [
+          "oklch(15.0% 0.0037 106.7)",
+          "oklch(26.0% 0.0037 106.7)",
+          "oklch(37.0% 0.0037 106.7)",
+          "oklch(48.0% 0.0037 106.7)",
+          "oklch(60.0% 0.0037 106.7)",
+          "oklch(72.0% 0.0037 106.7)",
+          "oklch(84.0% 0.0037 106.7)",
+          "oklch(95.0% 0.0037 106.7)"
+        ]
+      },
+      "chalk-white": {
+        "role": "neutral",
+        "displayName": "Chalk White",
+        "canonical": "oklch(98.4% 0.0034 247.9)",
+        "tonalRamp": [
+          "oklch(15.0% 0.0034 247.9)",
+          "oklch(26.0% 0.0034 247.9)",
+          "oklch(37.0% 0.0034 247.9)",
+          "oklch(48.0% 0.0034 247.9)",
+          "oklch(60.0% 0.0034 247.9)",
+          "oklch(72.0% 0.0034 247.9)",
+          "oklch(84.0% 0.0034 247.9)",
+          "oklch(95.0% 0.0034 247.9)"
+        ]
+      },
+      "dust-taupe": {
+        "role": "neutral",
+        "displayName": "Dust Taupe",
+        "canonical": "oklch(69.2% 0.0234 83.3)",
+        "tonalRamp": [
+          "oklch(15.0% 0.0234 83.3)",
+          "oklch(26.0% 0.0234 83.3)",
+          "oklch(37.0% 0.0234 83.3)",
+          "oklch(48.0% 0.0234 83.3)",
+          "oklch(60.0% 0.0234 83.3)",
+          "oklch(72.0% 0.0234 83.3)",
+          "oklch(84.0% 0.0234 83.3)",
+          "oklch(95.0% 0.0234 83.3)"
+        ]
+      },
+      "smoke-umber": {
+        "role": "neutral",
+        "displayName": "Smoke Umber",
+        "canonical": "oklch(33.1% 0.0183 84.5)",
+        "tonalRamp": [
+          "oklch(15.0% 0.0183 84.5)",
+          "oklch(26.0% 0.0183 84.5)",
+          "oklch(37.0% 0.0183 84.5)",
+          "oklch(48.0% 0.0183 84.5)",
+          "oklch(60.0% 0.0183 84.5)",
+          "oklch(72.0% 0.0183 84.5)",
+          "oklch(84.0% 0.0183 84.5)",
+          "oklch(95.0% 0.0183 84.5)"
+        ]
+      },
+      "well-black": {
+        "role": "neutral",
+        "displayName": "Well Black",
+        "canonical": "oklch(15.0% 0.0021 286.1)",
+        "tonalRamp": [
+          "oklch(15.0% 0.0021 286.1)",
+          "oklch(26.0% 0.0021 286.1)",
+          "oklch(37.0% 0.0021 286.1)",
+          "oklch(48.0% 0.0021 286.1)",
+          "oklch(60.0% 0.0021 286.1)",
+          "oklch(72.0% 0.0021 286.1)",
+          "oklch(84.0% 0.0021 286.1)",
+          "oklch(95.0% 0.0021 286.1)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "The hero promise only: one monumental Oswald line pair per page, set at the floor edge."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Section openers under the frame rule; each band trims the scale to its own measure."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Internal component voice: station names, FAQ queries, footer taglines."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Explanation and captions in Barlow, between 34ch and 65ch depending on the container."
+      },
+      "label": {
+        "displayName": "Stencil Label",
+        "purpose": "Uppercase Barlow caps on section rules, navigation links and meta counters."
+      },
+      "label-small": {
+        "displayName": "Stencil Label Small",
+        "purpose": "Chip, rail and footer meta labels where the label scale would crowd the rule."
+      },
+      "button": {
+        "displayName": "Button Label",
+        "purpose": "Tracked uppercase Barlow inside every control, sized to survive the 2px stencil cut."
+      },
+      "stat": {
+        "displayName": "Stat Numeral",
+        "purpose": "Oswald tabular figures for proof stats, station numerals, set tables and the floor mark."
+      }
+    },
+    "shadows": [
+      {
+        "name": "plate-rest",
+        "value": "inset 0 1px 0 rgba(255,255,255,0.04), 0 14px 32px -20px rgb(0 0 0 / 0.6)",
+        "purpose": "The single resting shadow of the enamel plate that holds reading content, paired with its 1px warm brass border."
+      },
+      {
+        "name": "primary-under-glow",
+        "value": "0 14px 34px -22px color-mix(in srgb, var(--color-accent) 80%, transparent)",
+        "purpose": "Sits under the gold primary button so the floor appears lit by the one action on the page. The only colored shadow."
+      },
+      {
+        "name": "photograph-mount",
+        "value": "0 40px 64px -34px rgb(0 0 0 / 0.9)",
+        "purpose": "Dropped by each screenshot well to press product proof into the wall behind the composition."
+      },
+      {
+        "name": "status-ring",
+        "value": "inset 0 0 0 2px var(--color-bg), inset 0 0 0 3px var(--color-accent)",
+        "purpose": "The inset double ring marking today in the streak miniature; the only shadow drawn inside a component."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease-floor",
+        "value": "cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "The single authored easing of the system: a fast-out settle used by every transition and by the hero assembly."
+      },
+      {
+        "name": "hero-headline-mask",
+        "value": "hero-line-mask 1.05s cubic-bezier(0.16, 1, 0.3, 1) both",
+        "keyframes": "@keyframes hero-line-mask { from { clip-path: inset(-30% -6% 100% -6%); transform: translateY(0.16em); } to { clip-path: inset(-30% -6% -30% -6%); transform: translateY(0); } }",
+        "purpose": "Each hero headline line rises out of a clip-path mask, one line at a time, from the floor upward."
+      },
+      {
+        "name": "hero-headline-stagger",
+        "value": "0.12s",
+        "purpose": "Delay of the second (warm brass) headline line behind the first, so the promise assembles rather than appears."
+      },
+      {
+        "name": "hero-arrive",
+        "value": "hero-arrive 0.8s cubic-bezier(0.16, 1, 0.3, 1) both",
+        "keyframes": "@keyframes hero-arrive { from { opacity: 0; transform: translateY(1.1rem); } to { opacity: 1; transform: translateY(0); } }",
+        "purpose": "Fade-rise for the hero subhead (0.42s), actions (0.54s) and store chips (0.66s) after the headline settles."
+      },
+      {
+        "name": "rail-draw",
+        "value": "rail-draw 1.2s cubic-bezier(0.16, 1, 0.3, 1) both",
+        "keyframes": "@keyframes rail-draw { from { transform: scaleY(0); } to { transform: scaleY(1); } }",
+        "purpose": "The station rail hairline draws downward from its top edge, origin top center, after the headline begins."
+      },
+      {
+        "name": "rail-draw-horizontal",
+        "value": "rail-draw-x 1.2s cubic-bezier(0.16, 1, 0.3, 1) both",
+        "keyframes": "@keyframes rail-draw-x { from { transform: scaleX(0); } to { transform: scaleX(1); } }",
+        "purpose": "Under 1180px the same rail rotates into a horizontal rule and draws left to right instead."
+      },
+      {
+        "name": "state-transition-control",
+        "value": "0.35s cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "Buttons move background, border, color, filter and transform together on hover; the lift is 1px, never a scale."
+      },
+      {
+        "name": "state-transition-text",
+        "value": "0.3s cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "Link, nav and FAQ query color changes, plus the underline color shift of text links."
+      },
+      {
+        "name": "faq-mark-toggle",
+        "value": "0.35s cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "The FAQ mark's vertical stroke rotates to horizontal when a row opens, leaving the hairline grid untouched."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "animation: none; transition: none",
+        "purpose": "Under prefers-reduced-motion the hero assembly, the rail draw and every control transition are switched off; the frame is already complete at rest."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "small",
+        "value": "479px",
+        "purpose": "Below this, the hero actions stretch to full width and stack."
+      },
+      {
+        "name": "compact",
+        "value": "767px",
+        "purpose": "Every split collapses to one column, the proof band becomes 2x2, cells drop their minimum height, and nav links stay hidden."
+      },
+      {
+        "name": "rail-four-up",
+        "value": "720px",
+        "purpose": "Between 720px and 1179px the folded station list arranges four across instead of two."
+      },
+      {
+        "name": "tablet",
+        "value": "768px",
+        "purpose": "Navigation reveals its section links and the header keeps its 5.25rem height."
+      },
+      {
+        "name": "rail-collapse",
+        "value": "1179px",
+        "purpose": "The hero rail detaches from the right column, becomes a horizontal rule under the copy, and the hero stops forcing full viewport height."
+      }
+    ],
+    "narrative": {
+      "northStar": "The Gym Floor Drawn in Gold",
+      "overview": "GymLab's site is a gym floor seen in plan and in person. A near-black field is ruled with gold hairlines the way a floor plan is ruled, labels are stencilled where equipment would sit, and one edge of the floor is lit. The visitor walks it once: the promise stands at the floor edge, four training stations climb a rail on the right, and the proof is mounted on the back wall. It refuses the centered hero-over-a-stack-of-cards composition that every training app ships.\n\nDensity is architectural rather than cozy. Oswald carries the voice at monumental scale, Barlow carries the explanation, and gold is spent like a budget — hairlines, numerals, stencil labels, one action per view. Surfaces read as enamel: flat, hairline-bordered plates with a faint wash at the top, never glassy. Depth is drawn before it is shadowed, so the page stays something you could walk.\n\nThe world is ported from the app, not borrowed from a template: the same gold-on-night palette, the same self-hosted faces, the same film grain and light shaft, the same evidence — real screenshots in black wells with gold corner brackets. Motion is rationed to a single assembly at the top of the page; everything after it holds still until the visitor touches it.",
+      "keyCharacteristics": [
+        "Near-black field with gold hairline floor markings and a film grain veil at 5% opacity",
+        "Monumental Oswald display type anchored to the bottom edge of the first viewport",
+        "A four-station rail (01–04) occupying the right 250px of the hero",
+        "Enamel surfaces: flat, hairline-bordered, gold-washed at the top edge, square-cornered as cells",
+        "Stencil labelling everywhere: uppercase, letter-spaced, small, never a sentence",
+        "Real app screenshots mounted in black wells with gold corner brackets",
+        "One authored motion moment — headline mask-rise plus rail hairline draw — reduced-motion safe"
+      ],
+      "rules": [
+        {
+          "name": "The One Hue Rule",
+          "body": "There is one hue, gold, and it is never repainted: every tint, veil, glow and hairline is Warm Brass or Pale Brass mixed into the field. A second accent is a system break, not a variation.",
+          "section": "colors"
+        },
+        {
+          "name": "The Gold Budget Rule",
+          "body": "Gold paints hairlines, numerals, labels and exactly one call to action per view. The only large gold fill in the system is the closing band's end wall.",
+          "section": "colors"
+        },
+        {
+          "name": "The Hairline Rank Rule",
+          "body": "Importance is read through line strength — a faint line separates rows, a strong rule separates sections. Never express rank by raising a surface.",
+          "section": "colors"
+        },
+        {
+          "name": "The Two Faces Rule",
+          "body": "Oswald speaks in headings, station names and numerals; Barlow sets every paragraph, label, chip and button. Never set a sentence in Oswald; never set a headline in Barlow.",
+          "section": "typography"
+        },
+        {
+          "name": "The Stencil Caps Rule",
+          "body": "Every label is uppercase, tracked and two to four words long. Caps carry signposts, never sentences.",
+          "section": "typography"
+        },
+        {
+          "name": "The Tabular Figure Rule",
+          "body": "Numerals that sit in a column or get compared are set in Oswald with tabular figures, whatever size they render at.",
+          "section": "typography"
+        },
+        {
+          "name": "The One Frame Rule",
+          "body": "Every section shares the single 1328px frame and the shared gutter. No section introduces its own container width.",
+          "section": "layout"
+        },
+        {
+          "name": "The Floor-Edge Rule",
+          "body": "The promise is anchored to the bottom edge of the first viewport with the rail climbing the right side. A vertically centered hero is not a GymLab hero.",
+          "section": "layout"
+        },
+        {
+          "name": "The Walked-Once Rule",
+          "body": "Sections are single-pass bands divided by hairlines — no nested cards, no panel inside panel, no sub-grid that repeats the board.",
+          "section": "layout"
+        },
+        {
+          "name": "The Hairline-First Rule",
+          "body": "A boundary is drawn as a 1px rule before any shadow is considered; if a line can separate two surfaces, no shadow is allowed.",
+          "section": "elevation"
+        },
+        {
+          "name": "The Shadow With A Job Rule",
+          "body": "Shadows exist to lift gold or to mount photographs. Layout never floats, and decoration is never the reason for a shadow.",
+          "section": "elevation"
+        },
+        {
+          "name": "The Stencil Corner Rule",
+          "body": "Controls, chips, cells and rows are cut square or at 2px. Pills and capsule controls never appear on these pages.",
+          "section": "shapes"
+        },
+        {
+          "name": "The Circle Belongs To The Diagram Rule",
+          "body": "The only curves are drawn inside diagrams and device silhouettes. No button, chip, plate, cell or nav item is rounded past its stencil corner.",
+          "section": "shapes"
+        },
+        {
+          "name": "The Label-On-The-Rule Rule",
+          "body": "A section label sits on the section's hairline, never as an eyebrow stacked above the heading, and a metadata counter shares that rule at the far right. The rule and its label always move together.",
+          "section": "components"
+        },
+        {
+          "name": "The One Authored Moment Rule",
+          "body": "The hero assembly is the only choreography in the system. Everything below it changes only in response to hover, focus or open state — no scroll reveals, no counters, no parallax.",
+          "section": "components"
+        },
+        {
+          "name": "The Drawn Mechanism Rule",
+          "body": "Depth, data and detail are drawn with hairlines and gold fills. No icons, illustration, stock imagery or chart library stands in for a mechanism, and no raster asset appears inside a station cell.",
+          "section": "components"
+        }
+      ],
+      "dos": [
+        "Do separate surfaces with 1px hairlines before reaching for a shadow — a faint brass line between rows, a strong brass rule between sections.",
+        "Do keep one primary action per view and give it the Warm Brass gradient; secondary actions are ghost buttons with a strong brass border.",
+        "Do set labels in uppercase Barlow with generous tracking and keep them to two to four words.",
+        "Do leave station cells square-cornered and let the board's hairline grid be the framing.",
+        "Do reserve the closing band as the only large gold fill on a page, and invert everything inside it to Floor Black.",
+        "Do mount real app screenshots in Well Black wells with 14px gold corner brackets — the proof is the product.",
+        "Do declare every animated element visible at rest so the hero assembly degrades to a static frame.",
+        "Do keep numerals in Oswald with tabular figures wherever they stack or get compared."
+      ],
+      "donts": [
+        "Don't add a second hue. Every tint on the floor is Warm Brass or Pale Brass mixed into the field.",
+        "Don't round a control past its 2px stencil corner or introduce pill-shaped buttons, chips or nav items.",
+        "Don't center the hero copy vertically inside the atmosphere, and don't stack it over a row of cards.",
+        "Don't add motion beyond the hero assembly — no scroll reveals, parallax layers, animated counters or marquees.",
+        "Don't set body copy in Oswald, or a headline in Barlow.",
+        "Don't float a cell or a plate to show importance; raise the hairline strength instead.",
+        "Don't nest plates, or wrap the station board in additional cards.",
+        "Don't replace a drawn mechanism with an icon, an illustration or a stock photo.",
+        "Don't ship a day/night toggle or palette switcher — the web is the gold × night combination only, at every breakpoint."
+      ]
+    }
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "The one gold action per view: the launch-notice CTA in the hero, the closing band and the header.",
+      "html": "<a class='ds-btn-primary' href='mailto:gymlab@gymlab.dev'>Avísame cuando salga</a>",
+      "css": ".ds-btn-primary { display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem; min-height: 3.2rem; padding: 0.85rem 1.35rem; border: 1px solid transparent; border-radius: 2px; background-image: linear-gradient(135deg, var(--color-gold-bright, #fdddb4) 0%, var(--color-cta, #d9b384) 60%, var(--color-cta-deep, #b99050) 100%); color: var(--color-on-gold, #121214); font-family: 'Barlow', system-ui, sans-serif; font-size: 0.72rem; font-weight: 700; letter-spacing: 0.15em; line-height: 1; text-transform: uppercase; text-decoration: none; cursor: pointer; box-shadow: 0 14px 34px -22px color-mix(in srgb, var(--color-accent, #d9b384) 80%, transparent); transition: background-color 0.35s var(--floor-ease, cubic-bezier(0.16, 1, 0.3, 1)), border-color 0.35s var(--floor-ease, cubic-bezier(0.16, 1, 0.3, 1)), color 0.35s var(--floor-ease, cubic-bezier(0.16, 1, 0.3, 1)), filter 0.35s var(--floor-ease, cubic-bezier(0.16, 1, 0.3, 1)), transform 0.35s var(--floor-ease, cubic-bezier(0.16, 1, 0.3, 1)); } .ds-btn-primary:hover { filter: brightness(1.05); transform: translateY(-1px); } .ds-btn-primary:focus-visible { outline: 2px solid var(--color-accent, #d9b384); outline-offset: 3px; }"
+    },
+    {
+      "name": "Ghost Button",
+      "kind": "button",
+      "refersTo": "button-ghost",
+      "description": "The secondary action: hairline-bordered control that sits on the atmosphere without competing with gold.",
+      "html": "<a class='ds-btn-ghost' href='#features'>Ver funciones</a>",
+      "css": ".ds-btn-ghost { display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem; min-height: 3.2rem; padding: 0.85rem 1.35rem; border: 1px solid color-mix(in srgb, var(--color-accent, #d9b384) 34%, transparent); border-radius: 2px; background: color-mix(in srgb, var(--color-bg, #121214) 42%, transparent); color: var(--color-fg, #f8fafc); font-family: 'Barlow', system-ui, sans-serif; font-size: 0.72rem; font-weight: 700; letter-spacing: 0.15em; line-height: 1; text-transform: uppercase; text-decoration: none; cursor: pointer; transition: background-color 0.35s var(--floor-ease, cubic-bezier(0.16, 1, 0.3, 1)), border-color 0.35s var(--floor-ease, cubic-bezier(0.16, 1, 0.3, 1)), color 0.35s var(--floor-ease, cubic-bezier(0.16, 1, 0.3, 1)); } .ds-btn-ghost:hover { border-color: var(--color-accent, #d9b384); color: var(--color-accent-soft, #fdddb4); } .ds-btn-ghost:focus-visible { outline: 2px solid var(--color-accent, #d9b384); outline-offset: 3px; }"
+    },
+    {
+      "name": "Stencil Chip",
+      "kind": "chip",
+      "refersTo": "status-chip",
+      "description": "Non-interactive tag for store badges, calculator names and diagram labels; reads as stencilled metal, never as a pill.",
+      "html": "<ul class='ds-chip-row'><li class='ds-chip'>Próximamente en Google Play</li><li class='ds-chip'>Próximamente en App Store</li></ul>",
+      "css": ".ds-chip-row { display: flex; flex-wrap: wrap; gap: 0.5rem; margin: 0; padding: 0; list-style: none; } .ds-chip { display: inline-flex; align-items: center; gap: 0.35rem; padding: 0.45rem 0.6rem; border: 1px solid color-mix(in srgb, var(--color-accent, #d9b384) 34%, transparent); border-radius: 2px; background: color-mix(in srgb, var(--color-bg, #121214) 45%, transparent); color: var(--color-accent-soft, #fdddb4); font-family: 'Barlow', system-ui, sans-serif; font-size: 0.56rem; font-weight: 600; letter-spacing: 0.16em; line-height: 1.2; text-transform: uppercase; white-space: nowrap; }"
+    },
+    {
+      "name": "Section Frame",
+      "kind": "custom",
+      "refersTo": "section-rule",
+      "description": "The recurring band opener: a stencil label and counter sitting on the section's hairline, with the heading placed under the rule.",
+      "html": "<header class='ds-section-frame'><div class='ds-section-frame__rule'><span class='ds-section-frame__label'>Funciones</span><span class='ds-section-frame__meta'>01—08</span></div><h2 class='ds-section-frame__title'>De la rutina al gráfico</h2></header>",
+      "css": ".ds-section-frame__rule { display: flex; align-items: baseline; justify-content: space-between; gap: 1.5rem; padding-bottom: 0.55rem; border-bottom: 1px solid color-mix(in srgb, var(--color-accent, #d9b384) 34%, transparent); } .ds-section-frame__label { color: var(--color-accent, #d9b384); font-family: 'Barlow', system-ui, sans-serif; font-size: 0.64rem; font-weight: 600; letter-spacing: 0.22em; line-height: 1.2; text-transform: uppercase; } .ds-section-frame__meta { color: var(--color-muted, #a39b8c); font-family: 'Oswald', sans-serif; font-size: 0.62rem; letter-spacing: 0.2em; line-height: 1.2; text-transform: uppercase; } .ds-section-frame__title { margin: clamp(1.4rem, 2.5vw, 2rem) 0 0; max-width: 18ch; color: var(--color-fg, #f8fafc); font-family: 'Oswald', sans-serif; font-size: clamp(2.2rem, 4.6vw, 4.4rem); font-weight: 600; letter-spacing: 0.005em; line-height: 0.96; text-wrap: balance; }"
+    },
+    {
+      "name": "Enamel Plate",
+      "kind": "card",
+      "refersTo": "plate-enamel",
+      "description": "The system's one raised surface, used for reading content such as the legal notice; the landing uses its flat hairline sibling instead.",
+      "html": "<div class='ds-plate'><p class='ds-plate__text'><strong>Versión en preparación.</strong> Esta es la estructura definitiva de la página; el texto legal se publica antes del lanzamiento.</p></div>",
+      "css": ".ds-plate { position: relative; padding: 1.25rem; border: 1px solid color-mix(in srgb, var(--color-gold, #d9b384) 20%, transparent); border-radius: 1rem; background: linear-gradient(180deg, color-mix(in srgb, var(--color-bg-elevated, #242422) 96%, #ffffff 4%), var(--color-bg-elevated, #242422)); box-shadow: inset 0 1px 0 color-mix(in srgb, #ffffff 4%, transparent), 0 14px 32px -20px rgb(0 0 0 / 0.6); } .ds-plate__text { margin: 0; color: var(--color-muted, #a39b8c); font-family: 'Barlow', system-ui, sans-serif; font-size: 0.875rem; line-height: 1.55; } .ds-plate__text strong { color: var(--color-fg, #f8fafc); }"
+    },
+    {
+      "name": "Station Row",
+      "kind": "custom",
+      "refersTo": "station-row",
+      "description": "A row of the hero's station rail: faded numeral against an uppercase station name, divided by a 9% gold hairline.",
+      "html": "<ol class='ds-station-list'><li class='ds-station-row'><span class='ds-station-row__no'>02</span><span class='ds-station-row__name'>Fuerza</span></li><li class='ds-station-row'><span class='ds-station-row__no'>03</span><span class='ds-station-row__name'>Registro</span></li></ol>",
+      "css": ".ds-station-list { display: flex; flex-direction: column; margin: 0; padding: 0; list-style: none; } .ds-station-row { display: grid; grid-template-columns: 2.5rem minmax(0, 1fr); gap: 0.7rem; align-items: baseline; padding: 0.95rem 0; border-bottom: 1px solid color-mix(in srgb, var(--color-accent, #d9b384) 9%, transparent); } .ds-station-row:last-child { border-bottom: 0; } .ds-station-row__no { color: color-mix(in srgb, var(--color-accent, #d9b384) 58%, transparent); font-family: 'Oswald', sans-serif; font-size: 2.3rem; font-weight: 700; letter-spacing: 0.02em; line-height: 0.9; } .ds-station-row__name { color: var(--color-fg, #f8fafc); font-family: 'Oswald', sans-serif; font-size: 1.08rem; font-weight: 500; letter-spacing: 0.07em; line-height: 1.05; text-transform: uppercase; }"
+    },
+    {
+      "name": "FAQ Item",
+      "kind": "custom",
+      "refersTo": "faq-item-summary",
+      "description": "Native details/summary row with a two-stroke mark; hover brightens the query, opening rotates the mark and washes the row.",
+      "html": "<details class='ds-faq-item'><summary class='ds-faq-item__summary'><span>¿Funciona sin conexión?</span><span class='ds-faq-item__mark' aria-hidden='true'></span></summary><p class='ds-faq-item__answer'>Sí. Puedes entrenar, registrar series y consultar tu historial sin internet. Todo queda guardado en tu teléfono.</p></details>",
+      "css": ".ds-faq-item { border-bottom: 1px solid color-mix(in srgb, var(--color-accent, #d9b384) 16%, transparent); } .ds-faq-item[open] { background: color-mix(in srgb, var(--color-accent, #d9b384) 3%, transparent); } .ds-faq-item__summary { display: grid; grid-template-columns: minmax(0, 1fr) 1.4rem; gap: 1rem; align-items: center; padding: 1.35rem 0; list-style: none; cursor: pointer; color: var(--color-fg, #f8fafc); font-family: 'Oswald', sans-serif; font-size: clamp(1.1rem, 1.8vw, 1.45rem); font-weight: 500; letter-spacing: 0.02em; line-height: 1.2; transition: color 0.3s var(--floor-ease, cubic-bezier(0.16, 1, 0.3, 1)); } .ds-faq-item__summary::-webkit-details-marker { display: none; } .ds-faq-item__summary:hover { color: var(--color-accent-soft, #fdddb4); } .ds-faq-item__summary:focus-visible { outline: 2px solid var(--color-accent, #d9b384); outline-offset: 3px; } .ds-faq-item__mark { position: relative; width: 1.4rem; height: 1.4rem; color: var(--color-accent, #d9b384); } .ds-faq-item__mark::before, .ds-faq-item__mark::after { content: ''; position: absolute; top: 50%; left: 0; width: 100%; height: 1px; background: currentColor; transition: transform 0.35s var(--floor-ease, cubic-bezier(0.16, 1, 0.3, 1)); } .ds-faq-item__mark::after { transform: rotate(90deg); } .ds-faq-item[open] .ds-faq-item__mark::after { transform: rotate(0deg); } .ds-faq-item__answer { margin: 0; max-width: 65ch; padding: 0 2.5rem 1.5rem 0; color: var(--color-muted, #a39b8c); font-family: 'Barlow', system-ui, sans-serif; font-size: 0.96rem; line-height: 1.6; }"
+    },
+    {
+      "name": "Header Navigation",
+      "kind": "nav",
+      "refersTo": "nav-link",
+      "description": "The overlay bar: wordmark, stencil links and exactly one small ghost action, closed by a 10% gold hairline over a fading scrim.",
+      "html": "<header class='ds-nav'><a class='ds-nav__brand' href='/'><span class='ds-nav__wordmark'>GymLab</span></a><nav class='ds-nav__links' aria-label='Secciones'><a class='ds-nav__link' href='#features'>Funciones</a><a class='ds-nav__link' href='#capturas'>Capturas</a><a class='ds-nav__link' href='#faq'>FAQ</a></nav><a class='ds-nav__cta' href='mailto:gymlab@gymlab.dev'>Avísame cuando salga</a></header>",
+      "css": ".ds-nav { display: flex; align-items: center; justify-content: space-between; gap: 2rem; height: 5.25rem; padding: 0 1.5rem; border-bottom: 1px solid color-mix(in srgb, var(--color-accent, #d9b384) 10%, transparent); background: linear-gradient(180deg, color-mix(in srgb, var(--color-bg, #121214) 72%, transparent), transparent); } .ds-nav__brand { display: inline-flex; align-items: center; gap: 0.65rem; color: var(--color-fg, #f8fafc); text-decoration: none; } .ds-nav__wordmark { font-family: 'Oswald', sans-serif; font-size: 1.35rem; font-weight: 600; letter-spacing: 0.08em; line-height: 1; } .ds-nav__links { display: flex; align-items: center; gap: 1.55rem; } .ds-nav__link { color: var(--color-muted, #a39b8c); font-family: 'Barlow', system-ui, sans-serif; font-size: 0.64rem; font-weight: 600; letter-spacing: 0.18em; line-height: 1; text-transform: uppercase; text-decoration: none; transition: color 0.3s var(--floor-ease, cubic-bezier(0.16, 1, 0.3, 1)); } .ds-nav__link:hover { color: var(--color-accent, #d9b384); } .ds-nav__cta { display: inline-flex; align-items: center; justify-content: center; min-height: 2.45rem; padding: 0.58rem 0.85rem; border: 1px solid color-mix(in srgb, var(--color-accent, #d9b384) 34%, transparent); border-radius: 2px; background: color-mix(in srgb, var(--color-bg, #121214) 42%, transparent); color: var(--color-fg, #f8fafc); font-family: 'Barlow', system-ui, sans-serif; font-size: 0.6rem; font-weight: 700; letter-spacing: 0.13em; line-height: 1; text-transform: uppercase; text-decoration: none; } .ds-nav__cta:hover { border-color: var(--color-accent, #d9b384); color: var(--color-accent-soft, #fdddb4); } .ds-nav__link:focus-visible, .ds-nav__brand:focus-visible, .ds-nav__cta:focus-visible { outline: 2px solid var(--color-accent, #d9b384); outline-offset: 3px; }"
+    }
+  ]
+}
