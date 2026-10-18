@@ -60,3 +60,5 @@ Rewrite the landing's marketing copy using the installed marketing skills (`prod
 - 2026-10-18 — RDD assess on `c3bddb2` (base `fbaef58`, committed-only): risk `medium`, `review_due: false`, reason `under_budget`; untracked `.atl/` excluded as pre-existing.
 - 2026-10-18 — **User correction**: the landing must use neutral/professional Spanish, not Rioplatense voseo (repo rule in `AGENTS.md`). Voice decision reopened; T6 added.
 - 2026-10-18 — T6 done: neutral pass across `index.astro`, `BaseLayout`, `Footer` and `LegalLayout` ("Escríbenos"); `AGENTS.md` codifies "no voseo or regionalisms"; `.agents/product-marketing.md` bumped to v2 with neutral voice examples.
+- 2026-10-18 — T6 work-unit commit `e3e5107` — `fix(copy): switch landing copy to neutral Spanish`.
+- 2026-10-18 — T6 checks: `npm run build` green (3 pages); `dist` has 5 FAQs, neutral hero/CTA/FAQ/meta, zero voseo; `src` grep clean (only an English CSS comment). RDD assess on `e3e5107` (base `e861990`): risk `medium`, `review_due: false`, reason `under_budget`.
