@@ -1,0 +1,227 @@
+---
+interface Feature {
+  n: string;
+  title: string;
+  text: string;
+}
+
+interface Props {
+  features: Feature[];
+}
+
+const { features } = Astro.props;
+
+const week = [
+  { h: '30%', on: false },
+  { h: '54%', on: true },
+  { h: '20%', on: false },
+  { h: '66%', on: true },
+  { h: '42%', on: false },
+  { h: '76%', on: true },
+  { h: '34%', on: false },
+];
+
+const volume = ['42%', '58%', '38%', '66%', '51%', '72%', '60%', '88%'];
+const steps = ['32%', '54%', '46%', '62%', '40%', '74%', '58%'];
+const catalogLetters = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I'];
+const streakDays = Array.from({ length: 28 }, (_, index) => index);
+const activeDays = new Set([2, 3, 4, 5, 8, 9, 10, 11, 12, 16, 17, 18, 22, 23, 24, 25, 26]);
+---
+
+<section id="features" class="floor-section" aria-labelledby="features-title">
+  <div class="frame">
+    <header class="section-frame">
+      <div class="section-frame__rule">
+        <span class="section-frame__label">Funciones</span>
+        <span class="section-frame__meta">01—08</span>
+      </div>
+      <h2 id="features-title">De la rutina al gráfico</h2>
+    </header>
+
+    <div class="station-board">
+      {
+        features.map((feature) => (
+          <article class:list={['station', `station--${Number(feature.n)}`]}>
+            <div class="station__head">
+              <span class="station__no">{feature.n}</span>
+              <h3>{feature.title}</h3>
+            </div>
+
+            <p class="station__text">{feature.text}</p>
+
+            <div class="station__visual" aria-hidden="true">
+              {feature.n === '01' && (
+                <div class="mini">
+                  <div class="mini__meta">
+                    <span>Semana</span>
+                    <span>Ejemplo</span>
+                  </div>
+                  <div class="mini-week">
+                    <div class="mini-week__days">
+                      <span>L</span>
+                      <span>M</span>
+                      <span>X</span>
+                      <span>J</span>
+                      <span>V</span>
+                      <span>S</span>
+                      <span>D</span>
+                    </div>
+                    <div class="mini-week__bars">
+                      {week.map((day) => (
+                        <span class:list={[day.on && 'is-on']} style={`--h:${day.h}`}></span>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              )}
+
+              {feature.n === '02' && (
+                <div class="mini">
+                  <div class="mini__meta">
+                    <span>Serie</span>
+                    <span>Ejemplo</span>
+                  </div>
+                  <table class="mini-sets">
+                    <thead>
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">kg</th>
+                        <th scope="col">reps</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>01</td>
+                        <td>80</td>
+                        <td>8</td>
+                      </tr>
+                      <tr class="is-current">
+                        <td>02</td>
+                        <td>82,5</td>
+                        <td>8</td>
+                      </tr>
+                      <tr>
+                        <td>03</td>
+                        <td>85</td>
+                        <td>6</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              )}
+
+              {feature.n === '03' && (
+                <div class="mini">
+                  <div class="mini__meta">
+                    <span>Volumen</span>
+                    <span>Ejemplo</span>
+                  </div>
+                  <div class="mini-bars">
+                    {volume.map((height, barIndex) => (
+                      <span class:list={[barIndex === 5 && 'is-on']} style={`--h:${height}`} />
+                    ))}
+                  </div>
+                </div>
+              )}
+
+              {feature.n === '04' && (
+                <div class="mini">
+                  <div class="mini__meta">
+                    <span>Calculadoras</span>
+                    <span>9</span>
+                  </div>
+                  <ul class="calc-chips">
+                    <li>IMC</li>
+                    <li>1RM</li>
+                    <li>Agua</li>
+                    <li>Macros</li>
+                    <li>Grasa</li>
+                    <li>Medidas</li>
+                  </ul>
+                </div>
+              )}
+
+              {feature.n === '05' && (
+                <div class="mini">
+                  <div class="mini__meta">
+                    <span>Catálogo</span>
+                    <span>873</span>
+                  </div>
+                  <div class="mini-catalog">
+                    <div class="mini-catalog__filters">
+                      <span>Músculo</span>
+                      <span>Equipo</span>
+                      <span>Categoría</span>
+                    </div>
+                    <div class="mini-catalog__grid">
+                      {catalogLetters.map((letter) => (
+                        <span>
+                          <b>{letter}</b>
+                          <i></i>
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              )}
+
+              {feature.n === '06' && (
+                <div class="mini">
+                  <div class="mini__meta">
+                    <span>Comparar</span>
+                    <span>Fotos</span>
+                  </div>
+                  <div class="mini-compare">
+                    <div class="mini-compare__frame mini-compare__frame--a">
+                      <span>A</span>
+                    </div>
+                    <div class="mini-compare__frame mini-compare__frame--b">
+                      <span>B</span>
+                    </div>
+                    <div class="mini-compare__seam"></div>
+                  </div>
+                </div>
+              )}
+
+              {feature.n === '07' && (
+                <div class="mini">
+                  <div class="mini__meta">
+                    <span>Pasos</span>
+                    <span>Widget</span>
+                  </div>
+                  <div class="mini-steps">
+                    <div class="mini-steps__bars">
+                      {steps.map((height, barIndex) => (
+                        <span class:list={[barIndex === 5 && 'is-on']} style={`--h:${height}`}></span>
+                      ))}
+                    </div>
+                    <div class="mini-steps__device"></div>
+                  </div>
+                </div>
+              )}
+
+              {feature.n === '08' && (
+                <div class="mini">
+                  <div class="mini__meta">
+                    <span>Racha</span>
+                    <span>Logros</span>
+                  </div>
+                  <div class="mini-streak">
+                    {streakDays.map((day) => (
+                      <span
+                        class:list={[
+                          activeDays.has(day) && 'is-on',
+                          day === 26 && 'is-ring',
+                        ]}
+                      ></span>
+                    ))}
+                  </div>
+                </div>
+              )}
+            </div>
+          </article>
+        ))
+      }
+    </div>
+  </div>
+</section>

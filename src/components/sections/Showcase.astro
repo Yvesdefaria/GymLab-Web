@@ -1,0 +1,57 @@
+---
+const shots = [
+  {
+    src: '/screens/entrenamiento.png',
+    caption: 'Sesión en vivo, con temporizador',
+    alt: 'Captura de GymLab: sesión en vivo con temporizador de descanso y registro de series.',
+    className: 'evidence--session',
+  },
+  {
+    src: '/screens/rutinas.png',
+    caption: '68 plantillas listas para empezar',
+    alt: 'Captura de GymLab: pantalla de rutinas con plantillas y filtros por objetivo y nivel.',
+    className: '',
+  },
+  {
+    src: '/screens/ejercicios.png',
+    caption: 'Catálogo de 873 ejercicios',
+    alt: 'Captura de GymLab: catálogo de 873 ejercicios con filtros por músculo, equipo y categoría.',
+    className: '',
+  },
+];
+---
+
+<section id="capturas" class="floor-section showcase" aria-labelledby="showcase-title">
+  <div class="frame">
+    <header class="section-frame">
+      <div class="section-frame__rule">
+        <span class="section-frame__label">Capturas</span>
+        <span class="section-frame__meta">01—03</span>
+      </div>
+      <h2 id="showcase-title">Así se ve mientras entrenas</h2>
+    </header>
+
+    <div class="evidence-stage">
+      {
+        shots.map((shot, index) => (
+          <figure class:list={['evidence', shot.className]}>
+            <div class="evidence__frame">
+              <img
+                src={shot.src}
+                alt={shot.alt}
+                width="375"
+                height="812"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+            <figcaption>
+              <span>{`0${index + 1}`}</span>
+              {shot.caption}
+            </figcaption>
+          </figure>
+        ))
+      }
+    </div>
+  </div>
+</section>

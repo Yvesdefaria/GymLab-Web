@@ -17,3 +17,8 @@ pnpm-debug.log*
 # os
 .DS_Store
 Thumbs.db
+
+# impeccable local tooling (keep the design sidecar and surface briefs)
+.impeccable/*
+!.impeccable/design.json
+!.impeccable/surfaces/

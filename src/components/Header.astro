@@ -1,34 +1,44 @@
 ---
 // Sticky marketing header: brand mark + section links.
+// The landing uses the transparent overlay variant over the hero atmosphere;
+// legal pages keep the solid, readable variant.
 const links = [
   { href: '/#features', label: 'Funciones' },
   { href: '/#capturas', label: 'Capturas' },
   { href: '/#faq', label: 'FAQ' },
 ];
+
+const path = Astro.url.pathname.replace(/\/+$/, '') || '/';
+const isLanding = path === '/';
 ---
-<header class="sticky top-0 z-50 border-b border-border/50 bg-bg/80 backdrop-blur-md">
-  <div class="mx-auto flex h-16 max-w-5xl items-center justify-between gap-6 px-6">
-    <a href="/" class="flex items-center gap-2.5" aria-label="GymLab — inicio">
-      <img src="/brand/logo_simbolo_gold.svg" alt="" width="28" height="28" />
-      <span class="font-display text-xl font-semibold tracking-wide">GymLab</span>
+<header
+  class:list={[
+    'site-header',
+    isLanding ? 'site-header--overlay' : 'site-header--solid',
+  ]}
+>
+  <div class="frame site-header__inner">
+    <a href="/" class="site-header__brand" aria-label="GymLab — inicio">
+      <img src="/brand/logo_simbolo_gold.svg" alt="" width="26" height="26" />
+      <span class="site-header__wordmark">GymLab</span>
     </a>
-    <nav class="flex items-center gap-6" aria-label="Secciones">
+
+    <nav class="site-header__nav" aria-label="Secciones">
       {
         links.map((link) => (
-          <a
-            href={link.href}
-            class="hidden text-sm font-medium text-muted transition-colors hover:text-accent sm:block"
-          >
+          <a href={link.href} class="site-header__link">
             {link.label}
           </a>
         ))
       }
-      <a
-        href="mailto:gymlab@gymlab.dev"
-        class="text-sm font-medium text-muted transition-colors hover:text-accent"
-      >
-        Contacto
-      </a>
+      <a href="mailto:gymlab@gymlab.dev" class="site-header__link">Contacto</a>
     </nav>
+
+    <a
+      href="mailto:gymlab@gymlab.dev?subject=GymLab%3A%20av%C3%ADsame%20cuando%20salga"
+      class="btn btn--ghost btn--sm site-header__cta"
+    >
+      Avísame cuando salga
+    </a>
   </div>
 </header>

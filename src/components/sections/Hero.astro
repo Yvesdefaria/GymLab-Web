@@ -1,0 +1,92 @@
+---
+const stations = [
+  { n: '01', name: 'Calentamiento' },
+  { n: '02', name: 'Fuerza' },
+  { n: '03', name: 'Registro' },
+  { n: '04', name: 'Progreso' },
+];
+---
+
+<section class="floor-hero" aria-labelledby="hero-title">
+  <div class="floor-hero__media" aria-hidden="true">
+    <img
+      src="/images/home-hero.jpg"
+      alt=""
+      width="1600"
+      height="900"
+      loading="eager"
+      decoding="async"
+      fetchpriority="high"
+    />
+  </div>
+
+  <svg
+    class="floor-hero__plan"
+    viewBox="0 0 1440 900"
+    preserveAspectRatio="none"
+    aria-hidden="true"
+    focusable="false"
+  >
+    <g fill="none" stroke="currentColor" stroke-width="1" vector-effect="non-scaling-stroke">
+      <path d="M56 44H1384V856H56Z" opacity="0.1"></path>
+      <path d="M56 856H1384" opacity="0.26"></path>
+      <path d="M56 780H1384" opacity="0.1"></path>
+      <path d="M420 44V856" opacity="0.06"></path>
+      <path d="M56 300H420" opacity="0.06"></path>
+      <path d="M820 44V300" opacity="0.05"></path>
+      <path d="M120 856v-9M240 856v-9M360 856v-9M480 856v-9M600 856v-9M720 856v-9M840 856v-9M960 856v-9M1080 856v-9M1200 856v-9M1320 856v-9" opacity="0.22"></path>
+      <path d="M1384 150h-14M1384 300h-14M1384 450h-14M1384 600h-14M1384 750h-14" opacity="0.16"></path>
+    </g>
+  </svg>
+
+  <div class="floor-hero__beam" aria-hidden="true"></div>
+
+  <div class="frame floor-hero__frame">
+    <div class="floor-hero__copy">
+      <h1 id="hero-title" class="hero-title">
+        <span class="hero-title__line"><span class="hero-title__inner">Deja de entrenar</span></span>{' '}
+        <span class="hero-title__line"><span class="hero-title__inner">de memoria</span></span>
+      </h1>
+
+      <p class="floor-hero__sub">
+        GymLab organiza tu rutina, registra cada serie mientras entrenas y te muestra tu
+        progreso en gráficos. Funciona sin conexión, incluso donde no hay señal.
+      </p>
+
+      <div class="floor-hero__actions">
+        <a
+          href="mailto:gymlab@gymlab.dev?subject=GymLab%3A%20av%C3%ADsame%20cuando%20salga"
+          class="btn btn--primary"
+        >
+          Avísame cuando salga
+        </a>
+        <a href="#features" class="btn btn--ghost">Ver funciones</a>
+      </div>
+
+      <ul class="floor-hero__status" aria-label="Disponibilidad">
+        <li class="status-chip">Próximamente en Google Play</li>
+        <li class="status-chip">Próximamente en App Store</li>
+      </ul>
+    </div>
+
+    <aside class="station-rail" aria-label="Estaciones del entrenamiento">
+      <div class="station-rail__head">
+        <span class="station-rail__label">Estaciones</span>
+        <span class="station-rail__count">01—04</span>
+      </div>
+
+      <ol class="station-list">
+        {
+          stations.map((station) => (
+            <li>
+              <span class="station-no">{station.n}</span>
+              <span class="station-name">{station.name}</span>
+            </li>
+          ))
+        }
+      </ol>
+
+      <p class="station-rail__foot">App de entrenamiento · Piso 1 · 873 ejercicios</p>
+    </aside>
+  </div>
+</section>
