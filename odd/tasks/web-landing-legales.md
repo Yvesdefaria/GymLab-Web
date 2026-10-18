@@ -35,6 +35,7 @@ Public Spanish website for GymLab: marketing landing + `/privacidad` + `/termino
 - [ ] T8 — SEO: per-page meta/OG, sitemap, robots (+ optimize screenshots: webp/responsive)
 - [ ] T9 — Deploy: Cloudflare Pages + Web Analytics + custom domain (blocked: user phase 0 — buy `gymlab.dev` + free CF account)
 - [ ] T10 — Phase 3: legal drafting with real identity data (blocked: user data)
+- [x] T11 — Marketing copy v2: outcome-first rewrite, local-first demoted → `odd/tasks/marketing-copy.md`
 
 ## Acceptance criteria
 

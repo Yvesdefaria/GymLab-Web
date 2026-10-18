@@ -4,62 +4,66 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 const features = [
   {
     n: '01',
-    title: 'Constructor de rutinas',
-    text: 'Crea rutinas por objetivo y nivel, o parte de las predefinidas y ajústalas a tu semana.',
+    title: 'Llegá con la rutina lista',
+    text: 'Elegí objetivo y nivel, partí de una de las 68 plantillas y ajustá días, ejercicios y series a tu semana.',
   },
   {
     n: '02',
-    title: 'Entrenamiento en vivo',
-    text: 'Registra cada serie, repetición y peso mientras entrenás, sin fricción y sin conexión.',
+    title: 'Registrá sin cortar el ritmo',
+    text: 'Peso, repeticiones y descanso con timer integrado. La serie siguiente arranca con un toque.',
   },
   {
     n: '03',
-    title: 'Estadísticas y gráficos',
-    text: 'Tu progreso por ejercicio, grupo muscular y periodo — visual, no en una libreta.',
+    title: 'Mirá qué sube y qué se estancó',
+    text: 'Gráficos por ejercicio, grupo muscular y periodo. Ves el progreso y también los meses sin avance.',
   },
   {
     n: '04',
-    title: '9 calculadoras',
-    text: 'IMC, calorías y macros, 1RM, grasa corporal, agua, medidas y más.',
+    title: '9 calculadoras donde entrenás',
+    text: 'IMC, calorías y macros, 1RM, grasa corporal, agua y medidas. Las cuentas resueltas en la misma app.',
   },
   {
     n: '05',
     title: '873 ejercicios con foto',
-    text: 'Catálogo completo con guía visual, filtros por músculo, equipo y categoría.',
+    text: 'Catálogo completo con filtros por músculo, equipo y categoría. Encontrás el ejercicio antes de la primera serie.',
   },
   {
     n: '06',
-    title: 'Fotos de progreso',
-    text: 'Registra tu evolución y compárala en el tiempo. Tu espejo con memoria.',
+    title: 'Tu espejo, con memoria',
+    text: 'Guardá fotos de progreso y compará cómo cambió tu físico con el tiempo.',
   },
   {
     n: '07',
-    title: 'Pasos y wearables',
-    text: 'Pasos diarios, widgets para Android y sincronización con tus dispositivos.',
+    title: 'Pasos y wearables, conectados',
+    text: 'Pasos diarios, widgets de Android y sincronización con tus dispositivos. Lo que pasa fuera del gym también cuenta.',
   },
   {
     n: '08',
-    title: 'Logros',
-    text: 'Constancia que se nota: objetivos, rachas y logros que celebran tu progreso.',
+    title: 'Logros que sostienen la constancia',
+    text: 'Rachas, objetivos y logros. Un empujón para volver el día que no tenés ganas.',
   },
 ];
 
 const faqs = [
   {
     q: '¿Funciona sin conexión?',
-    a: 'Sí. GymLab es local-first: entrena, registra y consulta sin depender de internet. Tu gimnasio no siempre tiene señal — la app, sí.',
+    a: 'Sí. Podés entrenar, registrar series y consultar tu historial sin internet. Todo queda guardado en tu teléfono.',
   },
   {
     q: '¿Dónde se guardan mis datos?',
-    a: 'En tu dispositivo. GymLab no te pide crear cuentas para entrenar, y tu historial no se sube a servidores de terceros. El detalle está en la política de privacidad.',
+    a: 'En tu teléfono. GymLab no te pide una cuenta para entrenar y tu historial no se sube a servidores de terceros. El detalle está en la política de privacidad.',
+  },
+  {
+    q: '¿Sirve si recién arranco?',
+    a: 'Sí. Elegís nivel y objetivo, y una plantilla te marca por dónde empezar. También podés armar tu rutina desde cero.',
   },
   {
     q: '¿Qué incluye el catálogo de ejercicios?',
-    a: '873 ejercicios con foto y guía, filtrables por músculo, categoría y equipamiento disponible.',
+    a: '873 ejercicios con foto, filtrables por músculo, categoría y equipamiento.',
   },
   {
     q: '¿Cuándo y en qué tiendas sale?',
-    a: 'Estamos preparando el lanzamiento para Google Play y App Store. Si querés enterarte del día uno, escribinos a gymlab@gymlab.dev.',
+    a: 'Estamos preparando el lanzamiento para Google Play y App Store. Si querés enterarte el día uno, escribinos a gymlab@gymlab.dev.',
   },
 ];
 ---
@@ -70,13 +74,13 @@ const faqs = [
       <img src="/images/home-hero.jpg" alt="" />
     </div>
     <div class="relative z-10 mx-auto max-w-5xl px-6 pb-20 pt-16 md:pb-28 md:pt-24">
-      <p class="kicker">App de entrenamiento · Local-first</p>
+      <p class="kicker">App de entrenamiento</p>
       <h1 class="mt-4 max-w-2xl text-4xl font-bold leading-tight md:text-6xl">
-        Entrena mejor <span class="gold-text">con datos</span>
+        Dejá de entrenar <span class="gold-text">de memoria</span>
       </h1>
       <p class="mt-6 max-w-xl text-lg text-muted">
-        Planifica tus rutinas, registra cada serie y mira tu progreso crecer. Todo en tu
-        dispositivo, sin cuentas y sin nube.
+        GymLab arma tu rutina, registra cada serie mientras entrenás y te muestra tu
+        progreso en gráficos. Funciona sin conexión, incluso donde no hay señal.
       </p>
       <div class="mt-8 flex flex-wrap items-center gap-3">
         <span class="chip">Próximamente en Google Play</span>
@@ -84,16 +88,16 @@ const faqs = [
       </div>
       <div class="mt-10 flex flex-wrap gap-4">
         <a
-          href="#features"
+          href="mailto:gymlab@gymlab.dev?subject=GymLab%3A%20avisame%20cuando%20salga"
           class="gold-gradient rounded-full px-6 py-3 font-semibold text-on-gold transition-transform hover:-translate-y-0.5"
         >
-          Ver funciones
+          Avisame cuando salga
         </a>
         <a
-          href="#faq"
+          href="#features"
           class="rounded-full border border-border px-6 py-3 font-medium text-fg transition-colors hover:border-accent hover:text-accent"
         >
-          Preguntas frecuentes
+          Ver funciones
         </a>
       </div>
     </div>
@@ -102,7 +106,7 @@ const faqs = [
   <!-- Features -->
   <section id="features" class="mx-auto max-w-5xl scroll-mt-24 px-6 py-20 md:py-24">
     <p class="kicker">Funciones</p>
-    <h2 class="mt-3 text-3xl font-semibold md:text-4xl">Todo tu entrenamiento, en un solo lugar</h2>
+    <h2 class="mt-3 text-3xl font-semibold md:text-4xl">De la rutina al gráfico</h2>
     <div class="mt-12 grid gap-5 sm:grid-cols-2">
       {
         features.map((feature) => (
@@ -123,8 +127,8 @@ const faqs = [
     <div class="mt-12 grid gap-6 md:grid-cols-3">
       {
         [
-          { src: '/screens/entrenamiento.png', caption: 'Entrenamiento en vivo' },
-          { src: '/screens/rutinas.png', caption: 'Plantillas y programas' },
+          { src: '/screens/entrenamiento.png', caption: 'Sesión en vivo, con timer' },
+          { src: '/screens/rutinas.png', caption: '68 plantillas listas para arrancar' },
           { src: '/screens/ejercicios.png', caption: 'Catálogo de 873 ejercicios' },
         ].map((shot) => (
           <figure class="panel-floating p-3">
@@ -143,16 +147,16 @@ const faqs = [
     </div>
   </section>
 
-  <!-- Local-first strip -->
+  <!-- Privacy strip -->
   <section class="mx-auto max-w-5xl px-6 py-10">
     <div class="panel panel-hero rounded-3xl p-8 md:p-12">
-      <p class="kicker">Privacidad por diseño</p>
+      <p class="kicker">Privacidad</p>
       <h2 class="mt-3 max-w-2xl text-3xl font-semibold md:text-4xl">
-        Tus datos no salen de tu teléfono
+        Tus datos viven en tu teléfono
       </h2>
       <p class="mt-4 max-w-2xl text-muted">
-        GymLab es local-first: tu historial de entrenamiento vive en tu dispositivo, no en una
-        cuenta ajena. Sin registro obligatorio, sin venta de datos, sin sorpresas.
+        GymLab guarda tu historial en el dispositivo. Entrenás sin crear una cuenta y tus
+        datos no se comparten con terceros.
       </p>
       <a
         href="/privacidad"
