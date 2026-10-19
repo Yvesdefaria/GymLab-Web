@@ -23,3 +23,7 @@ Thumbs.db
 .impeccable/*
 !.impeccable/design.json
 !.impeccable/surfaces/
+
+# local agent tooling (generated, machine-specific paths)
+.atl/
+
