@@ -40,15 +40,13 @@ Handoff document to continue this project in a new session. Canonical project ru
 - Blocker: the app repo is 59 commits ahead of `origin/main` with uncommitted android/CHANGELOG changes. Decide: (A) push the app repo → auto-deploy, or (B) local `wrangler` deploy with login/token.
 - Caveats: mobile-first UI on desktop; native-only plugins (health, local notifications, filesystem, camera) degrade on web; review Sentry/PostHog consent; optional `noindex`; PWA service worker already has preload recovery.
 
-### T10 — Phase 3: legal drafting (BLOCKED on owner data)
+### T10 — Phase 3: legal drafting — DONE (2026-10-19)
 
-Needed from the owner first: legal identity (full name + NIF if autónomo, or company), jurisdiction, and confirmation of the contact email.
-
-- [ ] Port + adapt the existing privacy text (`ProyectoGymLab/legal/privacidad.html`) into the `/privacidad` sections; adapt the in-app Terms (`TERMINOS_SECTIONS` in `gymlab-app/src/domain/legal.ts`) into `/terminos`.
-- [ ] Replace the placeholder email everywhere (`gymlab@gymlab.dev`).
-- [ ] Align the Android-only framing with the planned iOS/App Store release.
-- [ ] Add "Última actualización" date; remove the "Versión en preparación" notice from `LegalLayout`.
-- [ ] Review against live app behavior (AdMob/IAP future states, Sentry/PostHog consent toggle, permissions).
+- [x] Ported the app's current legal text into `/privacidad` (11 sections) and `/terminos` (8 sections + contact).
+- [x] Contact unified to `gymlab@gymlab.dev`; the iOS/App Store framing is already current in the app text.
+- [x] "Última actualización: 5 de septiembre de 2026" added; "Versión en preparación" notice removed from `LegalLayout`.
+- [x] Reviewed against the app's current states (AdMob/IAP future, Sentry/PostHog opt-in, permissions, 14+).
+- Note: the titular remains unnamed as in the app text; add name/NIF/domicile if a named responsible is required.
 
 ### Follow-ups in the app repo (`ProyectoGymLab`) — separate commits there
 
