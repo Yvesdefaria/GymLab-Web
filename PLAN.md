@@ -24,20 +24,13 @@ Handoff document to continue this project in a new session. Canonical project ru
 - [x] Screenshots optimized: responsive WebP (`375w`/`750w`) via `scripts/optimize-screens.py`; sources moved to `assets/screens/` (not shipped).
 - [x] Re-verified: build green; sitemap 3 URLs; Lighthouse ≥95 on the production preview (performance 96 / accessibility 100 / best-practices 100 / SEO 100).
 
-### T9 — Deploy to Cloudflare Pages (BLOCKED on Fase 0)
+### T9 — Deploy to Cloudflare — DONE (2026-10-19)
 
-**Fase 0 (repo owner — one-time, ~15 min):**
-
-- [ ] Buy `gymlab.dev` (verified free) — Cloudflare Registrar or Porkbun (~12–15 USD/yr).
-- [ ] Create a free Cloudflare account.
-
-**Then:**
-
-- [ ] Create a Pages project connected to `Yvesdefaria/GymLab-Web` (build command `npm run build`, output `dist`).
-- [ ] Add custom domain `gymlab.dev`; verify HTTPS.
-- [ ] Enable Cloudflare Web Analytics (cookieless) and add its beacon snippet to `BaseLayout`.
-- [ ] Smoke-check the deployed site (3 pages, fonts, screenshots, mailto links).
-- [ ] Optional: `gymlab@gymlab.dev` forwarding via Cloudflare Email Routing.
+- [x] Domain `gymlab.dev` registered at DonDominio (19/10/2026–19/10/2027); NS moved to Cloudflare (`noel`/`sharon`); parking records removed.
+- [x] Workers project `gymlab-web` connected to the repo (build `npm run build`, deploy `npx wrangler deploy`, `wrangler.jsonc` serves `dist` as static assets).
+- [x] Custom domains `gymlab.dev` + `www.gymlab.dev` with HTTPS; site live at https://gymlab.dev.
+- [x] Smoke check: 3 pages + robots + sitemap + OG + WebP assets 200; canonical/OG point to the apex; Lighthouse 95/100/100/100 (performance/a11y/best-practices/SEO).
+- [ ] T9b — Web Analytics beacon (token pending) + Email Routing for `gymlab@gymlab.dev` (destination pending) + "Always Use HTTPS" toggle + optional www→apex redirect + switch DonDominio renewal to automatic.
 
 ### T10 — Phase 3: legal drafting (BLOCKED on owner data)
 
