@@ -1,27 +1,114 @@
 ---
 import LegalLayout from '../layouts/LegalLayout.astro';
-
-const sections = [
-  'Propósito',
-  'Tus datos',
-  'Permisos del dispositivo',
-  'Responsabilidad',
-  'Uso aceptable',
-  'Menores de edad',
-  'Licencia',
-  'Cambios en estos términos',
-];
 ---
 <LegalLayout
   title="Términos y Condiciones"
-  description="Términos y condiciones de uso de GymLab."
+  description="Términos y condiciones de uso de GymLab: propósito, datos, permisos, responsabilidad, uso aceptable y licencia."
+  updated="5 de septiembre de 2026"
 >
-  {
-    sections.map((name, index) => (
-      <section>
-        <h2>{`${index + 1}. ${name}`}</h2>
-        <p>Contenido en preparación.</p>
-      </section>
-    ))
-  }
+  <section id="proposito">
+    <h2>1. Propósito de la app</h2>
+    <p>
+      GymLab es una aplicación de seguimiento de entrenamiento y fitness. Su finalidad es ayudarte a
+      registrar tus sesiones, planificar rutinas y consultar información formativa sobre ejercicio,
+      nutrición y recuperación.
+    </p>
+    <p>
+      Toda la información y las rutinas que ofrece la aplicación tienen carácter informativo y
+      educativo. No constituyen consejo médico, nutricional ni de salud, ni sustituyen la consulta a
+      un profesional.
+    </p>
+  </section>
+
+  <section id="datos">
+    <h2>2. Tus datos y almacenamiento</h2>
+    <p>
+      GymLab es una aplicación <strong>local-first</strong>: todos tus datos (entrenos, rutinas,
+      récords, peso corporal, medidas y preferencias) se guardan únicamente en tu dispositivo
+      mediante almacenamiento local (IndexedDB).
+    </p>
+    <p>
+      No disponemos de servidor, por lo que hoy no recopilamos, transmitimos ni compartimos tus
+      datos personales con terceros. Al desinstalar la aplicación o borrar sus datos, toda la
+      información se elimina por completo.
+    </p>
+  </section>
+
+  <section id="permisos">
+    <h2>3. Permisos del dispositivo</h2>
+    <p>
+      La app puede solicitar acceso a datos de actividad y movimiento (Motion &amp; Fitness) para
+      contar pasos, y a tu ubicación (Location) para estimar distancias en sesiones de cardio.
+    </p>
+    <p>
+      Estos permisos se usan solo para los fines indicados y nunca se envían fuera del dispositivo.
+      Puedes revocarlos en cualquier momento desde los ajustes de tu sistema.
+    </p>
+  </section>
+
+  <section id="responsabilidad">
+    <h2>4. Responsabilidad y alcance</h2>
+    <p>
+      GymLab no es un dispositivo médico. La aplicación no diagnostica, trata, cura ni previene
+      ninguna condición médica, y sus contenidos no sustituyen la opinión de un profesional de la
+      salud.
+    </p>
+    <p>
+      Antes de empezar o modificar un programa de ejercicio, consulta a un médico o preparador
+      cualificado. El uso de la app y de sus contenidos se realiza bajo tu propia responsabilidad.
+    </p>
+    <p>
+      GymLab no se hace responsable de lesiones, daños o pérdidas derivadas del cumplimiento o la
+      interpretación de los programas, rutinas o recomendaciones mostrados.
+    </p>
+  </section>
+
+  <section id="uso-aceptable">
+    <h2>5. Uso aceptable</h2>
+    <p>
+      Te comprometes a usar GymLab con fines personales y no comerciales, de forma legal y sin
+      perjudicar a terceros.
+    </p>
+    <p>
+      Está prohibido manipular los registros para engañar sistemas de recompensas, o alterar,
+      descompilar o reproducir la aplicación sin autorización.
+    </p>
+  </section>
+
+  <section id="menores">
+    <h2>6. Menores de edad</h2>
+    <p>El uso de GymLab está recomendado para personas de 14 años o más.</p>
+    <p>Si eres menor de edad, usa la aplicación bajo la supervisión de un adulto o tutor legal.</p>
+  </section>
+
+  <section id="licencia">
+    <h2>7. Licencia y propiedad intelectual</h2>
+    <p>
+      GymLab se distribuye como aplicación gratuita. Todo su contenido, marca y diseño son propiedad
+      del desarrollador y no pueden reproducirse sin autorización.
+    </p>
+    <p>
+      El modelo anatómico de la aplicación se basa en Z-Anatomy (BodyParts3D), distribuido bajo
+      licencia CC BY-SA 4.0, tal y como se indica en los créditos de la app.
+    </p>
+  </section>
+
+  <section id="cambios">
+    <h2>8. Cambios en las condiciones</h2>
+    <p>
+      Nos reservamos el derecho de actualizar estas condiciones en cualquier momento. Cuando haya
+      cambios relevantes, lo indicaremos dentro de la aplicación.
+    </p>
+    <p>
+      El uso continuado de la app tras un cambio implica la aceptación de las nuevas condiciones.
+    </p>
+  </section>
+
+  <section id="contacto">
+    <h2>9. Contacto</h2>
+    <p>
+      Si tienes preguntas sobre estas condiciones, puedes escribirnos a
+      <a href="mailto:gymlab@gymlab.dev">gymlab@gymlab.dev</a>.
+    </p>
+  </section>
 </LegalLayout>
