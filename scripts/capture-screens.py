@@ -7,7 +7,8 @@ Run from the APP repo (server managed by its e2e helper):
 
 - Recon mode (env GYMLAB_RECON=1): captures candidate screens into
   %TEMP%/gymlab-recon and prints UI elements for selector inspection.
-- Final mode (default): captures the showcase set into ../public/screens/.
+- Final mode (default): captures the showcase set into ../assets/screens/ (source PNGs,
+  not shipped; run scripts/optimize-screens.py to regenerate the WebP derivatives).
 """
 
 import os
@@ -17,7 +18,7 @@ from pathlib import Path
 
 from playwright.sync_api import sync_playwright
 
-OUT_FINAL = Path(__file__).resolve().parent.parent / "public" / "screens"
+OUT_FINAL = Path(__file__).resolve().parent.parent / "assets" / "screens"
 PORT = os.environ.get("E2E_PORT", "5173")
 BASE = f"http://localhost:{PORT}"
 VIEWPORT = {"width": 375, "height": 812}

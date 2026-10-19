@@ -1,19 +1,22 @@
 ---
 const shots = [
   {
-    src: '/screens/entrenamiento.png',
+    src375: '/screens/entrenamiento-375.webp',
+    src750: '/screens/entrenamiento-750.webp',
     caption: 'Sesión en vivo, con temporizador',
     alt: 'Captura de GymLab: sesión en vivo con temporizador de descanso y registro de series.',
     className: 'evidence--session',
   },
   {
-    src: '/screens/rutinas.png',
+    src375: '/screens/rutinas-375.webp',
+    src750: '/screens/rutinas-750.webp',
     caption: '68 plantillas listas para empezar',
     alt: 'Captura de GymLab: pantalla de rutinas con plantillas y filtros por objetivo y nivel.',
     className: '',
   },
   {
-    src: '/screens/ejercicios.png',
+    src375: '/screens/ejercicios-375.webp',
+    src750: '/screens/ejercicios-750.webp',
     caption: 'Catálogo de 873 ejercicios',
     alt: 'Captura de GymLab: catálogo de 873 ejercicios con filtros por músculo, equipo y categoría.',
     className: '',
@@ -37,7 +40,9 @@ const shots = [
           <figure class:list={['evidence', shot.className]}>
             <div class="evidence__frame">
               <img
-                src={shot.src}
+                src={shot.src750}
+                srcset={`${shot.src375} 375w, ${shot.src750} 750w`}
+                sizes="(min-width: 768px) 360px, 90vw"
                 alt={shot.alt}
                 width="375"
                 height="812"
