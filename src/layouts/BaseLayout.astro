@@ -25,6 +25,9 @@ const ogImageURL = new URL('/og/gymlab-og.jpg', siteURL);
     <meta name="generator" content={Astro.generator} />
     <meta name="description" content={description} />
     <link rel="canonical" href={canonicalURL} />
+    {Astro.url.pathname === '/' && (
+      <link rel="preload" as="image" href="/images/home-hero.webp" fetchpriority="high" />
+    )}
     <meta name="theme-color" content="#121214" />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="GymLab" />
