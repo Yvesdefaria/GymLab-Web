@@ -32,6 +32,14 @@ Handoff document to continue this project in a new session. Canonical project ru
 - [x] Smoke check: 3 pages + robots + sitemap + OG + WebP assets 200; canonical/OG point to the apex; Lighthouse 95/100/100/100 (performance/a11y/best-practices/SEO).
 - [ ] T9b — Web Analytics beacon (token pending) + Email Routing for `gymlab@gymlab.dev` (destination pending) + "Always Use HTTPS" toggle + optional www→apex redirect + switch DonDominio renewal to automatic.
 
+### T12 — App web en `app.gymlab.dev` (planned, not started)
+
+- Objective: serve the GymLab app (repo `ProyectoGymLab`, `gymlab-app/`) as a static SPA at `app.gymlab.dev` with HTTPS.
+- Approach: second Worker `gymlab-app` connected to `Yvesdefaria/GymLab`, root directory `gymlab-app`, build `npm run build`, deploy `npx wrangler deploy`; `wrangler.jsonc` with `assets.directory = "./dist"` + `not_found_handling = "single-page-application"` (React Router deep links); custom domain `app.gymlab.dev`.
+- Fit: 2,021 files / 101 MB, largest 0.88 MB — within Workers Free (20k files, 25 MiB/file).
+- Blocker: the app repo is 59 commits ahead of `origin/main` with uncommitted android/CHANGELOG changes. Decide: (A) push the app repo → auto-deploy, or (B) local `wrangler` deploy with login/token.
+- Caveats: mobile-first UI on desktop; native-only plugins (health, local notifications, filesystem, camera) degrade on web; review Sentry/PostHog consent; optional `noindex`; PWA service worker already has preload recovery.
+
 ### T10 — Phase 3: legal drafting (BLOCKED on owner data)
 
 Needed from the owner first: legal identity (full name + NIF if autónomo, or company), jurisdiction, and confirmation of the contact email.
