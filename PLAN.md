@@ -16,13 +16,13 @@ Handoff document to continue this project in a new session. Canonical project ru
 
 ## Remaining work
 
-### T8 — SEO & performance polish (no blockers — can start immediately)
+### T8 — SEO & performance polish — DONE (2026-10-19)
 
-- [ ] Per-page meta: title/description for `/`, `/privacidad`, `/terminos` (landing has defaults; legal pages pass custom strings via `LegalLayout`).
-- [ ] Canonical URLs + Open Graph/Twitter tags in `BaseLayout` (`og:title`, `og:description`, `og:url` from `Astro.url`; `og:image` → `/brand/logo.jpg` or a composed 1200×630 image).
-- [ ] `public/robots.txt` (allow all + sitemap reference `https://gymlab.dev/sitemap-index.xml`).
-- [ ] Optimize screenshots: responsive/webp (Astro assets pipeline or pre-convert), keep `loading="lazy"`.
-- [ ] Re-verify: `npm run build`; sitemap contains 3 URLs; Lighthouse pass ≥95 (performance/SEO/best-practices) on the landing.
+- [x] Per-page meta: title/description for `/`, `/privacidad`, `/terminos`.
+- [x] Canonical URLs + Open Graph/Twitter tags in `BaseLayout`; composed 1200×630 OG image (`public/og/gymlab-og.jpg`).
+- [x] `public/robots.txt` (allow all + sitemap reference `https://gymlab.dev/sitemap-index.xml`).
+- [x] Screenshots optimized: responsive WebP (`375w`/`750w`) via `scripts/optimize-screens.py`; sources moved to `assets/screens/` (not shipped).
+- [x] Re-verified: build green; sitemap 3 URLs; Lighthouse ≥95 on the production preview (performance 96 / accessibility 100 / best-practices 100 / SEO 100).
 
 ### T9 — Deploy to Cloudflare Pages (BLOCKED on Fase 0)
 
