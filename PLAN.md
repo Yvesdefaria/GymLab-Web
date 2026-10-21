@@ -47,13 +47,15 @@ Handoff document to continue this project in a new session. Canonical project ru
 - [x] "Última actualización: 5 de septiembre de 2026" added; "Versión en preparación" notice removed from `LegalLayout`.
 - [x] Reviewed against the app's current states (AdMob/IAP future, Sentry/PostHog opt-in, permissions, 14+).
 - Note: the titular remains unnamed as in the app text; add name/NIF/domicile if a named responsible is required.
+- [ ] **2026-10-21 — Health Connect disclosure (Play requirement)**: `/privacidad` gains section 6 «Salud y actividad física (Health Connect y HealthKit)» (12 sections) and section 7 «Permisos» drops the inaccurate Motion & Fitness/Location claim; `/terminos` §3 also corrected. **Code done and built — pending deploy**: the live page is still the 5-sep version without Health Connect (verified by CDP from the app's rationale WebView). Do not submit the app to review before deploying this.
 
 ### Follow-ups in the app repo (`ProyectoGymLab`) — separate commits there
 
-- [ ] App meta/OG still points to `https://gymlab.app/` (owned by a third party) → switch to `https://gymlab.dev/`.
+- [ ] App meta/OG still points to `https://gymlab.app/` (owned by a third party) → switch to `https://gymlab.dev/`. **Still open** (`SITE_URL` in `useSeo.ts` + `index.html` canonical/OG); `app.gymlab.dev` does not resolve yet (`ENOTFOUND`), so the app's canonical host is still undecided.
 - [ ] App `favicon.svg` is still the Vite default → replace with a branded icon.
-- [ ] Replace placeholder email `gymlab@app.gymlab.dev`.
-- [ ] After the web is live: retire the GitHub Pages privacy workflow, and point the store listing (when it exists) to `https://gymlab.dev/privacidad`.
+- [x] Replace placeholder email `gymlab@app.gymlab.dev` → `gymlab@gymlab.dev` in `src/config/contact.ts` (2026-10-21). Mailbox still pending (T9b).
+- [x] Point the store listing (when it exists) to `https://gymlab.dev/privacidad` → app `privacy_policy_url` now points there (2026-10-21, emulator-verified). This is also the URL the Play listing must use.
+- [ ] After the web is live: retire the GitHub Pages privacy workflow.
 
 ## How to resume
 

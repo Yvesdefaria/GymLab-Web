@@ -4,7 +4,7 @@ import LegalLayout from '../layouts/LegalLayout.astro';
 <LegalLayout
   title="Política de Privacidad"
   description="Política de privacidad de GymLab: qué datos trata la app, dónde se guardan y cuáles son tus derechos."
-  updated="5 de septiembre de 2026"
+  updated="21 de octubre de 2026"
 >
   <section id="responsable">
     <h2>1. Responsable del tratamiento</h2>
@@ -92,20 +92,51 @@ import LegalLayout from '../layouts/LegalLayout.astro';
     </p>
   </section>
 
-  <section id="permisos">
-    <h2>6. Permisos del dispositivo</h2>
+  <section id="salud">
+    <h2>6. Salud y actividad física (Health Connect y HealthKit)</h2>
     <p>
-      La aplicación puede solicitar acceso a datos de actividad y movimiento (Motion &amp; Fitness)
-      para contar pasos, y a tu ubicación (Location) para estimar distancias en sesiones de cardio.
+      GymLab lee tu recuento diario de pasos del almacén de salud de tu dispositivo:
+      Health Connect en Android y HealthKit en iOS. Es el único dato de salud al que accede;
+      no lee frecuencia cardíaca, sueño, peso ni ningún otro registro clínico.
     </p>
     <p>
-      Estos permisos se utilizan únicamente para las funciones indicadas, no se envían fuera del
-      dispositivo y puedes revocarlos en cualquier momento desde los ajustes de tu sistema.
+      La lectura ocurre en tu dispositivo y el resultado se guarda solo en tu almacenamiento
+      local (IndexedDB). No se envía a servidores de GymLab, no se comparte con terceros y no
+      se usa para publicidad ni para crear perfiles. No se vende ni se cede.
+    </p>
+    <p>
+      GymLab no usa estos datos para ninguna finalidad distinta de mostrarte tus pasos, rachas
+      y logros.
+    </p>
+    <p>
+      El permiso se solicita con el diálogo del sistema y puedes revocarlo en cualquier momento
+      desde Health Connect (Android) o los Ajustes del sistema (iOS). Si lo revocas, la app deja
+      de leer pasos y el resto sigue funcionando; los pasos ya guardados quedan en tu dispositivo
+      y puedes borrarlos desde la app.
+    </p>
+    <p>
+      En Android, GymLab solicita además la lectura de salud en segundo plano para actualizar el
+      widget de pasos cuando la app está cerrada. Ese permiso se concede y revoca desde Health
+      Connect.
+    </p>
+  </section>
+
+  <section id="permisos">
+    <h2>7. Permisos del dispositivo</h2>
+    <p>
+      GymLab solicita solo los permisos que necesita para sus funciones: acceso al almacén de
+      salud (Health Connect en Android, HealthKit en iOS) para leer pasos, notificaciones locales
+      para los avisos de descanso y recordatorios, y cámara o galería solo cuando eliges una foto.
+    </p>
+    <p>
+      Ninguno de estos permisos envía datos fuera del dispositivo. Puedes revocarlos en cualquier
+      momento desde los ajustes de tu sistema: la app sigue funcionando, salvo la función concreta
+      que dependa del permiso.
     </p>
   </section>
 
   <section id="seguridad">
-    <h2>7. Seguridad y conservación</h2>
+    <h2>8. Seguridad y conservación</h2>
     <p>
       Al ser una aplicación local-first, tus datos de entrenamiento no se transmiten ni se almacenan
       en servidores de GymLab, lo que reduce su exposición a accesos externos.
@@ -118,7 +149,7 @@ import LegalLayout from '../layouts/LegalLayout.astro';
   </section>
 
   <section id="derechos">
-    <h2>8. Tus derechos</h2>
+    <h2>9. Tus derechos</h2>
     <p>
       Si resides en la Unión Europea, tienes derecho a solicitar el acceso a tus datos, su
       rectificación, supresión, oposición, retirada del consentimiento y portabilidad.
@@ -139,7 +170,7 @@ import LegalLayout from '../layouts/LegalLayout.astro';
   </section>
 
   <section id="menores">
-    <h2>9. Menores de edad</h2>
+    <h2>10. Menores de edad</h2>
     <p>
       GymLab está recomendada para personas de 14 años o más. Si eres menor de edad, utiliza la
       aplicación bajo la supervisión de un adulto o tutor legal.
@@ -148,7 +179,7 @@ import LegalLayout from '../layouts/LegalLayout.astro';
   </section>
 
   <section id="cambios">
-    <h2>10. Cambios en esta política</h2>
+    <h2>11. Cambios en esta política</h2>
     <p>
       Podemos actualizar esta política de privacidad en cualquier momento. Cuando haya cambios
       relevantes, lo indicaremos dentro de la aplicación.
@@ -160,7 +191,7 @@ import LegalLayout from '../layouts/LegalLayout.astro';
   </section>
 
   <section id="contacto">
-    <h2>11. Contacto</h2>
+    <h2>12. Contacto</h2>
     <p>
       Para ejercer tus derechos o resolver cualquier duda de privacidad, escríbenos a
       <a href="mailto:gymlab@gymlab.dev">gymlab@gymlab.dev</a>. Responderemos en un plazo máximo de
