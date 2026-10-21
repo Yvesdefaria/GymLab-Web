@@ -1,0 +1,11 @@
+---
+import LegalLayout from '../../layouts/LegalLayout.astro';
+import { LOCALES, getLang, legalDocs } from '../../i18n';
+
+export function getStaticPaths() {
+  return LOCALES.map((lang) => ({ params: { lang } }));
+}
+
+const lang = getLang(Astro.url.pathname);
+---
+<LegalLayout doc={legalDocs[lang].terms} />

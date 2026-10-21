@@ -1,21 +1,28 @@
-<section id="cierre" class="closing-band" aria-labelledby="closing-title">
+---
+import { getLang, useTranslations } from '../../i18n';
+
+const lang = getLang(Astro.url.pathname);
+const t = useTranslations(lang);
+---
+
+<section id={t.closing.anchor} class="closing-band" aria-labelledby="closing-title">
   <div class="frame">
-    <h2 id="closing-title">Deja de entrenar de memoria</h2>
+    <h2 id="closing-title">{t.closing.title}</h2>
 
     <div class="closing-band__row">
-      <p>Si quieres enterarte el día uno, escríbenos a gymlab@gymlab.dev.</p>
+      <p>{t.closing.text}</p>
 
       <div class="closing-band__actions">
         <a
-          href="mailto:gymlab@gymlab.dev?subject=GymLab%3A%20av%C3%ADsame%20cuando%20salga"
+          href={`mailto:gymlab@gymlab.dev?subject=${encodeURIComponent(t.closing.mailtoSubject)}`}
           class="btn btn--ink"
         >
-          Avísame cuando salga
+          {t.closing.cta}
         </a>
-        <span class="closing-band__stamp">Próximamente</span>
+        <span class="closing-band__stamp">{t.closing.stamp}</span>
       </div>
     </div>
 
-    <div class="closing-band__mark" aria-hidden="true">GYMLAB</div>
+    <div class="closing-band__mark" aria-hidden="true">{t.closing.mark}</div>
   </div>
 </section>

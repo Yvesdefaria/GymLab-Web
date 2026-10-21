@@ -1,201 +1,24 @@
 ---
-import LegalLayout from '../layouts/LegalLayout.astro';
+// Fallback for the legacy `/privacidad`. `public/_redirects` sends this path to
+// `/es/privacidad/` with a real 301 in production, but Cloudflare's `_redirects`
+// is not applied by `astro dev`, so this static stub performs the same hop in
+// the browser. Play Console and the app's Health Connect rationale link here.
+const target = 'https://gymlab.dev/es/privacidad/';
 ---
-<LegalLayout
-  title="Política de Privacidad"
-  description="Política de privacidad de GymLab: qué datos trata la app, dónde se guardan y cuáles son tus derechos."
-  updated="21 de octubre de 2026"
->
-  <section id="responsable">
-    <h2>1. Responsable del tratamiento</h2>
-    <p>
-      GymLab («la aplicación») es una aplicación de seguimiento de entrenamiento y fitness
-      desarrollada de forma independiente y publicada a través de Google Play Store y Apple App
-      Store.
-    </p>
-    <p>
-      Contacto: <a href="mailto:gymlab@gymlab.dev">gymlab@gymlab.dev</a>. Este correo es el punto
-      de contacto para consultas sobre privacidad y para solicitudes de borrado de datos.
-    </p>
-  </section>
-
-  <section id="datos">
-    <h2>2. Datos que trata GymLab</h2>
-    <p>
-      GymLab es una aplicación <strong>local-first</strong>: la gran mayoría de tus datos se guarda
-      únicamente en tu dispositivo mediante almacenamiento local (IndexedDB).
-    </p>
-    <ul>
-      <li>
-        Los datos de entrenamiento (series, repeticiones, pesos, rutinas, récords, peso corporal,
-        medidas y calorías) se almacenan en tu dispositivo y no se envían a servidores de GymLab.
-      </li>
-      <li>
-        GymLab no requiere cuenta de usuario: no creamos perfiles con tus datos personales ni te
-        identificamos como persona.
-      </li>
-    </ul>
-  </section>
-
-  <section id="compras">
-    <h2>3. Compras integradas</h2>
-    <p>
-      GymLab se distribuye gratuitamente. Puedes realizar una compra integrada para desactivar la
-      publicidad, procesada íntegramente por Google Play Billing (Android) o la tienda
-      correspondiente (iOS).
-    </p>
-    <p>
-      Las tiendas gestionan el pago: GymLab no recibe ni almacena tus datos de tarjeta, de
-      facturación ni el histórico de compras más allá de lo necesario para activar la funcionalidad
-      en tu dispositivo.
-    </p>
-    <p>
-      Las compras integradas se activarán en versiones futuras; hasta entonces, esta sección no
-      aplica.
-    </p>
-  </section>
-
-  <section id="publicidad">
-    <h2>4. Publicidad</h2>
-    <p>
-      Para poder ofrecer la aplicación de forma gratuita, en el futuro GymLab puede mostrar anuncios
-      proporcionados por Google AdMob. El SDK de AdMob puede recopilar y compartir con terceros
-      (anunciantes y redes publicitarias) datos como el identificador de publicidad de Android,
-      datos de uso de la aplicación y ubicación aproximada cuando esté disponible.
-    </p>
-    <p>
-      Estos datos se tratarán conforme a la Política de Privacidad de Google, bajo la
-      responsabilidad de Google. Puedes restablecer tu identificador de publicidad u optar por no
-      recibir publicidad personalizada desde los ajustes de tu dispositivo.
-    </p>
-    <p>
-      En la Unión Europea y el Espacio Económico Europeo, la publicidad personalizada solo se
-      mostrará con tu consentimiento previo (Google UMP / IAB TCF), conforme al RGPD.
-    </p>
-    <p>La publicidad se activará en versiones futuras; hasta entonces, esta sección no aplica.</p>
-  </section>
-
-  <section id="analitica">
-    <h2>5. Medición y análisis</h2>
-    <p>
-      Para entender cómo se usa la aplicación y arreglar errores, GymLab puede enviar datos anónimos
-      de uso (pantallas visitadas y funciones utilizadas) e informes de errores a nuestros
-      proveedores de analítica Sentry y PostHog.
-    </p>
-    <p>
-      El envío solo contiene datos de uso y de error: nunca incluye tus datos personales, tu peso,
-      tus entrenamientos ni ninguna otra información de la aplicación.
-    </p>
-    <p>
-      Puedes desactivar este envío en cualquier momento desde Ajustes › Datos de uso anónimos. Si
-      lo desactivas, no se enviará más información.
-    </p>
-  </section>
-
-  <section id="salud">
-    <h2>6. Salud y actividad física (Health Connect y HealthKit)</h2>
-    <p>
-      GymLab lee tu recuento diario de pasos del almacén de salud de tu dispositivo:
-      Health Connect en Android y HealthKit en iOS. Es el único dato de salud al que accede;
-      no lee frecuencia cardíaca, sueño, peso ni ningún otro registro clínico.
-    </p>
-    <p>
-      La lectura ocurre en tu dispositivo y el resultado se guarda solo en tu almacenamiento
-      local (IndexedDB). No se envía a servidores de GymLab, no se comparte con terceros y no
-      se usa para publicidad ni para crear perfiles. No se vende ni se cede.
-    </p>
-    <p>
-      GymLab no usa estos datos para ninguna finalidad distinta de mostrarte tus pasos, rachas
-      y logros.
-    </p>
-    <p>
-      El permiso se solicita con el diálogo del sistema y puedes revocarlo en cualquier momento
-      desde Health Connect (Android) o los Ajustes del sistema (iOS). Si lo revocas, la app deja
-      de leer pasos y el resto sigue funcionando; los pasos ya guardados quedan en tu dispositivo
-      y puedes borrarlos desde la app.
-    </p>
-    <p>
-      En Android, GymLab solicita además la lectura de salud en segundo plano para actualizar el
-      widget de pasos cuando la app está cerrada. Ese permiso se concede y revoca desde Health
-      Connect.
-    </p>
-  </section>
-
-  <section id="permisos">
-    <h2>7. Permisos del dispositivo</h2>
-    <p>
-      GymLab solicita solo los permisos que necesita para sus funciones: acceso al almacén de
-      salud (Health Connect en Android, HealthKit en iOS) para leer pasos, notificaciones locales
-      para los avisos de descanso y recordatorios, y cámara o galería solo cuando eliges una foto.
-    </p>
-    <p>
-      Ninguno de estos permisos envía datos fuera del dispositivo. Puedes revocarlos en cualquier
-      momento desde los ajustes de tu sistema: la app sigue funcionando, salvo la función concreta
-      que dependa del permiso.
-    </p>
-  </section>
-
-  <section id="seguridad">
-    <h2>8. Seguridad y conservación</h2>
-    <p>
-      Al ser una aplicación local-first, tus datos de entrenamiento no se transmiten ni se almacenan
-      en servidores de GymLab, lo que reduce su exposición a accesos externos.
-    </p>
-    <p>
-      La conservación de estos datos depende de ti: puedes revisarlos, exportarlos o eliminarlos en
-      cualquier momento desde la aplicación o el sistema. Se borran por completo al desinstalar
-      GymLab o al limpiar los datos de la app.
-    </p>
-  </section>
-
-  <section id="derechos">
-    <h2>9. Tus derechos</h2>
-    <p>
-      Si resides en la Unión Europea, tienes derecho a solicitar el acceso a tus datos, su
-      rectificación, supresión, oposición, retirada del consentimiento y portabilidad.
-    </p>
-    <p>
-      Como tus datos de entrenamiento viven en tu dispositivo, puedes revisarlos, exportarlos o
-      borrarlos tú mismo en cualquier momento desde la aplicación.
-    </p>
-    <p>
-      Para los datos tratados por plataformas de terceros (publicidad y análisis, cuando se
-      activen), debes ejercer tus derechos ante el proveedor correspondiente.
-    </p>
-    <p>
-      Para cualquier consulta o reclamación sobre esta política, escríbenos a
-      <a href="mailto:gymlab@gymlab.dev">gymlab@gymlab.dev</a>. También tienes derecho a presentar
-      una reclamación ante tu autoridad de control de protección de datos.
-    </p>
-  </section>
-
-  <section id="menores">
-    <h2>10. Menores de edad</h2>
-    <p>
-      GymLab está recomendada para personas de 14 años o más. Si eres menor de edad, utiliza la
-      aplicación bajo la supervisión de un adulto o tutor legal.
-    </p>
-    <p>No recopilamos conscientemente información de menores de 13 años.</p>
-  </section>
-
-  <section id="cambios">
-    <h2>11. Cambios en esta política</h2>
-    <p>
-      Podemos actualizar esta política de privacidad en cualquier momento. Cuando haya cambios
-      relevantes, lo indicaremos dentro de la aplicación.
-    </p>
-    <p>
-      La fecha de la última actualización aparece siempre al inicio de este documento, y la versión
-      vigente es la publicada en esta página.
-    </p>
-  </section>
-
-  <section id="contacto">
-    <h2>12. Contacto</h2>
-    <p>
-      Para ejercer tus derechos o resolver cualquier duda de privacidad, escríbenos a
-      <a href="mailto:gymlab@gymlab.dev">gymlab@gymlab.dev</a>. Responderemos en un plazo máximo de
-      30 días.
-    </p>
-  </section>
-</LegalLayout>
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex" />
+    <title>Política de Privacidad — GymLab</title>
+    <link rel="canonical" href={target} />
+    <meta http-equiv="refresh" content="0; url=/es/privacidad/" />
+    <script is:inline>
+      location.replace('/es/privacidad/');
+    </script>
+  </head>
+  <body>
+    <p><a href="/es/privacidad/">GymLab</a></p>
+  </body>
+</html>

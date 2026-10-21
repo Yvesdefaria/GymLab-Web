@@ -1,85 +1,23 @@
 ---
-import BaseLayout from '../layouts/BaseLayout.astro';
-import Hero from '../components/sections/Hero.astro';
-import ProofBand from '../components/sections/ProofBand.astro';
-import FeatureBoard from '../components/sections/FeatureBoard.astro';
-import Showcase from '../components/sections/Showcase.astro';
-import PrivacyBand from '../components/sections/PrivacyBand.astro';
-import Faq from '../components/sections/Faq.astro';
-import ClosingBand from '../components/sections/ClosingBand.astro';
-
-const features = [
-  {
-    n: '01',
-    title: 'Llega con la rutina lista',
-    text: 'Elige objetivo y nivel, parte de una de las 68 plantillas y ajusta días, ejercicios y series a tu semana.',
-  },
-  {
-    n: '02',
-    title: 'Registra sin cortar el ritmo',
-    text: 'Peso, repeticiones y descanso con temporizador integrado. La siguiente serie empieza con un solo toque.',
-  },
-  {
-    n: '03',
-    title: 'Mira qué sube y qué se estancó',
-    text: 'Gráficos por ejercicio, grupo muscular y periodo. Ves el progreso y también los meses sin avance.',
-  },
-  {
-    n: '04',
-    title: '9 calculadoras donde entrenas',
-    text: 'IMC, calorías y macros, 1RM, grasa corporal, agua y medidas. Los cálculos resueltos en la misma app.',
-  },
-  {
-    n: '05',
-    title: '873 ejercicios con foto',
-    text: 'Catálogo completo con filtros por músculo, equipo y categoría. Encuentras el ejercicio antes de la primera serie.',
-  },
-  {
-    n: '06',
-    title: 'Tu espejo, con memoria',
-    text: 'Guarda fotos de progreso y compara cómo cambió tu físico con el tiempo.',
-  },
-  {
-    n: '07',
-    title: 'Pasos y dispositivos, conectados',
-    text: 'Pasos diarios, widgets para Android y sincronización con tus dispositivos. El movimiento fuera del gimnasio también suma.',
-  },
-  {
-    n: '08',
-    title: 'Logros que sostienen la constancia',
-    text: 'Rachas, objetivos y logros. Un empujón para volver el día que no tienes ganas.',
-  },
-];
-
-const faqs = [
-  {
-    q: '¿Funciona sin conexión?',
-    a: 'Sí. Puedes entrenar, registrar series y consultar tu historial sin internet. Todo queda guardado en tu teléfono.',
-  },
-  {
-    q: '¿Dónde se guardan mis datos?',
-    a: 'En tu teléfono. GymLab no te pide una cuenta para entrenar y tu historial no se sube a servidores de terceros. El detalle está en la política de privacidad.',
-  },
-  {
-    q: '¿Sirve si estoy empezando?',
-    a: 'Sí. Eliges nivel y objetivo, y una plantilla te marca por dónde empezar. También puedes crear tu rutina desde cero.',
-  },
-  {
-    q: '¿Qué incluye el catálogo de ejercicios?',
-    a: '873 ejercicios con foto, filtrables por músculo, categoría y equipamiento.',
-  },
-  {
-    q: '¿Cuándo y en qué tiendas sale?',
-    a: 'Estamos preparando el lanzamiento para Google Play y App Store. Si quieres enterarte el día uno, escríbenos a gymlab@gymlab.dev.',
-  },
-];
+// Fallback for `/`. `public/_redirects` handles this in production with a 302,
+// but Cloudflare's `_redirects` is not applied by `astro dev`, so this static
+// stub performs the same hop in the browser.
+const target = 'https://gymlab.dev/es/';
 ---
-<BaseLayout>
-  <Hero />
-  <ProofBand />
-  <FeatureBoard features={features} />
-  <Showcase />
-  <PrivacyBand />
-  <Faq faqs={faqs} />
-  <ClosingBand />
-</BaseLayout>
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex" />
+    <title>GymLab — App de entrenamiento y progreso</title>
+    <link rel="canonical" href={target} />
+    <meta http-equiv="refresh" content="0; url=/es/" />
+    <script is:inline>
+      location.replace('/es/');
+    </script>
+  </head>
+  <body>
+    <p><a href="/es/">GymLab</a></p>
+  </body>
+</html>

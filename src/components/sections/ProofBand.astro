@@ -1,17 +1,15 @@
 ---
-const stats = [
-  { label: 'Ejercicios con foto', value: '873' },
-  { label: 'Calculadoras', value: '9' },
-  { label: 'Plantillas', value: '68' },
-  { label: 'Funciona sin conexión', value: 'Offline', word: true },
-];
+import { getLang, useTranslations } from '../../i18n';
+
+const lang = getLang(Astro.url.pathname);
+const t = useTranslations(lang);
 ---
 
-<section class="proof-band" aria-label="Datos de GymLab">
+<section class="proof-band" aria-label={t.proof.label}>
   <div class="frame">
     <dl class="proof-band__inner">
       {
-        stats.map((stat) => (
+        t.proof.stats.map((stat) => (
           <div class:list={['proof-stat', stat.word && 'proof-stat--word']}>
             <dt>{stat.label}</dt>
             <dd>{stat.value}</dd>

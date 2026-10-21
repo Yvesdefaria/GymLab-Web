@@ -1,37 +1,36 @@
 ---
+import { getLang, useTranslations } from '../../i18n';
+
+const lang = getLang(Astro.url.pathname);
+const t = useTranslations(lang);
+
 const shots = [
   {
     src375: '/screens/entrenamiento-375.webp',
     src750: '/screens/entrenamiento-750.webp',
-    caption: 'Sesión en vivo, con temporizador',
-    alt: 'Captura de GymLab: sesión en vivo con temporizador de descanso y registro de series.',
     className: 'evidence--session',
   },
   {
     src375: '/screens/rutinas-375.webp',
     src750: '/screens/rutinas-750.webp',
-    caption: '68 plantillas listas para empezar',
-    alt: 'Captura de GymLab: pantalla de rutinas con plantillas y filtros por objetivo y nivel.',
     className: '',
   },
   {
     src375: '/screens/ejercicios-375.webp',
     src750: '/screens/ejercicios-750.webp',
-    caption: 'Catálogo de 873 ejercicios',
-    alt: 'Captura de GymLab: catálogo de 873 ejercicios con filtros por músculo, equipo y categoría.',
     className: '',
   },
 ];
 ---
 
-<section id="capturas" class="floor-section showcase" aria-labelledby="showcase-title">
+<section id={t.showcase.anchor} class="floor-section showcase" aria-labelledby="showcase-title">
   <div class="frame">
     <header class="section-frame">
       <div class="section-frame__rule">
-        <span class="section-frame__label">Capturas</span>
+        <span class="section-frame__label">{t.showcase.label}</span>
         <span class="section-frame__meta">01—03</span>
       </div>
-      <h2 id="showcase-title">Así se ve mientras entrenas</h2>
+      <h2 id="showcase-title">{t.showcase.title}</h2>
     </header>
 
     <div class="evidence-stage">
@@ -43,7 +42,7 @@ const shots = [
                 src={shot.src750}
                 srcset={`${shot.src375} 375w, ${shot.src750} 750w`}
                 sizes="(min-width: 768px) 360px, 90vw"
-                alt={shot.alt}
+                alt={t.showcase.shots[index].alt}
                 width="375"
                 height="812"
                 loading="lazy"
@@ -52,7 +51,7 @@ const shots = [
             </div>
             <figcaption>
               <span>{`0${index + 1}`}</span>
-              {shot.caption}
+              {t.showcase.shots[index].caption}
             </figcaption>
           </figure>
         ))

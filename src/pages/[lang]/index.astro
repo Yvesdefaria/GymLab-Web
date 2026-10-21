@@ -1,0 +1,26 @@
+---
+// The canonical landing, rendered once per locale by `getStaticPaths`.
+// Sections resolve their own language from `Astro.url`, so no copy is passed down.
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Hero from '../../components/sections/Hero.astro';
+import ProofBand from '../../components/sections/ProofBand.astro';
+import FeatureBoard from '../../components/sections/FeatureBoard.astro';
+import Showcase from '../../components/sections/Showcase.astro';
+import PrivacyBand from '../../components/sections/PrivacyBand.astro';
+import Faq from '../../components/sections/Faq.astro';
+import ClosingBand from '../../components/sections/ClosingBand.astro';
+import { LOCALES } from '../../i18n';
+
+export function getStaticPaths() {
+  return LOCALES.map((lang) => ({ params: { lang } }));
+}
+---
+<BaseLayout>
+  <Hero />
+  <ProofBand />
+  <FeatureBoard />
+  <Showcase />
+  <PrivacyBand />
+  <Faq />
+  <ClosingBand />
+</BaseLayout>

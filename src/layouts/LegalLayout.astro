@@ -1,24 +1,65 @@
 ---
 import BaseLayout from './BaseLayout.astro';
+import { getLang, useTranslations } from '../i18n';
+import type { LegalDoc } from '../i18n';
 
 interface Props {
-  title: string;
-  description?: string;
-  updated?: string;
+  doc: LegalDoc;
 }
 
-const { title, description, updated } = Astro.props;
+const { doc } = Astro.props;
+
+const lang = getLang(Astro.url.pathname);
+const t = useTranslations(lang);
+const chrome = t.legalChrome;
+
+// Legal prose carries two inline conventions, resolved here so the documents stay
+// flat data: **bold** becomes <strong>, {{contact}} becomes the document's mailto.
+const escapeHTML = (value: string) =>
+  value
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;');
+
+const inline = (text: string): string =>
+  text
+    .split(/(\*\*[^*]+\*\*|\{\{contact\}\})/)
+    .map((part) => {
+      const bold = /^\*\*([^*]+)\*\*$/.exec(part);
+      if (bold) return `<strong>${escapeHTML(bold[1])}</strong>`;
+      if (part === '{{contact}}') {
+        return `<a href="mailto:${escapeHTML(doc.contact)}">${escapeHTML(doc.contact)}</a>`;
+      }
+      return escapeHTML(part);
+    })
+    .join('');
 ---
-<BaseLayout title={`${title} — GymLab`} description={description}>
+<BaseLayout title={`${doc.title} — GymLab`} description={doc.description}>
   <article class="mx-auto max-w-3xl px-6 py-16">
-    <p class="kicker">Legal</p>
-    <h1 class="mt-3 text-3xl font-bold md:text-4xl">{title}</h1>
-    {updated && <p class="mt-3 text-sm text-muted">Última actualización: {updated}</p>}
+    <p class="kicker">{chrome.kicker}</p>
+    <h1 class="mt-3 text-3xl font-bold md:text-4xl">{doc.title}</h1>
+    <p class="mt-3 text-sm text-muted">{chrome.updated}: {doc.updated}</p>
     <div class="legal-prose">
-      <slot />
+      {
+        doc.sections.map((section) => (
+          <section id={section.id}>
+            <h2>{section.title}</h2>
+            {section.paragraphs.map((paragraph) => (
+              <p set:html={inline(paragraph)} />
+            ))}
+            {section.list && (
+              <ul>
+                {section.list.map((item) => (
+                  <li set:html={inline(item)} />
+                ))}
+              </ul>
+            )}
+          </section>
+        ))
+      }
     </div>
-    <p class="mt-10 text-xs text-muted/70">
-      Documento informativo; no constituye asesoramiento legal.
-    </p>
+    <p class="mt-10 text-xs text-muted/70">{chrome.disclaimer}</p>
+    {chrome.courtesy && <p class="mt-2 text-xs text-muted/70">{chrome.courtesy}</p>}
   </article>
 </BaseLayout>

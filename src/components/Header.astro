@@ -1,15 +1,27 @@
 ---
-// Sticky marketing header: brand mark + section links.
+// Sticky marketing header: brand mark, section links, language selector and app CTA.
 // The landing uses the transparent overlay variant over the hero atmosphere;
 // legal pages keep the solid, readable variant.
-const links = [
-  { href: '/#features', label: 'Funciones' },
-  { href: '/#capturas', label: 'Capturas' },
-  { href: '/#faq', label: 'FAQ' },
-];
+import { getLang, localePath, localeSwitchPath, useTranslations } from '../i18n';
+
+const lang = getLang(Astro.url.pathname);
+const t = useTranslations(lang);
 
 const path = Astro.url.pathname.replace(/\/+$/, '') || '/';
-const isLanding = path === '/';
+const isLanding = /^\/(?:es|en)$/.test(path);
+
+const homePath = localePath(lang);
+
+const sections = [
+  { id: t.features.anchor, label: t.header.nav.features },
+  { id: t.showcase.anchor, label: t.header.nav.screens },
+  { id: t.faq.anchor, label: t.header.nav.faq },
+];
+
+const languages = [
+  { code: 'es', label: 'ES', name: t.header.language.es },
+  { code: 'en', label: 'EN', name: t.header.language.en },
+] as const;
 ---
 <header
   class:list={[
@@ -18,27 +30,169 @@ const isLanding = path === '/';
   ]}
 >
   <div class="frame site-header__inner">
-    <a href="/" class="site-header__brand" aria-label="GymLab — inicio">
+    <a href={homePath} class="site-header__brand" aria-label={t.header.brandLabel}>
       <img src="/brand/logo_simbolo_gold.svg" alt="" width="26" height="26" />
       <span class="site-header__wordmark">GymLab</span>
     </a>
 
-    <nav class="site-header__nav" aria-label="Secciones">
+    <nav class="site-header__nav" aria-label={t.header.navLabel}>
       {
-        links.map((link) => (
-          <a href={link.href} class="site-header__link">
-            {link.label}
+        sections.map((section) => (
+          <a href={`${homePath}#${section.id}`} class="site-header__link">
+            {section.label}
           </a>
         ))
       }
-      <a href="mailto:gymlab@gymlab.dev" class="site-header__link">Contacto</a>
+      <a href="mailto:gymlab@gymlab.dev" class="site-header__link">{t.header.contact}</a>
     </nav>
 
-    <a
-      href="mailto:gymlab@gymlab.dev?subject=GymLab%3A%20av%C3%ADsame%20cuando%20salga"
-      class="btn btn--ghost btn--sm site-header__cta"
-    >
-      Avísame cuando salga
-    </a>
+    <div class="site-header__tail">
+      <div class="lang-switch" role="group" aria-label={t.header.language.label}>
+        {
+          languages.map((item) => (
+            <a
+              href={localeSwitchPath(Astro.url.pathname, item.code)}
+              class="lang-switch__link"
+              aria-current={item.code === lang ? 'page' : undefined}
+              hreflang={item.code}
+              lang={item.code}
+            >
+              {item.code === 'es' ? (
+                <svg class="lang-switch__flag" viewBox="0 0 60 40" aria-hidden="true" focusable="false">
+                  <rect width="60" height="40" fill="#c60b1e" />
+                  <rect y="10" width="60" height="20" fill="#ffc400" />
+                </svg>
+              ) : (
+                <svg class="lang-switch__flag" viewBox="0 0 60 30" aria-hidden="true" focusable="false">
+                  <clipPath id="lang-uk-counterchange">
+                    <path d="M30 15h30v15zv15H30zh-30V15zv-15h30z" />
+                  </clipPath>
+                  <rect width="60" height="30" fill="#012169" />
+                  <path d="M0 0l60 30m0-30L0 30" stroke="#ffffff" stroke-width="6" />
+                  <path
+                    d="M0 0l60 30m0-30L0 30"
+                    clip-path="url(#lang-uk-counterchange)"
+                    stroke="#c8102e"
+                    stroke-width="4"
+                  />
+                  <path d="M30 0v30M0 15h60" stroke="#ffffff" stroke-width="10" />
+                  <path d="M30 0v30M0 15h60" stroke="#c8102e" stroke-width="6" />
+                </svg>
+              )}
+              <span class="lang-switch__code">{item.label}</span>
+              <span class="lang-switch__name">{item.name}</span>
+            </a>
+          ))
+        }
+      </div>
+
+      <a href="https://app.gymlab.dev" class="btn btn--ghost btn--sm site-header__cta">
+        {t.header.cta}
+      </a>
+    </div>
   </div>
 </header>
+
+<style>
+  .site-header__tail {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+  }
+
+  .site-header__cta {
+    white-space: nowrap;
+  }
+
+  .lang-switch {
+    display: flex;
+    align-items: center;
+    gap: 0.15rem;
+  }
+
+  .lang-switch__link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.4rem;
+    padding: 0.3rem 0.35rem;
+    border: 1px solid transparent;
+    border-radius: 2px;
+    color: var(--color-muted);
+    font-family: var(--font-body);
+    font-size: 0.6rem;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    line-height: 1;
+    text-decoration: none;
+    transition:
+      color 0.3s var(--floor-ease),
+      border-color 0.3s var(--floor-ease),
+      background-color 0.3s var(--floor-ease);
+  }
+
+  .lang-switch__link:hover {
+    color: var(--color-accent-soft);
+  }
+
+  .lang-switch__link[aria-current='page'] {
+    border-color: color-mix(in srgb, var(--color-accent) 45%, transparent);
+    background: color-mix(in srgb, var(--color-accent) 8%, transparent);
+    color: var(--color-accent-soft);
+  }
+
+  .lang-switch__flag {
+    display: block;
+    height: 0.8rem;
+    width: auto;
+    box-shadow: 0 0 0 1px color-mix(in srgb, var(--color-fg) 14%, transparent);
+  }
+
+  .lang-switch__code {
+    text-transform: uppercase;
+  }
+
+  /* The language is spelled out for screen readers, so the visible ES/EN stays
+     the accessible name and never depends on reading a flag. */
+  .lang-switch__name {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    white-space: nowrap;
+    clip-path: inset(50%);
+  }
+
+  @media (max-width: 1023px) {
+    .site-header__inner {
+      gap: 1rem;
+    }
+  }
+
+  /* Below 768px the nav is hidden; the selector must stay and stay tappable. */
+  @media (max-width: 767px) {
+    .site-header__inner {
+      gap: 0.5rem;
+    }
+
+    .site-header__tail {
+      gap: 0.4rem;
+    }
+
+    .lang-switch__link {
+      min-width: 2.75rem;
+      min-height: 2.75rem;
+      padding: 0 0.25rem;
+      gap: 0.25rem;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .lang-switch__link {
+      transition: none;
+    }
+  }
+</style>

@@ -1,25 +1,31 @@
-<section id="privacidad" class="privacy-band" aria-labelledby="privacy-title">
+---
+import { getLang, localePath, useTranslations } from '../../i18n';
+
+const lang = getLang(Astro.url.pathname);
+const t = useTranslations(lang);
+---
+
+<section id={t.privacy.anchor} class="privacy-band" aria-labelledby="privacy-title">
   <div class="frame">
     <div class="section-frame__rule">
-      <span class="section-frame__label">Privacidad</span>
+      <span class="section-frame__label">{t.privacy.label}</span>
     </div>
 
     <div class="privacy-grid">
       <div>
-        <h2 id="privacy-title">Tus datos viven en tu teléfono</h2>
+        <h2 id="privacy-title">{t.privacy.title}</h2>
         <p>
-          GymLab guarda tu historial en el dispositivo. Entrenas sin crear una cuenta y tus
-          datos no se comparten con terceros.
+          {t.privacy.text}
         </p>
-        <a href="/privacidad" class="text-link">Leer la política de privacidad →</a>
+        <a href={localePath(lang, '/privacidad')} class="text-link">{t.privacy.link}</a>
       </div>
 
       <div class="local-diagram" aria-hidden="true">
         <div class="local-diagram__ring"></div>
         <div class="local-diagram__phone"></div>
         <div class="local-diagram__dot"></div>
-        <span class="local-diagram__tag local-diagram__tag--top">Sin cuenta</span>
-        <span class="local-diagram__tag local-diagram__tag--bottom">En el dispositivo</span>
+        <span class="local-diagram__tag local-diagram__tag--top">{t.privacy.tags.top}</span>
+        <span class="local-diagram__tag local-diagram__tag--bottom">{t.privacy.tags.bottom}</span>
       </div>
     </div>
   </div>

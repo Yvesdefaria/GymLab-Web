@@ -1,15 +1,8 @@
 ---
-interface Feature {
-  n: string;
-  title: string;
-  text: string;
-}
+import { getLang, useTranslations } from '../../i18n';
 
-interface Props {
-  features: Feature[];
-}
-
-const { features } = Astro.props;
+const lang = getLang(Astro.url.pathname);
+const t = useTranslations(lang);
 
 const week = [
   { h: '30%', on: false },
@@ -28,19 +21,19 @@ const streakDays = Array.from({ length: 28 }, (_, index) => index);
 const activeDays = new Set([2, 3, 4, 5, 8, 9, 10, 11, 12, 16, 17, 18, 22, 23, 24, 25, 26]);
 ---
 
-<section id="features" class="floor-section" aria-labelledby="features-title">
+<section id={t.features.anchor} class="floor-section" aria-labelledby="features-title">
   <div class="frame">
     <header class="section-frame">
       <div class="section-frame__rule">
-        <span class="section-frame__label">Funciones</span>
+        <span class="section-frame__label">{t.features.label}</span>
         <span class="section-frame__meta">01—08</span>
       </div>
-      <h2 id="features-title">De la rutina al gráfico</h2>
+      <h2 id="features-title">{t.features.title}</h2>
     </header>
 
     <div class="station-board">
       {
-        features.map((feature) => (
+        t.features.items.map((feature) => (
           <article class:list={['station', `station--${Number(feature.n)}`]}>
             <div class="station__head">
               <span class="station__no">{feature.n}</span>
@@ -53,18 +46,14 @@ const activeDays = new Set([2, 3, 4, 5, 8, 9, 10, 11, 12, 16, 17, 18, 22, 23, 24
               {feature.n === '01' && (
                 <div class="mini">
                   <div class="mini__meta">
-                    <span>Semana</span>
-                    <span>Ejemplo</span>
+                    <span>{t.features.mini.week.label}</span>
+                    <span>{t.features.mini.week.meta}</span>
                   </div>
                   <div class="mini-week">
                     <div class="mini-week__days">
-                      <span>L</span>
-                      <span>M</span>
-                      <span>X</span>
-                      <span>J</span>
-                      <span>V</span>
-                      <span>S</span>
-                      <span>D</span>
+                      {t.features.mini.week.days.map((day) => (
+                        <span>{day}</span>
+                      ))}
                     </div>
                     <div class="mini-week__bars">
                       {week.map((day) => (
@@ -78,15 +67,15 @@ const activeDays = new Set([2, 3, 4, 5, 8, 9, 10, 11, 12, 16, 17, 18, 22, 23, 24
               {feature.n === '02' && (
                 <div class="mini">
                   <div class="mini__meta">
-                    <span>Serie</span>
-                    <span>Ejemplo</span>
+                    <span>{t.features.mini.sets.label}</span>
+                    <span>{t.features.mini.sets.meta}</span>
                   </div>
                   <table class="mini-sets">
                     <thead>
                       <tr>
-                        <th scope="col">#</th>
-                        <th scope="col">kg</th>
-                        <th scope="col">reps</th>
+                        {t.features.mini.sets.columns.map((column) => (
+                          <th scope="col">{column}</th>
+                        ))}
                       </tr>
                     </thead>
                     <tbody>
@@ -97,7 +86,7 @@ const activeDays = new Set([2, 3, 4, 5, 8, 9, 10, 11, 12, 16, 17, 18, 22, 23, 24
                       </tr>
                       <tr class="is-current">
                         <td>02</td>
-                        <td>82,5</td>
+                        <td>{t.features.mini.sets.currentLoad}</td>
                         <td>8</td>
                       </tr>
                       <tr>
@@ -113,8 +102,8 @@ const activeDays = new Set([2, 3, 4, 5, 8, 9, 10, 11, 12, 16, 17, 18, 22, 23, 24
               {feature.n === '03' && (
                 <div class="mini">
                   <div class="mini__meta">
-                    <span>Volumen</span>
-                    <span>Ejemplo</span>
+                    <span>{t.features.mini.volume.label}</span>
+                    <span>{t.features.mini.volume.meta}</span>
                   </div>
                   <div class="mini-bars">
                     {volume.map((height, barIndex) => (
@@ -127,16 +116,13 @@ const activeDays = new Set([2, 3, 4, 5, 8, 9, 10, 11, 12, 16, 17, 18, 22, 23, 24
               {feature.n === '04' && (
                 <div class="mini">
                   <div class="mini__meta">
-                    <span>Calculadoras</span>
-                    <span>9</span>
+                    <span>{t.features.mini.calculators.label}</span>
+                    <span>{t.features.mini.calculators.meta}</span>
                   </div>
                   <ul class="calc-chips">
-                    <li>IMC</li>
-                    <li>1RM</li>
-                    <li>Agua</li>
-                    <li>Macros</li>
-                    <li>Grasa</li>
-                    <li>Medidas</li>
+                    {t.features.mini.calculators.items.map((item) => (
+                      <li>{item}</li>
+                    ))}
                   </ul>
                 </div>
               )}
@@ -144,14 +130,14 @@ const activeDays = new Set([2, 3, 4, 5, 8, 9, 10, 11, 12, 16, 17, 18, 22, 23, 24
               {feature.n === '05' && (
                 <div class="mini">
                   <div class="mini__meta">
-                    <span>Catálogo</span>
-                    <span>873</span>
+                    <span>{t.features.mini.catalogue.label}</span>
+                    <span>{t.features.mini.catalogue.meta}</span>
                   </div>
                   <div class="mini-catalog">
                     <div class="mini-catalog__filters">
-                      <span>Músculo</span>
-                      <span>Equipo</span>
-                      <span>Categoría</span>
+                      {t.features.mini.catalogue.filters.map((filter) => (
+                        <span>{filter}</span>
+                      ))}
                     </div>
                     <div class="mini-catalog__grid">
                       {catalogLetters.map((letter) => (
@@ -168,8 +154,8 @@ const activeDays = new Set([2, 3, 4, 5, 8, 9, 10, 11, 12, 16, 17, 18, 22, 23, 24
               {feature.n === '06' && (
                 <div class="mini">
                   <div class="mini__meta">
-                    <span>Comparar</span>
-                    <span>Fotos</span>
+                    <span>{t.features.mini.compare.label}</span>
+                    <span>{t.features.mini.compare.meta}</span>
                   </div>
                   <div class="mini-compare">
                     <div class="mini-compare__frame mini-compare__frame--a">
@@ -186,8 +172,8 @@ const activeDays = new Set([2, 3, 4, 5, 8, 9, 10, 11, 12, 16, 17, 18, 22, 23, 24
               {feature.n === '07' && (
                 <div class="mini">
                   <div class="mini__meta">
-                    <span>Pasos</span>
-                    <span>Widget</span>
+                    <span>{t.features.mini.steps.label}</span>
+                    <span>{t.features.mini.steps.meta}</span>
                   </div>
                   <div class="mini-steps">
                     <div class="mini-steps__bars">
@@ -203,8 +189,8 @@ const activeDays = new Set([2, 3, 4, 5, 8, 9, 10, 11, 12, 16, 17, 18, 22, 23, 24
               {feature.n === '08' && (
                 <div class="mini">
                   <div class="mini__meta">
-                    <span>Racha</span>
-                    <span>Logros</span>
+                    <span>{t.features.mini.streak.label}</span>
+                    <span>{t.features.mini.streak.meta}</span>
                   </div>
                   <div class="mini-streak">
                     {streakDays.map((day) => (
