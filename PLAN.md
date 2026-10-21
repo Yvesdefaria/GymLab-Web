@@ -47,7 +47,7 @@ Handoff document to continue this project in a new session. Canonical project ru
 - [x] "Última actualización: 5 de septiembre de 2026" added; "Versión en preparación" notice removed from `LegalLayout`.
 - [x] Reviewed against the app's current states (AdMob/IAP future, Sentry/PostHog opt-in, permissions, 14+).
 - Note: the titular remains unnamed as in the app text; add name/NIF/domicile if a named responsible is required.
-- [ ] **2026-10-21 — Health Connect disclosure (Play requirement)**: `/privacidad` gains section 6 «Salud y actividad física (Health Connect y HealthKit)» (12 sections) and section 7 «Permisos» drops the inaccurate Motion & Fitness/Location claim; `/terminos` §3 also corrected. **Code done and built — pending deploy**: the live page is still the 5-sep version without Health Connect (verified by CDP from the app's rationale WebView). Do not submit the app to review before deploying this.
+- [x] **2026-10-21 — Health Connect disclosure (Play requirement)**: `/privacidad` gains section 6 «Salud y actividad física (Health Connect y HealthKit)» (12 sections) and section 7 «Permisos» drops the inaccurate Motion & Fitness/Location claim; `/terminos` §3 also corrected. Deployed (`329ecb3`): production shows «Health Connect» + 21-oct date, and the app's rationale WebView loads the same version (CDP-verified from emulator-5554).
 
 ### Follow-ups in the app repo (`ProyectoGymLab`) — separate commits there
 
