@@ -15,6 +15,7 @@ Public website for **GymLab** (local-first training app; app repo: `ProyectoGymL
 - `npm run dev` — dev server
 - `npm run build` — production build → `dist/`
 - `npm run preview` — preview the build
+- `npm run check:i18n` — post-build bilingual gate (routes, hreflang, redirects, sitemap)
 
 ## Structure
 

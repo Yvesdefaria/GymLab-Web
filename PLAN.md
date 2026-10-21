@@ -4,15 +4,18 @@ Handoff document to continue this project in a new session. Canonical project ru
 `AGENTS.md`; full task history and evidence live in `odd/tasks/web-landing-legales.md`
 (also mirrored in Engram: project `webgymlab`, topic `odd/web-landing-legales/tasks`).
 
-## Where we are (2026-10-17)
+## Where we are (2026-10-21)
 
 - Repo: `Yvesdefaria/GymLab-Web` (public) → local `WebGymLab`. All work is pushed to `main`.
-- Stack: Astro + MDX + Tailwind v4 (CSS-first), TypeScript strict, fully static. Site language: Spanish.
-- Landing (hero, 8 features, showcase with real screenshots, local-first strip, FAQ) + legal
-  skeletons (`/privacidad`, `/terminos`) are live in code. `npm run build` green (3 pages).
+- Stack: Astro + MDX + Tailwind v4 (CSS-first), TypeScript strict, fully static. Site languages:
+  `es` (default) and `en-GB`, both under a locale prefix.
+- Landing (hero, 8 features, showcase with real screenshots, local-first strip, FAQ) + the full
+  privacy policy and terms are live in both languages: `/es/…` and `/en/…` are canonical, `/`
+  302s to `/es/`, and the legacy `/privacidad` + `/terminos` 301 to their Spanish pages.
+  `npm run build` green (9 pages) and `npm run check:i18n` green (82 checks).
 - Brand system ported from the app (`gymlab-app/src/index.css`): dark gold tokens, Oswald/Barlow
   self-hosted, panel/grain primitives. Real app screenshots in `public/screens/`.
-- Done: T1 bootstrap · T2 scaffold · T3 brand · T4 layout · T5 sections · T6 screenshots · T7 legal skeleton.
+- Done: T1 bootstrap · T2 scaffold · T3 brand · T4 layout · T5 sections · T6 screenshots · T7 legal skeleton · T13 bilingual site.
 
 ## Remaining work
 
@@ -33,12 +36,30 @@ Handoff document to continue this project in a new session. Canonical project ru
 - [ ] T9b — Web Analytics beacon (token pending) + "Always Use HTTPS" toggle + optional www→apex redirect + switch DonDominio renewal to automatic.
 - [x] Email Routing for `gymlab@gymlab.dev` (2026-10-21) — **Cloudflare Email Routing (free, no paid mailbox)**: destination verified, MX/SPF/DKIM live and verified from 1.1.1.1 + 8.8.8.8, real delivery test OK. Receive-only; replies go out from the personal Gmail. The `Emails received` counter is an aggregate metric and lags behind actual delivery — the delivery test is the acceptance evidence.
 
+### T13 — Bilingual site ES/EN — DONE (2026-10-21)
+
+- [x] Locale routes `/es/…` and `/en/…` for the landing, the privacy policy and the terms; `/` 302s to `/es/`.
+- [x] `src/i18n/` dictionaries (`es`, `en` in en-GB) with the English typed against the Spanish shape;
+      legal documents kept as structured sections so both languages render from the same layout.
+- [x] Language selector in the header (Spain + UK flags, both visible, `aria-current`), always visible
+      and ≥ 44 px touch target on mobile. English copy written fresh, not literalism.
+- [x] Primary CTA `Prueba la app` / `Try the app` → `https://app.gymlab.dev` in the header and the hero.
+      The subdomain does not resolve yet: the dead link is accepted until T12 ships.
+- [x] Legacy `/privacidad` and `/terminos` 301 to the Spanish pages (`public/_redirects` plus dev-only
+      fallback stubs) — Play Console and the Health Connect rationale keep working.
+- [x] Reciprocal `hreflang` (es/en/x-default), `og:locale`, canonical and alternates normalised to the
+      same trailing-slash form; the sitemap emits both locales with alternates and excludes the stubs.
+- [x] `scripts/check-i18n.mjs` (`npm run check:i18n`): 82 post-build assertions, green. `npm run build`
+      builds 9 pages green. 375 px overflow measured, not eyeballed (`scrollWidth 360 ≤ 375`).
+- Open: the English legal pages carry a courtesy-translation clause ("the Spanish version prevails") —
+      **owner confirmation pending**. The Spanish legal prose moved verbatim (0 paragraphs reworded).
+
 ### T12 — App web en `app.gymlab.dev` (planned, not started)
 
 - Objective: serve the GymLab app (repo `ProyectoGymLab`, `gymlab-app/`) as a static SPA at `app.gymlab.dev` with HTTPS.
 - Approach: second Worker `gymlab-app` connected to `Yvesdefaria/GymLab`, root directory `gymlab-app`, build `npm run build`, deploy `npx wrangler deploy`; `wrangler.jsonc` with `assets.directory = "./dist"` + `not_found_handling = "single-page-application"` (React Router deep links); custom domain `app.gymlab.dev`.
 - Fit: 2,021 files / 101 MB, largest 0.88 MB — within Workers Free (20k files, 25 MiB/file).
-- Blocker: the app repo is 59 commits ahead of `origin/main` with uncommitted android/CHANGELOG changes. Decide: (A) push the app repo → auto-deploy, or (B) local `wrangler` deploy with login/token.
+- Blocker: **cleared as of 2026-10-21** — the app repo was pushed on 19/10 (`origin/main` = `d457d814`) and its tracked tree is clean; only the 5 commits from 21/10 are unpushed. Decide: (A) push those commits → auto-deploy, or (B) local `wrangler` deploy with login/token. The owner asked to hold the app deploy while the app is being changed.
 - Caveats: mobile-first UI on desktop; native-only plugins (health, local notifications, filesystem, camera) degrade on web; review Sentry/PostHog consent; optional `noindex`; PWA service worker already has preload recovery.
 
 ### T10 — Phase 3: legal drafting — DONE (2026-10-19)
@@ -68,6 +89,8 @@ Handoff document to continue this project in a new session. Canonical project ru
 ## Useful commands
 
 - Dev: `npm run dev` · Build: `npm run build` · Preview: `npm run preview`
+- Bilingual gate (after a build): `npm run check:i18n` — route set, canonical/hreflang agreement,
+  no Spanish leftovers under `/en/`, redirect rules and sitemap alternates.
 - Re-capture app screenshots (run from the app repo):
   `cd ProyectoGymLab/gymlab-app`
   `python tests/e2e/scripts/with_server.py "<path-to-WebGymLab>\scripts\capture-screens.py" --port 5180`
