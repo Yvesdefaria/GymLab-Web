@@ -5,7 +5,7 @@ export const es = {
     home: {
       title: 'GymLab — App de entrenamiento y progreso',
       description:
-        'Planifica tu rutina, registra cada serie y mira tu progreso en gráficos. 873 ejercicios y 9 calculadoras. Próximamente en Google Play y App Store.',
+        'App de entrenamiento gratis y sin conexión. Planifica tu rutina de gimnasio, registra cada serie y mira tu progreso en gráficos. Pruébala en el navegador.',
     },
     ogImageAlt: 'GymLab — Deja de entrenar de memoria',
   },
@@ -59,7 +59,7 @@ export const es = {
   features: {
     anchor: 'features',
     label: 'Funciones',
-    title: 'De la rutina al gráfico',
+    title: 'La app de entrenamiento, de la rutina al gráfico',
     items: [
       {
         n: '01',
@@ -199,6 +199,14 @@ export const es = {
       {
         q: '¿Cuándo y en qué tiendas sale?',
         a: 'Estamos preparando el lanzamiento para Google Play y App Store. Si quieres enterarte el día uno, escríbenos a gymlab@gymlab.dev.',
+      },
+      {
+        q: '¿GymLab es gratis?',
+        a: 'Sí. GymLab es gratis: puedes entrenar, registrar tus series y consultar tu historial sin pagar nada.',
+      },
+      {
+        q: '¿Necesito crear una cuenta?',
+        a: 'No. Abres la app y entrenas: sin registro, sin correo y sin contraseña.',
       },
     ],
   },

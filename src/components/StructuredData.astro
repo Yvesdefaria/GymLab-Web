@@ -1,0 +1,56 @@
+---
+// Structured data for the landing only: the app itself plus the FAQ the page
+// renders. Ratings, reviews and store links are deliberately absent — none of
+// them exist yet, and inventing them breaks search guidelines.
+import { getLang, useTranslations } from '../i18n';
+
+const lang = getLang(Astro.url.pathname);
+const t = useTranslations(lang);
+
+const origin = 'https://gymlab.dev';
+const inLanguage = lang === 'en' ? 'en-GB' : 'es-ES';
+
+const featureList =
+  lang === 'en'
+    ? ['873 exercises with photos', '9 calculators', '68 routine templates', 'Works offline']
+    : [
+        '873 ejercicios con foto',
+        '9 calculadoras',
+        '68 plantillas de rutina',
+        'Funciona sin conexión',
+      ];
+
+const softwareApplication = {
+  '@context': 'https://schema.org',
+  '@type': 'SoftwareApplication',
+  name: 'GymLab',
+  applicationCategory: 'HealthApplication',
+  operatingSystem: 'Android, iOS, Web',
+  url: `${origin}/${lang}/`,
+  description: t.meta.home.description,
+  inLanguage,
+  offers: {
+    '@type': 'Offer',
+    price: '0',
+    priceCurrency: 'EUR',
+  },
+  featureList,
+};
+
+const faqPage = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  inLanguage,
+  mainEntity: t.faq.items.map((item) => ({
+    '@type': 'Question',
+    name: item.q,
+    acceptedAnswer: {
+      '@type': 'Answer',
+      text: item.a,
+    },
+  })),
+};
+---
+
+<script type="application/ld+json" is:inline set:html={JSON.stringify(softwareApplication)} />
+<script type="application/ld+json" is:inline set:html={JSON.stringify(faqPage)} />

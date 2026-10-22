@@ -2,6 +2,7 @@
 // The canonical landing, rendered once per locale by `getStaticPaths`.
 // Sections resolve their own language from `Astro.url`, so no copy is passed down.
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import StructuredData from '../../components/StructuredData.astro';
 import Hero from '../../components/sections/Hero.astro';
 import ProofBand from '../../components/sections/ProofBand.astro';
 import FeatureBoard from '../../components/sections/FeatureBoard.astro';
@@ -16,6 +17,7 @@ export function getStaticPaths() {
 }
 ---
 <BaseLayout>
+  <StructuredData slot="head" />
   <Hero />
   <ProofBand />
   <FeatureBoard />

@@ -7,7 +7,7 @@ export const en: Dict = {
     home: {
       title: 'GymLab — Training and progress app',
       description:
-        'Plan your routine, log every set and watch your progress in graphs. 873 exercises and 9 calculators. Coming soon to Google Play and the App Store.',
+        'Free training app that works offline. Plan your gym routine, log every set and watch your progress in graphs. 873 exercises, 9 calculators, no account.',
     },
     ogImageAlt: 'GymLab — Stop training from memory',
   },
@@ -61,7 +61,7 @@ export const en: Dict = {
   features: {
     anchor: 'features',
     label: 'Features',
-    title: 'From routine to graph',
+    title: 'The training app, from routine to graph',
     items: [
       {
         n: '01',
@@ -201,6 +201,14 @@ export const en: Dict = {
       {
         q: 'When does it launch, and where can I get it?',
         a: 'We’re getting the launch ready for Google Play and the App Store. If you want to know on day one, email us at gymlab@gymlab.dev.',
+      },
+      {
+        q: 'Is GymLab free?',
+        a: 'Yes. GymLab is free: you can train, log your sets and check your history without paying anything.',
+      },
+      {
+        q: 'Do I need an account?',
+        a: 'No. You open the app and train: no sign-up, no email, no password.',
       },
     ],
   },

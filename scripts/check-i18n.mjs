@@ -115,6 +115,101 @@ if (!existsSync(sitemapFile)) {
   }
 }
 
+// Landing SEO contract: the meta description, the visible FAQ and the JSON-LD
+// graphs must describe the same page. Only the landing carries structured data.
+const LANDINGS = [
+  {
+    path: '/es/',
+    inLanguage: 'es-ES',
+    terms: ['app de entrenamiento', 'gratis', 'sin conexión'],
+    questions: ['¿GymLab es gratis?', '¿Necesito crear una cuenta?'],
+  },
+  {
+    path: '/en/',
+    inLanguage: 'en-GB',
+    terms: ['training app', 'free', 'offline'],
+    questions: ['Is GymLab free?', 'Do I need an account?'],
+  },
+];
+
+for (const landing of LANDINGS) {
+  const { path } = landing;
+  const file = fileFor(path);
+  if (!existsSync(file)) {
+    check(`seo ${path} exists`, false);
+    continue;
+  }
+  const html = readFileSync(file, 'utf8');
+
+  // Description: 150-160 characters and carrying the primary keyword.
+  const metaDescription = html.match(/<meta name="description" content="([^"]*)">/)?.[1] ?? '';
+  check(
+    `seo ${path} description length`,
+    metaDescription.length >= 150 && metaDescription.length <= 160,
+    `got ${metaDescription.length} characters`,
+  );
+  for (const term of landing.terms) {
+    check(
+      `seo ${path} description mentions "${term}"`,
+      metaDescription.toLowerCase().includes(term.toLowerCase()),
+    );
+  }
+
+  // Both new FAQ entries must reach the rendered page.
+  for (const question of landing.questions) {
+    check(`seo ${path} renders FAQ "${question}"`, html.includes(question));
+  }
+
+  // Exactly two graphs, and every one of them must be valid JSON.
+  const blocks = [
+    ...html.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g),
+  ].map((match) => match[1]);
+  check(`seo ${path} has 2 json-ld blocks`, blocks.length === 2, `got ${blocks.length}`);
+
+  const graphs = [];
+  for (const block of blocks) {
+    try {
+      graphs.push(JSON.parse(block));
+    } catch (error) {
+      check(`seo ${path} json-ld parses`, false, String(error));
+    }
+  }
+  check(
+    `seo ${path} json-ld blocks all parse`,
+    graphs.length === blocks.length,
+    `${graphs.length}/${blocks.length} parsed`,
+  );
+
+  const app = graphs.find((graph) => graph['@type'] === 'SoftwareApplication');
+  const faq = graphs.find((graph) => graph['@type'] === 'FAQPage');
+  check(`seo ${path} has SoftwareApplication`, Boolean(app));
+  check(`seo ${path} has FAQPage`, Boolean(faq));
+
+  if (app) {
+    check(`seo ${path} offer price is "0"`, app.offers?.price === '0', `got ${app.offers?.price}`);
+    check(
+      `seo ${path} has no aggregateRating`,
+      !Object.hasOwn(app, 'aggregateRating'),
+    );
+    check(
+      `seo ${path} inLanguage is ${landing.inLanguage}`,
+      app.inLanguage === landing.inLanguage,
+      `got ${app.inLanguage}`,
+    );
+  }
+
+  if (faq) {
+    // The schema must mirror the FAQ actually visible on the page.
+    const renderedAnswers = html.split('faq-item__answer').length - 1;
+    const questions = Array.isArray(faq.mainEntity) ? faq.mainEntity.length : -1;
+    check(
+      `seo ${path} FAQPage mirrors rendered answers`,
+      questions === renderedAnswers,
+      `schema ${questions}, rendered ${renderedAnswers}`,
+    );
+  }
+}
+
 const failed = checks.filter((c) => !c.ok);
 for (const c of checks) {
   if (!c.ok) console.log(`FAIL  ${c.name}${c.detail ? ` — ${c.detail}` : ''}`);
