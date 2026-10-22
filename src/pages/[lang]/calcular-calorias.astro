@@ -1,0 +1,441 @@
+---
+// Daily calorie calculator (TDEE), rendered once per locale.
+// The same numbers render on the server (so the page is useful without JS and the
+// HTML carries the result) and are recomputed on input by the bundled script.
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { LOCALES, getLang, localePath, useTranslations } from '../../i18n';
+import { tdeeRange, type ActivityLevel, type Sex } from '../../lib/calculators';
+
+export function getStaticPaths() {
+  return LOCALES.map((lang) => ({ params: { lang } }));
+}
+
+const lang = getLang(Astro.url.pathname);
+const t = useTranslations(lang);
+const c = t.calc.calories;
+
+// Seed values, so the page answers something before the visitor types.
+const SEED_WEIGHT = 80;
+const SEED_HEIGHT = 180;
+const SEED_AGE = 30;
+const SEED_SEX: Sex = 'male';
+const SEED_ACTIVITY: ActivityLevel = 'moderate';
+
+// The select values are the app's enums; the labels are the dictionary copy.
+const ACTIVITY_OPTIONS: { value: ActivityLevel; label: string }[] = [
+  { value: 'sedentary', label: c.form.activityOptions.sedentary },
+  { value: 'light', label: c.form.activityOptions.light },
+  { value: 'moderate', label: c.form.activityOptions.moderate },
+  { value: 'active', label: c.form.activityOptions.active },
+  { value: 'very_active', label: c.form.activityOptions.veryActive },
+];
+
+const seed = tdeeRange(SEED_WEIGHT, SEED_HEIGHT, SEED_AGE, SEED_SEX, SEED_ACTIVITY);
+const fmt = (value: number): string => value.toLocaleString(lang, { maximumFractionDigits: 1 });
+---
+
+<BaseLayout title={c.meta.title} description={c.meta.description}>
+  <section class="floor-section calc-page" aria-labelledby="calc-title">
+    <div class="frame">
+      <header class="section-frame">
+        <div class="section-frame__rule">
+          <span class="section-frame__label">{c.label}</span>
+          <span class="section-frame__meta">TDEE</span>
+        </div>
+        <h1 id="calc-title">{c.title}</h1>
+        <p class="calc-page__sub">{c.sub}</p>
+      </header>
+
+      <div class="calc-page__grid">
+        <form class="calc-form" id="cal-form" novalidate>
+          <fieldset>
+            <legend>{c.form.legend}</legend>
+
+            <label for="cal-weight">{c.form.weight}</label>
+            <div class="calc-form__field">
+              <input
+                id="cal-weight"
+                name="weight"
+                type="number"
+                inputmode="decimal"
+                min="0"
+                step="0.5"
+                value={SEED_WEIGHT}
+                aria-describedby="cal-weight-hint"
+              />
+              <span class="calc-form__unit">{c.form.weightUnit}</span>
+            </div>
+            <p class="calc-form__hint" id="cal-weight-hint">{c.form.weightHint}</p>
+
+            <label for="cal-height">{c.form.height}</label>
+            <div class="calc-form__field">
+              <input
+                id="cal-height"
+                name="height"
+                type="number"
+                inputmode="numeric"
+                min="0"
+                step="1"
+                value={SEED_HEIGHT}
+                aria-describedby="cal-height-hint"
+              />
+              <span class="calc-form__unit">{c.form.heightUnit}</span>
+            </div>
+            <p class="calc-form__hint" id="cal-height-hint">{c.form.heightHint}</p>
+
+            <label for="cal-age">{c.form.age}</label>
+            <div class="calc-form__field">
+              <input
+                id="cal-age"
+                name="age"
+                type="number"
+                inputmode="numeric"
+                min="0"
+                step="1"
+                value={SEED_AGE}
+                aria-describedby="cal-age-hint"
+              />
+              <span class="calc-form__unit">{c.form.ageUnit}</span>
+            </div>
+            <p class="calc-form__hint" id="cal-age-hint">{c.form.ageHint}</p>
+
+            <label for="cal-sex">{c.form.sex}</label>
+            <div class="calc-form__field">
+              <select id="cal-sex" name="sex" aria-describedby="cal-sex-hint">
+                <option value="male" selected={SEED_SEX === 'male'}>{c.form.sexOptions.male}</option>
+                <option value="female" selected={SEED_SEX === 'female'}>{c.form.sexOptions.female}</option>
+              </select>
+            </div>
+            <p class="calc-form__hint" id="cal-sex-hint">{c.form.sexHint}</p>
+
+            <label for="cal-activity">{c.form.activity}</label>
+            <div class="calc-form__field">
+              <select id="cal-activity" name="activity">
+                {ACTIVITY_OPTIONS.map((option) => (
+                  <option value={option.value} selected={SEED_ACTIVITY === option.value}>
+                    {option.label}
+                  </option>
+                ))}
+              </select>
+            </div>
+          </fieldset>
+        </form>
+
+        <aside class="calc-result" aria-labelledby="cal-result-title">
+          <h2 id="cal-result-title">{c.result.legend}</h2>
+
+          <dl class="calc-result__list" aria-live="polite">
+            <div class="calc-result__row">
+              <dt>{c.result.bmr}</dt>
+              <dd><output id="cal-bmr">{fmt(seed.bmr)}</output> {c.result.unit}</dd>
+            </div>
+            <div class="calc-result__row calc-result__row--lead">
+              <dt>{c.result.tdee}</dt>
+              <dd><output id="cal-tdee">{fmt(seed.tdee)}</output> {c.result.unit}</dd>
+            </div>
+            <div class="calc-result__row">
+              <dt>{c.result.deficit}</dt>
+              <dd><output id="cal-deficit">{fmt(seed.deficit)}</output> {c.result.unit}</dd>
+            </div>
+            <div class="calc-result__row">
+              <dt>{c.result.surplus}</dt>
+              <dd><output id="cal-surplus">{fmt(seed.surplus)}</output> {c.result.unit}</dd>
+            </div>
+          </dl>
+
+          <p
+            class="calc-result__note"
+            id="cal-note"
+            role="status"
+            data-invalid={c.result.invalid}
+            hidden
+          ></p>
+        </aside>
+      </div>
+
+      <div class="calc-page__prose">
+        <section aria-labelledby="cal-explain">
+          <h2 id="cal-explain">{c.explain.title}</h2>
+          {c.explain.body.map((paragraph) => <p>{paragraph}</p>)}
+        </section>
+
+        <section aria-labelledby="cal-limits">
+          <h2 id="cal-limits">{c.limits.title}</h2>
+          <ul>
+            {c.limits.items.map((item) => <li>{item}</li>)}
+          </ul>
+        </section>
+      </div>
+
+      <div class="calc-page__actions">
+        <a href="https://app.gymlab.dev" class="btn btn--primary">{c.cta}</a>
+        <a href={localePath(lang)} class="btn btn--ghost">{c.back}</a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  /* Reuses the site tokens; the visual work is deferred on purpose. */
+  .section-frame h1 {
+    margin: clamp(1.4rem, 2.5vw, 2rem) 0 0;
+    max-width: 20ch;
+    font-family: var(--font-display);
+    font-size: clamp(2.2rem, 4.6vw, 4.4rem);
+    font-weight: 600;
+    letter-spacing: 0.005em;
+    line-height: 0.96;
+    text-wrap: balance;
+  }
+
+  .calc-page__sub {
+    margin-top: 1rem;
+    max-width: 52ch;
+    color: var(--color-muted);
+    font-size: 1.05rem;
+  }
+
+  .calc-page__grid {
+    display: grid;
+    gap: 1.5rem;
+    margin-top: clamp(2rem, 4vw, 3rem);
+    grid-template-columns: 1fr;
+  }
+
+  .calc-form fieldset {
+    margin: 0;
+    padding: 1.5rem;
+    border: 1px solid var(--color-border);
+    background: color-mix(in srgb, var(--color-bg-elevated) 70%, transparent);
+  }
+
+  .calc-form legend {
+    padding-inline: 0.5rem;
+    font-family: var(--font-display);
+    font-size: 0.8rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--color-accent);
+  }
+
+  .calc-form label {
+    display: block;
+    margin-top: 1.25rem;
+    font-weight: 600;
+  }
+
+  .calc-form__field {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 0.4rem;
+  }
+
+  .calc-form input,
+  .calc-form select {
+    width: 100%;
+    min-height: 44px;
+    padding: 0.5rem 0.75rem;
+    border: 1px solid var(--color-border);
+    border-radius: 0;
+    background: var(--color-bg);
+    color: var(--color-fg);
+    font: inherit;
+  }
+
+  .calc-form input {
+    font-size: 1.25rem;
+  }
+
+  .calc-form input:focus-visible,
+  .calc-form select:focus-visible {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 2px;
+  }
+
+  .calc-form__unit {
+    color: var(--color-muted);
+    font-size: 0.9rem;
+  }
+
+  .calc-form__hint {
+    margin-top: 0.35rem;
+    color: var(--color-muted);
+    font-size: 0.85rem;
+  }
+
+  .calc-result {
+    padding: 1.5rem;
+    border: 1px solid var(--color-border);
+  }
+
+  .calc-result h2 {
+    margin: 0;
+    font-family: var(--font-display);
+    font-size: 0.8rem;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--color-accent);
+  }
+
+  .calc-result__list {
+    margin: 1.25rem 0 0;
+  }
+
+  .calc-result__row {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 1rem;
+    padding-block: 0.6rem;
+    border-top: 1px solid var(--color-border);
+  }
+
+  .calc-result__row dt {
+    color: var(--color-muted);
+  }
+
+  .calc-result__row dd {
+    margin: 0;
+    font-family: var(--font-display);
+    font-size: 1.5rem;
+  }
+
+  .calc-result__row--lead dd {
+    font-size: 2.25rem;
+    color: var(--color-accent-soft);
+  }
+
+  .calc-result__note {
+    margin-top: 0.75rem;
+    color: var(--color-muted);
+    font-size: 0.85rem;
+  }
+
+  .calc-page__prose {
+    display: grid;
+    gap: 1.5rem;
+    margin-top: clamp(2rem, 4vw, 3rem);
+    grid-template-columns: 1fr;
+  }
+
+  .calc-page__prose h2 {
+    margin: 0 0 0.75rem;
+    font-family: var(--font-display);
+    font-size: 1.35rem;
+    font-weight: 600;
+  }
+
+  .calc-page__prose p {
+    margin-top: 0.75rem;
+    color: var(--color-muted);
+    max-width: 62ch;
+  }
+
+  .calc-page__prose ul {
+    margin: 0;
+    padding-left: 1.1rem;
+    color: var(--color-muted);
+    max-width: 62ch;
+  }
+
+  .calc-page__prose li + li {
+    margin-top: 0.5rem;
+  }
+
+  .calc-page__actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-top: clamp(2rem, 4vw, 3rem);
+  }
+
+  @media (min-width: 900px) {
+    .calc-page__grid {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .calc-page__prose {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+</style>
+
+<script>
+  import { tdeeRange } from '../../lib/calculators';
+
+  const weightInput = document.querySelector('#cal-weight');
+  const heightInput = document.querySelector('#cal-height');
+  const ageInput = document.querySelector('#cal-age');
+  const sexSelect = document.querySelector('#cal-sex');
+  const activitySelect = document.querySelector('#cal-activity');
+  const bmrOut = document.querySelector('#cal-bmr');
+  const tdeeOut = document.querySelector('#cal-tdee');
+  const deficitOut = document.querySelector('#cal-deficit');
+  const surplusOut = document.querySelector('#cal-surplus');
+  const note = document.querySelector('#cal-note');
+
+  // The messages live in the markup so this script owns no copy.
+  const messages = {
+    invalid: note?.getAttribute('data-invalid') ?? '',
+  };
+
+  const locale = document.documentElement.lang || 'es';
+  const fmt = (value) => value.toLocaleString(locale, { maximumFractionDigits: 1 });
+
+  const setNote = (text) => {
+    if (!note) return;
+    note.textContent = text;
+    note.hidden = text === '';
+  };
+
+  const update = () => {
+    if (
+      !weightInput ||
+      !heightInput ||
+      !ageInput ||
+      !sexSelect ||
+      !activitySelect ||
+      !bmrOut ||
+      !tdeeOut ||
+      !deficitOut ||
+      !surplusOut
+    ) {
+      return;
+    }
+
+    const weight = Number(weightInput.value);
+    const height = Number(heightInput.value);
+    const age = Number(ageInput.value);
+
+    if (
+      !Number.isFinite(weight) ||
+      !Number.isFinite(height) ||
+      !Number.isFinite(age) ||
+      weight <= 0 ||
+      height <= 0 ||
+      age <= 0
+    ) {
+      bmrOut.textContent = '—';
+      tdeeOut.textContent = '—';
+      deficitOut.textContent = '—';
+      surplusOut.textContent = '—';
+      setNote(messages.invalid);
+      return;
+    }
+
+    const values = tdeeRange(weight, height, age, sexSelect.value, activitySelect.value);
+    bmrOut.textContent = fmt(values.bmr);
+    tdeeOut.textContent = fmt(values.tdee);
+    deficitOut.textContent = fmt(values.deficit);
+    surplusOut.textContent = fmt(values.surplus);
+    setNote('');
+  };
+
+  weightInput?.addEventListener('input', update);
+  heightInput?.addEventListener('input', update);
+  ageInput?.addEventListener('input', update);
+  sexSelect?.addEventListener('change', update);
+  activitySelect?.addEventListener('change', update);
+</script>

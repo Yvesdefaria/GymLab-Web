@@ -84,8 +84,8 @@ The math is **ported, not reimplemented**: `src/lib/calculators.ts` cites its so
 `tdee.ts`). Rounding is part of that contract — a visitor and a user must see the same number.
 
 - [x] **T15.2a — 1RM page** (`/es/calculadora-1rm/`, `/en/calculadora-1rm/`).
-- [ ] **T15.2b — BMI page** (`/es/calculadora-imc/`).
-- [ ] **T15.2c — Calorie page** (`/es/calcular-calorias/`).
+- [x] **T15.2b — BMI page** (`/es/calculadora-imc/`, `/en/calculadora-imc/`).
+- [x] **T15.2c — Calorie page** (`/es/calcular-calorias/`, `/en/calcular-calorias/`).
 
 #### T15.2a evidence
 
@@ -96,6 +96,23 @@ The math is **ported, not reimplemented**: `src/lib/calculators.ts` cites its so
 - `npm run build` → 11 pages. `npm run check:i18n` → **158/158** (new routes inherit canonical,
   alternate and sitemap parity; a calculator block asserts description length, the page's own term,
   a single `H1` and the app CTA).
+
+#### T15.2b/c evidence
+
+- `npm run build` → **15 pages**. `npm run check:i18n` → **234/234**.
+- Browser check (Chromium, 0 page errors):
+  - BMI 80 kg / 180 cm → `24,7 · Peso normal`; 100 kg → `30,9 · Obesidad`.
+  - Calories 80/180/30/male/moderate → `1780 · 2759 · 2259 · 3173`; 100 kg/female/sedentary →
+    `1814 · 2177 · 1742 · 2504`. Both hand-checked against Mifflin-St Jeor, the 20 % deficit with the
+    500 kcal cap, and the 15 % surplus.
+  - 1RM 100 kg × 3 → `110 · 105,9 · -4,1`.
+- **Bug found and fixed while reviewing the writer's diff**: a unit placed on its own line after
+  `</output>` loses its space, so the lead row of the 1RM page rendered `90kg`. Fixed, and the gate
+  now rejects `</output>` immediately followed by a letter or digit — that is a build-time guard, not
+  a review habit.
+- Gate terms follow the rendered copy, not the acronym: the approved descriptions spell out
+  «índice de masa corporal» and «body mass index» and never say `IMC`/`BMI`, so the assertions match
+  the words the page actually carries.
 
 ### T15.3 — Routine pages from the app seed
 

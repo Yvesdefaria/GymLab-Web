@@ -15,6 +15,10 @@ const PAGES = [
   ['en', '/en/terminos/'],
   ['es', '/es/calculadora-1rm/'],
   ['en', '/en/calculadora-1rm/'],
+  ['es', '/es/calculadora-imc/'],
+  ['en', '/en/calculadora-imc/'],
+  ['es', '/es/calcular-calorias/'],
+  ['en', '/en/calcular-calorias/'],
 ];
 
 // Spanish words that must never reach an English page.
@@ -245,10 +249,15 @@ for (const landing of LANDINGS) {
 }
 
 // Calculator pages: the same metadata rule as the landing, one H1 (a single topic)
-// and a live CTA. Each entry names the term its own copy has to match.
+// and a live CTA. Each entry names the term its own copy has to match; the BMI
+// descriptions spell the concept out, so the term follows the copy, not the slug.
 const CALC_PAGES = [
   { path: '/es/calculadora-1rm/', term: '1rm' },
   { path: '/en/calculadora-1rm/', term: 'one rep max' },
+  { path: '/es/calculadora-imc/', term: 'índice de masa corporal' },
+  { path: '/en/calculadora-imc/', term: 'body mass index' },
+  { path: '/es/calcular-calorias/', term: 'calorías' },
+  { path: '/en/calcular-calorias/', term: 'calories' },
 ];
 
 for (const { path, term } of CALC_PAGES) {
@@ -268,6 +277,12 @@ for (const { path, term } of CALC_PAGES) {
   check(`calc ${path} description mentions "${term}"`, metaDescription.toLowerCase().includes(term));
   check(`calc ${path} has exactly one h1`, (html.match(/<h1[\s>]/g) ?? []).length === 1);
   check(`calc ${path} links to the app`, html.includes('https://app.gymlab.dev'));
+  // A unit or label placed on its own line after <output> loses its space: the
+  // built page renders "90kg" instead of "90 kg".
+  check(
+    `calc ${path} keeps a space after every output`,
+    !/<\/output>[0-9A-Za-zÀ-ÿ]/.test(html),
+  );
 }
 
 const failed = checks.filter((c) => !c.ok);

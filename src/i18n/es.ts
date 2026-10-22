@@ -286,6 +286,129 @@ export const es = {
       },
       back: 'Volver al inicio',
     },
+
+    imc: {
+      meta: {
+        title: 'Calculadora de IMC (índice de masa corporal) — GymLab',
+        description:
+          'Calcula tu índice de masa corporal y mira en qué rango de la OMS estás. Solo necesitas peso y altura, y el resultado sale al instante. Gratis y sin cuenta.',
+      },
+      label: 'Calculadora',
+      title: 'Calculadora de IMC',
+      sub: 'Índice de masa corporal con los rangos de la OMS, sin cuenta y sin conexión.',
+      form: {
+        legend: 'Tus datos',
+        weight: 'Peso',
+        weightUnit: 'kg',
+        weightHint: 'El peso que marca la balanza, sin redondear.',
+        height: 'Altura',
+        heightUnit: 'cm',
+        heightHint: 'En centímetros. Por ejemplo, 178.',
+      },
+      result: {
+        legend: 'Tu índice de masa corporal',
+        value: 'IMC',
+        category: 'Rango OMS',
+        unit: '',
+        invalid: 'Revisa los datos: el peso y la altura deben ser mayores que cero.',
+        categories: {
+          underweight: 'Bajo peso',
+          normal: 'Peso normal',
+          overweight: 'Sobrepeso',
+          obese: 'Obesidad',
+        },
+      },
+      explain: {
+        title: 'Cómo se calcula',
+        body: [
+          'El IMC relaciona tu peso con tu altura: los kilos divididos por la altura en metros al cuadrado. Es un cribado poblacional, no un diagnóstico.',
+          'La OMS marca cuatro rangos: por debajo de 18,5 bajo peso; de 18,5 a 24,9 peso normal; de 25 a 29,9 sobrepeso; y 30 o más obesidad.',
+        ],
+      },
+      limits: {
+        title: 'Cuándo no sirve',
+        items: [
+          'No distingue músculo de grasa: alguien con mucha masa muscular puede salir «obesidad» con un porcentaje de grasa bajo.',
+          'No está pensado para menores de 18 años, embarazo ni personas con amputaciones.',
+          'Si entrenas en serio, el porcentaje de grasa dice mucho más que el IMC.',
+        ],
+      },
+      cta: 'Prueba la app',
+      back: 'Volver al inicio',
+      relatedLabel: 'Otras calculadoras',
+      related: {
+        oneRepMax: 'Calculadora de 1RM',
+        calories: 'Calcular calorías diarias',
+      },
+    },
+
+    calories: {
+      meta: {
+        title: 'Calculadora de calorías diarias (TDEE) — GymLab',
+        description:
+          'Calcula tus calorías diarias con Mifflin-St Jeor: mantenimiento, déficit y superávit según tu nivel de actividad. Es gratis, sin cuenta y sin conexión.',
+      },
+      label: 'Calculadora',
+      title: 'Calcular calorías diarias',
+      sub: 'Gasto energético diario con Mifflin-St Jeor, sin cuenta y sin conexión.',
+      form: {
+        legend: 'Tus datos',
+        weight: 'Peso',
+        weightUnit: 'kg',
+        weightHint: 'El peso que marca la balanza.',
+        height: 'Altura',
+        heightUnit: 'cm',
+        heightHint: 'En centímetros. Por ejemplo, 178.',
+        age: 'Edad',
+        ageUnit: 'años',
+        ageHint: 'En años cumplidos.',
+        sex: 'Sexo',
+        sexHint: 'La ecuación usa un término distinto para cada uno.',
+        sexOptions: {
+          male: 'Hombre',
+          female: 'Mujer',
+        },
+        activity: 'Nivel de actividad',
+        activityOptions: {
+          sedentary: 'Sedentario (poco o nada de ejercicio)',
+          light: 'Ligeramente activo (1–3 días/semana)',
+          moderate: 'Moderadamente activo (3–5 días/semana)',
+          active: 'Activo (6–7 días/semana)',
+          veryActive: 'Muy activo (entrenamiento intenso diario)',
+        },
+      },
+      result: {
+        legend: 'Tus calorías diarias',
+        bmr: 'Metabolismo basal',
+        tdee: 'Mantenimiento',
+        deficit: 'Déficit',
+        surplus: 'Superávit',
+        unit: 'kcal',
+        invalid: 'Revisa los datos: peso, altura y edad deben ser mayores que cero.',
+      },
+      explain: {
+        title: 'Cómo se calcula',
+        body: [
+          'Mifflin-St Jeor estima tu metabolismo basal a partir del peso, la altura, la edad y el sexo. Es más precisa que Harris-Benedict, y es la que usa la app.',
+          'El gasto diario multiplica ese metabolismo por tu nivel de actividad. El déficit aplica un 20 % con un tope de 500 kcal; el superávit suma un 15 %.',
+        ],
+      },
+      limits: {
+        title: 'Cuándo no sirve',
+        items: [
+          'Es una estimación poblacional: tu gasto real puede desviarse y se corrige con lo que marque la báscula en dos o tres semanas.',
+          'El déficit se corta en 500 kcal para no comprometer el músculo.',
+          'No sustituye una valoración dietética profesional.',
+        ],
+      },
+      cta: 'Prueba la app',
+      back: 'Volver al inicio',
+      relatedLabel: 'Otras calculadoras',
+      related: {
+        oneRepMax: 'Calculadora de 1RM',
+        bmi: 'Calculadora de IMC',
+      },
+    },
   },
 
   legalChrome: {

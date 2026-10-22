@@ -82,10 +82,7 @@ const fmt = (value: number): string => value.toLocaleString(lang, { maximumFract
             </div>
             <div class="calc-result__row calc-result__row--lead">
               <dt>{c.result.brzycki}</dt>
-              <dd>
-                <output id="onerm-brzycki">{fmt(brzycki1RM(SEED_WEIGHT, SEED_REPS))}</output>
-                {c.result.unit}
-              </dd>
+              <dd><output id="onerm-brzycki">{fmt(brzycki1RM(SEED_WEIGHT, SEED_REPS))}</output> {c.result.unit}</dd>
             </div>
             <div class="calc-result__row">
               <dt>{c.result.delta}</dt>

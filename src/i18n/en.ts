@@ -288,6 +288,129 @@ export const en: Dict = {
       },
       back: 'Back to home',
     },
+
+    imc: {
+      meta: {
+        title: 'BMI Calculator (body mass index) — GymLab',
+        description:
+          'Work out your body mass index and see which WHO range you are in. All you need is your weight and height, and the result comes out instantly. Free, no account.',
+      },
+      label: 'Calculator',
+      title: 'BMI Calculator',
+      sub: 'Body mass index with the WHO ranges, no account and no connection.',
+      form: {
+        legend: 'Your numbers',
+        weight: 'Weight',
+        weightUnit: 'kg',
+        weightHint: 'What the scales say, unrounded.',
+        height: 'Height',
+        heightUnit: 'cm',
+        heightHint: 'In centimetres. For example, 178.',
+      },
+      result: {
+        legend: 'Your body mass index',
+        value: 'BMI',
+        category: 'WHO range',
+        unit: '',
+        invalid: 'Check the numbers: weight and height must be greater than zero.',
+        categories: {
+          underweight: 'Underweight',
+          normal: 'Healthy weight',
+          overweight: 'Overweight',
+          obese: 'Obesity',
+        },
+      },
+      explain: {
+        title: 'How it is worked out',
+        body: [
+          'BMI relates your weight to your height: kilos divided by height in metres squared. It is a population screening tool, not a diagnosis.',
+          'The WHO sets four ranges: below 18.5 underweight; 18.5 to 24.9 healthy weight; 25 to 29.9 overweight; and 30 or above obesity.',
+        ],
+      },
+      limits: {
+        title: 'When it does not apply',
+        items: [
+          'It does not separate muscle from fat: someone carrying a lot of muscle can come out as obese with a low body fat percentage.',
+          'It is not intended for under-18s, pregnancy, or people with amputations.',
+          'If you train seriously, body fat percentage says far more than BMI.',
+        ],
+      },
+      cta: 'Try the app',
+      back: 'Back to home',
+      relatedLabel: 'Other calculators',
+      related: {
+        oneRepMax: 'One rep max calculator',
+        calories: 'Daily calorie calculator',
+      },
+    },
+
+    calories: {
+      meta: {
+        title: 'Daily Calorie Calculator (TDEE) — GymLab',
+        description:
+          'Work out your daily calories with Mifflin-St Jeor: maintenance, deficit and surplus for your activity level. It is free, with no account or connection.',
+      },
+      label: 'Calculator',
+      title: 'Daily Calorie Calculator',
+      sub: 'Daily energy expenditure with Mifflin-St Jeor, no account and no connection.',
+      form: {
+        legend: 'Your numbers',
+        weight: 'Weight',
+        weightUnit: 'kg',
+        weightHint: 'What the scales say.',
+        height: 'Height',
+        heightUnit: 'cm',
+        heightHint: 'In centimetres. For example, 178.',
+        age: 'Age',
+        ageUnit: 'years',
+        ageHint: 'Completed years.',
+        sex: 'Sex',
+        sexHint: 'The equation uses a different term for each.',
+        sexOptions: {
+          male: 'Male',
+          female: 'Female',
+        },
+        activity: 'Activity level',
+        activityOptions: {
+          sedentary: 'Sedentary (little or no exercise)',
+          light: 'Lightly active (1–3 days/week)',
+          moderate: 'Moderately active (3–5 days/week)',
+          active: 'Active (6–7 days/week)',
+          veryActive: 'Very active (hard training daily)',
+        },
+      },
+      result: {
+        legend: 'Your daily calories',
+        bmr: 'Basal metabolism',
+        tdee: 'Maintenance',
+        deficit: 'Deficit',
+        surplus: 'Surplus',
+        unit: 'kcal',
+        invalid: 'Check the numbers: weight, height and age must be greater than zero.',
+      },
+      explain: {
+        title: 'How it is worked out',
+        body: [
+          'Mifflin-St Jeor estimates your basal metabolism from weight, height, age and sex. It is more accurate than Harris-Benedict, and it is the one the app uses.',
+          'Daily expenditure multiplies that metabolism by your activity level. The deficit applies 20% capped at 500 kcal; the surplus adds 15%.',
+        ],
+      },
+      limits: {
+        title: 'When it does not apply',
+        items: [
+          'It is a population estimate: your real expenditure can drift, and you correct it with what the scales say over two or three weeks.',
+          'The deficit is capped at 500 kcal so it does not eat into muscle.',
+          'It is not a substitute for professional dietary advice.',
+        ],
+      },
+      cta: 'Try the app',
+      back: 'Back to home',
+      relatedLabel: 'Other calculators',
+      related: {
+        oneRepMax: 'One rep max calculator',
+        bmi: 'BMI calculator',
+      },
+    },
   },
 
   legalChrome: {
