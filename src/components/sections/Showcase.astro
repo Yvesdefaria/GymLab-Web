@@ -5,6 +5,9 @@ const lang = getLang(Astro.url.pathname);
 const t = useTranslations(lang);
 
 const shots = [
+  // Decisión (2026-10-22): las tres capturas son solo en inglés y las comparten
+  // los dos idiomas. La app arranca en inglés por defecto, así que muestran lo que
+  // ve un usuario nuevo; se evaluó hacer un set por idioma y el dueño lo descartó.
   {
     src375: '/screens/home-375.webp',
     src750: '/screens/home-750.webp',

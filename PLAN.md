@@ -54,6 +54,8 @@ Handoff document to continue this project in a new session. Canonical project ru
       builds 9 pages green. 375 px overflow measured, not eyeballed (`scrollWidth 360 ≤ 375`).
 - [x] The English legal pages carry a courtesy-translation clause ("the Spanish version prevails"),
       approved by the owner (2026-10-22). The Spanish legal prose moved verbatim (0 paragraphs reworded).
+- [x] Showcase screenshots are **English-only in both locales** (owner decision, 2026-10-22): the app
+      ships English by default, so they show a first launch. A per-language set was considered and rejected.
 
 ### T12 — App web en `app.gymlab.dev` — DONE (2026-10-22)
 
