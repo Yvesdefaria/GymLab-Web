@@ -97,6 +97,7 @@ for (const rule of [
   '/ /es/ 302',
   '/privacidad /es/privacidad/ 301',
   '/terminos /es/terminos/ 301',
+  '/sitemap.xml /sitemap-index.xml 301',
 ]) {
   check(`_redirects "${rule}"`, redirects.includes(rule));
 }
@@ -112,6 +113,37 @@ if (!existsSync(sitemapFile)) {
   check('sitemap has hreflang alternates', sitemap.includes('xhtml:link'));
   for (const stub of ['<loc>https://gymlab.dev/</loc>', `${ORIGIN}/privacidad/`, `${ORIGIN}/terminos/`]) {
     check(`sitemap excludes ${stub}`, !sitemap.includes(stub));
+  }
+}
+
+// The sitemap and the markup must publish the same hreflang annotations: same
+// codes and same targets. Region subtags on one side and not the other, or a
+// missing x-default, leaves two competing sets instead of one reinforced set.
+if (existsSync(sitemapFile)) {
+  const xml = readFileSync(sitemapFile, 'utf8');
+  const entries = [...xml.matchAll(/<url>([\s\S]*?)<\/url>/g)].map((match) => {
+    const body = match[1];
+    return {
+      loc: /<loc>([^<]+)<\/loc>/.exec(body)?.[1],
+      links: [...body.matchAll(/hreflang="([^"]+)" href="([^"]+)"/g)]
+        .map((link) => `${link[1]}=${link[2]}`)
+        .sort(),
+    };
+  });
+
+  for (const [lang, path] of PAGES) {
+    const html = readFileSync(fileFor(path), 'utf8');
+    const htmlLinks = [...html.matchAll(/<link rel="alternate" hreflang="([^"]+)" href="([^"]+)"/g)]
+      .map((link) => `${link[1]}=${link[2]}`)
+      .sort();
+    const entry = entries.find((candidate) => candidate.loc === `${ORIGIN}${path}`);
+
+    check(`sitemap has an entry for ${path}`, Boolean(entry));
+    check(
+      `${path} hreflang annotations match the sitemap`,
+      entry !== undefined && JSON.stringify(entry.links) === JSON.stringify(htmlLinks),
+      `markup [${htmlLinks.join(' ')}] vs sitemap [${(entry?.links ?? []).join(' ')}]`,
+    );
   }
 }
 

@@ -49,6 +49,28 @@ search volumes. Brand constraint (owner decision): the `H1` stays; the category 
 Acceptance: `npm run build` green, `npm run check:i18n` green with the new assertions, JSON-LD
 parses as valid JSON, FAQPage entity count equals the FAQ item count.
 
+### T15.1b — Sitemap annotation parity — DONE (2026-10-22)
+
+The sitemap published `es-ES`/`en-GB` and no `x-default`, while `BaseLayout` publishes
+`es`/`en`/`x-default`. Two different annotation sets instead of one reinforced set, and the gate
+only asserted that *some* alternates existed — which is why 110 green checks missed it.
+
+- [x] `locales: { es: 'es', en: 'en' }` in `astro.config.mjs`.
+- [x] `x-default` appended in `serialize` (the integration emits one alternate per locale and never
+      `x-default`; `serialize` runs after the i18n links are attached, and `links` is `{ url, lang }`).
+- [x] `/sitemap.xml` 301 → `/sitemap-index.xml` in `public/_redirects`.
+- [x] Gate assertion: per page, the markup annotations and the sitemap entry must be the same
+      `code=href` set, sorted.
+
+**RED** (new assertions against the pre-change `dist/`): 116/123, **7 failed** — one per page plus
+the redirect, each showing `markup [en=… es=… x-default=…] vs sitemap [en-GB=… es-ES=…]`.
+**GREEN**: build 9 pages; **123/123 passed**. `dist/sitemap-0.xml` now carries `es`, `en` and
+`x-default` on all six entries.
+
+Deliberately not done: `lastmod`. `@astrojs/sitemap` would stamp every URL with the build time on
+every deploy — a freshness signal that says content changed when it did not, which Google learns to
+ignore. A truthful `lastmod` needs per-page source provenance, not build time.
+
 ### T15.2 — Three calculator pages
 
 `/es/calculadora-1rm`, `/es/calculadora-imc`, `/es/calcular-calorias` (+ `/en/…`), each one a real
@@ -89,6 +111,7 @@ against the current build, then change the copy and observe them pass. Evidence 
 | Task | Route | Trigger evidence | Status |
 |---|---|---|---|
 | T15.1 | delegated writer | 2 non-trivial files (`StructuredData.astro`, `check-i18n.mjs`) + 4 copy edits | done |
+| T15.1b | inline | config + gate, no open design after reading the package internals | done |
 | T15.2 | pending | — | not started |
 | T15.3 | pending | — | not started |
 | T15.4 | separate repo | — | not started |
