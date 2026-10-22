@@ -22,6 +22,11 @@ USED = {
 }
 ARCHIVE = []
 
+# Decisión (2026-10-22): el showcase es solo en inglés en los dos idiomas, así que
+# la captura usa el set `-en`. El script de captura también produce `-es`, pero no
+# se publica: mantener el sufijo explícito evita que alguien sirva el set equivocado.
+LANG = "en"
+
 
 def save(img: Image.Image, path: Path, width: int | None) -> None:
     if width is not None and width != img.size[0]:
@@ -34,14 +39,14 @@ def save(img: Image.Image, path: Path, width: int | None) -> None:
 def main() -> None:
     OUT.mkdir(parents=True, exist_ok=True)
     for name, widths in USED.items():
-        with Image.open(SRC / f"{name}.png") as source:
+        with Image.open(SRC / f"{name}-{LANG}.png") as source:
             img = source.convert("RGB")
         for width in widths:
-            save(img, OUT / f"{name}-{width}.webp", width)
+            save(img, OUT / f"{name}-{LANG}-{width}.webp", width)
     for name in ARCHIVE:
-        with Image.open(SRC / f"{name}.png") as source:
+        with Image.open(SRC / f"{name}-{LANG}.png") as source:
             img = source.convert("RGB")
-        save(img, OUT / f"{name}.webp", None)
+        save(img, OUT / f"{name}-{LANG}.webp", None)
 
 
 if __name__ == "__main__":
