@@ -16,6 +16,7 @@ Handoff document to continue this project in a new session. Canonical project ru
 - Brand system ported from the app (`gymlab-app/src/index.css`): dark gold tokens, Oswald/Barlow
   self-hosted, panel/grain primitives. Real app screenshots in `public/screens/`.
 - Done: T1 bootstrap · T2 scaffold · T3 brand · T4 layout · T5 sections · T6 screenshots · T7 legal skeleton · T13 bilingual site.
+- The app is live at `https://app.gymlab.dev` (Worker `gymlab-app`, auto-deployed from `ProyectoGymLab` on every push), so the landing CTA now lands on a real app. See T12.
 
 ## Remaining work
 
@@ -44,23 +45,27 @@ Handoff document to continue this project in a new session. Canonical project ru
 - [x] Language selector in the header (Spain + UK flags, both visible, `aria-current`), always visible
       and ≥ 44 px touch target on mobile. English copy written fresh, not literalism.
 - [x] Primary CTA `Prueba la app` / `Try the app` → `https://app.gymlab.dev` in the header and the hero.
-      The subdomain does not resolve yet: the dead link is accepted until T12 ships.
+      Live and resolving since T12 shipped (2026-10-22).
 - [x] Legacy `/privacidad` and `/terminos` 301 to the Spanish pages (`public/_redirects` plus dev-only
       fallback stubs) — Play Console and the Health Connect rationale keep working.
 - [x] Reciprocal `hreflang` (es/en/x-default), `og:locale`, canonical and alternates normalised to the
       same trailing-slash form; the sitemap emits both locales with alternates and excludes the stubs.
 - [x] `scripts/check-i18n.mjs` (`npm run check:i18n`): 82 post-build assertions, green. `npm run build`
       builds 9 pages green. 375 px overflow measured, not eyeballed (`scrollWidth 360 ≤ 375`).
-- Open: the English legal pages carry a courtesy-translation clause ("the Spanish version prevails") —
-      **owner confirmation pending**. The Spanish legal prose moved verbatim (0 paragraphs reworded).
+- [x] The English legal pages carry a courtesy-translation clause ("the Spanish version prevails"),
+      approved by the owner (2026-10-22). The Spanish legal prose moved verbatim (0 paragraphs reworded).
 
-### T12 — App web en `app.gymlab.dev` (planned, not started)
+### T12 — App web en `app.gymlab.dev` — DONE (2026-10-22)
 
-- Objective: serve the GymLab app (repo `ProyectoGymLab`, `gymlab-app/`) as a static SPA at `app.gymlab.dev` with HTTPS.
-- Approach: second Worker `gymlab-app` connected to `Yvesdefaria/GymLab`, root directory `gymlab-app`, build `npm run build`, deploy `npx wrangler deploy`; `wrangler.jsonc` with `assets.directory = "./dist"` + `not_found_handling = "single-page-application"` (React Router deep links); custom domain `app.gymlab.dev`.
-- Fit: 2,021 files / 101 MB, largest 0.88 MB — within Workers Free (20k files, 25 MiB/file).
-- Blocker: **cleared as of 2026-10-21** — the app repo was pushed on 19/10 (`origin/main` = `d457d814`) and its tracked tree is clean; only the 5 commits from 21/10 are unpushed. Decide: (A) push those commits → auto-deploy, or (B) local `wrangler` deploy with login/token. The owner asked to hold the app deploy while the app is being changed.
-- Caveats: mobile-first UI on desktop; native-only plugins (health, local notifications, filesystem, camera) degrade on web; review Sentry/PostHog consent; optional `noindex`; PWA service worker already has preload recovery.
+- Served by the Worker `gymlab-app`, connected to `Yvesdefaria/GymLab` (root `gymlab-app`, build `npm run build`, deploy `npx wrangler deploy`): **every push to `main` deploys**.
+- `wrangler.jsonc` declares `assets.directory = "./dist"`, `not_found_handling = "single-page-application"` and `routes: [{ pattern: "app.gymlab.dev", custom_domain: true }]` — the deploy created the DNS record and the certificate; no dashboard step for the domain.
+- `wrangler` is pinned as a devDependency: Workers Builds uses the Wrangler version declared in `package.json`, so without it the deploy step depended on whatever `npx` fetched that day.
+- Build **#a88ef28b** green (1m 21s, Node 24.21.0, 1,994 assets uploaded).
+- Verified live: `/`, `/rutinas` and `/entrenamiento/active` return 200 with the SPA shell; `sw.js`, `manifest.webmanifest`, hashed bundles, fonts and exercise images return 200; canonical and OG now point at `https://app.gymlab.dev`; a CDP boot renders the home with **0 console errors and 0 failed requests**.
+- Fixed on the way: `SITE_URL` (`useSeo.ts`) and `index.html` published `https://gymlab.app` — a third-party domain — as canonical.
+- Known and accepted: `/test-animations` is publicly reachable; it is the e2e fixture for `test_f43.py` (4 KB, no data, no secrets).
+- Follow-up: hashed assets are served with `cache-control: max-age=0, must-revalidate`; a `_headers` file could give `/assets/*` and `/fonts/*` long-lived immutable caching. The service worker already precaches, so the cost is first load and updates.
+- Not done: `noindex` (the app is indexable), and the native-only plugins still degrade on web.
 
 ### T10 — Phase 3: legal drafting — DONE (2026-10-19)
 
@@ -73,7 +78,7 @@ Handoff document to continue this project in a new session. Canonical project ru
 
 ### Follow-ups in the app repo (`ProyectoGymLab`) — separate commits there
 
-- [ ] App meta/OG still points to `https://gymlab.app/` (owned by a third party) → switch to `https://gymlab.dev/`. **Still open** (`SITE_URL` in `useSeo.ts` + `index.html` canonical/OG); `app.gymlab.dev` does not resolve yet (`ENOTFOUND`), so the app's canonical host is still undecided.
+- [x] App meta/OG pointed to `https://gymlab.app/` (a third party) → now `https://app.gymlab.dev` in `SITE_URL` (`useSeo.ts`) and `index.html` (canonical + OG), fixed with the app deploy (2026-10-22).
 - [ ] App `favicon.svg` is still the Vite default → replace with a branded icon.
 - [x] Replace placeholder email `gymlab@app.gymlab.dev` → `gymlab@gymlab.dev` in `src/config/contact.ts` (2026-10-21). Mailbox still pending (T9b).
 - [x] Point the store listing (when it exists) to `https://gymlab.dev/privacidad` → app `privacy_policy_url` now points there (2026-10-21, emulator-verified). This is also the URL the Play listing must use.
