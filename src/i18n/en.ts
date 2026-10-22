@@ -151,16 +151,16 @@ export const en: Dict = {
     title: 'How it looks while you train',
     shots: [
       {
-        caption: 'Live session with a timer',
-        alt: 'GymLab screenshot: live session with a rest timer and set logging.',
+        caption: 'Your active plan, streak and week',
+        alt: 'GymLab screenshot: training screen with the active plan, current streak and this week’s calendar.',
       },
       {
-        caption: '68 templates ready to start',
-        alt: 'GymLab screenshot: routines screen with templates and filters by goal and level.',
+        caption: 'Live session with a running rest timer',
+        alt: 'GymLab screenshot: live session with a logged set and the rest timer counting down.',
       },
       {
-        caption: 'A catalogue of 873 exercises',
-        alt: 'GymLab screenshot: catalogue of 873 exercises with filters by muscle, equipment and category.',
+        caption: 'Real progress in real charts',
+        alt: 'GymLab screenshot: statistics with weekly volume, streak and the weekly goal built from your workout history.',
       },
     ],
   },

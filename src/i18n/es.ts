@@ -149,16 +149,16 @@ export const es = {
     title: 'Así se ve mientras entrenas',
     shots: [
       {
-        caption: 'Sesión en vivo, con temporizador',
-        alt: 'Captura de GymLab: sesión en vivo con temporizador de descanso y registro de series.',
+        caption: 'Tu plan activo, la racha y la semana en curso',
+        alt: 'Captura de GymLab: pantalla de entrenamiento con el plan activo, la racha actual y el calendario de la semana.',
       },
       {
-        caption: '68 plantillas listas para empezar',
-        alt: 'Captura de GymLab: pantalla de rutinas con plantillas y filtros por objetivo y nivel.',
+        caption: 'Sesión en vivo, con temporizador de descanso',
+        alt: 'Captura de GymLab: sesión en vivo con una serie registrada y el temporizador de descanso en marcha.',
       },
       {
-        caption: 'Catálogo de 873 ejercicios',
-        alt: 'Captura de GymLab: catálogo de 873 ejercicios con filtros por músculo, equipo y categoría.',
+        caption: 'Progreso real, en gráficas',
+        alt: 'Captura de GymLab: estadísticas con el volumen semanal, la racha y el objetivo de la semana a partir de tu historial.',
       },
     ],
   },
