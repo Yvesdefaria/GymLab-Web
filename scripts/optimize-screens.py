@@ -16,11 +16,11 @@ SRC = ROOT / "assets" / "screens"
 OUT = ROOT / "public" / "screens"
 
 USED = {
+    "home": [375, 750],
     "entrenamiento": [375, 750],
-    "rutinas": [375, 750],
-    "ejercicios": [375, 750],
+    "estadisticas": [375, 750],
 }
-ARCHIVE = ["home", "estadisticas", "calculadoras"]
+ARCHIVE = []
 
 
 def save(img: Image.Image, path: Path, width: int | None) -> None:
