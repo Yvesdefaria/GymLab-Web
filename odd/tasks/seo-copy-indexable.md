@@ -114,6 +114,23 @@ The math is **ported, not reimplemented**: `src/lib/calculators.ts` cites its so
   «índice de masa corporal» and «body mass index» and never say `IMC`/`BMI`, so the assertions match
   the words the page actually carries.
 
+#### T15.2d — Discovery links (2026-10-23)
+
+The three pages shipped live and in the sitemap but **with zero inbound links**: the owner could not
+find them, and neither could a crawler following navigation. A page nobody links to is a page that
+does not exist for practical purposes.
+
+- Landing section `#calculadoras` (`Calculators.astro`) with the three cards, placed between the
+  showcase and the privacy band.
+- Header nav gains a fourth item pointing at that anchor.
+- Each calculator links to the other two; `CALC_PATHS` in `src/i18n` is the single source of the
+  route list and its order matches `calculators.items`.
+- Gate: 20 new assertions — the landing must link to all three in both locales, and each calculator
+  must link to the other two.
+- Verified in a browser: 3 cards, no horizontal overflow at 1280 px or 375 px, the header item is
+  visible on desktop and hidden below 768 px by the existing rule, and clicking a card navigates.
+  Build 15 pages, gate **254/254**.
+
 ### T15.3 — Routine pages from the app seed
 
 Template generated from the app's routine seed. Blocked on: the seed's shape and which routines are

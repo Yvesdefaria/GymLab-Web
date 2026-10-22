@@ -1,0 +1,100 @@
+---
+// Entry point for the calculator pages. Without this block they are orphaned:
+// live and in the sitemap, but unreachable by navigation and carrying no
+// internal link signal.
+import { CALC_PATHS, getLang, localePath, useTranslations } from '../../i18n';
+
+const lang = getLang(Astro.url.pathname);
+const t = useTranslations(lang);
+
+const items = CALC_PATHS.map((path, index) => ({
+  href: localePath(lang, path),
+  ...t.calculators.items[index],
+}));
+---
+
+<section id={t.calculators.anchor} class="floor-section calculators" aria-labelledby="calculators-title">
+  <div class="frame">
+    <header class="section-frame">
+      <div class="section-frame__rule">
+        <span class="section-frame__label">{t.calculators.label}</span>
+        <span class="section-frame__meta">01—03</span>
+      </div>
+      <h2 id="calculators-title">{t.calculators.title}</h2>
+      <p class="calculators__sub">{t.calculators.sub}</p>
+    </header>
+
+    <ul class="calculators__list">
+      {
+        items.map((item) => (
+          <li>
+            <a class="calculators__card" href={item.href}>
+              <span class="calculators__name">{item.title}</span>
+              <span class="calculators__text">{item.text}</span>
+              <span class="calculators__cta">{t.calculators.linkLabel}</span>
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+  </div>
+</section>
+
+<style>
+  .calculators__sub {
+    margin-top: 0.75rem;
+    max-width: 52ch;
+    color: var(--color-muted);
+  }
+
+  .calculators__list {
+    display: grid;
+    gap: 1rem;
+    margin: clamp(2rem, 4vw, 3rem) 0 0;
+    padding: 0;
+    list-style: none;
+    grid-template-columns: 1fr;
+  }
+
+  .calculators__card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    height: 100%;
+    padding: 1.5rem;
+    border: 1px solid var(--color-border);
+    color: inherit;
+    text-decoration: none;
+    transition: border-color 160ms ease;
+  }
+
+  .calculators__card:hover,
+  .calculators__card:focus-visible {
+    border-color: var(--color-accent);
+  }
+
+  .calculators__name {
+    font-family: var(--font-display);
+    font-size: 1.35rem;
+    font-weight: 600;
+  }
+
+  .calculators__text {
+    color: var(--color-muted);
+  }
+
+  .calculators__cta {
+    margin-top: auto;
+    padding-top: 0.75rem;
+    color: var(--color-accent);
+    font-size: 0.85rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+
+  @media (min-width: 900px) {
+    .calculators__list {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+</style>

@@ -38,6 +38,16 @@ export function localeSwitchPath(pathname: string, target: Lang): string {
   return localePath(target, stripped);
 }
 
+/**
+ * Calculator routes, in the order of `calculators.items` in the dictionaries.
+ * The order is the link between the two, so a new calculator goes in both.
+ */
+export const CALC_PATHS = [
+  '/calculadora-1rm',
+  '/calculadora-imc',
+  '/calcular-calorias',
+] as const;
+
 /** Legal documents, one bundle per locale. `en` is annotated with `LegalDoc`, so gaps are type errors. */
 export const legalDocs: Record<Lang, { privacy: LegalDoc; terms: LegalDoc }> = {
   es: { privacy: privacyEs, terms: termsEs },

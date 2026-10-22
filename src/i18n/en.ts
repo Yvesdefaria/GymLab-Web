@@ -18,6 +18,7 @@ export const en: Dict = {
     nav: {
       features: 'Features',
       screens: 'Screens',
+      calculators: 'Calculators',
       faq: 'FAQ',
     },
     contact: 'Contact',
@@ -281,11 +282,6 @@ export const en: Dict = {
         ],
       },
       cta: 'Try the app',
-      relatedLabel: 'Other calculators',
-      related: {
-        bmi: 'BMI calculator',
-        calories: 'Daily calorie calculator',
-      },
       back: 'Back to home',
     },
 
@@ -337,11 +333,6 @@ export const en: Dict = {
       },
       cta: 'Try the app',
       back: 'Back to home',
-      relatedLabel: 'Other calculators',
-      related: {
-        oneRepMax: 'One rep max calculator',
-        calories: 'Daily calorie calculator',
-      },
     },
 
     calories: {
@@ -405,12 +396,29 @@ export const en: Dict = {
       },
       cta: 'Try the app',
       back: 'Back to home',
-      relatedLabel: 'Other calculators',
-      related: {
-        oneRepMax: 'One rep max calculator',
-        bmi: 'BMI calculator',
-      },
     },
+  },
+
+  calculators: {
+    anchor: 'calculators',
+    label: 'Calculators',
+    title: 'Work it out before you train',
+    sub: 'The same maths the app does, with nothing to install.',
+    linkLabel: 'Open calculator',
+    items: [
+      {
+        title: 'One rep max calculator',
+        text: 'Your estimated max with Epley and Brzycki.',
+      },
+      {
+        title: 'BMI calculator',
+        text: 'Body mass index and the WHO range.',
+      },
+      {
+        title: 'Daily calorie calculator',
+        text: 'Maintenance, deficit and surplus with Mifflin-St Jeor.',
+      },
+    ],
   },
 
   legalChrome: {

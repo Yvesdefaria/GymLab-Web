@@ -16,6 +16,7 @@ export const es = {
     nav: {
       features: 'Funciones',
       screens: 'Capturas',
+      calculators: 'Calculadoras',
       faq: 'FAQ',
     },
     contact: 'Contacto',
@@ -279,11 +280,6 @@ export const es = {
         ],
       },
       cta: 'Prueba la app',
-      relatedLabel: 'Otras calculadoras',
-      related: {
-        bmi: 'Calculadora de IMC',
-        calories: 'Calcular calorías diarias',
-      },
       back: 'Volver al inicio',
     },
 
@@ -335,11 +331,6 @@ export const es = {
       },
       cta: 'Prueba la app',
       back: 'Volver al inicio',
-      relatedLabel: 'Otras calculadoras',
-      related: {
-        oneRepMax: 'Calculadora de 1RM',
-        calories: 'Calcular calorías diarias',
-      },
     },
 
     calories: {
@@ -403,12 +394,29 @@ export const es = {
       },
       cta: 'Prueba la app',
       back: 'Volver al inicio',
-      relatedLabel: 'Otras calculadoras',
-      related: {
-        oneRepMax: 'Calculadora de 1RM',
-        bmi: 'Calculadora de IMC',
-      },
     },
+  },
+
+  calculators: {
+    anchor: 'calculadoras',
+    label: 'Calculadoras',
+    title: 'Calcula antes de entrenar',
+    sub: 'Las mismas cuentas que hace la app, sin instalar nada.',
+    linkLabel: 'Abrir calculadora',
+    items: [
+      {
+        title: 'Calculadora de 1RM',
+        text: 'Tu repetición máxima estimada con Epley y Brzycki.',
+      },
+      {
+        title: 'Calculadora de IMC',
+        text: 'Índice de masa corporal y rango de la OMS.',
+      },
+      {
+        title: 'Calcular calorías diarias',
+        text: 'Mantenimiento, déficit y superávit con Mifflin-St Jeor.',
+      },
+    ],
   },
 
   legalChrome: {

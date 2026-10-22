@@ -285,6 +285,41 @@ for (const { path, term } of CALC_PAGES) {
   );
 }
 
+// Orphan pages are invisible: the landing must link to every calculator, and the
+// calculators must link to each other, or the surface exists but nobody reaches it.
+const CALC_ROUTES = ['/calculadora-1rm', '/calculadora-imc', '/calcular-calorias'];
+
+for (const landing of LANDINGS) {
+  const html = readFileSync(fileFor(landing.path), 'utf8');
+  const prefix = landing.path.startsWith('/en/') ? '/en' : '/es';
+  const anchor = prefix === '/en' ? 'id="calculators"' : 'id="calculadoras"';
+
+  check(`links ${landing.path} anchors the calculators`, html.includes(anchor));
+  for (const route of CALC_ROUTES) {
+    check(
+      `links ${landing.path} → ${route}`,
+      html.includes(`href="${prefix}${route}/"`),
+      `expected href="${prefix}${route}/"`,
+    );
+  }
+}
+
+for (const lang of ['es', 'en']) {
+  for (const route of CALC_ROUTES) {
+    const file = fileFor(`/${lang}${route}/`);
+    if (!existsSync(file)) continue;
+    const html = readFileSync(file, 'utf8');
+    for (const other of CALC_ROUTES) {
+      if (other === route) continue;
+      check(
+        `links ${lang}${route} → ${other}`,
+        html.includes(`href="/${lang}${other}/"`),
+        `expected href="/${lang}${other}/"`,
+      );
+    }
+  }
+}
+
 const failed = checks.filter((c) => !c.ok);
 for (const c of checks) {
   if (!c.ok) console.log(`FAIL  ${c.name}${c.detail ? ` — ${c.detail}` : ''}`);

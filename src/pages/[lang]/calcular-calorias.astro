@@ -3,7 +3,7 @@
 // The same numbers render on the server (so the page is useful without JS and the
 // HTML carries the result) and are recomputed on input by the bundled script.
 import BaseLayout from '../../layouts/BaseLayout.astro';
-import { LOCALES, getLang, localePath, useTranslations } from '../../i18n';
+import { CALC_PATHS, LOCALES, getLang, localePath, useTranslations } from '../../i18n';
 import { tdeeRange, type ActivityLevel, type Sex } from '../../lib/calculators';
 
 export function getStaticPaths() {
@@ -171,6 +171,16 @@ const fmt = (value: number): string => value.toLocaleString(lang, { maximumFract
         <a href="https://app.gymlab.dev" class="btn btn--primary">{c.cta}</a>
         <a href={localePath(lang)} class="btn btn--ghost">{c.back}</a>
       </div>
+
+      <nav class="calc-page__related" aria-label={t.calculators.label}>
+        {
+          CALC_PATHS.map((path, index) =>
+            index === 2 ? null : (
+              <a href={localePath(lang, path)}>{t.calculators.items[index].title}</a>
+            ),
+          )
+        }
+      </nav>
     </div>
   </section>
 </BaseLayout>
@@ -349,6 +359,17 @@ const fmt = (value: number): string => value.toLocaleString(lang, { maximumFract
     flex-wrap: wrap;
     gap: 0.75rem;
     margin-top: clamp(2rem, 4vw, 3rem);
+  }
+
+  .calc-page__related {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem 1.25rem;
+    margin-top: 1.5rem;
+  }
+
+  .calc-page__related a {
+    color: var(--color-accent);
   }
 
   @media (min-width: 900px) {
