@@ -72,6 +72,40 @@ Handoff document to continue this project in a new session. Canonical project ru
       identical to the local ones, and the old paths return 404.
 - Commands, limitations and cross-repo debt: `odd/tasks/web-showcase-capturas.md`.
 
+### T15 — SEO del copy y superficie indexable — AUDIT HECHO, PLAN PENDIENTE (2026-10-22)
+
+**Veredicto**: el copy hace **match parcial** con las búsquedas de la categoría. El término de categoría está
+en el título, pero no en el H1, y no existe superficie indexable para la cola larga.
+
+| Elemento | Texto indexado hoy | Términos de búsqueda |
+|---|---|---|
+| `<title>` | `GymLab — App de entrenamiento y progreso` | ✅ «app de entrenamiento» (head term) |
+| `description` | «Planifica tu rutina, registra cada serie… 873 ejercicios y 9 calculadoras…» | ✅ rutina, ejercicios, calculadoras · ❌ «gratis», «sin conexión», «gimnasio» |
+| **H1** | `Deja de entrenar de memoria` | ❌ cero términos de búsqueda |
+| H2 | «De la rutina al gráfico» · «Así se ve mientras entrenas» · «Tus datos viven en tu teléfono» | ⚠️ parcial |
+| FAQ | «¿Funciona sin conexión?», «¿Sirve si estoy empezando?» | ✅ matchea preguntas reales de cola larga |
+
+**Problema de fondo**: el sitemap tiene **3 URLs** (landing, privacidad, términos). El volumen del nicho vive
+en cola larga —calculadoras, rutinas, ejercicios— y la app tiene **9 calculadoras y 873 ejercicios sin una sola
+página web que los exponga**. Además `app.gymlab.dev` es indexable (su `index.html` dice `index, follow`) y su
+`/robots.txt` devuelve el HTML del SPA, así que compite con la landing sin aportar contenido.
+
+**Sin datos todavía**: los volúmenes reales salen de **Search Console** (propiedad verificada el 2026-10-22) en
+2–4 semanas, o de Keyword Planner. Cualquier cifra anterior sería inventada.
+
+**Plan**
+
+- [ ] **Quick wins**: description con «gratis» y «sin conexión»; un H2 con «app de entrenamiento»; `alt`
+      descriptivos; dos preguntas nuevas en el FAQ con queries reales; schema `SoftwareApplication` + `FAQPage`.
+- [ ] **Tres páginas de calculadora** (`/es/calculadora-1rm`, `/es/calculadora-imc`, `/es/calcular-calorias`):
+      la lógica ya existe en la app; cada página es contenido + CTA «Prueba la app».
+- [ ] **Páginas de rutinas** con plantilla desde el seed de la app.
+- [ ] **`noindex` + `robots.txt` real en la app** para que el tráfico entre por la landing.
+- [ ] **Revisar Search Console a las 4 semanas** y priorizar por impresiones reales, no por intuición.
+
+**Restricción de marca**: el H1 se mantiene; el término de categoría entra en un H2/subtítulo. No se reescribe
+la voz del sitio para meter keywords.
+
 ### T12 — App web en `app.gymlab.dev` — DONE (2026-10-22)
 
 - Served by the Worker `gymlab-app`, connected to `Yvesdefaria/GymLab` (root `gymlab-app`, build `npm run build`, deploy `npx wrangler deploy`): **every push to `main` deploys**.
