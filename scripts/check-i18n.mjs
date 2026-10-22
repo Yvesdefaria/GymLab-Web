@@ -13,6 +13,8 @@ const PAGES = [
   ['en', '/en/privacidad/'],
   ['es', '/es/terminos/'],
   ['en', '/en/terminos/'],
+  ['es', '/es/calculadora-1rm/'],
+  ['en', '/en/calculadora-1rm/'],
 ];
 
 // Spanish words that must never reach an English page.
@@ -240,6 +242,32 @@ for (const landing of LANDINGS) {
       `schema ${questions}, rendered ${renderedAnswers}`,
     );
   }
+}
+
+// Calculator pages: the same metadata rule as the landing, one H1 (a single topic)
+// and a live CTA. Each entry names the term its own copy has to match.
+const CALC_PAGES = [
+  { path: '/es/calculadora-1rm/', term: '1rm' },
+  { path: '/en/calculadora-1rm/', term: 'one rep max' },
+];
+
+for (const { path, term } of CALC_PAGES) {
+  const file = fileFor(path);
+  if (!existsSync(file)) {
+    check(`calc ${path} exists`, false);
+    continue;
+  }
+  const html = readFileSync(file, 'utf8');
+  const metaDescription = html.match(/<meta name="description" content="([^"]*)">/)?.[1] ?? '';
+
+  check(
+    `calc ${path} description length`,
+    metaDescription.length >= 150 && metaDescription.length <= 160,
+    `got ${metaDescription.length} characters`,
+  );
+  check(`calc ${path} description mentions "${term}"`, metaDescription.toLowerCase().includes(term));
+  check(`calc ${path} has exactly one h1`, (html.match(/<h1[\s>]/g) ?? []).length === 1);
+  check(`calc ${path} links to the app`, html.includes('https://app.gymlab.dev'));
 }
 
 const failed = checks.filter((c) => !c.ok);

@@ -235,6 +235,61 @@ export const en: Dict = {
     meta: 'Floor 1 · GymLab.dev',
   },
 
+  calc: {
+    oneRepMax: {
+      meta: {
+        title: 'One Rep Max Calculator (1RM) — GymLab',
+        description:
+          'Work out your one rep max with the Epley and Brzycki formulas. Enter the weight and the reps and get your estimated max instantly. It is free, no sign-up.',
+      },
+      label: 'Calculator',
+      title: 'One Rep Max Calculator',
+      sub: 'Your estimated one rep max from two formulas, with no account and no connection.',
+      form: {
+        legend: 'Your numbers',
+        weight: 'Weight lifted',
+        weightUnit: 'kg',
+        weightHint: 'The weight of a set you completed with good form.',
+        reps: 'Reps',
+        repsUnit: 'reps',
+        repsHint: 'Between 1 and 10 gives the best estimate.',
+      },
+      result: {
+        legend: 'Estimated one rep max',
+        epley: 'Epley',
+        brzycki: 'Brzycki',
+        delta: 'Difference',
+        deltaHint: 'Brzycki minus Epley.',
+        unit: 'kg',
+        empty: 'Enter the weight and the reps.',
+        invalid: 'Check the numbers: weight and reps must be greater than zero.',
+        unreachable: 'At 37 reps or more the Brzycki formula is not valid.',
+      },
+      explain: {
+        title: 'How it is worked out',
+        body: [
+          'Your one rep max is the heaviest weight you can lift once with good form. Testing it directly is risky, so it is estimated from a submaximal set.',
+          'Epley uses weight × (1 + reps / 30). Brzycki uses weight × 36 / (37 − reps) and is usually more accurate between 3 and 10 reps, which is the range the app relies on for its records.',
+        ],
+      },
+      limits: {
+        title: 'When it does not apply',
+        items: [
+          'Above 10 reps both formulas drift away from reality and the estimate stops being reliable.',
+          'The Brzycki formula loses meaning as it approaches 37 reps; from there the result is 0.',
+          'An estimate is not a substitute for a supervised in-person test.',
+        ],
+      },
+      cta: 'Try the app',
+      relatedLabel: 'Other calculators',
+      related: {
+        bmi: 'BMI calculator',
+        calories: 'Daily calorie calculator',
+      },
+      back: 'Back to home',
+    },
+  },
+
   legalChrome: {
     kicker: 'Legal',
     updated: 'Last updated',

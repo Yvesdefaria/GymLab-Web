@@ -73,9 +73,29 @@ ignore. A truthful `lastmod` needs per-page source provenance, not build time.
 
 ### T15.2 — Three calculator pages
 
-`/es/calculadora-1rm`, `/es/calculadora-imc`, `/es/calcular-calorias` (+ `/en/…`), each one a real
-calculator plus explanatory copy and a CTA to `app.gymlab.dev`. Blocked on: product decision
-(client-side calculator vs static explanation) and copy approval.
+Decisions (owner, 2026-10-22): the pages **calculate for real**, the visual work is deferred to a
+later pass that must stay inside the existing aesthetic, and this first pass reuses only the current
+primitives. Slugs are identical in both locales: canonical, alternate and sitemap pairing are keyed
+on the path, so locale-specific slugs would need a slug map in three places. Revisit if English
+long-tail becomes a priority.
+
+The math is **ported, not reimplemented**: `src/lib/calculators.ts` cites its sources in the app repo
+(`src/domain/prs.ts` for Brzycki, `src/domain/calculators/oneRepMax.ts` for Epley, `imc.ts`,
+`tdee.ts`). Rounding is part of that contract — a visitor and a user must see the same number.
+
+- [x] **T15.2a — 1RM page** (`/es/calculadora-1rm/`, `/en/calculadora-1rm/`).
+- [ ] **T15.2b — BMI page** (`/es/calculadora-imc/`).
+- [ ] **T15.2c — Calorie page** (`/es/calcular-calorias/`).
+
+#### T15.2a evidence
+
+- Server renders the seed result (80 kg × 5) so the page answers before JS runs: `93,5 / 90 / -3,5`.
+- Browser check (Playwright, Chromium, both locales, 0 page errors): seed `93,5 / 90 / -3,5`;
+  100 kg × 3 → `110 / 105,9 / -4,1`; 0 reps → all dashes plus the validation message; 40 reps →
+  Epley `233,5`, Brzycki dash, the "formula is not valid" note.
+- `npm run build` → 11 pages. `npm run check:i18n` → **158/158** (new routes inherit canonical,
+  alternate and sitemap parity; a calculator block asserts description length, the page's own term,
+  a single `H1` and the app CTA).
 
 ### T15.3 — Routine pages from the app seed
 
@@ -112,6 +132,7 @@ against the current build, then change the copy and observe them pass. Evidence 
 |---|---|---|---|
 | T15.1 | delegated writer | 2 non-trivial files (`StructuredData.astro`, `check-i18n.mjs`) + 4 copy edits | done |
 | T15.1b | inline | config + gate, no open design after reading the package internals | done |
+| T15.2a | inline | pattern-setting work: every decision was the brief itself | done |
 | T15.2 | pending | — | not started |
 | T15.3 | pending | — | not started |
 | T15.4 | separate repo | — | not started |

@@ -233,6 +233,61 @@ export const es = {
     meta: 'Piso 1 · GymLab.dev',
   },
 
+  calc: {
+    oneRepMax: {
+      meta: {
+        title: 'Calculadora de 1RM (repetición máxima) — GymLab',
+        description:
+          'Calcula tu 1RM con las fórmulas de Epley y Brzycki. Introduce el peso y las repeticiones y obtén tu repetición máxima estimada al instante. Gratis y sin cuenta.',
+      },
+      label: 'Calculadora',
+      title: 'Calculadora de 1RM',
+      sub: 'Tu repetición máxima estimada con dos fórmulas, sin cuenta y sin conexión.',
+      form: {
+        legend: 'Tus datos',
+        weight: 'Peso levantado',
+        weightUnit: 'kg',
+        weightHint: 'El peso de una serie que hayas completado con buena técnica.',
+        reps: 'Repeticiones',
+        repsUnit: 'reps',
+        repsHint: 'Entre 1 y 10 da la mejor estimación.',
+      },
+      result: {
+        legend: 'Repetición máxima estimada',
+        epley: 'Epley',
+        brzycki: 'Brzycki',
+        delta: 'Diferencia',
+        deltaHint: 'Brzycki menos Epley.',
+        unit: 'kg',
+        empty: 'Introduce el peso y las repeticiones.',
+        invalid: 'Revisa los datos: el peso y las repeticiones deben ser mayores que cero.',
+        unreachable: 'Con 37 repeticiones o más, la fórmula de Brzycki no es válida.',
+      },
+      explain: {
+        title: 'Cómo se calcula',
+        body: [
+          'El 1RM es el peso máximo que puedes levantar una sola vez con buena técnica. Probarlo directamente es arriesgado, así que se estima a partir de una serie submáxima.',
+          'Epley usa peso × (1 + repeticiones / 30). Brzycki usa peso × 36 / (37 − repeticiones) y suele ser más precisa entre 3 y 10 repeticiones, que es el rango en el que se apoya el registro de récords de la app.',
+        ],
+      },
+      limits: {
+        title: 'Cuándo no sirve',
+        items: [
+          'Por encima de 10 repeticiones las dos fórmulas se separan de la realidad y la estimación deja de ser fiable.',
+          'La fórmula de Brzycki pierde sentido al acercarse a 37 repeticiones; a partir de ahí el resultado es 0.',
+          'Una estimación no sustituye una prueba presencial con supervisión.',
+        ],
+      },
+      cta: 'Prueba la app',
+      relatedLabel: 'Otras calculadoras',
+      related: {
+        bmi: 'Calculadora de IMC',
+        calories: 'Calcular calorías diarias',
+      },
+      back: 'Volver al inicio',
+    },
+  },
+
   legalChrome: {
     kicker: 'Legal',
     updated: 'Última actualización',
