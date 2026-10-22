@@ -36,7 +36,7 @@ Handoff document to continue this project in a new session. Canonical project ru
 - [x] Workers project `gymlab-web` connected to the repo (build `npm run build`, deploy `npx wrangler deploy`, `wrangler.jsonc` serves `dist` as static assets).
 - [x] Custom domains `gymlab.dev` + `www.gymlab.dev` with HTTPS; site live at https://gymlab.dev.
 - [x] Smoke check: 3 pages + robots + sitemap + OG + WebP assets 200; canonical/OG point to the apex; Lighthouse 95/100/100/100 (performance/a11y/best-practices/SEO).
-- [ ] T9b — Web Analytics beacon (token pending) + "Always Use HTTPS" toggle + optional www→apex redirect + switch DonDominio renewal to automatic.
+- [ ] T9b — Web Analytics beacon (token pending) + **switch DonDominio renewal to automatic**. `Always Use HTTPS` and the `www→apex` redirect are done and verified (2026-10-22). The rest of the Cloudflare hardening (HSTS, minimum TLS, DMARC, CAA, DNSSEC, `security.txt`, landing security headers) is tracked in `ProyectoGymLab/odd/tasks/cloudflare-endurecimiento.md` (phase 131).
 - [x] Email Routing for `gymlab@gymlab.dev` (2026-10-21) — **Cloudflare Email Routing (free, no paid mailbox)**: destination verified, MX/SPF/DKIM live and verified from 1.1.1.1 + 8.8.8.8, real delivery test OK. Receive-only; replies go out from the personal Gmail. The `Emails received` counter is an aggregate metric and lags behind actual delivery — the delivery test is the acceptance evidence.
 
 ### T13 — Bilingual site ES/EN — DONE (2026-10-21)
