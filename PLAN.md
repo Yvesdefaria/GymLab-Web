@@ -4,7 +4,7 @@ Handoff document to continue this project in a new session. Canonical project ru
 `AGENTS.md`; full task history and evidence live in `odd/tasks/web-landing-legales.md`
 (also mirrored in Engram: project `webgymlab`, topic `odd/web-landing-legales/tasks`).
 
-## Where we are (2026-10-21)
+## Where we are (2026-10-22)
 
 - Repo: `Yvesdefaria/GymLab-Web` (public) → local `WebGymLab`. All work is pushed to `main`.
 - Stack: Astro + MDX + Tailwind v4 (CSS-first), TypeScript strict, fully static. Site languages:
@@ -13,9 +13,11 @@ Handoff document to continue this project in a new session. Canonical project ru
   privacy policy and terms are live in both languages: `/es/…` and `/en/…` are canonical, `/`
   302s to `/es/`, and the legacy `/privacidad` + `/terminos` 301 to their Spanish pages.
   `npm run build` green (9 pages) and `npm run check:i18n` green (82 checks).
+- Showcase: three real captures (home, live session with the rest timer, stats), **English in both
+  locales by decision**, generated from imported demo data. See `odd/tasks/web-showcase-capturas.md`.
 - Brand system ported from the app (`gymlab-app/src/index.css`): dark gold tokens, Oswald/Barlow
   self-hosted, panel/grain primitives. Real app screenshots in `public/screens/`.
-- Done: T1 bootstrap · T2 scaffold · T3 brand · T4 layout · T5 sections · T6 screenshots · T7 legal skeleton · T13 bilingual site.
+- Done: T1 bootstrap · T2 scaffold · T3 brand · T4 layout · T5 sections · T6 screenshots · T7 legal skeleton · T13 bilingual site · T14 showcase captures.
 - The app is live at `https://app.gymlab.dev` (Worker `gymlab-app`, auto-deployed from `ProyectoGymLab` on every push), so the landing CTA now lands on a real app. See T12.
 
 ## Remaining work
@@ -56,6 +58,19 @@ Handoff document to continue this project in a new session. Canonical project ru
       approved by the owner (2026-10-22). The Spanish legal prose moved verbatim (0 paragraphs reworded).
 - [x] Showcase screenshots are **English-only in both locales** (owner decision, 2026-10-22): the app
       ships English by default, so they show a first launch. A per-language set was considered and rejected.
+
+### T14 — Showcase captures: home, session and stats — DONE (2026-10-22)
+
+- [x] Dedicated pipeline (`scripts/capture-showcase.py`), separate from the generic capture: pick the
+      language, skip onboarding, import the generated backup through Ajustes, assert the data landed,
+      start the rest timer and shoot.
+- [x] `scripts/optimize-screens.py` emits the language-suffixed set at 375w/750w; stale derivatives removed.
+- [x] Three captures in English with real data (53 workouts, 17-day streak, 16.4k weekly volume); the same
+      set ships in both locales by decision.
+- [x] The session frame required an app change: the fixed action bar hides while the rest timer runs.
+- [x] Verified in production: `/es/` and `/en/` reference the new files, the served WebP are SHA-256
+      identical to the local ones, and the old paths return 404.
+- Commands, limitations and cross-repo debt: `odd/tasks/web-showcase-capturas.md`.
 
 ### T12 — App web en `app.gymlab.dev` — DONE (2026-10-22)
 
