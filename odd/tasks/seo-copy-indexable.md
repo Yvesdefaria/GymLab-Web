@@ -136,9 +136,24 @@ does not exist for practical purposes.
 Template generated from the app's routine seed. Blocked on: the seed's shape and which routines are
 worth publishing.
 
-### T15.4 — `noindex` + real `robots.txt` on `app.gymlab.dev`
+### T15.4 — `noindex` + real `robots.txt` on `app.gymlab.dev` — DONE (2026-10-23)
 
-Lives in `ProyectoGymLab`. Cross-repo work, separate commits there.
+Lives in `ProyectoGymLab`, separate commit there: **`d735a532`**, *not pushed yet* (that repo's
+rule is commit-without-push; the owner pushes).
+
+- `gymlab-app/index.html`: `robots` goes from `index, follow` to `noindex, nofollow`.
+- `gymlab-app/public/robots.txt` (new): real text with `Allow: /`. Crawling stays allowed **on
+  purpose** — a `Disallow` would prevent the crawler from ever reading the `noindex`, and the URL
+  would stay in the index without content. Today `/robots.txt` answered with the SPA HTML as
+  `text/html`.
+- `CHANGELOG.md` updated under `[Unreleased] → Changed`.
+- Verified: `npm run build` clean, `dist/robots.txt` present, `dist/index.html` carries the new meta,
+  `npm test` **167 files / 1666 tests**.
+- Native review `review-11db9ea7edece812`: risk `medium`, 3 paths, 11 lines, one reliability lens,
+  **approved with zero findings**, authority burned. The consent envelope was relayed and the human
+  granted this candidate.
+- Effect after the owner pushes: Google drops `app.gymlab.dev` from the index over the following
+  weeks and the landing stops competing with its own product.
 
 ### T15.5 — Search Console review at 4 weeks
 
@@ -169,7 +184,7 @@ against the current build, then change the copy and observe them pass. Evidence 
 | T15.2a | inline | pattern-setting work: every decision was the brief itself | done |
 | T15.2 | pending | — | not started |
 | T15.3 | pending | — | not started |
-| T15.4 | separate repo | — | not started |
+| T15.4 | cross-repo commit | independent repo, own review lifecycle | done, awaiting owner push |
 | T15.5 | pending | — | not started |
 
 ### T15.1 evidence
