@@ -72,7 +72,7 @@ Handoff document to continue this project in a new session. Canonical project ru
       identical to the local ones, and the old paths return 404.
 - Commands, limitations and cross-repo debt: `odd/tasks/web-showcase-capturas.md`.
 
-### T15 — SEO del copy y superficie indexable — AUDIT HECHO, PLAN PENDIENTE (2026-10-22)
+### T15 — SEO del copy y superficie indexable — QUICK WINS, CALCULADORAS Y NOINDEX HECHOS (2026-10-23)
 
 **Veredicto**: el copy hace **match parcial** con las búsquedas de la categoría. El término de categoría está
 en el título, pero no en el H1, y no existe superficie indexable para la cola larga.
@@ -93,15 +93,25 @@ página web que los exponga**. Además `app.gymlab.dev` es indexable (su `index.
 **Sin datos todavía**: los volúmenes reales salen de **Search Console** (propiedad verificada el 2026-10-22) en
 2–4 semanas, o de Keyword Planner. Cualquier cifra anterior sería inventada.
 
+**Estado 2026-10-23**: el sitemap publica **12 URLs** (6 páginas × 2 locales) y `app.gymlab.dev` ya no es
+indexable, así que los dos problemas de fondo del audit están cerrados.
+
 **Plan**
 
-- [ ] **Quick wins**: description con «gratis» y «sin conexión»; un H2 con «app de entrenamiento»; `alt`
-      descriptivos; dos preguntas nuevas en el FAQ con queries reales; schema `SoftwareApplication` + `FAQPage`.
-- [ ] **Tres páginas de calculadora** (`/es/calculadora-1rm`, `/es/calculadora-imc`, `/es/calcular-calorias`):
-      la lógica ya existe en la app; cada página es contenido + CTA «Prueba la app».
-- [ ] **Páginas de rutinas** con plantilla desde el seed de la app.
-- [ ] **`noindex` + `robots.txt` real en la app** para que el tráfico entre por la landing.
-- [ ] **Revisar Search Console a las 4 semanas** y priorizar por impresiones reales, no por intuición.
+- [x] **Quick wins**: description con «gratis» y «sin conexión»; un H2 con «app de entrenamiento»; dos
+      preguntas nuevas en el FAQ; schema `SoftwareApplication` + `FAQPage`; gate con 20 aserciones SEO. Los
+      `alt` ya eran descriptivos: auditados, sin trabajo inventado. Commit `78dc522`.
+- [x] **Sitemap**: `hreflang` del XML igualado al del HTML (`es`/`en`/`x-default`, sin `es-ES`/`en-GB`) y
+      `/sitemap.xml` → 301 a `/sitemap-index.xml`. Commit `5da5662`.
+- [x] **Tres páginas de calculadora** (`/es/calculadora-1rm`, `/es/calculadora-imc`, `/es/calcular-calorias`,
+      más las pares en `/en/`): calculan de verdad con las fórmulas de la app, con sección `#calculadoras` en
+      la landing y enlaces cruzados. Commits `1b96140`, `2db5bde`, `df2a77d`.
+- [x] **`noindex` + `robots.txt` real en la app** para que el tráfico entre por la landing: `d735a532` y
+      `297c12cc` en `ProyectoGymLab`, verificado en producción (`text/plain` real y `noindex, nofollow`).
+- [ ] **Páginas de rutinas** con plantilla desde el seed de la app — bloqueado por decisión: qué rutinas
+      publicar y la forma del seed.
+- [ ] **Revisar Search Console a las 4 semanas** y priorizar por impresiones reales, no por intuición —
+      primera lectura útil ~2026-11-19.
 
 **Restricción de marca**: el H1 se mantiene; el término de categoría entra en un H2/subtítulo. No se reescribe
 la voz del sitio para meter keywords.

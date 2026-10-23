@@ -138,8 +138,8 @@ worth publishing.
 
 ### T15.4 — `noindex` + real `robots.txt` on `app.gymlab.dev` — DONE (2026-10-23)
 
-Lives in `ProyectoGymLab`, separate commit there: **`d735a532`**, *not pushed yet* (that repo's
-rule is commit-without-push; the owner pushes).
+Lives in `ProyectoGymLab`, separate commits there: **`d735a532`** (the fix) and **`297c12cc`**
+(`PLAN.md` note). Pushed 2026-10-23 with the owner's explicit authorization; Workers deployed it.
 
 - `gymlab-app/index.html`: `robots` goes from `index, follow` to `noindex, nofollow`.
 - `gymlab-app/public/robots.txt` (new): real text with `Allow: /`. Crawling stays allowed **on
@@ -154,6 +154,9 @@ rule is commit-without-push; the owner pushes).
   granted this candidate.
 - Effect after the owner pushes: Google drops `app.gymlab.dev` from the index over the following
   weeks and the landing stops competing with its own product.
+- **Verified in production after the deploy** (2026-10-23): `https://app.gymlab.dev/robots.txt`
+  returns **200 `text/plain`** with the real file (it used to return the SPA HTML as `text/html`),
+  and `/` publishes `<meta name="robots" content="noindex, nofollow" />`.
 
 ### T15.5 — Search Console review at 4 weeks
 
