@@ -19,6 +19,8 @@ Handoff document to continue this project in a new session. Canonical project ru
   self-hosted, panel/grain primitives. Real app screenshots in `public/screens/`.
 - Done: T1 bootstrap · T2 scaffold · T3 brand · T4 layout · T5 sections · T6 screenshots · T7 legal skeleton · T13 bilingual site · T14 showcase captures.
 - The app is live at `https://app.gymlab.dev` (Worker `gymlab-app`, auto-deployed from `ProyectoGymLab` on every push), so the landing CTA now lands on a real app. See T12.
+- 2026-10-24: primera **medición real de tráfico y performance** de la zona (T16). Corrige dos supuestos
+  del audit previo: hay RUM instalado y el MCP sí expone analytics (SQL API).
 
 ## Remaining work
 
@@ -144,6 +146,97 @@ la voz del sitio para meter keywords.
 - [x] Replace placeholder email `gymlab@app.gymlab.dev` → `gymlab@gymlab.dev` in `src/config/contact.ts` (2026-10-21). Mailbox still pending (T9b).
 - [x] Point the store listing (when it exists) to `https://gymlab.dev/privacidad` → app `privacy_policy_url` now points there (2026-10-21, emulator-verified). This is also the URL the Play listing must use.
 - [ ] After the web is live: retire the GitHub Pages privacy workflow.
+
+### T16 — Cloudflare: medición real y plan por prioridad (2026-10-24)
+
+Medido con el MCP `cloudflare-api` (OAuth, cuenta `64ab6824…`, rol Super Administrator, zona `gymlab.dev`).
+Complementa `ProyectoGymLab/odd/tasks/cloudflare-endurecimiento.md` (hallazgos 1–12, 2026-10-22): ese audit
+**no tenía datos de tráfico**; acá están.
+
+**Dos correcciones a ese audit:**
+
+1. **Sí hay RUM/Web Analytics instalado** (auto-install desde la creación de la zona, `siteTag 59ae492f…`,
+   ruleset `enabled: true`, `lite: true`). El audit decía que no había en ningún host.
+2. **El MCP sí permite analytics**: `/zones/:id/analytics/dashboard` y `/analytics/colos` están sunset
+   (`404 · 1015`), pero la **Analytics SQL API** funciona. No hace falta GraphQL.
+
+#### Cómo se consulta (para no volver a descubrirlo)
+
+- `GET /accounts/{account_tag}/analytics/sql?query=…` — dialecto tipo ClickHouse.
+- Exige rango de tiempo **en el SQL** (`timestamp >= '…' AND timestamp < '…'`) y `LIMIT` si hay `ORDER BY`.
+- `events.httpRequests` se filtra con `zoneTag`; `events.rumPageloadEvents` y `events.rumWebvitalsEvents`
+  exigen `accountTag` **y** `siteTag` (con solo `siteTag` devuelve `422`).
+- No soporta `quantile()` ni `APPROX_QUANTILE()` ni `MIN()` sobre datasets muestreados → usar `avg()` y
+  `countIf()`. Hay 91 datasets en el catálogo (`/analytics/sql/introspection`).
+- `botScore` en `httpRequests` devuelve `403` (falta scope); `/_heartbeat`, `/live`, `/ready` devuelven `400`
+  porque no son rutas de la API.
+
+#### Línea base (19–23 oct, 5 días con datos)
+
+| Métrica | Valor |
+|---|---|
+| Requests HTTP totales | **16.627** |
+| **Pageviews reales (RUM)** | **57** (0 marcados como bot) |
+| `200` / `404` | 7.902 / **6.551 (39%)** |
+| Otros estados | 301 944 · 304 491 · 302 371 · 307 132 · 403 115 · 204 85 |
+| Por host | gymlab.dev 7.536 · app 4.788 · www 1.641 · `:443` 492 · `:8443` 439 · `:8080` 438 |
+| Países (RUM) | US 48 · CA 4 · IN 2 · BR 1 · SG 1 · KR 1 |
+| Referrers | 56 directos · 1 desde `app.gymlab.dev` (**cero búsqueda/orgánico**) |
+| Devices / browsers | desktop 37 · mobile 20 / Chrome 29 · MobileSafari 11 · ChromeMobile 9 · Edge 5 |
+| Paths (RUM) | `/` 43 · `/es/` 14 |
+| LCP promedio | **3,31 s** (12 de 28 muestras > 2,5 s) |
+| TTFB promedio | **991 ms** (desktop 1,24 s · mobile 0,24 s) |
+
+Top 404 (todo escaneo de exploits): `/wp-admin/install.php` 77 · `/.env` 57 · `/favicon.ico` 39 ·
+`/.git/config` 36 · `/.env.dist` 32 · `/application/.env` 28 · `/xmlrpc.php` 27 · `/.env.local` 26 ·
+`/2019/wp-includes/wlwmanifest.xml` 26 · `/config.json` 24.
+
+#### P0 — Seguridad y abuso (esta semana)
+
+- [ ] **Rate limiting + WAF custom** (hoy no hay ninguna regla: los rulesets son solo managed + un
+      `dynamic_redirect`). Regla 1: bloquear `/.env*`, `/.git/*`, `/wp-*`, `/xmlrpc.php`, `/wlwmanifest.xml`,
+      `/config.json`. Regla 2: rate limit sobre `/` y `/api/*`. Evidencia: 39% de 16.627 requests son 404 de
+      escaneo, más 1.369 requests a `:8080`/`:8443`.
+- [ ] **2FA en la cuenta** — sigue en `false` con rol Super Administrator y un MCP con OAuth conectado
+      (hallazgo #1 del audit).
+- [ ] **TLS mínimo 1.0 → 1.2** y **HSTS** (hallazgos #3 y #4).
+- [ ] **DMARC + CAA** en DNS (hallazgos #5 y #6). Hoy solo hay SPF y DKIM.
+- [ ] **`security.txt` + headers de la landing** (hallazgos #8 y #9).
+
+#### P1 — Medición que falta
+
+- [ ] **Beacon de Web Analytics en `app.gymlab.dev`**: 4.788 requests sin una sola pageview medida. El RUM
+      solo registra `/` y `/es/`, así que la app está a ciegas.
+- [ ] **Revisar el flag `lite: true`** del ruleset RUM: puede estar limitando la recolección de Web Vitals
+      (28 muestras en 5 días es poco incluso para 57 pageviews).
+- [ ] **T9b — beacon de la landing**: el token ya existe (`get_accounts_rum_site_info_list` lo devuelve con el
+      snippet completo). Lo que queda es decidir si se inyecta por auto-install o por `<script>` en el layout.
+
+#### P2 — Performance medida
+
+- [ ] **TTFB de desktop en 1,24 s** contra 0,24 s en mobile: no es un límite del plan, es un bug. Consultar
+      `edgeTimeToFirstByteMs` agrupado por `clientRequestPath` en `events.httpRequests` para encontrar el path.
+- [ ] **LCP 3,31 s**: `preload` del hero, `early_hints: on` (hoy `off`) y revisar los 5 `woff2`
+      (barlow 400/600, oswald 500/600/700) — son las peticiones más repetidas después de `/`.
+- [ ] **`/favicon.ico` devuelve 404** (39 requests): servir el icono en esa ruta o redirigirlo al SVG.
+- [ ] **Cache Rules** para `/assets/*`, `/fonts/*`, `/_astro/*` con `immutable`. Hoy los assets de la app van
+      con `max-age=0, must-revalidate` (ver T12) y la zona tiene `browser_cache_ttl: 14400`.
+
+#### P3 — Adquisición (no es infra)
+
+- [ ] **Cero referrers externos**: nadie llega desde buscadores ni redes. Se cruza con T15 — Search Console a
+      las 4 semanas (primera lectura útil ~2026-11-19) y las páginas de rutinas/calculadoras.
+
+#### Bloqueos del MCP y cómo se desbloquean
+
+| Bloqueo | Evidencia | Salida |
+|---|---|---|
+| Gestión de tokens (`/user/tokens`) | `403 · 9109 · "No OAuth scope covers this endpoint"` | Conectar con **API token** (Bearer) con *API Tokens Read*; el OAuth no cubre tokens |
+| Billing/subscriptions | `403 · 10000 Authentication error` | API token con *Billing Read* |
+| `botScore` en analytics | `403 · "not permitted to access column"` | Re-autorizar con scope más amplio, o inferir con `userAgent` + `ja4` |
+| R2 | `403 · 10042 · "Please enable R2 through the Cloudflare Dashboard"` | Habilitar R2 en el dashboard (pide método de pago) — solo si la app necesita storage |
+| Plan Free | `custom_certificate_quota: 0`, `page_rule_quota: 3` | Techo de plan, no de permisos |
+| `?codemode=false` | — | **No usarlo**: expande ~3.766 tools (~244k tokens). El code mode ya está activo |
 
 ## How to resume
 
