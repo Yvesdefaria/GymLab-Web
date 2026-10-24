@@ -21,6 +21,8 @@ Handoff document to continue this project in a new session. Canonical project ru
 - The app is live at `https://app.gymlab.dev` (Worker `gymlab-app`, auto-deployed from `ProyectoGymLab` on every push), so the landing CTA now lands on a real app. See T12.
 - 2026-10-24: primera **medición real de tráfico y performance** de la zona (T16). Corrige dos supuestos
   del audit previo: hay RUM instalado y el MCP sí expone analytics (SQL API).
+- 2026-10-24: **hardening P0/P2 aplicado y verificado en producción** (TLS 1.2, HSTS, DMARC, CAA, WAF custom,
+  rate limiting, headers, `security.txt`, `favicon.ico`, cache inmutable). Detalle y evidencia en T16.
 
 ## Remaining work
 
@@ -247,7 +249,32 @@ Top 404 (todo escaneo de exploits): `/wp-admin/install.php` 77 · `/.env` 57 · 
 | `botScore` en analytics | `403 · "not permitted to access column"` | Re-autorizar con scope más amplio, o inferir con `userAgent` + `ja4` |
 | R2 | `403 · 10042 · "Please enable R2 through the Cloudflare Dashboard"` | Habilitar R2 en el dashboard (pide método de pago) — solo si la app necesita storage |
 | Plan Free | `custom_certificate_quota: 0`, `page_rule_quota: 3` | Techo de plan, no de permisos |
-| `?codemode=false` | — | **No usarlo**: expande ~3.766 tools (~244k tokens). El code mode ya está activo |
+| `?codemode=false` | — | **No usarlo**: expande ~3.780 tools (~244k tokens). El code mode ya está activo |
+
+#### Estado de la revisión nativa (2026-10-24)
+
+RDD está **on** (decidido a nivel global) y `review assess --base-ref 55d2092 --committed-only` marcó el
+rango como `high_risk` (5 archivos, 189 líneas). Se abrió la transacción `review-bb1b28cdd5e6324c` y **el
+consentimiento quedó sin responder** (el prompt se interrumpió): no hay registro de revisión creado.
+
+Al retomar:
+
+1. `gentle-ai review status --cwd <repo> --contract gentle-ai.review-integration/v2 --agent opencode`
+   para recuperar la transacción, y resolver el consentimiento pendiente (granted / declined) antes de
+   empezar trabajo nuevo. Un decline no desactiva RDD: es solo para ese candidato.
+2. Si no querés revisiones, la salida explícita es `gentle-ai review mode disable`.
+
+#### Próxima sesión — orden sugerido
+
+1. Resolver la revisión pendiente de arriba.
+2. Confirmar en Workers Builds que el deploy del commit de docs (`1a94d1c`) quedó verde.
+3. **Acciones del owner** (no delegables): 2FA en Cloudflare · DNSSEC (cargar el DS en DonDominio) ·
+   renovación automática en DonDominio · declaraciones de Play Console (Health apps + Data safety).
+4. **P1 con decisión pendiente**: beacon en `app.gymlab.dev` — requiere actualizar política de privacidad y
+   Data Safety, y el push manual que exige el repo de la app.
+5. **Re-medir con la SQL API**: cache hit ratio y 404 después del WAF. La línea base de 6.551 404 (39%) es
+   anterior al bloqueo, así que la próxima lectura debería caer fuerte. Mismo criterio para el TTFB.
+6. **LCP**: `preload` del hero y revisión de los 5 `woff2`, ahora que `early_hints` está en `on`.
 
 ## How to resume
 

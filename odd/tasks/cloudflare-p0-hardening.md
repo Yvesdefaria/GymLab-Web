@@ -55,3 +55,11 @@ manualmente`, y además exige brainstorming + aprobación previa. Por eso T5 que
   `edgeTimeToFirstByteMs` sigue sin permiso de columna (scope OAuth), así que la comparación es de borde
   medido, no de dataset.
 - T9: `early_hints: on` confirmado por readback.
+
+**L4** (2026-10-24, cierre de sesión) — RDD está on (global) y el rango `55d2092..1a94d1c` se evaluó
+`high_risk` (5 archivos, 189 líneas). Se abrió la transacción `review-bb1b28cdd5e6324c`; **el consentimiento
+quedó sin responder** (prompt interrumpido), así que no se creó registro de revisión y no se ejecutó ningún
+lens. Estado para la próxima sesión: recuperar la transacción con `gentle-ai review status` y resolver
+granted/declined antes de trabajo nuevo. Owner actions pendientes: 2FA, DNSSEC (DS en DonDominio),
+renovación automática, Play Console. Próximo paso de medición: repetir la SQL API para cache hit ratio y
+404 después del WAF.
