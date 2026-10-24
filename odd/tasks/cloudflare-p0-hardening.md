@@ -18,14 +18,15 @@
 
 | ID | Tarea | Specs | Ruta | Estado |
 |---|---|---|---|---|
-| T1 | TLS mínimo 1.2 + HSTS en la zona | S1 S5 S6 | inline (API) | pending |
-| T2 | DMARC + CAA en DNS | S1 S5 S6 | inline (API) | pending |
-| T3 | WAF custom + rate limiting | S1 S5 S6 | inline (API) | pending |
-| T4 | `security.txt`, `_headers`, `/favicon.ico` | S1 S4 | inline (código) + push | pending |
-| T5 | Beacon de Web Analytics en la app | S1 S4 | inline (código) + push | pending |
-| T6 | Cache Rules para assets estáticos | S1 S5 | inline (API) | pending |
-| T7 | Diagnóstico del TTFB de desktop | S1 | inline (read-only) | pending |
-| T8 | Actualizar `PLAN.md` con lo cerrado | S2 S3 | inline (doc) | pending |
+| T1 | TLS mínimo 1.2 + HSTS en la zona | S1 S5 S6 | inline (API) | **done** — verificado (TLS 1.0 rechazado, HSTS en apex/www/app) |
+| T2 | DMARC + CAA en DNS | S1 S5 S6 | inline (API) | **done** — verificado por DoH |
+| T3 | WAF custom + rate limiting | S1 S5 S6 | inline (API) | **done** — probes 403, páginas 200 |
+| T4 | `security.txt`, `_headers`, `/favicon.ico` | S1 S4 | inline (código) + push | **done** — `b61a333`, verificado en producción |
+| T5 | Beacon de Web Analytics en la app | S1 S4 | inline (código) + push | **blocked** — el repo de la app exige push manual + la política de privacidad no declara esa recolección |
+| T6 | Cache Rules para assets estáticos | S1 S5 | inline (API) | **done** — `_astro/*` immutable + Cache Rule en `app/assets/*` |
+| T7 | Diagnóstico del TTFB de desktop | S1 | inline (read-only) | **done** — no se reproduce en el edge (~340 ms) |
+| T8 | Actualizar `PLAN.md` con lo cerrado | S2 S3 | inline (doc) | **done** |
+| T9 | `early_hints: on` | S1 | inline (API) | **done** — estaba `off` |
 
 ## Log
 
@@ -34,4 +35,23 @@
 > ok, vamos a hacer todo lo que tu puedas hacer, ya que por los momentos no puedo hacer nada manualmente, vamos a ir marcando en plan.md lo que se vaya terminando
 
 **L2** (2026-10-24) — Contexto: `WebGymLab/AGENTS.md` declara los pushes work-unit a `main` como
-standing-authorized por el owner (se anuncian). Por eso T4/T5 pueden llegar a producción sin intervención.
+standing-authorized por el owner (se anuncian). Por eso T4 pudo llegar a producción sin intervención.
+El repo de la app (`ProyectoGymLab`) hace lo contrario: `Commit sin push — el usuario revisa y hace push
+manualmente`, y además exige brainstorming + aprobación previa. Por eso T5 queda bloqueado.
+
+**L3** (2026-10-24) — Evidencia por tarea:
+
+- T1: `min_tls_version: "1.2"`; `curl --tlsv1.0` falla el handshake, `--tlsv1.2` responde. HSTS
+  `max-age=15552000; includeSubDomains` en `gymlab.dev` y `app.gymlab.dev`.
+- T2: `_dmarc.gymlab.dev` TXT y 4 CAA publicados (DoH 1.1.1.1 + Google). Cloudflare agrega sus propias CAs
+  de Universal SSL a la respuesta.
+- T3: `fb75b51f…` (custom) y `f0f12176…` (rate limit, 100 req/10 s, mitigación 10 s — topes del Free).
+  `/.env`, `/.git/config`, `/wp-admin/install.php`, `/config.json`, `/xmlrpc.php` → 403; rutas reales → 200.
+- T4: `b61a333`. En producción: `/_astro/*.css` con `max-age=31536000, immutable`, headers de seguridad
+  presentes, `/.well-known/security.txt` 200, `/favicon.ico` 200.
+- T6: Cache Rule `7a0b5c31…`; `app.gymlab.dev/assets/index-fU4FLZ6n.js` → `CF-Cache-Status: HIT`,
+  `public, max-age=31536000, immutable`.
+- T7: `curl` desde España: `/` 302 en 345 ms, `/es/` 200 en 337 ms, assets ~334 ms (incluye DNS + TLS).
+  `edgeTimeToFirstByteMs` sigue sin permiso de columna (scope OAuth), así que la comparación es de borde
+  medido, no de dataset.
+- T9: `early_hints: on` confirmado por readback.

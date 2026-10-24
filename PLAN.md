@@ -193,34 +193,45 @@ Top 404 (todo escaneo de exploits): `/wp-admin/install.php` 77 · `/.env` 57 · 
 
 #### P0 — Seguridad y abuso (esta semana)
 
-- [ ] **Rate limiting + WAF custom** (hoy no hay ninguna regla: los rulesets son solo managed + un
-      `dynamic_redirect`). Regla 1: bloquear `/.env*`, `/.git/*`, `/wp-*`, `/xmlrpc.php`, `/wlwmanifest.xml`,
-      `/config.json`. Regla 2: rate limit sobre `/` y `/api/*`. Evidencia: 39% de 16.627 requests son 404 de
-      escaneo, más 1.369 requests a `:8080`/`:8443`.
-- [ ] **2FA en la cuenta** — sigue en `false` con rol Super Administrator y un MCP con OAuth conectado
-      (hallazgo #1 del audit).
-- [ ] **TLS mínimo 1.0 → 1.2** y **HSTS** (hallazgos #3 y #4).
-- [ ] **DMARC + CAA** en DNS (hallazgos #5 y #6). Hoy solo hay SPF y DKIM.
-- [ ] **`security.txt` + headers de la landing** (hallazgos #8 y #9).
+- [x] **Rate limiting + WAF custom** — **HECHO 2026-10-24**. Dos rulesets nuevos:
+      `http_request_firewall_custom` (bloquea `/.env`, `/.git/`, `/wp-*`, `xmlrpc.php`, `wlwmanifest.xml`,
+      `/config.json`) y `http_ratelimit` (100 req/10 s por IP + colo, bloqueo 10 s — topes del plan Free).
+      Verificado: `/.env`, `/.git/config`, `/wp-admin/install.php`, `/config.json`, `/xmlrpc.php` → **403**;
+      `/es/`, `/en/`, `/privacidad/`, `/terminos/` → **200**.
+- [ ] **2FA en la cuenta** — **pendiente, acción del usuario**: requiere dashboard + teléfono.
+- [x] **TLS mínimo 1.0 → 1.2** y **HSTS** — **HECHO**. `min_tls_version: "1.2"` y HSTS
+      `max-age=15552000; includeSubDomains` servido en apex, www y app. Verificado: TLS 1.0 rechazado
+      (handshake falla), TLS 1.2 responde.
+- [x] **DMARC + CAA** — **HECHO**. `_dmarc` TXT `v=DMARC1; p=none; rua=mailto:gymlab@gymlab.dev` y CAA
+      `issue` para `pki.goog`, `letsencrypt.org`, `sectigo.com` + `iodef`, verificado por DoH público.
+      Cloudflare publica además las CAs de su Universal SSL (comodoca, digicert, ssl.com): el conjunto
+      efectivo es más amplio que el cargado a mano.
+- [x] **`security.txt` + headers de la landing** — **HECHO**. `public/.well-known/security.txt`,
+      `public/_headers` (nosniff, Referrer-Policy, X-Frame-Options, Permissions-Policy, CSP report-only) y
+      `public/favicon.ico`. Verificado en producción después del deploy.
 
 #### P1 — Medición que falta
 
-- [ ] **Beacon de Web Analytics en `app.gymlab.dev`**: 4.788 requests sin una sola pageview medida. El RUM
-      solo registra `/` y `/es/`, así que la app está a ciegas.
-- [ ] **Revisar el flag `lite: true`** del ruleset RUM: puede estar limitando la recolección de Web Vitals
-      (28 muestras en 5 días es poco incluso para 57 pageviews).
-- [ ] **T9b — beacon de la landing**: el token ya existe (`get_accounts_rum_site_info_list` lo devuelve con el
-      snippet completo). Lo que queda es decidir si se inyecta por auto-install o por `<script>` en el layout.
+- [ ] **Beacon de Web Analytics en `app.gymlab.dev`** — **bloqueado por decisión, no por técnica**: (1) el
+      repo de la app exige `Commit sin push` y aprobación previa; (2) sería una recolección nueva que la
+      política de privacidad y el Data Safety de Play todavía no declaran. Los tres pasos van juntos.
+- [x] **Flag `lite: true` del ruleset RUM** — **revisado, se mantiene**: es el modo sin cookies, coherente
+      con «cookieless analytics only» de `AGENTS.md`. Cambiarlo ampliaría la recolección sin tocar la política.
+- [x] **T9b — beacon de la landing** — **resuelto**: el site existe (`siteTag 59ae492f…`), está en
+      auto-install y ya recolecta (57 pageviews y 28 muestras de Web Vitals entre el 19 y el 23 de octubre).
 
 #### P2 — Performance medida
 
-- [ ] **TTFB de desktop en 1,24 s** contra 0,24 s en mobile: no es un límite del plan, es un bug. Consultar
-      `edgeTimeToFirstByteMs` agrupado por `clientRequestPath` en `events.httpRequests` para encontrar el path.
-- [ ] **LCP 3,31 s**: `preload` del hero, `early_hints: on` (hoy `off`) y revisar los 5 `woff2`
-      (barlow 400/600, oswald 500/600/700) — son las peticiones más repetidas después de `/`.
-- [ ] **`/favicon.ico` devuelve 404** (39 requests): servir el icono en esa ruta o redirigirlo al SVG.
-- [ ] **Cache Rules** para `/assets/*`, `/fonts/*`, `/_astro/*` con `immutable`. Hoy los assets de la app van
-      con `max-age=0, must-revalidate` (ver T12) y la zona tiene `browser_cache_ttl: 14400`.
+- [x] **TTFB de desktop** — **medido, no se reproduce**: desde un cliente nuevo (España) el edge responde
+      ~340 ms incluyendo DNS + TLS en `/`, `/es/`, `/en/` y assets. El 1,24 s de RUM son 21 muestras de
+      cliente, no latencia de origen. Sin acción.
+- [x] **`early_hints: on`** — **HECHO** (estaba `off`). El `preload` del hero y la revisión de los 5 `woff2`
+      quedan como optimización de LCP pendiente de volver a medir.
+- [x] **`/favicon.ico` devuelve 404** — **HECHO**: `public/favicon.ico` (16/32/48, generado del
+      `icon-192.png`). Verificado 200 en producción.
+- [x] **Cache Rules** — **HECHO**: `public/_headers` sirve `/_astro/*` con `max-age=31536000, immutable`
+      (verificado sobre el CSS real) y una Cache Rule de zona aplica lo mismo a `app.gymlab.dev/assets/*`
+      (`CF-Cache-Status: HIT`, `immutable`).
 
 #### P3 — Adquisición (no es infra)
 
