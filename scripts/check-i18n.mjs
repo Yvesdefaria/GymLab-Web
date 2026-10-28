@@ -198,30 +198,42 @@ for (const landing of LANDINGS) {
     check(`seo ${path} renders FAQ "${question}"`, html.includes(question));
   }
 
-  // Exactly two graphs, and every one of them must be valid JSON.
+  // One graph per page. A second block was the old shape; the site now composes
+  // every node into a single `@graph` so references resolve inside the document.
   const blocks = [
     ...html.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g),
   ].map((match) => match[1]);
-  check(`seo ${path} has 2 json-ld blocks`, blocks.length === 2, `got ${blocks.length}`);
+  check(`seo ${path} has 1 json-ld block`, blocks.length === 1, `got ${blocks.length}`);
 
-  const graphs = [];
-  for (const block of blocks) {
-    try {
-      graphs.push(JSON.parse(block));
-    } catch (error) {
-      check(`seo ${path} json-ld parses`, false, String(error));
-    }
+  let graph = null;
+  try {
+    graph = JSON.parse(blocks[0] ?? '{}');
+  } catch (error) {
+    check(`seo ${path} json-ld parses`, false, String(error));
   }
-  check(
-    `seo ${path} json-ld blocks all parse`,
-    graphs.length === blocks.length,
-    `${graphs.length}/${blocks.length} parsed`,
-  );
+  check(`seo ${path} json-ld parses`, Boolean(graph));
 
-  const app = graphs.find((graph) => graph['@type'] === 'SoftwareApplication');
-  const faq = graphs.find((graph) => graph['@type'] === 'FAQPage');
+  const nodes = graph?.['@graph'] ?? [];
+  const byType = (type) => nodes.find((node) => node['@type'] === type);
+  const app = byType('SoftwareApplication');
+  const site = byType('WebSite');
+  const org = byType('Organization');
+
+  check(`seo ${path} has Organization`, Boolean(org));
+  check(`seo ${path} has WebSite`, Boolean(site));
   check(`seo ${path} has SoftwareApplication`, Boolean(app));
-  check(`seo ${path} has FAQPage`, Boolean(faq));
+
+  // The FAQ rich result was retired in May 2026. The page still renders the
+  // questions; the schema node is the part that no longer earns anything.
+  check(`seo ${path} ships no FAQPage`, !html.includes('"FAQPage"'));
+
+  if (site && org) {
+    check(
+      `seo ${path} WebSite.publisher resolves to Organization`,
+      site.publisher?.['@id'] === org['@id'],
+      `got ${site.publisher?.['@id']}`,
+    );
+  }
 
   if (app) {
     check(`seo ${path} offer price is "0"`, app.offers?.price === '0', `got ${app.offers?.price}`);
@@ -229,21 +241,16 @@ for (const landing of LANDINGS) {
       `seo ${path} has no aggregateRating`,
       !Object.hasOwn(app, 'aggregateRating'),
     );
+    // The stores are announced, not shipped. Web is the only honest platform.
+    check(
+      `seo ${path} operatingSystem is "Web"`,
+      app.operatingSystem === 'Web',
+      `got ${app.operatingSystem}`,
+    );
     check(
       `seo ${path} inLanguage is ${landing.inLanguage}`,
       app.inLanguage === landing.inLanguage,
       `got ${app.inLanguage}`,
-    );
-  }
-
-  if (faq) {
-    // The schema must mirror the FAQ actually visible on the page.
-    const renderedAnswers = html.split('faq-item__answer').length - 1;
-    const questions = Array.isArray(faq.mainEntity) ? faq.mainEntity.length : -1;
-    check(
-      `seo ${path} FAQPage mirrors rendered answers`,
-      questions === renderedAnswers,
-      `schema ${questions}, rendered ${renderedAnswers}`,
     );
   }
 }
@@ -283,6 +290,60 @@ for (const { path, term } of CALC_PAGES) {
     `calc ${path} keeps a space after every output`,
     !/<\/output>[0-9A-Za-zÀ-ÿ]/.test(html),
   );
+
+  // Each calculator composes its own graph: the site nodes travel with it so no
+  // `@id` reference points at a node that lives on another page.
+  const schemaBlocks = [
+    ...html.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g),
+  ].map((match) => match[1]);
+  check(
+    `calc ${path} has 1 json-ld block`,
+    schemaBlocks.length === 1,
+    `got ${schemaBlocks.length}`,
+  );
+
+  let calcNodes = [];
+  try {
+    calcNodes = JSON.parse(schemaBlocks[0] ?? '{}')['@graph'] ?? [];
+  } catch (error) {
+    check(`calc ${path} json-ld parses`, false, String(error));
+  }
+  check(`calc ${path} json-ld parses`, calcNodes.length > 0);
+
+  const calcTypes = calcNodes.map((node) => node['@type']);
+  check(`calc ${path} has WebApplication`, calcTypes.includes('WebApplication'));
+  check(`calc ${path} has BreadcrumbList`, calcTypes.includes('BreadcrumbList'));
+  check(`calc ${path} ships no FAQPage`, !html.includes('"FAQPage"'));
+
+  const calcApp = calcNodes.find((node) => node['@type'] === 'WebApplication');
+  const canonical = html.match(/<link rel="canonical" href="([^"]*)">/)?.[1];
+  if (calcApp) {
+    check(
+      `calc ${path} operatingSystem is "Web"`,
+      calcApp.operatingSystem === 'Web',
+      `got ${calcApp.operatingSystem}`,
+    );
+    check(
+      `calc ${path} app url matches canonical`,
+      calcApp.url === canonical,
+      `${calcApp.url} vs ${canonical}`,
+    );
+  }
+
+  const calcIds = new Set(calcNodes.map((node) => node['@id']).filter(Boolean));
+  const refs = [];
+  const collect = (value) => {
+    if (!value || typeof value !== 'object') return;
+    if (Array.isArray(value)) {
+      value.forEach(collect);
+      return;
+    }
+    if (Object.keys(value).length === 1 && typeof value['@id'] === 'string') refs.push(value['@id']);
+    Object.values(value).forEach(collect);
+  };
+  calcNodes.forEach(collect);
+  const dangling = refs.filter((ref) => !calcIds.has(ref));
+  check(`calc ${path} has no dangling @id`, dangling.length === 0, dangling.join(', '));
 }
 
 // Orphan pages are invisible: the landing must link to every calculator, and the

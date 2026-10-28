@@ -3,8 +3,10 @@
 // The same numbers render on the server (so the page is useful without JS and the
 // HTML carries the result) and are recomputed on input by the bundled script.
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import StructuredData from '../../components/StructuredData.astro';
 import { CALC_PATHS, LOCALES, getLang, localePath, useTranslations } from '../../i18n';
 import { calcIMC, getIMCCategory, type IMCCategory } from '../../lib/calculators';
+import { breadcrumbList, organization, webApplication, webSite } from '../../lib/schema';
 
 export function getStaticPaths() {
   return LOCALES.map((lang) => ({ params: { lang } }));
@@ -24,6 +26,15 @@ const categoryLabel = (category: IMCCategory): string => c.result.categories[cat
 ---
 
 <BaseLayout title={c.meta.title} description={c.meta.description}>
+  <StructuredData
+    slot="head"
+    nodes={[
+      organization(lang),
+      webSite(lang),
+      webApplication(lang, CALC_PATHS[1], c.title, c.meta.description),
+      breadcrumbList(lang, CALC_PATHS[1], c.title),
+    ]}
+  />
   <section class="floor-section calc-page" aria-labelledby="calc-title">
     <div class="frame">
       <header class="section-frame">

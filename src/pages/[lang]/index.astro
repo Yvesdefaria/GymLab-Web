@@ -11,14 +11,20 @@ import Calculators from '../../components/sections/Calculators.astro';
 import PrivacyBand from '../../components/sections/PrivacyBand.astro';
 import Faq from '../../components/sections/Faq.astro';
 import ClosingBand from '../../components/sections/ClosingBand.astro';
-import { LOCALES } from '../../i18n';
+import { LOCALES, getLang } from '../../i18n';
+import { organization, softwareApplication, webSite } from '../../lib/schema';
 
 export function getStaticPaths() {
   return LOCALES.map((lang) => ({ params: { lang } }));
 }
+
+const lang = getLang(Astro.url.pathname);
 ---
 <BaseLayout>
-  <StructuredData slot="head" />
+  <StructuredData
+    slot="head"
+    nodes={[organization(lang), webSite(lang), softwareApplication(lang)]}
+  />
   <Hero />
   <ProofBand />
   <FeatureBoard />

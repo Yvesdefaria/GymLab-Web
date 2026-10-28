@@ -3,8 +3,10 @@
 // The same numbers render on the server (so the page is useful without JS and the
 // HTML carries the result) and are recomputed on input by the bundled script.
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import StructuredData from '../../components/StructuredData.astro';
 import { CALC_PATHS, LOCALES, getLang, localePath, useTranslations } from '../../i18n';
 import { tdeeRange, type ActivityLevel, type Sex } from '../../lib/calculators';
+import { breadcrumbList, organization, webApplication, webSite } from '../../lib/schema';
 
 export function getStaticPaths() {
   return LOCALES.map((lang) => ({ params: { lang } }));
@@ -35,6 +37,17 @@ const fmt = (value: number): string => value.toLocaleString(lang, { maximumFract
 ---
 
 <BaseLayout title={c.meta.title} description={c.meta.description}>
+  <StructuredData
+    slot="head"
+    nodes={[
+      // The site nodes travel with every page so the `@id` references inside
+      // them resolve without leaning on another document.
+      organization(lang),
+      webSite(lang),
+      webApplication(lang, CALC_PATHS[2], c.title, c.meta.description),
+      breadcrumbList(lang, CALC_PATHS[2], c.title),
+    ]}
+  />
   <section class="floor-section calc-page" aria-labelledby="calc-title">
     <div class="frame">
       <header class="section-frame">
