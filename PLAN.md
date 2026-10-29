@@ -12,29 +12,41 @@ Last updated: 2026-10-29.
   TypeScript strict, fully static. Languages `es` (default) and `en-GB`, both under a locale prefix.
 - Production is **live** at `https://gymlab.dev`, served by the Worker `gymlab-web` with static assets.
   It is not Cloudflare Pages. Deploy with `npx wrangler deploy`.
-- `npm run build` green (**16 pages**) and `npm run check:i18n` green (**254 assertions**).
+- `npm run build` green (**16 pages**) and `npm run check:i18n` green (**308 assertions**).
 - The sitemap publishes **12 URLs**; `app.gymlab.dev` is `noindex` with a real `robots.txt`.
 - The landing, the three calculators, the 404 and the legal pages all ship in both locales.
 - Measurement and the SQL recipe: see "Reading analytics" below and `COMPLETED.md` Appendix B.
 
-## Finished, pending merge and deploy
+## Deployed on 2026-10-29
 
-None of this is in production. The branches are local and unpushed; `main` has none of it.
+`main` is at `10df7a4` and Workers Builds deployed it on the push. The 404, the favicon, the brand
+mark and the JSON-LD graph are live. Full detail in `COMPLETED.md` → T17.
+
+Verified against production, not the build:
+
+```
+/pagina-que-no-existe/   404 · 7076 bytes · text/html   (was: 404 · 0 bytes · no content-type)
+/favicon.svg             200 · image/svg+xml
+/favicon.ico             200 · image/vnd.microsoft.icon
+/site.webmanifest        200 · application/manifest+json
+/brand/logo_marca.svg    200 · image/svg+xml
+/es/calculadora-imc/     @graph with WebApplication + BreadcrumbList
+```
+
+The zone rate-limit rule also changed and is live: it now reads
+`not starts_with(http.request.uri.path, "/assets/")` (ruleset version 2). The 216-entry service-worker
+precache could not install while chunk downloads counted against 100 requests per 10 s of the Free
+plan. Verified: 140 requests to `/assets/*` return 200; 120 requests to `/` still get blocked after
+~100.
+
+## Pending in the app repo
 
 | Repo | Branch | Commit | What |
 | --- | --- | --- | --- |
-| `WebGymLab` | `feat/seo-structured-data` | `e7c2cbf` | One self-contained JSON-LD `@graph` per page; `FAQPage` (retired by Google 2026-05) removed; `operatingSystem` corrected to `Web`; calculators gained `WebApplication` + `BreadcrumbList`; SEO half of `check-i18n` rewritten |
-| `WebGymLab` | `feat/404-y-favicon` | `9543602` | `404.astro` + `not_found_handling: "404-page"`; `favicon.svg`; `favicon.ico` regenerated; `site.webmanifest`; `noindex` prop on `BaseLayout` |
-| `WebGymLab` | `feat/404-y-favicon` | `1583fdd` | `brand/logo_marca.svg` (emblem cropped) and the header/footer marks sized by height |
-| `ProyectoGymLab` | `fix/pwa-auto-update` | `ae3bf1ca` | Service-worker update polling + `/assets/*` excluded from the rate limit; test-animations out of the precache |
+| `ProyectoGymLab` | `fix/pwa-auto-update` | `ae3bf1ca` | Service-worker update polling, `/assets/*` out of the rate limit, `test-animations` out of the precache |
 
-**Already live and not tracked by any branch:** the zone rate-limit rule now reads
-`not starts_with(http.request.uri.path, "/assets/")` (ruleset version 2). The 216-entry precache could
-not install while that rule counted chunk downloads. Verified: 140 requests to `/assets/*` return 200;
-120 requests to `/` still get blocked after ~100.
-
-Before deploying the 404, remember that `not_found_handling` only takes effect through
-`npx wrangler deploy`, not through a static upload.
+The zone half is already live, so a device with a stuck worker can complete its install on the next
+navigation. The polling needs this branch deployed to reach the browsers.
 
 ## Owner actions (not delegable)
 

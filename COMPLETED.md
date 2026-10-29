@@ -2,7 +2,7 @@
 
 > Only work that is **100% closed**: merged, deployed where it applies, every checkbox ticked.
 > Anything with an open item, an unpushed branch or a pending review stays in `PLAN.md`.
-> Last updated: 2026-10-29 · Build: 16 pages · `check:i18n`: 254 assertions · Site live since 2026-10-19
+> Last updated: 2026-10-29 · Build: 16 pages · `check:i18n`: 308 assertions · Site live since 2026-10-19, last deployed 2026-10-29
 >
 > Task-by-task detail lives in `odd/tasks/*.md`; the same history is mirrored in Engram
 > (project `webgymlab`). This file is the index, not the source of truth for evidence.
@@ -21,6 +21,7 @@
 | T15a | SEO copy: quick wins, sitemap, calculators, `noindex` | 2026-10-23 | 12 sitemap URLs and three working calculator pages |
 | T16a | Cloudflare P0: WAF, rate limit, TLS, HSTS, DMARC, CAA, `security.txt` | 2026-10-24 | Hardening applied and verified in production |
 | T16b | Cloudflare P1/P2: RUM, `early_hints`, favicon 404, cache rules | 2026-10-24 | Measurement base and the fixes it justified |
+| T17 | Structured data, 404, favicon and brand mark | 2026-10-29 | Honest `@graph` per page, a 404 that renders, a legible icon |
 
 ---
 
@@ -145,6 +146,38 @@
   (`CF-Cache-Status: HIT`, `immutable`).
 
 ---
+
+## T17 — Structured data, 404, favicon and brand mark
+
+Merged to `main` (`f89b637`, merging `feat/seo-structured-data` and `feat/404-y-favicon`), plus
+`10df7a4` for the robots dedup, and deployed by Workers Builds on the same push.
+
+- **JSON-LD**: one self-contained `@graph` per page. The landing carries `Organization`, `WebSite`
+  and `SoftwareApplication`; the six calculator pages carry `Organization`, `WebSite`,
+  `WebApplication` and `BreadcrumbList`. `FAQPage` removed — Google retired that rich result on
+  2026-05-07 and dropped the documentation in 2026-10. `operatingSystem` is now `Web`, the only
+  platform that actually ships.
+- **404**: there was no `404.astro` and no `404.html`, so every unmatched path returned HTTP 404
+  with a **0-byte body and no `Content-Type`**. `not_found_handling: "404-page"` in `wrangler.jsonc`
+  is what makes Workers serve the page — creating the page alone would not have helped. Verified in
+  production: `404 · 7076 bytes · text/html`, in the site's own design.
+- **One robots directive per page**: the merge left two metas on the 404
+  (`index, follow, max-image-preview:large` plus `noindex`). Google applies the most restrictive, so
+  the result was correct by accident; `10df7a4` made it explicit.
+- **Favicon**: `BaseLayout` overrode the implicit `/favicon.ico` with `icon-192.png`, which is the
+  wordmark and is illegible at 16 px; the existing `.ico` had the same artwork. New `favicon.svg`
+  cropped to the dense core of the emblem, `favicon.ico` regenerated at 16/32/48 from it, and
+  `site.webmanifest` added over the existing 192/512/maskable icons.
+- **Brand mark**: `brand/logo_marca.svg` crops the 600×600 canvas to the emblem (2.93:1). The header
+  mark went from a drawn 14.1 × 4.8 px to 35.2 × 12; the footer to 29.3 × 10. Both are sized by
+  height so the real aspect is respected instead of forcing a square with dead space.
+- **Zone rule, live before the deploy**: the rate limit now excludes `/assets/*`
+  (`not starts_with(http.request.uri.path, "/assets/")`). A 216-entry service-worker precache could
+  not install while chunk downloads counted against 100 requests per 10 s. Verified: 140 requests to
+  `/assets/*` return 200, 120 requests to `/` still get blocked after ~100.
+- **Gate**: `check:i18n` now has **308 assertions** and covers the `@graph` shape,
+  `operatingSystem === 'Web'`, `url === canonical`, the absence of `FAQPage`, and that no `@id`
+  reference dangles on a calculator page.
 
 ## Appendix A — SEO audit of the copy (2026-10-23)
 

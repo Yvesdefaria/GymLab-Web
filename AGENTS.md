@@ -16,7 +16,7 @@ Public website for **GymLab** (local-first training app; app repo: `ProyectoGymL
 - `npm run dev` — dev server
 - `npm run build` — production build → `dist/`
 - `npm run preview` — preview the build
-- `npm run check:i18n` — post-build gate, 254 assertions: routes, canonical/hreflang agreement, redirects, sitemap alternates and the JSON-LD shape. Run it **after** `npm run build`.
+- `npm run check:i18n` — post-build gate, 308 assertions: routes, canonical/hreflang agreement, redirects, sitemap alternates and the JSON-LD shape. Run it **after** `npm run build`.
 
 ## Structure
 
