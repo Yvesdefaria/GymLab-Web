@@ -7,12 +7,18 @@ import { getLang, localeSwitchPath, useTranslations } from '../i18n';
 interface Props {
   title?: string;
   description?: string;
+  /** The 404 has no canonical URL: it drops canonical and alternates, and says so. */
+  noindex?: boolean;
 }
 
 const lang = getLang(Astro.url.pathname);
 const t = useTranslations(lang);
 
-const { title = t.meta.home.title, description = t.meta.home.description } = Astro.props;
+const {
+  title = t.meta.home.title,
+  description = t.meta.home.description,
+  noindex = false,
+} = Astro.props;
 
 const siteURL = Astro.site ?? new URL('https://gymlab.dev');
 // Canonical and alternates are built by the same function, so a page can never
@@ -35,10 +41,18 @@ const isLanding = /^\/(?:es|en)\/?$/.test(Astro.url.pathname);
     <meta name="robots" content="index, follow, max-image-preview:large" />
     <meta name="generator" content={Astro.generator} />
     <meta name="description" content={description} />
-    <link rel="canonical" href={canonicalURL} />
-    <link rel="alternate" hreflang="es" href={alternateEsURL} />
-    <link rel="alternate" hreflang="en" href={alternateEnURL} />
-    <link rel="alternate" hreflang="x-default" href={alternateEsURL} />
+    {
+      noindex ? (
+        <meta name="robots" content="noindex" />
+      ) : (
+        <>
+          <link rel="canonical" href={canonicalURL} />
+          <link rel="alternate" hreflang="es" href={alternateEsURL} />
+          <link rel="alternate" hreflang="en" href={alternateEnURL} />
+          <link rel="alternate" hreflang="x-default" href={alternateEsURL} />
+        </>
+      )
+    }
     {isLanding && (
       <link rel="preload" as="image" href="/images/home-hero.webp" fetchpriority="high" />
     )}
@@ -57,8 +71,10 @@ const isLanding = /^\/(?:es|en)\/?$/.test(Astro.url.pathname);
     <meta name="twitter:title" content={title} />
     <meta name="twitter:description" content={description} />
     <meta name="twitter:image" content={ogImageURL} />
-    <link rel="icon" type="image/png" href="/brand/icon-192.png" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="/favicon.ico" sizes="32x32" />
     <link rel="apple-touch-icon" href="/brand/icon-192.png" />
+    <link rel="manifest" href="/site.webmanifest" />
     <title>{title}</title>
     <slot name="head" />
   </head>

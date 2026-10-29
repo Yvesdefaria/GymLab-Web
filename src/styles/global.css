@@ -632,9 +632,11 @@
     text-decoration: none;
   }
 
-  .site-header__brand img {
-    width: 26px;
-    height: 26px;
+  /* The mark is a 2.9:1 crop, not a square: it is sized by height so the
+     artwork fills the box instead of sitting in empty space. */
+  .site-header__mark {
+    width: auto;
+    height: 12px;
   }
 
   .site-header__wordmark {
@@ -1932,9 +1934,9 @@
     text-decoration: none;
   }
 
-  .site-footer__brand img {
-    width: 24px;
-    height: 24px;
+  .site-footer__mark {
+    width: auto;
+    height: 10px;
   }
 
   .site-footer__wordmark {

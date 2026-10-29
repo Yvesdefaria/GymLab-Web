@@ -1,0 +1,85 @@
+---
+// Served by Workers Static Assets for every unmatched path (`not_found_handling`),
+// so it cannot know the visitor's locale: it renders the default locale and
+// offers the English site. The layout drops canonical and alternates because a
+// 404 has no canonical URL.
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout
+  noindex
+  title="Página no encontrada — GymLab"
+  description="La página que buscas no existe en GymLab."
+>
+  <section class="floor-section notfound" aria-labelledby="notfound-title">
+    <div class="frame">
+      <div class="section-frame">
+        <div class="section-frame__rule">
+          <span class="section-frame__label">Error 404</span>
+          <span class="section-frame__meta">GymLab</span>
+        </div>
+      </div>
+
+      <p class="notfound__code" aria-hidden="true">404</p>
+      <h1 id="notfound-title">Esta página no existe</h1>
+      <p class="notfound__text">
+        La dirección que buscas no está en GymLab. Puede que el enlace esté mal escrito o
+        que la página se haya movido.
+      </p>
+
+      <div class="notfound__actions">
+        <a class="btn btn--primary" href="/es/">Volver al inicio</a>
+        <a class="btn btn--ghost" href="/es/#calculadoras">Ver las calculadoras</a>
+      </div>
+
+      <p class="notfound__alt">
+        Looking for the English site? <a href="/en/">Go to gymlab.dev/en</a>
+      </p>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .notfound__code {
+    margin: clamp(1.5rem, 4vw, 3rem) 0 0;
+    font-family: var(--font-display);
+    font-size: clamp(4.5rem, 14vw, 9rem);
+    font-weight: 600;
+    line-height: 0.85;
+    color: color-mix(in srgb, var(--color-accent) 26%, transparent);
+    letter-spacing: 0.02em;
+  }
+
+  .notfound h1 {
+    margin: 0.5rem 0 0;
+    max-width: 20ch;
+    font-family: var(--font-display);
+    font-size: clamp(2rem, 4.2vw, 3.6rem);
+    font-weight: 600;
+    line-height: 0.98;
+    text-wrap: balance;
+  }
+
+  .notfound__text {
+    margin-top: 1rem;
+    max-width: 54ch;
+    color: var(--color-muted);
+  }
+
+  .notfound__actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-top: clamp(1.75rem, 3vw, 2.5rem);
+  }
+
+  .notfound__alt {
+    margin-top: 2rem;
+    color: var(--color-muted);
+    font-size: 0.9rem;
+  }
+
+  .notfound__alt a {
+    color: var(--color-accent);
+  }
+</style>
