@@ -12,7 +12,7 @@ Last updated: 2026-10-29.
   TypeScript strict, fully static. Languages `es` (default) and `en-GB`, both under a locale prefix.
 - Production is **live** at `https://gymlab.dev`, served by the Worker `gymlab-web` with static assets.
   It is not Cloudflare Pages. Deploy with `npx wrangler deploy`.
-- `npm run build` green (**16 pages**) and `npm run check:i18n` green (**308 assertions**).
+- `npm run build` green (**16 pages**) and `npm run check:i18n` green (**314 assertions**).
 - The sitemap publishes **12 URLs**; `app.gymlab.dev` is `noindex` with a real `robots.txt`.
 - The landing, the three calculators, the 404 and the legal pages all ship in both locales.
 - Measurement and the SQL recipe: see "Reading analytics" below and `COMPLETED.md` Appendix B.
@@ -38,6 +38,12 @@ The zone rate-limit rule also changed and is live: it now reads
 precache could not install while chunk downloads counted against 100 requests per 10 s of the Free
 plan. Verified: 140 requests to `/assets/*` return 200; 120 requests to `/` still get blocked after
 ~100.
+
+Two more zone changes happened the same day, both evidence-driven (see `COMPLETED.md` → Appendix C):
+
+- `early_hints` was turned **off**. On, it produced 671 `504` responses in five days, all from
+  `requestSource = "earlyHintsCache"`, against zero before.
+- The social card gained `twitter:image:alt`, `og:image:type` and `og:locale:alternate` (`99f1ed2`).
 
 ## Pending in the app repo
 
@@ -92,8 +98,15 @@ RDD: it applies to that candidate only.
 - [ ] **Search Console reading at 4 weeks** — first useful read ~**2026-11-19**. Prioritise by real
       impressions, not intuition. Verification is done; submitting the sitemap is the open step and
       lives under *Search Console* in owner actions above.
-- [ ] Remaining polish nobody has scheduled: `lastmod` in the sitemap, `twitter:image:alt`,
-      `og:image:type`, `og:locale:alternate`, and a per-locale OG image. All low impact, all cheap.
+- [x] **Social card completed** (2026-10-29, `99f1ed2`): `twitter:image:alt`, `og:image:type` and
+      `og:locale:alternate`, plus three gate assertions per landing.
+- **Deliberately not done, with reasons:**
+      - `lastmod` in the sitemap: the only value available is the build date, which moves on
+        docs-only commits. A `lastmod` that is not the content's real change date teaches Google to
+        distrust the field, which is the opposite of what it is for.
+      - A per-locale OG image: there is one card for both locales; `og:locale:alternate` declares the
+        other audience without inventing a second design. Worth doing only when someone can compose
+        an English card that matches the Spanish one.
 
 ### T16 — Cloudflare, open items
 
@@ -103,8 +116,13 @@ RDD: it applies to that candidate only.
 - [ ] **Re-measure with the SQL API**: cache hit ratio and 404 volume after the WAF, plus the effect of
       the new `/assets/*` rate-limit exclusion. The 6,551 404s (39%) in `COMPLETED.md` Appendix B predate
       the WAF, so the next reading should drop hard.
-- [ ] **LCP**: re-check the hero `preload` and the five `woff2` now that `early_hints` is on. Baseline
-      3.31 s with 12 of 28 samples above 2.5 s.
+- [x] **`early_hints` reverted to `off`** (2026-10-29). Turning it on in T16b produced **671** `504`
+      responses in five days, every one with `requestSource = "earlyHintsCache"`, against **zero** in
+      the baseline window. The prefetch fails consistently and warms almost nothing at this traffic
+      level. Evidence in `COMPLETED.md` → Appendix C.
+- [ ] **LCP**: re-check the hero `preload` and the five `woff2`. The 3.31 s baseline (12 of 28 samples
+      above 2.5 s) was measured **with** `early_hints` on, so it is not a clean baseline either way.
+      Needs a fresh reading after the revert.
 - [ ] **Zero external referrers**: nobody arrives from search or social. Crosses with T15.
 
 ## Reading analytics

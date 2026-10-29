@@ -221,3 +221,33 @@ new `/assets/*` rate-limit exclusion; it should not be compared naively with lat
 Top 404s, all exploit scanning: `/wp-admin/install.php` 77 · `/.env` 57 · `/favicon.ico` 39 ·
 `/.git/config` 36 · `/.env.dist` 32 · `/application/.env` 28 · `/xmlrpc.php` 27 · `/.env.local` 26 ·
 `/2019/wp-includes/wlwmanifest.xml` 26 · `/config.json` 24.
+
+## Appendix C — Second reading (25–29 Oct, after the WAF)
+
+Measured 2026-10-29 with the same SQL API. The WAF and the rate limit had been live since 24 Oct.
+
+| Status | 19–23 Oct (5 days) | 25–29 Oct (4.9 days) |
+| --- | --- | --- |
+| 200 | 7,902 | 2,887 |
+| 403 | 115 | **2,856** |
+| 404 | **6,551** | **1,410** |
+| 301 | 944 | 1,996 |
+| 302 | 371 | 411 |
+| 429 | 0 | 216 |
+| 504 | **0** | **671** |
+
+Reading:
+
+- **404 fell 78% and 403 rose 24×.** The exploit probes that used to 404 are now blocked at the edge,
+  which is exactly what the WAF was for. The traffic did not disappear; it stopped being answered.
+- **429 = 216**: the rate limit firing. Part of that is verification bursts from this session.
+- **504 = 671 is a regression, not traffic.** Every one has `requestSource = "earlyHintsCache"`, and
+  the baseline window had **zero**. `early_hints` was turned on during T16b P2, which created an edge
+  prefetch layer that keeps timing out. At ~57 pageviews the prefetch warms almost nothing, so the
+  only measurable effect was 671 failed internal requests. **Turned back off on 2026-10-29** and
+  verified (`early_hints: off`).
+- The fall in `200` is the same shift seen from the other side: probes that used to return 404 now
+  return 403, 429 or 504 from the edge before reaching an asset.
+
+Lesson worth keeping: `requestSource` separates real users (`eyeball`) from edge subsystems
+(`earlyHintsCache`). Before treating a status spike as a user-facing problem, split by that column.
