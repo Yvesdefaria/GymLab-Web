@@ -56,6 +56,26 @@ navigation. The polling needs this branch deployed to reach the browsers.
 - [ ] **DNSSEC** — load the DS record at DonDominio.
 - [ ] **Play Console declarations** (Health apps + Data safety), tied to the app beacon below.
 
+### Search Console — get the site indexed
+
+**State:** the Domain property is **already verified by DNS**. The `google-site-verification=4FZDknwez…`
+TXT sits on the apex, so it covers `gymlab.dev`, `www.gymlab.dev` and `app.gymlab.dev`. What is *not*
+confirmed is the sitemap submission — and nothing gets indexed until Google crawls.
+
+This is the bottleneck for every SEO change shipped on 2026-10-29: 12 URLs, the calculator schema and
+the landing graph are invisible until they are crawled.
+
+- [ ] **Submit `https://gymlab.dev/sitemap-index.xml`** under *Sitemaps*. It publishes 12 URLs
+      (6 pages × 2 locales) with `hreflang` alternates.
+- [ ] **Request indexing** in *URL Inspection* for the four that matter most, one at a time (the daily
+      quota is small): `/es/`, `/en/`, `/es/calculadora-imc/`, `/es/calcular-calorias/`.
+- [ ] **Check coverage after 48–72 h**: 12 discovered, and the only exclusions should be the `noindex`
+      redirect stubs plus `app.gymlab.dev`.
+- [ ] **Confirm the enhancements appear**: `SoftwareApplication` on the landing and `BreadcrumbList` on
+      the calculators show up under *Enhancements* once crawled.
+- [ ] **First useful Performance read ~2026-11-19.** Anything optimised before that date is a guess.
+
+
 ## Pending native review
 
 `PLAN.md` previously recorded transaction `review-bb1b28cdd5e6324c` (2026-10-24) with its consent
@@ -70,9 +90,8 @@ RDD: it applies to that candidate only.
 - [ ] **Routine pages** from the app seed — **blocked by decision**: which routines to publish and the
       shape of the seed.
 - [ ] **Search Console reading at 4 weeks** — first useful read ~**2026-11-19**. Prioritise by real
-      impressions, not intuition. The DNS verification TXT is already on the apex
-      (`google-site-verification=4FZDknwez…`), so verification is not the blocker; submitting the
-      sitemap is.
+      impressions, not intuition. Verification is done; submitting the sitemap is the open step and
+      lives under *Search Console* in owner actions above.
 - [ ] Remaining polish nobody has scheduled: `lastmod` in the sitemap, `twitter:image:alt`,
       `og:image:type`, `og:locale:alternate`, and a per-locale OG image. All low impact, all cheap.
 
