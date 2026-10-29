@@ -198,6 +198,21 @@ for (const landing of LANDINGS) {
     check(`seo ${path} renders FAQ "${question}"`, html.includes(question));
   }
 
+  // Social card completeness: the alt is the only thing a screen reader gets from
+  // the image, and the type lets consumers skip a content sniff.
+  check(
+    `seo ${path} has twitter:image:alt`,
+    /<meta name="twitter:image:alt" content="[^"]+">/.test(html),
+  );
+  check(
+    `seo ${path} has og:image:type`,
+    /<meta property="og:image:type" content="image\/jpeg">/.test(html),
+  );
+  check(
+    `seo ${path} has og:locale:alternate`,
+    /<meta property="og:locale:alternate" content="(?:es_ES|en_GB)">/.test(html),
+  );
+
   // One graph per page. A second block was the old shape; the site now composes
   // every node into a single `@graph` so references resolve inside the document.
   const blocks = [
