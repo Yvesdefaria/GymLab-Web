@@ -75,8 +75,11 @@ confirmed is the sitemap submission — and nothing gets indexed until Google cr
 This is the bottleneck for every SEO change shipped on 2026-10-29: 12 URLs, the calculator schema and
 the landing graph are invisible until they are crawled.
 
-- [ ] **Submit `https://gymlab.dev/sitemap-index.xml`** under *Sitemaps*. It publishes 12 URLs
-      (6 pages × 2 locales) with `hreflang` alternates.
+- [x] **Submit `https://gymlab.dev/sitemap-index.xml`** under *Sitemaps* — **done 2026-10-30**, status
+      *Correcto*. It publishes 12 URLs (6 pages × 2 locales) with `hreflang` alternates.
+      Gotcha that cost a round trip: the field takes a **full URL on a Domain property** and **a bare
+      path on a URL-prefix property**. Typing the wrong one for the selected property returns
+      "not a valid path".
 - [ ] **Request indexing** in *URL Inspection* for the four that matter most, one at a time (the daily
       quota is small): `/es/`, `/en/`, `/es/calculadora-imc/`, `/es/calcular-calorias/`.
 - [ ] **Check coverage after 48–72 h**: 12 discovered, and the only exclusions should be the `noindex`
