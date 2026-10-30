@@ -60,6 +60,10 @@ navigation. The polling needs this branch deployed to reach the browsers.
       user holding Super Administrator - All Privileges, so one password is the whole domain.
 - [ ] **Automatic renewal at DonDominio** — the only open item left from T9.
 - [ ] **DNSSEC** — load the DS record at DonDominio.
+- [ ] **DMARC: `p=none` → `p=quarantine`.** The record exists and is valid, so mail is not being
+      rejected; it just enforces nothing, which is what Cloudflare flags as "DMARC policy is
+      insecure". Read a few days of reports in `gymlab@gymlab.dev` first, then tighten. Doing it blind
+      can drop legitimate mail from any sender that is not aligned.
 - [ ] **Play Console declarations** (Health apps + Data safety), tied to the app beacon below.
 
 ### Search Console — get the site indexed
