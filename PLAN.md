@@ -47,12 +47,21 @@ Two more zone changes happened the same day, both evidence-driven (see `COMPLETE
 
 ## Pending in the app repo
 
-| Repo | Branch | Commit | What |
-| --- | --- | --- | --- |
-| `ProyectoGymLab` | `fix/pwa-auto-update` | `ae3bf1ca` | Service-worker update polling, `/assets/*` out of the rate limit, `test-animations` out of the precache |
+The PWA fix is **merged into the app's `main` locally** (`08b769c8`), verified, and **not pushed**.
+The app repo's `AGENTS.md` requires the owner to push by hand.
+
+```
+cd ProyectoGymLab/gymlab-app
+git log --oneline origin/main..main     # 29 commits, only the merge is ours
+git push
+```
+
+Merged clean: the dry run reported no conflicts, `npx vitest run tests/unit/lib/serviceWorker.test.ts`
+passes 12/12 and `npm run build` is green (3498 modules). `test-animations` is out of the precache
+(217 entries).
 
 The zone half is already live, so a device with a stuck worker can complete its install on the next
-navigation. The polling needs this branch deployed to reach the browsers.
+navigation. The polling starts working for users only after this push deploys.
 
 ## Owner actions (not delegable)
 
