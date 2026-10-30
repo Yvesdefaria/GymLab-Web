@@ -7,7 +7,7 @@ export const privacy: LegalDoc = {
   title: 'Privacy Policy',
   description:
     'GymLab privacy policy: what data the app handles, where it is stored and what your rights are.',
-  updated: '21 October 2026',
+  updated: '29 October 2026',
   contact: 'gymlab@gymlab.dev',
   sections: [
     {
@@ -52,9 +52,10 @@ export const privacy: LegalDoc = {
       id: 'analytics',
       title: '5. Measurement and analytics',
       paragraphs: [
-        'To understand how the application is used and to fix bugs, GymLab may send anonymous usage data (screens visited and features used) and error reports to our analytics providers Sentry and PostHog.',
+        'To understand how the application is used and to fix bugs, GymLab may send pseudonymous usage data (screens visited and features used) and error reports to our analytics providers Sentry and PostHog.',
         'The submission contains usage and error data only: it never includes your personal data, your weight, your workouts or any other information from the application.',
-        'You can turn this off at any time from Settings › Anonymous usage data. If you turn it off, no further information is sent.',
+        'Telemetry is off by default: it is only sent if you enable it in Settings.',
+        'You can turn it off at any time from Settings › Pseudonymous usage data. If you turn it off, no further information is sent.',
       ],
     },
     {

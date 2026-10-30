@@ -25,7 +25,7 @@ export const privacy: LegalDoc = {
   title: 'Política de Privacidad',
   description:
     'Política de privacidad de GymLab: qué datos trata la app, dónde se guardan y cuáles son tus derechos.',
-  updated: '21 de octubre de 2026',
+  updated: '29 de octubre de 2026',
   contact: 'gymlab@gymlab.dev',
   sections: [
     {
@@ -70,9 +70,10 @@ export const privacy: LegalDoc = {
       id: 'analitica',
       title: '5. Medición y análisis',
       paragraphs: [
-        'Para entender cómo se usa la aplicación y arreglar errores, GymLab puede enviar datos anónimos de uso (pantallas visitadas y funciones utilizadas) e informes de errores a nuestros proveedores de analítica Sentry y PostHog.',
+        'Para entender cómo se usa la aplicación y arreglar errores, GymLab puede enviar datos pseudónimos de uso (pantallas visitadas y funciones utilizadas) e informes de errores a nuestros proveedores de analítica Sentry y PostHog.',
         'El envío solo contiene datos de uso y de error: nunca incluye tus datos personales, tu peso, tus entrenamientos ni ninguna otra información de la aplicación.',
-        'Puedes desactivar este envío en cualquier momento desde Ajustes › Datos de uso anónimos. Si lo desactivas, no se enviará más información.',
+        'La telemetría está desactivada por defecto: solo se envía si la activás en Ajustes.',
+        'Puedes desactivarla en cualquier momento desde Ajustes › Datos de uso pseudónimos. Si la desactivas, no se enviará más información.',
       ],
     },
     {
