@@ -63,20 +63,45 @@ Re-measured on 2026-11-04 against the live zone with the Cloudflare SQL API
 | Total requests (weighted) | 52,514 | 37,788 observed rows |
 | `app.gymlab.dev` | 15,908 (30.3%) | the app itself, not a preview |
 | Indexable URLs in sitemap | 12 | matches the T15 baseline |
-| Real pageviews (RUM) | 30 | 22 `gymlab.dev` + 8 `app.gymlab.dev`; the only human signal |
+| Web Analytics (RUM) | unusable here | the beacon is never injected on Worker responses; see below |
 | Verified bots | 3,110 | AI Search 1,770 · Crawler 600 · AI Crawler 590 (audit, not re-measured) |
 | Top content path after `/` | `/wp-admin/install.php` | 1,341 requests — scanning noise |
 
-### Human vs bot traffic (verified 2026-11-04)
+### Human traffic: what is measurable and what is not (verified 2026-11-04)
 
-The 52,514 requests are not people. RUM (`bot = 0`) records **30 human pageviews in 30 days**:
-22 on `gymlab.dev` (21 `/es/`, 1 `/en/`) and 8 on `app.gymlab.dev`. The ceiling on unique visitors
-is therefore 30, and the APK is invisible to Cloudflare entirely — Capacitor serves the app from
-`https://localhost`, so native usage never reaches the zone.
+**Web Analytics (RUM) cannot measure this site.** Cloudflare's own FAQ says RUM *"cannot collect
+metrics from Worker subrequests"*, and both `gymlab.dev` and `app.gymlab.dev` are served by Workers.
+Confirmed in the served HTML: no `cloudflareinsights`, `data-cf-beacon` or `/cdn-cgi/rum` reference,
+even though the Web Analytics site is configured with `auto_install: true`. The 30 "pageviews" the
+RUM dataset reports are therefore not a human signal — they arrive from US, Taiwan, China, Belarus,
+Russia, Korea, Canada and Uruguay, including a `browser: Unknown` row, which is a headless-client
+pattern, not an audience.
 
-The HTTP numbers are polluted: `/es/` shows 1,177 page loads but only 21 RUM pageviews, a 56×
-inflation. A single spoofed UA — `iPhone OS 13_2_3`, an OS from 2019 — made ~130 requests every
-day, ~3,900 in the month, mostly `/` and `/es/` following redirects across `www` and the apex.
+**Cloudflare has no "real human" metric.** Per
+[About Cloudflare Analytics](https://developers.cloudflare.com/analytics/faq/about-analytics/):
+*"Once Cloudflare identifies a unique IP address for a request, we identify such request as a visit"*,
+and a bot, plugin or API consuming partial content *"counts as a unique visitor"*. The Free-plan
+`Analytics → Traffic → Web Traffic` panel exposes **Unique Visitors**, and the doc warns those
+metrics *"include legitimate user requests as well as crawlers and threats"*.
+
+**The only signal an HTML-only scraper cannot fake is rendering.** A client that renders the page
+also fetches the CSS bundle and the fonts:
+
+| Signal (30 days) | Weighted |
+| --- | --- |
+| HTML document loads (`/es/`, `/en/`, calculators) | 1,647 |
+| CSS bundle loads | 210 |
+| Font loads (`woff2`) | 882 |
+
+So **87% of the page traffic never rendered**, and part of the remaining 210 has impossible UAs
+(`Chrome/125` paired with `Edge/12.246`, `Chrome/134.0.0.0 Safari/537.3`, `HeadlessChrome/155`).
+Plausible real browsers: **between ~30 and ~130 in 30 days**. That is the honest range; anything
+more precise is invented.
+
+**The right method from here:** read **Unique Visitors** in `Analytics → Traffic` (edge, server-side,
+unblockable, 24 h delay on Free) and separate bots with `botScore` / Security Analytics — never with
+a JS beacon. The SQL API does not expose `uniques`; only the GraphQL API
+(`httpRequests1dGroups.uniq.uniques`) and the dashboard do.
 
 ### Confirmations of open items
 
@@ -125,7 +150,7 @@ Three claims did not survive re-verification against the live zone and the repo:
 4. **Calculator pages are thin.** Re-measured: 203 words (`calculadora-imc`), 226 (`1rm`),
    241 (`calorias`). Below what ranks against 1,000+ word competitors.
 5. **6 of 9 app calculators are unpublished.** Only BMI, 1RM and TDEE exist on the web.
-6. **WAF probe coverage gap.** The custom rule v1 blocks only `/.env`, `/.git/`, `/wp-*`,
+6. **WAF probe coverage gap.** The custom rule blocks only `/.env`, `/.git/`, `/wp-*`,
    `xmlrpc.php`, `wlwmanifest.xml` and `/config.json`. The account-level **Cloudflare Managed Free
    Ruleset v84** is active (2026-11-03) and catches many probes, but not all: `/pinfo.php` still
    answers `200`. `phpinfo`, `/actuator`, `/server-status`, `/cgi-bin`, `/.aws`, `/.ssh`,
@@ -135,21 +160,49 @@ Three claims did not survive re-verification against the live zone and the repo:
    `securityAction = block`, and no custom rule matches them — the managed ruleset does. Harmless
    today because accounts are not shipped, but a landmine for F133 (accounts + sync).
 
+### Blocking audit (2026-11-04)
+
+Every block active on the zone, what it actually stopped in 30 days, and whether it can hit a real
+user. State after reverting the Bot Fight Mode experiment:
+
+| Block | Config | Volume | Hits | Real-traffic risk |
+| --- | --- | --- | --- | --- |
+| Custom WAF rule | `/.env`, `/.git/`, `/wp-*`, `xmlrpc.php`, `wlwmanifest.xml`, `/config.json` | ~2,500 | scanner paths only | none observed |
+| Cloudflare Managed Free Ruleset v84 | account level, 30+ CVE rules + Validate Headers | ~2,600 (403) | exploits, `/signup` `/login` `/signin` `/register`, `/` | none today; **breaks F133 logins** |
+| Rate limit v2 | 100 req/10 s per IP, 10 s block, excludes `/assets/` | ~400 (429) | `opencode` tooling, `/Jenkinsfile`, scanners | low; CGNAT caveat |
+| Security level `medium` + browser check | challenges, not blocks | — | — | low |
+| DDoS L7 · Normalization · Response Firewall | managed, automatic | — | — | none |
+| IP Access rules · Page Rules · Lockdowns | 0 | — | — | none |
+
+Blocks on legitimate pages in the window: **38 on `/es/`** (2.3% of 1,647 HTML loads), all from the
+same `Chrome/131` UA that probes `/.env.uat` and `/build/.env`; **zero** on `/en/`, the calculators
+and the legal pages; and — after 2026-10-29 10:06 UTC — **zero** on `/assets/*`, `/sw.js` or
+`/manifest.webmanifest`. The 106 asset `429`s on 29 Oct all landed at 09:00 UTC, before the rate
+limit v2 deploy, so the `/assets/` exclusion works.
+
+**Reverted:** Bot Fight Mode (`fight_mode` + `enable_js`) and the `managed_challenge` rule for the
+spoofed iOS 13.2.3 UA. Bot Fight Mode cannot be excepted by WAF rules on Free, and it injects
+JavaScript Detections into every HTML response — on a site that ships no JS of its own. Verified
+after the revert: no `challenge-platform` in the served HTML, the spoofed UA back to `200`, and the
+custom ruleset back to its single original rule.
+
 ### Actions this review adds
 
-- [ ] Fix the `app.gymlab.dev` soft-404 with a file-extension rule; keep the SPA fallback.
+- [x] Fix the `app.gymlab.dev` soft-404 with a file-extension rule; keep the SPA fallback.
+      **Shipped 2026-11-04** in `gymlab-app` (`4e5f5c55`, deployed as Worker version `383f72c2`).
+      Production verified: `/pinfo.php`, `/beta/phpinfo.php`, `/backend/web/phpinfo.php`,
+      `/backup.bak` → 404; `/`, `/entrenar`, `/entrenamiento/active`, `/sw.js`,
+      `/manifest.webmanifest` and real `/assets/` chunks → 200.
 - [ ] Extend the custom WAF rule with `phpinfo`, `/actuator`, `/server-status`, `/cgi-bin`,
       `/.aws`, `/.ssh`, `/vendor/`, `/storage/`.
-- [x] **Bot Fight Mode on** (2026-11-04; requires `enable_js: true`) plus a `managed_challenge` rule
-      for the spoofed iOS 13.2.3 scraper UA (custom ruleset v2). Verified after applying: real
-      Chrome and iPhone UAs, `/`, `/entrenar`, `/entrenamiento/active`, `/sw.js`,
-      `/manifest.webmanifest` and real `/assets/` chunks still return 200; the scraper gets
-      `403 Cf-Mitigated: challenge`. Bot Fight Mode cannot be excepted by WAF rules on Free.
+- [x] **Bot Fight Mode evaluated and reverted** (2026-11-04). Turning it on (`fight_mode` +
+      `enable_js`) injected JavaScript Detections into every HTML response and cannot be excepted by
+      WAF rules on Free; the spoofed-UA `managed_challenge` rule that came with it was also removed.
+      The site is back to zero client JS and the fake iPhone UA back to `200`.
 - [ ] Add `X-Frame-Options` and `Permissions-Policy` to `app.gymlab.dev`.
-- [ ] Promote the CSP from report-only to enforcing once the reports are clean. **Check this first:**
-      Bot Fight Mode turns on JavaScript Detections, which injects scripts from
-      `/cdn-cgi/challenge-platform/`; an enforcing `script-src 'self'` without that origin or a
-      nonce breaks the challenge. Report-only today, so nothing breaks now.
+- [ ] Promote the CSP from report-only to enforcing once the reports are clean. If Bot Fight Mode is
+      ever re-enabled, allow `/cdn-cgi/challenge-platform/` (or use nonces) first: JavaScript
+      Detections is injected there and an enforcing `script-src 'self'` would block it.
 - [ ] Localise the EN calculator slugs and 301 the current ones.
 - [ ] Grow the three calculator pages to 800+ words before building new ones.
 - [ ] Publish `llms.txt`.
@@ -164,12 +217,10 @@ sequence is now explicit: fix measurement, ship the 20-exercise pilot, measure, 
 
 ## Pending in the app repo
 
-**Nothing.** On 2026-11-04 the owner authorized the push: `main` went from `bdad47f7` to `7e575b8f`
-(58 commits), including the PWA auto-update merge. `origin/main` and local `main` are in sync.
-
-One change is deliberately uncommitted: **F139.18** (`exerciseCategory.ts`, its new test and the
-`CHANGELOG.md` entry) — rows are strength, not cardio. The CHANGELOG records a green suite
-(234 files / 2136 passed + 1 skipped) and a clean build; it waits for the owner's review.
+**Nothing.** On 2026-11-04 the owner authorized the pushes: `main` went `bdad47f7` → `7e575b8f`
+(58 commits, including the PWA auto-update merge) and then `7e575b8f` → `4e5f5c55` (F139.18 plus the
+`app.gymlab.dev` soft-404 fix). Local and `origin/main` are in sync, and the soft-404 fix is deployed
+as Worker version `383f72c2`.
 
 ## Owner actions (not delegable)
 
