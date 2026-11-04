@@ -63,9 +63,20 @@ Re-measured on 2026-11-04 against the live zone with the Cloudflare SQL API
 | Total requests (weighted) | 52,514 | 37,788 observed rows |
 | `app.gymlab.dev` | 15,908 (30.3%) | the app itself, not a preview |
 | Indexable URLs in sitemap | 12 | matches the T15 baseline |
-| Real pageviews (RUM) | 30 | 22 `gymlab.dev` + 8 `app.gymlab.dev`; RUM is broken |
+| Real pageviews (RUM) | 30 | 22 `gymlab.dev` + 8 `app.gymlab.dev`; the only human signal |
 | Verified bots | 3,110 | AI Search 1,770 · Crawler 600 · AI Crawler 590 (audit, not re-measured) |
 | Top content path after `/` | `/wp-admin/install.php` | 1,341 requests — scanning noise |
+
+### Human vs bot traffic (verified 2026-11-04)
+
+The 52,514 requests are not people. RUM (`bot = 0`) records **30 human pageviews in 30 days**:
+22 on `gymlab.dev` (21 `/es/`, 1 `/en/`) and 8 on `app.gymlab.dev`. The ceiling on unique visitors
+is therefore 30, and the APK is invisible to Cloudflare entirely — Capacitor serves the app from
+`https://localhost`, so native usage never reaches the zone.
+
+The HTTP numbers are polluted: `/es/` shows 1,177 page loads but only 21 RUM pageviews, a 56×
+inflation. A single spoofed UA — `iPhone OS 13_2_3`, an OS from 2019 — made ~130 requests every
+day, ~3,900 in the month, mostly `/` and `/es/` following redirects across `www` and the apex.
 
 ### Confirmations of open items
 
@@ -129,8 +140,16 @@ Three claims did not survive re-verification against the live zone and the repo:
 - [ ] Fix the `app.gymlab.dev` soft-404 with a file-extension rule; keep the SPA fallback.
 - [ ] Extend the custom WAF rule with `phpinfo`, `/actuator`, `/server-status`, `/cgi-bin`,
       `/.aws`, `/.ssh`, `/vendor/`, `/storage/`.
+- [x] **Bot Fight Mode on** (2026-11-04; requires `enable_js: true`) plus a `managed_challenge` rule
+      for the spoofed iOS 13.2.3 scraper UA (custom ruleset v2). Verified after applying: real
+      Chrome and iPhone UAs, `/`, `/entrenar`, `/entrenamiento/active`, `/sw.js`,
+      `/manifest.webmanifest` and real `/assets/` chunks still return 200; the scraper gets
+      `403 Cf-Mitigated: challenge`. Bot Fight Mode cannot be excepted by WAF rules on Free.
 - [ ] Add `X-Frame-Options` and `Permissions-Policy` to `app.gymlab.dev`.
-- [ ] Promote the CSP from report-only to enforcing once the reports are clean.
+- [ ] Promote the CSP from report-only to enforcing once the reports are clean. **Check this first:**
+      Bot Fight Mode turns on JavaScript Detections, which injects scripts from
+      `/cdn-cgi/challenge-platform/`; an enforcing `script-src 'self'` without that origin or a
+      nonce breaks the challenge. Report-only today, so nothing breaks now.
 - [ ] Localise the EN calculator slugs and 301 the current ones.
 - [ ] Grow the three calculator pages to 800+ words before building new ones.
 - [ ] Publish `llms.txt`.
