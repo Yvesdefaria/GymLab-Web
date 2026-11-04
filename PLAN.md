@@ -4,7 +4,7 @@ Handoff document to continue this project in a new session. Canonical project ru
 `AGENTS.md`. Closed work and the measurement baselines are archived in `COMPLETED.md`; task-by-task
 evidence lives in `odd/tasks/*.md` and in Engram (project `webgymlab`).
 
-Last updated: 2026-10-29.
+Last updated: 2026-11-04.
 
 ## Where we are
 
@@ -44,6 +44,72 @@ Two more zone changes happened the same day, both evidence-driven (see `COMPLETE
 - `early_hints` was turned **off**. On, it produced 671 `504` responses in five days, all from
   `requestSource = "earlyHintsCache"`, against zero before.
 - The social card gained `twitter:image:alt`, `og:image:type` and `og:locale:alternate` (`99f1ed2`).
+
+## Review 2026-11-04 — traffic, SEO and security audit
+
+Independent audit against the live zone (`64ab68…1063` / `bc4d1b…b05b`), the public HTML,
+`sitemap-0.xml`, response headers and the deployed bundle. Raw dumps live in the sibling
+`ProyectoGymLab/reports/` folder: `cloudflare-gymlab-2026-11-04.md` and
+`auditoria-gymlab-2026-11-04.md`.
+
+### Headline numbers (30 days)
+
+| Metric | Value | Note |
+| --- | --- | --- |
+| Total requests (weighted) | 53,581 | 38,765 observed rows |
+| Indexable URLs in sitemap | 12 | matches the T15 baseline |
+| Real pageviews (RUM) | 30 | 22 `gymlab.dev` + 8 `app.gymlab.dev` |
+| Verified bots | 3,110 | AI Search 1,770 · Crawler 600 · AI Crawler 590 |
+| 403 + 404 | 38% | pre-WAF 404 peak was 2,432/day |
+| Top content path after `/` | `/wp-admin/install.php` | 1,341 requests — scanning noise |
+
+### Confirmations of open items
+
+- **T16 WAF works.** 404s fell from 1,056–2,432/day (19–23 Oct) to 2–359/day from 24 Oct, while
+  403s rose to 197–1,239/day. The "next reading should drop hard" prediction holds.
+- **T16 `early_hints` revert holds.** Every 504 is `requestSource = earlyHintsCache`, 24–29 Oct;
+  zero since 29 Oct.
+- **T15 sitemap baseline.** 12 URLs, 6 pages × 2 locales, correct `hreflang`.
+- **`botScore` still 403.** Confirms the scope block in "Reading analytics".
+- **No secrets in the app bundle.** `/assets/index-C7OKhvMt.js` (92 KB) has no `service_role`,
+  JWT, `sk-`, `AIza`, private key or AWS key.
+
+### New findings (not in T15/T16)
+
+1. **Soft-404 on `app.gymlab.dev`.** Unknown paths return `200` with `index.html` (3,999 B):
+   `/pinfo.php`, `/beta/phpinfo.php`, `/backend/web/phpinfo.php`. No data leak, but it tells
+   scanners the path exists, can index junk if `noindex` is ever dropped, and hides real 404s.
+   Fix: return 404 from the asset route for unknown paths.
+2. **`app.gymlab.dev` is 33% of all traffic** (12,830 of 38,765 requests). If that host is a
+   preview/dev surface, put it behind Access or a WAF rule before anything else.
+3. **EN slug regression.** `/en/calculadora-imc/`, `/en/calcular-calorias/` and
+   `/en/calculadora-1rm/` keep Spanish slugs on the English locale; the keyword is lost in the URL.
+4. **Calculator pages are thin.** 197 words (`calculadora-imc`), 228 (`1rm`), 239 (`calorias`).
+   Below what ranks against 1,000+ word competitors.
+5. **6 of 9 app calculators are unpublished.** Only BMI, 1RM and TDEE exist on the web.
+6. **WAF coverage gap.** The custom rule does not cover `phpinfo`, `/actuator`, `/server-status`,
+   `/cgi-bin`, `/.aws`, `/.ssh`, `/vendor/`, `/storage/`.
+7. **No `llms.txt`.** AI Search already crawls 1,770 requests/30 d.
+8. **`www` answers 200 instead of 301.** The canonical covers it; a 301 is cheaper for crawl budget.
+9. **Missing `Content-Security-Policy`** on the marketing site; `app.gymlab.dev` lacks
+   `Permissions-Policy` and `X-Frame-Options`.
+
+### Actions this review adds
+
+- [ ] Fix the `app.gymlab.dev` soft-404.
+- [ ] Decide whether `app.gymlab.dev` stays public; if not, Access + WAF.
+- [ ] Extend the WAF probe rule with the paths listed above.
+- [ ] 301 `www` → apex.
+- [ ] Localise the EN calculator slugs and 301 the current ones.
+- [ ] Grow the three calculator pages to 800+ words before building new ones.
+- [ ] Publish `llms.txt`.
+- [ ] 20-exercise pilot before the full 873-page catalogue (thin-content risk).
+
+### Strategic read
+
+The bottleneck is not security or performance: it is 12 indexable URLs against 873 exercises,
+68 routines and 9 calculators. The pSEO catalogue stays a product decision (see Backlog), but the
+sequence is now explicit: fix measurement, ship the 20-exercise pilot, measure, then scale.
 
 ## Pending in the app repo
 
