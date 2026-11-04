@@ -41,7 +41,8 @@ plan. Verified: 140 requests to `/assets/*` return 200; 120 requests to `/` stil
 
 Two more zone changes happened the same day, both evidence-driven (see `COMPLETED.md` → Appendix C):
 
-- `early_hints` was turned **off**. On, it produced 671 `504` responses in five days, all from
+- `early_hints` was turned **off**. On, it produced 832 weighted `504` responses in six days
+  (re-measured 2026-11-04; the original note said 671), all from
   `requestSource = "earlyHintsCache"`, against zero before.
 - The social card gained `twitter:image:alt`, `og:image:type` and `og:locale:alternate` (`99f1ed2`).
 
@@ -54,56 +55,87 @@ Independent audit against the live zone (`64ab68…1063` / `bc4d1b…b05b`), the
 
 ### Headline numbers (30 days)
 
+Re-measured on 2026-11-04 against the live zone with the Cloudflare SQL API
+(`events.httpRequests`, `2026-10-05T00:00Z` → `2026-11-04T00:00Z`):
+
 | Metric | Value | Note |
 | --- | --- | --- |
-| Total requests (weighted) | 53,581 | 38,765 observed rows |
+| Total requests (weighted) | 52,514 | 37,788 observed rows |
+| `app.gymlab.dev` | 15,908 (30.3%) | the app itself, not a preview |
 | Indexable URLs in sitemap | 12 | matches the T15 baseline |
-| Real pageviews (RUM) | 30 | 22 `gymlab.dev` + 8 `app.gymlab.dev` |
-| Verified bots | 3,110 | AI Search 1,770 · Crawler 600 · AI Crawler 590 |
-| 403 + 404 | 38% | pre-WAF 404 peak was 2,432/day |
+| Real pageviews (RUM) | 30 | 22 `gymlab.dev` + 8 `app.gymlab.dev`; RUM is broken |
+| Verified bots | 3,110 | AI Search 1,770 · Crawler 600 · AI Crawler 590 (audit, not re-measured) |
 | Top content path after `/` | `/wp-admin/install.php` | 1,341 requests — scanning noise |
 
 ### Confirmations of open items
 
-- **T16 WAF works.** 404s fell from 1,056–2,432/day (19–23 Oct) to 2–359/day from 24 Oct, while
-  403s rose to 197–1,239/day. The "next reading should drop hard" prediction holds.
-- **T16 `early_hints` revert holds.** Every 504 is `requestSource = earlyHintsCache`, 24–29 Oct;
-  zero since 29 Oct.
+- **T16 WAF works, with corrected numbers.** Daily `gymlab.dev` 404s: 188 / 969 / 5,309 / 645 /
+  1,329 (19–23 Oct) → 60 / 594 / 374 / 804 / 2 / 98 / 167 / 395 / 2 / 161 / 129 (24 Oct–3 Nov),
+  while 403s rose to 84–1,269/day. The direction holds; the audit's "1,056–2,432" and "2–359"
+  ranges do not.
+- **T16 `early_hints` revert holds.** Every 504 in the window is `requestSource = earlyHintsCache`,
+  24–29 Oct (**832 weighted** on re-measurement; the earlier note said 671 — different window and
+  sampling); zero after 29 Oct.
 - **T15 sitemap baseline.** 12 URLs, 6 pages × 2 locales, correct `hreflang`.
 - **`botScore` still 403.** Confirms the scope block in "Reading analytics".
 - **No secrets in the app bundle.** `/assets/index-C7OKhvMt.js` (92 KB) has no `service_role`,
   JWT, `sk-`, `AIza`, private key or AWS key.
 
+### Corrections to the audit (verified 2026-11-04)
+
+Three claims did not survive re-verification against the live zone and the repo:
+
+1. **`app.gymlab.dev` is not a preview/dev surface — it is the product.** `gymlab-app/wrangler.jsonc`
+   declares it as the Worker's custom domain (`"name": "gymlab-app"`) and serves the built SPA from
+   `./dist`. It must stay public: putting Cloudflare Access there locks every user out of the app.
+   The audit's "if it is preview/dev" was an unverified hypothesis. **Drop the Access item.**
+2. **`www` already answers `301` → `https://gymlab.dev/`.** Verified live. No action needed.
+3. **The CSP is not missing.** `gymlab.dev` sends `content-security-policy-report-only` with
+   `default-src 'self'`. It is report-only, not enforcing — a different (smaller) problem.
+   `app.gymlab.dev` is the host that lacks `X-Frame-Options` and `Permissions-Policy`.
+
 ### New findings (not in T15/T16)
 
-1. **Soft-404 on `app.gymlab.dev`.** Unknown paths return `200` with `index.html` (3,999 B):
-   `/pinfo.php`, `/beta/phpinfo.php`, `/backend/web/phpinfo.php`. No data leak, but it tells
-   scanners the path exists, can index junk if `noindex` is ever dropped, and hides real 404s.
-   Fix: return 404 from the asset route for unknown paths.
-2. **`app.gymlab.dev` is 33% of all traffic** (12,830 of 38,765 requests). If that host is a
-   preview/dev surface, put it behind Access or a WAF rule before anything else.
+1. **Soft-404 on `app.gymlab.dev` — confirmed, and it is a code bug.** `not_found_handling:
+   "single-page-application"` in `gymlab-app/wrangler.jsonc` makes every unknown path return `200`
+   + `index.html` (3,999 B). Verified live: `/pinfo.php`, `/beta/phpinfo.php` and
+   `/backend/web/phpinfo.php` all answer `200 text/html`. Volume: **1,168 weighted requests/30 d**
+   on scanner-shaped paths (`.php`, `.env`, `.git`, `.bak`) got a `200` on that host, and the same
+   paths on `:80`, `:8080`, `:8443` and `:8880` also return `200`.
+   **Fix:** return `404` when the path looks like a file (has an extension), keep the SPA fallback
+   for real client routes. A blanket `404` breaks the router.
+2. **The app host carries real traffic, not only scanners.** Real browser UAs (Chrome on macOS,
+   Windows, Android and iPhone Safari), Applebot, HeadlessChrome and agents all appear in the same
+   window. So 15,908 requests is a product being used plus scanners the soft-404 rewards — not
+   "33% of noise".
 3. **EN slug regression.** `/en/calculadora-imc/`, `/en/calcular-calorias/` and
    `/en/calculadora-1rm/` keep Spanish slugs on the English locale; the keyword is lost in the URL.
-4. **Calculator pages are thin.** 197 words (`calculadora-imc`), 228 (`1rm`), 239 (`calorias`).
-   Below what ranks against 1,000+ word competitors.
+   Verified: `/en/calculadora-imc/` → `200`.
+4. **Calculator pages are thin.** Re-measured: 203 words (`calculadora-imc`), 226 (`1rm`),
+   241 (`calorias`). Below what ranks against 1,000+ word competitors.
 5. **6 of 9 app calculators are unpublished.** Only BMI, 1RM and TDEE exist on the web.
-6. **WAF coverage gap.** The custom rule does not cover `phpinfo`, `/actuator`, `/server-status`,
-   `/cgi-bin`, `/.aws`, `/.ssh`, `/vendor/`, `/storage/`.
-7. **No `llms.txt`.** AI Search already crawls 1,770 requests/30 d.
-8. **`www` answers 200 instead of 301.** The canonical covers it; a 301 is cheaper for crawl budget.
-9. **Missing `Content-Security-Policy`** on the marketing site; `app.gymlab.dev` lacks
-   `Permissions-Policy` and `X-Frame-Options`.
+6. **WAF probe coverage gap.** The custom rule v1 blocks only `/.env`, `/.git/`, `/wp-*`,
+   `xmlrpc.php`, `wlwmanifest.xml` and `/config.json`. The account-level **Cloudflare Managed Free
+   Ruleset v84** is active (2026-11-03) and catches many probes, but not all: `/pinfo.php` still
+   answers `200`. `phpinfo`, `/actuator`, `/server-status`, `/cgi-bin`, `/.aws`, `/.ssh`,
+   `/vendor/` and `/storage/` are still worth adding to the custom rule.
+7. **No `llms.txt`.** Verified `404`. AI Search already crawls 1,770 requests/30 d.
+8. **`/signup`, `/login`, `/signin` and `/register` return `403` on the app host** with
+   `securityAction = block`, and no custom rule matches them — the managed ruleset does. Harmless
+   today because accounts are not shipped, but a landmine for F133 (accounts + sync).
 
 ### Actions this review adds
 
-- [ ] Fix the `app.gymlab.dev` soft-404.
-- [ ] Decide whether `app.gymlab.dev` stays public; if not, Access + WAF.
-- [ ] Extend the WAF probe rule with the paths listed above.
-- [ ] 301 `www` → apex.
+- [ ] Fix the `app.gymlab.dev` soft-404 with a file-extension rule; keep the SPA fallback.
+- [ ] Extend the custom WAF rule with `phpinfo`, `/actuator`, `/server-status`, `/cgi-bin`,
+      `/.aws`, `/.ssh`, `/vendor/`, `/storage/`.
+- [ ] Add `X-Frame-Options` and `Permissions-Policy` to `app.gymlab.dev`.
+- [ ] Promote the CSP from report-only to enforcing once the reports are clean.
 - [ ] Localise the EN calculator slugs and 301 the current ones.
 - [ ] Grow the three calculator pages to 800+ words before building new ones.
 - [ ] Publish `llms.txt`.
 - [ ] 20-exercise pilot before the full 873-page catalogue (thin-content risk).
+- [ ] Revisit the `/signup` 403 before F133 ships accounts.
 
 ### Strategic read
 
@@ -113,21 +145,12 @@ sequence is now explicit: fix measurement, ship the 20-exercise pilot, measure, 
 
 ## Pending in the app repo
 
-The PWA fix is **merged into the app's `main` locally** (`08b769c8`), verified, and **not pushed**.
-The app repo's `AGENTS.md` requires the owner to push by hand.
+**Nothing.** On 2026-11-04 the owner authorized the push: `main` went from `bdad47f7` to `7e575b8f`
+(58 commits), including the PWA auto-update merge. `origin/main` and local `main` are in sync.
 
-```
-cd ProyectoGymLab/gymlab-app
-git log --oneline origin/main..main     # 29 commits, only the merge is ours
-git push
-```
-
-Merged clean: the dry run reported no conflicts, `npx vitest run tests/unit/lib/serviceWorker.test.ts`
-passes 12/12 and `npm run build` is green (3498 modules). `test-animations` is out of the precache
-(217 entries).
-
-The zone half is already live, so a device with a stuck worker can complete its install on the next
-navigation. The polling starts working for users only after this push deploys.
+One change is deliberately uncommitted: **F139.18** (`exerciseCategory.ts`, its new test and the
+`CHANGELOG.md` entry) — rows are strength, not cardio. The CHANGELOG records a green suite
+(234 files / 2136 passed + 1 skipped) and a clean build; it waits for the owner's review.
 
 ## Owner actions (not delegable)
 
@@ -198,14 +221,17 @@ RDD: it applies to that candidate only.
 - [ ] **Re-measure with the SQL API**: cache hit ratio and 404 volume after the WAF, plus the effect of
       the new `/assets/*` rate-limit exclusion. The 6,551 404s (39%) in `COMPLETED.md` Appendix B predate
       the WAF, so the next reading should drop hard.
-- [x] **`early_hints` reverted to `off`** (2026-10-29). Turning it on in T16b produced **671** `504`
-      responses in five days, every one with `requestSource = "earlyHintsCache"`, against **zero** in
-      the baseline window. The prefetch fails consistently and warms almost nothing at this traffic
-      level. Evidence in `COMPLETED.md` → Appendix C.
+- [x] **`early_hints` reverted to `off`** (2026-10-29). Turning it on in T16b produced **832**
+      weighted `504` responses in six days (24–29 Oct, re-measured; the earlier note said 671), every one
+      with `requestSource = "earlyHintsCache"`, against **zero** in the baseline window. The prefetch
+      fails consistently and warms almost nothing at this traffic level. Evidence in `COMPLETED.md`
+      → Appendix C.
 - [ ] **LCP**: re-check the hero `preload` and the five `woff2`. The 3.31 s baseline (12 of 28 samples
       above 2.5 s) was measured **with** `early_hints` on, so it is not a clean baseline either way.
       Needs a fresh reading after the revert.
 - [ ] **Zero external referrers**: nobody arrives from search or social. Crosses with T15.
+      **Unverifiable with the current token**: `clientRefererHost` returns `403` (see the blockers
+      table). Needs a wider analytics scope before this claim can be confirmed or denied.
 
 ## Reading analytics
 
@@ -226,6 +252,7 @@ RDD: it applies to that candidate only.
 | Token management (`/user/tokens`) | `403 · 9109 · "No OAuth scope covers this endpoint"` | Connect with an **API token** (Bearer) holding *API Tokens Read* |
 | Billing/subscriptions | `403 · 10000 Authentication error` | API token with *Billing Read* |
 | `botScore` in analytics | `403 · "not permitted to access column"` | Re-authorise with a wider scope, or infer from `userAgent` + `ja4` |
+| `clientRefererHost` in analytics | `403 · "not permitted to access column on events.httpRequests: clientRefererHost"` | Wider analytics scope; blocks verifying the "zero external referrers" claim |
 | R2 | `403 · 10042 · "Please enable R2 through the Cloudflare Dashboard"` | Enable R2 in the dashboard (asks for a payment method), only if the app needs storage |
 | Free plan | `custom_certificate_quota: 0`, `page_rule_quota: 3` | Plan ceiling, not a permission problem |
 | `?codemode=false` | — | **Do not use it**: expands ~3,780 tools (~244k tokens) |
