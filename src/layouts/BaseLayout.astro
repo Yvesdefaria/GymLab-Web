@@ -9,6 +9,10 @@ interface Props {
   description?: string;
   /** The 404 has no canonical URL: it drops canonical and alternates, and says so. */
   noindex?: boolean;
+  /** Explicit canonical path, for pages whose slug differs per locale. */
+  canonicalPath?: string;
+  /** Explicit hreflang targets, for pages whose slug differs per locale. */
+  alternates?: { es: string; en: string };
 }
 
 const lang = getLang(Astro.url.pathname);
@@ -18,17 +22,20 @@ const {
   title = t.meta.home.title,
   description = t.meta.home.description,
   noindex = false,
+  canonicalPath,
+  alternates,
 } = Astro.props;
 
 const siteURL = Astro.site ?? new URL('https://gymlab.dev');
 // Canonical and alternates are built by the same function, so a page can never
-// advertise two different forms of its own URL.
-const canonicalURL = new URL(localeSwitchPath(Astro.url.pathname, lang), siteURL);
+// advertise two different forms of its own URL. Content pages whose slug changes
+// per locale pass them explicitly instead.
+const canonicalURL = new URL(canonicalPath ?? localeSwitchPath(Astro.url.pathname, lang), siteURL);
 const ogImageURL = new URL('/og/gymlab-og.jpg', siteURL);
 
-// Reciprocal alternates: the same path in both locales, with Spanish as x-default.
-const alternateEsURL = new URL(localeSwitchPath(Astro.url.pathname, 'es'), siteURL);
-const alternateEnURL = new URL(localeSwitchPath(Astro.url.pathname, 'en'), siteURL);
+// Reciprocal alternates: the same route in both locales, with Spanish as x-default.
+const alternateEsURL = new URL(alternates?.es ?? localeSwitchPath(Astro.url.pathname, 'es'), siteURL);
+const alternateEnURL = new URL(alternates?.en ?? localeSwitchPath(Astro.url.pathname, 'en'), siteURL);
 const ogLocale = lang === 'en' ? 'en_GB' : 'es_ES';
 // The other locale is spelled out so a shared card declares both audiences.
 const ogLocaleAlt = lang === 'en' ? 'es_ES' : 'en_GB';
