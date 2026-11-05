@@ -51,6 +51,26 @@ const PAGES = [
   ['en', '/en/one-arm-dumbbell-row/'],
   ['es', '/es/remo-barra-t/'],
   ['en', '/en/t-bar-row/'],
+  ['es', '/es/jalones-frontales-2/'],
+  ['en', '/en/front-lat-pulldowns/'],
+  ['es', '/es/jalones-agarre-cerrado/'],
+  ['en', '/en/close-grip-lat-pulldowns/'],
+  ['es', '/es/jalones-agarre-v/'],
+  ['en', '/en/v-grip-lat-pulldowns/'],
+  ['es', '/es/jalones-tras-nuca/'],
+  ['en', '/en/behind-the-neck-lat-pulldowns/'],
+  ['es', '/es/hiperextensiones-espalda/'],
+  ['en', '/en/back-extensions/'],
+  ['es', '/es/pullover-mancuerna/'],
+  ['en', '/en/dumbbell-pullover/'],
+  ['es', '/es/pullover-barra/'],
+  ['en', '/en/barbell-pullover/'],
+  ['es', '/es/rutina-espalda-amplitud-densidad/'],
+  ['en', '/en/back-width-and-thickness-routine/'],
+  ['es', '/es/como-entrenar-la-espalda-en-quince-minutos/'],
+  ['en', '/en/15-minute-back-workout/'],
+  ['es', '/es/rutina-de-espalda-para-dorsales-mas-grandes-y-musculados/'],
+  ['en', '/en/back-routine-for-bigger-lats/'],
 ];
 
 // Content routes, keyed by a stable id with the slug each locale publishes. The
@@ -91,6 +111,28 @@ const ROUTES = {
   barbellRow: { es: '/remo-barra', en: '/barbell-row' },
   oneArmRow: { es: '/remo-mancuerna-una-mano', en: '/one-arm-dumbbell-row' },
   tBarRow: { es: '/remo-barra-t', en: '/t-bar-row' },
+  frontLatPulldowns: { es: '/jalones-frontales-2', en: '/front-lat-pulldowns' },
+  closeGripPulldowns: { es: '/jalones-agarre-cerrado', en: '/close-grip-lat-pulldowns' },
+  vGripPulldowns: { es: '/jalones-agarre-v', en: '/v-grip-lat-pulldowns' },
+  behindNeckPulldowns: {
+    es: '/jalones-tras-nuca',
+    en: '/behind-the-neck-lat-pulldowns',
+  },
+  backExtensions: { es: '/hiperextensiones-espalda', en: '/back-extensions' },
+  dumbbellPullover: { es: '/pullover-mancuerna', en: '/dumbbell-pullover' },
+  barbellPullover: { es: '/pullover-barra', en: '/barbell-pullover' },
+  backWidthRoutine: {
+    es: '/rutina-espalda-amplitud-densidad',
+    en: '/back-width-and-thickness-routine',
+  },
+  fifteenMinuteBack: {
+    es: '/como-entrenar-la-espalda-en-quince-minutos',
+    en: '/15-minute-back-workout',
+  },
+  biggerLatsRoutine: {
+    es: '/rutina-de-espalda-para-dorsales-mas-grandes-y-musculados',
+    en: '/back-routine-for-bigger-lats',
+  },
 };
 
 const routeId = (path) => {

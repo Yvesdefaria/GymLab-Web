@@ -31,6 +31,16 @@ const ROUTE_PAIRS = [
   ['/remo-barra', '/barbell-row'],
   ['/remo-mancuerna-una-mano', '/one-arm-dumbbell-row'],
   ['/remo-barra-t', '/t-bar-row'],
+  ['/jalones-frontales-2', '/front-lat-pulldowns'],
+  ['/jalones-agarre-cerrado', '/close-grip-lat-pulldowns'],
+  ['/jalones-agarre-v', '/v-grip-lat-pulldowns'],
+  ['/jalones-tras-nuca', '/behind-the-neck-lat-pulldowns'],
+  ['/hiperextensiones-espalda', '/back-extensions'],
+  ['/pullover-mancuerna', '/dumbbell-pullover'],
+  ['/pullover-barra', '/barbell-pullover'],
+  ['/rutina-espalda-amplitud-densidad', '/back-width-and-thickness-routine'],
+  ['/como-entrenar-la-espalda-en-quince-minutos', '/15-minute-back-workout'],
+  ['/rutina-de-espalda-para-dorsales-mas-grandes-y-musculados', '/back-routine-for-bigger-lats'],
 ];
 
 const pairFor = (pathname) => {

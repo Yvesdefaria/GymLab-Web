@@ -87,8 +87,10 @@ Every routine table is exactly three columns: **Exercise | Sets | Reps**.
 - **Credit format**: `Wikimedia Commons · <author> · <licence>`.
 - **Pipeline (pending, Phase 5)**: `<Picture>` with AVIF/WebP at 480/768/1200 px, ≤150 KB at 1200 px.
   Until then, keep the JPEG under ~500 KB.
-- **One image per article** for now. Inline images follow the same licence rule and keep their
-  original position.
+- **One unique hero per page**: never point two pages at the same `hero` path. If no free image
+  exists, use a public-domain/CC0 illustration or omit the hero; do not borrow another page's image.
+  `npm run check:copy` fails on a duplicate.
+- Inline images follow the same licence rule and keep their original position.
 
 ## 6. Copy for search
 
@@ -127,6 +129,7 @@ Run this on every page before marking `ES`/`EN` in `content-pages.md`:
 5. Check neutral Spanish: 0 vosotros, 0 voseo, no regionalisms (`cortacésped` → `cortadora de césped`).
 6. Run `npm run check:copy`; it enforces title 45–60, description 150–160, required frontmatter,
    the em-dash cap, the register rules and the hero credit.
+7. Check image uniqueness: `npm run check:copy` fails if two pages share a `hero` path.
 
 `copywriting` is for new copy; the SEO rules live in this contract.
 
@@ -168,11 +171,11 @@ npm run check:i18n
 # or: npm run verify
 ```
 
-- Build: base pages + 2 per article (48 at the time of writing).
-- Gates: `check:copy` and `check:i18n` green (768/768 and 837/837 at the time of writing). The copy gate
-  enforces title/description length, frontmatter, register and AI tells. The i18n gate covers route
-  existence, canonical, hreflang, redirects, sitemap alternates, the header language switch, landing
-  SEO and the calculator/JSON-LD contract.
+- Build: base pages + 2 per article (68 at the time of writing).
+- Gates: `check:copy` and `check:i18n` green (1326/1326 and 1147/1147 at the time of writing). The copy gate
+  enforces title/description length, frontmatter, register, AI tells, one unique hero per page and the
+  hero file/credit. The i18n gate covers route existence, canonical, hreflang, redirects, sitemap
+  alternates, the header language switch, landing SEO and the calculator/JSON-LD contract.
 - Manual checks the gate does not cover yet:
   - Every TOC anchor jumps to its H2.
   - Every table has 3 columns and the same column geometry.

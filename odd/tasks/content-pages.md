@@ -9,18 +9,18 @@ Legend: `ES` = Spanish published, `EN` = English published.
 
 ## Progress
 
-- **Built: 16 / 792** (ES 16, EN 16).
-- Last batch: 10 pages, from `/espalda-baja-fuerte/` to `/remo-barra-t/`.
+- **Built: 26 / 792** (ES 26, EN 26).
+- Last batch: 10 pages, from `/jalones-frontales-2/` to `/rutina-de-espalda-para-dorsales-mas-grandes-y-musculados/`.
 
 | Block | Articles | Built |
 | --- | ---: | ---: |
 | Entrenamiento | 222 | 9 |
-| Por Músculo | 80 | 0 |
+| Por Músculo | 80 | 3 |
 | Rutinas | 80 | 0 |
-| Ejercicios | 196 | 7 |
+| Ejercicios | 196 | 14 |
 | Nutrición | 191 | 0 |
 | Mujer Fitness | 23 | 0 |
-| **Total** | **792** | **16** |
+| **Total** | **792** | **26** |
 
 ## Copy gate (mandatory before ticking ES/EN)
 
@@ -28,6 +28,7 @@ Legend: `ES` = Spanish published, `EN` = English published.
 - [ ] Seven sweeps run: clarity, voice, so-what, prove-it, specificity, emotion, zero risk.
 - [ ] AI-tell check run: no contrast reveals, no negation lists, no colon reveals, ≤2 em dashes.
 - [ ] Neutral Spanish: 0 vosotros, 0 voseo, no regionalisms.
+- [ ] 0 heroes repetidos entre páginas.
 - [ ] `npm run check:copy` green.
 
 ## Copy pass log
@@ -50,6 +51,16 @@ Legend: `ES` = Spanish published, `EN` = English published.
 | `remo-barra` | yes | yes | yes | 0 em dashes | pass |
 | `remo-mancuerna-una-mano` | yes | yes | yes | 0 em dashes | pass |
 | `remo-barra-t` | yes | yes | yes | 0 em dashes | pass |
+| `jalones-frontales-2` | yes | yes | yes | 0 em dashes | pass |
+| `jalones-agarre-cerrado` | yes | yes | yes | 0 em dashes | pass |
+| `jalones-agarre-v` | yes | yes | yes | 0 em dashes | pass |
+| `jalones-tras-nuca` | yes | yes | yes | 0 em dashes | pass |
+| `hiperextensiones-espalda` | yes | yes | yes | 0 em dashes | pass |
+| `pullover-mancuerna` | yes | yes | yes | 0 em dashes | pass |
+| `pullover-barra` | yes | yes | yes | 0 em dashes | pass |
+| `rutina-espalda-amplitud-densidad` | yes | yes | yes | 0 em dashes | pass |
+| `como-entrenar-la-espalda-en-quince-minutos` | yes | yes | yes | 0 em dashes | pass |
+| `rutina-de-espalda-para-dorsales-mas-grandes-y-musculados` | yes | yes | yes | 0 em dashes | pass |
 
 ## Entrenamiento (222)
 
@@ -403,9 +414,9 @@ Legend: `ES` = Spanish published, `EN` = English published.
 ### Rutinas de Espalda (4)
 
 - [ ] ES · [ ] EN — `/dominadas-programa-avanzado/` — Programa de dominadas avanzado
-- [ ] ES · [ ] EN — `/rutina-espalda-amplitud-densidad/` — Programa de entrenamiento de espalda de amplitud y densidad
-- [ ] ES · [ ] EN — `/como-entrenar-la-espalda-en-quince-minutos/` — Como entrenar la espalda en quince minutos
-- [ ] ES · [ ] EN — `/rutina-de-espalda-para-dorsales-mas-grandes-y-musculados/` — Rutina de espalda para dorsales más grandes y musculados
+- [x] ES · [x] EN — `/rutina-espalda-amplitud-densidad/` — Programa de entrenamiento de espalda de amplitud y densidad
+- [x] ES · [x] EN — `/como-entrenar-la-espalda-en-quince-minutos/` — Como entrenar la espalda en quince minutos
+- [x] ES · [x] EN — `/rutina-de-espalda-para-dorsales-mas-grandes-y-musculados/` — Rutina de espalda para dorsales más grandes y musculados
 
 ### Rutinas de Tríceps (1)
 
@@ -587,8 +598,8 @@ Legend: `ES` = Spanish published, `EN` = English published.
 - [ ] ES · [ ] EN — `/press-plano-mancuernas/` — Press en banco plano con mancuernas para pecho
 - [ ] ES · [ ] EN — `/cruces-polea/` — Cruces en polea alta \| Ejercicio de pecho ULTRA efectivo ✔
 - [ ] ES · [ ] EN — `/aperturas-peck-deck/` — Aperturas en Peck-deck
-- [ ] ES · [ ] EN — `/pullover-mancuerna/` — Pullover con mancuerna \| Trabaja tu pecho y espalda
-- [ ] ES · [ ] EN — `/pullover-barra/` — Pullover con barra \| Ejercicio avanzado para la espalda
+- [x] ES · [x] EN — `/pullover-mancuerna/` — Pullover con mancuerna \| Trabaja tu pecho y espalda
+- [x] ES · [x] EN — `/pullover-barra/` — Pullover con barra \| Ejercicio avanzado para la espalda
 - [ ] ES · [ ] EN — `/press-vertical-aparato/` — Press de pecho en máquina vertical 【Ejercicio Fácil y Eficaz!】
 - [ ] ES · [ ] EN — `/flexiones/` — Flexiones, el mejor ejercicio de pecho para hacer en casa
 - [ ] ES · [ ] EN — `/press-banca-multipower/` — Press de pecho en multipower
@@ -684,10 +695,10 @@ Legend: `ES` = Spanish published, `EN` = English published.
 - [ ] ES · [ ] EN — `/peso-muerto-piernas-rigidas-barra/` — Peso Muerto Piernas Rígidas con Barra \| Flexibilidad y Fuerza
 - [ ] ES · [ ] EN — `/peso-muerto-sumo/` — Peso Muerto Sumo: Fortalece Piernas y Glúteos Eficazmente
 - [ ] ES · [ ] EN — `/buenos-dias-con-barra-piernas-separadas/` — Buenos días con barra y piernas separadas
-- [ ] ES · [ ] EN — `/hiperextensiones-espalda/` — Hiperextensiones de espalda 【El ejercicio 100% Efectivo】
-- [ ] ES · [ ] EN — `/jalones-frontales-2/` — Jalones frontales \| Amplia tus dorsales en 2025
-- [ ] ES · [ ] EN — `/jalones-agarre-v/` — Jalones con agarre V: técnica, beneficios y errores
-- [ ] ES · [ ] EN — `/jalones-agarre-cerrado/` — Jalones agarre cerrado: fortalece tu espalda eficazmente
+- [x] ES · [x] EN — `/hiperextensiones-espalda/` — Hiperextensiones de espalda 【El ejercicio 100% Efectivo】
+- [x] ES · [x] EN — `/jalones-frontales-2/` — Jalones frontales \| Amplia tus dorsales en 2025
+- [x] ES · [x] EN — `/jalones-agarre-v/` — Jalones con agarre V: técnica, beneficios y errores
+- [x] ES · [x] EN — `/jalones-agarre-cerrado/` — Jalones agarre cerrado: fortalece tu espalda eficazmente
 - [x] ES · [x] EN — `/dominadas-agarre-cerrado/` — Dominadas con Agarre Cerrado: ¡Maximiza tu Poder de Tracción!
 - [x] ES · [x] EN — `/dominadas-agarre-ancho/` — Dominadas con Agarre Ancho: Técnica y Beneficios Musculares
 - [ ] ES · [ ] EN — `/jalones-frontales-brazos-rectos/` — Jalones frontales con brazos rectos
@@ -709,7 +720,7 @@ Legend: `ES` = Spanish published, `EN` = English published.
 - [ ] ES · [ ] EN — `/dominadas-asistidas/` — Dominadas en máquina (asistidas)
 - [ ] ES · [ ] EN — `/pullover-en-banco-declinado/` — Pullover en banco declinado
 - [ ] ES · [ ] EN — `/jalon-dorsal-a-una-mano/` — Jalón dorsal a una mano
-- [ ] ES · [ ] EN — `/jalones-tras-nuca/` — Jalones tras nuca \| Efectivo pero... ¿Lesivo?
+- [x] ES · [x] EN — `/jalones-tras-nuca/` — Jalones tras nuca \| Efectivo pero... ¿Lesivo?
 
 ### Ejercicios de Gemelo (9)
 

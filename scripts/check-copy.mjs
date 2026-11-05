@@ -1,6 +1,6 @@
 // Source-level copy gate. `check:i18n` proves the built routes; this proves the
 // article copy against the contract before a page can be marked as done.
-import { readdirSync, readFileSync } from 'node:fs';
+import { existsSync, readdirSync, readFileSync } from 'node:fs';
 import { join, relative } from 'node:path';
 
 const ROOT = 'src/content/articles';
@@ -58,6 +58,8 @@ function grab(fm, key) {
   return match ? (match[1] ?? match[2] ?? match[3] ?? '').trim() : '';
 }
 
+const heroPaths = new Map();
+
 for (const file of walk(ROOT)) {
   const rel = relative(ROOT, file).replaceAll('\\', '/');
   const text = readFileSync(file, 'utf8');
@@ -77,6 +79,13 @@ for (const file of walk(ROOT)) {
   const heroCredit = grab(fm, 'heroCredit');
   const alternate = grab(fm, 'alternate');
   const updated = grab(fm, 'updated');
+
+  if (lang === 'es' && hero !== '') {
+    check(`${rel} hero file exists`, existsSync(join('public', hero.replace(/^\/+/, ''))), hero);
+    check(`${rel} hero has alt`, grab(fm, 'heroAlt') !== '');
+    if (!heroPaths.has(hero)) heroPaths.set(hero, []);
+    heroPaths.get(hero).push(rel);
+  }
 
   check(`${rel} lang is es|en`, lang === 'es' || lang === 'en', lang);
   check(`${rel} title 45-60`, title.length >= 45 && title.length <= 60, `${title.length}`);
@@ -105,6 +114,11 @@ for (const file of walk(ROOT)) {
     check(`${rel} does not say "gym"`, !/\bgym\b/i.test(content));
     check(`${rel} has no "cortacésped"`, !/\bcortacésped\b/i.test(content));
   }
+}
+
+// One hero per page: the same path on two different ES articles is a defect.
+for (const [hero, files] of heroPaths) {
+  check(`hero path is unique (${hero})`, files.length === 1, files.join(', '));
 }
 
 for (const failure of failures) console.error(`FAIL ${failure}`);
