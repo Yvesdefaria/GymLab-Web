@@ -1,6 +1,6 @@
 ---
 lang: es
-title: "Rutinas de espalda: 11 planes para amplitud, densidad y fuerza"
+title: "Rutinas de espalda: 11 planes de amplitud, densidad y fuerza"
 description: "Once rutinas de espalda para amplitud, densidad, fuerza y definición, con series, repeticiones y los mejores ejercicios de espalda para cada objetivo."
 h1: "Rutinas de espalda y consejos de entrenamiento"
 block: "Entrenamiento"

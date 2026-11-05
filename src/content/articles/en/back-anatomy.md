@@ -1,6 +1,6 @@
 ---
 lang: en
-title: "Back anatomy: muscles and how to train them"
+title: "Back anatomy: the muscles and how to train them"
 description: "Learn the muscles of the back (lats, rhomboids, traps and erectors) and how to train them for width and thickness with the right back exercises and grips."
 h1: "Back anatomy"
 block: "Training"

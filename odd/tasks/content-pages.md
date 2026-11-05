@@ -22,6 +22,22 @@ Legend: `ES` = Spanish published, `EN` = English published.
 | Mujer Fitness | 23 | 0 |
 | **Total** | **792** | **3** |
 
+## Copy gate (mandatory before ticking ES/EN)
+
+- [ ] `copy-editing` loaded (mode B) and `.agents/product-marketing.md` read.
+- [ ] Seven sweeps run: clarity, voice, so-what, prove-it, specificity, emotion, zero risk.
+- [ ] AI-tell check run: no contrast reveals, no negation lists, no colon reveals, ≤2 em dashes.
+- [ ] Neutral Spanish: 0 vosotros, 0 voseo, no regionalisms.
+- [ ] `npm run check:copy` green.
+
+## Copy pass log
+
+| Page | `copy-editing` | Product context | Sweeps | AI tells | Result |
+| --- | --- | --- | --- | --- | --- |
+| `rutinas-espalda` | yes | yes | yes | 0 em dashes | pass |
+| `ejercicios-espalda` | yes (re-audited) | yes | yes | 0 em dashes | pass |
+| `anatomia-de-la-espalda` | yes (re-audited) | yes | yes | 0 em dashes | pass |
+
 ## Entrenamiento (222)
 
 ### Musculación (84)

@@ -114,10 +114,21 @@ Rewrite the archive copy so it answers what people search, without changing a si
 - **Preserve**: the routines, sets, reps, exercises, order, warnings and disclaimers. The copy
   changes the wording, not the training advice.
 - **Never invent**: results, testimonials, prices, ratings, studies, dates or medical claims.
-- **Before editing**: load the `copy-editing` skill and read `.agents/product-marketing.md` (brand
-  voice, words to avoid, proof). Run the seven sweeps and the AI-tell check: no rhetorical negation
-  lists, no redundant colon reveals, at most 1–2 em dashes per page. `copywriting` is for new copy;
-  the SEO rules live in this contract.
+
+### Copy gate (mandatory)
+
+Run this on every page before marking `ES`/`EN` in `content-pages.md`:
+
+1. Load the `copy-editing` skill (mode B: preserve the author's voice and argument).
+2. Read `.agents/product-marketing.md` (brand voice, words to avoid, proof, no price claims).
+3. Run the seven sweeps: clarity, voice/tone, so-what, prove-it, specificity, emotion, zero risk.
+4. Run the AI-tell check: no contrast reveals, no negation lists, no redundant colon reveals, no
+   stock phrases, at most 2 em dashes in the body.
+5. Check neutral Spanish: 0 vosotros, 0 voseo, no regionalisms (`cortacésped` → `cortadora de césped`).
+6. Run `npm run check:copy`; it enforces title 45–60, description 150–160, required frontmatter,
+   the em-dash cap, the register rules and the hero credit.
+
+`copywriting` is for new copy; the SEO rules live in this contract.
 
 ## 7. Bilingual
 
@@ -151,13 +162,17 @@ Rewrite the archive copy so it answers what people search, without changing a si
 ## 10. Verification before publishing a page
 
 ```powershell
+npm run check:copy
 npm run build
 npm run check:i18n
+# or: npm run verify
 ```
 
-- Build: `18 pages` for the current site; +2 per article.
-- Gate: currently **403/403**. It covers route existence, canonical, hreflang, redirects, sitemap
-  alternates, the header language switch, landing SEO and the calculator/JSON-LD contract.
+- Build: `22 pages` for the current site; +2 per article.
+- Gates: **144/144 copy checks** and **434/434 i18n checks**. The copy gate enforces title/description
+  length, frontmatter, register and AI tells. The i18n gate covers route existence, canonical,
+  hreflang, redirects, sitemap alternates, the header language switch, landing SEO and the
+  calculator/JSON-LD contract.
 - Manual checks the gate does not cover yet:
   - Every TOC anchor jumps to its H2.
   - Every table has 3 columns and the same column geometry.
@@ -179,7 +194,8 @@ npm run check:i18n
 9. Add `tags`, `meta`, `block`, `section`, `updated`.
 10. Add the pair to `ROUTE_PAIRS` (`astro.config.mjs`) and to `PAGES`/`ROUTES`
     (`scripts/check-i18n.mjs`).
-11. Build, run the gate, open both locales, check the language switch and the tables at 390px.
+11. Run `npm run check:copy`; build; run `npm run check:i18n`; open both locales, check the language
+    switch and the tables at 390px.
 12. Mark `ES`/`EN` in `content-pages.md`; commit the pair.
 
 ## 12. Known gaps (tracked in `PLAN.md` → phases)

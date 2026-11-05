@@ -1,7 +1,7 @@
 ---
 lang: en
 title: "Back routines: a complete guide and training tips"
-description: "Back routines for size, definition, strength and beginners. Eleven templates with sets, reps and the best exercises."
+description: "Back routines for size, definition, strength and beginners. Eleven templates with sets, reps and the best back exercises for every goal, plus training tips."
 h1: "Back routines and training tips"
 block: "Training"
 section: "Back Training"

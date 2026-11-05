@@ -8,6 +8,8 @@
     "build": "astro build",
     "preview": "astro preview",
     "check:i18n": "node scripts/check-i18n.mjs",
+    "check:copy": "node scripts/check-copy.mjs",
+    "verify": "npm run check:copy && npm run build && npm run check:i18n",
     "astro": "astro"
   },
   "dependencies": {
