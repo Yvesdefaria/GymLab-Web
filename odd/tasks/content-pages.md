@@ -9,18 +9,18 @@ Legend: `ES` = Spanish published, `EN` = English published.
 
 ## Progress
 
-- **Built: 4 / 792** (ES 4, EN 4).
-- Last built: `/elige-las-dominadas-adecuadas-para-mejorar-tu-espalda/` ↔ `/en/best-pull-ups-for-back-width/`.
+- **Built: 5 / 792** (ES 5, EN 5).
+- Last built: `/mejores-ejercicios-con-mancuernas-para-espalda/` ↔ `/en/dumbbell-back-exercises/`.
 
 | Block | Articles | Built |
 | --- | ---: | ---: |
-| Entrenamiento | 222 | 3 |
+| Entrenamiento | 222 | 4 |
 | Por Músculo | 80 | 0 |
 | Rutinas | 80 | 0 |
 | Ejercicios | 196 | 1 |
 | Nutrición | 191 | 0 |
 | Mujer Fitness | 23 | 0 |
-| **Total** | **792** | **4** |
+| **Total** | **792** | **5** |
 
 ## Copy gate (mandatory before ticking ES/EN)
 
@@ -38,6 +38,7 @@ Legend: `ES` = Spanish published, `EN` = English published.
 | `ejercicios-espalda` | yes (re-audited) | yes | yes | 0 em dashes | pass |
 | `anatomia-de-la-espalda` | yes (re-audited) | yes | yes | 0 em dashes | pass |
 | `elige-las-dominadas-adecuadas-para-mejorar-tu-espalda` | yes | yes | yes | 0 em dashes | pass |
+| `mejores-ejercicios-con-mancuernas-para-espalda` | yes | yes | yes | 0 em dashes | pass |
 
 ## Entrenamiento (222)
 
@@ -241,7 +242,7 @@ Legend: `ES` = Spanish published, `EN` = English published.
 
 - [ ] ES · [ ] EN — `/ejercicios-dolor-de-espalda/` — Ejercicios para el dolor de espalda
 - [x] ES · [x] EN — `/rutinas-espalda/` — Rutinas de espalda y como entrenarla \| Efectivas 100% en 2025
-- [ ] ES · [ ] EN — `/mejores-ejercicios-con-mancuernas-para-espalda/` — Ejercicios con mancuernas para espalda más efectivos
+- [x] ES · [x] EN — `/mejores-ejercicios-con-mancuernas-para-espalda/` — Ejercicios con mancuernas para espalda más efectivos
 - [ ] ES · [ ] EN — `/agarres-jalones-dorsales/` — Tipos de agarres en jalones dorsales: ¿Cuál es mejor?
 - [ ] ES · [ ] EN — `/como-ampliar-tus-dorsales/` — Amplía tus músculos dorsales \| Técnica avanzada
 - [x] ES · [x] EN — `/elige-las-dominadas-adecuadas-para-mejorar-tu-espalda/` — Mejores dominadas para amplitud de espalda

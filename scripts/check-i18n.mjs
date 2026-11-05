@@ -27,6 +27,8 @@ const PAGES = [
   ['en', '/en/back-anatomy/'],
   ['es', '/es/elige-las-dominadas-adecuadas-para-mejorar-tu-espalda/'],
   ['en', '/en/best-pull-ups-for-back-width/'],
+  ['es', '/es/mejores-ejercicios-con-mancuernas-para-espalda/'],
+  ['en', '/en/dumbbell-back-exercises/'],
 ];
 
 // Content routes, keyed by a stable id with the slug each locale publishes. The
@@ -45,6 +47,10 @@ const ROUTES = {
   pullUpWidth: {
     es: '/elige-las-dominadas-adecuadas-para-mejorar-tu-espalda',
     en: '/best-pull-ups-for-back-width',
+  },
+  dumbbellBack: {
+    es: '/mejores-ejercicios-con-mancuernas-para-espalda',
+    en: '/dumbbell-back-exercises',
   },
 };
 
