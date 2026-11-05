@@ -32,21 +32,44 @@ export function localePath(lang: Lang, path = '/'): string {
   return clean === '' ? `/${lang}/` : `/${lang}/${clean}/`;
 }
 
-/** The same page in the target locale: `/en/privacidad/` + `'es'` → `/es/privacidad/`. */
+/** The same page in the target locale, resolved through the route table below. */
 export function localeSwitchPath(pathname: string, target: Lang): string {
+  const id = routeIdFromPath(pathname);
+  if (id) return localePath(target, ROUTES[id][target]);
   const stripped = pathname.replace(/^\/(?:es|en)(?=\/|$)/, '') || '/';
   return localePath(target, stripped);
 }
 
 /**
- * Calculator routes, in the order of `calculators.items` in the dictionaries.
- * The order is the link between the two, so a new calculator goes in both.
+ * Every content route, keyed by a stable id with its slug per locale. The locales
+ * do not share slugs: the English URLs carry the English keyword.
  */
-export const CALC_PATHS = [
-  '/calculadora-1rm',
-  '/calculadora-imc',
-  '/calcular-calorias',
-] as const;
+export type RouteId = 'home' | 'privacy' | 'terms' | 'oneRm' | 'bmi' | 'calories';
+
+export const ROUTES: Record<RouteId, Record<Lang, string>> = {
+  home: { es: '/', en: '/' },
+  privacy: { es: '/privacidad', en: '/privacidad' },
+  terms: { es: '/terminos', en: '/terminos' },
+  oneRm: { es: '/calculadora-1rm', en: '/one-rep-max-calculator' },
+  bmi: { es: '/calculadora-imc', en: '/bmi-calculator' },
+  calories: { es: '/calcular-calorias', en: '/calorie-calculator' },
+};
+
+/** Calculator route ids, in the order of `calculators.items` in the dictionaries. */
+export const CALC_ROUTE_IDS = ['oneRm', 'bmi', 'calories'] as const;
+export type CalcRouteId = (typeof CALC_ROUTE_IDS)[number];
+
+/** The URL path for one calculator in one locale. */
+export function calcPath(lang: Lang, id: CalcRouteId): string {
+  return ROUTES[id][lang];
+}
+
+/** Resolve a pathname back to its route id, or `undefined` for an unknown path. */
+export function routeIdFromPath(pathname: string): RouteId | undefined {
+  const [locale, ...rest] = pathname.replace(/^\/+|\/+$/g, '').split('/');
+  const bare = `/${rest.join('/')}`;
+  return (Object.keys(ROUTES) as RouteId[]).find((id) => ROUTES[id][locale as Lang] === bare);
+}
 
 /** Legal documents, one bundle per locale. `en` is annotated with `LegalDoc`, so gaps are type errors. */
 export const legalDocs: Record<Lang, { privacy: LegalDoc; terms: LegalDoc }> = {

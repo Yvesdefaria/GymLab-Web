@@ -2,13 +2,13 @@
 // Entry point for the calculator pages. Without this block they are orphaned:
 // live and in the sitemap, but unreachable by navigation and carrying no
 // internal link signal.
-import { CALC_PATHS, getLang, localePath, useTranslations } from '../../i18n';
+import { CALC_ROUTE_IDS, calcPath, getLang, localePath, useTranslations } from '../../i18n';
 
 const lang = getLang(Astro.url.pathname);
 const t = useTranslations(lang);
 
-const items = CALC_PATHS.map((path, index) => ({
-  href: localePath(lang, path),
+const items = CALC_ROUTE_IDS.map((id, index) => ({
+  href: localePath(lang, calcPath(lang, id)),
   ...t.calculators.items[index],
 }));
 ---

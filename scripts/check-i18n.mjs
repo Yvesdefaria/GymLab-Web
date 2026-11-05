@@ -14,12 +14,30 @@ const PAGES = [
   ['es', '/es/terminos/'],
   ['en', '/en/terminos/'],
   ['es', '/es/calculadora-1rm/'],
-  ['en', '/en/calculadora-1rm/'],
+  ['en', '/en/one-rep-max-calculator/'],
   ['es', '/es/calculadora-imc/'],
-  ['en', '/en/calculadora-imc/'],
+  ['en', '/en/bmi-calculator/'],
   ['es', '/es/calcular-calorias/'],
-  ['en', '/en/calcular-calorias/'],
+  ['en', '/en/calorie-calculator/'],
 ];
+
+// Content routes, keyed by a stable id with the slug each locale publishes. The
+// locales do not share slugs, so the alternates are resolved through this table
+// instead of swapping the locale prefix.
+const ROUTES = {
+  home: { es: '/', en: '/' },
+  privacy: { es: '/privacidad', en: '/privacidad' },
+  terms: { es: '/terminos', en: '/terminos' },
+  oneRm: { es: '/calculadora-1rm', en: '/one-rep-max-calculator' },
+  bmi: { es: '/calculadora-imc', en: '/bmi-calculator' },
+  calories: { es: '/calcular-calorias', en: '/calorie-calculator' },
+};
+
+const routeId = (path) => {
+  const [locale, ...rest] = path.replace(/^\/+|\/+$/g, '').split('/');
+  const bare = `/${rest.join('/')}`;
+  return Object.keys(ROUTES).find((id) => ROUTES[id][locale] === bare);
+};
 
 // Spanish words that must never reach an English page.
 const SPANISH_SENTINELS = [
@@ -44,9 +62,9 @@ const fileFor = (path) => join(DIST, path.replace(/^\/|\/$/g, ''), 'index.html')
 
 function alternatesFor(path) {
   const locale = path.startsWith('/en/') ? 'en' : 'es';
-  const bare = path.replace(/^\/(?:es|en)(?=\/|$)/, '') || '/';
-  const withSlash = (suffix) => `${ORIGIN}/${suffix}${bare}`;
-  return { locale, es: withSlash('es'), en: withSlash('en') };
+  const id = routeId(path);
+  const withSlash = (lang, slug) => `${ORIGIN}/${lang}${slug === '/' ? '/' : `${slug}/`}`;
+  return { locale, es: withSlash('es', ROUTES[id].es), en: withSlash('en', ROUTES[id].en) };
 }
 
 for (const [lang, path] of PAGES) {
@@ -104,6 +122,9 @@ for (const rule of [
   '/privacidad /es/privacidad/ 301',
   '/terminos /es/terminos/ 301',
   '/sitemap.xml /sitemap-index.xml 301',
+  '/en/calculadora-1rm/ /en/one-rep-max-calculator/ 301',
+  '/en/calculadora-imc/ /en/bmi-calculator/ 301',
+  '/en/calcular-calorias/ /en/calorie-calculator/ 301',
 ]) {
   check(`_redirects "${rule}"`, redirects.includes(rule));
 }
@@ -275,11 +296,11 @@ for (const landing of LANDINGS) {
 // descriptions spell the concept out, so the term follows the copy, not the slug.
 const CALC_PAGES = [
   { path: '/es/calculadora-1rm/', term: '1rm' },
-  { path: '/en/calculadora-1rm/', term: 'one rep max' },
+  { path: '/en/one-rep-max-calculator/', term: 'one rep max' },
   { path: '/es/calculadora-imc/', term: 'índice de masa corporal' },
-  { path: '/en/calculadora-imc/', term: 'body mass index' },
+  { path: '/en/bmi-calculator/', term: 'body mass index' },
   { path: '/es/calcular-calorias/', term: 'calorías' },
-  { path: '/en/calcular-calorias/', term: 'calories' },
+  { path: '/en/calorie-calculator/', term: 'calories' },
 ];
 
 for (const { path, term } of CALC_PAGES) {
@@ -363,34 +384,39 @@ for (const { path, term } of CALC_PAGES) {
 
 // Orphan pages are invisible: the landing must link to every calculator, and the
 // calculators must link to each other, or the surface exists but nobody reaches it.
-const CALC_ROUTES = ['/calculadora-1rm', '/calculadora-imc', '/calcular-calorias'];
+const CALC_ROUTES = [
+  { id: 'oneRm', es: '/calculadora-1rm', en: '/one-rep-max-calculator' },
+  { id: 'bmi', es: '/calculadora-imc', en: '/bmi-calculator' },
+  { id: 'calories', es: '/calcular-calorias', en: '/calorie-calculator' },
+];
 
 for (const landing of LANDINGS) {
   const html = readFileSync(fileFor(landing.path), 'utf8');
-  const prefix = landing.path.startsWith('/en/') ? '/en' : '/es';
-  const anchor = prefix === '/en' ? 'id="calculators"' : 'id="calculadoras"';
+  const lang = landing.path.startsWith('/en/') ? 'en' : 'es';
+  const prefix = `/${lang}`;
+  const anchor = lang === 'en' ? 'id="calculators"' : 'id="calculadoras"';
 
   check(`links ${landing.path} anchors the calculators`, html.includes(anchor));
   for (const route of CALC_ROUTES) {
     check(
-      `links ${landing.path} → ${route}`,
-      html.includes(`href="${prefix}${route}/"`),
-      `expected href="${prefix}${route}/"`,
+      `links ${landing.path} → ${route[lang]}`,
+      html.includes(`href="${prefix}${route[lang]}/"`),
+      `expected href="${prefix}${route[lang]}/"`,
     );
   }
 }
 
 for (const lang of ['es', 'en']) {
   for (const route of CALC_ROUTES) {
-    const file = fileFor(`/${lang}${route}/`);
+    const file = fileFor(`/${lang}${route[lang]}/`);
     if (!existsSync(file)) continue;
     const html = readFileSync(file, 'utf8');
     for (const other of CALC_ROUTES) {
-      if (other === route) continue;
+      if (other.id === route.id) continue;
       check(
-        `links ${lang}${route} → ${other}`,
-        html.includes(`href="/${lang}${other}/"`),
-        `expected href="/${lang}${other}/"`,
+        `links ${lang}${route[lang]} → ${other[lang]}`,
+        html.includes(`href="/${lang}${other[lang]}/"`),
+        `expected href="/${lang}${other[lang]}/"`,
       );
     }
   }

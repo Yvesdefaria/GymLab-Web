@@ -1,0 +1,7 @@
+---
+// English calorie calculator at its own slug. The body lives in the `[lang]` route
+// so both locales share one implementation; this wrapper only fixes the English URL.
+import CalorieCalculator from '../[lang]/calcular-calorias.astro';
+---
+
+<CalorieCalculator />

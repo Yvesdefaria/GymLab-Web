@@ -4,12 +4,13 @@
 // HTML carries the result) and are recomputed on input by the bundled script.
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import StructuredData from '../../components/StructuredData.astro';
-import { CALC_PATHS, LOCALES, getLang, localePath, useTranslations } from '../../i18n';
+import { CALC_ROUTE_IDS, calcPath, getLang, localePath, useTranslations } from '../../i18n';
 import { calcIMC, getIMCCategory, type IMCCategory } from '../../lib/calculators';
 import { breadcrumbList, organization, webApplication, webSite } from '../../lib/schema';
 
 export function getStaticPaths() {
-  return LOCALES.map((lang) => ({ params: { lang } }));
+  // The English page lives at its own slug in `src/pages/en/`.
+  return [{ params: { lang: 'es' } }];
 }
 
 const lang = getLang(Astro.url.pathname);
@@ -31,8 +32,8 @@ const categoryLabel = (category: IMCCategory): string => c.result.categories[cat
     nodes={[
       organization(lang),
       webSite(lang),
-      webApplication(lang, CALC_PATHS[1], c.title, c.meta.description),
-      breadcrumbList(lang, CALC_PATHS[1], c.title),
+      webApplication(lang, calcPath(lang, 'bmi'), c.title, c.meta.description),
+      breadcrumbList(lang, calcPath(lang, 'bmi'), c.title),
     ]}
   />
   <section class="floor-section calc-page" aria-labelledby="calc-title">
@@ -140,9 +141,9 @@ const categoryLabel = (category: IMCCategory): string => c.result.categories[cat
 
       <nav class="calc-page__related" aria-label={t.calculators.label}>
         {
-          CALC_PATHS.map((path, index) =>
+          CALC_ROUTE_IDS.map((id, index) =>
             index === 1 ? null : (
-              <a href={localePath(lang, path)}>{t.calculators.items[index].title}</a>
+              <a href={localePath(lang, calcPath(lang, id))}>{t.calculators.items[index].title}</a>
             ),
           )
         }

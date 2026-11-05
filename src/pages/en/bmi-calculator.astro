@@ -1,0 +1,8 @@
+---
+// English BMI calculator at its own slug. The body lives in the `[lang]` route so
+// both locales share one implementation; this wrapper only fixes the English URL.
+// `getLang(Astro.url.pathname)` inside the imported page resolves to `en`.
+import BmiCalculator from '../[lang]/calculadora-imc.astro';
+---
+
+<BmiCalculator />

@@ -144,9 +144,9 @@ Three claims did not survive re-verification against the live zone and the repo:
    Windows, Android and iPhone Safari), Applebot, HeadlessChrome and agents all appear in the same
    window. So 15,908 requests is a product being used plus scanners the soft-404 rewards — not
    "33% of noise".
-3. **EN slug regression.** `/en/calculadora-imc/`, `/en/calcular-calorias/` and
-   `/en/calculadora-1rm/` keep Spanish slugs on the English locale; the keyword is lost in the URL.
-   Verified: `/en/calculadora-imc/` → `200`.
+3. **EN slug regression — fixed 2026-11-05.** The English calculators now publish
+   `/en/bmi-calculator/`, `/en/one-rep-max-calculator/` and `/en/calorie-calculator/`; the old
+   Spanish-slug URLs `301` to them. Evidence in `odd/tasks/en-calculator-slugs.md`.
 4. **Calculator pages are thin.** Re-measured: 203 words (`calculadora-imc`), 226 (`1rm`),
    241 (`calorias`). Below what ranks against 1,000+ word competitors.
 5. **6 of 9 app calculators are unpublished.** Only BMI, 1RM and TDEE exist on the web.
@@ -203,7 +203,8 @@ custom ruleset back to its single original rule.
 - [ ] Promote the CSP from report-only to enforcing once the reports are clean. If Bot Fight Mode is
       ever re-enabled, allow `/cdn-cgi/challenge-platform/` (or use nonces) first: JavaScript
       Detections is injected there and an enforcing `script-src 'self'` would block it.
-- [ ] Localise the EN calculator slugs and 301 the current ones.
+- [x] Localise the EN calculator slugs and 301 the current ones. **Shipped 2026-11-05**; gate
+      **317/317**. Evidence in `odd/tasks/en-calculator-slugs.md`.
 - [ ] Grow the three calculator pages to 800+ words before building new ones.
 - [ ] Publish `llms.txt`.
 - [ ] 20-exercise pilot before the full 873-page catalogue (thin-content risk).
