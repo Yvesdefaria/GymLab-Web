@@ -168,8 +168,8 @@ npm run check:i18n
 # or: npm run verify
 ```
 
-- Build: base pages + 2 per article (28 at the time of writing).
-- Gates: `check:copy` and `check:i18n` green (288/288 and 527/527 at the time of writing). The copy gate
+- Build: base pages + 2 per article (48 at the time of writing).
+- Gates: `check:copy` and `check:i18n` green (768/768 and 837/837 at the time of writing). The copy gate
   enforces title/description length, frontmatter, register and AI tells. The i18n gate covers route
   existence, canonical, hreflang, redirects, sitemap alternates, the header language switch, landing
   SEO and the calculator/JSON-LD contract.

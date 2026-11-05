@@ -21,6 +21,16 @@ const ROUTE_PAIRS = [
   ['/elige-las-dominadas-adecuadas-para-mejorar-tu-espalda', '/best-pull-ups-for-back-width'],
   ['/mejores-ejercicios-con-mancuernas-para-espalda', '/dumbbell-back-exercises'],
   ['/consejos-para-desarrollar-espalda', '/how-to-build-back-muscle'],
+  ['/espalda-baja-fuerte', '/strong-lower-back'],
+  ['/agarres-jalones-dorsales', '/lat-pulldown-grips'],
+  ['/como-ampliar-tus-dorsales', '/how-to-widen-your-lats'],
+  ['/mejores-jalones-para-trabajar-la-parte-inferior-del-dorsal', '/lower-lat-pulldowns'],
+  ['/dominadas', '/pull-ups'],
+  ['/dominadas-agarre-ancho', '/wide-grip-pull-ups'],
+  ['/dominadas-agarre-cerrado', '/close-grip-pull-ups'],
+  ['/remo-barra', '/barbell-row'],
+  ['/remo-mancuerna-una-mano', '/one-arm-dumbbell-row'],
+  ['/remo-barra-t', '/t-bar-row'],
 ];
 
 const pairFor = (pathname) => {

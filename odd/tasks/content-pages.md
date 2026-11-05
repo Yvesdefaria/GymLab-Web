@@ -9,18 +9,18 @@ Legend: `ES` = Spanish published, `EN` = English published.
 
 ## Progress
 
-- **Built: 6 / 792** (ES 6, EN 6).
-- Last built: `/consejos-para-desarrollar-espalda/` ↔ `/en/how-to-build-back-muscle/`.
+- **Built: 16 / 792** (ES 16, EN 16).
+- Last batch: 10 pages, from `/espalda-baja-fuerte/` to `/remo-barra-t/`.
 
 | Block | Articles | Built |
 | --- | ---: | ---: |
-| Entrenamiento | 222 | 5 |
+| Entrenamiento | 222 | 9 |
 | Por Músculo | 80 | 0 |
 | Rutinas | 80 | 0 |
-| Ejercicios | 196 | 1 |
+| Ejercicios | 196 | 7 |
 | Nutrición | 191 | 0 |
 | Mujer Fitness | 23 | 0 |
-| **Total** | **792** | **6** |
+| **Total** | **792** | **16** |
 
 ## Copy gate (mandatory before ticking ES/EN)
 
@@ -40,6 +40,16 @@ Legend: `ES` = Spanish published, `EN` = English published.
 | `elige-las-dominadas-adecuadas-para-mejorar-tu-espalda` | yes | yes | yes | 0 em dashes | pass |
 | `mejores-ejercicios-con-mancuernas-para-espalda` | yes | yes | yes | 0 em dashes | pass |
 | `consejos-para-desarrollar-espalda` | yes | yes | yes | 0 em dashes | pass |
+| `espalda-baja-fuerte` | yes | yes | yes | 0 em dashes | pass |
+| `agarres-jalones-dorsales` | yes | yes | yes | 0 em dashes | pass |
+| `como-ampliar-tus-dorsales` | yes | yes | yes | 0 em dashes | pass |
+| `mejores-jalones-para-trabajar-la-parte-inferior-del-dorsal` | yes | yes | yes | 0 em dashes | pass |
+| `dominadas` | yes | yes | yes | 0 em dashes | pass |
+| `dominadas-agarre-ancho` | yes | yes | yes | 0 em dashes | pass |
+| `dominadas-agarre-cerrado` | yes | yes | yes | 0 em dashes | pass |
+| `remo-barra` | yes | yes | yes | 0 em dashes | pass |
+| `remo-mancuerna-una-mano` | yes | yes | yes | 0 em dashes | pass |
+| `remo-barra-t` | yes | yes | yes | 0 em dashes | pass |
 
 ## Entrenamiento (222)
 
@@ -244,12 +254,12 @@ Legend: `ES` = Spanish published, `EN` = English published.
 - [ ] ES · [ ] EN — `/ejercicios-dolor-de-espalda/` — Ejercicios para el dolor de espalda
 - [x] ES · [x] EN — `/rutinas-espalda/` — Rutinas de espalda y como entrenarla \| Efectivas 100% en 2025
 - [x] ES · [x] EN — `/mejores-ejercicios-con-mancuernas-para-espalda/` — Ejercicios con mancuernas para espalda más efectivos
-- [ ] ES · [ ] EN — `/agarres-jalones-dorsales/` — Tipos de agarres en jalones dorsales: ¿Cuál es mejor?
-- [ ] ES · [ ] EN — `/como-ampliar-tus-dorsales/` — Amplía tus músculos dorsales \| Técnica avanzada
+- [x] ES · [x] EN — `/agarres-jalones-dorsales/` — Tipos de agarres en jalones dorsales: ¿Cuál es mejor?
+- [x] ES · [x] EN — `/como-ampliar-tus-dorsales/` — Amplía tus músculos dorsales \| Técnica avanzada
 - [x] ES · [x] EN — `/elige-las-dominadas-adecuadas-para-mejorar-tu-espalda/` — Mejores dominadas para amplitud de espalda
 - [x] ES · [x] EN — `/consejos-para-desarrollar-espalda/` — Consejos para desarrollar tu espalda
-- [ ] ES · [ ] EN — `/mejores-jalones-para-trabajar-la-parte-inferior-del-dorsal/` — Mejores jalones para trabajar la parte inferior del dorsal
-- [ ] ES · [ ] EN — `/espalda-baja-fuerte/` — Como tener una espalda baja fuerte
+- [x] ES · [x] EN — `/mejores-jalones-para-trabajar-la-parte-inferior-del-dorsal/` — Mejores jalones para trabajar la parte inferior del dorsal
+- [x] ES · [x] EN — `/espalda-baja-fuerte/` — Como tener una espalda baja fuerte
 - [x] ES · [x] EN — `/anatomia-de-la-espalda/` — Anatomía y músculos de la espalda \| ¡Entrénalos!
 
 ### Entrenamiento de las Piernas (18)
@@ -678,17 +688,17 @@ Legend: `ES` = Spanish published, `EN` = English published.
 - [ ] ES · [ ] EN — `/jalones-frontales-2/` — Jalones frontales \| Amplia tus dorsales en 2025
 - [ ] ES · [ ] EN — `/jalones-agarre-v/` — Jalones con agarre V: técnica, beneficios y errores
 - [ ] ES · [ ] EN — `/jalones-agarre-cerrado/` — Jalones agarre cerrado: fortalece tu espalda eficazmente
-- [ ] ES · [ ] EN — `/dominadas-agarre-cerrado/` — Dominadas con Agarre Cerrado: ¡Maximiza tu Poder de Tracción!
-- [ ] ES · [ ] EN — `/dominadas-agarre-ancho/` — Dominadas con Agarre Ancho: Técnica y Beneficios Musculares
+- [x] ES · [x] EN — `/dominadas-agarre-cerrado/` — Dominadas con Agarre Cerrado: ¡Maximiza tu Poder de Tracción!
+- [x] ES · [x] EN — `/dominadas-agarre-ancho/` — Dominadas con Agarre Ancho: Técnica y Beneficios Musculares
 - [ ] ES · [ ] EN — `/jalones-frontales-brazos-rectos/` — Jalones frontales con brazos rectos
-- [ ] ES · [ ] EN — `/dominadas/` — Dominadas, como dominarlas
-- [ ] ES · [ ] EN — `/remo-barra-t/` — Remo en barra T \| Consigue una espalda más musculosa
+- [x] ES · [x] EN — `/dominadas/` — Dominadas, como dominarlas
+- [x] ES · [x] EN — `/remo-barra-t/` — Remo en barra T \| Consigue una espalda más musculosa
 - [ ] ES · [ ] EN — `/remo-barra-agarre-invertido/` — Remo con barra agarre invertido
-- [ ] ES · [ ] EN — `/remo-barra/` — Remo con barra, ¿El MEJOR ejercicio para espalda en 2025?
+- [x] ES · [x] EN — `/remo-barra/` — Remo con barra, ¿El MEJOR ejercicio para espalda en 2025?
 - [ ] ES · [ ] EN — `/remo-polea-sentado/` — Remo en polea sentado (Remo Gironda) \| Efectivo 100%
 - [ ] ES · [ ] EN — `/remo-multipower/` — Remo en multipower
 - [ ] ES · [ ] EN — `/remo-maquina/` — Remo en máquina \| ¡Densidad para tus dorsales!
-- [ ] ES · [ ] EN — `/remo-mancuerna-una-mano/` — Remo con mancuerna \| Desarrolla músculo en la espalda
+- [x] ES · [x] EN — `/remo-mancuerna-una-mano/` — Remo con mancuerna \| Desarrolla músculo en la espalda
 - [ ] ES · [ ] EN — `/dominadas-tras-nuca/` — Dominadas tras nuca
 - [ ] ES · [ ] EN — `/buenos-dias-barra-de-pie/` — Buenos días con barra de pie
 - [ ] ES · [ ] EN — `/buenos-dias-barra-sentado/` — Buenos días con barra sentado

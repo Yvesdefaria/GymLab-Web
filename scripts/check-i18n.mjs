@@ -31,6 +31,26 @@ const PAGES = [
   ['en', '/en/dumbbell-back-exercises/'],
   ['es', '/es/consejos-para-desarrollar-espalda/'],
   ['en', '/en/how-to-build-back-muscle/'],
+  ['es', '/es/espalda-baja-fuerte/'],
+  ['en', '/en/strong-lower-back/'],
+  ['es', '/es/agarres-jalones-dorsales/'],
+  ['en', '/en/lat-pulldown-grips/'],
+  ['es', '/es/como-ampliar-tus-dorsales/'],
+  ['en', '/en/how-to-widen-your-lats/'],
+  ['es', '/es/mejores-jalones-para-trabajar-la-parte-inferior-del-dorsal/'],
+  ['en', '/en/lower-lat-pulldowns/'],
+  ['es', '/es/dominadas/'],
+  ['en', '/en/pull-ups/'],
+  ['es', '/es/dominadas-agarre-ancho/'],
+  ['en', '/en/wide-grip-pull-ups/'],
+  ['es', '/es/dominadas-agarre-cerrado/'],
+  ['en', '/en/close-grip-pull-ups/'],
+  ['es', '/es/remo-barra/'],
+  ['en', '/en/barbell-row/'],
+  ['es', '/es/remo-mancuerna-una-mano/'],
+  ['en', '/en/one-arm-dumbbell-row/'],
+  ['es', '/es/remo-barra-t/'],
+  ['en', '/en/t-bar-row/'],
 ];
 
 // Content routes, keyed by a stable id with the slug each locale publishes. The
@@ -58,6 +78,19 @@ const ROUTES = {
     es: '/consejos-para-desarrollar-espalda',
     en: '/how-to-build-back-muscle',
   },
+  lowerBack: { es: '/espalda-baja-fuerte', en: '/strong-lower-back' },
+  latGrips: { es: '/agarres-jalones-dorsales', en: '/lat-pulldown-grips' },
+  latWidth: { es: '/como-ampliar-tus-dorsales', en: '/how-to-widen-your-lats' },
+  lowerLat: {
+    es: '/mejores-jalones-para-trabajar-la-parte-inferior-del-dorsal',
+    en: '/lower-lat-pulldowns',
+  },
+  pullUps: { es: '/dominadas', en: '/pull-ups' },
+  widePullUps: { es: '/dominadas-agarre-ancho', en: '/wide-grip-pull-ups' },
+  closePullUps: { es: '/dominadas-agarre-cerrado', en: '/close-grip-pull-ups' },
+  barbellRow: { es: '/remo-barra', en: '/barbell-row' },
+  oneArmRow: { es: '/remo-mancuerna-una-mano', en: '/one-arm-dumbbell-row' },
+  tBarRow: { es: '/remo-barra-t', en: '/t-bar-row' },
 };
 
 const routeId = (path) => {
