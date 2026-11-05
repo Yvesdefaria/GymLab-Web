@@ -6,8 +6,8 @@ h1: "Back routines and training tips"
 block: "Training"
 section: "Back Training"
 hero: "/content/rutinas-espalda/hero.jpg"
-heroAlt: "Athlete performing a pull-up on a bar"
-heroCredit: "Wikimedia Commons · public domain"
+heroAlt: "Soldier performing a deadlift in a gym"
+heroCredit: "Wikimedia Commons · U.S. Army / Spc. Micah Wilson · public domain"
 alternate: "/es/rutinas-espalda/"
 updated: "2026-11-05"
 lead: "**Back routines** are the most demanding sessions this side of leg day. The back is a large **muscle group** and it takes real effort to mobilise and work all of it."
@@ -47,7 +47,8 @@ As with other muscle groups, I like to **mix** the order of width exercises (pul
 | Dumbbell pull-over | 3 | 10 |
 | Assisted pull-ups | 3 | 12 (slow) |
 | Back extensions | 3 | 30 (slow) |
-| **\*** The "+" means we finish with a drop set for maximum intensity: end the set, take a lighter weight immediately and complete the extra reps. |
+
+> **\*** The "+" means we finish with a drop set for maximum intensity: end the set, take a lighter weight immediately and complete the extra reps.
 
 ## Back routine for overall size
 
@@ -91,7 +92,8 @@ Simple, effective and suitable for everyone. Cut rest to a minimum and give the 
 | Close-grip pulldown to the chest | 3 | 15,10,6 |
 | Machine pulldowns\* | 3 | 15,10,6 |
 | Seated cable row\* | 3 | 15,10,6 |
-| **\*** Do not rest more than 30 seconds between sets. |
+
+> **\*** Do not rest more than 30 seconds between sets.
 
 ## Routine for lower-lat priority
 
@@ -119,7 +121,8 @@ Simple, effective and suitable for everyone. Cut rest to a minimum and give the 
 | Barbell row | 4 | 10,10,10,10 |
 | Two-dumbbell row, simultaneous | 4 | 10,10,10,10 |
 | Pull-ups | 4 | To failure |
-| **\*** A **giant set** is four or more exercises performed without resting. It is a way to raise training intensity: one set of each exercise, back to back, until all are done. Rest at least 3 minutes between giant sets. |
+
+> **\*** A **giant set** is four or more exercises performed without resting. It is a way to raise training intensity: one set of each exercise, back to back, until all are done. Rest at least 3 minutes between giant sets.
 
 ## Strength routine
 
@@ -131,7 +134,8 @@ Low reps and longer rests. If you train like this, make sure you have plenty of 
 | Seated machine row | 4 | 8,6,4,4 |
 | T-bar row | 3 | 6,6,4 |
 | Seated cable row, wide grip | 3 | 6,6,4 |
-| **\*** Rest 2 to 3 minutes between sets. |
+
+> **\*** Rest 2 to 3 minutes between sets.
 
 ## Definition routine
 
@@ -143,7 +147,8 @@ You are supposedly in a **calorie deficit**, so lower the weights and make the s
 | Straight-arm cable pulldowns | 4 | 15,15,12,12 |
 | Dumbbell pull-over | 4 | 20,20,15,15 |
 | Front cable pulldowns | 4 | 20,15,12,10 |
-| **\*** Do not rest more than 30 to 45 seconds between sets. |
+
+> **\*** Do not rest more than 30 to 45 seconds between sets.
 
 ## Super-pump routine
 
@@ -154,7 +159,8 @@ Sets of 30 reps look easy until the second exercise. It hurts, but it is a stron
 | Barbell row | 4 | 10,10,30,30 |
 | Seated cable row | 4 | 10,10,30,30 |
 | Front cable pulldowns | 4 | 10,10,30,30 |
-| **\*** Do not rest more than 30 seconds between sets. |
+
+> **\*** Do not rest more than 30 seconds between sets.
 
 ## Specialised back routines
 

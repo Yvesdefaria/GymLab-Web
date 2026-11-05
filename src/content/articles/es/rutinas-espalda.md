@@ -6,8 +6,8 @@ h1: "Rutinas de espalda y consejos de entrenamiento"
 block: "Entrenamiento"
 section: "Entrenamiento de la Espalda"
 hero: "/content/rutinas-espalda/hero.jpg"
-heroAlt: "Deportista realizando dominadas en una barra"
-heroCredit: "Wikimedia Commons · dominio público"
+heroAlt: "Soldado realizando un peso muerto en un gimnasio"
+heroCredit: "Wikimedia Commons · U.S. Army / Spc. Micah Wilson · dominio público"
 alternate: "/en/back-routines/"
 updated: "2026-11-05"
 lead: "Las **rutinas de espalda** son los entrenamientos más extenuantes con permiso del día de piernas. La espalda es un **grupo muscular** grande y requiere de un gran esfuerzo para una total movilización y trabajo de sus músculos."
@@ -46,7 +46,8 @@ Como en otros grupos musculares, me gusta **mezclar** el orden entre los ejercic
 | Pull-over con mancuerna | 3 | 10 |
 | Dominadas asistidas | 3 | 12 (lentas) |
 | Hiperextensiones | 3 | 30 (lentas) |
-| **\*** El símbolo «+» indica que realizamos una serie descendente para máxima intensidad. Es decir, terminamos la serie e inmediatamente y tras coger un peso más ligero realizamos las repeticiones finales propuestas. |
+
+> **\*** El símbolo «+» indica que realizamos una serie descendente para máxima intensidad. Es decir, terminamos la serie e inmediatamente y tras coger un peso más ligero realizamos las repeticiones finales propuestas.
 
 ## Rutina de espalda para volumen general
 
@@ -90,7 +91,8 @@ Sencillo, efectivo y para toda la familia… reduce los tiempos de descanso al m
 | Jalones al pecho agarre cerrado |  3 | 15,10,6 |
 | Jalones en máquina\* |  3 | 15,10,6 |
 | Remo sentado en polea\* |  3 | 15,10,6 |
-| **\***No descansar más de 30 segundos entre series. |
+
+> **\***No descansar más de 30 segundos entre series.
 
 ## Rutina para prioridad en dorsal inferior
 
@@ -118,7 +120,8 @@ Sencillo, efectivo y para toda la familia… reduce los tiempos de descanso al m
 | Remo con barra | 4 | 10,10,10,10 |
 | Remo con mancuernas simultaneo | 4 | 10,10,10,10 |
 | Dominadas | 4 | Hasta el fallo |
-| **\*** Una **serie gigante** consiste de cuatro o más ejercicios realizados sin descansar. Es un medio para aumentar la intensidad de entrenamiento. Hacer una serie de cada ejercicio, seguida de la otra, hasta terminar con todas. Descansar al menos 3 minutos entre cada serie gigante. |
+
+> **\*** Una **serie gigante** consiste de cuatro o más ejercicios realizados sin descansar. Es un medio para aumentar la intensidad de entrenamiento. Hacer una serie de cada ejercicio, seguida de la otra, hasta terminar con todas. Descansar al menos 3 minutos entre cada serie gigante.
 
 ## Rutina para fuerza
 
@@ -130,7 +133,8 @@ Repeticiones bajas y tiempos de descanso más amplios. Si haces este tipo de rut
 | Remo en máquina sentado | 4 | 8,6,4,4 |
 | Remo con barra T | 3 | 6,6,4 |
 | Remo sentado en polea, agarre abierto | 3 | 6,6,4 |
-| **\*** Descansad 2 a 3 minutos entre cada serie. |
+
+> **\*** Descansad 2 a 3 minutos entre cada serie.
 
 ## Rutina para definición
 
@@ -142,7 +146,8 @@ Supuestamente estás en **déficit calórico**… por lo tanto baja los pesos y 
 | Jalones en polea brazos estirados | 4 | 15,15,12,12 |
 | Pullover con mancuerna | 4 | 20,20,15,15 |
 | Jalones frontales en polea | 4 | 20,15,12,10 |
-| **\*** No descanséis más de 30 a 45 segundos entre cada serie. |
+
+> **\*** No descanséis más de 30 a 45 segundos entre cada serie.
 
 ## Rutina para super-congestión
 
@@ -153,7 +158,8 @@ Las series de 30 repeticiones parecen fáciles hasta que llega el segundo ejerci
 | Remo con barra | 4 | 10,10,30,30 |
 | Remo sentado en polea | 4 | 10,10,30,30 |
 | Jalones frontales en polea | 4 | 10,10,30,30 |
-| **\*** No descanséis más de 30 segundos entre cada serie. |
+
+> **\*** No descanséis más de 30 segundos entre cada serie.
 
 ## Rutinas de espalda especializadas
 
