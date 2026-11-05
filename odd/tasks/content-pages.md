@@ -9,18 +9,18 @@ Legend: `ES` = Spanish published, `EN` = English published.
 
 ## Progress
 
-- **Built: 5 / 792** (ES 5, EN 5).
-- Last built: `/mejores-ejercicios-con-mancuernas-para-espalda/` ↔ `/en/dumbbell-back-exercises/`.
+- **Built: 6 / 792** (ES 6, EN 6).
+- Last built: `/consejos-para-desarrollar-espalda/` ↔ `/en/how-to-build-back-muscle/`.
 
 | Block | Articles | Built |
 | --- | ---: | ---: |
-| Entrenamiento | 222 | 4 |
+| Entrenamiento | 222 | 5 |
 | Por Músculo | 80 | 0 |
 | Rutinas | 80 | 0 |
 | Ejercicios | 196 | 1 |
 | Nutrición | 191 | 0 |
 | Mujer Fitness | 23 | 0 |
-| **Total** | **792** | **5** |
+| **Total** | **792** | **6** |
 
 ## Copy gate (mandatory before ticking ES/EN)
 
@@ -39,6 +39,7 @@ Legend: `ES` = Spanish published, `EN` = English published.
 | `anatomia-de-la-espalda` | yes (re-audited) | yes | yes | 0 em dashes | pass |
 | `elige-las-dominadas-adecuadas-para-mejorar-tu-espalda` | yes | yes | yes | 0 em dashes | pass |
 | `mejores-ejercicios-con-mancuernas-para-espalda` | yes | yes | yes | 0 em dashes | pass |
+| `consejos-para-desarrollar-espalda` | yes | yes | yes | 0 em dashes | pass |
 
 ## Entrenamiento (222)
 
@@ -246,7 +247,7 @@ Legend: `ES` = Spanish published, `EN` = English published.
 - [ ] ES · [ ] EN — `/agarres-jalones-dorsales/` — Tipos de agarres en jalones dorsales: ¿Cuál es mejor?
 - [ ] ES · [ ] EN — `/como-ampliar-tus-dorsales/` — Amplía tus músculos dorsales \| Técnica avanzada
 - [x] ES · [x] EN — `/elige-las-dominadas-adecuadas-para-mejorar-tu-espalda/` — Mejores dominadas para amplitud de espalda
-- [ ] ES · [ ] EN — `/consejos-para-desarrollar-espalda/` — Consejos para desarrollar tu espalda
+- [x] ES · [x] EN — `/consejos-para-desarrollar-espalda/` — Consejos para desarrollar tu espalda
 - [ ] ES · [ ] EN — `/mejores-jalones-para-trabajar-la-parte-inferior-del-dorsal/` — Mejores jalones para trabajar la parte inferior del dorsal
 - [ ] ES · [ ] EN — `/espalda-baja-fuerte/` — Como tener una espalda baja fuerte
 - [x] ES · [x] EN — `/anatomia-de-la-espalda/` — Anatomía y músculos de la espalda \| ¡Entrénalos!

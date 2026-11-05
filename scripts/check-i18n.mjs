@@ -29,6 +29,8 @@ const PAGES = [
   ['en', '/en/best-pull-ups-for-back-width/'],
   ['es', '/es/mejores-ejercicios-con-mancuernas-para-espalda/'],
   ['en', '/en/dumbbell-back-exercises/'],
+  ['es', '/es/consejos-para-desarrollar-espalda/'],
+  ['en', '/en/how-to-build-back-muscle/'],
 ];
 
 // Content routes, keyed by a stable id with the slug each locale publishes. The
@@ -51,6 +53,10 @@ const ROUTES = {
   dumbbellBack: {
     es: '/mejores-ejercicios-con-mancuernas-para-espalda',
     en: '/dumbbell-back-exercises',
+  },
+  backTips: {
+    es: '/consejos-para-desarrollar-espalda',
+    en: '/how-to-build-back-muscle',
   },
 };
 

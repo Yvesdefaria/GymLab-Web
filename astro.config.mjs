@@ -20,6 +20,7 @@ const ROUTE_PAIRS = [
   ['/anatomia-de-la-espalda', '/back-anatomy'],
   ['/elige-las-dominadas-adecuadas-para-mejorar-tu-espalda', '/best-pull-ups-for-back-width'],
   ['/mejores-ejercicios-con-mancuernas-para-espalda', '/dumbbell-back-exercises'],
+  ['/consejos-para-desarrollar-espalda', '/how-to-build-back-muscle'],
 ];
 
 const pairFor = (pathname) => {
