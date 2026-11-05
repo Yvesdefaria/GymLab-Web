@@ -43,8 +43,13 @@ const enPath = lang === 'en' ? path : data.alternate;
 const toc = headings.filter((heading) => heading.depth === 2);
 // The lead lives in the frontmatter as plain text; only bold survives as markup.
 const leadHtml = data.lead.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
+// The image credit is not visible chrome: it travels in the alt text so the
+// licence stays attached to the asset without a caption under the photo.
+const heroAltText = data.heroCredit
+  ? `${data.heroAlt ?? data.h1}. ${data.heroCredit}`
+  : (data.heroAlt ?? data.h1);
 const copy = {
-  es: { toc: 'En esta guía', cta: 'Descargar la app', back: 'Volver al inicio' },
+  es: { toc: 'En esta guía', cta: 'Abrir la app', back: 'Volver al inicio' },
   en: { toc: 'In this guide', cta: 'Get the app', back: 'Back to home' },
 }[lang];
 ---
@@ -80,14 +85,13 @@ const copy = {
           <figure class="article-hero">
             <img
               src={data.hero}
-              alt={data.heroAlt ?? data.h1}
+              alt={heroAltText}
               width="1280"
               height="853"
               loading="eager"
               fetchpriority="high"
               decoding="async"
             />
-            {data.heroCredit && <figcaption>{data.heroCredit}</figcaption>}
           </figure>
         )
       }
@@ -122,7 +126,7 @@ const copy = {
       <aside class="article-end">
         <p>
           {lang === 'es'
-            ? 'Llevá estas rutinas al día a día: la app registra cada serie y te muestra el progreso.'
+            ? 'Lleva estas rutinas al día a día: la app registra cada serie y te muestra el progreso.'
             : 'Take these routines into your training: the app logs every set and shows your progress.'}
         </p>
         <div class="article-end__actions">
@@ -225,12 +229,6 @@ const copy = {
     aspect-ratio: 16 / 9;
     object-fit: cover;
     border: 1px solid var(--floor-rule);
-  }
-
-  .article-hero figcaption {
-    margin-top: 0.5rem;
-    color: var(--color-muted);
-    font-size: 0.72rem;
   }
 
   .article-grid {
@@ -420,10 +418,9 @@ const copy = {
   }
 
   .article-body :global(table) {
-    display: block;
     width: 100%;
+    table-layout: fixed;
     margin: 1.6rem 0 0;
-    overflow-x: auto;
     border: 1px solid var(--floor-rule);
     border-collapse: collapse;
     background: linear-gradient(
@@ -433,6 +430,23 @@ const copy = {
     );
     box-shadow: inset 0 1px 0 color-mix(in srgb, #ffffff 4%, transparent);
     font-size: 0.95rem;
+  }
+
+  /* Every routine table shares the same three column widths, so Series and Reps
+     land on the same x across all eleven tables. */
+  .article-body :global(th:nth-child(1)),
+  .article-body :global(td:nth-child(1)) {
+    width: 58%;
+  }
+
+  .article-body :global(th:nth-child(2)),
+  .article-body :global(td:nth-child(2)) {
+    width: 21%;
+  }
+
+  .article-body :global(th:nth-child(3)),
+  .article-body :global(td:nth-child(3)) {
+    width: 21%;
   }
 
   .article-body :global(thead th) {
