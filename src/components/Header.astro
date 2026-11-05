@@ -1,8 +1,9 @@
 ---
-// Sticky marketing header: brand mark, section links, language selector and app CTA.
-// The landing uses the transparent overlay variant over the hero atmosphere;
-// legal pages keep the solid, readable variant.
+// Sticky marketing header: brand mark, section links, guides menu, language
+// selector and app CTA. The landing uses the transparent overlay variant over the
+// hero atmosphere; legal pages keep the solid, readable variant.
 import { getLang, localePath, localeSwitchPath, useTranslations } from '../i18n';
+import { GUIDE_BLOCKS, GUIDES_ENABLED } from '../data/guides-nav';
 
 const lang = getLang(Astro.url.pathname);
 const t = useTranslations(lang);
@@ -23,6 +24,11 @@ const languages = [
   { code: 'es', label: 'ES', name: t.header.language.es },
   { code: 'en', label: 'EN', name: t.header.language.en },
 ] as const;
+
+const guidesLabel = lang === 'es' ? 'Guías' : 'Guides';
+const guidesAll = lang === 'es' ? 'Ver todo' : 'View all';
+const guidesUnit = lang === 'es' ? 'guías' : 'guides';
+const guidesMenuLabel = lang === 'es' ? 'Guías de entrenamiento' : 'Training guides';
 ---
 <header
   class:list={[
@@ -38,16 +44,54 @@ const languages = [
 
     <nav class="site-header__nav" aria-label={t.header.navLabel}>
       {
-        sections.map((section) => (
+        sections.slice(0, 2).map((section) => (
           <a href={`${homePath}#${section.id}`} class="site-header__link">
             {section.label}
           </a>
         ))
       }
+
+      {
+        GUIDES_ENABLED && (
+          <button
+            type="button"
+            class="site-header__link guides__trigger"
+            data-guides-trigger
+            aria-expanded="false"
+            aria-controls="guides-menu"
+          >
+            {guidesLabel}
+            <span class="guides__chev" aria-hidden="true" />
+          </button>
+        )
+      }
+
+      {
+        sections.slice(2).map((section) => (
+          <a href={`${homePath}#${section.id}`} class="site-header__link">
+            {section.label}
+          </a>
+        ))
+      }
+
       <a href="mailto:gymlab@gymlab.dev" class="site-header__link">{t.header.contact}</a>
     </nav>
 
     <div class="site-header__tail">
+      {
+        GUIDES_ENABLED && (
+          <button
+            type="button"
+            class="site-header__guides-mobile"
+            data-guides-trigger
+            aria-expanded="false"
+            aria-controls="guides-menu"
+          >
+            {guidesLabel}
+          </button>
+        )
+      }
+
       <div class="lang-switch" role="group" aria-label={t.header.language.label}>
         {
           languages.map((item) => (
@@ -94,6 +138,58 @@ const languages = [
   </div>
 </header>
 
+{
+  GUIDES_ENABLED && (
+    <div class="guides__menu" id="guides-menu" data-guides-menu hidden>
+      <div class="guides__level1" role="menu" aria-label={guidesMenuLabel}>
+        {GUIDE_BLOCKS.map((block, index) => (
+          <button
+            type="button"
+            role="menuitem"
+            class:list={['guides__item', index === 0 && 'is-active']}
+            data-guides-block={block.id}
+            aria-expanded={index === 0 ? 'true' : 'false'}
+          >
+            <b>{block[lang]}</b>
+            <span>{block.total}</span>
+            <i aria-hidden="true" />
+          </button>
+        ))}
+        <p class="guides__foot">792 {guidesUnit}</p>
+      </div>
+
+      <div class="guides__level2">
+        {GUIDE_BLOCKS.map((block, index) => (
+          <div
+            class:list={['guides__panel', index === 0 && 'is-active']}
+            data-guides-panel={block.id}
+          >
+            <div class="guides__head">
+              <b>{block[lang]}</b>
+              <span>
+                {block.total} {guidesUnit}
+              </span>
+            </div>
+            <ul>
+              {block.sections.slice(0, 8).map((section) => (
+                <li>
+                  <a href={section.href}>
+                    <b>{section[lang]}</b>
+                    <span>{section.count}</span>
+                  </a>
+                </li>
+              ))}
+            </ul>
+            <a class="guides__all" href={block.href}>
+              {guidesAll} {block[lang]}
+            </a>
+          </div>
+        ))}
+      </div>
+    </div>
+  )
+}
+
 <style>
   .site-header__tail {
     display: flex;
@@ -105,6 +201,247 @@ const languages = [
     white-space: nowrap;
   }
 
+  /* ---------- Guides trigger ---------- */
+  .guides__trigger {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
+    padding: 0;
+    border: 0;
+    background: none;
+    cursor: pointer;
+    font-family: var(--font-body);
+    font-size: inherit;
+    letter-spacing: inherit;
+    text-transform: inherit;
+    color: var(--color-muted);
+    transition: color 0.3s var(--floor-ease);
+  }
+
+  .guides__trigger:hover,
+  .guides__trigger[aria-expanded='true'] {
+    color: var(--color-accent-soft);
+  }
+
+  .guides__chev {
+    width: 6px;
+    height: 6px;
+    border-right: 1px solid currentColor;
+    border-bottom: 1px solid currentColor;
+    transform: translateY(-2px) rotate(45deg);
+    transition: transform 0.3s var(--floor-ease);
+  }
+
+  .guides__trigger[aria-expanded='true'] .guides__chev {
+    transform: translateY(1px) rotate(225deg);
+  }
+
+  .site-header__guides-mobile {
+    display: none;
+    align-items: center;
+    min-height: 2.75rem;
+    padding: 0 0.35rem;
+    border: 0;
+    background: none;
+    color: var(--color-muted);
+    font-family: var(--font-body);
+    font-size: 0.6rem;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+
+  /* ---------- Cascade ---------- */
+  .guides__menu {
+    position: fixed;
+    top: 5.25rem;
+    right: max(1rem, calc((100vw - 1328px) / 2));
+    z-index: 60;
+    display: flex;
+    align-items: stretch;
+    overflow: hidden;
+    border: 1px solid var(--color-border);
+    border-radius: 12px;
+    background: #17171a;
+    box-shadow: 0 24px 48px -20px rgb(0 0 0 / 0.75);
+  }
+
+  .guides__level1 {
+    display: flex;
+    flex-direction: column;
+    width: 232px;
+    padding: 0.5rem 0 0;
+  }
+
+  .guides__foot {
+    margin: auto 0 0;
+    padding: 0.8rem 1rem 0.9rem;
+    border-top: 1px solid var(--color-border);
+    color: var(--color-muted);
+    font-family: var(--font-body);
+    font-size: 0.56rem;
+    font-weight: 600;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .guides__item {
+    display: grid;
+    grid-template-columns: 1fr auto 12px;
+    align-items: center;
+    gap: 0.75rem;
+    width: 100%;
+    min-height: 3rem;
+    padding: 0 1rem;
+    border: 0;
+    border-top: 1px solid transparent;
+    background: none;
+    color: inherit;
+    text-align: left;
+    cursor: pointer;
+  }
+
+  .guides__item + .guides__item {
+    border-top-color: var(--color-border);
+  }
+
+  .guides__item b {
+    font-family: var(--font-display);
+    font-size: 0.95rem;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    color: var(--color-fg);
+  }
+
+  .guides__item span {
+    font-family: var(--font-body);
+    font-size: 0.58rem;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    color: var(--color-muted);
+    font-variant-numeric: tabular-nums;
+  }
+
+  .guides__item i {
+    width: 7px;
+    height: 7px;
+    border-top: 1px solid var(--color-muted);
+    border-right: 1px solid var(--color-muted);
+    transform: rotate(45deg);
+  }
+
+  .guides__item:hover,
+  .guides__item.is-active {
+    background: color-mix(in srgb, var(--color-accent) 6%, transparent);
+  }
+
+  .guides__item:hover b,
+  .guides__item.is-active b {
+    color: var(--color-accent-soft);
+  }
+
+  .guides__item:hover i,
+  .guides__item.is-active i {
+    border-color: var(--color-accent);
+  }
+
+  .guides__level2 {
+    width: 316px;
+    border-left: 1px solid var(--color-border);
+  }
+
+  .guides__panel {
+    display: none;
+    padding-bottom: 0.75rem;
+  }
+
+  .guides__panel.is-active {
+    display: block;
+  }
+
+  .guides__head {
+    padding: 1.1rem 1.25rem 0.85rem;
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  .guides__head b {
+    display: block;
+    font-family: var(--font-display);
+    font-size: 1.05rem;
+    font-weight: 500;
+    line-height: 1.1;
+    color: var(--color-accent-soft);
+  }
+
+  .guides__head span {
+    display: block;
+    margin-top: 0.3rem;
+    font-family: var(--font-body);
+    font-size: 0.58rem;
+    font-weight: 600;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--color-muted);
+    font-variant-numeric: tabular-nums;
+  }
+
+  .guides__panel ul {
+    margin: 0.4rem 0 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .guides__panel li + li a {
+    border-top: 1px solid var(--color-border);
+  }
+
+  .guides__panel li a {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: baseline;
+    gap: 1rem;
+    min-height: 2.25rem;
+    padding: 0.45rem 1.25rem;
+    color: var(--color-muted);
+    font-size: 0.86rem;
+    text-decoration: none;
+  }
+
+  .guides__panel li a b {
+    font-weight: 400;
+    color: var(--color-fg);
+  }
+
+  .guides__panel li a span {
+    font-size: 0.7rem;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .guides__panel li a:hover {
+    background: color-mix(in srgb, var(--color-accent) 5%, transparent);
+  }
+
+  .guides__panel li a:hover b {
+    color: var(--color-accent-soft);
+  }
+
+  .guides__all {
+    display: block;
+    margin-top: 0.75rem;
+    padding: 0.85rem 1.25rem 0.25rem;
+    border-top: 1px solid var(--color-border);
+    color: var(--color-accent);
+    font-family: var(--font-body);
+    font-size: 0.62rem;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+
+  /* ---------- Language switch ---------- */
   .lang-switch {
     display: flex;
     align-items: center;
@@ -173,7 +510,8 @@ const languages = [
     }
   }
 
-  /* Below 768px the nav is hidden; the selector must stay and stay tappable. */
+  /* Below 768px the nav is hidden; the guides trigger moves to the tail and the
+     cascade stacks into one column. */
   @media (max-width: 767px) {
     .site-header__inner {
       gap: 0.5rem;
@@ -181,6 +519,30 @@ const languages = [
 
     .site-header__tail {
       gap: 0.4rem;
+    }
+
+    .site-header__guides-mobile {
+      display: inline-flex;
+    }
+
+    .guides__menu {
+      top: 4.75rem;
+      left: 0;
+      right: 0;
+      flex-direction: column;
+      border-radius: 0;
+      max-height: calc(100dvh - 4.75rem);
+      overflow-y: auto;
+    }
+
+    .guides__level1 {
+      width: 100%;
+    }
+
+    .guides__level2 {
+      width: 100%;
+      border-left: 0;
+      border-top: 1px solid var(--color-border);
     }
 
     .lang-switch__link {
@@ -192,8 +554,72 @@ const languages = [
   }
 
   @media (prefers-reduced-motion: reduce) {
-    .lang-switch__link {
+    .lang-switch__link,
+    .guides__trigger,
+    .guides__chev {
       transition: none;
     }
   }
 </style>
+
+{
+  GUIDES_ENABLED && (
+    <script>
+      const triggers = Array.from(document.querySelectorAll('[data-guides-trigger]'));
+      const menu = document.querySelector('[data-guides-menu]');
+
+      if (menu && triggers.length > 0) {
+        const blocks = Array.from(menu.querySelectorAll('[data-guides-block]'));
+        const panels = Array.from(menu.querySelectorAll('[data-guides-panel]'));
+
+        const setOpen = (open: boolean): void => {
+          (menu as HTMLElement).hidden = !open;
+          triggers.forEach((trigger) => trigger.setAttribute('aria-expanded', String(open)));
+        };
+
+        const activate = (id: string): void => {
+          blocks.forEach((block) => {
+            const active = (block as HTMLElement).dataset.guidesBlock === id;
+            block.classList.toggle('is-active', active);
+            block.setAttribute('aria-expanded', String(active));
+          });
+          panels.forEach((panel) => {
+            panel.classList.toggle(
+              'is-active',
+              (panel as HTMLElement).dataset.guidesPanel === id,
+            );
+          });
+        };
+
+        triggers.forEach((trigger) => {
+          trigger.addEventListener('click', () => setOpen((menu as HTMLElement).hidden));
+        });
+
+        blocks.forEach((block) => {
+          const id = (block as HTMLElement).dataset.guidesBlock ?? '';
+          block.addEventListener('mouseenter', () => activate(id));
+          block.addEventListener('focus', () => activate(id));
+          block.addEventListener('click', () => activate(id));
+        });
+
+        document.addEventListener('keydown', (event) => {
+          if (event.key === 'Escape' && !(menu as HTMLElement).hidden) {
+            setOpen(false);
+            (triggers[0] as HTMLElement).focus();
+          }
+        });
+
+        document.addEventListener('click', (event) => {
+          const target = event.target as Node;
+          if (
+            !(menu as HTMLElement).hidden &&
+            !menu.contains(target) &&
+            !triggers.some((trigger) => trigger.contains(target))
+          ) {
+            setOpen(false);
+          }
+        });
+      }
+    </script>
+  )
+}

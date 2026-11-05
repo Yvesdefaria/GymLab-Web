@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<title>GymLab — menú en cascada</title>
+<style>
+  @font-face { font-family: "Oswald"; font-weight: 400; font-display: swap; src: url("../../public/fonts/oswald-500.woff2") format("woff2"); }
+  @font-face { font-family: "Oswald"; font-weight: 500; font-display: swap; src: url("../../public/fonts/oswald-600.woff2") format("woff2"); }
+  @font-face { font-family: "Barlow"; font-weight: 400; font-display: swap; src: url("../../public/fonts/barlow-400.woff2") format("woff2"); }
+  @font-face { font-family: "Barlow"; font-weight: 500; font-display: swap; src: url("../../public/fonts/barlow-500.woff2") format("woff2"); }
+  @font-face { font-family: "Barlow"; font-weight: 600; font-display: swap; src: url("../../public/fonts/barlow-600.woff2") format("woff2"); }
+
+  :root {
+    --bg: #121214;
+    --panel: #17171a;
+    --fg: #f8fafc;
+    --muted: #a39b8c;
+    --gold: #d9b384;
+    --gold-bright: #fdddb4;
+    --border: #3a352b;
+    --hairline: rgba(58, 53, 43, 0.6);
+    --paper: "Oswald", "Arial Narrow", sans-serif;
+    --text: "Barlow", system-ui, sans-serif;
+    --gutter: clamp(1rem, 4vw, 3rem);
+  }
+
+  * { box-sizing: border-box; }
+  ::selection { background: var(--gold); color: #121214; }
+  body { margin: 0; background: var(--bg); color: var(--fg); font-family: var(--text); line-height: 1.5; -webkit-font-smoothing: antialiased; }
+  a { color: inherit; text-decoration: none; }
+  :focus-visible { outline: 2px solid var(--gold); outline-offset: 3px; }
+
+  .caption { max-width: 1328px; margin: 4rem auto 1.25rem; padding: 0 var(--gutter); display: flex; align-items: baseline; gap: 1rem; }
+  .caption b { font: 600 0.62rem/1 var(--text); letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); }
+  .caption span { font-size: 0.82rem; color: var(--muted); }
+
+  .demo { position: relative; border-top: 1px solid var(--hairline); border-bottom: 1px solid var(--hairline); background: #101012; min-height: 720px; }
+
+  /* ---------- Header ---------- */
+  .bar { max-width: 1328px; margin: 0 auto; padding: 1rem var(--gutter); display: flex; align-items: center; gap: 2rem; }
+  .brand { display: flex; align-items: center; gap: 0.55rem; }
+  .brand img { width: 34px; height: 12px; }
+  .brand span { font: 500 1.05rem/1 var(--paper); letter-spacing: 0.06em; }
+  .nav { margin-left: auto; display: flex; gap: 1.75rem; align-items: center; }
+  .nav a { font: 600 0.66rem/1 var(--text); letter-spacing: 0.16em; text-transform: uppercase; color: var(--muted); padding: 0.6rem 0; }
+  .nav a[aria-current="true"] { color: var(--gold); }
+  .bar__cta { border: 1px solid var(--border); border-radius: 12px; padding: 0.7rem 1rem; font: 600 0.7rem/1 var(--text); color: var(--fg); }
+
+  /* ---------- Cascade menu ---------- */
+  .menu-zone { max-width: 1328px; margin: 0 auto; padding: 0 var(--gutter); position: relative; height: 620px; }
+  .menu-anchor { position: absolute; top: 0; left: 638px; display: flex; align-items: flex-start; }
+
+  .menu {
+    display: flex;
+    align-items: stretch;
+    background: var(--panel);
+    border: 1px solid var(--hairline);
+    border-radius: 12px;
+    box-shadow: 0 24px 48px -20px rgba(0, 0, 0, 0.75);
+    overflow: hidden;
+  }
+
+  .menu__level1 { width: 232px; padding: 0.5rem 0; }
+  .menu__item {
+    display: grid;
+    grid-template-columns: 1fr auto 12px;
+    align-items: center;
+    gap: 0.75rem;
+    min-height: 48px;
+    padding: 0 1rem;
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+  }
+  .menu__item + .menu__item { border-top: 1px solid var(--hairline); }
+  .menu__item b { font: 400 0.95rem/1 var(--paper); letter-spacing: 0.02em; color: var(--fg); }
+  .menu__item span { font: 500 0.58rem/1 var(--text); letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted); font-variant-numeric: tabular-nums; }
+  .menu__item i { width: 7px; height: 7px; border-top: 1px solid var(--muted); border-right: 1px solid var(--muted); transform: rotate(45deg); }
+  .menu__item:hover, .menu__item--active { background: color-mix(in srgb, var(--gold) 6%, transparent); }
+  .menu__item:hover b, .menu__item--active b { color: var(--gold-bright); }
+  .menu__item:hover i, .menu__item--active i { border-color: var(--gold); }
+
+  .menu__level2 { width: 316px; border-left: 1px solid var(--hairline); padding: 1.1rem 0 0.75rem; display: grid; align-content: start; }
+  .menu__head { padding: 0 1.25rem 0.85rem; border-bottom: 1px solid var(--hairline); }
+  .menu__head b { display: block; font: 400 1.05rem/1.1 var(--paper); color: var(--gold-bright); }
+  .menu__head span { display: block; margin-top: 0.3rem; font: 500 0.58rem/1 var(--text); letter-spacing: 0.16em; text-transform: uppercase; color: var(--muted); font-variant-numeric: tabular-nums; }
+  .menu__level2 ul { margin: 0.4rem 0 0; padding: 0; list-style: none; }
+  .menu__level2 li a {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: baseline;
+    gap: 1rem;
+    min-height: 36px;
+    padding: 0.45rem 1.25rem;
+    font-size: 0.86rem;
+    color: var(--muted);
+  }
+  .menu__level2 li a b { font-weight: 400; color: var(--fg); }
+  .menu__level2 li a span { font-size: 0.7rem; font-variant-numeric: tabular-nums; }
+  .menu__level2 li + li a { border-top: 1px solid var(--hairline); }
+  .menu__level2 li a:hover { background: color-mix(in srgb, var(--gold) 5%, transparent); }
+  .menu__level2 li a:hover b { color: var(--gold-bright); }
+  .menu__all { margin-top: 0.75rem; padding: 0.85rem 1.25rem 0.25rem; border-top: 1px solid var(--hairline); font: 600 0.62rem/1 var(--text); letter-spacing: 0.16em; text-transform: uppercase; color: var(--gold); }
+
+  /* ---------- Mobile sheet ---------- */
+  .mobile { max-width: 1328px; margin: 0 auto; padding: 0 var(--gutter); }
+  .phone { width: 390px; border: 1px solid var(--hairline); border-radius: 24px; overflow: hidden; background: var(--bg); }
+  .phone .bar { padding: 0.9rem 1rem; gap: 1rem; }
+  .phone .nav { display: none; }
+  .mmenu { padding: 0 0 1rem; }
+  .mmenu__row { display: grid; grid-template-columns: 1fr auto 12px; align-items: center; gap: 0.75rem; min-height: 52px; padding: 0 1rem; border-top: 1px solid var(--hairline); }
+  .mmenu__row b { font: 400 1rem/1 var(--paper); }
+  .mmenu__row span { font: 500 0.58rem/1 var(--text); letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted); font-variant-numeric: tabular-nums; }
+  .mmenu__row i { width: 7px; height: 7px; border-top: 1px solid var(--gold); border-right: 1px solid var(--gold); transform: rotate(135deg); }
+  .mmenu__sub { padding: 0.25rem 0 0.75rem; background: color-mix(in srgb, var(--gold) 4%, transparent); }
+  .mmenu__sub a { display: grid; grid-template-columns: 1fr auto; gap: 1rem; align-items: baseline; min-height: 44px; padding: 0.6rem 1rem 0.6rem 1.5rem; border-top: 1px solid var(--hairline); font-size: 0.88rem; color: var(--fg); }
+  .mmenu__sub a span { color: var(--muted); font-size: 0.72rem; font-variant-numeric: tabular-nums; }
+  .mmenu__all { display: block; padding: 0.85rem 1.5rem 0; font: 600 0.62rem/1 var(--text); letter-spacing: 0.16em; text-transform: uppercase; color: var(--gold); }
+
+  @media (max-width: 900px) { .menu-anchor { display: none; } }
+</style>
+</head>
+<body>
+
+<div class="caption"><b>Menú en cascada</b><span>“Guías” abre los bloques; el bloque abre sus secciones al costado</span></div>
+<div class="demo">
+  <div class="bar">
+    <div class="brand"><img src="../../public/brand/logo_marca.svg" alt="" /><span>GymLab</span></div>
+    <nav class="nav"><a>Funciones</a><a>Capturas</a><a aria-current="true">Guías</a><a>Calculadoras</a><a>Contacto</a></nav>
+    <a class="bar__cta" href="#">Prueba la app</a>
+  </div>
+
+  <div class="menu-zone">
+    <div class="menu-anchor">
+      <div class="menu">
+        <div class="menu__level1">
+          <a class="menu__item menu__item--active"><b>Entrenamiento</b><span>222</span><i></i></a>
+          <a class="menu__item"><b>Por músculo</b><span>80</span><i></i></a>
+          <a class="menu__item"><b>Rutinas</b><span>80</span><i></i></a>
+          <a class="menu__item"><b>Ejercicios</b><span>196</span><i></i></a>
+          <a class="menu__item"><b>Nutrición</b><span>191</span><i></i></a>
+          <a class="menu__item"><b>Mujer fitness</b><span>23</span><i></i></a>
+        </div>
+        <div class="menu__level2">
+          <div class="menu__head"><b>Entrenamiento</b><span>222 guías</span></div>
+          <ul>
+            <li><a href="#"><b>Musculación</b><span>84</span></a></li>
+            <li><a href="#"><b>Ejercicio cardiovascular</b><span>32</span></a></li>
+            <li><a href="#"><b>Prevención y recuperación</b><span>16</span></a></li>
+            <li><a href="#"><b>Físicos de leyenda</b><span>12</span></a></li>
+            <li><a href="#"><b>Entrenamiento del pecho</b><span>6</span></a></li>
+            <li><a href="#"><b>Entrenamiento de la espalda</b><span>10</span></a></li>
+            <li><a href="#"><b>Entrenamiento de piernas</b><span>18</span></a></li>
+          </ul>
+          <a class="menu__all" href="#">Ver todo Entrenamiento</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="caption"><b>Segundo estado</b><span>Cambia el bloque activo: la cascada sigue al cursor</span></div>
+<div class="demo" style="min-height: 560px">
+  <div class="bar">
+    <div class="brand"><img src="../../public/brand/logo_marca.svg" alt="" /><span>GymLab</span></div>
+    <nav class="nav"><a>Funciones</a><a>Capturas</a><a aria-current="true">Guías</a><a>Calculadoras</a><a>Contacto</a></nav>
+    <a class="bar__cta" href="#">Prueba la app</a>
+  </div>
+  <div class="menu-zone" style="height: 470px">
+    <div class="menu-anchor">
+      <div class="menu">
+        <div class="menu__level1">
+          <a class="menu__item"><b>Entrenamiento</b><span>222</span><i></i></a>
+          <a class="menu__item"><b>Por músculo</b><span>80</span><i></i></a>
+          <a class="menu__item"><b>Rutinas</b><span>80</span><i></i></a>
+          <a class="menu__item"><b>Ejercicios</b><span>196</span><i></i></a>
+          <a class="menu__item menu__item--active"><b>Nutrición</b><span>191</span><i></i></a>
+          <a class="menu__item"><b>Mujer fitness</b><span>23</span><i></i></a>
+        </div>
+        <div class="menu__level2">
+          <div class="menu__head"><b>Nutrición</b><span>191 guías</span></div>
+          <ul>
+            <li><a href="#"><b>Nutrición aplicada</b><span>111</span></a></li>
+            <li><a href="#"><b>Alimentos funcionales</b><span>12</span></a></li>
+            <li><a href="#"><b>Dietas y planes</b><span>3</span></a></li>
+            <li><a href="#"><b>Dietas de volumen</b><span>13</span></a></li>
+            <li><a href="#"><b>Dietas de definición</b><span>17</span></a></li>
+            <li><a href="#"><b>Suplementos dietéticos</b><span>35</span></a></li>
+          </ul>
+          <a class="menu__all" href="#">Ver todo Nutrición</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="caption"><b>En móvil</b><span>La cascada se vuelve acordeón dentro del sheet</span></div>
+<div class="mobile">
+  <div class="phone">
+    <div class="bar">
+      <div class="brand"><img src="../../public/brand/logo_marca.svg" alt="" /><span>GymLab</span></div>
+      <a class="bar__cta" href="#" style="margin-left:auto">Guías</a>
+    </div>
+    <div class="mmenu">
+      <div class="mmenu__row"><b>Entrenamiento</b><span>222</span><i></i></div>
+      <div class="mmenu__sub">
+        <a href="#">Musculación <span>84</span></a>
+        <a href="#">Ejercicio cardiovascular <span>32</span></a>
+        <a href="#">Prevención y recuperación <span>16</span></a>
+        <a href="#">Físicos de leyenda <span>12</span></a>
+        <a href="#">Entrenamiento de la espalda <span>10</span></a>
+        <a class="mmenu__all" href="#">Ver todo Entrenamiento</a>
+      </div>
+      <div class="mmenu__row"><b>Por músculo</b><span>80</span><i></i></div>
+      <div class="mmenu__row"><b>Rutinas</b><span>80</span><i></i></div>
+      <div class="mmenu__row"><b>Ejercicios</b><span>196</span><i></i></div>
+      <div class="mmenu__row"><b>Nutrición</b><span>191</span><i></i></div>
+      <div class="mmenu__row"><b>Mujer fitness</b><span>23</span><i></i></div>
+    </div>
+  </div>
+</div>
+
+<div style="height: 5rem"></div>
+</body>
+</html>
