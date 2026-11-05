@@ -82,6 +82,15 @@ Legend: `ES` = Spanish published, `EN` = English published.
 | `remo-invertido` | yes | yes | yes | 0 em dashes | pass |
 | `remo-maquina` | yes | yes | yes | 0 em dashes | pass |
 
+## Resume (2026-11-05)
+
+- Built: **46/792**; **46 unique heroes**; **16 local commits unpushed**.
+- Full handoff: `odd/tasks/content-library-session.md`.
+- Next: `/remo-multipower/`, `/superserie-de-espalda-para-terminar-tu-rutina/`, then the first
+  unchecked row.
+- YMYL: `/ejercicios-dolor-de-espalda/` needs a medical disclaimer and a careful pass.
+- Verify with `npm run verify`; review with `npm run dev` at `http://localhost:4321`.
+
 ## Entrenamiento (222)
 
 ### Musculación (84)

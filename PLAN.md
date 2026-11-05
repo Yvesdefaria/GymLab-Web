@@ -4,7 +4,7 @@ Handoff document to continue this project in a new session. Canonical project ru
 `AGENTS.md`. Closed work and the measurement baselines are archived in `COMPLETED.md`; task-by-task
 evidence lives in `odd/tasks/*.md` and in Engram (project `webgymlab`).
 
-Last updated: 2026-11-04.
+Last updated: 2026-11-05.
 
 ## Where we are
 
@@ -12,10 +12,32 @@ Last updated: 2026-11-04.
   TypeScript strict, fully static. Languages `es` (default) and `en-GB`, both under a locale prefix.
 - Production is **live** at `https://gymlab.dev`, served by the Worker `gymlab-web` with static assets.
   It is not Cloudflare Pages. Deploy with `npx wrangler deploy`.
-- `npm run build` green (**16 pages**) and `npm run check:i18n` green (**314 assertions**).
-- The sitemap publishes **12 URLs**; `app.gymlab.dev` is `noindex` with a real `robots.txt`.
+- Local branch (16 commits ahead of `origin/main`): `npm run build` green (**108 pages**),
+  `npm run check:i18n` green (**1,767 assertions**) and `npm run check:copy` green (**2,346**).
+- Production is still the first-article deploy: **14 URLs** in the sitemap. The local sitemap has
+  **104** URLs. The 16 local commits are **not pushed**; see the content-library section below.
+- `app.gymlab.dev` is `noindex` with a real `robots.txt`.
 - The landing, the three calculators, the 404 and the legal pages all ship in both locales.
 - Measurement and the SQL recipe: see "Reading analytics" below and `COMPLETED.md` Appendix B.
+
+## Content library — 46 / 792 (2026-11-05)
+
+- **46 bilingual pages** (ES 46, EN 46), **46 unique heroes**, 0 duplicates. Blocks: Entrenamiento 9,
+  Por Músculo 4, Ejercicios 33.
+- **16 local commits, not pushed.** `origin/main` = `0b3c6b4`; the local tip is the handoff commit. Production still
+  serves the first article only; the live sitemap has 14 URLs.
+- Gates: `npm run verify` = `check:copy` **2,346/2,346** + build **108 pages** + `check:i18n`
+  **1,767/1,767**.
+- Docs: `odd/tasks/content-library-session.md` (start here next session),
+  `odd/tasks/content-pages.md` (per-page checklist + resume), `odd/tasks/guides-page-contract.md`
+  (the page contract and copy gate).
+- **Next 10:** finish the back cluster with `/remo-multipower/` and
+  `/superserie-de-espalda-para-terminar-tu-rutina/`, then continue with the first unchecked row in
+  `content-pages.md`. `/ejercicios-dolor-de-espalda/` is pending a medical disclaimer and a YMYL pass.
+- **Push is a human decision.** A push deploys via Workers Builds; run `npm run verify` before it.
+- Image rule: one unique hero per page; `check:copy` fails on a duplicate. Some good-morning images
+  are approximations, and there is no free one-arm lat pulldown photo; the `alt` explains the shot.
+- Engram mirror: saved 2026-11-05 (memory id 53, session summary id 54; project `webgymlab`).
 
 ## Deployed on 2026-10-29
 
@@ -248,7 +270,7 @@ Ten marketing skills were run against the repo and the live zone (`seo-audit`, `
 
 - [ ] Build the guides hub at 3–5 URLs before scaling: `/es/guias/` (index), one section hub listing
       the article, article → hub breadcrumb. Then flip `GUIDES_ENABLED` with real hrefs.
-- [ ] The article is orphaned: in-degree 0, no related links, menu disabled. Link it from the hub,
+- [ ] The cluster has internal links but no hub; the menu is still disabled. Link it from the hub,
       the landing and 2–3 sibling guides.
 - [ ] Publish `llms.txt` (currently `404`) while AI Search already makes ~1,770 requests/30 d.
 - [ ] Deploy the redirect map with the first bulk publish: old slug → `/es/<slug>/` `301`, generated
@@ -269,8 +291,9 @@ Ten marketing skills were run against the repo and the live zone (`seo-audit`, `
 
 - [ ] Grow the 3 calculators to 800+ words: definition, formula, worked example, comparison table,
       4–6 FAQs. They are 203–241 words today and are the only link-earning assets.
-- [ ] Normalise the article to `tú` (it mixes 8 vosotros forms with 17 tú forms), fix the three
-      broken sentences, the orphan footnote asterisks and "el sitio indicado".
+- [x] Normalise the article to `tú` (it mixes 8 vosotros forms with 17 tú forms), fix the three
+      broken sentences, the orphan footnote asterisks and "el sitio indicado". **Done for the 46
+      pages; `check:copy` enforces it.**
 - [ ] Add one link from each calculator to its matching guide and one from the guide to each calculator.
 
 ### Phase 5 — Images
@@ -286,7 +309,8 @@ Ten marketing skills were run against the repo and the live zone (`seo-audit`, `
 
 ### Phase 6 — Scale, after the template is right
 
-- [ ] 20-article pilot and 20-exercise pilot, then measure before scaling to 792 / 873.
+- [x] 20-article pilot and 20-exercise pilot, then measure before scaling to 792 / 873. **46 pages
+      built; the measurement on 2026-11-19 is still pending.**
 - [ ] Read Search Console on **2026-11-19** before adding volume.
 - [ ] Ordering guard: every page must ship an asset the original lacked (unique prose, data, images) or
       792 pages repeat the same thin/duplicate-content risk as 873 template pages.
