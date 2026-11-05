@@ -84,7 +84,7 @@ Legend: `ES` = Spanish published, `EN` = English published.
 
 ## Resume (2026-11-05)
 
-- Built: **46/792**; **46 unique heroes**; **16 local commits unpushed**.
+- Built: **46/792**; **46 unique heroes**; **pushed 2026-11-05**.
 - Full handoff: `odd/tasks/content-library-session.md`.
 - Next: `/remo-multipower/`, `/superserie-de-espalda-para-terminar-tu-rutina/`, then the first
   unchecked row.

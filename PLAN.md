@@ -12,10 +12,9 @@ Last updated: 2026-11-05.
   TypeScript strict, fully static. Languages `es` (default) and `en-GB`, both under a locale prefix.
 - Production is **live** at `https://gymlab.dev`, served by the Worker `gymlab-web` with static assets.
   It is not Cloudflare Pages. Deploy with `npx wrangler deploy`.
-- Local branch (16 commits ahead of `origin/main`): `npm run build` green (**108 pages**),
-  `npm run check:i18n` green (**1,767 assertions**) and `npm run check:copy` green (**2,346**).
-- Production is still the first-article deploy: **14 URLs** in the sitemap. The local sitemap has
-  **104** URLs. The 16 local commits are **not pushed**; see the content-library section below.
+- Production is live with the 2026-11-05 deploy (`0b3c6b4..a048f02`): **104 sitemap URLs** and
+  **108 pages**. `npm run check:i18n` green (**1,767 assertions**) and `npm run check:copy` green
+  (**2,346**).
 - `app.gymlab.dev` is `noindex` with a real `robots.txt`.
 - The landing, the three calculators, the 404 and the legal pages all ship in both locales.
 - Measurement and the SQL recipe: see "Reading analytics" below and `COMPLETED.md` Appendix B.
@@ -24,8 +23,8 @@ Last updated: 2026-11-05.
 
 - **46 bilingual pages** (ES 46, EN 46), **46 unique heroes**, 0 duplicates. Blocks: Entrenamiento 9,
   Por Músculo 4, Ejercicios 33.
-- **16 local commits, not pushed.** `origin/main` = `0b3c6b4`; the local tip is the handoff commit. Production still
-  serves the first article only; the live sitemap has 14 URLs.
+- **Pushed 2026-11-05** (`0b3c6b4..a048f02`). Production is live with **104 sitemap URLs**; the
+  first article now ships the new copy, the credit in the alt and the correct language switch.
 - Gates: `npm run verify` = `check:copy` **2,346/2,346** + build **108 pages** + `check:i18n`
   **1,767/1,767**.
 - Docs: `odd/tasks/content-library-session.md` (start here next session),
@@ -34,7 +33,7 @@ Last updated: 2026-11-05.
 - **Next 10:** finish the back cluster with `/remo-multipower/` and
   `/superserie-de-espalda-para-terminar-tu-rutina/`, then continue with the first unchecked row in
   `content-pages.md`. `/ejercicios-dolor-de-espalda/` is pending a medical disclaimer and a YMYL pass.
-- **Push is a human decision.** A push deploys via Workers Builds; run `npm run verify` before it.
+- **Push done 2026-11-05.** Future pushes deploy via Workers Builds; run `npm run verify` before them.
 - Image rule: one unique hero per page; `check:copy` fails on a duplicate. Some good-morning images
   are approximations, and there is no free one-arm lat pulldown photo; the `alt` explains the shot.
 - Engram mirror: saved 2026-11-05 (memory id 53, session summary id 54; project `webgymlab`).

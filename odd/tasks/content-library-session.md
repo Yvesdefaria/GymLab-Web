@@ -12,11 +12,10 @@ Last updated: 2026-11-05. Read this first next session.
 - **46 / 792 bilingual pages** (ES 46, EN 46).
 - Blocks: Entrenamiento **9**, Por Músculo **4**, Ejercicios **33**.
 - **46 unique heroes, 0 duplicates.**
-- **16 local commits, not pushed.** `origin/main` = `0b3c6b4`; the local tip is the handoff commit.
-- Production still serves the first article only: **14 sitemap URLs**. The local build has **108 pages**
-  and **104 sitemap URLs**.
-- The live `/es/rutinas-espalda/` still has the old copy, the visible figcaption and the broken
-  language switch. The fixes are in the unpushed commits.
+- **Pushed 2026-11-05** (`0b3c6b4..a048f02`). Production is live with **108 pages** and
+  **104 sitemap URLs**.
+- The live `/es/rutinas-espalda/` now has the new copy, the credit in the alt and the correct
+  language switch.
 
 ## Gates
 
@@ -73,8 +72,8 @@ Do not batch `/ejercicios-dolor-de-espalda/` without a medical disclaimer and a 
 
 ## Pending decisions
 
-- **Push the 16 commits?** A push deploys through Workers Builds. This is a human decision; run
-  `npm run verify` first and announce the push.
+- **Push done 2026-11-05.** Future pushes deploy through Workers Builds; run `npm run verify` before
+  each one.
 - Phase 1: `Article` + `BreadcrumbList` JSON-LD, `og:type=article`, dates, per-article OG image.
 - Phase 2: guides hub, real menu hrefs, internal links from the landing and hubs.
 - Phase 6: read Search Console on 2026-11-19 before scaling beyond the 46-page pilot.
