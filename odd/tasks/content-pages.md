@@ -9,18 +9,18 @@ Legend: `ES` = Spanish published, `EN` = English published.
 
 ## Progress
 
-- **Built: 3 / 792** (ES 3, EN 3).
-- Last built: `/anatomia-de-la-espalda/` ↔ `/en/back-anatomy/`.
+- **Built: 4 / 792** (ES 4, EN 4).
+- Last built: `/elige-las-dominadas-adecuadas-para-mejorar-tu-espalda/` ↔ `/en/best-pull-ups-for-back-width/`.
 
 | Block | Articles | Built |
 | --- | ---: | ---: |
-| Entrenamiento | 222 | 2 |
+| Entrenamiento | 222 | 3 |
 | Por Músculo | 80 | 0 |
 | Rutinas | 80 | 0 |
 | Ejercicios | 196 | 1 |
 | Nutrición | 191 | 0 |
 | Mujer Fitness | 23 | 0 |
-| **Total** | **792** | **3** |
+| **Total** | **792** | **4** |
 
 ## Copy gate (mandatory before ticking ES/EN)
 
@@ -37,6 +37,7 @@ Legend: `ES` = Spanish published, `EN` = English published.
 | `rutinas-espalda` | yes | yes | yes | 0 em dashes | pass |
 | `ejercicios-espalda` | yes (re-audited) | yes | yes | 0 em dashes | pass |
 | `anatomia-de-la-espalda` | yes (re-audited) | yes | yes | 0 em dashes | pass |
+| `elige-las-dominadas-adecuadas-para-mejorar-tu-espalda` | yes | yes | yes | 0 em dashes | pass |
 
 ## Entrenamiento (222)
 
@@ -243,7 +244,7 @@ Legend: `ES` = Spanish published, `EN` = English published.
 - [ ] ES · [ ] EN — `/mejores-ejercicios-con-mancuernas-para-espalda/` — Ejercicios con mancuernas para espalda más efectivos
 - [ ] ES · [ ] EN — `/agarres-jalones-dorsales/` — Tipos de agarres en jalones dorsales: ¿Cuál es mejor?
 - [ ] ES · [ ] EN — `/como-ampliar-tus-dorsales/` — Amplía tus músculos dorsales \| Técnica avanzada
-- [ ] ES · [ ] EN — `/elige-las-dominadas-adecuadas-para-mejorar-tu-espalda/` — Mejores dominadas para amplitud de espalda
+- [x] ES · [x] EN — `/elige-las-dominadas-adecuadas-para-mejorar-tu-espalda/` — Mejores dominadas para amplitud de espalda
 - [ ] ES · [ ] EN — `/consejos-para-desarrollar-espalda/` — Consejos para desarrollar tu espalda
 - [ ] ES · [ ] EN — `/mejores-jalones-para-trabajar-la-parte-inferior-del-dorsal/` — Mejores jalones para trabajar la parte inferior del dorsal
 - [ ] ES · [ ] EN — `/espalda-baja-fuerte/` — Como tener una espalda baja fuerte

@@ -168,11 +168,11 @@ npm run check:i18n
 # or: npm run verify
 ```
 
-- Build: `22 pages` for the current site; +2 per article.
-- Gates: **144/144 copy checks** and **434/434 i18n checks**. The copy gate enforces title/description
-  length, frontmatter, register and AI tells. The i18n gate covers route existence, canonical,
-  hreflang, redirects, sitemap alternates, the header language switch, landing SEO and the
-  calculator/JSON-LD contract.
+- Build: base pages + 2 per article (24 at the time of writing).
+- Gates: `check:copy` and `check:i18n` green (192/192 and 465/465 at the time of writing). The copy gate
+  enforces title/description length, frontmatter, register and AI tells. The i18n gate covers route
+  existence, canonical, hreflang, redirects, sitemap alternates, the header language switch, landing
+  SEO and the calculator/JSON-LD contract.
 - Manual checks the gate does not cover yet:
   - Every TOC anchor jumps to its H2.
   - Every table has 3 columns and the same column geometry.

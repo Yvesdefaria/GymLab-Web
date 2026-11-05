@@ -25,6 +25,8 @@ const PAGES = [
   ['en', '/en/back-exercises/'],
   ['es', '/es/anatomia-de-la-espalda/'],
   ['en', '/en/back-anatomy/'],
+  ['es', '/es/elige-las-dominadas-adecuadas-para-mejorar-tu-espalda/'],
+  ['en', '/en/best-pull-ups-for-back-width/'],
 ];
 
 // Content routes, keyed by a stable id with the slug each locale publishes. The
@@ -40,6 +42,10 @@ const ROUTES = {
   backRoutines: { es: '/rutinas-espalda', en: '/back-routines' },
   backExercises: { es: '/ejercicios-espalda', en: '/back-exercises' },
   backAnatomy: { es: '/anatomia-de-la-espalda', en: '/back-anatomy' },
+  pullUpWidth: {
+    es: '/elige-las-dominadas-adecuadas-para-mejorar-tu-espalda',
+    en: '/best-pull-ups-for-back-width',
+  },
 };
 
 const routeId = (path) => {

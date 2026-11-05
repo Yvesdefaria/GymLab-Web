@@ -18,6 +18,7 @@ const ROUTE_PAIRS = [
   ['/rutinas-espalda', '/back-routines'],
   ['/ejercicios-espalda', '/back-exercises'],
   ['/anatomia-de-la-espalda', '/back-anatomy'],
+  ['/elige-las-dominadas-adecuadas-para-mejorar-tu-espalda', '/best-pull-ups-for-back-width'],
 ];
 
 const pairFor = (pathname) => {
