@@ -216,6 +216,84 @@ The bottleneck is not security or performance: it is 12 indexable URLs against 8
 68 routines and 9 calculators. The pSEO catalogue stays a product decision (see Backlog), but the
 sequence is now explicit: fix measurement, ship the 20-exercise pilot, measure, then scale.
 
+## Content and growth — phased plan (2026-11-05)
+
+Ten marketing skills were run against the repo and the live zone (`seo-audit`, `schema`,
+`site-architecture`, `content-strategy`, `ai-seo`, `programmatic-seo`, `cro`, `copy-editing`,
+`image`, `launch`). Conclusions are grouped into phases; each phase is a work unit.
+
+**Correction to the record:** the first guide is built locally but **not deployed**.
+`https://gymlab.dev/es/rutinas-espalda/` and `/en/back-routines/` return `404`; the live
+`sitemap-0.xml` still publishes 12 URLs while `dist/` has 14. Local `main` is 2 commits ahead
+(`db3343b`, `ca8dd8e`).
+
+### Phase 0 — Ship what exists
+
+- [ ] Push `db3343b` + `ca8dd8e`; verify both article URLs return `200` and `sitemap-0.xml` has 14 URLs.
+- [ ] Fix the article language switch: it renders `/en/rutinas-espalda/` and `/es/back-routines/`, both
+      `404`. `localeSwitchPath` only swaps the prefix because the article pair is not in `ROUTES`.
+      Pass `alternates` into `Header` or resolve the slug from the collection.
+- [ ] Extend `check:i18n` to assert every `lang-switch` href resolves to a built file. The gate
+      validates canonical and hreflang (correct), not the visible switcher.
+
+### Phase 1 — Article contract
+
+- [ ] Add `Article` + `BreadcrumbList` JSON-LD to `ArticleLayout`: author = Organization GymLab,
+      real `datePublished`/`dateModified`. Articles currently ship **zero** structured data.
+- [ ] Set `og:type=article` and a 1200×630 per-article OG image; `og:type` stays `website` today.
+- [ ] Add `author` and dates to the content schema; extend the gate to assert the article graph.
+- [ ] Fix the voseo in the article CTA ("Llevá" → "Lleva") and align it with the neutral-Spanish rule.
+
+### Phase 2 — Information architecture and discovery
+
+- [ ] Build the guides hub at 3–5 URLs before scaling: `/es/guias/` (index), one section hub listing
+      the article, article → hub breadcrumb. Then flip `GUIDES_ENABLED` with real hrefs.
+- [ ] The article is orphaned: in-degree 0, no related links, menu disabled. Link it from the hub,
+      the landing and 2–3 sibling guides.
+- [ ] Publish `llms.txt` (currently `404`) while AI Search already makes ~1,770 requests/30 d.
+- [ ] Deploy the redirect map with the first bulk publish: old slug → `/es/<slug>/` `301`, generated
+      from the archive manifest, 20 sampled before release.
+
+### Phase 3 — Conversion
+
+- [ ] Make the offer singular and true. Today "Prueba la app" points at the working web app while the
+      chips below say "Próximamente en Google Play / App Store", and the email FAQ asks to hear about
+      a launch of something already usable. Split: web app = "Probar en el navegador"; stores =
+      "Avísame cuando llegue".
+- [ ] Change the article CTA from "Descargar la app" to "Abrir la app"; it currently promises a
+      download that does not exist.
+- [ ] Add a trust line by every CTA: "Sin cuenta · Gratis · Tus datos en tu teléfono" (all true).
+- [ ] Add a chooser above the eleven tables: goal → routine → days, so the reader picks in ten seconds.
+
+### Phase 4 — Copy and content quality
+
+- [ ] Grow the 3 calculators to 800+ words: definition, formula, worked example, comparison table,
+      4–6 FAQs. They are 203–241 words today and are the only link-earning assets.
+- [ ] Normalise the article to `tú` (it mixes 8 vosotros forms with 17 tú forms), fix the three
+      broken sentences, the orphan footnote asterisks and "el sitio indicado".
+- [ ] Add one link from each calculator to its matching guide and one from the guide to each calculator.
+
+### Phase 5 — Images
+
+- [ ] Build the image pipeline before article #2: move heroes to `src/assets`, render `<Picture>` with
+      AVIF/WebP at 480/768/1200 px, quality ~80, budget ≤150 KB at 1200 px. The current hero is a
+      single 3375×2250 JPEG at 462 KB with no `srcset`.
+- [ ] Make `heroSource`, `heroLicense` and `heroAuthor` **required** frontmatter. 792 images cannot be
+      audited retroactively; a required field is the only ledger that survives.
+- [ ] Add `/content/*` to `public/_headers`; heroes carry no cache rule today.
+- [ ] Keep every image vendored: the CSP is `img-src 'self'`, so hotlinked sources break when the CSP
+      leaves report-only.
+
+### Phase 6 — Scale, after the template is right
+
+- [ ] 20-article pilot and 20-exercise pilot, then measure before scaling to 792 / 873.
+- [ ] Read Search Console on **2026-11-19** before adding volume.
+- [ ] Ordering guard: every page must ship an asset the original lacked (unique prose, data, images) or
+      792 pages repeat the same thin/duplicate-content risk as 873 template pages.
+
+**The trap across all six phases:** scaling either archive before the template is right ships every
+defect 1,584 times. The sequence is: ship one, fix the contract, build the hub, then scale.
+
 ## Pending in the app repo
 
 **Nothing.** On 2026-11-04 the owner authorized the pushes: `main` went `bdad47f7` → `7e575b8f`
