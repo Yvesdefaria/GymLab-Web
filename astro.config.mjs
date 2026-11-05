@@ -17,6 +17,7 @@ const ROUTE_PAIRS = [
   ['/calcular-calorias', '/calorie-calculator'],
   ['/rutinas-espalda', '/back-routines'],
   ['/ejercicios-espalda', '/back-exercises'],
+  ['/anatomia-de-la-espalda', '/back-anatomy'],
 ];
 
 const pairFor = (pathname) => {

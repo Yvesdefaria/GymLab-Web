@@ -23,6 +23,8 @@ const PAGES = [
   ['en', '/en/back-routines/'],
   ['es', '/es/ejercicios-espalda/'],
   ['en', '/en/back-exercises/'],
+  ['es', '/es/anatomia-de-la-espalda/'],
+  ['en', '/en/back-anatomy/'],
 ];
 
 // Content routes, keyed by a stable id with the slug each locale publishes. The
@@ -37,6 +39,7 @@ const ROUTES = {
   calories: { es: '/calcular-calorias', en: '/calorie-calculator' },
   backRoutines: { es: '/rutinas-espalda', en: '/back-routines' },
   backExercises: { es: '/ejercicios-espalda', en: '/back-exercises' },
+  backAnatomy: { es: '/anatomia-de-la-espalda', en: '/back-anatomy' },
 };
 
 const routeId = (path) => {

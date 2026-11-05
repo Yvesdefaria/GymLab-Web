@@ -7,15 +7,20 @@ chosen when the page is translated.
 
 Legend: `ES` = Spanish published, `EN` = English published.
 
-| Block | Articles |
-| --- | ---: |
-| Entrenamiento | 222 |
-| Por Músculo | 80 |
-| Rutinas | 80 |
-| Ejercicios | 196 |
-| Nutrición | 191 |
-| Mujer Fitness | 23 |
-| **Total** | **792** |
+## Progress
+
+- **Built: 3 / 792** (ES 3, EN 3).
+- Last built: `/anatomia-de-la-espalda/` ↔ `/en/back-anatomy/`.
+
+| Block | Articles | Built |
+| --- | ---: | ---: |
+| Entrenamiento | 222 | 2 |
+| Por Músculo | 80 | 0 |
+| Rutinas | 80 | 0 |
+| Ejercicios | 196 | 1 |
+| Nutrición | 191 | 0 |
+| Mujer Fitness | 23 | 0 |
+| **Total** | **792** | **3** |
 
 ## Entrenamiento (222)
 
@@ -226,7 +231,7 @@ Legend: `ES` = Spanish published, `EN` = English published.
 - [ ] ES · [ ] EN — `/consejos-para-desarrollar-espalda/` — Consejos para desarrollar tu espalda
 - [ ] ES · [ ] EN — `/mejores-jalones-para-trabajar-la-parte-inferior-del-dorsal/` — Mejores jalones para trabajar la parte inferior del dorsal
 - [ ] ES · [ ] EN — `/espalda-baja-fuerte/` — Como tener una espalda baja fuerte
-- [ ] ES · [ ] EN — `/anatomia-de-la-espalda/` — Anatomía y músculos de la espalda \| ¡Entrénalos!
+- [x] ES · [x] EN — `/anatomia-de-la-espalda/` — Anatomía y músculos de la espalda \| ¡Entrénalos!
 
 ### Entrenamiento de las Piernas (18)
 

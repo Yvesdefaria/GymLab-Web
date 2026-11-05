@@ -141,7 +141,8 @@ Rewrite the archive copy so it answers what people search, without changing a si
 - **Pending (Phase 1)**: `Article` + `BreadcrumbList` JSON-LD, author = Organization GymLab,
   `datePublished`/`dateModified`, `og:type=article`, per-article OG image (1200×630).
 - Today the article ships **zero** JSON-LD and `og:type=website`.
-- The sitemap is automatic. After the first deploy it must list 14 URLs, then +2 per article.
+- The sitemap pairs locales through `ROUTE_PAIRS` in `astro.config.mjs`. Add the pair there, and in
+  `scripts/check-i18n.mjs` (`PAGES` and `ROUTES`), or the alternates and the switch check are wrong.
 
 ## 10. Verification before publishing a page
 
@@ -171,8 +172,10 @@ npm run check:i18n
 7. Normalise tables to 3 columns.
 8. Translate to English; set `alternate` in both files.
 9. Add `tags`, `meta`, `block`, `section`, `updated`.
-10. Build, run the gate, open both locales, check the language switch and the tables at 390px.
-11. Mark `ES`/`EN` in `content-pages.md`; commit the pair.
+10. Add the pair to `ROUTE_PAIRS` (`astro.config.mjs`) and to `PAGES`/`ROUTES`
+    (`scripts/check-i18n.mjs`).
+11. Build, run the gate, open both locales, check the language switch and the tables at 390px.
+12. Mark `ES`/`EN` in `content-pages.md`; commit the pair.
 
 ## 12. Known gaps (tracked in `PLAN.md` → phases)
 
