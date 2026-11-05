@@ -218,7 +218,7 @@ Legend: `ES` = Spanish published, `EN` = English published.
 ### Entrenamiento de la Espalda (10)
 
 - [ ] ES · [ ] EN — `/ejercicios-dolor-de-espalda/` — Ejercicios para el dolor de espalda
-- [ ] ES · [ ] EN — `/rutinas-espalda/` — Rutinas de espalda y como entrenarla \| Efectivas 100% en 2025
+- [x] ES · [x] EN — `/rutinas-espalda/` — Rutinas de espalda y como entrenarla \| Efectivas 100% en 2025
 - [ ] ES · [ ] EN — `/mejores-ejercicios-con-mancuernas-para-espalda/` — Ejercicios con mancuernas para espalda más efectivos
 - [ ] ES · [ ] EN — `/agarres-jalones-dorsales/` — Tipos de agarres en jalones dorsales: ¿Cuál es mejor?
 - [ ] ES · [ ] EN — `/como-ampliar-tus-dorsales/` — Amplía tus músculos dorsales \| Técnica avanzada
@@ -513,7 +513,7 @@ Legend: `ES` = Spanish published, `EN` = English published.
 
 ### Ejercicios (8)
 
-- [ ] ES · [ ] EN — `/ejercicios-espalda/` — Ejercicios de Espalda \| Los mejores para tu rutina en 2025
+- [x] ES · [x] EN — `/ejercicios-espalda/` — Ejercicios de Espalda \| Los mejores para tu rutina en 2025
 - [ ] ES · [ ] EN — `/ejercicios-pecho/` — Ejercicios de Pecho \| Los más efectivos y útiles en 2026
 - [ ] ES · [ ] EN — `/ejercicios-antebrazo/` — Ejercicios de Antebrazo \| Los más efectivos en 2025
 - [ ] ES · [ ] EN — `/ejercicios-triceps/` — Ejercicios de Tríceps \| Consigue brazos con volumen en 2025

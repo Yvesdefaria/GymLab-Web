@@ -91,7 +91,7 @@ const isLanding = /^\/(?:es|en)\/?$/.test(Astro.url.pathname);
     <slot name="head" />
   </head>
   <body>
-    <Header />
+    <Header alternates={alternates} />
     <main>
       <slot />
     </main>

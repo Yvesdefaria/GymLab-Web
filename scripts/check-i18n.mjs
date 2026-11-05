@@ -19,6 +19,10 @@ const PAGES = [
   ['en', '/en/bmi-calculator/'],
   ['es', '/es/calcular-calorias/'],
   ['en', '/en/calorie-calculator/'],
+  ['es', '/es/rutinas-espalda/'],
+  ['en', '/en/back-routines/'],
+  ['es', '/es/ejercicios-espalda/'],
+  ['en', '/en/back-exercises/'],
 ];
 
 // Content routes, keyed by a stable id with the slug each locale publishes. The
@@ -31,6 +35,8 @@ const ROUTES = {
   oneRm: { es: '/calculadora-1rm', en: '/one-rep-max-calculator' },
   bmi: { es: '/calculadora-imc', en: '/bmi-calculator' },
   calories: { es: '/calcular-calorias', en: '/calorie-calculator' },
+  backRoutines: { es: '/rutinas-espalda', en: '/back-routines' },
+  backExercises: { es: '/ejercicios-espalda', en: '/back-exercises' },
 };
 
 const routeId = (path) => {
@@ -96,6 +102,20 @@ for (const [lang, path] of PAGES) {
     );
   }
   check(`${path} og:locale`, html.includes(`content="${lang === 'en' ? 'en_GB' : 'es_ES'}"`));
+
+  // The header switch must land on the pair, not on the same slug in the other
+  // locale. Articles use different slugs per language, so this is the check that
+  // catches a link to /en/<spanish-slug>/ (a 404).
+  const switchLinks = [...html.matchAll(/<a href="([^"]+)" class="lang-switch__link"[^>]*hreflang="(es|en)"/g)];
+  for (const code of ['es', 'en']) {
+    const link = switchLinks.find((match) => match[2] === code);
+    const expectedPath = (code === 'es' ? expected.es : expected.en).replace(ORIGIN, '');
+    check(
+      `${path} language switch ${code}`,
+      link?.[1] === expectedPath,
+      `expected ${expectedPath}, got ${link?.[1] ?? 'no link'}`,
+    );
+  }
 
   if (lang === 'en') {
     for (const sentinel of SPANISH_SENTINELS) {

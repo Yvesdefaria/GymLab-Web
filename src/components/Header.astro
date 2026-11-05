@@ -5,6 +5,13 @@
 import { getLang, localePath, localeSwitchPath, useTranslations } from '../i18n';
 import { GUIDE_BLOCKS, GUIDES_ENABLED } from '../data/guides-nav';
 
+interface Props {
+  /** Explicit alternate paths for pages whose slug changes per locale. */
+  alternates?: { es: string; en: string };
+}
+
+const { alternates } = Astro.props;
+
 const lang = getLang(Astro.url.pathname);
 const t = useTranslations(lang);
 
@@ -96,7 +103,7 @@ const guidesMenuLabel = lang === 'es' ? 'Guías de entrenamiento' : 'Training gu
         {
           languages.map((item) => (
             <a
-              href={localeSwitchPath(Astro.url.pathname, item.code)}
+              href={alternates?.[item.code] ?? localeSwitchPath(Astro.url.pathname, item.code)}
               class="lang-switch__link"
               aria-current={item.code === lang ? 'page' : undefined}
               hreflang={item.code}

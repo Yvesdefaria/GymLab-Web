@@ -17,7 +17,7 @@ meta: "Guide · 11 routines"
 
 A wide, muscular back gives your physique the **V-taper** bodybuilders and gym-goers chase. Bodybuilding is built on **proportions**, and a narrow back makes the rest of your physique look smaller than it is.
 
-For back routines to work you need good planning and variety, with the best **back exercises** in your arsenal. If you are looking for effective back routines, you are in the right place.
+For back routines to work you need good planning and variety, with the best [**back exercises**](/en/back-exercises/) in your arsenal. If you are looking for effective back routines, you are in the right place.
 
 ## How to get more out of your back routines
 

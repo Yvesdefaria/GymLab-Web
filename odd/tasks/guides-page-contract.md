@@ -1,8 +1,9 @@
 # Guides page contract
 
 Reference for building every page of the guides library from the archived content in
-`C:\Users\Yves De Faria\Desktop\cambiatufisico.com`. The first page, `/es/rutinas-espalda/` +
-`/en/back-routines/`, is the worked example this contract describes.
+`C:\Users\Yves De Faria\Desktop\cambiatufisico.com`. The two pages built so far are the worked
+examples this contract describes: `/es/rutinas-espalda/` + `/en/back-routines/` (eleven routine
+tables) and `/es/ejercicios-espalda/` + `/en/back-exercises/` (ten exercises, no tables).
 
 ## 1. Files
 
@@ -123,8 +124,9 @@ Rewrite the archive copy so it answers what people search, without changing a si
 - Slugs may differ per locale: Spanish keeps the archive's `source`; English uses the English
   keyword (`/en/back-routines/`).
 - The English file is a translation of the same article, not a different piece.
-- **Known gap (Phase 0)**: the header language switch still points at `/en/<slug-es>/`. Pass
-  `alternate` into `Header` or resolve the pair from the collection, and assert it in `check:i18n`.
+- The header language switch resolves through the `alternates` prop that `BaseLayout` passes to
+  `Header`; `check:i18n` asserts the switch for every pair, so a link to `/en/<slug-es>/` fails the
+  gate.
 
 ## 8. Navigation
 
@@ -149,10 +151,9 @@ npm run check:i18n
 ```
 
 - Build: `18 pages` for the current site; +2 per article.
-- Gate: currently **317/317**. It covers route existence, canonical, hreflang, redirects, sitemap
-  alternates, landing SEO and the calculator/JSON-LD contract.
+- Gate: currently **403/403**. It covers route existence, canonical, hreflang, redirects, sitemap
+  alternates, the header language switch, landing SEO and the calculator/JSON-LD contract.
 - Manual checks the gate does not cover yet:
-  - The header language switch resolves to the pair.
   - Every TOC anchor jumps to its H2.
   - Every table has 3 columns and the same column geometry.
   - No `#` links and no `.md` links in the rendered body.
@@ -175,7 +176,7 @@ npm run check:i18n
 
 ## 12. Known gaps (tracked in `PLAN.md` → phases)
 
-- Phase 0: deploy the article; fix the language switch.
+- Phase 0: deploy the articles; the language switch is fixed and asserted by the gate.
 - Phase 1: Article JSON-LD, `og:type`, dates, per-article OG.
 - Phase 2: hub, internal links, `llms.txt`, redirect map from the old domain.
 - Phase 3: one truthful CTA (web app vs stores), trust line.

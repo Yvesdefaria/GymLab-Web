@@ -16,7 +16,7 @@ meta: "Guía · 11 rutinas"
 ---
 Tener una espalda amplia y musculada otorgará a tu físico esa proporción de **«línea V»** tan buscada por los culturistas y las personas aficionadas al fitness. El culturismo se basa en las **proporciones**, y una espalda estrecha hará que el resto de tu físico no parezca a la altura.
 
-Para que las rutinas de espalda sean efectivas necesitas una buena planificación y variación en las mismas, con los mejores **ejercicios de espalda** disponibles en tu arsenal. Si buscas rutinas de espalda efectivas estás en el lugar correcto.
+Para que las rutinas de espalda sean efectivas necesitas una buena planificación y variación en las mismas, con los mejores [**ejercicios de espalda**](/es/ejercicios-espalda/) disponibles en tu arsenal. Si buscas rutinas de espalda efectivas estás en el lugar correcto.
 
 ## Cómo elegir y optimizar tu rutina de espalda
 

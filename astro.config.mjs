@@ -16,6 +16,7 @@ const ROUTE_PAIRS = [
   ['/calculadora-imc', '/bmi-calculator'],
   ['/calcular-calorias', '/calorie-calculator'],
   ['/rutinas-espalda', '/back-routines'],
+  ['/ejercicios-espalda', '/back-exercises'],
 ];
 
 const pairFor = (pathname) => {
