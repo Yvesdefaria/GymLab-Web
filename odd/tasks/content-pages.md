@@ -9,18 +9,18 @@ Legend: `ES` = Spanish published, `EN` = English published.
 
 ## Progress
 
-- **Built: 26 / 792** (ES 26, EN 26).
-- Last batch: 10 pages, from `/jalones-frontales-2/` to `/rutina-de-espalda-para-dorsales-mas-grandes-y-musculados/`.
+- **Built: 36 / 792** (ES 36, EN 36).
+- Last batch: 10 pages, from `/dominadas-asistidas/` to `/dominadas-programa-avanzado/`.
 
 | Block | Articles | Built |
 | --- | ---: | ---: |
 | Entrenamiento | 222 | 9 |
-| Por Músculo | 80 | 3 |
+| Por Músculo | 80 | 4 |
 | Rutinas | 80 | 0 |
-| Ejercicios | 196 | 14 |
+| Ejercicios | 196 | 23 |
 | Nutrición | 191 | 0 |
 | Mujer Fitness | 23 | 0 |
-| **Total** | **792** | **26** |
+| **Total** | **792** | **36** |
 
 ## Copy gate (mandatory before ticking ES/EN)
 
@@ -61,6 +61,16 @@ Legend: `ES` = Spanish published, `EN` = English published.
 | `rutina-espalda-amplitud-densidad` | yes | yes | yes | 0 em dashes | pass |
 | `como-entrenar-la-espalda-en-quince-minutos` | yes | yes | yes | 0 em dashes | pass |
 | `rutina-de-espalda-para-dorsales-mas-grandes-y-musculados` | yes | yes | yes | 0 em dashes | pass |
+| `dominadas-asistidas` | yes | yes | yes | 0 em dashes | pass |
+| `dominadas-con-peso-multipower` | yes | yes | yes | 0 em dashes | pass |
+| `dominadas-tras-nuca` | yes | yes | yes | 0 em dashes | pass |
+| `jalon-dorsal-a-una-mano` | yes | yes | yes | 0 em dashes | pass |
+| `jalones-en-maquina` | yes | yes | yes | 0 em dashes | pass |
+| `jalones-frontales-brazos-rectos` | yes | yes | yes | 0 em dashes | pass |
+| `remo-polea-sentado` | yes | yes | yes | 0 em dashes | pass |
+| `remo-pendley` | yes | yes | yes | 0 em dashes | pass |
+| `remo-barra-agarre-invertido` | yes | yes | yes | 0 em dashes | pass |
+| `dominadas-programa-avanzado` | yes | yes | yes | 0 em dashes | pass |
 
 ## Entrenamiento (222)
 
@@ -413,7 +423,7 @@ Legend: `ES` = Spanish published, `EN` = English published.
 
 ### Rutinas de Espalda (4)
 
-- [ ] ES · [ ] EN — `/dominadas-programa-avanzado/` — Programa de dominadas avanzado
+- [x] ES · [x] EN — `/dominadas-programa-avanzado/` — Programa de dominadas avanzado
 - [x] ES · [x] EN — `/rutina-espalda-amplitud-densidad/` — Programa de entrenamiento de espalda de amplitud y densidad
 - [x] ES · [x] EN — `/como-entrenar-la-espalda-en-quince-minutos/` — Como entrenar la espalda en quince minutos
 - [x] ES · [x] EN — `/rutina-de-espalda-para-dorsales-mas-grandes-y-musculados/` — Rutina de espalda para dorsales más grandes y musculados
@@ -701,25 +711,25 @@ Legend: `ES` = Spanish published, `EN` = English published.
 - [x] ES · [x] EN — `/jalones-agarre-cerrado/` — Jalones agarre cerrado: fortalece tu espalda eficazmente
 - [x] ES · [x] EN — `/dominadas-agarre-cerrado/` — Dominadas con Agarre Cerrado: ¡Maximiza tu Poder de Tracción!
 - [x] ES · [x] EN — `/dominadas-agarre-ancho/` — Dominadas con Agarre Ancho: Técnica y Beneficios Musculares
-- [ ] ES · [ ] EN — `/jalones-frontales-brazos-rectos/` — Jalones frontales con brazos rectos
+- [x] ES · [x] EN — `/jalones-frontales-brazos-rectos/` — Jalones frontales con brazos rectos
 - [x] ES · [x] EN — `/dominadas/` — Dominadas, como dominarlas
 - [x] ES · [x] EN — `/remo-barra-t/` — Remo en barra T \| Consigue una espalda más musculosa
-- [ ] ES · [ ] EN — `/remo-barra-agarre-invertido/` — Remo con barra agarre invertido
+- [x] ES · [x] EN — `/remo-barra-agarre-invertido/` — Remo con barra agarre invertido
 - [x] ES · [x] EN — `/remo-barra/` — Remo con barra, ¿El MEJOR ejercicio para espalda en 2025?
-- [ ] ES · [ ] EN — `/remo-polea-sentado/` — Remo en polea sentado (Remo Gironda) \| Efectivo 100%
+- [x] ES · [x] EN — `/remo-polea-sentado/` — Remo en polea sentado (Remo Gironda) \| Efectivo 100%
 - [ ] ES · [ ] EN — `/remo-multipower/` — Remo en multipower
 - [ ] ES · [ ] EN — `/remo-maquina/` — Remo en máquina \| ¡Densidad para tus dorsales!
 - [x] ES · [x] EN — `/remo-mancuerna-una-mano/` — Remo con mancuerna \| Desarrolla músculo en la espalda
-- [ ] ES · [ ] EN — `/dominadas-tras-nuca/` — Dominadas tras nuca
+- [x] ES · [x] EN — `/dominadas-tras-nuca/` — Dominadas tras nuca
 - [ ] ES · [ ] EN — `/buenos-dias-barra-de-pie/` — Buenos días con barra de pie
 - [ ] ES · [ ] EN — `/buenos-dias-barra-sentado/` — Buenos días con barra sentado
-- [ ] ES · [ ] EN — `/jalones-en-maquina/` — Jalones en máquina
-- [ ] ES · [ ] EN — `/remo-pendley/` — Remo Pendley con barra, ejercicio para avanzados ✔
+- [x] ES · [x] EN — `/jalones-en-maquina/` — Jalones en máquina
+- [x] ES · [x] EN — `/remo-pendley/` — Remo Pendley con barra, ejercicio para avanzados ✔
 - [ ] ES · [ ] EN — `/remo-invertido/` — Remo invertido
-- [ ] ES · [ ] EN — `/dominadas-con-peso-multipower/` — Dominadas con peso en multipower
-- [ ] ES · [ ] EN — `/dominadas-asistidas/` — Dominadas en máquina (asistidas)
+- [x] ES · [x] EN — `/dominadas-con-peso-multipower/` — Dominadas con peso en multipower
+- [x] ES · [x] EN — `/dominadas-asistidas/` — Dominadas en máquina (asistidas)
 - [ ] ES · [ ] EN — `/pullover-en-banco-declinado/` — Pullover en banco declinado
-- [ ] ES · [ ] EN — `/jalon-dorsal-a-una-mano/` — Jalón dorsal a una mano
+- [x] ES · [x] EN — `/jalon-dorsal-a-una-mano/` — Jalón dorsal a una mano
 - [x] ES · [x] EN — `/jalones-tras-nuca/` — Jalones tras nuca \| Efectivo pero... ¿Lesivo?
 
 ### Ejercicios de Gemelo (9)

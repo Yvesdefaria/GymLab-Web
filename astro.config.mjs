@@ -41,6 +41,16 @@ const ROUTE_PAIRS = [
   ['/rutina-espalda-amplitud-densidad', '/back-width-and-thickness-routine'],
   ['/como-entrenar-la-espalda-en-quince-minutos', '/15-minute-back-workout'],
   ['/rutina-de-espalda-para-dorsales-mas-grandes-y-musculados', '/back-routine-for-bigger-lats'],
+  ['/dominadas-asistidas', '/assisted-pull-ups'],
+  ['/dominadas-con-peso-multipower', '/weighted-pull-ups-machine'],
+  ['/dominadas-tras-nuca', '/behind-the-neck-pull-ups'],
+  ['/jalon-dorsal-a-una-mano', '/one-arm-lat-pulldown'],
+  ['/jalones-en-maquina', '/machine-lat-pulldowns'],
+  ['/jalones-frontales-brazos-rectos', '/straight-arm-lat-pulldowns'],
+  ['/remo-polea-sentado', '/seated-cable-row'],
+  ['/remo-pendley', '/pendlay-row'],
+  ['/remo-barra-agarre-invertido', '/reverse-grip-barbell-row'],
+  ['/dominadas-programa-avanzado', '/advanced-pull-up-program'],
 ];
 
 const pairFor = (pathname) => {

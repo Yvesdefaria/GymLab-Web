@@ -71,6 +71,26 @@ const PAGES = [
   ['en', '/en/15-minute-back-workout/'],
   ['es', '/es/rutina-de-espalda-para-dorsales-mas-grandes-y-musculados/'],
   ['en', '/en/back-routine-for-bigger-lats/'],
+  ['es', '/es/dominadas-asistidas/'],
+  ['en', '/en/assisted-pull-ups/'],
+  ['es', '/es/dominadas-con-peso-multipower/'],
+  ['en', '/en/weighted-pull-ups-machine/'],
+  ['es', '/es/dominadas-tras-nuca/'],
+  ['en', '/en/behind-the-neck-pull-ups/'],
+  ['es', '/es/jalon-dorsal-a-una-mano/'],
+  ['en', '/en/one-arm-lat-pulldown/'],
+  ['es', '/es/jalones-en-maquina/'],
+  ['en', '/en/machine-lat-pulldowns/'],
+  ['es', '/es/jalones-frontales-brazos-rectos/'],
+  ['en', '/en/straight-arm-lat-pulldowns/'],
+  ['es', '/es/remo-polea-sentado/'],
+  ['en', '/en/seated-cable-row/'],
+  ['es', '/es/remo-pendley/'],
+  ['en', '/en/pendlay-row/'],
+  ['es', '/es/remo-barra-agarre-invertido/'],
+  ['en', '/en/reverse-grip-barbell-row/'],
+  ['es', '/es/dominadas-programa-avanzado/'],
+  ['en', '/en/advanced-pull-up-program/'],
 ];
 
 // Content routes, keyed by a stable id with the slug each locale publishes. The
@@ -133,6 +153,28 @@ const ROUTES = {
     es: '/rutina-de-espalda-para-dorsales-mas-grandes-y-musculados',
     en: '/back-routine-for-bigger-lats',
   },
+  assistedPullUps: { es: '/dominadas-asistidas', en: '/assisted-pull-ups' },
+  weightedPullUps: {
+    es: '/dominadas-con-peso-multipower',
+    en: '/weighted-pull-ups-machine',
+  },
+  behindNeckPullUps: {
+    es: '/dominadas-tras-nuca',
+    en: '/behind-the-neck-pull-ups',
+  },
+  oneArmPulldown: { es: '/jalon-dorsal-a-una-mano', en: '/one-arm-lat-pulldown' },
+  machinePulldowns: { es: '/jalones-en-maquina', en: '/machine-lat-pulldowns' },
+  straightArmPulldowns: {
+    es: '/jalones-frontales-brazos-rectos',
+    en: '/straight-arm-lat-pulldowns',
+  },
+  seatedCableRow: { es: '/remo-polea-sentado', en: '/seated-cable-row' },
+  pendlayRow: { es: '/remo-pendley', en: '/pendlay-row' },
+  reverseGripRow: {
+    es: '/remo-barra-agarre-invertido',
+    en: '/reverse-grip-barbell-row',
+  },
+  advancedPullUp: { es: '/dominadas-programa-avanzado', en: '/advanced-pull-up-program' },
 };
 
 const routeId = (path) => {
