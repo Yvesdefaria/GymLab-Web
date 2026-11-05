@@ -51,6 +51,16 @@ const ROUTE_PAIRS = [
   ['/remo-pendley', '/pendlay-row'],
   ['/remo-barra-agarre-invertido', '/reverse-grip-barbell-row'],
   ['/dominadas-programa-avanzado', '/advanced-pull-up-program'],
+  ['/buenos-dias-barra-de-pie', '/standing-good-mornings'],
+  ['/buenos-dias-barra-sentado', '/seated-good-mornings'],
+  ['/buenos-dias-con-barra-piernas-separadas', '/wide-stance-good-mornings'],
+  ['/peso-muerto-piernas-rigidas-barra', '/stiff-leg-deadlift-barbell'],
+  ['/peso-muerto-piernas-rigidas-mancuernas', '/stiff-leg-deadlift-dumbbells'],
+  ['/peso-muerto-sumo', '/sumo-deadlift'],
+  ['/pullover-en-banco-declinado', '/decline-bench-pullover'],
+  ['/remo-en-polea-a-una-mano-de-pie', '/one-arm-cable-row'],
+  ['/remo-invertido', '/inverted-row'],
+  ['/remo-maquina', '/machine-row'],
 ];
 
 const pairFor = (pathname) => {

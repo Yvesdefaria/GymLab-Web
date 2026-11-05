@@ -9,18 +9,18 @@ Legend: `ES` = Spanish published, `EN` = English published.
 
 ## Progress
 
-- **Built: 36 / 792** (ES 36, EN 36).
-- Last batch: 10 pages, from `/dominadas-asistidas/` to `/dominadas-programa-avanzado/`.
+- **Built: 46 / 792** (ES 46, EN 46).
+- Last batch: 10 pages, from `/buenos-dias-barra-de-pie/` to `/remo-maquina/`.
 
 | Block | Articles | Built |
 | --- | ---: | ---: |
 | Entrenamiento | 222 | 9 |
 | Por Músculo | 80 | 4 |
 | Rutinas | 80 | 0 |
-| Ejercicios | 196 | 23 |
+| Ejercicios | 196 | 33 |
 | Nutrición | 191 | 0 |
 | Mujer Fitness | 23 | 0 |
-| **Total** | **792** | **36** |
+| **Total** | **792** | **46** |
 
 ## Copy gate (mandatory before ticking ES/EN)
 
@@ -71,6 +71,16 @@ Legend: `ES` = Spanish published, `EN` = English published.
 | `remo-pendley` | yes | yes | yes | 0 em dashes | pass |
 | `remo-barra-agarre-invertido` | yes | yes | yes | 0 em dashes | pass |
 | `dominadas-programa-avanzado` | yes | yes | yes | 0 em dashes | pass |
+| `buenos-dias-barra-de-pie` | yes | yes | yes | 0 em dashes | pass |
+| `buenos-dias-barra-sentado` | yes | yes | yes | 0 em dashes | pass |
+| `buenos-dias-con-barra-piernas-separadas` | yes | yes | yes | 0 em dashes | pass |
+| `peso-muerto-piernas-rigidas-barra` | yes | yes | yes | 0 em dashes | pass |
+| `peso-muerto-piernas-rigidas-mancuernas` | yes | yes | yes | 0 em dashes | pass |
+| `peso-muerto-sumo` | yes | yes | yes | 0 em dashes | pass |
+| `pullover-en-banco-declinado` | yes | yes | yes | 0 em dashes | pass |
+| `remo-en-polea-a-una-mano-de-pie` | yes | yes | yes | 0 em dashes | pass |
+| `remo-invertido` | yes | yes | yes | 0 em dashes | pass |
+| `remo-maquina` | yes | yes | yes | 0 em dashes | pass |
 
 ## Entrenamiento (222)
 
@@ -700,11 +710,11 @@ Legend: `ES` = Spanish published, `EN` = English published.
 
 ### Ejercicios de Espalda (31)
 
-- [ ] ES · [ ] EN — `/remo-en-polea-a-una-mano-de-pie/` — Remo en polea a una mano de pie \| ¡Congestión para el dorsal!
-- [ ] ES · [ ] EN — `/peso-muerto-piernas-rigidas-mancuernas/` — Peso Muerto Piernas Rígidas con Mancuernas: Guía Completa
-- [ ] ES · [ ] EN — `/peso-muerto-piernas-rigidas-barra/` — Peso Muerto Piernas Rígidas con Barra \| Flexibilidad y Fuerza
-- [ ] ES · [ ] EN — `/peso-muerto-sumo/` — Peso Muerto Sumo: Fortalece Piernas y Glúteos Eficazmente
-- [ ] ES · [ ] EN — `/buenos-dias-con-barra-piernas-separadas/` — Buenos días con barra y piernas separadas
+- [x] ES · [x] EN — `/remo-en-polea-a-una-mano-de-pie/` — Remo en polea a una mano de pie \| ¡Congestión para el dorsal!
+- [x] ES · [x] EN — `/peso-muerto-piernas-rigidas-mancuernas/` — Peso Muerto Piernas Rígidas con Mancuernas: Guía Completa
+- [x] ES · [x] EN — `/peso-muerto-piernas-rigidas-barra/` — Peso Muerto Piernas Rígidas con Barra \| Flexibilidad y Fuerza
+- [x] ES · [x] EN — `/peso-muerto-sumo/` — Peso Muerto Sumo: Fortalece Piernas y Glúteos Eficazmente
+- [x] ES · [x] EN — `/buenos-dias-con-barra-piernas-separadas/` — Buenos días con barra y piernas separadas
 - [x] ES · [x] EN — `/hiperextensiones-espalda/` — Hiperextensiones de espalda 【El ejercicio 100% Efectivo】
 - [x] ES · [x] EN — `/jalones-frontales-2/` — Jalones frontales \| Amplia tus dorsales en 2025
 - [x] ES · [x] EN — `/jalones-agarre-v/` — Jalones con agarre V: técnica, beneficios y errores
@@ -718,17 +728,17 @@ Legend: `ES` = Spanish published, `EN` = English published.
 - [x] ES · [x] EN — `/remo-barra/` — Remo con barra, ¿El MEJOR ejercicio para espalda en 2025?
 - [x] ES · [x] EN — `/remo-polea-sentado/` — Remo en polea sentado (Remo Gironda) \| Efectivo 100%
 - [ ] ES · [ ] EN — `/remo-multipower/` — Remo en multipower
-- [ ] ES · [ ] EN — `/remo-maquina/` — Remo en máquina \| ¡Densidad para tus dorsales!
+- [x] ES · [x] EN — `/remo-maquina/` — Remo en máquina \| ¡Densidad para tus dorsales!
 - [x] ES · [x] EN — `/remo-mancuerna-una-mano/` — Remo con mancuerna \| Desarrolla músculo en la espalda
 - [x] ES · [x] EN — `/dominadas-tras-nuca/` — Dominadas tras nuca
-- [ ] ES · [ ] EN — `/buenos-dias-barra-de-pie/` — Buenos días con barra de pie
-- [ ] ES · [ ] EN — `/buenos-dias-barra-sentado/` — Buenos días con barra sentado
+- [x] ES · [x] EN — `/buenos-dias-barra-de-pie/` — Buenos días con barra de pie
+- [x] ES · [x] EN — `/buenos-dias-barra-sentado/` — Buenos días con barra sentado
 - [x] ES · [x] EN — `/jalones-en-maquina/` — Jalones en máquina
 - [x] ES · [x] EN — `/remo-pendley/` — Remo Pendley con barra, ejercicio para avanzados ✔
-- [ ] ES · [ ] EN — `/remo-invertido/` — Remo invertido
+- [x] ES · [x] EN — `/remo-invertido/` — Remo invertido
 - [x] ES · [x] EN — `/dominadas-con-peso-multipower/` — Dominadas con peso en multipower
 - [x] ES · [x] EN — `/dominadas-asistidas/` — Dominadas en máquina (asistidas)
-- [ ] ES · [ ] EN — `/pullover-en-banco-declinado/` — Pullover en banco declinado
+- [x] ES · [x] EN — `/pullover-en-banco-declinado/` — Pullover en banco declinado
 - [x] ES · [x] EN — `/jalon-dorsal-a-una-mano/` — Jalón dorsal a una mano
 - [x] ES · [x] EN — `/jalones-tras-nuca/` — Jalones tras nuca \| Efectivo pero... ¿Lesivo?
 

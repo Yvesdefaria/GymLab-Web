@@ -91,6 +91,26 @@ const PAGES = [
   ['en', '/en/reverse-grip-barbell-row/'],
   ['es', '/es/dominadas-programa-avanzado/'],
   ['en', '/en/advanced-pull-up-program/'],
+  ['es', '/es/buenos-dias-barra-de-pie/'],
+  ['en', '/en/standing-good-mornings/'],
+  ['es', '/es/buenos-dias-barra-sentado/'],
+  ['en', '/en/seated-good-mornings/'],
+  ['es', '/es/buenos-dias-con-barra-piernas-separadas/'],
+  ['en', '/en/wide-stance-good-mornings/'],
+  ['es', '/es/peso-muerto-piernas-rigidas-barra/'],
+  ['en', '/en/stiff-leg-deadlift-barbell/'],
+  ['es', '/es/peso-muerto-piernas-rigidas-mancuernas/'],
+  ['en', '/en/stiff-leg-deadlift-dumbbells/'],
+  ['es', '/es/peso-muerto-sumo/'],
+  ['en', '/en/sumo-deadlift/'],
+  ['es', '/es/pullover-en-banco-declinado/'],
+  ['en', '/en/decline-bench-pullover/'],
+  ['es', '/es/remo-en-polea-a-una-mano-de-pie/'],
+  ['en', '/en/one-arm-cable-row/'],
+  ['es', '/es/remo-invertido/'],
+  ['en', '/en/inverted-row/'],
+  ['es', '/es/remo-maquina/'],
+  ['en', '/en/machine-row/'],
 ];
 
 // Content routes, keyed by a stable id with the slug each locale publishes. The
@@ -175,6 +195,28 @@ const ROUTES = {
     en: '/reverse-grip-barbell-row',
   },
   advancedPullUp: { es: '/dominadas-programa-avanzado', en: '/advanced-pull-up-program' },
+  standingGoodMornings: { es: '/buenos-dias-barra-de-pie', en: '/standing-good-mornings' },
+  seatedGoodMornings: { es: '/buenos-dias-barra-sentado', en: '/seated-good-mornings' },
+  wideGoodMornings: {
+    es: '/buenos-dias-con-barra-piernas-separadas',
+    en: '/wide-stance-good-mornings',
+  },
+  stiffLegBarbell: {
+    es: '/peso-muerto-piernas-rigidas-barra',
+    en: '/stiff-leg-deadlift-barbell',
+  },
+  stiffLegDumbbells: {
+    es: '/peso-muerto-piernas-rigidas-mancuernas',
+    en: '/stiff-leg-deadlift-dumbbells',
+  },
+  sumoDeadlift: { es: '/peso-muerto-sumo', en: '/sumo-deadlift' },
+  declinePullover: { es: '/pullover-en-banco-declinado', en: '/decline-bench-pullover' },
+  oneArmCableRow: {
+    es: '/remo-en-polea-a-una-mano-de-pie',
+    en: '/one-arm-cable-row',
+  },
+  invertedRow: { es: '/remo-invertido', en: '/inverted-row' },
+  machineRow: { es: '/remo-maquina', en: '/machine-row' },
 };
 
 const routeId = (path) => {

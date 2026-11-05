@@ -171,8 +171,8 @@ npm run check:i18n
 # or: npm run verify
 ```
 
-- Build: base pages + 2 per article (88 at the time of writing).
-- Gates: `check:copy` and `check:i18n` green (1836/1836 and 1457/1457 at the time of writing). The copy gate
+- Build: base pages + 2 per article (108 at the time of writing).
+- Gates: `check:copy` and `check:i18n` green (2346/2346 and 1767/1767 at the time of writing). The copy gate
   enforces title/description length, frontmatter, register, AI tells, one unique hero per page and the
   hero file/credit. The i18n gate covers route existence, canonical, hreflang, redirects, sitemap
   alternates, the header language switch, landing SEO and the calculator/JSON-LD contract.
