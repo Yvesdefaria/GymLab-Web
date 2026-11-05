@@ -114,6 +114,10 @@ Rewrite the archive copy so it answers what people search, without changing a si
 - **Preserve**: the routines, sets, reps, exercises, order, warnings and disclaimers. The copy
   changes the wording, not the training advice.
 - **Never invent**: results, testimonials, prices, ratings, studies, dates or medical claims.
+- **Before editing**: load the `copy-editing` skill and read `.agents/product-marketing.md` (brand
+  voice, words to avoid, proof). Run the seven sweeps and the AI-tell check: no rhetorical negation
+  lists, no redundant colon reveals, at most 1–2 em dashes per page. `copywriting` is for new copy;
+  the SEO rules live in this contract.
 
 ## 7. Bilingual
 
@@ -163,7 +167,8 @@ npm run check:i18n
 
 ## 11. Checklist for a new page
 
-1. Pick the row in `odd/tasks/content-pages.md`; read its `.md` and frontmatter in the archive.
+1. Pick the row in `odd/tasks/content-pages.md`; read its `.md` and frontmatter in the archive. Load the
+   `copy-editing` skill and read `.agents/product-marketing.md` before writing.
 2. Write `title`, `description`, `h1`, `lead` with the primary keyword (sections 6).
 3. Choose the hero: public domain/CC0, vendor it, write `heroAlt` and `heroCredit`.
 4. Copy the body; remove the first paragraph (it becomes `lead`).

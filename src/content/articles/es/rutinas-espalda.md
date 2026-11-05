@@ -10,7 +10,7 @@ heroAlt: "Soldado realizando un peso muerto en un gimnasio"
 heroCredit: "Wikimedia Commons · U.S. Army / Spc. Micah Wilson · dominio público"
 alternate: "/en/back-routines/"
 updated: "2026-11-05"
-lead: "Las **rutinas de espalda** son, junto al día de piernas, los entrenamientos más exigentes. La espalda es un **grupo muscular** grande y necesita un trabajo planificado para movilizar y estimular todos sus músculos."
+lead: "Las **rutinas de espalda** son, con permiso del día de piernas, los entrenamientos más exigentes. La espalda es un **grupo muscular** grande y necesita un trabajo planificado para movilizar y estimular todos sus músculos."
 tags: ["Amplitud", "Densidad", "Fuerza", "Definición"]
 meta: "Guía · 11 rutinas"
 ---

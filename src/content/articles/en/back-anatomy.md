@@ -1,7 +1,7 @@
 ---
 lang: en
 title: "Back anatomy: muscles and how to train them"
-description: "Learn the muscles of the back —lats, rhomboids, traps and erectors— and how to train them for width and thickness with the right back exercises and grips."
+description: "Learn the muscles of the back (lats, rhomboids, traps and erectors) and how to train them for width and thickness with the right back exercises and grips."
 h1: "Back anatomy"
 block: "Training"
 section: "Back Training"
@@ -10,7 +10,7 @@ heroAlt: "Latissimus dorsi highlighted in red in an anatomy plate of the back"
 heroCredit: "Wikimedia Commons · Henry Vandyke Carter / Mikael Häggström · public domain"
 alternate: "/es/anatomia-de-la-espalda/"
 updated: "2026-11-05"
-lead: "The main **muscles** of the back are the **latissimus dorsi** —the largest, often called the lats—, the teres major, the middle and lower traps, the **rhomboids** and the **erector spinae**."
+lead: "The main **muscles** of the back are the **latissimus dorsi** (the largest, often called the lats), the teres major, the middle and lower traps, the **rhomboids** and the **erector spinae**."
 tags: ["Anatomy", "Width", "Thickness", "Grips"]
 meta: "Guide · 5 muscles"
 ---
@@ -28,7 +28,7 @@ The simplest way to classify back exercises is by what they add: **width** or **
 
 **Pull-ups** and **wide pulldowns** emphasise the latissimus dorsi and the teres major, so they are ideal for building width.
 
-**Rows**, although they also stimulate the lats, work the central muscles more —the rhomboids and the middle and lower traps— and add **thickness**.
+**Rows**, although they also stimulate the lats, work the central muscles more (the rhomboids and the middle and lower traps) and add **thickness**.
 
 Every back session should include both **pull-ups and pulldowns**, and **rows**.
 
@@ -38,7 +38,7 @@ You can find the specific exercises in [back exercises](/en/back-exercises/) and
 
 You can target areas of the lats with specific exercises or by changing hand position on similar movements.
 
-With a **wide overhand grip** —palms down, hands wider than the shoulders— on pull-ups and pulldowns, you emphasise the lats and the teres major. With a **narrow underhand grip** —hands closer than the shoulders— or a **neutral grip** —palms facing each other—, you train the lower lats more.
+With a **wide overhand grip** (palms down, hands wider than the shoulders) on pull-ups and pulldowns, you emphasise the lats and the teres major. With a **narrow underhand grip** (hands closer than the shoulders) or a **neutral grip** (palms facing each other), you train the lower lats more.
 
 If you mainly want width, use wide grips.
 
@@ -48,4 +48,4 @@ Rows work the same way (cable row or barbell row): with a wide grip and pulling 
 
 The lower back, or lumbar region, is trained with extension exercises that isolate the erector spinae and with deadlifts.
 
-There is no need to emphasise specific areas of the lumbar region: it is unnecessary.
+Emphasising specific areas of the lumbar region is unnecessary.

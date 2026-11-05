@@ -18,7 +18,7 @@ Los **ejercicios de gimnasio** como las dominadas, los jalones y el remo, trabaj
 
 ## Cómo elegir tus ejercicios de espalda
 
-Los dos tipos principales de ejercicios de espalda son los **jalones** o las **dominadas** —en la práctica, el mismo movimiento de tracción vertical— y el **remo**.
+Los dos tipos principales de ejercicios de espalda son los **jalones** o las **dominadas** (en la práctica, el mismo movimiento de tracción vertical) y el **remo**.
 
 Las dominadas y los jalones desarrollan sobre todo la **anchura** de la espalda, porque inciden en las porciones externas del dorsal ancho. El remo es ideal para crear **densidad**: trabaja la parte media de la espalda, los romboides y la porción media del trapecio.
 
@@ -28,7 +28,7 @@ Para lograr simetría y equilibrio en la espalda es fundamental variar agarres y
 
 ## Los 10 mejores ejercicios de espalda
 
-Esta es una selección de los mejores ejercicios de espalda: los más eficaces para desarrollarla después de casi veinte años de experiencia en el gimnasio.
+Esta es una selección de los mejores ejercicios de espalda: los más eficaces para desarrollarla, a mi juicio, después de casi veinte años de experiencia en el gimnasio.
 
 ### Peso muerto con barra
 
@@ -58,7 +58,7 @@ Mantén la cabeza y el pecho arriba y lleva la barra hacia la parte inferior de 
 
 Este **ejercicio** tiene la ventaja de que el agarre es estrecho, el peso está cerca del cuerpo y los brazos trabajan por separado (entrenamiento unilateral), lo que mejora la eficiencia neuromuscular.
 
-No te centres en el peso: céntrate en ejecutar bien el ejercicio y en notar los dorsales. Por ejemplo, **Lee Haney** no solía usar más de 35 kilos en este ejercicio. Si usas 68 kilos y tu forma es la de un hombre arrancando un cortacésped, conviene preguntarse qué pretendes conseguir.
+No te centres en el peso: céntrate en ejecutar bien el ejercicio y en notar los dorsales. Por ejemplo, **Lee Haney** no solía usar más de 35 kilos en este ejercicio. Si usas 68 kilos y tu forma es la de un hombre arrancando una cortadora de césped, conviene preguntarse qué pretendes conseguir.
 
 ### Remo con barra T
 

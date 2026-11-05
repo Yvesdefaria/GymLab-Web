@@ -18,7 +18,7 @@ meta: "Guide · 10 exercises"
 
 ## How to choose your back exercises
 
-The two main types of back exercise are **pulldowns** or **pull-ups** — in practice, the same vertical pull — and **rows**.
+The two main types of back exercise are **pulldowns** or **pull-ups** (in practice, the same vertical pull) and **rows**.
 
 Pull-ups and pulldowns mainly build **width** because they target the outer lats. Rows are ideal for **density**: they work the mid-back, the rhomboids and the middle traps.
 
@@ -28,7 +28,7 @@ For symmetry and balance, vary handles and grips. If the back lacks width, use a
 
 ## The 10 best back exercises
 
-This is a selection of the best back exercises: the most effective for building the back after almost twenty years of gym experience.
+This is a selection of the best back exercises: the most effective for building the back, in my view, after almost twenty years of gym experience.
 
 ### Barbell deadlift
 

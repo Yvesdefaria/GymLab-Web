@@ -1,7 +1,7 @@
 ---
 lang: es
 title: "Anatomía de la espalda: músculos y cómo entrenarlos"
-description: "Conoce los músculos de la espalda —dorsal ancho, romboides, trapecio y erectores— y cómo entrenarlos para ganar anchura y grosor con los agarres correctos."
+description: "Conoce los músculos de la espalda (dorsal ancho, romboides, trapecio y erectores) y cómo entrenarlos para ganar anchura y grosor con los agarres correctos."
 h1: "Anatomía de la espalda"
 block: "Entrenamiento"
 section: "Entrenamiento de la Espalda"
@@ -10,7 +10,7 @@ heroAlt: "Dorsal ancho resaltado en rojo en una lámina de anatomía de la espal
 heroCredit: "Wikimedia Commons · Henry Vandyke Carter / Mikael Häggström · dominio público"
 alternate: "/en/back-anatomy/"
 updated: "2026-11-05"
-lead: "Los **músculos** principales de la espalda son el **dorsal ancho** —el más grande, conocido como dorsales—, el redondo mayor, la parte media e inferior del trapecio, el **romboides** y el **erector de la columna**."
+lead: "Los **músculos** principales de la espalda son el **dorsal ancho** (el más grande, conocido como dorsales), el redondo mayor, la parte media e inferior del trapecio, el **romboides** y el **erector de la columna**."
 tags: ["Anatomía", "Anchura", "Grosor", "Agarres"]
 meta: "Guía · 5 músculos"
 ---
@@ -28,7 +28,7 @@ La forma más simple de clasificar los ejercicios de espalda es separarlos por l
 
 Las **dominadas** y los **jalones abiertos** hacen énfasis en el dorsal ancho y el redondo mayor, así que son ideales para crear anchura.
 
-Los ejercicios de **remo**, aunque también estimulan el dorsal ancho, inciden más en los músculos centrales —romboides y porción media e inferior del trapecio— y añaden **grosor**.
+Los ejercicios de **remo**, aunque también estimulan el dorsal ancho, inciden más en los músculos centrales (romboides y porción media e inferior del trapecio) y añaden **grosor**.
 
 Cada sesión de espalda debería incluir movimientos de **jalones y dominadas**, y también de **remo**.
 
@@ -38,7 +38,7 @@ Tienes los ejercicios concretos en [ejercicios de espalda](/es/ejercicios-espald
 
 Puedes trabajar zonas del dorsal ancho con ejercicios específicos o cambiando la posición de las manos en movimientos similares.
 
-Con un **agarre prono y amplio** —palmas hacia abajo, manos más separadas que los hombros— en jalones y dominadas, haces más énfasis en el dorsal ancho y el redondo mayor. Con un **agarre supino estrecho** —manos más juntas que los hombros— o un **agarre neutro** —palmas enfrentadas—, entrenas más la parte inferior del dorsal ancho.
+Con un **agarre prono y amplio** (palmas hacia abajo, manos más separadas que los hombros) en jalones y dominadas, haces más énfasis en el dorsal ancho y el redondo mayor. Con un **agarre supino estrecho** (manos más juntas que los hombros) o un **agarre neutro** (palmas enfrentadas), entrenas más la parte inferior del dorsal ancho.
 
 Si quieres ganar sobre todo anchura, usa agarres amplios.
 
@@ -48,4 +48,4 @@ También en el remo (remo en polea o remo con barra): con un agarre ancho y tira
 
 La espalda baja, o zona lumbar, se trabaja con ejercicios de extensión que aíslan los erectores de la columna y con pesos muertos.
 
-No hace falta enfatizar zonas específicas de la región lumbar: es innecesario.
+Enfatizar zonas específicas de la región lumbar es innecesario.
