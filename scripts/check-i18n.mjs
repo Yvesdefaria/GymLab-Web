@@ -111,6 +111,26 @@ const PAGES = [
   ['en', '/en/inverted-row/'],
   ['es', '/es/remo-maquina/'],
   ['en', '/en/machine-row/'],
+  ['es', '/es/remo-multipower/'],
+  ['en', '/en/smith-machine-row/'],
+  ['es', '/es/superserie-de-espalda-para-terminar-tu-rutina/'],
+  ['en', '/en/back-superset-finisher/'],
+  ['es', '/es/plantilla-entrenamiento/'],
+  ['en', '/en/workout-template/'],
+  ['es', '/es/prueba-flexibilidad/'],
+  ['en', '/en/flexibility-test/'],
+  ['es', '/es/sentadilla-sin-lesiones/'],
+  ['en', '/en/squat-safety/'],
+  ['es', '/es/lo-que-no-hay-que-hacer-para-ganar-musculo/'],
+  ['en', '/en/muscle-building-mistakes/'],
+  ['es', '/es/frecuencia-entrenar-cada-musculo/'],
+  ['en', '/en/training-frequency/'],
+  ['es', '/es/mentiras-del-culturismo-que-os-impediran-progresar/'],
+  ['en', '/en/bodybuilding-myths/'],
+  ['es', '/es/ganar-masa-muscular/'],
+  ['en', '/en/build-muscle/'],
+  ['es', '/es/cross-training/'],
+  ['en', '/en/cross-training/'],
 ];
 
 // Content routes, keyed by a stable id with the slug each locale publishes. The
@@ -217,6 +237,28 @@ const ROUTES = {
   },
   invertedRow: { es: '/remo-invertido', en: '/inverted-row' },
   machineRow: { es: '/remo-maquina', en: '/machine-row' },
+  smithMachineRow: { es: '/remo-multipower', en: '/smith-machine-row' },
+  backSupersetFinisher: {
+    es: '/superserie-de-espalda-para-terminar-tu-rutina',
+    en: '/back-superset-finisher',
+  },
+  workoutTemplate: { es: '/plantilla-entrenamiento', en: '/workout-template' },
+  flexibilityTest: { es: '/prueba-flexibilidad', en: '/flexibility-test' },
+  squatSafety: { es: '/sentadilla-sin-lesiones', en: '/squat-safety' },
+  muscleBuildingMistakes: {
+    es: '/lo-que-no-hay-que-hacer-para-ganar-musculo',
+    en: '/muscle-building-mistakes',
+  },
+  trainingFrequency: {
+    es: '/frecuencia-entrenar-cada-musculo',
+    en: '/training-frequency',
+  },
+  bodybuildingMyths: {
+    es: '/mentiras-del-culturismo-que-os-impediran-progresar',
+    en: '/bodybuilding-myths',
+  },
+  buildMuscle: { es: '/ganar-masa-muscular', en: '/build-muscle' },
+  crossTraining: { es: '/cross-training', en: '/cross-training' },
 };
 
 const routeId = (path) => {

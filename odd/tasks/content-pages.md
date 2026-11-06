@@ -9,18 +9,18 @@ Legend: `ES` = Spanish published, `EN` = English published.
 
 ## Progress
 
-- **Built: 46 / 792** (ES 46, EN 46).
-- Last batch: 10 pages, from `/buenos-dias-barra-de-pie/` to `/remo-maquina/`.
+- **Built: 56 / 792** (ES 56, EN 56).
+- Last batch: 10 pages, from `/remo-multipower/` to `/cross-training/`.
 
 | Block | Articles | Built |
 | --- | ---: | ---: |
-| Entrenamiento | 222 | 9 |
-| Por Músculo | 80 | 4 |
+| Entrenamiento | 222 | 17 |
+| Por Músculo | 80 | 5 |
 | Rutinas | 80 | 0 |
-| Ejercicios | 196 | 33 |
+| Ejercicios | 196 | 34 |
 | Nutrición | 191 | 0 |
 | Mujer Fitness | 23 | 0 |
-| **Total** | **792** | **46** |
+| **Total** | **792** | **56** |
 
 ## Copy gate (mandatory before ticking ES/EN)
 
@@ -81,28 +81,38 @@ Legend: `ES` = Spanish published, `EN` = English published.
 | `remo-en-polea-a-una-mano-de-pie` | yes | yes | yes | 0 em dashes | pass |
 | `remo-invertido` | yes | yes | yes | 0 em dashes | pass |
 | `remo-maquina` | yes | yes | yes | 0 em dashes | pass |
+| `remo-multipower` | yes | yes | yes | 0 em dashes | pass |
+| `superserie-de-espalda-para-terminar-tu-rutina` | yes | yes | yes | 0 em dashes | pass |
+| `plantilla-entrenamiento` | yes | yes | yes | 0 em dashes | pass |
+| `prueba-flexibilidad` | yes | yes | yes | 0 em dashes | pass |
+| `sentadilla-sin-lesiones` | yes | yes | yes | 0 em dashes | pass |
+| `lo-que-no-hay-que-hacer-para-ganar-musculo` | yes | yes | yes | 0 em dashes | pass |
+| `frecuencia-entrenar-cada-musculo` | yes | yes | yes | 0 em dashes | pass |
+| `mentiras-del-culturismo-que-os-impediran-progresar` | yes | yes | yes | 0 em dashes | pass |
+| `ganar-masa-muscular` | yes | yes | yes | 0 em dashes | pass |
+| `cross-training` | yes | yes | yes | 0 em dashes | pass |
 
-## Resume (2026-11-05)
+## Resume (2026-11-06)
 
-- Built: **46/792**; **46 unique heroes**; **pushed 2026-11-05**.
+- Built: **56/792**; **56 unique heroes**; **batch 5 local (not pushed)**.
+- The previous 46 pages are live; this batch waits for review.
 - Full handoff: `odd/tasks/content-library-session.md`.
-- Next: `/remo-multipower/`, `/superserie-de-espalda-para-terminar-tu-rutina/`, then the first
-  unchecked row.
-- YMYL: `/ejercicios-dolor-de-espalda/` needs a medical disclaimer and a careful pass.
+- Next: `/ejercicios-dolor-de-espalda/` (YMYL) and the first unchecked row
+  (`/beneficios-de-contratar-un-entrenador-personal-online/`).
 - Verify with `npm run verify`; review with `npm run dev` at `http://localhost:4321`.
 
 ## Entrenamiento (222)
 
 ### Musculación (84)
 
-- [ ] ES · [ ] EN — `/plantilla-entrenamiento/` — Plantilla de entrenamiento (PDF y Fotos) \| Las Mejores de 2026
-- [ ] ES · [ ] EN — `/prueba-flexibilidad/` — Prueba de Flexibilidad \| ¡Descubre si eres elástico!
-- [ ] ES · [ ] EN — `/sentadilla-sin-lesiones/` — ¿Es lesiva la sentadilla?
-- [ ] ES · [ ] EN — `/lo-que-no-hay-que-hacer-para-ganar-musculo/` — Lo que NO debes hacer para aumentar masa muscular
-- [ ] ES · [ ] EN — `/frecuencia-entrenar-cada-musculo/` — Con que frecuencia debes entrenar cada músculo
-- [ ] ES · [ ] EN — `/mentiras-del-culturismo-que-os-impediran-progresar/` — Mentiras del culturismo que frenan tu progreso
-- [ ] ES · [ ] EN — `/ganar-masa-muscular/` — Como Ganar Masa Muscular (Guía Completa 2026)
-- [ ] ES · [ ] EN — `/cross-training/` — Cross Training \| ¡Descubre que es y sus enormes beneficios!
+- [x] ES · [x] EN — `/plantilla-entrenamiento/` — Plantilla de entrenamiento (PDF y Fotos) \| Las Mejores de 2026
+- [x] ES · [x] EN — `/prueba-flexibilidad/` — Prueba de Flexibilidad \| ¡Descubre si eres elástico!
+- [x] ES · [x] EN — `/sentadilla-sin-lesiones/` — ¿Es lesiva la sentadilla?
+- [x] ES · [x] EN — `/lo-que-no-hay-que-hacer-para-ganar-musculo/` — Lo que NO debes hacer para aumentar masa muscular
+- [x] ES · [x] EN — `/frecuencia-entrenar-cada-musculo/` — Con que frecuencia debes entrenar cada músculo
+- [x] ES · [x] EN — `/mentiras-del-culturismo-que-os-impediran-progresar/` — Mentiras del culturismo que frenan tu progreso
+- [x] ES · [x] EN — `/ganar-masa-muscular/` — Como Ganar Masa Muscular (Guía Completa 2026)
+- [x] ES · [x] EN — `/cross-training/` — Cross Training \| ¡Descubre que es y sus enormes beneficios!
 - [ ] ES · [ ] EN — `/beneficios-de-contratar-un-entrenador-personal-online/` — Beneficios de contratar un Entrenador Personal Online
 - [ ] ES · [ ] EN — `/entrenamiento-personalizado-en-casa-ventajas-reales/` — Entrenamiento personalizado a domicilio: Resultados sin gimnasio
 - [ ] ES · [ ] EN — `/ejercicios-maxima-congestion-muscular/` — Ejercicios de máxima congestión muscular
@@ -461,7 +471,7 @@ Legend: `ES` = Spanish published, `EN` = English published.
 
 ### Espalda (1)
 
-- [ ] ES · [ ] EN — `/superserie-de-espalda-para-terminar-tu-rutina/` — La mejor superserie para terminar tu rutina de espalda
+- [x] ES · [x] EN — `/superserie-de-espalda-para-terminar-tu-rutina/` — La mejor superserie para terminar tu rutina de espalda
 
 ## Rutinas (80)
 
@@ -736,7 +746,7 @@ Legend: `ES` = Spanish published, `EN` = English published.
 - [x] ES · [x] EN — `/remo-barra-agarre-invertido/` — Remo con barra agarre invertido
 - [x] ES · [x] EN — `/remo-barra/` — Remo con barra, ¿El MEJOR ejercicio para espalda en 2025?
 - [x] ES · [x] EN — `/remo-polea-sentado/` — Remo en polea sentado (Remo Gironda) \| Efectivo 100%
-- [ ] ES · [ ] EN — `/remo-multipower/` — Remo en multipower
+- [x] ES · [x] EN — `/remo-multipower/` — Remo en multipower
 - [x] ES · [x] EN — `/remo-maquina/` — Remo en máquina \| ¡Densidad para tus dorsales!
 - [x] ES · [x] EN — `/remo-mancuerna-una-mano/` — Remo con mancuerna \| Desarrolla músculo en la espalda
 - [x] ES · [x] EN — `/dominadas-tras-nuca/` — Dominadas tras nuca

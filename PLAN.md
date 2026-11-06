@@ -4,7 +4,7 @@ Handoff document to continue this project in a new session. Canonical project ru
 `AGENTS.md`. Closed work and the measurement baselines are archived in `COMPLETED.md`; task-by-task
 evidence lives in `odd/tasks/*.md` and in Engram (project `webgymlab`).
 
-Last updated: 2026-11-05.
+Last updated: 2026-11-06.
 
 ## Where we are
 
@@ -12,31 +12,31 @@ Last updated: 2026-11-05.
   TypeScript strict, fully static. Languages `es` (default) and `en-GB`, both under a locale prefix.
 - Production is **live** at `https://gymlab.dev`, served by the Worker `gymlab-web` with static assets.
   It is not Cloudflare Pages. Deploy with `npx wrangler deploy`.
-- Production is live with the 2026-11-05 deploy (`0b3c6b4..a048f02`): **104 sitemap URLs** and
-  **108 pages**. `npm run check:i18n` green (**1,767 assertions**) and `npm run check:copy` green
-  (**2,346**).
+- Production is live with the 2026-11-05 deploy (`a048f02`): **104 sitemap URLs** and **108 pages**.
+- The local branch has batch 5 ready for review: **128 pages**, **124 sitemap URLs**,
+  `check:copy` **2,856/2,856** and `check:i18n` **2,077/2,077**.
 - `app.gymlab.dev` is `noindex` with a real `robots.txt`.
 - The landing, the three calculators, the 404 and the legal pages all ship in both locales.
 - Measurement and the SQL recipe: see "Reading analytics" below and `COMPLETED.md` Appendix B.
 
-## Content library — 46 / 792 (2026-11-05)
+## Content library — 56 / 792 (2026-11-06)
 
-- **46 bilingual pages** (ES 46, EN 46), **46 unique heroes**, 0 duplicates. Blocks: Entrenamiento 9,
-  Por Músculo 4, Ejercicios 33.
-- **Pushed 2026-11-05** (`0b3c6b4..a048f02`). Production is live with **104 sitemap URLs**; the
-  first article now ships the new copy, the credit in the alt and the correct language switch.
-- Gates: `npm run verify` = `check:copy` **2,346/2,346** + build **108 pages** + `check:i18n`
-  **1,767/1,767**.
+- **56 bilingual pages** (ES 56, EN 56), **56 unique heroes**, 0 duplicates. Blocks: Entrenamiento 17,
+  Por Músculo 5, Ejercicios 34.
+- **Batch 5 is local (not pushed).** The previous 46 pages are live (`a048f02`; 104 sitemap URLs).
+  The local build has **128 pages** and **124 sitemap URLs**.
+- Gates: `npm run verify` = `check:copy` **2,856/2,856** + build **128 pages** + `check:i18n`
+  **2,077/2,077**.
 - Docs: `odd/tasks/content-library-session.md` (start here next session),
   `odd/tasks/content-pages.md` (per-page checklist + resume), `odd/tasks/guides-page-contract.md`
   (the page contract and copy gate).
-- **Next 10:** finish the back cluster with `/remo-multipower/` and
-  `/superserie-de-espalda-para-terminar-tu-rutina/`, then continue with the first unchecked row in
-  `content-pages.md`. `/ejercicios-dolor-de-espalda/` is pending a medical disclaimer and a YMYL pass.
-- **Push done 2026-11-05.** Future pushes deploy via Workers Builds; run `npm run verify` before them.
-- Image rule: one unique hero per page; `check:copy` fails on a duplicate. Some good-morning images
-  are approximations, and there is no free one-arm lat pulldown photo; the `alt` explains the shot.
-- Engram mirror: saved 2026-11-05 (memory id 53, session summary id 54; project `webgymlab`).
+- **Next 10:** `/ejercicios-dolor-de-espalda/` (medical disclaimer + YMYL pass) and the next
+  unchecked Musculación rows, starting with `/beneficios-de-contratar-un-entrenador-personal-online/`.
+- **Push is a human decision.** Batch 5 deploys via Workers Builds on push; run `npm run verify` first.
+- Image rule: one unique hero per page; `check:copy` fails on a duplicate. Batch 5 heroes are
+  Wikimedia Commons (CC0/CC BY/CC BY-SA/public domain); the `alt` includes the credit.
+- Engram memory id 53 / session summary id 54 cover the 46-page push; batch 5 is recorded in this
+  handoff and the checklist.
 
 ## Deployed on 2026-10-29
 

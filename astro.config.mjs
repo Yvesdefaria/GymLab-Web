@@ -61,6 +61,16 @@ const ROUTE_PAIRS = [
   ['/remo-en-polea-a-una-mano-de-pie', '/one-arm-cable-row'],
   ['/remo-invertido', '/inverted-row'],
   ['/remo-maquina', '/machine-row'],
+  ['/remo-multipower', '/smith-machine-row'],
+  ['/superserie-de-espalda-para-terminar-tu-rutina', '/back-superset-finisher'],
+  ['/plantilla-entrenamiento', '/workout-template'],
+  ['/prueba-flexibilidad', '/flexibility-test'],
+  ['/sentadilla-sin-lesiones', '/squat-safety'],
+  ['/lo-que-no-hay-que-hacer-para-ganar-musculo', '/muscle-building-mistakes'],
+  ['/frecuencia-entrenar-cada-musculo', '/training-frequency'],
+  ['/mentiras-del-culturismo-que-os-impediran-progresar', '/bodybuilding-myths'],
+  ['/ganar-masa-muscular', '/build-muscle'],
+  ['/cross-training', '/cross-training'],
 ];
 
 const pairFor = (pathname) => {

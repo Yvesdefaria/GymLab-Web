@@ -1,6 +1,6 @@
 # Content library — session handoff
 
-Last updated: 2026-11-05. Read this first next session.
+Last updated: 2026-11-06. Read this first next session.
 
 - Per-page record: `odd/tasks/content-pages.md`
 - Page contract and copy gate: `odd/tasks/guides-page-contract.md`
@@ -9,42 +9,45 @@ Last updated: 2026-11-05. Read this first next session.
 
 ## State
 
-- **46 / 792 bilingual pages** (ES 46, EN 46).
-- Blocks: Entrenamiento **9**, Por Músculo **4**, Ejercicios **33**.
-- **46 unique heroes, 0 duplicates.**
-- **Pushed 2026-11-05** (`0b3c6b4..a048f02`). Production is live with **108 pages** and
-  **104 sitemap URLs**.
-- The live `/es/rutinas-espalda/` now has the new copy, the credit in the alt and the correct
+- **56 / 792 bilingual pages** (ES 56, EN 56).
+- Blocks: Entrenamiento **17**, Por Músculo **5**, Ejercicios **34**.
+- **56 unique heroes, 0 duplicates.**
+- **Batch 5 is local (not pushed).** The previous 46 pages are live (`a048f02`; 108 pages and
+  **104 sitemap URLs**). The local build has **128 pages** and **124 sitemap URLs**.
+- The live `/es/rutinas-espalda/` has the new copy, the credit in the alt and the correct
   language switch.
 
 ## Gates
 
 ```powershell
-npm run check:copy   # 2,346/2,346
-npm run build        # 108 pages
-npm run check:i18n   # 1,767/1,767
+npm run check:copy   # 2,856/2,856
+npm run build        # 128 pages
+npm run check:i18n   # 2,077/2,077
 npm run verify       # all three, in that order
 npm run dev          # http://localhost:4321
 ```
 
-The dev/preview server was stopped by the 2026-11-05 restart. Start it with `npm run dev` before
-reviewing.
+Start the dev server with `npm run dev` before reviewing. The 128-page build and the 20 new URLs
+are local until the owner reviews and decides to push.
 
 ## What is built
 
 - **Entrenamiento de la Espalda (9):** rutinas, anatomía, elegir dominadas, mancuernas, consejos,
   espalda baja, agarres, cómo ampliar dorsales, mejores jalones para la parte inferior.
-- **Ejercicios de Espalda (33):** the exercise hub plus the pull-up, lat-pulldown, row, deadlift,
-  good-morning, pullover and back-extension families.
-- **Por Músculo / Rutinas de Espalda (4):** amplitud/densidad, 15 minutos, dorsales grandes and the
-  advanced pull-up programme.
+- **Ejercicios de Espalda (34):** the exercise hub plus the pull-up, lat-pulldown, row, deadlift,
+  good-morning, pullover and back-extension families, including the Smith machine row.
+- **Por Músculo / Rutinas de Espalda (5):** amplitud/densidad, 15 minutos, dorsales grandes, the
+  advanced pull-up programme and the back superset finisher.
+- **Musculación (8):** plantilla, prueba de flexibilidad, sentadilla, errores para ganar músculo,
+  frecuencia, mentiras del culturismo, ganar masa muscular and cross training.
 
 ## Next 10
 
-1. `/remo-multipower/` — the last unchecked page in `Ejercicios de Espalda`.
-2. `/superserie-de-espalda-para-terminar-tu-rutina/` — the last back-cluster page.
-3. Then continue with the first unchecked row in `content-pages.md` (currently the `Musculación`
-   block) until the batch reaches 10.
+1. `/ejercicios-dolor-de-espalda/` — YMYL; add a medical disclaimer and do a careful pass before
+   batching it.
+2. Continue with the next unchecked `Musculación` rows, starting with
+   `/beneficios-de-contratar-un-entrenador-personal-online/`.
+3. Reach 10 pages with the same copy, unique-hero and gate flow.
 
 Do not batch `/ejercicios-dolor-de-espalda/` without a medical disclaimer and a YMYL pass.
 
@@ -68,13 +71,17 @@ Do not batch `/ejercicios-dolor-de-espalda/` without a medical disclaimer and a 
 - Known approximations: the three good-morning pages use a Smith squat, a seated row and a deadlift;
   the one-arm lat pulldown uses a lat pulldown photo because no free one-arm pulldown photo exists.
   The `alt` describes what is actually shown.
+- Batch 5 heroes: Wikimedia Commons (CC0, CC BY, CC BY-SA, public domain), one per page; credits in
+  the `alt`.
 - The image pipeline (`<Picture>`, AVIF/WebP, srcset) is still pending.
 
 ## Pending decisions
 
-- **Push done 2026-11-05.** Future pushes deploy through Workers Builds; run `npm run verify` before
-  each one.
+- **Batch 5 is local.** Review the 20 URLs; push only on the owner's decision. A push deploys through
+  Workers Builds; run `npm run verify` first.
+- The previous 46 pages are already live.
 - Phase 1: `Article` + `BreadcrumbList` JSON-LD, `og:type=article`, dates, per-article OG image.
 - Phase 2: guides hub, real menu hrefs, internal links from the landing and hubs.
-- Phase 6: read Search Console on 2026-11-19 before scaling beyond the 46-page pilot.
-- Engram mirror saved 2026-11-05 (memory id 53, session summary id 54; project `webgymlab`).
+- Phase 6: read Search Console on 2026-11-19 before scaling beyond the 56-page pilot.
+- Engram memory id 53 / session summary id 54 cover the 46-page push; batch 5 is recorded in this
+  handoff and the checklist.
