@@ -9,18 +9,19 @@ Legend: `ES` = Spanish published, `EN` = English published.
 
 ## Progress
 
-- **Built: 56 / 792** (ES 56, EN 56).
-- Last batch: 10 pages, from `/remo-multipower/` to `/cross-training/`.
+- **Built: 66 / 792** (ES 66, EN 66).
+- Last batch: 10 pages, from `/beneficios-de-contratar-un-entrenador-personal-online/` to
+  `/guia-musculacion-principiantes/`.
 
 | Block | Articles | Built |
 | --- | ---: | ---: |
-| Entrenamiento | 222 | 17 |
+| Entrenamiento | 222 | 27 |
 | Por Músculo | 80 | 5 |
 | Rutinas | 80 | 0 |
 | Ejercicios | 196 | 34 |
 | Nutrición | 191 | 0 |
 | Mujer Fitness | 23 | 0 |
-| **Total** | **792** | **56** |
+| **Total** | **792** | **66** |
 
 ## Copy gate (mandatory before ticking ES/EN)
 
@@ -91,14 +92,24 @@ Legend: `ES` = Spanish published, `EN` = English published.
 | `mentiras-del-culturismo-que-os-impediran-progresar` | yes | yes | yes | 0 em dashes | pass |
 | `ganar-masa-muscular` | yes | yes | yes | 0 em dashes | pass |
 | `cross-training` | yes | yes | yes | 0 em dashes | pass |
+| `beneficios-de-contratar-un-entrenador-personal-online` | yes | yes | yes | 0 em dashes | pass |
+| `entrenamiento-personalizado-en-casa-ventajas-reales` | yes | yes | yes | 0 em dashes | pass |
+| `ejercicios-maxima-congestion-muscular` | yes | yes | yes | 0 em dashes | pass |
+| `ejercicios-gimnasio` | yes | yes | yes | 0 em dashes | pass |
+| `motivos-por-los-que-tus-musculos-no-crecen` | yes | yes | yes | 0 em dashes | pass |
+| `ejercicios-con-bandas-de-resistencia-tubulares` | yes | yes | yes | 0 em dashes | pass |
+| `como-ser-constante-en-el-entrenamiento` | yes | yes | yes | 0 em dashes | pass |
+| `principio-adaptacion-sobrecarga-progresiva` | yes | yes | yes | 0 em dashes | pass |
+| `distribucion-rutina-entrenamiento` | yes | yes | yes | 0 em dashes | pass |
+| `guia-musculacion-principiantes` | yes | yes | yes | 0 em dashes | pass |
 
 ## Resume (2026-11-06)
 
-- Built: **56/792**; **56 unique heroes**; **batch 5 pushed 2026-11-06**.
-- All 56 pages are live; production has 128 pages and 124 sitemap URLs.
+- Built: **66/792**; **66 unique heroes**; **batch 6 local (not pushed)**.
+- The previous 56 pages are live; this batch waits for review.
 - Full handoff: `odd/tasks/content-library-session.md`.
 - Next: `/ejercicios-dolor-de-espalda/` (YMYL) and the first unchecked row
-  (`/beneficios-de-contratar-un-entrenador-personal-online/`).
+  (`/estiramientos/`).
 - Verify with `npm run verify`; review with `npm run dev` at `http://localhost:4321`.
 
 ## Entrenamiento (222)
@@ -113,16 +124,16 @@ Legend: `ES` = Spanish published, `EN` = English published.
 - [x] ES · [x] EN — `/mentiras-del-culturismo-que-os-impediran-progresar/` — Mentiras del culturismo que frenan tu progreso
 - [x] ES · [x] EN — `/ganar-masa-muscular/` — Como Ganar Masa Muscular (Guía Completa 2026)
 - [x] ES · [x] EN — `/cross-training/` — Cross Training \| ¡Descubre que es y sus enormes beneficios!
-- [ ] ES · [ ] EN — `/beneficios-de-contratar-un-entrenador-personal-online/` — Beneficios de contratar un Entrenador Personal Online
-- [ ] ES · [ ] EN — `/entrenamiento-personalizado-en-casa-ventajas-reales/` — Entrenamiento personalizado a domicilio: Resultados sin gimnasio
-- [ ] ES · [ ] EN — `/ejercicios-maxima-congestion-muscular/` — Ejercicios de máxima congestión muscular
-- [ ] ES · [ ] EN — `/ejercicios-gimnasio/` — Ejercicios de Gimnasio \| Los más efectivos en 2026
-- [ ] ES · [ ] EN — `/motivos-por-los-que-tus-musculos-no-crecen/` — Motivos por los que tus Músculos no crecen \| ¡Soluciónalo!
-- [ ] ES · [ ] EN — `/ejercicios-con-bandas-de-resistencia-tubulares/` — Ejercicios con bandas de resistencia tubulares
-- [ ] ES · [ ] EN — `/como-ser-constante-en-el-entrenamiento/` — Constancia entrenando \| Como ser constante y lograr objetivos
-- [ ] ES · [ ] EN — `/principio-adaptacion-sobrecarga-progresiva/` — Principio de Adaptación a la sobrecarga progresiva
-- [ ] ES · [ ] EN — `/distribucion-rutina-entrenamiento/` — Distribución de la rutina de entrenamiento \| Óptimo en 2026
-- [ ] ES · [ ] EN — `/guia-musculacion-principiantes/` — Guía de Gimnasio y Musculación para principiantes
+- [x] ES · [x] EN — `/beneficios-de-contratar-un-entrenador-personal-online/` — Beneficios de contratar un Entrenador Personal Online
+- [x] ES · [x] EN — `/entrenamiento-personalizado-en-casa-ventajas-reales/` — Entrenamiento personalizado a domicilio: Resultados sin gimnasio
+- [x] ES · [x] EN — `/ejercicios-maxima-congestion-muscular/` — Ejercicios de máxima congestión muscular
+- [x] ES · [x] EN — `/ejercicios-gimnasio/` — Ejercicios de Gimnasio \| Los más efectivos en 2026
+- [x] ES · [x] EN — `/motivos-por-los-que-tus-musculos-no-crecen/` — Motivos por los que tus Músculos no crecen \| ¡Soluciónalo!
+- [x] ES · [x] EN — `/ejercicios-con-bandas-de-resistencia-tubulares/` — Ejercicios con bandas de resistencia tubulares
+- [x] ES · [x] EN — `/como-ser-constante-en-el-entrenamiento/` — Constancia entrenando \| Como ser constante y lograr objetivos
+- [x] ES · [x] EN — `/principio-adaptacion-sobrecarga-progresiva/` — Principio de Adaptación a la sobrecarga progresiva
+- [x] ES · [x] EN — `/distribucion-rutina-entrenamiento/` — Distribución de la rutina de entrenamiento \| Óptimo en 2026
+- [x] ES · [x] EN — `/guia-musculacion-principiantes/` — Guía de Gimnasio y Musculación para principiantes
 - [ ] ES · [ ] EN — `/estiramientos/` — Estiramientos y entrenamiento de la flexibilidad en el gimnasio
 - [ ] ES · [ ] EN — `/circuito-de-estiramientos-para-musculacion/` — Circuito de estiramientos para tu rutina de pesas en el Gym
 - [ ] ES · [ ] EN — `/fallo-muscular/` — Fallo Muscular \| ¿Lo mejor para tus músculos?

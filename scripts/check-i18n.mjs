@@ -131,6 +131,26 @@ const PAGES = [
   ['en', '/en/build-muscle/'],
   ['es', '/es/cross-training/'],
   ['en', '/en/cross-training/'],
+  ['es', '/es/beneficios-de-contratar-un-entrenador-personal-online/'],
+  ['en', '/en/online-personal-trainer-benefits/'],
+  ['es', '/es/entrenamiento-personalizado-en-casa-ventajas-reales/'],
+  ['en', '/en/home-personal-training-benefits/'],
+  ['es', '/es/ejercicios-maxima-congestion-muscular/'],
+  ['en', '/en/maximum-muscle-pump-exercises/'],
+  ['es', '/es/ejercicios-gimnasio/'],
+  ['en', '/en/gym-exercises/'],
+  ['es', '/es/motivos-por-los-que-tus-musculos-no-crecen/'],
+  ['en', '/en/why-muscles-dont-grow/'],
+  ['es', '/es/ejercicios-con-bandas-de-resistencia-tubulares/'],
+  ['en', '/en/resistance-band-exercises/'],
+  ['es', '/es/como-ser-constante-en-el-entrenamiento/'],
+  ['en', '/en/how-to-stay-consistent-working-out/'],
+  ['es', '/es/principio-adaptacion-sobrecarga-progresiva/'],
+  ['en', '/en/progressive-overload-principle/'],
+  ['es', '/es/distribucion-rutina-entrenamiento/'],
+  ['en', '/en/workout-split-guide/'],
+  ['es', '/es/guia-musculacion-principiantes/'],
+  ['en', '/en/beginner-gym-guide/'],
 ];
 
 // Content routes, keyed by a stable id with the slug each locale publishes. The
@@ -259,6 +279,31 @@ const ROUTES = {
   },
   buildMuscle: { es: '/ganar-masa-muscular', en: '/build-muscle' },
   crossTraining: { es: '/cross-training', en: '/cross-training' },
+  onlinePersonalTrainer: {
+    es: '/beneficios-de-contratar-un-entrenador-personal-online',
+    en: '/online-personal-trainer-benefits',
+  },
+  homePersonalTraining: {
+    es: '/entrenamiento-personalizado-en-casa-ventajas-reales',
+    en: '/home-personal-training-benefits',
+  },
+  musclePump: { es: '/ejercicios-maxima-congestion-muscular', en: '/maximum-muscle-pump-exercises' },
+  gymExercises: { es: '/ejercicios-gimnasio', en: '/gym-exercises' },
+  muscleGrowth: { es: '/motivos-por-los-que-tus-musculos-no-crecen', en: '/why-muscles-dont-grow' },
+  resistanceBands: {
+    es: '/ejercicios-con-bandas-de-resistencia-tubulares',
+    en: '/resistance-band-exercises',
+  },
+  trainingConsistency: {
+    es: '/como-ser-constante-en-el-entrenamiento',
+    en: '/how-to-stay-consistent-working-out',
+  },
+  progressiveOverload: {
+    es: '/principio-adaptacion-sobrecarga-progresiva',
+    en: '/progressive-overload-principle',
+  },
+  workoutSplit: { es: '/distribucion-rutina-entrenamiento', en: '/workout-split-guide' },
+  beginnerGuide: { es: '/guia-musculacion-principiantes', en: '/beginner-gym-guide' },
 };
 
 const routeId = (path) => {

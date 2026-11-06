@@ -71,6 +71,16 @@ const ROUTE_PAIRS = [
   ['/mentiras-del-culturismo-que-os-impediran-progresar', '/bodybuilding-myths'],
   ['/ganar-masa-muscular', '/build-muscle'],
   ['/cross-training', '/cross-training'],
+  ['/beneficios-de-contratar-un-entrenador-personal-online', '/online-personal-trainer-benefits'],
+  ['/entrenamiento-personalizado-en-casa-ventajas-reales', '/home-personal-training-benefits'],
+  ['/ejercicios-maxima-congestion-muscular', '/maximum-muscle-pump-exercises'],
+  ['/ejercicios-gimnasio', '/gym-exercises'],
+  ['/motivos-por-los-que-tus-musculos-no-crecen', '/why-muscles-dont-grow'],
+  ['/ejercicios-con-bandas-de-resistencia-tubulares', '/resistance-band-exercises'],
+  ['/como-ser-constante-en-el-entrenamiento', '/how-to-stay-consistent-working-out'],
+  ['/principio-adaptacion-sobrecarga-progresiva', '/progressive-overload-principle'],
+  ['/distribucion-rutina-entrenamiento', '/workout-split-guide'],
+  ['/guia-musculacion-principiantes', '/beginner-gym-guide'],
 ];
 
 const pairFor = (pathname) => {

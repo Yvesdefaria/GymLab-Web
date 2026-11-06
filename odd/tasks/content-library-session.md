@@ -9,26 +9,26 @@ Last updated: 2026-11-06. Read this first next session.
 
 ## State
 
-- **56 / 792 bilingual pages** (ES 56, EN 56).
-- Blocks: Entrenamiento **17**, Por Músculo **5**, Ejercicios **34**.
-- **56 unique heroes, 0 duplicates.**
-- **Batch 5 is live (pushed 2026-11-06, `471635c`).** Production has **128 pages** and
-  **124 sitemap URLs**.
+- **66 / 792 bilingual pages** (ES 66, EN 66).
+- Blocks: Entrenamiento **27**, Por Músculo **5**, Ejercicios **34**.
+- **66 unique heroes, 0 duplicates.**
+- **Batch 6 is local (not pushed).** The previous 56 pages are live (`471635c`; 128 pages and
+  **124 sitemap URLs**). The local build has **148 pages** and **144 sitemap URLs**.
 - The live `/es/rutinas-espalda/` has the new copy, the credit in the alt and the correct
   language switch.
 
 ## Gates
 
 ```powershell
-npm run check:copy   # 2,856/2,856
-npm run build        # 128 pages
-npm run check:i18n   # 2,077/2,077
+npm run check:copy   # 3,366/3,366
+npm run build        # 148 pages
+npm run check:i18n   # 2,387/2,387
 npm run verify       # all three, in that order
 npm run dev          # http://localhost:4321
 ```
 
-Start the dev server with `npm run dev` for local review. The 128-page build and the 20 new URLs are
-also live in production.
+Start the dev server with `npm run dev` for local review. The 148-page build and the 20 new URLs
+are local until the owner reviews and decides to push.
 
 ## What is built
 
@@ -38,15 +38,15 @@ also live in production.
   good-morning, pullover and back-extension families, including the Smith machine row.
 - **Por Músculo / Rutinas de Espalda (5):** amplitud/densidad, 15 minutos, dorsales grandes, the
   advanced pull-up programme and the back superset finisher.
-- **Musculación (8):** plantilla, prueba de flexibilidad, sentadilla, errores para ganar músculo,
-  frecuencia, mentiras del culturismo, ganar masa muscular and cross training.
+- **Musculación (18):** the first eight plus online trainer, home training, maximum pump, gym
+  exercises, muscle-growth reasons, resistance bands, consistency, progressive overload, workout
+  split and the beginner guide.
 
 ## Next 10
 
 1. `/ejercicios-dolor-de-espalda/` — YMYL; add a medical disclaimer and do a careful pass before
    batching it.
-2. Continue with the next unchecked `Musculación` rows, starting with
-   `/beneficios-de-contratar-un-entrenador-personal-online/`.
+2. Continue with the next unchecked `Musculación` rows, starting with `/estiramientos/`.
 3. Reach 10 pages with the same copy, unique-hero and gate flow.
 
 Do not batch `/ejercicios-dolor-de-espalda/` without a medical disclaimer and a YMYL pass.
@@ -77,10 +77,10 @@ Do not batch `/ejercicios-dolor-de-espalda/` without a medical disclaimer and a 
 
 ## Pending decisions
 
-- **Batch 5 pushed 2026-11-06.** Future batches deploy through Workers Builds; run `npm run verify`
-  first and review the batch before pushing.
+- **Batch 6 is local.** Review the 20 URLs; push only on the owner's decision. A push deploys through
+  Workers Builds; run `npm run verify` first.
+- The previous 56 pages are already live.
 - Phase 1: `Article` + `BreadcrumbList` JSON-LD, `og:type=article`, dates, per-article OG image.
 - Phase 2: guides hub, real menu hrefs, internal links from the landing and hubs.
-- Phase 6: read Search Console on 2026-11-19 before scaling beyond the 56-page pilot.
-- Engram memory id 53 / session summary id 54 cover the 46-page push; batch 5 is recorded in this
-  handoff and the checklist.
+- Phase 6: read Search Console on 2026-11-19 before scaling beyond the 66-page pilot.
+- Engram memory id 53 covers through batch 5; batch 6 is recorded in this handoff and the checklist.

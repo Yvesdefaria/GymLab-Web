@@ -13,29 +13,29 @@ Last updated: 2026-11-06.
 - Production is **live** at `https://gymlab.dev`, served by the Worker `gymlab-web` with static assets.
   It is not Cloudflare Pages. Deploy with `npx wrangler deploy`.
 - Production is live with the 2026-11-06 deploy (`471635c`): **124 sitemap URLs** and **128 pages**.
-  `check:copy` **2,856/2,856**, `check:i18n` **2,077/2,077**.
+- The local branch has batch 6 ready for review: **148 pages**, **144 sitemap URLs**,
+  `check:copy` **3,366/3,366** and `check:i18n` **2,387/2,387**.
 - `app.gymlab.dev` is `noindex` with a real `robots.txt`.
 - The landing, the three calculators, the 404 and the legal pages all ship in both locales.
 - Measurement and the SQL recipe: see "Reading analytics" below and `COMPLETED.md` Appendix B.
 
-## Content library — 56 / 792 (2026-11-06)
+## Content library — 66 / 792 (2026-11-06)
 
-- **56 bilingual pages** (ES 56, EN 56), **56 unique heroes**, 0 duplicates. Blocks: Entrenamiento 17,
+- **66 bilingual pages** (ES 66, EN 66), **66 unique heroes**, 0 duplicates. Blocks: Entrenamiento 27,
   Por Músculo 5, Ejercicios 34.
-- **Batch 5 is live (pushed 2026-11-06, `471635c`).** Production has **128 pages** and
-  **124 sitemap URLs**.
-- Gates: `npm run verify` = `check:copy` **2,856/2,856** + build **128 pages** + `check:i18n`
-  **2,077/2,077**.
+- **Batch 6 is local (not pushed).** The previous 56 pages are live (`471635c`; 128 pages and
+  **124 sitemap URLs**). The local build has **148 pages** and **144 sitemap URLs**.
+- Gates: `npm run verify` = `check:copy` **3,366/3,366** + build **148 pages** + `check:i18n`
+  **2,387/2,387**.
 - Docs: `odd/tasks/content-library-session.md` (start here next session),
   `odd/tasks/content-pages.md` (per-page checklist + resume), `odd/tasks/guides-page-contract.md`
   (the page contract and copy gate).
 - **Next 10:** `/ejercicios-dolor-de-espalda/` (medical disclaimer + YMYL pass) and the next
-  unchecked Musculación rows, starting with `/beneficios-de-contratar-un-entrenador-personal-online/`.
-- **Push done 2026-11-06.** Future batches deploy via Workers Builds; run `npm run verify` first.
-- Image rule: one unique hero per page; `check:copy` fails on a duplicate. Batch 5 heroes are
+  unchecked Musculación rows, starting with `/estiramientos/`.
+- **Push is a human decision.** Batch 6 deploys via Workers Builds on push; run `npm run verify` first.
+- Image rule: one unique hero per page; `check:copy` fails on a duplicate. Batches 5 and 6 heroes are
   Wikimedia Commons (CC0/CC BY/CC BY-SA/public domain); the `alt` includes the credit.
-- Engram memory id 53 / session summary id 54 cover the 46-page push; batch 5 is recorded in this
-  handoff and the checklist.
+- Engram memory id 53 covers through batch 5; batch 6 is recorded in this handoff and the checklist.
 
 ## Deployed on 2026-10-29
 
