@@ -94,8 +94,8 @@ Legend: `ES` = Spanish published, `EN` = English published.
 
 ## Resume (2026-11-06)
 
-- Built: **56/792**; **56 unique heroes**; **batch 5 local (not pushed)**.
-- The previous 46 pages are live; this batch waits for review.
+- Built: **56/792**; **56 unique heroes**; **batch 5 pushed 2026-11-06**.
+- All 56 pages are live; production has 128 pages and 124 sitemap URLs.
 - Full handoff: `odd/tasks/content-library-session.md`.
 - Next: `/ejercicios-dolor-de-espalda/` (YMYL) and the first unchecked row
   (`/beneficios-de-contratar-un-entrenador-personal-online/`).

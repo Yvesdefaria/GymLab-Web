@@ -12,9 +12,8 @@ Last updated: 2026-11-06.
   TypeScript strict, fully static. Languages `es` (default) and `en-GB`, both under a locale prefix.
 - Production is **live** at `https://gymlab.dev`, served by the Worker `gymlab-web` with static assets.
   It is not Cloudflare Pages. Deploy with `npx wrangler deploy`.
-- Production is live with the 2026-11-05 deploy (`a048f02`): **104 sitemap URLs** and **108 pages**.
-- The local branch has batch 5 ready for review: **128 pages**, **124 sitemap URLs**,
-  `check:copy` **2,856/2,856** and `check:i18n` **2,077/2,077**.
+- Production is live with the 2026-11-06 deploy (`471635c`): **124 sitemap URLs** and **128 pages**.
+  `check:copy` **2,856/2,856**, `check:i18n` **2,077/2,077**.
 - `app.gymlab.dev` is `noindex` with a real `robots.txt`.
 - The landing, the three calculators, the 404 and the legal pages all ship in both locales.
 - Measurement and the SQL recipe: see "Reading analytics" below and `COMPLETED.md` Appendix B.
@@ -23,8 +22,8 @@ Last updated: 2026-11-06.
 
 - **56 bilingual pages** (ES 56, EN 56), **56 unique heroes**, 0 duplicates. Blocks: Entrenamiento 17,
   Por Músculo 5, Ejercicios 34.
-- **Batch 5 is local (not pushed).** The previous 46 pages are live (`a048f02`; 104 sitemap URLs).
-  The local build has **128 pages** and **124 sitemap URLs**.
+- **Batch 5 is live (pushed 2026-11-06, `471635c`).** Production has **128 pages** and
+  **124 sitemap URLs**.
 - Gates: `npm run verify` = `check:copy` **2,856/2,856** + build **128 pages** + `check:i18n`
   **2,077/2,077**.
 - Docs: `odd/tasks/content-library-session.md` (start here next session),
@@ -32,7 +31,7 @@ Last updated: 2026-11-06.
   (the page contract and copy gate).
 - **Next 10:** `/ejercicios-dolor-de-espalda/` (medical disclaimer + YMYL pass) and the next
   unchecked Musculación rows, starting with `/beneficios-de-contratar-un-entrenador-personal-online/`.
-- **Push is a human decision.** Batch 5 deploys via Workers Builds on push; run `npm run verify` first.
+- **Push done 2026-11-06.** Future batches deploy via Workers Builds; run `npm run verify` first.
 - Image rule: one unique hero per page; `check:copy` fails on a duplicate. Batch 5 heroes are
   Wikimedia Commons (CC0/CC BY/CC BY-SA/public domain); the `alt` includes the credit.
 - Engram memory id 53 / session summary id 54 cover the 46-page push; batch 5 is recorded in this

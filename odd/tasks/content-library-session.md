@@ -12,8 +12,8 @@ Last updated: 2026-11-06. Read this first next session.
 - **56 / 792 bilingual pages** (ES 56, EN 56).
 - Blocks: Entrenamiento **17**, Por Músculo **5**, Ejercicios **34**.
 - **56 unique heroes, 0 duplicates.**
-- **Batch 5 is local (not pushed).** The previous 46 pages are live (`a048f02`; 108 pages and
-  **104 sitemap URLs**). The local build has **128 pages** and **124 sitemap URLs**.
+- **Batch 5 is live (pushed 2026-11-06, `471635c`).** Production has **128 pages** and
+  **124 sitemap URLs**.
 - The live `/es/rutinas-espalda/` has the new copy, the credit in the alt and the correct
   language switch.
 
@@ -27,8 +27,8 @@ npm run verify       # all three, in that order
 npm run dev          # http://localhost:4321
 ```
 
-Start the dev server with `npm run dev` before reviewing. The 128-page build and the 20 new URLs
-are local until the owner reviews and decides to push.
+Start the dev server with `npm run dev` for local review. The 128-page build and the 20 new URLs are
+also live in production.
 
 ## What is built
 
@@ -77,9 +77,8 @@ Do not batch `/ejercicios-dolor-de-espalda/` without a medical disclaimer and a 
 
 ## Pending decisions
 
-- **Batch 5 is local.** Review the 20 URLs; push only on the owner's decision. A push deploys through
-  Workers Builds; run `npm run verify` first.
-- The previous 46 pages are already live.
+- **Batch 5 pushed 2026-11-06.** Future batches deploy through Workers Builds; run `npm run verify`
+  first and review the batch before pushing.
 - Phase 1: `Article` + `BreadcrumbList` JSON-LD, `og:type=article`, dates, per-article OG image.
 - Phase 2: guides hub, real menu hrefs, internal links from the landing and hubs.
 - Phase 6: read Search Console on 2026-11-19 before scaling beyond the 56-page pilot.
