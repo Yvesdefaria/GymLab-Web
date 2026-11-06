@@ -12,8 +12,8 @@ Last updated: 2026-11-06. Read this first next session.
 - **66 / 792 bilingual pages** (ES 66, EN 66).
 - Blocks: Entrenamiento **27**, Por Músculo **5**, Ejercicios **34**.
 - **66 unique heroes, 0 duplicates.**
-- **Batch 6 is local (not pushed).** The previous 56 pages are live (`471635c`; 128 pages and
-  **124 sitemap URLs**). The local build has **148 pages** and **144 sitemap URLs**.
+- **Batch 6 is live (pushed 2026-11-06, `8ca152f`).** Production has **148 pages** and
+  **144 sitemap URLs**.
 - The live `/es/rutinas-espalda/` has the new copy, the credit in the alt and the correct
   language switch.
 
@@ -27,8 +27,8 @@ npm run verify       # all three, in that order
 npm run dev          # http://localhost:4321
 ```
 
-Start the dev server with `npm run dev` for local review. The 148-page build and the 20 new URLs
-are local until the owner reviews and decides to push.
+Start the dev server with `npm run dev` for local review. The 148-page build and the 20 new URLs are
+also live in production.
 
 ## What is built
 
@@ -77,10 +77,12 @@ Do not batch `/ejercicios-dolor-de-espalda/` without a medical disclaimer and a 
 
 ## Pending decisions
 
-- **Batch 6 is local.** Review the 20 URLs; push only on the owner's decision. A push deploys through
-  Workers Builds; run `npm run verify` first.
-- The previous 56 pages are already live.
+- **Batch 6 pushed 2026-11-06.** Future batches deploy through Workers Builds; run `npm run verify`
+  first and review the batch before pushing.
+- **Scaling architecture (deferred):** route-manifest unification and guides-nav generation; see
+  `odd/tasks/architecture-scaling.md` and `PLAN.md` Phase 7. Do not implement during the content
+  batches.
 - Phase 1: `Article` + `BreadcrumbList` JSON-LD, `og:type=article`, dates, per-article OG image.
 - Phase 2: guides hub, real menu hrefs, internal links from the landing and hubs.
 - Phase 6: read Search Console on 2026-11-19 before scaling beyond the 66-page pilot.
-- Engram memory id 53 covers through batch 5; batch 6 is recorded in this handoff and the checklist.
+- Engram memory id 53 covers through batch 6; the scaling architecture is PLAN Phase 7.

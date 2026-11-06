@@ -105,8 +105,8 @@ Legend: `ES` = Spanish published, `EN` = English published.
 
 ## Resume (2026-11-06)
 
-- Built: **66/792**; **66 unique heroes**; **batch 6 local (not pushed)**.
-- The previous 56 pages are live; this batch waits for review.
+- Built: **66/792**; **66 unique heroes**; **batch 6 pushed 2026-11-06**.
+- All 66 pages are live; production has 148 pages and 144 sitemap URLs.
 - Full handoff: `odd/tasks/content-library-session.md`.
 - Next: `/ejercicios-dolor-de-espalda/` (YMYL) and the first unchecked row
   (`/estiramientos/`).
