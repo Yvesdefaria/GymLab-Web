@@ -112,7 +112,6 @@ const ROUTE_PAIRS = [
     '/ejercicios-multiarticulares-y-ejercicios-de-aislamiento',
     '/compound-vs-isolation-exercises',
   ],
-  ['/congresos-profesores-factores-clave-fivestars-fitness', '/fivestars-fitness'],
   [
     '/como-se-adapta-el-cuerpo-al-entrenamiento-con-pesas',
     '/how-the-body-adapts-to-weight-training',

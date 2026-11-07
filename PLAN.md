@@ -18,18 +18,20 @@ Last updated: 2026-11-07.
 - The landing, the three calculators, the 404 and the legal pages all ship in both locales.
 - Measurement and the SQL recipe: see "Reading analytics" below and `COMPLETED.md` Appendix B.
 
-## Content library — 96 / 792 (2026-11-07)
+## Content library — 95 / 792 (2026-11-07)
 
-- **96 bilingual pages** (ES 96, EN 96), **96 unique heroes**, 0 duplicates. Blocks: Entrenamiento 57,
+- **95 bilingual pages** (ES 95, EN 95), **95 unique heroes**, 0 duplicates. Blocks: Entrenamiento 56,
   Por Músculo 5, Ejercicios 34.
 - **Batches 8 and 9 are built locally and waiting for owner review; neither is pushed.** Production
   still serves batch 7: **168 pages** and **164 sitemap URLs**.
-- Gates: `npm run verify` = `check:copy` **4,896/4,896** + build **208 pages** + `check:i18n`
-  **3,317/3,317**.
+- Gates: `npm run verify` = `check:copy` **4,845/4,845** + build **206 pages** + `check:i18n`
+  **3,286/3,286**.
 - Docs: `odd/tasks/content-library-session.md` (start here next session),
   `odd/tasks/content-pages.md` (per-page checklist + resume), `odd/tasks/guides-page-contract.md`
   (the page contract and copy gate).
 - **Next 10:** the first unchecked row (`/entrenamiento-piramidal/`) and the next Musculación rows.
+- **Discarded:** `/congresos-profesores-factores-clave-fivestars-fitness/` does not go to production
+  (owner decision, 2026-11-07).
 - **Push pending:** review batches 8 and 9 with `npm run dev`, then push; Workers Builds deploys on
   every push to `main`.
 - Image rule: one unique hero per page; `check:copy` fails on a duplicate. Batches 5-9 heroes are

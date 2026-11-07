@@ -9,18 +9,18 @@ Legend: `ES` = Spanish published, `EN` = English published.
 
 ## Progress
 
-- **Built: 96 / 792** (ES 96, EN 96).
-- Last batch: 10 pages, from `/cuanto-peso-cargar-en-el-gimnasio/` to `/gimnasio-de-la-vieja-escuela/`.
+- **Built: 95 / 792** (ES 95, EN 95).
+- Last batch: 9 pages, from `/cuanto-peso-cargar-en-el-gimnasio/` to `/gimnasio-de-la-vieja-escuela/` (one archive row discarded).
 
 | Block | Articles | Built |
 | --- | ---: | ---: |
-| Entrenamiento | 222 | 57 |
+| Entrenamiento | 222 | 56 |
 | Por Músculo | 80 | 5 |
 | Rutinas | 80 | 0 |
 | Ejercicios | 196 | 34 |
 | Nutrición | 191 | 0 |
 | Mujer Fitness | 23 | 0 |
-| **Total** | **792** | **96** |
+| **Total** | **792** | **95** |
 
 ## Copy gate (mandatory before ticking ES/EN)
 
@@ -126,7 +126,6 @@ Legend: `ES` = Spanish published, `EN` = English published.
 | `tiempo-de-descanso-entre-series` | yes | yes | yes | 0 em dashes | pass |
 | `ejercicios-en-polea-ventajas` | yes | yes | yes | 0 em dashes | pass |
 | `ejercicios-multiarticulares-y-ejercicios-de-aislamiento` | yes | yes | yes | 0 em dashes | pass |
-| `congresos-profesores-factores-clave-fivestars-fitness` | yes | yes | yes | 0 em dashes | pass |
 | `como-se-adapta-el-cuerpo-al-entrenamiento-con-pesas` | yes | yes | yes | 0 em dashes | pass |
 | `entrenamiento-del-agarre` | yes | yes | yes | 0 em dashes | pass |
 | `peso-muerto-mejor-agarre` | yes | yes | yes | 0 em dashes | pass |
@@ -134,8 +133,9 @@ Legend: `ES` = Spanish published, `EN` = English published.
 
 ## Resume (2026-11-07)
 
-- Built: **96/792**; **96 unique heroes**; **batch 9 built locally, batch 8 still unpushed**.
-- Batch 9 passes `npm run verify`: 208 pages, 3,317 i18n checks.
+- Built: **95/792**; **95 unique heroes**; **batch 9 built locally, batch 8 still unpushed**.
+- One archive row is discarded and must stay out: the FiveStars Fitness congress page.
+- Batch 9 passes `npm run verify` (numbers in the handoff file).
 - Full handoff: `odd/tasks/content-library-session.md`.
 - Next: the first unchecked row (`/entrenamiento-piramidal/`).
 - Verify with `npm run verify`; review with `npm run dev` at `http://localhost:4321`.
@@ -186,7 +186,7 @@ Legend: `ES` = Spanish published, `EN` = English published.
 - [x] ES · [x] EN — `/tiempo-de-descanso-entre-series/` — Tiempo de descanso entre series \| Optimízalo al 100%
 - [x] ES · [x] EN — `/ejercicios-en-polea-ventajas/` — Ejercicios en polea \| Ventajas sobre los pesos libres
 - [x] ES · [x] EN — `/ejercicios-multiarticulares-y-ejercicios-de-aislamiento/` — Ejercicios Multiarticulares y Ejercicios de Aislamiento
-- [x] ES · [x] EN — `/congresos-profesores-factores-clave-fivestars-fitness/` — FiveStars Fitness: Congresos, equipo y otros factores clave
+- [ ] ES · [ ] EN — `/congresos-profesores-factores-clave-fivestars-fitness/` — FiveStars Fitness: Congresos, equipo y otros factores clave — **DESCARTADA: no va a producción (decisión del owner, 2026-11-07).**
 - [x] ES · [x] EN — `/como-se-adapta-el-cuerpo-al-entrenamiento-con-pesas/` — ¿Cómo se adapta el cuerpo al entrenamiento con pesas?
 - [x] ES · [x] EN — `/entrenamiento-del-agarre/` — Entrenamiento del Agarre: ¡Fortalece tus Manos y Domina el Gym!
 - [x] ES · [x] EN — `/peso-muerto-mejor-agarre/` — Mejor agarre al hacer peso muerto, ¿Neutro o Alterno?

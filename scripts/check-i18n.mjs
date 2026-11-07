@@ -201,8 +201,6 @@ const PAGES = [
   ['en', '/en/cable-exercise-benefits/'],
   ['es', '/es/ejercicios-multiarticulares-y-ejercicios-de-aislamiento/'],
   ['en', '/en/compound-vs-isolation-exercises/'],
-  ['es', '/es/congresos-profesores-factores-clave-fivestars-fitness/'],
-  ['en', '/en/fivestars-fitness/'],
   ['es', '/es/como-se-adapta-el-cuerpo-al-entrenamiento-con-pesas/'],
   ['en', '/en/how-the-body-adapts-to-weight-training/'],
   ['es', '/es/entrenamiento-del-agarre/'],
@@ -430,10 +428,6 @@ const ROUTES = {
   compoundVsIsolation: {
     es: '/ejercicios-multiarticulares-y-ejercicios-de-aislamiento',
     en: '/compound-vs-isolation-exercises',
-  },
-  fivestarsFitness: {
-    es: '/congresos-profesores-factores-clave-fivestars-fitness',
-    en: '/fivestars-fitness',
   },
   bodyAdaptation: {
     es: '/como-se-adapta-el-cuerpo-al-entrenamiento-con-pesas',
