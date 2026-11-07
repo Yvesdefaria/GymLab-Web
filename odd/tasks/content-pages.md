@@ -114,8 +114,8 @@ Legend: `ES` = Spanish published, `EN` = English published.
 
 ## Resume (2026-11-07)
 
-- Built: **76/792**; **76 unique heroes**; **batch 7 local (not pushed)**.
-- The previous 66 pages are live; this batch waits for review.
+- Built: **76/792**; **76 unique heroes**; **batch 7 pushed 2026-11-07**.
+- All 76 pages are live; production has 168 pages and 164 sitemap URLs.
 - Full handoff: `odd/tasks/content-library-session.md`.
 - Next: the first unchecked row
   (`/tu-primer-dia-en-el-gimnasio-como-superarlo-y-querer-volver/`).

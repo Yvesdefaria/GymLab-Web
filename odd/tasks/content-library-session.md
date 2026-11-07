@@ -12,8 +12,8 @@ Last updated: 2026-11-07. Read this first next session.
 - **76 / 792 bilingual pages** (ES 76, EN 76).
 - Blocks: Entrenamiento **37**, Por Músculo **5**, Ejercicios **34**.
 - **76 unique heroes, 0 duplicates.**
-- **Batch 7 is local (not pushed).** The previous 66 pages are live (`8ca152f`; 148 pages and
-  **144 sitemap URLs**). The local build has **168 pages** and **164 sitemap URLs**.
+- **Batch 7 is live (pushed 2026-11-07, `e445b4c` + `402e75c`).** Production has **168 pages** and
+  **164 sitemap URLs**.
 - The live `/es/rutinas-espalda/` has the new copy, the credit in the alt and the correct
   language switch.
 
@@ -28,7 +28,7 @@ npm run dev          # http://localhost:4321
 ```
 
 Start the dev server with `npm run dev` for local review. The 168-page build and the 20 new URLs are
-local until the owner reviews and decides to push.
+also live in production.
 
 ## What is built
 
@@ -78,12 +78,21 @@ local until the owner reviews and decides to push.
 
 ## Pending decisions
 
-- **Batch 7 is local.** Review the 20 URLs; push only after approval. A push deploys through Workers
-  Builds; run `npm run verify` first.
+- **Batch 7 pushed 2026-11-07.** Future batches deploy through Workers Builds; run `npm run verify`
+  first and review the batch before pushing.
 - **Scaling architecture (deferred):** route-manifest unification and guides-nav generation; see
   `odd/tasks/architecture-scaling.md` and `PLAN.md` Phase 7. Do not implement during the content
   batches.
 - Phase 1: `Article` + `BreadcrumbList` JSON-LD, `og:type=article`, dates, per-article OG image.
 - Phase 2: guides hub, real menu hrefs, internal links from the landing and hubs.
 - Phase 6: read Search Console on 2026-11-19 before scaling beyond the 76-page pilot.
-- Engram memory id 53 covers through batch 6; batch 7 is recorded in this handoff and the checklist.
+- Engram memory id 53 covers through batch 7; the scaling architecture is PLAN Phase 7.
+
+## Session close (2026-11-07)
+
+- Batches 5, 6 and 7 are live: 76/792 pages, 76 unique heroes, 168 pages and 164 sitemap URLs.
+- Batch 7 shipped the YMYL back-pain page (medical disclaimer in both locales) and the
+  `.text-table` fix for the situations table.
+- The scaling architecture is deferred to `odd/tasks/architecture-scaling.md` and `PLAN.md` Phase 7.
+- Next session starts at `/tu-primer-dia-en-el-gimnasio-como-superarlo-y-querer-volver/`.
+- Engram memory #53 is updated with this state.
