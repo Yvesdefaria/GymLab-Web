@@ -151,6 +151,26 @@ const PAGES = [
   ['en', '/en/workout-split-guide/'],
   ['es', '/es/guia-musculacion-principiantes/'],
   ['en', '/en/beginner-gym-guide/'],
+  ['es', '/es/ejercicios-dolor-de-espalda/'],
+  ['en', '/en/back-pain-exercises/'],
+  ['es', '/es/estiramientos/'],
+  ['en', '/en/stretching/'],
+  ['es', '/es/circuito-de-estiramientos-para-musculacion/'],
+  ['en', '/en/gym-stretching-circuit/'],
+  ['es', '/es/fallo-muscular/'],
+  ['en', '/en/muscle-failure-training/'],
+  ['es', '/es/periodizacion-entrenamiento/'],
+  ['en', '/en/training-periodization/'],
+  ['es', '/es/potencia-tu-sistema-inmunologico-con-el-entrenamiento/'],
+  ['en', '/en/exercise-and-immune-system/'],
+  ['es', '/es/semana-de-descarga/'],
+  ['en', '/en/deload-week/'],
+  ['es', '/es/cuanto-dormir-para-progresar-en-el-gimnasio/'],
+  ['en', '/en/sleep-for-muscle-growth/'],
+  ['es', '/es/planificacion-del-entrenamiento/'],
+  ['en', '/en/training-planning/'],
+  ['es', '/es/regeneracion-muscular/'],
+  ['en', '/en/muscle-recovery/'],
 ];
 
 // Content routes, keyed by a stable id with the slug each locale publishes. The
@@ -304,6 +324,28 @@ const ROUTES = {
   },
   workoutSplit: { es: '/distribucion-rutina-entrenamiento', en: '/workout-split-guide' },
   beginnerGuide: { es: '/guia-musculacion-principiantes', en: '/beginner-gym-guide' },
+  backPainExercises: { es: '/ejercicios-dolor-de-espalda', en: '/back-pain-exercises' },
+  stretching: { es: '/estiramientos', en: '/stretching' },
+  gymStretchingCircuit: {
+    es: '/circuito-de-estiramientos-para-musculacion',
+    en: '/gym-stretching-circuit',
+  },
+  muscleFailure: { es: '/fallo-muscular', en: '/muscle-failure-training' },
+  trainingPeriodization: {
+    es: '/periodizacion-entrenamiento',
+    en: '/training-periodization',
+  },
+  exerciseImmuneSystem: {
+    es: '/potencia-tu-sistema-inmunologico-con-el-entrenamiento',
+    en: '/exercise-and-immune-system',
+  },
+  deloadWeek: { es: '/semana-de-descarga', en: '/deload-week' },
+  sleepForMuscleGrowth: {
+    es: '/cuanto-dormir-para-progresar-en-el-gimnasio',
+    en: '/sleep-for-muscle-growth',
+  },
+  trainingPlanning: { es: '/planificacion-del-entrenamiento', en: '/training-planning' },
+  muscleRecovery: { es: '/regeneracion-muscular', en: '/muscle-recovery' },
 };
 
 const routeId = (path) => {

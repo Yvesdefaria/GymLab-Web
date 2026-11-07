@@ -81,6 +81,16 @@ const ROUTE_PAIRS = [
   ['/principio-adaptacion-sobrecarga-progresiva', '/progressive-overload-principle'],
   ['/distribucion-rutina-entrenamiento', '/workout-split-guide'],
   ['/guia-musculacion-principiantes', '/beginner-gym-guide'],
+  ['/ejercicios-dolor-de-espalda', '/back-pain-exercises'],
+  ['/estiramientos', '/stretching'],
+  ['/circuito-de-estiramientos-para-musculacion', '/gym-stretching-circuit'],
+  ['/fallo-muscular', '/muscle-failure-training'],
+  ['/periodizacion-entrenamiento', '/training-periodization'],
+  ['/potencia-tu-sistema-inmunologico-con-el-entrenamiento', '/exercise-and-immune-system'],
+  ['/semana-de-descarga', '/deload-week'],
+  ['/cuanto-dormir-para-progresar-en-el-gimnasio', '/sleep-for-muscle-growth'],
+  ['/planificacion-del-entrenamiento', '/training-planning'],
+  ['/regeneracion-muscular', '/muscle-recovery'],
 ];
 
 const pairFor = (pathname) => {

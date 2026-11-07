@@ -9,19 +9,18 @@ Legend: `ES` = Spanish published, `EN` = English published.
 
 ## Progress
 
-- **Built: 66 / 792** (ES 66, EN 66).
-- Last batch: 10 pages, from `/beneficios-de-contratar-un-entrenador-personal-online/` to
-  `/guia-musculacion-principiantes/`.
+- **Built: 76 / 792** (ES 76, EN 76).
+- Last batch: 10 pages, from `/ejercicios-dolor-de-espalda/` to `/regeneracion-muscular/`.
 
 | Block | Articles | Built |
 | --- | ---: | ---: |
-| Entrenamiento | 222 | 27 |
+| Entrenamiento | 222 | 37 |
 | Por Músculo | 80 | 5 |
 | Rutinas | 80 | 0 |
 | Ejercicios | 196 | 34 |
 | Nutrición | 191 | 0 |
 | Mujer Fitness | 23 | 0 |
-| **Total** | **792** | **66** |
+| **Total** | **792** | **76** |
 
 ## Copy gate (mandatory before ticking ES/EN)
 
@@ -102,14 +101,24 @@ Legend: `ES` = Spanish published, `EN` = English published.
 | `principio-adaptacion-sobrecarga-progresiva` | yes | yes | yes | 0 em dashes | pass |
 | `distribucion-rutina-entrenamiento` | yes | yes | yes | 0 em dashes | pass |
 | `guia-musculacion-principiantes` | yes | yes | yes | 0 em dashes | pass |
+| `ejercicios-dolor-de-espalda` | yes | yes | yes | 0 em dashes | pass |
+| `estiramientos` | yes | yes | yes | 0 em dashes | pass |
+| `circuito-de-estiramientos-para-musculacion` | yes | yes | yes | 0 em dashes | pass |
+| `fallo-muscular` | yes | yes | yes | 0 em dashes | pass |
+| `periodizacion-entrenamiento` | yes | yes | yes | 0 em dashes | pass |
+| `potencia-tu-sistema-inmunologico-con-el-entrenamiento` | yes | yes | yes | 0 em dashes | pass |
+| `semana-de-descarga` | yes | yes | yes | 0 em dashes | pass |
+| `cuanto-dormir-para-progresar-en-el-gimnasio` | yes | yes | yes | 0 em dashes | pass |
+| `planificacion-del-entrenamiento` | yes | yes | yes | 0 em dashes | pass |
+| `regeneracion-muscular` | yes | yes | yes | 0 em dashes | pass |
 
-## Resume (2026-11-06)
+## Resume (2026-11-07)
 
-- Built: **66/792**; **66 unique heroes**; **batch 6 pushed 2026-11-06**.
-- All 66 pages are live; production has 148 pages and 144 sitemap URLs.
+- Built: **76/792**; **76 unique heroes**; **batch 7 local (not pushed)**.
+- The previous 66 pages are live; this batch waits for review.
 - Full handoff: `odd/tasks/content-library-session.md`.
-- Next: `/ejercicios-dolor-de-espalda/` (YMYL) and the first unchecked row
-  (`/estiramientos/`).
+- Next: the first unchecked row
+  (`/tu-primer-dia-en-el-gimnasio-como-superarlo-y-querer-volver/`).
 - Verify with `npm run verify`; review with `npm run dev` at `http://localhost:4321`.
 
 ## Entrenamiento (222)
@@ -134,15 +143,15 @@ Legend: `ES` = Spanish published, `EN` = English published.
 - [x] ES · [x] EN — `/principio-adaptacion-sobrecarga-progresiva/` — Principio de Adaptación a la sobrecarga progresiva
 - [x] ES · [x] EN — `/distribucion-rutina-entrenamiento/` — Distribución de la rutina de entrenamiento \| Óptimo en 2026
 - [x] ES · [x] EN — `/guia-musculacion-principiantes/` — Guía de Gimnasio y Musculación para principiantes
-- [ ] ES · [ ] EN — `/estiramientos/` — Estiramientos y entrenamiento de la flexibilidad en el gimnasio
-- [ ] ES · [ ] EN — `/circuito-de-estiramientos-para-musculacion/` — Circuito de estiramientos para tu rutina de pesas en el Gym
-- [ ] ES · [ ] EN — `/fallo-muscular/` — Fallo Muscular \| ¿Lo mejor para tus músculos?
-- [ ] ES · [ ] EN — `/periodizacion-entrenamiento/` — Periodización en el entrenamiento \| Planifica tu rutina
-- [ ] ES · [ ] EN — `/potencia-tu-sistema-inmunologico-con-el-entrenamiento/` — Potencia tu Sistema Inmunológico con el entrenamiento
-- [ ] ES · [ ] EN — `/semana-de-descarga/` — Semana de Descarga 【¡Hazlo bien y progresa más rápido!】
-- [ ] ES · [ ] EN — `/cuanto-dormir-para-progresar-en-el-gimnasio/` — ¿Cuánto dormir para progresar en el gimnasio?
-- [ ] ES · [ ] EN — `/planificacion-del-entrenamiento/` — Sesiones, microciclos, mesociclos y macrociclos \| ¡Planifica!
-- [ ] ES · [ ] EN — `/regeneracion-muscular/` — Como mejorar la reparación y regeneración muscular
+- [x] ES · [x] EN — `/estiramientos/` — Estiramientos y entrenamiento de la flexibilidad en el gimnasio
+- [x] ES · [x] EN — `/circuito-de-estiramientos-para-musculacion/` — Circuito de estiramientos para tu rutina de pesas en el Gym
+- [x] ES · [x] EN — `/fallo-muscular/` — Fallo Muscular \| ¿Lo mejor para tus músculos?
+- [x] ES · [x] EN — `/periodizacion-entrenamiento/` — Periodización en el entrenamiento \| Planifica tu rutina
+- [x] ES · [x] EN — `/potencia-tu-sistema-inmunologico-con-el-entrenamiento/` — Potencia tu Sistema Inmunológico con el entrenamiento
+- [x] ES · [x] EN — `/semana-de-descarga/` — Semana de Descarga 【¡Hazlo bien y progresa más rápido!】
+- [x] ES · [x] EN — `/cuanto-dormir-para-progresar-en-el-gimnasio/` — ¿Cuánto dormir para progresar en el gimnasio?
+- [x] ES · [x] EN — `/planificacion-del-entrenamiento/` — Sesiones, microciclos, mesociclos y macrociclos \| ¡Planifica!
+- [x] ES · [x] EN — `/regeneracion-muscular/` — Como mejorar la reparación y regeneración muscular
 - [ ] ES · [ ] EN — `/tu-primer-dia-en-el-gimnasio-como-superarlo-y-querer-volver/` — Tu primer día en el gimnasio \| ¡Como superarlo y querer volver!
 - [ ] ES · [ ] EN — `/agarres-prono-y-supino-diferencias-y-principales-beneficios/` — Agarres Prono y Supino, diferencias y principales beneficios
 - [ ] ES · [ ] EN — `/estancamiento-muscular/` — Cómo Superar el Estancamiento Muscular Eficazmente
@@ -312,7 +321,7 @@ Legend: `ES` = Spanish published, `EN` = English published.
 
 ### Entrenamiento de la Espalda (10)
 
-- [ ] ES · [ ] EN — `/ejercicios-dolor-de-espalda/` — Ejercicios para el dolor de espalda
+- [x] ES · [x] EN — `/ejercicios-dolor-de-espalda/` — Ejercicios para el dolor de espalda
 - [x] ES · [x] EN — `/rutinas-espalda/` — Rutinas de espalda y como entrenarla \| Efectivas 100% en 2025
 - [x] ES · [x] EN — `/mejores-ejercicios-con-mancuernas-para-espalda/` — Ejercicios con mancuernas para espalda más efectivos
 - [x] ES · [x] EN — `/agarres-jalones-dorsales/` — Tipos de agarres en jalones dorsales: ¿Cuál es mejor?

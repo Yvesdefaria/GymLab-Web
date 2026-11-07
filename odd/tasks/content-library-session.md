@@ -1,6 +1,6 @@
 # Content library — session handoff
 
-Last updated: 2026-11-06. Read this first next session.
+Last updated: 2026-11-07. Read this first next session.
 
 - Per-page record: `odd/tasks/content-pages.md`
 - Page contract and copy gate: `odd/tasks/guides-page-contract.md`
@@ -9,26 +9,26 @@ Last updated: 2026-11-06. Read this first next session.
 
 ## State
 
-- **66 / 792 bilingual pages** (ES 66, EN 66).
-- Blocks: Entrenamiento **27**, Por Músculo **5**, Ejercicios **34**.
-- **66 unique heroes, 0 duplicates.**
-- **Batch 6 is live (pushed 2026-11-06, `8ca152f`).** Production has **148 pages** and
-  **144 sitemap URLs**.
+- **76 / 792 bilingual pages** (ES 76, EN 76).
+- Blocks: Entrenamiento **37**, Por Músculo **5**, Ejercicios **34**.
+- **76 unique heroes, 0 duplicates.**
+- **Batch 7 is local (not pushed).** The previous 66 pages are live (`8ca152f`; 148 pages and
+  **144 sitemap URLs**). The local build has **168 pages** and **164 sitemap URLs**.
 - The live `/es/rutinas-espalda/` has the new copy, the credit in the alt and the correct
   language switch.
 
 ## Gates
 
 ```powershell
-npm run check:copy   # 3,366/3,366
-npm run build        # 148 pages
-npm run check:i18n   # 2,387/2,387
+npm run check:copy   # 3,876/3,876
+npm run build        # 168 pages
+npm run check:i18n   # 2,697/2,697
 npm run verify       # all three, in that order
 npm run dev          # http://localhost:4321
 ```
 
-Start the dev server with `npm run dev` for local review. The 148-page build and the 20 new URLs are
-also live in production.
+Start the dev server with `npm run dev` for local review. The 168-page build and the 20 new URLs are
+local until the owner reviews and decides to push.
 
 ## What is built
 
@@ -41,15 +41,16 @@ also live in production.
 - **Musculación (18):** the first eight plus online trainer, home training, maximum pump, gym
   exercises, muscle-growth reasons, resistance bands, consistency, progressive overload, workout
   split and the beginner guide.
+- **Recovery and planning (10):** back-pain exercises (YMYL), stretching, stretching circuit, muscle
+  failure, periodization, exercise and immune system, deload week, sleep, training planning and
+  muscle recovery.
 
 ## Next 10
 
-1. `/ejercicios-dolor-de-espalda/` — YMYL; add a medical disclaimer and do a careful pass before
-   batching it.
-2. Continue with the next unchecked `Musculación` rows, starting with `/estiramientos/`.
-3. Reach 10 pages with the same copy, unique-hero and gate flow.
-
-Do not batch `/ejercicios-dolor-de-espalda/` without a medical disclaimer and a YMYL pass.
+1. Start with the first unchecked row:
+   `/tu-primer-dia-en-el-gimnasio-como-superarlo-y-querer-volver/`.
+2. Continue with the next `Musculación` rows; keep the same copy, unique-hero and gate flow.
+3. The scaling architecture is deferred to PLAN Phase 7; do not implement it during content batches.
 
 ## Page contract (short)
 
@@ -71,18 +72,18 @@ Do not batch `/ejercicios-dolor-de-espalda/` without a medical disclaimer and a 
 - Known approximations: the three good-morning pages use a Smith squat, a seated row and a deadlift;
   the one-arm lat pulldown uses a lat pulldown photo because no free one-arm pulldown photo exists.
   The `alt` describes what is actually shown.
-- Batch 5 heroes: Wikimedia Commons (CC0, CC BY, CC BY-SA, public domain), one per page; credits in
-  the `alt`.
+- Batches 5-7 heroes: Wikimedia Commons (CC0, CC BY, CC BY-SA, public domain), one per page;
+  credits in the `alt`.
 - The image pipeline (`<Picture>`, AVIF/WebP, srcset) is still pending.
 
 ## Pending decisions
 
-- **Batch 6 pushed 2026-11-06.** Future batches deploy through Workers Builds; run `npm run verify`
-  first and review the batch before pushing.
+- **Batch 7 is local.** Review the 20 URLs; push only after approval. A push deploys through Workers
+  Builds; run `npm run verify` first.
 - **Scaling architecture (deferred):** route-manifest unification and guides-nav generation; see
   `odd/tasks/architecture-scaling.md` and `PLAN.md` Phase 7. Do not implement during the content
   batches.
 - Phase 1: `Article` + `BreadcrumbList` JSON-LD, `og:type=article`, dates, per-article OG image.
 - Phase 2: guides hub, real menu hrefs, internal links from the landing and hubs.
-- Phase 6: read Search Console on 2026-11-19 before scaling beyond the 66-page pilot.
-- Engram memory id 53 covers through batch 6; the scaling architecture is PLAN Phase 7.
+- Phase 6: read Search Console on 2026-11-19 before scaling beyond the 76-page pilot.
+- Engram memory id 53 covers through batch 6; batch 7 is recorded in this handoff and the checklist.
