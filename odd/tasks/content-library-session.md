@@ -12,8 +12,8 @@ Last updated: 2026-11-07. Read this first next session.
 - **95 / 792 bilingual pages** (ES 95, EN 95).
 - Blocks: Entrenamiento **56**, Por Músculo **5**, Ejercicios **34**.
 - **95 unique heroes, 0 duplicates.**
-- **Batches 8 and 9 are built locally and waiting for owner review; neither is pushed.** Production
-  still serves batch 7: **168 pages** and **164 sitemap URLs**.
+- **Batches 8 and 9 are live (pushed 2026-11-07, `f000c18`..`1442772`).** Production has
+  **206 pages** and **202 sitemap URLs**.
 - One archive row is discarded and must stay out: the FiveStars Fitness congress page.
 - The live `/es/rutinas-espalda/` has the new copy, the credit in the alt and the correct
   language switch.
@@ -28,8 +28,8 @@ npm run verify       # all three, in that order
 npm run dev          # http://localhost:4321
 ```
 
-Start the dev server with `npm run dev` for local review. Batches 8 and 9 add 38 pages locally;
-production still serves the 168-page batch 7 build.
+Start the dev server with `npm run dev` for local review. Production serves the 206-page build with
+batches 8 and 9 live.
 
 ## What is built
 
@@ -85,8 +85,8 @@ production still serves the 168-page batch 7 build.
 
 ## Pending decisions
 
-- **Batches 8 and 9 built, not pushed.** Review them with `npm run dev`, then push; Workers Builds
-  deploys on every push to `main`. The pending range is 38 article files plus 19 vendored heroes.
+- **Push done 2026-11-07** (`f000c18`..`1442772`). Future batches deploy via Workers Builds; run
+  `npm run verify` first.
 - **Discarded row:** `/congresos-profesores-factores-clave-fivestars-fitness/` does not go to
   production (owner decision, 2026-11-07). Do not rebuild it in a later batch.
 - **Scaling architecture (deferred):** route-manifest unification and guides-nav generation; see
@@ -104,7 +104,7 @@ production still serves the 168-page batch 7 build.
   `/gimnasio-de-la-vieja-escuela/`: 95/792 pages, 95 unique heroes.
 - The FiveStars Fitness congress row was discarded by the owner and removed from the build.
 - Gates are green: `check:copy` 4,845/4,845, build 206 pages, `check:i18n` 3,286/3,286.
-- Both batches are committed but not pushed; production still serves batch 7 (168 pages, 164 sitemap
-  URLs).
+- Both batches are pushed and live: production serves 206 pages and 202 sitemap URLs.
+- The FiveStars Fitness page is 404 in production, as intended.
 - Next session starts at `/entrenamiento-piramidal/`.
 - Engram topic `content-library/handoff` is updated with this state.

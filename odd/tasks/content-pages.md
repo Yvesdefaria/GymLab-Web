@@ -133,9 +133,9 @@ Legend: `ES` = Spanish published, `EN` = English published.
 
 ## Resume (2026-11-07)
 
-- Built: **95/792**; **95 unique heroes**; **batch 9 built locally, batch 8 still unpushed**.
+- Built: **95/792**; **95 unique heroes**; **batches 8 and 9 live (pushed 2026-11-07)**.
 - One archive row is discarded and must stay out: the FiveStars Fitness congress page.
-- Batch 9 passes `npm run verify` (numbers in the handoff file).
+- Batch 9 passes `npm run verify`: 4,845 copy checks, 206 pages, 3,286 i18n checks.
 - Full handoff: `odd/tasks/content-library-session.md`.
 - Next: the first unchecked row (`/entrenamiento-piramidal/`).
 - Verify with `npm run verify`; review with `npm run dev` at `http://localhost:4321`.
