@@ -9,18 +9,18 @@ Legend: `ES` = Spanish published, `EN` = English published.
 
 ## Progress
 
-- **Built: 86 / 792** (ES 86, EN 86).
-- Last batch: 10 pages, from `/tu-primer-dia-en-el-gimnasio-como-superarlo-y-querer-volver/` to `/repeticiones-entrenamiento/`.
+- **Built: 96 / 792** (ES 96, EN 96).
+- Last batch: 10 pages, from `/cuanto-peso-cargar-en-el-gimnasio/` to `/gimnasio-de-la-vieja-escuela/`.
 
 | Block | Articles | Built |
 | --- | ---: | ---: |
-| Entrenamiento | 222 | 47 |
+| Entrenamiento | 222 | 57 |
 | Por Músculo | 80 | 5 |
 | Rutinas | 80 | 0 |
 | Ejercicios | 196 | 34 |
 | Nutrición | 191 | 0 |
 | Mujer Fitness | 23 | 0 |
-| **Total** | **792** | **86** |
+| **Total** | **792** | **96** |
 
 ## Copy gate (mandatory before ticking ES/EN)
 
@@ -121,14 +121,23 @@ Legend: `ES` = Spanish published, `EN` = English published.
 | `culturismo-mas-que-musculo` | yes | yes | yes | 0 em dashes | pass |
 | `prueba-potencia-anaerobia` | yes | yes | yes | 0 em dashes | pass |
 | `repeticiones-entrenamiento` | yes | yes | yes | 0 em dashes | pass |
+| `cuanto-peso-cargar-en-el-gimnasio` | yes | yes | yes | 0 em dashes | pass |
+| `instrumentos-del-gimnasio` | yes | yes | yes | 0 em dashes | pass |
+| `tiempo-de-descanso-entre-series` | yes | yes | yes | 0 em dashes | pass |
+| `ejercicios-en-polea-ventajas` | yes | yes | yes | 0 em dashes | pass |
+| `ejercicios-multiarticulares-y-ejercicios-de-aislamiento` | yes | yes | yes | 0 em dashes | pass |
+| `congresos-profesores-factores-clave-fivestars-fitness` | yes | yes | yes | 0 em dashes | pass |
+| `como-se-adapta-el-cuerpo-al-entrenamiento-con-pesas` | yes | yes | yes | 0 em dashes | pass |
+| `entrenamiento-del-agarre` | yes | yes | yes | 0 em dashes | pass |
+| `peso-muerto-mejor-agarre` | yes | yes | yes | 0 em dashes | pass |
+| `gimnasio-de-la-vieja-escuela` | yes | yes | yes | 0 em dashes | pass |
 
 ## Resume (2026-11-07)
 
-- Built: **86/792**; **86 unique heroes**; **batch 8 ready for review** (not pushed yet).
-- Batch 8 pages are built and pass `npm run verify`: 188 pages, 3,007 i18n checks.
+- Built: **96/792**; **96 unique heroes**; **batch 9 built locally, batch 8 still unpushed**.
+- Batch 9 passes `npm run verify`: 208 pages, 3,317 i18n checks.
 - Full handoff: `odd/tasks/content-library-session.md`.
-- Next: the first unchecked row
-  (`/cuanto-peso-cargar-en-el-gimnasio/`).
+- Next: the first unchecked row (`/entrenamiento-piramidal/`).
 - Verify with `npm run verify`; review with `npm run dev` at `http://localhost:4321`.
 
 ## Entrenamiento (222)
@@ -172,16 +181,16 @@ Legend: `ES` = Spanish published, `EN` = English published.
 - [x] ES · [x] EN — `/culturismo-mas-que-musculo/` — Culturismo: más que músculo, un estilo de vida
 - [x] ES · [x] EN — `/prueba-potencia-anaerobia/` — Prueba de Potencia Anaerobia: Evalúa tu Explosividad
 - [x] ES · [x] EN — `/repeticiones-entrenamiento/` — Rango óptimo de repeticiones entrenando en 2025
-- [ ] ES · [ ] EN — `/cuanto-peso-cargar-en-el-gimnasio/` — Cuanto peso utilizar en el gimnasio \| Gana más músculo y fuerza
-- [ ] ES · [ ] EN — `/instrumentos-del-gimnasio/` — Los instrumentos del gimnasio \| Barras, mancuernas, poleas...
-- [ ] ES · [ ] EN — `/tiempo-de-descanso-entre-series/` — Tiempo de descanso entre series \| Optimízalo al 100%
-- [ ] ES · [ ] EN — `/ejercicios-en-polea-ventajas/` — Ejercicios en polea \| Ventajas sobre los pesos libres
-- [ ] ES · [ ] EN — `/ejercicios-multiarticulares-y-ejercicios-de-aislamiento/` — Ejercicios Multiarticulares y Ejercicios de Aislamiento
-- [ ] ES · [ ] EN — `/congresos-profesores-factores-clave-fivestars-fitness/` — FiveStars Fitness: Congresos, equipo y otros factores clave
-- [ ] ES · [ ] EN — `/como-se-adapta-el-cuerpo-al-entrenamiento-con-pesas/` — ¿Cómo se adapta el cuerpo al entrenamiento con pesas?
-- [ ] ES · [ ] EN — `/entrenamiento-del-agarre/` — Entrenamiento del Agarre: ¡Fortalece tus Manos y Domina el Gym!
-- [ ] ES · [ ] EN — `/peso-muerto-mejor-agarre/` — Mejor agarre al hacer peso muerto, ¿Neutro o Alterno?
-- [ ] ES · [ ] EN — `/gimnasio-de-la-vieja-escuela/` — Gimnasio de la Vieja Escuela: Métodos y Ejercicios Clásicos
+- [x] ES · [x] EN — `/cuanto-peso-cargar-en-el-gimnasio/` — Cuanto peso utilizar en el gimnasio \| Gana más músculo y fuerza
+- [x] ES · [x] EN — `/instrumentos-del-gimnasio/` — Los instrumentos del gimnasio \| Barras, mancuernas, poleas...
+- [x] ES · [x] EN — `/tiempo-de-descanso-entre-series/` — Tiempo de descanso entre series \| Optimízalo al 100%
+- [x] ES · [x] EN — `/ejercicios-en-polea-ventajas/` — Ejercicios en polea \| Ventajas sobre los pesos libres
+- [x] ES · [x] EN — `/ejercicios-multiarticulares-y-ejercicios-de-aislamiento/` — Ejercicios Multiarticulares y Ejercicios de Aislamiento
+- [x] ES · [x] EN — `/congresos-profesores-factores-clave-fivestars-fitness/` — FiveStars Fitness: Congresos, equipo y otros factores clave
+- [x] ES · [x] EN — `/como-se-adapta-el-cuerpo-al-entrenamiento-con-pesas/` — ¿Cómo se adapta el cuerpo al entrenamiento con pesas?
+- [x] ES · [x] EN — `/entrenamiento-del-agarre/` — Entrenamiento del Agarre: ¡Fortalece tus Manos y Domina el Gym!
+- [x] ES · [x] EN — `/peso-muerto-mejor-agarre/` — Mejor agarre al hacer peso muerto, ¿Neutro o Alterno?
+- [x] ES · [x] EN — `/gimnasio-de-la-vieja-escuela/` — Gimnasio de la Vieja Escuela: Métodos y Ejercicios Clásicos
 - [ ] ES · [ ] EN — `/entrenamiento-piramidal/` — Entrenamiento piramidal
 - [ ] ES · [ ] EN — `/volumen-de-entrenamiento/` — Volumen de Entrenamiento: Cómo Optimizar tus Rutinas
 - [ ] ES · [ ] EN — `/congestion-muscular/` — Congestión Muscular: Qué es y Cómo Maximizar tus Resultados

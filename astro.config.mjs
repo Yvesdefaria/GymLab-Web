@@ -104,6 +104,22 @@ const ROUTE_PAIRS = [
   ['/culturismo-mas-que-musculo', '/bodybuilding-lifestyle'],
   ['/prueba-potencia-anaerobia', '/anaerobic-power-test'],
   ['/repeticiones-entrenamiento', '/optimal-rep-range'],
+  ['/cuanto-peso-cargar-en-el-gimnasio', '/how-much-weight-to-lift'],
+  ['/instrumentos-del-gimnasio', '/gym-equipment-guide'],
+  ['/tiempo-de-descanso-entre-series', '/rest-between-sets'],
+  ['/ejercicios-en-polea-ventajas', '/cable-exercise-benefits'],
+  [
+    '/ejercicios-multiarticulares-y-ejercicios-de-aislamiento',
+    '/compound-vs-isolation-exercises',
+  ],
+  ['/congresos-profesores-factores-clave-fivestars-fitness', '/fivestars-fitness'],
+  [
+    '/como-se-adapta-el-cuerpo-al-entrenamiento-con-pesas',
+    '/how-the-body-adapts-to-weight-training',
+  ],
+  ['/entrenamiento-del-agarre', '/grip-strength-training'],
+  ['/peso-muerto-mejor-agarre', '/deadlift-grip'],
+  ['/gimnasio-de-la-vieja-escuela', '/old-school-gym-training'],
 ];
 
 const pairFor = (pathname) => {

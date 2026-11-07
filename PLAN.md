@@ -18,24 +18,23 @@ Last updated: 2026-11-07.
 - The landing, the three calculators, the 404 and the legal pages all ship in both locales.
 - Measurement and the SQL recipe: see "Reading analytics" below and `COMPLETED.md` Appendix B.
 
-## Content library — 86 / 792 (2026-11-07)
+## Content library — 96 / 792 (2026-11-07)
 
-- **86 bilingual pages** (ES 86, EN 86), **86 unique heroes**, 0 duplicates. Blocks: Entrenamiento 47,
+- **96 bilingual pages** (ES 96, EN 96), **96 unique heroes**, 0 duplicates. Blocks: Entrenamiento 57,
   Por Músculo 5, Ejercicios 34.
-- **Batch 8 is built locally and waiting for owner review; it is not pushed.** Production still
-  serves batch 7: **168 pages** and **164 sitemap URLs**.
-- Gates: `npm run verify` = `check:copy` **4,386/4,386** + build **188 pages** + `check:i18n`
-  **3,007/3,007**.
+- **Batches 8 and 9 are built locally and waiting for owner review; neither is pushed.** Production
+  still serves batch 7: **168 pages** and **164 sitemap URLs**.
+- Gates: `npm run verify` = `check:copy` **4,896/4,896** + build **208 pages** + `check:i18n`
+  **3,317/3,317**.
 - Docs: `odd/tasks/content-library-session.md` (start here next session),
   `odd/tasks/content-pages.md` (per-page checklist + resume), `odd/tasks/guides-page-contract.md`
   (the page contract and copy gate).
-- **Next 10:** the first unchecked row (`/cuanto-peso-cargar-en-el-gimnasio/`) and the next
-  Musculación rows.
-- **Push pending:** review batch 8 with `npm run dev`, then push; Workers Builds deploys on every
-  push to `main`.
-- Image rule: one unique hero per page; `check:copy` fails on a duplicate. Batches 5-8 heroes are
+- **Next 10:** the first unchecked row (`/entrenamiento-piramidal/`) and the next Musculación rows.
+- **Push pending:** review batches 8 and 9 with `npm run dev`, then push; Workers Builds deploys on
+  every push to `main`.
+- Image rule: one unique hero per page; `check:copy` fails on a duplicate. Batches 5-9 heroes are
   Wikimedia Commons (CC0/CC BY/CC BY-SA/public domain); the `alt` includes the credit.
-- Engram topic `content-library/handoff` covers through batch 8; the scaling architecture is PLAN
+- Engram topic `content-library/handoff` covers through batch 9; the scaling architecture is PLAN
   Phase 7.
 
 ## Deployed on 2026-10-29

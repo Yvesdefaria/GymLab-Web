@@ -191,6 +191,26 @@ const PAGES = [
   ['en', '/en/anaerobic-power-test/'],
   ['es', '/es/repeticiones-entrenamiento/'],
   ['en', '/en/optimal-rep-range/'],
+  ['es', '/es/cuanto-peso-cargar-en-el-gimnasio/'],
+  ['en', '/en/how-much-weight-to-lift/'],
+  ['es', '/es/instrumentos-del-gimnasio/'],
+  ['en', '/en/gym-equipment-guide/'],
+  ['es', '/es/tiempo-de-descanso-entre-series/'],
+  ['en', '/en/rest-between-sets/'],
+  ['es', '/es/ejercicios-en-polea-ventajas/'],
+  ['en', '/en/cable-exercise-benefits/'],
+  ['es', '/es/ejercicios-multiarticulares-y-ejercicios-de-aislamiento/'],
+  ['en', '/en/compound-vs-isolation-exercises/'],
+  ['es', '/es/congresos-profesores-factores-clave-fivestars-fitness/'],
+  ['en', '/en/fivestars-fitness/'],
+  ['es', '/es/como-se-adapta-el-cuerpo-al-entrenamiento-con-pesas/'],
+  ['en', '/en/how-the-body-adapts-to-weight-training/'],
+  ['es', '/es/entrenamiento-del-agarre/'],
+  ['en', '/en/grip-strength-training/'],
+  ['es', '/es/peso-muerto-mejor-agarre/'],
+  ['en', '/en/deadlift-grip/'],
+  ['es', '/es/gimnasio-de-la-vieja-escuela/'],
+  ['en', '/en/old-school-gym-training/'],
 ];
 
 // Content routes, keyed by a stable id with the slug each locale publishes. The
@@ -394,6 +414,37 @@ const ROUTES = {
     en: '/anaerobic-power-test',
   },
   optimalRepRange: { es: '/repeticiones-entrenamiento', en: '/optimal-rep-range' },
+  howMuchWeight: {
+    es: '/cuanto-peso-cargar-en-el-gimnasio',
+    en: '/how-much-weight-to-lift',
+  },
+  gymEquipmentGuide: {
+    es: '/instrumentos-del-gimnasio',
+    en: '/gym-equipment-guide',
+  },
+  restBetweenSets: { es: '/tiempo-de-descanso-entre-series', en: '/rest-between-sets' },
+  cableExerciseBenefits: {
+    es: '/ejercicios-en-polea-ventajas',
+    en: '/cable-exercise-benefits',
+  },
+  compoundVsIsolation: {
+    es: '/ejercicios-multiarticulares-y-ejercicios-de-aislamiento',
+    en: '/compound-vs-isolation-exercises',
+  },
+  fivestarsFitness: {
+    es: '/congresos-profesores-factores-clave-fivestars-fitness',
+    en: '/fivestars-fitness',
+  },
+  bodyAdaptation: {
+    es: '/como-se-adapta-el-cuerpo-al-entrenamiento-con-pesas',
+    en: '/how-the-body-adapts-to-weight-training',
+  },
+  gripStrengthTraining: {
+    es: '/entrenamiento-del-agarre',
+    en: '/grip-strength-training',
+  },
+  deadliftGrip: { es: '/peso-muerto-mejor-agarre', en: '/deadlift-grip' },
+  oldSchoolGym: { es: '/gimnasio-de-la-vieja-escuela', en: '/old-school-gym-training' },
 };
 
 const routeId = (path) => {
