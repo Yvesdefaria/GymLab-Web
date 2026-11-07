@@ -9,26 +9,26 @@ Last updated: 2026-11-07. Read this first next session.
 
 ## State
 
-- **76 / 792 bilingual pages** (ES 76, EN 76).
-- Blocks: Entrenamiento **37**, Por Músculo **5**, Ejercicios **34**.
-- **76 unique heroes, 0 duplicates.**
-- **Batch 7 is live (pushed 2026-11-07, `e445b4c` + `402e75c`).** Production has **168 pages** and
-  **164 sitemap URLs**.
+- **86 / 792 bilingual pages** (ES 86, EN 86).
+- Blocks: Entrenamiento **47**, Por Músculo **5**, Ejercicios **34**.
+- **86 unique heroes, 0 duplicates.**
+- **Batch 8 is built locally and waiting for owner review; it is not pushed.** Production still
+  serves batch 7: **168 pages** and **164 sitemap URLs**.
 - The live `/es/rutinas-espalda/` has the new copy, the credit in the alt and the correct
   language switch.
 
 ## Gates
 
 ```powershell
-npm run check:copy   # 3,876/3,876
-npm run build        # 168 pages
-npm run check:i18n   # 2,697/2,697
+npm run check:copy   # 4,386/4,386
+npm run build        # 188 pages
+npm run check:i18n   # 3,007/3,007
 npm run verify       # all three, in that order
 npm run dev          # http://localhost:4321
 ```
 
-Start the dev server with `npm run dev` for local review. The 168-page build and the 20 new URLs are
-also live in production.
+Start the dev server with `npm run dev` for local review. Batch 8 adds 20 pages locally; production
+still serves the 168-page batch 7 build.
 
 ## What is built
 
@@ -38,19 +38,23 @@ also live in production.
   good-morning, pullover and back-extension families, including the Smith machine row.
 - **Por Músculo / Rutinas de Espalda (5):** amplitud/densidad, 15 minutos, dorsales grandes, the
   advanced pull-up programme and the back superset finisher.
-- **Musculación (18):** the first eight plus online trainer, home training, maximum pump, gym
-  exercises, muscle-growth reasons, resistance bands, consistency, progressive overload, workout
-  split and the beginner guide.
+- **Musculación (28):** the first eighteen plus the first-day guide, both grip articles, the plateau
+  guide, the home-equipment buying guide, the lifting belt, Poliquin's strategies, the bodybuilding
+  lifestyle piece, the anaerobic power test and the rep-range guide.
 - **Recovery and planning (10):** back-pain exercises (YMYL), stretching, stretching circuit, muscle
   failure, periodization, exercise and immune system, deload week, sleep, training planning and
   muscle recovery.
 
 ## Next 10
 
-1. Start with the first unchecked row:
-   `/tu-primer-dia-en-el-gimnasio-como-superarlo-y-querer-volver/`.
-2. Continue with the next `Musculación` rows; keep the same copy, unique-hero and gate flow.
-3. The scaling architecture is deferred to PLAN Phase 7; do not implement it during content batches.
+1. Start with the first unchecked row: `/cuanto-peso-cargar-en-el-gimnasio/`.
+2. Then `/instrumentos-del-gimnasio/`, `/tiempo-de-descanso-entre-series/`,
+   `/ejercicios-en-polea-ventajas/`, `/ejercicios-multiarticulares-y-ejercicios-de-aislamiento/`,
+   `/congresos-profesores-factores-clave-fivestars-fitness/`,
+   `/como-se-adapta-el-cuerpo-al-entrenamiento-con-pesas/`, `/entrenamiento-del-agarre/`,
+   `/peso-muerto-mejor-agarre/` and `/gimnasio-de-la-vieja-escuela/`.
+3. Keep the same copy, unique-hero and gate flow.
+4. The scaling architecture is deferred to PLAN Phase 7; do not implement it during content batches.
 
 ## Page contract (short)
 
@@ -78,21 +82,23 @@ also live in production.
 
 ## Pending decisions
 
-- **Batch 7 pushed 2026-11-07.** Future batches deploy through Workers Builds; run `npm run verify`
-  first and review the batch before pushing.
+- **Batch 8 built, not pushed.** Review it with `npm run dev`, then push; Workers Builds deploys on
+  every push to `main`. The batch is 20 article files plus 10 vendored heroes.
 - **Scaling architecture (deferred):** route-manifest unification and guides-nav generation; see
   `odd/tasks/architecture-scaling.md` and `PLAN.md` Phase 7. Do not implement during the content
   batches.
 - Phase 1: `Article` + `BreadcrumbList` JSON-LD, `og:type=article`, dates, per-article OG image.
 - Phase 2: guides hub, real menu hrefs, internal links from the landing and hubs.
-- Phase 6: read Search Console on 2026-11-19 before scaling beyond the 76-page pilot.
-- Engram memory id 53 covers through batch 7; the scaling architecture is PLAN Phase 7.
+- Phase 6: read Search Console on 2026-11-19 before scaling beyond the 86-page pilot.
+- Engram topic `content-library/handoff` covers the current state; the scaling architecture is PLAN
+  Phase 7.
 
 ## Session close (2026-11-07)
 
-- Batches 5, 6 and 7 are live: 76/792 pages, 76 unique heroes, 168 pages and 164 sitemap URLs.
-- Batch 7 shipped the YMYL back-pain page (medical disclaimer in both locales) and the
-  `.text-table` fix for the situations table.
-- The scaling architecture is deferred to `odd/tasks/architecture-scaling.md` and `PLAN.md` Phase 7.
-- Next session starts at `/tu-primer-dia-en-el-gimnasio-como-superarlo-y-querer-volver/`.
-- Engram memory #53 is updated with this state.
+- Batch 8 wrote 10 pages (20 files) from `/tu-primer-dia-en-el-gimnasio.../` to
+  `/repeticiones-entrenamiento/`: 86/792 pages, 86 unique heroes.
+- Gates are green: `check:copy` 4,386/4,386, build 188 pages, `check:i18n` 3,007/3,007.
+- The batch is committed but not pushed; production still serves batch 7 (168 pages, 164 sitemap
+  URLs).
+- Next session starts at `/cuanto-peso-cargar-en-el-gimnasio/`.
+- Engram topic `content-library/handoff` is updated with this state.

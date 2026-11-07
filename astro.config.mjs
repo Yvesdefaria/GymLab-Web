@@ -91,6 +91,19 @@ const ROUTE_PAIRS = [
   ['/cuanto-dormir-para-progresar-en-el-gimnasio', '/sleep-for-muscle-growth'],
   ['/planificacion-del-entrenamiento', '/training-planning'],
   ['/regeneracion-muscular', '/muscle-recovery'],
+  ['/tu-primer-dia-en-el-gimnasio-como-superarlo-y-querer-volver', '/first-day-at-the-gym'],
+  [
+    '/agarres-prono-y-supino-diferencias-y-principales-beneficios',
+    '/pronated-vs-supinated-grip',
+  ],
+  ['/estancamiento-muscular', '/muscle-plateau'],
+  ['/mejor-equipamiento-para-entrenar-en-casa', '/best-home-gym-equipment'],
+  ['/cinturon-entrenamiento', '/weightlifting-belt'],
+  ['/entrenamiento-charles-poliquin', '/charles-poliquin-training'],
+  ['/tipos-agarre', '/grip-types'],
+  ['/culturismo-mas-que-musculo', '/bodybuilding-lifestyle'],
+  ['/prueba-potencia-anaerobia', '/anaerobic-power-test'],
+  ['/repeticiones-entrenamiento', '/optimal-rep-range'],
 ];
 
 const pairFor = (pathname) => {

@@ -171,6 +171,26 @@ const PAGES = [
   ['en', '/en/training-planning/'],
   ['es', '/es/regeneracion-muscular/'],
   ['en', '/en/muscle-recovery/'],
+  ['es', '/es/tu-primer-dia-en-el-gimnasio-como-superarlo-y-querer-volver/'],
+  ['en', '/en/first-day-at-the-gym/'],
+  ['es', '/es/agarres-prono-y-supino-diferencias-y-principales-beneficios/'],
+  ['en', '/en/pronated-vs-supinated-grip/'],
+  ['es', '/es/estancamiento-muscular/'],
+  ['en', '/en/muscle-plateau/'],
+  ['es', '/es/mejor-equipamiento-para-entrenar-en-casa/'],
+  ['en', '/en/best-home-gym-equipment/'],
+  ['es', '/es/cinturon-entrenamiento/'],
+  ['en', '/en/weightlifting-belt/'],
+  ['es', '/es/entrenamiento-charles-poliquin/'],
+  ['en', '/en/charles-poliquin-training/'],
+  ['es', '/es/tipos-agarre/'],
+  ['en', '/en/grip-types/'],
+  ['es', '/es/culturismo-mas-que-musculo/'],
+  ['en', '/en/bodybuilding-lifestyle/'],
+  ['es', '/es/prueba-potencia-anaerobia/'],
+  ['en', '/en/anaerobic-power-test/'],
+  ['es', '/es/repeticiones-entrenamiento/'],
+  ['en', '/en/optimal-rep-range/'],
 ];
 
 // Content routes, keyed by a stable id with the slug each locale publishes. The
@@ -346,6 +366,34 @@ const ROUTES = {
   },
   trainingPlanning: { es: '/planificacion-del-entrenamiento', en: '/training-planning' },
   muscleRecovery: { es: '/regeneracion-muscular', en: '/muscle-recovery' },
+  firstDayAtTheGym: {
+    es: '/tu-primer-dia-en-el-gimnasio-como-superarlo-y-querer-volver',
+    en: '/first-day-at-the-gym',
+  },
+  pronatedVsSupinatedGrip: {
+    es: '/agarres-prono-y-supino-diferencias-y-principales-beneficios',
+    en: '/pronated-vs-supinated-grip',
+  },
+  musclePlateau: { es: '/estancamiento-muscular', en: '/muscle-plateau' },
+  homeGymEquipment: {
+    es: '/mejor-equipamiento-para-entrenar-en-casa',
+    en: '/best-home-gym-equipment',
+  },
+  weightliftingBelt: { es: '/cinturon-entrenamiento', en: '/weightlifting-belt' },
+  charlesPoliquinTraining: {
+    es: '/entrenamiento-charles-poliquin',
+    en: '/charles-poliquin-training',
+  },
+  gripTypes: { es: '/tipos-agarre', en: '/grip-types' },
+  bodybuildingLifestyle: {
+    es: '/culturismo-mas-que-musculo',
+    en: '/bodybuilding-lifestyle',
+  },
+  anaerobicPowerTest: {
+    es: '/prueba-potencia-anaerobia',
+    en: '/anaerobic-power-test',
+  },
+  optimalRepRange: { es: '/repeticiones-entrenamiento', en: '/optimal-rep-range' },
 };
 
 const routeId = (path) => {

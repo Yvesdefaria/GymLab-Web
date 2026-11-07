@@ -9,18 +9,18 @@ Legend: `ES` = Spanish published, `EN` = English published.
 
 ## Progress
 
-- **Built: 76 / 792** (ES 76, EN 76).
-- Last batch: 10 pages, from `/ejercicios-dolor-de-espalda/` to `/regeneracion-muscular/`.
+- **Built: 86 / 792** (ES 86, EN 86).
+- Last batch: 10 pages, from `/tu-primer-dia-en-el-gimnasio-como-superarlo-y-querer-volver/` to `/repeticiones-entrenamiento/`.
 
 | Block | Articles | Built |
 | --- | ---: | ---: |
-| Entrenamiento | 222 | 37 |
+| Entrenamiento | 222 | 47 |
 | Por Músculo | 80 | 5 |
 | Rutinas | 80 | 0 |
 | Ejercicios | 196 | 34 |
 | Nutrición | 191 | 0 |
 | Mujer Fitness | 23 | 0 |
-| **Total** | **792** | **76** |
+| **Total** | **792** | **86** |
 
 ## Copy gate (mandatory before ticking ES/EN)
 
@@ -111,14 +111,24 @@ Legend: `ES` = Spanish published, `EN` = English published.
 | `cuanto-dormir-para-progresar-en-el-gimnasio` | yes | yes | yes | 0 em dashes | pass |
 | `planificacion-del-entrenamiento` | yes | yes | yes | 0 em dashes | pass |
 | `regeneracion-muscular` | yes | yes | yes | 0 em dashes | pass |
+| `tu-primer-dia-en-el-gimnasio-como-superarlo-y-querer-volver` | yes | yes | yes | 0 em dashes | pass |
+| `agarres-prono-y-supino-diferencias-y-principales-beneficios` | yes | yes | yes | 0 em dashes | pass |
+| `estancamiento-muscular` | yes | yes | yes | 0 em dashes | pass |
+| `mejor-equipamiento-para-entrenar-en-casa` | yes | yes | yes | 0 em dashes | pass |
+| `cinturon-entrenamiento` | yes | yes | yes | 0 em dashes | pass |
+| `entrenamiento-charles-poliquin` | yes | yes | yes | 0 em dashes | pass |
+| `tipos-agarre` | yes | yes | yes | 0 em dashes | pass |
+| `culturismo-mas-que-musculo` | yes | yes | yes | 0 em dashes | pass |
+| `prueba-potencia-anaerobia` | yes | yes | yes | 0 em dashes | pass |
+| `repeticiones-entrenamiento` | yes | yes | yes | 0 em dashes | pass |
 
 ## Resume (2026-11-07)
 
-- Built: **76/792**; **76 unique heroes**; **batch 7 pushed 2026-11-07**.
-- All 76 pages are live; production has 168 pages and 164 sitemap URLs.
+- Built: **86/792**; **86 unique heroes**; **batch 8 ready for review** (not pushed yet).
+- Batch 8 pages are built and pass `npm run verify`: 188 pages, 3,007 i18n checks.
 - Full handoff: `odd/tasks/content-library-session.md`.
 - Next: the first unchecked row
-  (`/tu-primer-dia-en-el-gimnasio-como-superarlo-y-querer-volver/`).
+  (`/cuanto-peso-cargar-en-el-gimnasio/`).
 - Verify with `npm run verify`; review with `npm run dev` at `http://localhost:4321`.
 
 ## Entrenamiento (222)
@@ -152,16 +162,16 @@ Legend: `ES` = Spanish published, `EN` = English published.
 - [x] ES · [x] EN — `/cuanto-dormir-para-progresar-en-el-gimnasio/` — ¿Cuánto dormir para progresar en el gimnasio?
 - [x] ES · [x] EN — `/planificacion-del-entrenamiento/` — Sesiones, microciclos, mesociclos y macrociclos \| ¡Planifica!
 - [x] ES · [x] EN — `/regeneracion-muscular/` — Como mejorar la reparación y regeneración muscular
-- [ ] ES · [ ] EN — `/tu-primer-dia-en-el-gimnasio-como-superarlo-y-querer-volver/` — Tu primer día en el gimnasio \| ¡Como superarlo y querer volver!
-- [ ] ES · [ ] EN — `/agarres-prono-y-supino-diferencias-y-principales-beneficios/` — Agarres Prono y Supino, diferencias y principales beneficios
-- [ ] ES · [ ] EN — `/estancamiento-muscular/` — Cómo Superar el Estancamiento Muscular Eficazmente
-- [ ] ES · [ ] EN — `/mejor-equipamiento-para-entrenar-en-casa/` — El mejor equipamiento para entrenar en casa \| Actualizado 2026
-- [ ] ES · [ ] EN — `/cinturon-entrenamiento/` — Cinturón de entrenamiento \| ¿Necesitas comprar uno?
-- [ ] ES · [ ] EN — `/entrenamiento-charles-poliquin/` — Estrategias de entrenamiento de Charles Poliquin
-- [ ] ES · [ ] EN — `/tipos-agarre/` — Tipos de agarre en el gimnasio y por qué variarlos
-- [ ] ES · [ ] EN — `/culturismo-mas-que-musculo/` — Culturismo: más que músculo, un estilo de vida
-- [ ] ES · [ ] EN — `/prueba-potencia-anaerobia/` — Prueba de Potencia Anaerobia: Evalúa tu Explosividad
-- [ ] ES · [ ] EN — `/repeticiones-entrenamiento/` — Rango óptimo de repeticiones entrenando en 2025
+- [x] ES · [x] EN — `/tu-primer-dia-en-el-gimnasio-como-superarlo-y-querer-volver/` — Tu primer día en el gimnasio \| ¡Como superarlo y querer volver!
+- [x] ES · [x] EN — `/agarres-prono-y-supino-diferencias-y-principales-beneficios/` — Agarres Prono y Supino, diferencias y principales beneficios
+- [x] ES · [x] EN — `/estancamiento-muscular/` — Cómo Superar el Estancamiento Muscular Eficazmente
+- [x] ES · [x] EN — `/mejor-equipamiento-para-entrenar-en-casa/` — El mejor equipamiento para entrenar en casa \| Actualizado 2026
+- [x] ES · [x] EN — `/cinturon-entrenamiento/` — Cinturón de entrenamiento \| ¿Necesitas comprar uno?
+- [x] ES · [x] EN — `/entrenamiento-charles-poliquin/` — Estrategias de entrenamiento de Charles Poliquin
+- [x] ES · [x] EN — `/tipos-agarre/` — Tipos de agarre en el gimnasio y por qué variarlos
+- [x] ES · [x] EN — `/culturismo-mas-que-musculo/` — Culturismo: más que músculo, un estilo de vida
+- [x] ES · [x] EN — `/prueba-potencia-anaerobia/` — Prueba de Potencia Anaerobia: Evalúa tu Explosividad
+- [x] ES · [x] EN — `/repeticiones-entrenamiento/` — Rango óptimo de repeticiones entrenando en 2025
 - [ ] ES · [ ] EN — `/cuanto-peso-cargar-en-el-gimnasio/` — Cuanto peso utilizar en el gimnasio \| Gana más músculo y fuerza
 - [ ] ES · [ ] EN — `/instrumentos-del-gimnasio/` — Los instrumentos del gimnasio \| Barras, mancuernas, poleas...
 - [ ] ES · [ ] EN — `/tiempo-de-descanso-entre-series/` — Tiempo de descanso entre series \| Optimízalo al 100%
