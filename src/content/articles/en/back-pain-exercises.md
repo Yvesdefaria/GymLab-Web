@@ -38,17 +38,62 @@ Regular work on the spinal and dorsal muscles keeps your body position correct a
 
 These everyday movements stop pain before it starts.
 
-| Situation | What to avoid | What to do |
-| --- | --- | --- |
-| Picking up an object | Bending your back forward without bending your knees | Bend your knees with your back straight |
-| Getting out of bed | Lifting your trunk to sit up | Swing your legs to the side and sit up taking your weight on your arm |
-| Carrying a backpack or bag | Hanging it on one side | Spread the load between both hands, across your back or over one shoulder |
-| Lifting a weight off the floor | Rounding your back | Bend your knees, bring the weight as close as you can and make the effort with your legs |
-| Driving a car | Sitting far from the wheel with your back unsupported | Move the seat closer to the wheel |
-| Sleeping | Using big pillows and big mattresses | Use anatomical pillows and a suitable mattress |
-| Riding a bike | A bike that is too big, forcing you to stretch for the handlebars or lift your head unnaturally | Always pick your correct size and keep a natural, relaxed posture with no tension in your arms and neck |
-| Running | A rigid, tense posture, as if you were being inspected | Keep a natural posture with your head forward and relaxed arms, and add abdominal work to strengthen your back |
-| Weight training | Lifting excessive weights without back protection | Choose suitable weights and use a belt or lumbar support to avoid injury |
+<table class="text-table">
+  <thead>
+    <tr>
+      <th>Situation</th>
+      <th>What to avoid</th>
+      <th>What to do</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Picking up an object</td>
+      <td>Bending your back forward without bending your knees</td>
+      <td>Bend your knees with your back straight</td>
+    </tr>
+    <tr>
+      <td>Getting out of bed</td>
+      <td>Lifting your trunk to sit up</td>
+      <td>Swing your legs to the side and sit up taking your weight on your arm</td>
+    </tr>
+    <tr>
+      <td>Carrying a backpack or bag</td>
+      <td>Hanging it on one side</td>
+      <td>Spread the load between both hands, across your back or over one shoulder</td>
+    </tr>
+    <tr>
+      <td>Lifting a weight off the floor</td>
+      <td>Rounding your back</td>
+      <td>Bend your knees, bring the weight as close as you can and make the effort with your legs</td>
+    </tr>
+    <tr>
+      <td>Driving a car</td>
+      <td>Sitting far from the wheel with your back unsupported</td>
+      <td>Move the seat closer to the wheel</td>
+    </tr>
+    <tr>
+      <td>Sleeping</td>
+      <td>Using big pillows and big mattresses</td>
+      <td>Use anatomical pillows and a suitable mattress</td>
+    </tr>
+    <tr>
+      <td>Riding a bike</td>
+      <td>A bike that is too big, forcing you to stretch for the handlebars or lift your head unnaturally</td>
+      <td>Always pick your correct size and keep a natural, relaxed posture with no tension in your arms and neck</td>
+    </tr>
+    <tr>
+      <td>Running</td>
+      <td>A rigid, tense posture, as if you were being inspected</td>
+      <td>Keep a natural posture with your head forward and relaxed arms, and add abdominal work to strengthen your back</td>
+    </tr>
+    <tr>
+      <td>Weight training</td>
+      <td>Lifting excessive weights without back protection</td>
+      <td>Choose suitable weights and use a belt or lumbar support to avoid injury</td>
+    </tr>
+  </tbody>
+</table>
 
 ## Exercises to strengthen your back
 

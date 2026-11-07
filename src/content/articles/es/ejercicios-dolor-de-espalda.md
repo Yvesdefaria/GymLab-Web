@@ -38,17 +38,62 @@ Los [ejercicios de estiramiento](/es/estiramientos/) mejoran el funcionamiento d
 
 Estos gestos del día a día previenen el dolor antes de que aparezca.
 
-| Situación | Qué evitar | Cómo hacerlo |
-| --- | --- | --- |
-| Coger un objeto | Inclinar la espalda hacia delante sin doblar las rodillas | Flexiona las rodillas con la espalda recta |
-| Levantarse de la cama | Levantar el tronco para sentarse | Saca las piernas de lado y siéntate apoyando el peso sobre el brazo |
-| Llevar mochilas o bolso | Colgarlo de un lado | Reparte el peso entre las dos manos, sobre la espalda o en bandolera |
-| Levantar un peso del suelo | Doblar la espalda | Flexiona las rodillas, acerca el peso lo más posible y haz el esfuerzo con las piernas |
-| Conducir un coche | Estar muy lejos del volante y sin apoyar la espalda en el asiento | Acerca el asiento al volante |
-| Dormir | Usar almohadas grandes y colchones grandes | Usa almohadas anatómicas y colchones adecuados |
-| Montar en bicicleta | Llevar una bici de talla grande, que obliga a estirar los brazos o a levantar la cabeza de forma antinatural | Elige siempre tu talla correcta y mantén una postura natural y relajada, sin tensiones en brazos y cuello |
-| Correr | Llevar una postura rígida y en tensión, como si te pasaran control | Mantén una postura natural, con la cabeza al frente y los brazos relajados, y complementa con abdominales para fortalecer la espalda |
-| Musculación | Levantar pesos excesivos sin protección de espalda | Elige las pesas adecuadas y usa un cinturón o faja lumbar para evitar lesiones |
+<table class="text-table">
+  <thead>
+    <tr>
+      <th>Situación</th>
+      <th>Qué evitar</th>
+      <th>Cómo hacerlo</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Coger un objeto</td>
+      <td>Inclinar la espalda hacia delante sin doblar las rodillas</td>
+      <td>Flexiona las rodillas con la espalda recta</td>
+    </tr>
+    <tr>
+      <td>Levantarse de la cama</td>
+      <td>Levantar el tronco para sentarse</td>
+      <td>Saca las piernas de lado y siéntate apoyando el peso sobre el brazo</td>
+    </tr>
+    <tr>
+      <td>Llevar mochilas o bolso</td>
+      <td>Colgarlo de un lado</td>
+      <td>Reparte el peso entre las dos manos, sobre la espalda o en bandolera</td>
+    </tr>
+    <tr>
+      <td>Levantar un peso del suelo</td>
+      <td>Doblar la espalda</td>
+      <td>Flexiona las rodillas, acerca el peso lo más posible y haz el esfuerzo con las piernas</td>
+    </tr>
+    <tr>
+      <td>Conducir un coche</td>
+      <td>Estar muy lejos del volante y sin apoyar la espalda en el asiento</td>
+      <td>Acerca el asiento al volante</td>
+    </tr>
+    <tr>
+      <td>Dormir</td>
+      <td>Usar almohadas grandes y colchones grandes</td>
+      <td>Usa almohadas anatómicas y colchones adecuados</td>
+    </tr>
+    <tr>
+      <td>Montar en bicicleta</td>
+      <td>Llevar una bici de talla grande, que obliga a estirar los brazos o a levantar la cabeza de forma antinatural</td>
+      <td>Elige siempre tu talla correcta y mantén una postura natural y relajada, sin tensiones en brazos y cuello</td>
+    </tr>
+    <tr>
+      <td>Correr</td>
+      <td>Llevar una postura rígida y en tensión, como si te pasaran control</td>
+      <td>Mantén una postura natural, con la cabeza al frente y los brazos relajados, y complementa con abdominales para fortalecer la espalda</td>
+    </tr>
+    <tr>
+      <td>Musculación</td>
+      <td>Levantar pesos excesivos sin protección de espalda</td>
+      <td>Elige las pesas adecuadas y usa un cinturón o faja lumbar para evitar lesiones</td>
+    </tr>
+  </tbody>
+</table>
 
 ## Ejercicios para fortalecer la espalda
 

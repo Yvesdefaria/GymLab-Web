@@ -75,6 +75,9 @@ Every routine table is exactly three columns: **Exercise | Sets | Reps**.
 - First column: Oswald 500, chalk. Sets and Reps: Oswald, tabular, right-aligned, gold.
 - **Footnotes never go inside the table.** A single-cell row breaks the grid. Write them after the table as a blockquote: `> **\*** ...`, followed by a blank line.
 - One footnote per table maximum; if a second exception appears, it belongs in the prose.
+- **Text tables** (situations, comparisons, checklists) use raw HTML `<table class="text-table">` with
+  auto layout and the widths in `ArticleLayout` (24/32/44). The fixed 58/21/21 geometry is only for
+  routine tables; a text table in that grid overflows.
 - No `rowspan`, no merged cells, no table inside a table.
 
 ## 5. Images

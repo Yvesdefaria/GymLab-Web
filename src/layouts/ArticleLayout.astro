@@ -509,6 +509,53 @@ const copy = {
     font-size: 0.95rem;
   }
 
+  /* Text tables (situations, comparisons, checklists) need balanced columns;
+     the routine tables keep the fixed 58/21/21 geometry above. */
+  .article-body :global(table.text-table) {
+    table-layout: auto;
+  }
+
+  .article-body :global(table.text-table th),
+  .article-body :global(table.text-table td) {
+    width: auto;
+    white-space: normal;
+    text-align: left;
+    vertical-align: top;
+    overflow-wrap: anywhere;
+    font-family: var(--font-body);
+    font-variant-numeric: normal;
+    letter-spacing: normal;
+  }
+
+  .article-body :global(table.text-table th:nth-child(1)),
+  .article-body :global(table.text-table td:nth-child(1)) {
+    width: 24%;
+  }
+
+  .article-body :global(table.text-table th:nth-child(2)),
+  .article-body :global(table.text-table td:nth-child(2)) {
+    width: 32%;
+  }
+
+  .article-body :global(table.text-table th:nth-child(3)),
+  .article-body :global(table.text-table td:nth-child(3)) {
+    width: 44%;
+  }
+
+  .article-body :global(table.text-table tbody td:first-child) {
+    font-family: var(--font-display);
+    font-weight: 500;
+  }
+
+  .article-body :global(table.text-table tbody td:nth-child(2)),
+  .article-body :global(table.text-table tbody td:nth-child(3)) {
+    color: var(--color-muted);
+    font-size: 0.9rem;
+    line-height: 1.45;
+    text-align: left;
+    white-space: normal;
+  }
+
   .article-body :global(img) {
     max-width: 100%;
     height: auto;
