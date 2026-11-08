@@ -1,6 +1,6 @@
 # Content library — session handoff
 
-Last updated: 2026-11-07. Read this first next session.
+Last updated: 2026-11-08. Read this first next session.
 
 - Per-page record: `odd/tasks/content-pages.md`
 - Page contract and copy gate: `odd/tasks/guides-page-contract.md`
@@ -9,27 +9,26 @@ Last updated: 2026-11-07. Read this first next session.
 
 ## State
 
-- **95 / 792 bilingual pages** (ES 95, EN 95).
-- Blocks: Entrenamiento **56**, Por Músculo **5**, Ejercicios **34**.
-- **95 unique heroes, 0 duplicates.**
-- **Batches 8 and 9 are live (pushed 2026-11-07, `f000c18`..`1442772`).** Production has
-  **206 pages** and **202 sitemap URLs**.
+- **105 / 792 bilingual pages** (ES 105, EN 105).
+- Blocks: Entrenamiento **66**, Por Músculo **5**, Ejercicios **34**.
+- **105 unique heroes, 0 duplicates.**
+- **Batch 10 is built and green (2026-11-08), not yet pushed.** Production still serves the batch 9
+  build: **206 pages** and **202 sitemap URLs**. The batch 10 build has **226 pages** and
+  **222 sitemap URLs**.
 - One archive row is discarded and must stay out: the FiveStars Fitness congress page.
-- The live `/es/rutinas-espalda/` has the new copy, the credit in the alt and the correct
-  language switch.
+- Batch record: `odd/tasks/content-library-batch-10.md`.
 
 ## Gates
 
 ```powershell
-npm run check:copy   # 4,845/4,845
-npm run build        # 206 pages
-npm run check:i18n   # 3,286/3,286
+npm run check:copy   # 5,355/5,355
+npm run build        # 226 pages
+npm run check:i18n   # 3,596/3,596
 npm run verify       # all three, in that order
 npm run dev          # http://localhost:4321
 ```
 
-Start the dev server with `npm run dev` for local review. Production serves the 206-page build with
-batches 8 and 9 live.
+Start the dev server with `npm run dev` for local review.
 
 ## What is built
 
@@ -39,23 +38,20 @@ batches 8 and 9 live.
   good-morning, pullover and back-extension families, including the Smith machine row.
 - **Por Músculo / Rutinas de Espalda (5):** amplitud/densidad, 15 minutos, dorsales grandes, the
   advanced pull-up programme and the back superset finisher.
-- **Musculación (37):** the first eighteen plus batches 8 and 9: the first-day guide, both grip
-  articles, the plateau guide, the home-equipment buying guide, the lifting belt, Poliquin's
-  strategies, the bodybuilding lifestyle piece, the anaerobic power test, the rep-range guide, the
-  weight-selection guide, the equipment guide, rest between sets, cable exercises, compound versus
-  isolation, body adaptation, grip training, deadlift grip and old-school gyms.
+- **Musculación (47):** the first eighteen, batches 8 and 9, and batch 10: pyramid training, training
+  volume, the muscle pump, weak-point routines, the 5% progression, choosing an activity when you
+  return to the gym, stability-ball exercises, muscle imbalance, rep tempo and the eight-rep debate.
 - **Recovery and planning (10):** back-pain exercises (YMYL), stretching, stretching circuit, muscle
   failure, periodization, exercise and immune system, deload week, sleep, training planning and
   muscle recovery.
 
 ## Next 10
 
-1. Start with the first unchecked row: `/entrenamiento-piramidal/`.
-2. Then `/volumen-de-entrenamiento/`, `/congestion-muscular/`,
-   `/elaboracion-de-rutinas-puntos-debiles/`, `/levantar-aumentar-peso/`,
-   `/escoger-actividad-en-tu-vuelta-al-gimnasio/`, `/ejercicios-sobre-balon/`,
-   `/los-peligros-de-entrenar-como-un-preplaya/`, `/tiempos-entrenamiento/` and
-   `/8-repeticiones-entrenando/`.
+1. Skip the discarded FiveStars row and start at `/elegir-gimnasio/`.
+2. Then `/metodo-bulgaro/`, `/repeticion-maxima/`,
+   `/tipos-somaticos-endomorfos-ectomorfos-y-mesomorfos/`, `/tipos-de-fibras-musculares/`,
+   `/desafio-100-flexiones/`, `/errores-entrenamiento/`, `/tests-evaluar-estado-fisico/`,
+   `/entrenamiento-oxigenacion/` and `/entrenamiento-balistico/`.
 3. Keep the same copy, unique-hero and gate flow.
 4. The scaling architecture is deferred to PLAN Phase 7; do not implement it during content batches.
 
@@ -85,8 +81,8 @@ batches 8 and 9 live.
 
 ## Pending decisions
 
-- **Push done 2026-11-07** (`f000c18`..`1442772`). Future batches deploy via Workers Builds; run
-  `npm run verify` first.
+- **Batch 10 push pending.** Batches 8 and 9 went live on 2026-11-07 (`f000c18`..`1442772`). Future
+  batches deploy via Workers Builds; run `npm run verify` first.
 - **Discarded row:** `/congresos-profesores-factores-clave-fivestars-fitness/` does not go to
   production (owner decision, 2026-11-07). Do not rebuild it in a later batch.
 - **Scaling architecture (deferred):** route-manifest unification and guides-nav generation; see
@@ -98,13 +94,21 @@ batches 8 and 9 live.
 - Engram topic `content-library/handoff` covers the current state; the scaling architecture is PLAN
   Phase 7.
 
-## Session close (2026-11-07)
+## Session close (2026-11-08)
 
-- Batches 8 and 9 wrote 19 pages (38 files) from `/tu-primer-dia-en-el-gimnasio.../` to
-  `/gimnasio-de-la-vieja-escuela/`: 95/792 pages, 95 unique heroes.
-- The FiveStars Fitness congress row was discarded by the owner and removed from the build.
-- Gates are green: `check:copy` 4,845/4,845, build 206 pages, `check:i18n` 3,286/3,286.
-- Both batches are pushed and live: production serves 206 pages and 202 sitemap URLs.
-- The FiveStars Fitness page is 404 in production, as intended.
-- Next session starts at `/entrenamiento-piramidal/`.
+- Batch 10 wrote 10 page pairs (20 files) from `/entrenamiento-piramidal/` to
+  `/8-repeticiones-entrenando/`: 105/792 pages, 105 unique heroes.
+- Two writers ran sequentially, five pairs each; the parent registered the 10 pairs in `ROUTE_PAIRS`,
+  `PAGES` and `ROUTES` and ran the gates.
+- Gates are green: `check:copy` 5,355/5,355, build **226 pages**, `check:i18n` 3,596/3,596,
+  sitemap **222 URLs** with 666 alternates.
+- Structural checks the gate does not cover, run by hand: 78 internal links across the 20 files all
+  resolve to a built page; zero `.md` links, zero `#` links and zero em dashes in the 20 files; the
+  TOC anchor sets match the H2 ids on five sampled pages; `sitemap-0.xml` publishes 222 URLs.
+- **Gotcha:** `ROUTES` in `scripts/check-i18n.mjs` is keyed, and a new key that collides with an
+  existing one silently overwrites it (`musclePump` was already taken by
+  `/ejercicios-maxima-congestion-muscular`). A duplicate key crashes `check:i18n` on the older pair
+  with `Cannot read properties of undefined`. Check for key collisions before adding a route.
+- Batch 10 is committed but **not pushed**; production still serves the batch 9 build.
+- Next session starts at `/elegir-gimnasio/` (the FiveStars row is discarded).
 - Engram topic `content-library/handoff` is updated with this state.

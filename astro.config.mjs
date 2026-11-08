@@ -119,6 +119,16 @@ const ROUTE_PAIRS = [
   ['/entrenamiento-del-agarre', '/grip-strength-training'],
   ['/peso-muerto-mejor-agarre', '/deadlift-grip'],
   ['/gimnasio-de-la-vieja-escuela', '/old-school-gym-training'],
+  ['/entrenamiento-piramidal', '/pyramid-training'],
+  ['/volumen-de-entrenamiento', '/training-volume'],
+  ['/congestion-muscular', '/muscle-pump'],
+  ['/elaboracion-de-rutinas-puntos-debiles', '/routine-weak-points'],
+  ['/levantar-aumentar-peso', '/lift-more-weight-5-percent'],
+  ['/escoger-actividad-en-tu-vuelta-al-gimnasio', '/back-to-the-gym-choosing-activity'],
+  ['/ejercicios-sobre-balon', '/stability-ball-exercises'],
+  ['/los-peligros-de-entrenar-como-un-preplaya', '/unbalanced-training-dangers'],
+  ['/tiempos-entrenamiento', '/rep-tempo'],
+  ['/8-repeticiones-entrenando', '/eight-reps-debate'],
 ];
 
 const pairFor = (pathname) => {

@@ -13,31 +13,33 @@ Last updated: 2026-11-07.
 - Production is **live** at `https://gymlab.dev`, served by the Worker `gymlab-web` with static assets.
   It is not Cloudflare Pages. Deploy with `npx wrangler deploy`.
 - Production is live with the 2026-11-07 batches 8 and 9 deploy (`f000c18`..`1442772`):
-  **202 sitemap URLs** and **206 pages**. `check:copy` **4,845/4,845**, `check:i18n`
+  **202 sitemap URLs** and **206 pages**. The 2026-11-08 batch 10 build is **226 pages** and
+  **222 sitemap URLs**; it is committed and not yet pushed. `check:copy` **4,845/4,845**, `check:i18n`
   **3,286/3,286**.
 - `app.gymlab.dev` is `noindex` with a real `robots.txt`.
 - The landing, the three calculators, the 404 and the legal pages all ship in both locales.
 - Measurement and the SQL recipe: see "Reading analytics" below and `COMPLETED.md` Appendix B.
 
-## Content library — 95 / 792 (2026-11-07)
+## Content library — 105 / 792 (2026-11-08)
 
-- **95 bilingual pages** (ES 95, EN 95), **95 unique heroes**, 0 duplicates. Blocks: Entrenamiento 56,
+- **105 bilingual pages** (ES 105, EN 105), **105 unique heroes**, 0 duplicates. Blocks: Entrenamiento 66,
   Por Músculo 5, Ejercicios 34.
-- **Batches 8 and 9 are live (pushed 2026-11-07, `f000c18`..`1442772`).** Production has
-  **206 pages** and **202 sitemap URLs**.
-- Gates: `npm run verify` = `check:copy` **4,845/4,845** + build **206 pages** + `check:i18n`
-  **3,286/3,286**.
+- **Batch 10 is built and green (2026-11-08).** Production still serves the batch 9 build:
+  **206 pages** and **202 sitemap URLs**. The batch 10 build has **226 pages** and
+  **222 sitemap URLs**.
+- Gates: `npm run verify` = `check:copy` **5,355/5,355** + build **226 pages** + `check:i18n`
+  **3,596/3,596**.
 - Docs: `odd/tasks/content-library-session.md` (start here next session),
-  `odd/tasks/content-pages.md` (per-page checklist + resume), `odd/tasks/guides-page-contract.md`
-  (the page contract and copy gate).
-- **Next 10:** the first unchecked row (`/entrenamiento-piramidal/`) and the next Musculación rows.
+  `odd/tasks/content-pages.md` (per-page checklist + resume), `odd/tasks/content-library-batch-10.md`
+  (the last batch) and `odd/tasks/guides-page-contract.md` (the page contract and copy gate).
+- **Next 10:** `/elegir-gimnasio/` and the nine Musculación rows after it.
 - **Discarded:** `/congresos-profesores-factores-clave-fivestars-fitness/` does not go to production
   (owner decision, 2026-11-07).
-- **Push done 2026-11-07** (`f000c18`..`1442772`). Future batches deploy via Workers Builds; run
+- **Push pending for batch 10.** Future batches deploy via Workers Builds; run
   `npm run verify` first.
-- Image rule: one unique hero per page; `check:copy` fails on a duplicate. Batches 5-9 heroes are
+- Image rule: one unique hero per page; `check:copy` fails on a duplicate. Batches 5-10 heroes are
   Wikimedia Commons (CC0/CC BY/CC BY-SA/public domain); the `alt` includes the credit.
-- Engram topic `content-library/handoff` covers through batch 9; the scaling architecture is PLAN
+- Engram topic `content-library/handoff` covers through batch 10; the scaling architecture is PLAN
   Phase 7.
 
 ## Deployed on 2026-10-29

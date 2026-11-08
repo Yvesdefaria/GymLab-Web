@@ -1,4 +1,4 @@
-﻿# Content pages — bilingual checklist
+# Content pages — bilingual checklist
 
 Source: `C:\Users\Yves De Faria\Desktop\cambiatufisico.com` (792 articles).
 Every page ships in both locales, like the rest of the site: Spanish under `/es/` and
@@ -9,18 +9,18 @@ Legend: `ES` = Spanish published, `EN` = English published.
 
 ## Progress
 
-- **Built: 95 / 792** (ES 95, EN 95).
-- Last batch: 9 pages, from `/cuanto-peso-cargar-en-el-gimnasio/` to `/gimnasio-de-la-vieja-escuela/` (one archive row discarded).
+- **Built: 105 / 792** (ES 105, EN 105).
+- Last batch: 10 pages, from `/entrenamiento-piramidal/` to `/8-repeticiones-entrenando/`.
 
 | Block | Articles | Built |
 | --- | ---: | ---: |
-| Entrenamiento | 222 | 56 |
+| Entrenamiento | 222 | 66 |
 | Por Músculo | 80 | 5 |
 | Rutinas | 80 | 0 |
 | Ejercicios | 196 | 34 |
 | Nutrición | 191 | 0 |
 | Mujer Fitness | 23 | 0 |
-| **Total** | **792** | **95** |
+| **Total** | **792** | **105** |
 
 ## Copy gate (mandatory before ticking ES/EN)
 
@@ -130,14 +130,24 @@ Legend: `ES` = Spanish published, `EN` = English published.
 | `entrenamiento-del-agarre` | yes | yes | yes | 0 em dashes | pass |
 | `peso-muerto-mejor-agarre` | yes | yes | yes | 0 em dashes | pass |
 | `gimnasio-de-la-vieja-escuela` | yes | yes | yes | 0 em dashes | pass |
+| `entrenamiento-piramidal` | yes | yes | yes | 0 em dashes | pass |
+| `volumen-de-entrenamiento` | yes | yes | yes | 0 em dashes | pass |
+| `congestion-muscular` | yes | yes | yes | 0 em dashes | pass |
+| `elaboracion-de-rutinas-puntos-debiles` | yes | yes | yes | 0 em dashes | pass |
+| `levantar-aumentar-peso` | yes | yes | yes | 0 em dashes | pass |
+| `escoger-actividad-en-tu-vuelta-al-gimnasio` | yes | yes | yes | 0 em dashes | pass |
+| `ejercicios-sobre-balon` | yes | yes | yes | 0 em dashes | pass |
+| `los-peligros-de-entrenar-como-un-preplaya` | yes | yes | yes | 0 em dashes | pass |
+| `tiempos-entrenamiento` | yes | yes | yes | 0 em dashes | pass |
+| `8-repeticiones-entrenando` | yes | yes | yes | 0 em dashes | pass |
 
-## Resume (2026-11-07)
+## Resume (2026-11-08)
 
-- Built: **95/792**; **95 unique heroes**; **batches 8 and 9 live (pushed 2026-11-07)**.
+- Built: **105/792**; **105 unique heroes**; **batch 10 built, gates green, not yet pushed**.
 - One archive row is discarded and must stay out: the FiveStars Fitness congress page.
-- Batch 9 passes `npm run verify`: 4,845 copy checks, 206 pages, 3,286 i18n checks.
-- Full handoff: `odd/tasks/content-library-session.md`.
-- Next: the first unchecked row (`/entrenamiento-piramidal/`).
+- Batch 10 passes `npm run verify`: 5,355 copy checks, 226 pages, 3,596 i18n checks.
+- Full handoff: `odd/tasks/content-library-session.md`; batch record: `odd/tasks/content-library-batch-10.md`.
+- Next: the first unchecked row after `/8-repeticiones-entrenando/`.
 - Verify with `npm run verify`; review with `npm run dev` at `http://localhost:4321`.
 
 ## Entrenamiento (222)
@@ -191,16 +201,16 @@ Legend: `ES` = Spanish published, `EN` = English published.
 - [x] ES · [x] EN — `/entrenamiento-del-agarre/` — Entrenamiento del Agarre: ¡Fortalece tus Manos y Domina el Gym!
 - [x] ES · [x] EN — `/peso-muerto-mejor-agarre/` — Mejor agarre al hacer peso muerto, ¿Neutro o Alterno?
 - [x] ES · [x] EN — `/gimnasio-de-la-vieja-escuela/` — Gimnasio de la Vieja Escuela: Métodos y Ejercicios Clásicos
-- [ ] ES · [ ] EN — `/entrenamiento-piramidal/` — Entrenamiento piramidal
-- [ ] ES · [ ] EN — `/volumen-de-entrenamiento/` — Volumen de Entrenamiento: Cómo Optimizar tus Rutinas
-- [ ] ES · [ ] EN — `/congestion-muscular/` — Congestión Muscular: Qué es y Cómo Maximizar tus Resultados
-- [ ] ES · [ ] EN — `/elaboracion-de-rutinas-puntos-debiles/` — Elaboración de rutinas para corregir puntos débiles
-- [ ] ES · [ ] EN — `/levantar-aumentar-peso/` — Como levantar más peso en el gimnasio: Sistema del 5%
-- [ ] ES · [ ] EN — `/escoger-actividad-en-tu-vuelta-al-gimnasio/` — Escoge tu actividad en tu vuelta al gimnasio
-- [ ] ES · [ ] EN — `/ejercicios-sobre-balon/` — Ejercicios sobre balón o fit-ball ¿Son efectivos?
-- [ ] ES · [ ] EN — `/los-peligros-de-entrenar-como-un-preplaya/` — Los peligros de entrenar como un preplaya
-- [ ] ES · [ ] EN — `/tiempos-entrenamiento/` — El tiempo en el entrenamiento y velocidad de las repeticiones
-- [ ] ES · [ ] EN — `/8-repeticiones-entrenando/` — El debate de las 8 repeticiones en el entrenamiento
+- [x] ES · [x] EN — `/entrenamiento-piramidal/` — Entrenamiento piramidal
+- [x] ES · [x] EN — `/volumen-de-entrenamiento/` — Volumen de Entrenamiento: Cómo Optimizar tus Rutinas
+- [x] ES · [x] EN — `/congestion-muscular/` — Congestión Muscular: Qué es y Cómo Maximizar tus Resultados
+- [x] ES · [x] EN — `/elaboracion-de-rutinas-puntos-debiles/` — Elaboración de rutinas para corregir puntos débiles
+- [x] ES · [x] EN — `/levantar-aumentar-peso/` — Como levantar más peso en el gimnasio: Sistema del 5%
+- [x] ES · [x] EN — `/escoger-actividad-en-tu-vuelta-al-gimnasio/` — Escoge tu actividad en tu vuelta al gimnasio
+- [x] ES · [x] EN — `/ejercicios-sobre-balon/` — Ejercicios sobre balón o fit-ball ¿Son efectivos?
+- [x] ES · [x] EN — `/los-peligros-de-entrenar-como-un-preplaya/` — Los peligros de entrenar como un preplaya
+- [x] ES · [x] EN — `/tiempos-entrenamiento/` — El tiempo en el entrenamiento y velocidad de las repeticiones
+- [x] ES · [x] EN — `/8-repeticiones-entrenando/` — El debate de las 8 repeticiones en el entrenamiento
 - [ ] ES · [ ] EN — `/elegir-gimnasio/` — Elige bien tu gimnasio
 - [ ] ES · [ ] EN — `/metodo-bulgaro/` — El método búlgaro de entrenamiento
 - [ ] ES · [ ] EN — `/repeticion-maxima/` — Como calcular tu Retición Máxima (RM) \| Calculadora online

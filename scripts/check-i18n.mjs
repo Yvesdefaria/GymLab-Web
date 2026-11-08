@@ -209,6 +209,26 @@ const PAGES = [
   ['en', '/en/deadlift-grip/'],
   ['es', '/es/gimnasio-de-la-vieja-escuela/'],
   ['en', '/en/old-school-gym-training/'],
+  ['es', '/es/entrenamiento-piramidal/'],
+  ['en', '/en/pyramid-training/'],
+  ['es', '/es/volumen-de-entrenamiento/'],
+  ['en', '/en/training-volume/'],
+  ['es', '/es/congestion-muscular/'],
+  ['en', '/en/muscle-pump/'],
+  ['es', '/es/elaboracion-de-rutinas-puntos-debiles/'],
+  ['en', '/en/routine-weak-points/'],
+  ['es', '/es/levantar-aumentar-peso/'],
+  ['en', '/en/lift-more-weight-5-percent/'],
+  ['es', '/es/escoger-actividad-en-tu-vuelta-al-gimnasio/'],
+  ['en', '/en/back-to-the-gym-choosing-activity/'],
+  ['es', '/es/ejercicios-sobre-balon/'],
+  ['en', '/en/stability-ball-exercises/'],
+  ['es', '/es/los-peligros-de-entrenar-como-un-preplaya/'],
+  ['en', '/en/unbalanced-training-dangers/'],
+  ['es', '/es/tiempos-entrenamiento/'],
+  ['en', '/en/rep-tempo/'],
+  ['es', '/es/8-repeticiones-entrenando/'],
+  ['en', '/en/eight-reps-debate/'],
 ];
 
 // Content routes, keyed by a stable id with the slug each locale publishes. The
@@ -439,6 +459,25 @@ const ROUTES = {
   },
   deadliftGrip: { es: '/peso-muerto-mejor-agarre', en: '/deadlift-grip' },
   oldSchoolGym: { es: '/gimnasio-de-la-vieja-escuela', en: '/old-school-gym-training' },
+  pyramidTraining: { es: '/entrenamiento-piramidal', en: '/pyramid-training' },
+  trainingVolume: { es: '/volumen-de-entrenamiento', en: '/training-volume' },
+  musclePumpGuide: { es: '/congestion-muscular', en: '/muscle-pump' },
+  routineWeakPoints: {
+    es: '/elaboracion-de-rutinas-puntos-debiles',
+    en: '/routine-weak-points',
+  },
+  liftMoreWeight: { es: '/levantar-aumentar-peso', en: '/lift-more-weight-5-percent' },
+  backToTheGym: {
+    es: '/escoger-actividad-en-tu-vuelta-al-gimnasio',
+    en: '/back-to-the-gym-choosing-activity',
+  },
+  stabilityBall: { es: '/ejercicios-sobre-balon', en: '/stability-ball-exercises' },
+  unbalancedTraining: {
+    es: '/los-peligros-de-entrenar-como-un-preplaya',
+    en: '/unbalanced-training-dangers',
+  },
+  repTempo: { es: '/tiempos-entrenamiento', en: '/rep-tempo' },
+  eightReps: { es: '/8-repeticiones-entrenando', en: '/eight-reps-debate' },
 };
 
 const routeId = (path) => {
