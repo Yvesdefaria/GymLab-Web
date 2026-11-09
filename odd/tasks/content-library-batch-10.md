@@ -72,3 +72,27 @@ Baseline before the batch: `check:copy` **4,845/4,845**, build **206 pages**, `c
   `/ejercicios-maxima-congestion-muscular`, so the new pump guide uses `musclePumpGuide`.
 - Heroes are Wikimedia Commons files at `?width=1280`, under 500 KB, one unique path per ES article;
   the EN file reuses its ES twin's path.
+
+## Native review (2026-11-08/09)
+
+RDD is `on` (global scope). Consent was granted by the owner for both attempts below.
+
+| Attempt | Scope | Result |
+| --- | --- | --- |
+| Whole batch | base `6547621`, 36 files, 2,131 lines | `lens_context_budget_exceeded` — terminal, **no authority created**, retry of the same candidate cannot succeed |
+| Route registration | base `1c601a15…b0643`, 6 files, 279 lines | START created lineage `review-bf1585fd7f8b1c1f`, risk `medium`, lens `review-reliability`, correction budget 140 |
+
+The second transaction never closed: the reviewer task was interrupted before producing a capture,
+so there is no verdict and no receipt. State stays `reviewing`; nothing was mutated and no authority
+was burned. `review status` reports zero lineages in the repair inventory, so there is nothing to
+abandon or repair.
+
+Consequence for the record: **the 20 article files are not natively reviewed**. They are covered by
+the deterministic gates (`check:copy` 5,355, build 226 pages, `check:i18n` 3,596), by the
+internal-link resolution check (78 links, all resolve), by the TOC-anchor check and by the manual
+table/hero review. The executable risk in this batch — the route tables — was the candidate the
+second transaction froze.
+
+Resume path: query the bound `review status` for lineage `review-bf1585fd7f8b1c1f` with its
+repository context and follow the returned transition, or leave the transaction open. Delivery is
+governed by ordinary repository policy, not by this review.

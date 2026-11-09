@@ -4,7 +4,7 @@ Handoff document to continue this project in a new session. Canonical project ru
 `AGENTS.md`. Closed work and the measurement baselines are archived in `COMPLETED.md`; task-by-task
 evidence lives in `odd/tasks/*.md` and in Engram (project `webgymlab`).
 
-Last updated: 2026-11-07.
+Last updated: 2026-11-09.
 
 ## Where we are
 
@@ -13,8 +13,8 @@ Last updated: 2026-11-07.
 - Production is **live** at `https://gymlab.dev`, served by the Worker `gymlab-web` with static assets.
   It is not Cloudflare Pages. Deploy with `npx wrangler deploy`.
 - Production is live with the 2026-11-07 batches 8 and 9 deploy (`f000c18`..`1442772`):
-  **202 sitemap URLs** and **206 pages**. The 2026-11-08 batch 10 build is **226 pages** and
-  **222 sitemap URLs**; it is committed and not yet pushed. `check:copy` **4,845/4,845**, `check:i18n`
+  **202 sitemap URLs** and **206 pages**. Batch 10 was pushed on 2026-11-09; Workers Builds deploys
+  it from the same branch and takes production to **226 pages** and **222 sitemap URLs**. `check:copy` **4,845/4,845**, `check:i18n`
   **3,286/3,286**.
 - `app.gymlab.dev` is `noindex` with a real `robots.txt`.
 - The landing, the three calculators, the 404 and the legal pages all ship in both locales.
@@ -24,9 +24,8 @@ Last updated: 2026-11-07.
 
 - **105 bilingual pages** (ES 105, EN 105), **105 unique heroes**, 0 duplicates. Blocks: Entrenamiento 66,
   Por Músculo 5, Ejercicios 34.
-- **Batch 10 is built and green (2026-11-08).** Production still serves the batch 9 build:
-  **206 pages** and **202 sitemap URLs**. The batch 10 build has **226 pages** and
-  **222 sitemap URLs**.
+- **Batch 10 is built, green and pushed (2026-11-08/09).** The build has **226 pages** and
+  **222 sitemap URLs**; Workers Builds deploys on the push.
 - Gates: `npm run verify` = `check:copy` **5,355/5,355** + build **226 pages** + `check:i18n`
   **3,596/3,596**.
 - Docs: `odd/tasks/content-library-session.md` (start here next session),
@@ -35,8 +34,7 @@ Last updated: 2026-11-07.
 - **Next 10:** `/elegir-gimnasio/` and the nine Musculación rows after it.
 - **Discarded:** `/congresos-profesores-factores-clave-fivestars-fitness/` does not go to production
   (owner decision, 2026-11-07).
-- **Push pending for batch 10.** Future batches deploy via Workers Builds; run
-  `npm run verify` first.
+- **Pushed 2026-11-09.** Future batches deploy via Workers Builds; run `npm run verify` first.
 - Image rule: one unique hero per page; `check:copy` fails on a duplicate. Batches 5-10 heroes are
   Wikimedia Commons (CC0/CC BY/CC BY-SA/public domain); the `alt` includes the credit.
 - Engram topic `content-library/handoff` covers through batch 10; the scaling architecture is PLAN
@@ -382,10 +380,27 @@ the landing graph are invisible until they are crawled.
 
 ## Pending native review
 
-`PLAN.md` previously recorded transaction `review-bb1b28cdd5e6324c` (2026-10-24) with its consent
-prompt left unanswered, so no review record exists. Resolve it before new work, or disable the switch
-explicitly with `gentle-ai review mode disable` if reviews are not wanted. A decline does not disable
-RDD: it applies to that candidate only.
+**Open transaction `review-bf1585fd7f8b1c1f` (2026-11-08/09).** Created for the batch 10 route
+registration only: base tree `1c601a15…b0643`, candidate `a0c88663…d2dde`, 6 files, 279 changed
+lines, risk `medium` (executable change in `astro.config.mjs`), one selected lens `review-reliability`,
+correction budget 140. The reviewer task was interrupted before it produced a capture, so the
+transaction is still in state `reviewing` with **no verdict and no receipt**. Nothing was mutated:
+no correction ran, no authority was burned. Resume with the bound
+`gentle-ai review status` for that lineage and repository context, or leave it open; delivery is
+under ordinary repository policy either way.
+
+Two facts worth keeping:
+
+- The **whole batch** (base `6547621`, 36 files, 2,131 lines) was consented to and refused by the
+  native preflight with `lens_context_budget_exceeded`. That stop is terminal: no authority is
+  created, retrying the same candidate cannot succeed, and the fix is smaller candidates. The 20
+  article files are therefore **not** natively reviewed; they are covered by `check:copy`,
+  `check:i18n`, the internal-link resolution check and the TOC-anchor check.
+- The stale `review-bb1b28cdd5e6324c` record (2026-10-24) no longer exists in the authority store:
+  `review status` reports zero lineages. There is nothing to resolve there.
+
+A decline or an open transaction never disables RDD: `gentle-ai review mode status` reads `on`,
+decided by the global scope, with the clone-local scope unset.
 
 ## Open work
 

@@ -12,9 +12,9 @@ Last updated: 2026-11-08. Read this first next session.
 - **105 / 792 bilingual pages** (ES 105, EN 105).
 - Blocks: Entrenamiento **66**, Por Músculo **5**, Ejercicios **34**.
 - **105 unique heroes, 0 duplicates.**
-- **Batch 10 is built and green (2026-11-08), not yet pushed.** Production still serves the batch 9
-  build: **206 pages** and **202 sitemap URLs**. The batch 10 build has **226 pages** and
-  **222 sitemap URLs**.
+- **Batch 10 is built, green and pushed (2026-11-08/09).** The build has **226 pages** and
+  **222 sitemap URLs**; Workers Builds deploys on the push, so production moves from 206 to 226 pages
+  when the build finishes.
 - One archive row is discarded and must stay out: the FiveStars Fitness congress page.
 - Batch record: `odd/tasks/content-library-batch-10.md`.
 
@@ -94,7 +94,7 @@ Start the dev server with `npm run dev` for local review.
 - Engram topic `content-library/handoff` covers the current state; the scaling architecture is PLAN
   Phase 7.
 
-## Session close (2026-11-08)
+## Session close (2026-11-08/09)
 
 - Batch 10 wrote 10 page pairs (20 files) from `/entrenamiento-piramidal/` to
   `/8-repeticiones-entrenando/`: 105/792 pages, 105 unique heroes.
@@ -109,6 +109,15 @@ Start the dev server with `npm run dev` for local review.
   existing one silently overwrites it (`musclePump` was already taken by
   `/ejercicios-maxima-congestion-muscular`). A duplicate key crashes `check:i18n` on the older pair
   with `Cannot read properties of undefined`. Check for key collisions before adding a route.
-- Batch 10 is committed but **not pushed**; production still serves the batch 9 build.
+- **Native review, documented in `content-library-batch-10.md`:** the whole batch was refused with
+  `lens_context_budget_exceeded` (terminal, no authority); the reduced route-registration candidate
+  created lineage `review-bf1585fd7f8b1c1f` and stays open in state `reviewing` because the reviewer
+  run was interrupted before its capture. No verdict, no receipt, nothing mutated. The 20 article
+  files carry no native review; the deterministic gates plus the manual checks are their evidence.
+- Commits: `be17b7a` (ten guides) and `70b4de9` (routes + records), then the closing docs commit.
+- Batch 10 is pushed; Workers Builds deploys on the push. Production should move from 206 to **226
+  pages** and from 202 to **222 sitemap URLs** once it finishes.
 - Next session starts at `/elegir-gimnasio/` (the FiveStars row is discarded).
+- `npm run dev` was left running on `http://localhost:4321` for the owner's visual review of the 20
+  new pages; stop it with Ctrl+C in its shell when done.
 - Engram topic `content-library/handoff` is updated with this state.
