@@ -9,20 +9,19 @@ Last updated: 2026-11-11. Read this first next session.
 
 ## State
 
-- **115 / 792 bilingual pages** (ES 115, EN 115).
-- Blocks: Entrenamiento **76**, Por Músculo **5**, Ejercicios **34**.
-- **115 unique heroes, 0 duplicates.**
-- **Batch 11 is built, green, pushed and live (2026-11-11).** The build has **246 pages** and
-  **242 sitemap URLs**; production verified at 242 URLs after the push.
+- **125 / 792 bilingual pages** (ES 125, EN 125).
+- Blocks: Entrenamiento **86**, Por Músculo **5**, Ejercicios **34**.
+- **125 unique heroes, 0 duplicates.**
+- **Batch 12 is built and green (2026-11-11).** The build has **266 pages** and **262 sitemap URLs**.
 - One archive row is discarded and must stay out: the FiveStars Fitness congress page.
-- Batch record: `odd/tasks/content-library-batch-11.md`.
+- Batch record: `odd/tasks/content-library-batch-12.md`.
 
 ## Gates
 
 ```powershell
-npm run check:copy   # 5,865/5,865
-npm run build        # 246 pages
-npm run check:i18n   # 3,906/3,906
+npm run check:copy   # 6,375/6,375
+npm run build        # 266 pages
+npm run check:i18n   # 4,216/4,216
 npm run verify       # all three, in that order
 npm run dev          # http://localhost:4321
 ```
@@ -37,22 +36,22 @@ Start the dev server with `npm run dev` for local review.
   good-morning, pullover and back-extension families, including the Smith machine row.
 - **Por Músculo / Rutinas de Espalda (5):** amplitud/densidad, 15 minutos, dorsales grandes, the
   advanced pull-up programme and the back superset finisher.
-- **Musculación (57):** the first eighteen, batches 8, 9, 10 and batch 11: choosing a gym, the
-  Bulgarian method, one-rep max, somatotypes, muscle fibre types, the 100-push-up plan, training
-  mistakes, fitness tests, muscle oxygenation and ballistic training.
+- **Musculación (67):** the first eighteen, batches 8 to 12: choosing a gym, the Bulgarian method,
+  one-rep max, somatotypes, muscle fibre types, the 100-push-up plan, training mistakes, fitness
+  tests, muscle oxygenation, ballistic training, the training-frequency myth, heavy days, split
+  routines, fibre recruitment by exercise, 1RM in volume routines, exercise technique, muscle
+  contractions, natural muscle growth, training with music and gym etiquette.
 - **Recovery and planning (10):** back-pain exercises (YMYL), stretching, stretching circuit, muscle
   failure, periodization, exercise and immune system, deload week, sleep, training planning and
   muscle recovery.
 
 ## Next 10
 
-1. Skip the discarded FiveStars row and start at
-   `/mitos-estupidos-debes-entrenar-cada-musculo-solo-una-vez-por-semana/`.
-2. Then `/dias-entrenamiento-pesado/`, `/consejos-para-crear-tu-rutina-dividida/`,
-   `/fibras-musculares-ejercicios/`, `/repeticion-maxima-rutinas-volumen/`,
-   `/tecnica-ejecucion-ejercicios/`, `/contracciones-musculares-excentrica-concentrica-isometricas/`,
-   `/grandes-musculos-de-forma-natural/`, `/entrena-con-musica-para-ser-mas-fuerte-en-el-gimnasio/`
-   and `/normas-para-hacer-del-gimnasio-un-lugar-mejor-y-sentirte-agusto/`.
+1. Skip the discarded FiveStars row and start at `/como-entrenar-con-altas-temperaturas/`.
+2. Then `/multipower-para-superar-puntos-de-estancamiento/`, `/rango-completo-de-movimiento-rom/`,
+   `/dolor-crecimiento-muscular/`, `/como-respirar-mientras-entrenamos/`, `/menos-grasa-mas-musculo/`,
+   `/entrenamiento-con-companero/`, `/guia-de-entrenamiento-hitt/` and `/rutina-entrenamiento-natacion/`,
+   plus the next Musculación row after those.
 3. Keep the same copy, unique-hero and gate flow.
 4. The scaling architecture is deferred to PLAN Phase 7; do not implement it during content batches.
 
@@ -95,25 +94,23 @@ Start the dev server with `npm run dev` for local review.
 
 ## Session close (2026-11-11)
 
-- Batch 11 wrote 10 page pairs (20 files) from `/elegir-gimnasio/` to `/entrenamiento-balistico/`:
-  115/792 pages, 115 unique heroes.
+- Batch 12 wrote 10 page pairs (20 files) from `/mitos-estupidos-…/` to
+  `/normas-para-hacer-del-gimnasio-…/`: 125/792 pages, 125 unique heroes.
 - Two writers ran sequentially, five pairs each; the parent added the cross-links, registered the 10
   pairs in `ROUTE_PAIRS`, `PAGES` and `ROUTES`, and ran the gates.
-- Gates are green: `check:copy` 5,865/5,865, build **246 pages**, `check:i18n` 3,906/3,906, sitemap
-  **242 URLs** with 726 alternates.
-- Structural checks the gate does not cover, run by hand on the 20 built pages: 214 internal links
-  all resolve; zero `.md` links and zero em dashes; 120 TOC anchors match their heading ids; 36
-  routine table rows all have 3 columns.
-- Commits, one per page as the owner asked: `8ed157f`, `0faecc9`, `2705cea`, `4c508ca`, `50707f7`,
-  `8b4e93c`, `2185f4d`, `bf494a3`, `fee2797`, `6285c91`; routes `c67c753`; docs `6b5739a`. Pushed
-  `508bbe3..6b5739a`; production verified at **242 sitemap URLs**.
+- Gates are green: `check:copy` 6,375/6,375, build **266 pages**, `check:i18n` 4,216/4,216, sitemap
+  **262 URLs** with 786 alternates.
+- Structural checks the gate does not cover, run by hand on the 20 built pages: 212 internal links
+  all resolve; zero `.md` links and zero em dashes; 132 TOC anchors match their heading ids; the two
+  tables are text tables and wrap.
+- Commits, one per page with its checklist rows marked: `8d4b84f`, `964fe79`, `670de48`, `9aaee48`,
+  `990ebb8`, `d636681`, `997a706`, `aa960cd`, `dff0602`, `d87104f`; routes `82639eb`; docs at the
+  close.
 - **Gotcha:** `ROUTES` in `scripts/check-i18n.mjs` is keyed, and a new key that collides with an
-  existing one silently overwrites it (batch 10 hit this with `musclePump`). All ten keys in batch 11
-  were checked free first.
+  existing one silently overwrites it. All ten keys in batch 12 were checked free first.
 - **Gotcha:** `Set-Content -Encoding UTF8` in PowerShell 5.1 writes a BOM; use
   `[System.IO.File]::WriteAllText` with `UTF8Encoding($false)` for repo files.
-- **Archive correction:** the push-up article printed 2,676 reps and 17,000 calories for six weeks;
-  its own tables sum to 2,034 and the calorie figure has no source, so both locales say "more than
-  2,000 push-ups" and the calorie claim was dropped.
-- Next session starts at `/mitos-estupidos-debes-entrenar-cada-musculo-solo-una-vez-por-semana/`.
+- **Archive correction:** the contractions article has its "Excéntrica" and "Concéntrica" headings
+  swapped relative to the definitions; each H2 is now named after the contraction it describes.
+- Next session starts at `/como-entrenar-con-altas-temperaturas/`.
 - Engram topic `content-library/handoff` is updated with this state.

@@ -9,18 +9,18 @@ Legend: `ES` = Spanish published, `EN` = English published.
 
 ## Progress
 
-- **Built: 115 / 792** (ES 115, EN 115).
-- Last batch: 10 pages, from `/elegir-gimnasio/` to `/entrenamiento-balistico/`.
+- **Built: 125 / 792** (ES 125, EN 125).
+- Last batch: 10 pages, from `/mitos-estupidos-debes-entrenar-cada-musculo-solo-una-vez-por-semana/` to `/normas-para-hacer-del-gimnasio-un-lugar-mejor-y-sentirte-agusto/`.
 
 | Block | Articles | Built |
 | --- | ---: | ---: |
-| Entrenamiento | 222 | 76 |
+| Entrenamiento | 222 | 86 |
 | Por Músculo | 80 | 5 |
 | Rutinas | 80 | 0 |
 | Ejercicios | 196 | 34 |
 | Nutrición | 191 | 0 |
 | Mujer Fitness | 23 | 0 |
-| **Total** | **792** | **115** |
+| **Total** | **792** | **125** |
 
 ## Copy gate (mandatory before ticking ES/EN)
 
@@ -163,12 +163,12 @@ Legend: `ES` = Spanish published, `EN` = English published.
 
 ## Resume (2026-11-11)
 
-- Built: **115/792**; **115 unique heroes**; **batch 11 built and green**.
+- Built: **125/792**; **125 unique heroes**; **batch 12 built and green**.
 - One archive row is discarded and must stay out: the FiveStars Fitness congress page.
-- Batch 11 passes `npm run verify`: 5,865 copy checks, 246 pages, 3,906 i18n checks.
-- Full handoff: `odd/tasks/content-library-session.md`; batch record: `odd/tasks/content-library-batch-11.md`.
-- Next: the first unchecked row after `/entrenamiento-balistico/`, which is
-  `/mitos-estupidos-debes-entrenar-cada-musculo-solo-una-vez-por-semana/`.
+- Batch 12 passes `npm run verify`: 6,375 copy checks, 266 pages, 4,216 i18n checks.
+- Full handoff: `odd/tasks/content-library-session.md`; batch record: `odd/tasks/content-library-batch-12.md`.
+- Next: the first unchecked row after `/normas-para-hacer-del-gimnasio-un-lugar-mejor-y-sentirte-agusto/`, which is
+  `/como-entrenar-con-altas-temperaturas/`.
 - Verify with `npm run verify`; review with `npm run dev` at `http://localhost:4321`.
 
 ## Entrenamiento (222)
