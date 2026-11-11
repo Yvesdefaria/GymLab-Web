@@ -12,7 +12,8 @@ Last updated: 2026-11-11. Read this first next session.
 - **125 / 792 bilingual pages** (ES 125, EN 125).
 - Blocks: Entrenamiento **86**, Por Músculo **5**, Ejercicios **34**.
 - **125 unique heroes, 0 duplicates.**
-- **Batch 12 is built and green (2026-11-11).** The build has **266 pages** and **262 sitemap URLs**.
+- **Batch 12 is built, green, pushed and live (2026-11-11).** The build has **266 pages** and
+  **262 sitemap URLs**; production verified at 262 URLs after the push.
 - One archive row is discarded and must stay out: the FiveStars Fitness congress page.
 - Batch record: `odd/tasks/content-library-batch-12.md`.
 
@@ -104,8 +105,8 @@ Start the dev server with `npm run dev` for local review.
   all resolve; zero `.md` links and zero em dashes; 132 TOC anchors match their heading ids; the two
   tables are text tables and wrap.
 - Commits, one per page with its checklist rows marked: `8d4b84f`, `964fe79`, `670de48`, `9aaee48`,
-  `990ebb8`, `d636681`, `997a706`, `aa960cd`, `dff0602`, `d87104f`; routes `82639eb`; docs at the
-  close.
+  `990ebb8`, `d636681`, `997a706`, `aa960cd`, `dff0602`, `d87104f`; routes `82639eb`; docs `40ffe18`.
+  Pushed `bfb5315..40ffe18`; production verified at **262 sitemap URLs**.
 - **Gotcha:** `ROUTES` in `scripts/check-i18n.mjs` is keyed, and a new key that collides with an
   existing one silently overwrites it. All ten keys in batch 12 were checked free first.
 - **Gotcha:** `Set-Content -Encoding UTF8` in PowerShell 5.1 writes a BOM; use

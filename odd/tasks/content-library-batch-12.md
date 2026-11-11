@@ -134,7 +134,9 @@ before the commit, so the checklist never lags the work.
 - [x] 7. Parent — manual checks: 212 internal links across the 20 built pages resolve; 0 `.md` links;
       0 em dashes; 132 TOC anchors match their H2 ids; no routine table rows; 2 text tables (the
       split-routine table in both locales); sitemap 262 URLs and 786 alternates.
-- [ ] 8. Parent — record the pages in the session handoff and `PLAN.md`; commit and push.
+- [x] 8. Parent — record the pages in the session handoff and `PLAN.md`; commit `40ffe18` and push
+      (`bfb5315..40ffe18`), then verify production: **262 sitemap URLs** and `/en/gym-etiquette/`
+      present.
 
 ## Acceptance criteria
 
@@ -165,6 +167,7 @@ Observed on 2026-11-11:
 | `.md` links · `#` links · em dashes | 0 · 0 · 0 |
 | TOC anchors vs heading ids | **132/132** match |
 | Article counts | 125 ES, 125 EN, 125 hero directories |
+| Production after the push | **262 sitemap URLs**, batch 12 routes present |
 
 Test-first exception: prose and images have no runnable deterministic RED; `check:copy`, the build,
 `check:i18n` and the manual structural checks are the functional verification.
