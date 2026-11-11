@@ -129,6 +129,16 @@ const ROUTE_PAIRS = [
   ['/los-peligros-de-entrenar-como-un-preplaya', '/unbalanced-training-dangers'],
   ['/tiempos-entrenamiento', '/rep-tempo'],
   ['/8-repeticiones-entrenando', '/eight-reps-debate'],
+  ['/elegir-gimnasio', '/choosing-a-gym'],
+  ['/metodo-bulgaro', '/bulgarian-method'],
+  ['/repeticion-maxima', '/calculate-one-rep-max'],
+  ['/tipos-somaticos-endomorfos-ectomorfos-y-mesomorfos', '/somatotypes'],
+  ['/tipos-de-fibras-musculares', '/muscle-fiber-types'],
+  ['/desafio-100-flexiones', '/100-push-up-challenge'],
+  ['/errores-entrenamiento', '/common-training-mistakes'],
+  ['/tests-evaluar-estado-fisico', '/fitness-tests'],
+  ['/entrenamiento-oxigenacion', '/muscle-oxygenation-training'],
+  ['/entrenamiento-balistico', '/ballistic-training'],
 ];
 
 const pairFor = (pathname) => {

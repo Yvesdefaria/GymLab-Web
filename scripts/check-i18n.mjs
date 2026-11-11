@@ -229,6 +229,26 @@ const PAGES = [
   ['en', '/en/rep-tempo/'],
   ['es', '/es/8-repeticiones-entrenando/'],
   ['en', '/en/eight-reps-debate/'],
+  ['es', '/es/elegir-gimnasio/'],
+  ['en', '/en/choosing-a-gym/'],
+  ['es', '/es/metodo-bulgaro/'],
+  ['en', '/en/bulgarian-method/'],
+  ['es', '/es/repeticion-maxima/'],
+  ['en', '/en/calculate-one-rep-max/'],
+  ['es', '/es/tipos-somaticos-endomorfos-ectomorfos-y-mesomorfos/'],
+  ['en', '/en/somatotypes/'],
+  ['es', '/es/tipos-de-fibras-musculares/'],
+  ['en', '/en/muscle-fiber-types/'],
+  ['es', '/es/desafio-100-flexiones/'],
+  ['en', '/en/100-push-up-challenge/'],
+  ['es', '/es/errores-entrenamiento/'],
+  ['en', '/en/common-training-mistakes/'],
+  ['es', '/es/tests-evaluar-estado-fisico/'],
+  ['en', '/en/fitness-tests/'],
+  ['es', '/es/entrenamiento-oxigenacion/'],
+  ['en', '/en/muscle-oxygenation-training/'],
+  ['es', '/es/entrenamiento-balistico/'],
+  ['en', '/en/ballistic-training/'],
 ];
 
 // Content routes, keyed by a stable id with the slug each locale publishes. The
@@ -478,6 +498,22 @@ const ROUTES = {
   },
   repTempo: { es: '/tiempos-entrenamiento', en: '/rep-tempo' },
   eightReps: { es: '/8-repeticiones-entrenando', en: '/eight-reps-debate' },
+  gymChoice: { es: '/elegir-gimnasio', en: '/choosing-a-gym' },
+  bulgarianMethod: { es: '/metodo-bulgaro', en: '/bulgarian-method' },
+  oneRepMax: { es: '/repeticion-maxima', en: '/calculate-one-rep-max' },
+  somatotypes: {
+    es: '/tipos-somaticos-endomorfos-ectomorfos-y-mesomorfos',
+    en: '/somatotypes',
+  },
+  muscleFiberTypes: { es: '/tipos-de-fibras-musculares', en: '/muscle-fiber-types' },
+  pushUpChallenge: { es: '/desafio-100-flexiones', en: '/100-push-up-challenge' },
+  trainingMistakes: { es: '/errores-entrenamiento', en: '/common-training-mistakes' },
+  fitnessTests: { es: '/tests-evaluar-estado-fisico', en: '/fitness-tests' },
+  oxygenationTraining: {
+    es: '/entrenamiento-oxigenacion',
+    en: '/muscle-oxygenation-training',
+  },
+  ballisticTraining: { es: '/entrenamiento-balistico', en: '/ballistic-training' },
 };
 
 const routeId = (path) => {
