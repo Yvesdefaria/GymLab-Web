@@ -1,6 +1,6 @@
 # Content library — session handoff
 
-Last updated: 2026-11-08. Read this first next session.
+Last updated: 2026-11-11. Read this first next session.
 
 - Per-page record: `odd/tasks/content-pages.md`
 - Page contract and copy gate: `odd/tasks/guides-page-contract.md`
@@ -9,21 +9,19 @@ Last updated: 2026-11-08. Read this first next session.
 
 ## State
 
-- **105 / 792 bilingual pages** (ES 105, EN 105).
-- Blocks: Entrenamiento **66**, Por Músculo **5**, Ejercicios **34**.
-- **105 unique heroes, 0 duplicates.**
-- **Batch 10 is built, green and pushed (2026-11-08/09).** The build has **226 pages** and
-  **222 sitemap URLs**; Workers Builds deploys on the push, so production moves from 206 to 226 pages
-  when the build finishes.
+- **115 / 792 bilingual pages** (ES 115, EN 115).
+- Blocks: Entrenamiento **76**, Por Músculo **5**, Ejercicios **34**.
+- **115 unique heroes, 0 duplicates.**
+- **Batch 11 is built and green (2026-11-11).** The build has **246 pages** and **242 sitemap URLs**.
 - One archive row is discarded and must stay out: the FiveStars Fitness congress page.
-- Batch record: `odd/tasks/content-library-batch-10.md`.
+- Batch record: `odd/tasks/content-library-batch-11.md`.
 
 ## Gates
 
 ```powershell
-npm run check:copy   # 5,355/5,355
-npm run build        # 226 pages
-npm run check:i18n   # 3,596/3,596
+npm run check:copy   # 5,865/5,865
+npm run build        # 246 pages
+npm run check:i18n   # 3,906/3,906
 npm run verify       # all three, in that order
 npm run dev          # http://localhost:4321
 ```
@@ -38,20 +36,22 @@ Start the dev server with `npm run dev` for local review.
   good-morning, pullover and back-extension families, including the Smith machine row.
 - **Por Músculo / Rutinas de Espalda (5):** amplitud/densidad, 15 minutos, dorsales grandes, the
   advanced pull-up programme and the back superset finisher.
-- **Musculación (47):** the first eighteen, batches 8 and 9, and batch 10: pyramid training, training
-  volume, the muscle pump, weak-point routines, the 5% progression, choosing an activity when you
-  return to the gym, stability-ball exercises, muscle imbalance, rep tempo and the eight-rep debate.
+- **Musculación (57):** the first eighteen, batches 8, 9, 10 and batch 11: choosing a gym, the
+  Bulgarian method, one-rep max, somatotypes, muscle fibre types, the 100-push-up plan, training
+  mistakes, fitness tests, muscle oxygenation and ballistic training.
 - **Recovery and planning (10):** back-pain exercises (YMYL), stretching, stretching circuit, muscle
   failure, periodization, exercise and immune system, deload week, sleep, training planning and
   muscle recovery.
 
 ## Next 10
 
-1. Skip the discarded FiveStars row and start at `/elegir-gimnasio/`.
-2. Then `/metodo-bulgaro/`, `/repeticion-maxima/`,
-   `/tipos-somaticos-endomorfos-ectomorfos-y-mesomorfos/`, `/tipos-de-fibras-musculares/`,
-   `/desafio-100-flexiones/`, `/errores-entrenamiento/`, `/tests-evaluar-estado-fisico/`,
-   `/entrenamiento-oxigenacion/` and `/entrenamiento-balistico/`.
+1. Skip the discarded FiveStars row and start at
+   `/mitos-estupidos-debes-entrenar-cada-musculo-solo-una-vez-por-semana/`.
+2. Then `/dias-entrenamiento-pesado/`, `/consejos-para-crear-tu-rutina-dividida/`,
+   `/fibras-musculares-ejercicios/`, `/repeticion-maxima-rutinas-volumen/`,
+   `/tecnica-ejecucion-ejercicios/`, `/contracciones-musculares-excentrica-concentrica-isometricas/`,
+   `/grandes-musculos-de-forma-natural/`, `/entrena-con-musica-para-ser-mas-fuerte-en-el-gimnasio/`
+   and `/normas-para-hacer-del-gimnasio-un-lugar-mejor-y-sentirte-agusto/`.
 3. Keep the same copy, unique-hero and gate flow.
 4. The scaling architecture is deferred to PLAN Phase 7; do not implement it during content batches.
 
@@ -75,14 +75,12 @@ Start the dev server with `npm run dev` for local review.
 - Known approximations: the three good-morning pages use a Smith squat, a seated row and a deadlift;
   the one-arm lat pulldown uses a lat pulldown photo because no free one-arm pulldown photo exists.
   The `alt` describes what is actually shown.
-- Batches 5-7 heroes: Wikimedia Commons (CC0, CC BY, CC BY-SA, public domain), one per page;
+- Batches 5-11 heroes: Wikimedia Commons (CC0, CC BY, CC BY-SA, public domain), one per page;
   credits in the `alt`.
 - The image pipeline (`<Picture>`, AVIF/WebP, srcset) is still pending.
 
 ## Pending decisions
 
-- **Batch 10 push pending.** Batches 8 and 9 went live on 2026-11-07 (`f000c18`..`1442772`). Future
-  batches deploy via Workers Builds; run `npm run verify` first.
 - **Discarded row:** `/congresos-profesores-factores-clave-fivestars-fitness/` does not go to
   production (owner decision, 2026-11-07). Do not rebuild it in a later batch.
 - **Scaling architecture (deferred):** route-manifest unification and guides-nav generation; see
@@ -90,34 +88,30 @@ Start the dev server with `npm run dev` for local review.
   batches.
 - Phase 1: `Article` + `BreadcrumbList` JSON-LD, `og:type=article`, dates, per-article OG image.
 - Phase 2: guides hub, real menu hrefs, internal links from the landing and hubs.
-- Phase 6: read Search Console on 2026-11-19 before scaling beyond the 96-page pilot.
+- Phase 6: read Search Console on 2026-11-19 before scaling beyond the 115-page pilot.
 - Engram topic `content-library/handoff` covers the current state; the scaling architecture is PLAN
   Phase 7.
 
-## Session close (2026-11-08/09)
+## Session close (2026-11-11)
 
-- Batch 10 wrote 10 page pairs (20 files) from `/entrenamiento-piramidal/` to
-  `/8-repeticiones-entrenando/`: 105/792 pages, 105 unique heroes.
-- Two writers ran sequentially, five pairs each; the parent registered the 10 pairs in `ROUTE_PAIRS`,
-  `PAGES` and `ROUTES` and ran the gates.
-- Gates are green: `check:copy` 5,355/5,355, build **226 pages**, `check:i18n` 3,596/3,596,
-  sitemap **222 URLs** with 666 alternates.
-- Structural checks the gate does not cover, run by hand: 78 internal links across the 20 files all
-  resolve to a built page; zero `.md` links, zero `#` links and zero em dashes in the 20 files; the
-  TOC anchor sets match the H2 ids on five sampled pages; `sitemap-0.xml` publishes 222 URLs.
+- Batch 11 wrote 10 page pairs (20 files) from `/elegir-gimnasio/` to `/entrenamiento-balistico/`:
+  115/792 pages, 115 unique heroes.
+- Two writers ran sequentially, five pairs each; the parent added the cross-links, registered the 10
+  pairs in `ROUTE_PAIRS`, `PAGES` and `ROUTES`, and ran the gates.
+- Gates are green: `check:copy` 5,865/5,865, build **246 pages**, `check:i18n` 3,906/3,906, sitemap
+  **242 URLs** with 726 alternates.
+- Structural checks the gate does not cover, run by hand on the 20 built pages: 214 internal links
+  all resolve; zero `.md` links and zero em dashes; 120 TOC anchors match their heading ids; 36
+  routine table rows all have 3 columns.
+- Commits, one per page as the owner asked: `8ed157f`, `0faecc9`, `2705cea`, `4c508ca`, `50707f7`,
+  `8b4e93c`, `2185f4d`, `bf494a3`, `fee2797`, `6285c91`; routes `c67c753`; docs at the close.
 - **Gotcha:** `ROUTES` in `scripts/check-i18n.mjs` is keyed, and a new key that collides with an
-  existing one silently overwrites it (`musclePump` was already taken by
-  `/ejercicios-maxima-congestion-muscular`). A duplicate key crashes `check:i18n` on the older pair
-  with `Cannot read properties of undefined`. Check for key collisions before adding a route.
-- **Native review, documented in `content-library-batch-10.md`:** the whole batch was refused with
-  `lens_context_budget_exceeded` (terminal, no authority); the reduced route-registration candidate
-  created lineage `review-bf1585fd7f8b1c1f` and stays open in state `reviewing` because the reviewer
-  run was interrupted before its capture. No verdict, no receipt, nothing mutated. The 20 article
-  files carry no native review; the deterministic gates plus the manual checks are their evidence.
-- Commits: `be17b7a` (ten guides) and `70b4de9` (routes + records), then the closing docs commit.
-- Batch 10 is pushed; Workers Builds deploys on the push. Production should move from 206 to **226
-  pages** and from 202 to **222 sitemap URLs** once it finishes.
-- Next session starts at `/elegir-gimnasio/` (the FiveStars row is discarded).
-- `npm run dev` was left running on `http://localhost:4321` for the owner's visual review of the 20
-  new pages; stop it with Ctrl+C in its shell when done.
+  existing one silently overwrites it (batch 10 hit this with `musclePump`). All ten keys in batch 11
+  were checked free first.
+- **Gotcha:** `Set-Content -Encoding UTF8` in PowerShell 5.1 writes a BOM; use
+  `[System.IO.File]::WriteAllText` with `UTF8Encoding($false)` for repo files.
+- **Archive correction:** the push-up article printed 2,676 reps and 17,000 calories for six weeks;
+  its own tables sum to 2,034 and the calorie figure has no source, so both locales say "more than
+  2,000 push-ups" and the calorie claim was dropped.
+- Next session starts at `/mitos-estupidos-debes-entrenar-cada-musculo-solo-una-vez-por-semana/`.
 - Engram topic `content-library/handoff` is updated with this state.

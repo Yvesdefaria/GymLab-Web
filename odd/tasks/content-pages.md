@@ -1,4 +1,4 @@
-# Content pages — bilingual checklist
+ Content pages — bilingual checklist
 
 Source: `C:\Users\Yves De Faria\Desktop\cambiatufisico.com` (792 articles).
 Every page ships in both locales, like the rest of the site: Spanish under `/es/` and
@@ -9,18 +9,18 @@ Legend: `ES` = Spanish published, `EN` = English published.
 
 ## Progress
 
-- **Built: 105 / 792** (ES 105, EN 105).
-- Last batch: 10 pages, from `/entrenamiento-piramidal/` to `/8-repeticiones-entrenando/`.
+- **Built: 115 / 792** (ES 115, EN 115).
+- Last batch: 10 pages, from `/elegir-gimnasio/` to `/entrenamiento-balistico/`.
 
 | Block | Articles | Built |
 | --- | ---: | ---: |
-| Entrenamiento | 222 | 66 |
+| Entrenamiento | 222 | 76 |
 | Por Músculo | 80 | 5 |
 | Rutinas | 80 | 0 |
 | Ejercicios | 196 | 34 |
 | Nutrición | 191 | 0 |
 | Mujer Fitness | 23 | 0 |
-| **Total** | **792** | **105** |
+| **Total** | **792** | **115** |
 
 ## Copy gate (mandatory before ticking ES/EN)
 
@@ -140,14 +140,25 @@ Legend: `ES` = Spanish published, `EN` = English published.
 | `los-peligros-de-entrenar-como-un-preplaya` | yes | yes | yes | 0 em dashes | pass |
 | `tiempos-entrenamiento` | yes | yes | yes | 0 em dashes | pass |
 | `8-repeticiones-entrenando` | yes | yes | yes | 0 em dashes | pass |
+| `elegir-gimnasio` | yes | yes | yes | 0 em dashes | pass |
+| `metodo-bulgaro` | yes | yes | yes | 0 em dashes | pass |
+| `repeticion-maxima` | yes | yes | yes | 0 em dashes | pass |
+| `tipos-somaticos-endomorfos-ectomorfos-y-mesomorfos` | yes | yes | yes | 0 em dashes | pass |
+| `tipos-de-fibras-musculares` | yes | yes | yes | 0 em dashes | pass |
+| `desafio-100-flexiones` | yes | yes | yes | 0 em dashes | pass |
+| `errores-entrenamiento` | yes | yes | yes | 0 em dashes | pass |
+| `tests-evaluar-estado-fisico` | yes | yes | yes | 0 em dashes | pass |
+| `entrenamiento-oxigenacion` | yes | yes | yes | 0 em dashes | pass |
+| `entrenamiento-balistico` | yes | yes | yes | 0 em dashes | pass |
 
-## Resume (2026-11-08)
+## Resume (2026-11-11)
 
-- Built: **105/792**; **105 unique heroes**; **batch 10 built, gates green, not yet pushed**.
+- Built: **115/792**; **115 unique heroes**; **batch 11 built and green**.
 - One archive row is discarded and must stay out: the FiveStars Fitness congress page.
-- Batch 10 passes `npm run verify`: 5,355 copy checks, 226 pages, 3,596 i18n checks.
-- Full handoff: `odd/tasks/content-library-session.md`; batch record: `odd/tasks/content-library-batch-10.md`.
-- Next: the first unchecked row after `/8-repeticiones-entrenando/`.
+- Batch 11 passes `npm run verify`: 5,865 copy checks, 246 pages, 3,906 i18n checks.
+- Full handoff: `odd/tasks/content-library-session.md`; batch record: `odd/tasks/content-library-batch-11.md`.
+- Next: the first unchecked row after `/entrenamiento-balistico/`, which is
+  `/mitos-estupidos-debes-entrenar-cada-musculo-solo-una-vez-por-semana/`.
 - Verify with `npm run verify`; review with `npm run dev` at `http://localhost:4321`.
 
 ## Entrenamiento (222)
@@ -211,16 +222,16 @@ Legend: `ES` = Spanish published, `EN` = English published.
 - [x] ES · [x] EN — `/los-peligros-de-entrenar-como-un-preplaya/` — Los peligros de entrenar como un preplaya
 - [x] ES · [x] EN — `/tiempos-entrenamiento/` — El tiempo en el entrenamiento y velocidad de las repeticiones
 - [x] ES · [x] EN — `/8-repeticiones-entrenando/` — El debate de las 8 repeticiones en el entrenamiento
-- [ ] ES · [ ] EN — `/elegir-gimnasio/` — Elige bien tu gimnasio
-- [ ] ES · [ ] EN — `/metodo-bulgaro/` — El método búlgaro de entrenamiento
-- [ ] ES · [ ] EN — `/repeticion-maxima/` — Como calcular tu Retición Máxima (RM) \| Calculadora online
-- [ ] ES · [ ] EN — `/tipos-somaticos-endomorfos-ectomorfos-y-mesomorfos/` — Tipos somáticos: Endomorfos, Ectomorfos y Mesomorfos
-- [ ] ES · [ ] EN — `/tipos-de-fibras-musculares/` — Tipos de fibras musculares y tensión muscular
-- [ ] ES · [ ] EN — `/desafio-100-flexiones/` — Consigue hacer 100 flexiones seguidas
-- [ ] ES · [ ] EN — `/errores-entrenamiento/` — Errores clásicos en el entrenamiento de musculación
-- [ ] ES · [ ] EN — `/tests-evaluar-estado-fisico/` — Tests para evaluar tu estado físico \| ¿Estás en forma?
-- [ ] ES · [ ] EN — `/entrenamiento-oxigenacion/` — Entrenamiento de oxigenación muscular
-- [ ] ES · [ ] EN — `/entrenamiento-balistico/` — Entrenamiento balístico
+- [x] ES · [x] EN — `/elegir-gimnasio/` — Elige bien tu gimnasio
+- [x] ES · [x] EN — `/metodo-bulgaro/` — El método búlgaro de entrenamiento
+- [x] ES · [x] EN — `/repeticion-maxima/` — Como calcular tu Retición Máxima (RM) \| Calculadora online
+- [x] ES · [x] EN — `/tipos-somaticos-endomorfos-ectomorfos-y-mesomorfos/` — Tipos somáticos: Endomorfos, Ectomorfos y Mesomorfos
+- [x] ES · [x] EN — `/tipos-de-fibras-musculares/` — Tipos de fibras musculares y tensión muscular
+- [x] ES · [x] EN — `/desafio-100-flexiones/` — Consigue hacer 100 flexiones seguidas
+- [x] ES · [x] EN — `/errores-entrenamiento/` — Errores clásicos en el entrenamiento de musculación
+- [x] ES · [x] EN — `/tests-evaluar-estado-fisico/` — Tests para evaluar tu estado físico \| ¿Estás en forma?
+- [x] ES · [x] EN — `/entrenamiento-oxigenacion/` — Entrenamiento de oxigenación muscular
+- [x] ES · [x] EN — `/entrenamiento-balistico/` — Entrenamiento balístico
 - [ ] ES · [ ] EN — `/mitos-estupidos-debes-entrenar-cada-musculo-solo-una-vez-por-semana/` — El mito de entrenar un músculo una vez por semana
 - [ ] ES · [ ] EN — `/dias-entrenamiento-pesado/` — Días de Entrenamiento Pesado
 - [ ] ES · [ ] EN — `/consejos-para-crear-tu-rutina-dividida/` — Consejos para crear tu rutina dividida
