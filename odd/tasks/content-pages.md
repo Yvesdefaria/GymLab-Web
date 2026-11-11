@@ -159,6 +159,7 @@ Legend: `ES` = Spanish published, `EN` = English published.
 | `contracciones-musculares-excentrica-concentrica-isometricas` | yes | yes | yes | 0 em dashes | pass |
 | `grandes-musculos-de-forma-natural` | yes | yes | yes | 0 em dashes | pass |
 | `entrena-con-musica-para-ser-mas-fuerte-en-el-gimnasio` | yes | yes | yes | 0 em dashes | pass |
+| `normas-para-hacer-del-gimnasio-un-lugar-mejor-y-sentirte-agusto` | yes | yes | yes | 0 em dashes | pass |
 
 ## Resume (2026-11-11)
 
@@ -250,7 +251,7 @@ Legend: `ES` = Spanish published, `EN` = English published.
 - [x] ES · [x] EN — `/contracciones-musculares-excentrica-concentrica-isometricas/` — Contracciones musculares: Excéntrica, Concéntrica e Isométrica
 - [x] ES · [x] EN — `/grandes-musculos-de-forma-natural/` — Tener grandes músculos de forma natural ¿Es posible?
 - [x] ES · [x] EN — `/entrena-con-musica-para-ser-mas-fuerte-en-el-gimnasio/` — Entrena con música para ser más fuerte en el gimnasio
-- [ ] ES · [ ] EN — `/normas-para-hacer-del-gimnasio-un-lugar-mejor-y-sentirte-agusto/` — Normas para hacer del gimnasio un lugar mejor y sentirte agusto
+- [x] ES · [x] EN — `/normas-para-hacer-del-gimnasio-un-lugar-mejor-y-sentirte-agusto/` — Normas para hacer del gimnasio un lugar mejor y sentirte agusto
 - [ ] ES · [ ] EN — `/como-entrenar-con-altas-temperaturas/` — Como entrenar con altas temperaturas
 - [ ] ES · [ ] EN — `/multipower-para-superar-puntos-de-estancamiento/` — Uso del multipower para superar puntos de estancamiento
 - [ ] ES · [ ] EN — `/rango-completo-de-movimiento-rom/` — Rango completo de movimiento (ROM), cuando utilizarlo
