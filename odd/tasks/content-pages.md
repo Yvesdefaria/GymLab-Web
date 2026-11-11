@@ -154,6 +154,7 @@ Legend: `ES` = Spanish published, `EN` = English published.
 | `dias-entrenamiento-pesado` | yes | yes | yes | 0 em dashes | pass |
 | `consejos-para-crear-tu-rutina-dividida` | yes | yes | yes | 0 em dashes | pass |
 | `fibras-musculares-ejercicios` | yes | yes | yes | 0 em dashes | pass |
+| `repeticion-maxima-rutinas-volumen` | yes | yes | yes | 0 em dashes | pass |
 
 ## Resume (2026-11-11)
 
@@ -240,7 +241,7 @@ Legend: `ES` = Spanish published, `EN` = English published.
 - [x] ES · [x] EN — `/dias-entrenamiento-pesado/` — Días de Entrenamiento Pesado
 - [x] ES · [x] EN — `/consejos-para-crear-tu-rutina-dividida/` — Consejos para crear tu rutina dividida
 - [x] ES · [x] EN — `/fibras-musculares-ejercicios/` — Los ejercicios que más fibras musculares estimulan
-- [ ] ES · [ ] EN — `/repeticion-maxima-rutinas-volumen/` — Repetición máxima en rutinas de volumen
+- [x] ES · [x] EN — `/repeticion-maxima-rutinas-volumen/` — Repetición máxima en rutinas de volumen
 - [ ] ES · [ ] EN — `/tecnica-ejecucion-ejercicios/` — Técnica de ejecución de los ejercicios
 - [ ] ES · [ ] EN — `/contracciones-musculares-excentrica-concentrica-isometricas/` — Contracciones musculares: Excéntrica, Concéntrica e Isométrica
 - [ ] ES · [ ] EN — `/grandes-musculos-de-forma-natural/` — Tener grandes músculos de forma natural ¿Es posible?
