@@ -152,6 +152,7 @@ Legend: `ES` = Spanish published, `EN` = English published.
 | `entrenamiento-balistico` | yes | yes | yes | 0 em dashes | pass |
 | `mitos-estupidos-debes-entrenar-cada-musculo-solo-una-vez-por-semana` | yes | yes | yes | 0 em dashes | pass |
 | `dias-entrenamiento-pesado` | yes | yes | yes | 0 em dashes | pass |
+| `consejos-para-crear-tu-rutina-dividida` | yes | yes | yes | 0 em dashes | pass |
 
 ## Resume (2026-11-11)
 
@@ -236,7 +237,7 @@ Legend: `ES` = Spanish published, `EN` = English published.
 - [x] ES · [x] EN — `/entrenamiento-balistico/` — Entrenamiento balístico
 - [x] ES · [x] EN — `/mitos-estupidos-debes-entrenar-cada-musculo-solo-una-vez-por-semana/` — El mito de entrenar un músculo una vez por semana
 - [x] ES · [x] EN — `/dias-entrenamiento-pesado/` — Días de Entrenamiento Pesado
-- [ ] ES · [ ] EN — `/consejos-para-crear-tu-rutina-dividida/` — Consejos para crear tu rutina dividida
+- [x] ES · [x] EN — `/consejos-para-crear-tu-rutina-dividida/` — Consejos para crear tu rutina dividida
 - [ ] ES · [ ] EN — `/fibras-musculares-ejercicios/` — Los ejercicios que más fibras musculares estimulan
 - [ ] ES · [ ] EN — `/repeticion-maxima-rutinas-volumen/` — Repetición máxima en rutinas de volumen
 - [ ] ES · [ ] EN — `/tecnica-ejecucion-ejercicios/` — Técnica de ejecución de los ejercicios
