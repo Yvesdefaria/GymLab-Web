@@ -157,6 +157,7 @@ Legend: `ES` = Spanish published, `EN` = English published.
 | `repeticion-maxima-rutinas-volumen` | yes | yes | yes | 0 em dashes | pass |
 | `tecnica-ejecucion-ejercicios` | yes | yes | yes | 0 em dashes | pass |
 | `contracciones-musculares-excentrica-concentrica-isometricas` | yes | yes | yes | 0 em dashes | pass |
+| `grandes-musculos-de-forma-natural` | yes | yes | yes | 0 em dashes | pass |
 
 ## Resume (2026-11-11)
 
@@ -246,7 +247,7 @@ Legend: `ES` = Spanish published, `EN` = English published.
 - [x] ES · [x] EN — `/repeticion-maxima-rutinas-volumen/` — Repetición máxima en rutinas de volumen
 - [x] ES · [x] EN — `/tecnica-ejecucion-ejercicios/` — Técnica de ejecución de los ejercicios
 - [x] ES · [x] EN — `/contracciones-musculares-excentrica-concentrica-isometricas/` — Contracciones musculares: Excéntrica, Concéntrica e Isométrica
-- [ ] ES · [ ] EN — `/grandes-musculos-de-forma-natural/` — Tener grandes músculos de forma natural ¿Es posible?
+- [x] ES · [x] EN — `/grandes-musculos-de-forma-natural/` — Tener grandes músculos de forma natural ¿Es posible?
 - [ ] ES · [ ] EN — `/entrena-con-musica-para-ser-mas-fuerte-en-el-gimnasio/` — Entrena con música para ser más fuerte en el gimnasio
 - [ ] ES · [ ] EN — `/normas-para-hacer-del-gimnasio-un-lugar-mejor-y-sentirte-agusto/` — Normas para hacer del gimnasio un lugar mejor y sentirte agusto
 - [ ] ES · [ ] EN — `/como-entrenar-con-altas-temperaturas/` — Como entrenar con altas temperaturas
