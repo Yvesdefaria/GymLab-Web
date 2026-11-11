@@ -139,6 +139,25 @@ const ROUTE_PAIRS = [
   ['/tests-evaluar-estado-fisico', '/fitness-tests'],
   ['/entrenamiento-oxigenacion', '/muscle-oxygenation-training'],
   ['/entrenamiento-balistico', '/ballistic-training'],
+  [
+    '/mitos-estupidos-debes-entrenar-cada-musculo-solo-una-vez-por-semana',
+    '/training-frequency-myth',
+  ],
+  ['/dias-entrenamiento-pesado', '/heavy-training-days'],
+  ['/consejos-para-crear-tu-rutina-dividida', '/split-routine-tips'],
+  ['/fibras-musculares-ejercicios', '/exercises-that-recruit-muscle-fibers'],
+  ['/repeticion-maxima-rutinas-volumen', '/one-rep-max-volume-training'],
+  ['/tecnica-ejecucion-ejercicios', '/exercise-technique'],
+  [
+    '/contracciones-musculares-excentrica-concentrica-isometricas',
+    '/muscle-contractions',
+  ],
+  ['/grandes-musculos-de-forma-natural', '/natural-muscle-growth'],
+  ['/entrena-con-musica-para-ser-mas-fuerte-en-el-gimnasio', '/training-with-music'],
+  [
+    '/normas-para-hacer-del-gimnasio-un-lugar-mejor-y-sentirte-agusto',
+    '/gym-etiquette',
+  ],
 ];
 
 const pairFor = (pathname) => {

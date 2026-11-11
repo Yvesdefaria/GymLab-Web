@@ -249,6 +249,26 @@ const PAGES = [
   ['en', '/en/muscle-oxygenation-training/'],
   ['es', '/es/entrenamiento-balistico/'],
   ['en', '/en/ballistic-training/'],
+  ['es', '/es/mitos-estupidos-debes-entrenar-cada-musculo-solo-una-vez-por-semana/'],
+  ['en', '/en/training-frequency-myth/'],
+  ['es', '/es/dias-entrenamiento-pesado/'],
+  ['en', '/en/heavy-training-days/'],
+  ['es', '/es/consejos-para-crear-tu-rutina-dividida/'],
+  ['en', '/en/split-routine-tips/'],
+  ['es', '/es/fibras-musculares-ejercicios/'],
+  ['en', '/en/exercises-that-recruit-muscle-fibers/'],
+  ['es', '/es/repeticion-maxima-rutinas-volumen/'],
+  ['en', '/en/one-rep-max-volume-training/'],
+  ['es', '/es/tecnica-ejecucion-ejercicios/'],
+  ['en', '/en/exercise-technique/'],
+  ['es', '/es/contracciones-musculares-excentrica-concentrica-isometricas/'],
+  ['en', '/en/muscle-contractions/'],
+  ['es', '/es/grandes-musculos-de-forma-natural/'],
+  ['en', '/en/natural-muscle-growth/'],
+  ['es', '/es/entrena-con-musica-para-ser-mas-fuerte-en-el-gimnasio/'],
+  ['en', '/en/training-with-music/'],
+  ['es', '/es/normas-para-hacer-del-gimnasio-un-lugar-mejor-y-sentirte-agusto/'],
+  ['en', '/en/gym-etiquette/'],
 ];
 
 // Content routes, keyed by a stable id with the slug each locale publishes. The
@@ -514,6 +534,34 @@ const ROUTES = {
     en: '/muscle-oxygenation-training',
   },
   ballisticTraining: { es: '/entrenamiento-balistico', en: '/ballistic-training' },
+  trainingFrequencyMyth: {
+    es: '/mitos-estupidos-debes-entrenar-cada-musculo-solo-una-vez-por-semana',
+    en: '/training-frequency-myth',
+  },
+  heavyDays: { es: '/dias-entrenamiento-pesado', en: '/heavy-training-days' },
+  splitRoutineTips: { es: '/consejos-para-crear-tu-rutina-dividida', en: '/split-routine-tips' },
+  fiberRecruitment: {
+    es: '/fibras-musculares-ejercicios',
+    en: '/exercises-that-recruit-muscle-fibers',
+  },
+  oneRepMaxVolume: {
+    es: '/repeticion-maxima-rutinas-volumen',
+    en: '/one-rep-max-volume-training',
+  },
+  exerciseTechnique: { es: '/tecnica-ejecucion-ejercicios', en: '/exercise-technique' },
+  muscleContractions: {
+    es: '/contracciones-musculares-excentrica-concentrica-isometricas',
+    en: '/muscle-contractions',
+  },
+  naturalMuscleGrowth: { es: '/grandes-musculos-de-forma-natural', en: '/natural-muscle-growth' },
+  trainingMusic: {
+    es: '/entrena-con-musica-para-ser-mas-fuerte-en-el-gimnasio',
+    en: '/training-with-music',
+  },
+  gymEtiquette: {
+    es: '/normas-para-hacer-del-gimnasio-un-lugar-mejor-y-sentirte-agusto',
+    en: '/gym-etiquette',
+  },
 };
 
 const routeId = (path) => {
