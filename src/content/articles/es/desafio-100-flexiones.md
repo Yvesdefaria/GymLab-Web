@@ -18,67 +18,49 @@ El programa que sigue es la versión más avanzada del plan de Steve Speirs, pen
 
 ## El plan de 6 semanas
 
-Cada sesión tiene asignado un número de repeticiones. Haz al menos tres sesiones por semana y, al terminar la última, busca tu máximo de una sola vez. Entre sesión y sesión deja como mínimo un día completo de descanso.
+Cada sesión tiene asignado un número de repeticiones. Haz al menos tres sesiones por semana y, al terminar la última, busca tu máximo de una sola vez. Entre sesión y sesión deja como mínimo un día completo de descanso, y descansa 45 segundos entre series.
+
+<table class="text-table">
+  <thead>
+    <tr>
+      <th>Semana</th>
+      <th>Objetivo al terminar</th>
+      <th>Series y repeticiones</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>1</strong></td><td>13 flexiones seguidas</td><td>4 series: 11, 12, 9, 9</td></tr>
+    <tr><td><strong>2</strong></td><td>20 flexiones seguidas</td><td>4 series: 16, 17, 14, 14</td></tr>
+    <tr><td><strong>3</strong></td><td>28 flexiones seguidas</td><td>4 series: 22, 30, 20, 20</td></tr>
+    <tr><td><strong>4</strong></td><td>40 flexiones seguidas</td><td>4 series: 29, 33, 29, 29</td></tr>
+    <tr><td><strong>5</strong></td><td>50 flexiones seguidas</td><td>7 series: 20, 20, 24, 24, 20, 20, 22</td></tr>
+    <tr><td><strong>6</strong></td><td>60 flexiones seguidas</td><td>8 series: 26, 26, 33, 33, 26, 26, 22, 22</td></tr>
+  </tbody>
+</table>
 
 Cada semana marca un mínimo: 13 repeticiones en la primera, 20 en la segunda y así hasta la sexta. Si puedes hacer más, hazlo. Si no alcanzas alguno de los objetivos de las series, repite la semana entera antes de pasar a la siguiente.
 
 ### Semana 1
 
-Objetivo: completar al menos 13 flexiones seguidas al terminar las series, con 45 segundos de descanso entre ellas.
-
-| Ejercicio | Series | Reps |
-| --- | --- | --- |
-| Flexiones de brazos | 4 | 11, 12, 9, 9 |
-
 Si te resulta fácil, prueba una variante más dura: haz tres pausas en cada repetición, una en el punto más alto, otra en el intermedio y otra en el más bajo. Así aumentas el tiempo que los músculos pasan en tensión.
 
 ### Semana 2
-
-Objetivo: completar al menos 20 flexiones seguidas al terminar las series, con 45 segundos de descanso entre ellas.
-
-| Ejercicio | Series | Reps |
-| --- | --- | --- |
-| Flexiones de brazos | 4 | 16, 17, 14, 14 |
 
 El día que entrenas flexiones, come bien. Lo ideal es un desayuno de cereales y tostadas integrales que no salga de una sartén, y para el almuerzo, pollo a la parrilla con verduras al vapor.
 
 ### Semana 3
 
-Objetivo: completar al menos 28 flexiones seguidas al terminar las series, con 45 segundos de descanso entre ellas.
-
-| Ejercicio | Series | Reps |
-| --- | --- | --- |
-| Flexiones de brazos | 4 | 22, 30, 20, 20 |
-
 No empieces en frío. Haz un calentamiento con rotaciones de cuello, elevaciones de hombros y rotaciones de cintura. Después suelta los músculos clave balanceando los brazos y girándolos en círculo, con 7 u 8 repeticiones de cada movimiento.
 
 ### Semana 4
-
-Objetivo: completar al menos 40 flexiones seguidas al terminar las series, con 45 segundos de descanso entre ellas.
-
-| Ejercicio | Series | Reps |
-| --- | --- | --- |
-| Flexiones de brazos | 4 | 29, 33, 29, 29 |
 
 Complementa las flexiones con otros ejercicios para el tren superior. Puedes hacer 60 segundos de abdominales isométricos y 3 minutos de press de banca con un cuarto de tu repetición máxima. Baja siempre el peso muy despacio.
 
 ### Semana 5
 
-Objetivo: completar al menos 50 flexiones seguidas al terminar las series, con 45 segundos de descanso entre ellas.
-
-| Ejercicio | Series | Reps |
-| --- | --- | --- |
-| Flexiones de brazos | 7 | 20, 20, 24, 24, 20, 20, 22 |
-
 A estas alturas ya deberías notar mejoras en pectorales y tríceps. Equilibra la rutina con ejercicios de espalda y de bíceps para no acabar desarrollando la «pose de gorila».
 
 ### Semana 6
-
-Objetivo: completar al menos 60 flexiones seguidas al terminar las series, con 45 segundos de descanso entre ellas.
-
-| Ejercicio | Series | Reps |
-| --- | --- | --- |
-| Flexiones de brazos | 8 | 26, 26, 33, 33, 26, 26, 22, 22 |
 
 Tienes el objetivo a tiro, así que este no es el momento de hacerte un esguince. En la Universidad de Mahidol, en Bangkok, se observó que el dolor en la palma cerca del pulgar se corrige colocando las manos ligeramente por dentro de los hombros. Si el dolor aparece en el lado contrario, separa las manos más que los hombros.
 

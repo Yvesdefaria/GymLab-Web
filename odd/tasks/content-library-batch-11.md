@@ -188,6 +188,21 @@ Decision: the English fibre article uses the US spelling `fiber` (45 occurrences
 assigned keyword and its slug are `muscle-fiber-types`; the rest of the library mixes British and
 American spellings (`fibre` but `training-periodization`), so this is a keyword choice, not a defect.
 
+## Post-batch fix (2026-11-11)
+
+The owner reported that the tables on `/es/desafio-100-flexiones/` spilled their text. Cause: the six
+weekly blocks were routine tables, and routine cells 2 and 3 are `white-space: nowrap` at 21% width
+(`ArticleLayout`), so the long reps list ("20, 20, 24, 24, 20, 20, 22") overflowed the cell.
+
+Fix: the six one-row routine tables became one `table.text-table` under "El plan de 6 semanas"
+(Semana · Objetivo al terminar · Series y repeticiones), the table type the contract reserves for
+auto layout and wrapping. The 45-second rest note moved into the intro paragraph. Applied to both
+locales.
+
+Verified with Playwright at 1280 and 390 px: `scrollWidth === clientWidth`, the widest cell right edge
+equals the table right edge, and `documentElement.scrollWidth` equals the viewport, so nothing
+overflows. `check:copy` stays 5,865/5,865 and the build stays at 246 pages.
+
 ## Native review assessment (2026-11-11)
 
 RDD is `on` (global scope). Read-only `gentle-ai review assess` with the untracked mockups excluded

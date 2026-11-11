@@ -18,67 +18,49 @@ The programme below is the most advanced version of Steve Speirs' plan, built to
 
 ## The six-week plan
 
-Each session has a set number of reps. Do at least three sessions a week and, when the last one is done, test your max in a single effort. Leave at least one full day of rest between sessions.
+Each session has a set number of reps. Do at least three sessions a week and, when the last one is done, test your max in a single effort. Leave at least one full day of rest between sessions, and rest 45 seconds between sets.
+
+<table class="text-table">
+  <thead>
+    <tr>
+      <th>Week</th>
+      <th>Goal at the end</th>
+      <th>Sets and reps</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>1</strong></td><td>13 push-ups in a row</td><td>4 sets: 11, 12, 9, 9</td></tr>
+    <tr><td><strong>2</strong></td><td>20 push-ups in a row</td><td>4 sets: 16, 17, 14, 14</td></tr>
+    <tr><td><strong>3</strong></td><td>28 push-ups in a row</td><td>4 sets: 22, 30, 20, 20</td></tr>
+    <tr><td><strong>4</strong></td><td>40 push-ups in a row</td><td>4 sets: 29, 33, 29, 29</td></tr>
+    <tr><td><strong>5</strong></td><td>50 push-ups in a row</td><td>7 sets: 20, 20, 24, 24, 20, 20, 22</td></tr>
+    <tr><td><strong>6</strong></td><td>60 push-ups in a row</td><td>8 sets: 26, 26, 33, 33, 26, 26, 22, 22</td></tr>
+  </tbody>
+</table>
 
 Every week sets a minimum: 13 reps in the first, 20 in the second and so on to the sixth. Do more if you can. If you miss any of the set targets, repeat the whole week before moving on.
 
 ### Week 1
 
-Goal: complete at least 13 push-ups in a row once the sets are done, resting 45 seconds between them.
-
-| Exercise | Sets | Reps |
-| --- | --- | --- |
-| Push-ups | 4 | 11, 12, 9, 9 |
-
 If it feels easy, try a harder version: pause three times in every rep, at the top, the middle and the bottom. That increases the time your muscles spend under tension.
 
 ### Week 2
-
-Goal: complete at least 20 push-ups in a row once the sets are done, resting 45 seconds between them.
-
-| Exercise | Sets | Reps |
-| --- | --- | --- |
-| Push-ups | 4 | 16, 17, 14, 14 |
 
 Eat well on the day you train push-ups. The ideal breakfast is cereal and wholemeal toast that does not come out of a frying pan, with grilled chicken and steamed vegetables for lunch.
 
 ### Week 3
 
-Goal: complete at least 28 push-ups in a row once the sets are done, resting 45 seconds between them.
-
-| Exercise | Sets | Reps |
-| --- | --- | --- |
-| Push-ups | 4 | 22, 30, 20, 20 |
-
 Do not start cold. Warm up with neck rotations, shoulder shrugs and waist rotations. Then loosen the key muscles by swinging your arms and turning them in circles, with 7 or 8 reps of each movement.
 
 ### Week 4
-
-Goal: complete at least 40 push-ups in a row once the sets are done, resting 45 seconds between them.
-
-| Exercise | Sets | Reps |
-| --- | --- | --- |
-| Push-ups | 4 | 29, 33, 29, 29 |
 
 Add other upper-body exercises to the push-ups. You can do 60 seconds of isometric abs and 3 minutes of bench press with a quarter of your one-rep max. Always lower the weight very slowly.
 
 ### Week 5
 
-Goal: complete at least 50 push-ups in a row once the sets are done, resting 45 seconds between them.
-
-| Exercise | Sets | Reps |
-| --- | --- | --- |
-| Push-ups | 7 | 20, 20, 24, 24, 20, 20, 22 |
-
 By now you should notice improvement in your pecs and triceps. Balance the routine with back and biceps work so you do not end up with the gorilla pose.
 
 ### Week 6
-
-Goal: complete at least 60 push-ups in a row once the sets are done, resting 45 seconds between them.
-
-| Exercise | Sets | Reps |
-| --- | --- | --- |
-| Push-ups | 8 | 26, 26, 33, 33, 26, 26, 22, 22 |
 
 The goal is within reach, so this is not the moment to risk a sprain. At Mahidol University in Bangkok, researchers observed that pain in the palm near the thumb is fixed by placing the hands slightly inside shoulder width. If the pain shows up on the other side, set the hands wider than the shoulders.
 
