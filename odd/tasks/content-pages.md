@@ -150,6 +150,7 @@ Legend: `ES` = Spanish published, `EN` = English published.
 | `tests-evaluar-estado-fisico` | yes | yes | yes | 0 em dashes | pass |
 | `entrenamiento-oxigenacion` | yes | yes | yes | 0 em dashes | pass |
 | `entrenamiento-balistico` | yes | yes | yes | 0 em dashes | pass |
+| `mitos-estupidos-debes-entrenar-cada-musculo-solo-una-vez-por-semana` | yes | yes | yes | 0 em dashes | pass |
 
 ## Resume (2026-11-11)
 
@@ -232,7 +233,7 @@ Legend: `ES` = Spanish published, `EN` = English published.
 - [x] ES · [x] EN — `/tests-evaluar-estado-fisico/` — Tests para evaluar tu estado físico \| ¿Estás en forma?
 - [x] ES · [x] EN — `/entrenamiento-oxigenacion/` — Entrenamiento de oxigenación muscular
 - [x] ES · [x] EN — `/entrenamiento-balistico/` — Entrenamiento balístico
-- [ ] ES · [ ] EN — `/mitos-estupidos-debes-entrenar-cada-musculo-solo-una-vez-por-semana/` — El mito de entrenar un músculo una vez por semana
+- [x] ES · [x] EN — `/mitos-estupidos-debes-entrenar-cada-musculo-solo-una-vez-por-semana/` — El mito de entrenar un músculo una vez por semana
 - [ ] ES · [ ] EN — `/dias-entrenamiento-pesado/` — Días de Entrenamiento Pesado
 - [ ] ES · [ ] EN — `/consejos-para-crear-tu-rutina-dividida/` — Consejos para crear tu rutina dividida
 - [ ] ES · [ ] EN — `/fibras-musculares-ejercicios/` — Los ejercicios que más fibras musculares estimulan
