@@ -12,7 +12,8 @@ Last updated: 2026-11-11. Read this first next session.
 - **115 / 792 bilingual pages** (ES 115, EN 115).
 - Blocks: Entrenamiento **76**, Por Músculo **5**, Ejercicios **34**.
 - **115 unique heroes, 0 duplicates.**
-- **Batch 11 is built and green (2026-11-11).** The build has **246 pages** and **242 sitemap URLs**.
+- **Batch 11 is built, green, pushed and live (2026-11-11).** The build has **246 pages** and
+  **242 sitemap URLs**; production verified at 242 URLs after the push.
 - One archive row is discarded and must stay out: the FiveStars Fitness congress page.
 - Batch record: `odd/tasks/content-library-batch-11.md`.
 
@@ -104,7 +105,8 @@ Start the dev server with `npm run dev` for local review.
   all resolve; zero `.md` links and zero em dashes; 120 TOC anchors match their heading ids; 36
   routine table rows all have 3 columns.
 - Commits, one per page as the owner asked: `8ed157f`, `0faecc9`, `2705cea`, `4c508ca`, `50707f7`,
-  `8b4e93c`, `2185f4d`, `bf494a3`, `fee2797`, `6285c91`; routes `c67c753`; docs at the close.
+  `8b4e93c`, `2185f4d`, `bf494a3`, `fee2797`, `6285c91`; routes `c67c753`; docs `6b5739a`. Pushed
+  `508bbe3..6b5739a`; production verified at **242 sitemap URLs**.
 - **Gotcha:** `ROUTES` in `scripts/check-i18n.mjs` is keyed, and a new key that collides with an
   existing one silently overwrites it (batch 10 hit this with `musclePump`). All ten keys in batch 11
   were checked free first.

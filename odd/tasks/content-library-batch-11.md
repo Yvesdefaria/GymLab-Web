@@ -126,8 +126,9 @@ Forecast: about 2,200 authored lines across the 10 pairs. Delivery is direct wor
 - [x] 7. Parent — manual checks: 214 internal links across the 20 built pages resolve; 0 `.md` links;
       0 em dashes; 120 TOC anchors match their H2 ids; 36 routine table rows all 3 columns; sitemap
       242 URLs and 726 alternates.
-- [ ] 8. Parent — record the pages in `content-pages.md`, session handoff and `PLAN.md`; commit and
-      push.
+- [x] 8. Parent — record the pages in `content-pages.md`, session handoff and `PLAN.md`; commit
+      `6b5739a` and push (`508bbe3..6b5739a`), then verify production: **242 sitemap URLs** and
+      `/es/entrenamiento-balistico/` present.
 
 ## Acceptance criteria
 
@@ -159,6 +160,7 @@ Observed on 2026-11-11:
 | TOC anchors vs heading ids | **120/120** match |
 | Routine table rows | 36, all 3 columns |
 | Article counts | 115 ES, 115 EN, 115 hero directories |
+| Production after the push | **242 sitemap URLs**, batch 11 routes present |
 
 Test-first exception: prose and images have no runnable deterministic RED; `check:copy`, the build,
 `check:i18n` and the manual structural checks are the functional verification.
