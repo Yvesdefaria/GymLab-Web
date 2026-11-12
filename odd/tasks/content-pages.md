@@ -166,6 +166,7 @@ Legend: `ES` = Spanish published, `EN` = English published.
 | `dolor-crecimiento-muscular` | yes | yes | yes | 0 em dashes | pass |
 | `como-respirar-mientras-entrenamos` | yes | yes | yes | 0 em dashes | pass |
 | `menos-grasa-mas-musculo` | yes | yes | yes | 0 em dashes | pass |
+| `entrenamiento-con-companero` | yes | yes | yes | 0 em dashes | pass |
 
 ## Resume (2026-11-11)
 
@@ -264,7 +265,7 @@ Legend: `ES` = Spanish published, `EN` = English published.
 - [x] ES · [x] EN — `/dolor-crecimiento-muscular/` — Dolor muscular no implica crecimiento muscular
 - [x] ES · [x] EN — `/como-respirar-mientras-entrenamos/` — Como respirar durante los ejercicios de gimnasio
 - [x] ES · [x] EN — `/menos-grasa-mas-musculo/` — Como ganar músculo y perder grasa al mismo tiempo
-- [ ] ES · [ ] EN — `/entrenamiento-con-companero/` — Entrenamiento con un compañero
+- [x] ES · [x] EN — `/entrenamiento-con-companero/` — Entrenamiento con un compañero
 
 ### Ejercicio Cardiovascular (32)
 
