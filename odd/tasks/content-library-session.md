@@ -112,7 +112,9 @@ Start the dev server with `npm run dev` for local review.
   resolve; zero `.md` links, zero `#` links and zero em dashes; 110 TOC anchors match their heading
   ids; the three swimming routine tables keep three columns with their footnotes outside.
 - Commits, one per page with its checklist rows marked: `991c76c`, `7bb0e05`, `a4c7a4f`, `ea384e8`,
-  `31164d6`, `002501f`, `662184d`, `c7130ba`, `b63ce87`, `3aae5c7`; routes `41c0b83`; docs after this.
+  `31164d6`, `002501f`, `662184d`, `c7130ba`, `b63ce87`, `3aae5c7`; routes `41c0b83`; docs
+  `a6db2d3`; push record `26a3c22`. Pushed `3da6079..26a3c22`; production verified at **282 sitemap
+  URLs** and 846 alternates, sampled routes 200.
 - **Gotcha:** `check:copy` compares hero paths, not bytes; three older pages share a byte-identical
   hero and the gate cannot see it. Hash every new hero.
 - **Gotcha:** Wikimedia Commons rate-limits the Action API; leave 4–10 s between calls.
