@@ -9,18 +9,18 @@ Legend: `ES` = Spanish published, `EN` = English published.
 
 ## Progress
 
-- **Built: 135 / 792** (ES 135, EN 135).
-- Last batch: 10 pages, from `/como-entrenar-con-altas-temperaturas/` to `/como-disfrutar-del-running-y-conseguir-acabar-cualquier-carrera-popular/`.
+- **Built: 145 / 792** (ES 145, EN 145).
+- Last batch: 10 pages, from `/cardio-de-bajo-impacto-para-quemar-grasa/` to `/ejercicio-aerobico/`.
 
 | Block | Articles | Built |
 | --- | ---: | ---: |
-| Entrenamiento | 222 | 96 |
+| Entrenamiento | 222 | 106 |
 | Por Músculo | 80 | 5 |
 | Rutinas | 80 | 0 |
 | Ejercicios | 196 | 34 |
 | Nutrición | 191 | 0 |
 | Mujer Fitness | 23 | 0 |
-| **Total** | **792** | **135** |
+| **Total** | **792** | **145** |
 
 ## Copy gate (mandatory before ticking ES/EN)
 
@@ -183,12 +183,12 @@ Legend: `ES` = Spanish published, `EN` = English published.
 
 ## Resume (2026-11-12)
 
-- Built: **135/792**; **135 unique hero paths**; **batch 13 built and green**.
+- Built: **145/792**; **145 unique hero paths**; **batch 14 built and green**.
 - One archive row is discarded and must stay out: the FiveStars Fitness congress page.
-- Batch 13 passes `npm run verify`: 6,885 copy checks, 286 pages, 4,526 i18n checks.
-- Full handoff: `odd/tasks/content-library-session.md`; batch record: `odd/tasks/content-library-batch-13.md`.
-- Next: the first unchecked row after `/como-disfrutar-del-running-y-conseguir-acabar-cualquier-carrera-popular/`, which is
-  `/cardio-de-bajo-impacto-para-quemar-grasa/`.
+- Batch 14 passes `npm run verify`: 7,395 copy checks, 306 pages, 4,836 i18n checks.
+- Full handoff: `odd/tasks/content-library-session.md`; batch record: `odd/tasks/content-library-batch-14.md`.
+- Next: the first unchecked row after `/ejercicio-aerobico/`, which is
+  `/entrenamiento-cardiovascular-en-tu-programa-de-fitness/`.
 - Follow-up: `/ejercicios-en-polea-ventajas`, `/escoger-actividad-en-tu-vuelta-al-gimnasio` and
   `/jalones-frontales-brazos-rectos` share a byte-identical hero; replace two of them in a later batch.
 - Verify with `npm run verify`; review with `npm run dev` at `http://localhost:4321`.

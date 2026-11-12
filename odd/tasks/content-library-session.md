@@ -9,20 +9,20 @@ Last updated: 2026-11-12. Read this first next session.
 
 ## State
 
-- **135 / 792 bilingual pages** (ES 135, EN 135).
-- Blocks: Entrenamiento **96**, Por Músculo **5**, Ejercicios **34**.
-- **135 unique hero paths.** Three older pages share a byte-identical hero (see the follow-up below).
-- **Batch 13 is built, green and pushed (2026-11-12).** The build has **286 pages** and
-  **282 sitemap URLs**.
+- **145 / 792 bilingual pages** (ES 145, EN 145).
+- Blocks: Entrenamiento **106**, Por Músculo **5**, Ejercicios **34**.
+- **145 unique hero paths.** Three older pages share a byte-identical hero (see the follow-up below).
+- **Batch 14 is built, green and pushed (2026-11-12).** The build has **306 pages** and
+  **302 sitemap URLs**.
 - One archive row is discarded and must stay out: the FiveStars Fitness congress page.
-- Batch record: `odd/tasks/content-library-batch-13.md`.
+- Batch record: `odd/tasks/content-library-batch-14.md`.
 
 ## Gates
 
 ```powershell
-npm run check:copy   # 6,885/6,885
-npm run build        # 286 pages
-npm run check:i18n   # 4,526/4,526
+npm run check:copy   # 7,395/7,395
+npm run build        # 306 pages
+npm run check:i18n   # 4,836/4,836
 npm run verify       # all three, in that order
 npm run dev          # http://localhost:4321
 ```
@@ -44,20 +44,22 @@ Start the dev server with `npm run dev` for local review.
   contractions, natural muscle growth, training with music, gym etiquette, training in hot weather,
   Smith-machine plateaus, range of motion, soreness versus growth, breathing and body recomposition,
   and training with a partner.
-- **Ejercicio Cardiovascular (3):** HIIT, the three-day swimming plan and popular-race running.
+- **Ejercicio Cardiovascular (13):** HIIT, the three-day swimming plan, popular-race running,
+  low-impact cardio, swimming plus weights, cardio plus weights for women, LISS, electric bikes,
+  kayak and paddle surf, elliptical vs stationary bike, stationary bike vs treadmill, the air bike
+  and aerobic exercise.
 - **Recovery and planning (10):** back-pain exercises (YMYL), stretching, stretching circuit, muscle
   failure, periodization, exercise and immune system, deload week, sleep, training planning and
   muscle recovery.
 
 ## Next 10
 
-1. Start at `/cardio-de-bajo-impacto-para-quemar-grasa/`.
-2. Then `/como-combinar-natacion-y-pesas-sin-perder-musculo/`,
-   `/como-combinar-cardio-y-pesas-para-mujeres/`, `/cardio-liss-baja-intensidad-larga-duracion/`,
-   `/bicicletas-electricas-para-perder-peso/`, `/kayak-paddle-surf-beneficios/`,
-   `/bicicleta-eliptica-vs-bicicleta-estatica-cual-es-mejor/`,
-   `/bicicleta-estatica-vs-cinta-de-correr/`, `/beneficios-de-la-bicicleta-de-aire-y-como-entrenar-con-ella/`
-   and `/ejercicio-aerobico/`.
+1. Start at `/entrenamiento-cardiovascular-en-tu-programa-de-fitness/`.
+2. Then `/rutinas-ejercicio-aerobico/`, `/pesas-salud-cardiovascular/`, `/cardio-ayunas/`,
+   `/metodos-continuos-ejercicio-aerobico/`, `/maquinas-ejercicio-aerobico/`,
+   `/adaptaciones-cuerpo-ejercicio-aerobico/`, `/ejercicio-aerobico-perder-masa-muscular/`,
+   `/demasiado-aerobico-puede-ser-malo-para-perder-grasa/` and
+   `/calcular-frecuencia-cardiaca-maxima/`.
 3. Keep the same copy, unique-hero and gate flow.
 4. Replace two of the three pages that share a byte-identical hero: `/ejercicios-en-polea-ventajas`,
    `/escoger-actividad-en-tu-vuelta-al-gimnasio`, `/jalones-frontales-brazos-rectos`.
@@ -102,26 +104,23 @@ Start the dev server with `npm run dev` for local review.
 
 ## Session close (2026-11-12)
 
-- Batch 13 wrote 10 page pairs (20 files) from `/como-entrenar-con-altas-temperaturas/` to
-  `/como-disfrutar-del-running-…/`: 135/792 pages, 10 new unique heroes.
+- Batch 14 wrote 10 page pairs (20 files) from `/cardio-de-bajo-impacto-para-quemar-grasa/` to
+  `/ejercicio-aerobico/`: 145/792 pages, 10 new unique heroes.
 - Two writers ran sequentially, five pairs each; the parent added the cross-links, registered the 10
   pairs in `ROUTE_PAIRS`, `PAGES` and `ROUTES`, and ran the gates.
-- Gates are green: `check:copy` 6,885/6,885, build **286 pages**, `check:i18n` 4,526/4,526, sitemap
-  **282 URLs** with 846 alternates.
-- Structural checks the gate does not cover, run by hand on the 20 built pages: 86 internal links all
-  resolve; zero `.md` links, zero `#` links and zero em dashes; 110 TOC anchors match their heading
-  ids; the three swimming routine tables keep three columns with their footnotes outside.
-- Commits, one per page with its checklist rows marked: `991c76c`, `7bb0e05`, `a4c7a4f`, `ea384e8`,
-  `31164d6`, `002501f`, `662184d`, `c7130ba`, `b63ce87`, `3aae5c7`; routes `41c0b83`; docs
-  `a6db2d3`; push record `26a3c22`. Pushed `3da6079..26a3c22`; production verified at **282 sitemap
-  URLs** and 846 alternates, sampled routes 200.
+- Gates are green: `check:copy` 7,395/7,395, build **306 pages**, `check:i18n` 4,836/4,836, sitemap
+  **302 URLs** with 906 alternates.
+- Structural checks the gate does not cover, run by hand on the 20 built pages: 92 internal links all
+  resolve; zero `.md` links, zero `#` links and zero em dashes; 152 TOC anchors match their heading
+  ids; the two text tables keep three and two columns.
+- Commits, one per page with its checklist rows marked: `53dd72c`, `370b2cf`, `cd27eec`, `871e086`,
+  `726401c`, `4ef0e5a`, `5f5f8bf`, `da06358`, `3d471fb`, `69ccab5`; routes `b418ee8`; docs after
+  this. Push and production verification recorded in the batch 14 doc.
 - **Gotcha:** `check:copy` compares hero paths, not bytes; three older pages share a byte-identical
   hero and the gate cannot see it. Hash every new hero.
 - **Gotcha:** Wikimedia Commons rate-limits the Action API; leave 4–10 s between calls.
-- **Archive correction:** the swimming day 3 table lists four sets but its detail says two; the page
-  keeps four sets and drops the contradictory phrase. The day 3 kick row named a butterfly kick for a
-  breaststroke set; the page uses breaststroke kick.
-- **Archive conversion:** the HIIT comparison table had six columns and the text-table CSS defines
-  three, so the six routines ship as H3 blocks with Effort / Rest / Rounds / Total bullets.
-- Next session starts at `/cardio-de-bajo-impacto-para-quemar-grasa/`.
+- **Archive edits:** the cardio-and-weights page dropped a first-person "20 years of experience"
+  testimony and the shoe-shop links; the air-bike page dropped the creatine paragraph and the
+  promotional tangents. No advice, routine or number was lost.
+- Next session starts at `/entrenamiento-cardiovascular-en-tu-programa-de-fitness/`.
 - Engram topic `content-library/handoff` is updated with this state.
