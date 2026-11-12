@@ -289,6 +289,26 @@ const PAGES = [
   ['en', '/en/swimming-workout-routine/'],
   ['es', '/es/como-disfrutar-del-running-y-conseguir-acabar-cualquier-carrera-popular/'],
   ['en', '/en/enjoy-running-popular-races/'],
+  ['es', '/es/cardio-de-bajo-impacto-para-quemar-grasa/'],
+  ['en', '/en/low-impact-cardio/'],
+  ['es', '/es/como-combinar-natacion-y-pesas-sin-perder-musculo/'],
+  ['en', '/en/swimming-and-weights/'],
+  ['es', '/es/como-combinar-cardio-y-pesas-para-mujeres/'],
+  ['en', '/en/cardio-and-weights-for-women/'],
+  ['es', '/es/cardio-liss-baja-intensidad-larga-duracion/'],
+  ['en', '/en/liss-cardio-guide/'],
+  ['es', '/es/bicicletas-electricas-para-perder-peso/'],
+  ['en', '/en/electric-bikes-weight-loss/'],
+  ['es', '/es/kayak-paddle-surf-beneficios/'],
+  ['en', '/en/kayak-paddleboarding-benefits/'],
+  ['es', '/es/bicicleta-eliptica-vs-bicicleta-estatica-cual-es-mejor/'],
+  ['en', '/en/elliptical-vs-stationary-bike/'],
+  ['es', '/es/bicicleta-estatica-vs-cinta-de-correr/'],
+  ['en', '/en/stationary-bike-vs-treadmill/'],
+  ['es', '/es/beneficios-de-la-bicicleta-de-aire-y-como-entrenar-con-ella/'],
+  ['en', '/en/air-bike-benefits/'],
+  ['es', '/es/ejercicio-aerobico/'],
+  ['en', '/en/aerobic-exercise/'],
 ];
 
 // Content routes, keyed by a stable id with the slug each locale publishes. The
@@ -604,6 +624,34 @@ const ROUTES = {
     es: '/como-disfrutar-del-running-y-conseguir-acabar-cualquier-carrera-popular',
     en: '/enjoy-running-popular-races',
   },
+  lowImpactCardio: { es: '/cardio-de-bajo-impacto-para-quemar-grasa', en: '/low-impact-cardio' },
+  swimmingAndWeights: {
+    es: '/como-combinar-natacion-y-pesas-sin-perder-musculo',
+    en: '/swimming-and-weights',
+  },
+  cardioWeightsWomen: {
+    es: '/como-combinar-cardio-y-pesas-para-mujeres',
+    en: '/cardio-and-weights-for-women',
+  },
+  lissCardio: {
+    es: '/cardio-liss-baja-intensidad-larga-duracion',
+    en: '/liss-cardio-guide',
+  },
+  electricBikes: { es: '/bicicletas-electricas-para-perder-peso', en: '/electric-bikes-weight-loss' },
+  kayakPaddleSurf: { es: '/kayak-paddle-surf-beneficios', en: '/kayak-paddleboarding-benefits' },
+  ellipticalVsStationary: {
+    es: '/bicicleta-eliptica-vs-bicicleta-estatica-cual-es-mejor',
+    en: '/elliptical-vs-stationary-bike',
+  },
+  bikeVsTreadmill: {
+    es: '/bicicleta-estatica-vs-cinta-de-correr',
+    en: '/stationary-bike-vs-treadmill',
+  },
+  airBike: {
+    es: '/beneficios-de-la-bicicleta-de-aire-y-como-entrenar-con-ella',
+    en: '/air-bike-benefits',
+  },
+  aerobicExercise: { es: '/ejercicio-aerobico', en: '/aerobic-exercise' },
 };
 
 const routeId = (path) => {

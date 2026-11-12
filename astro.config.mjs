@@ -171,6 +171,16 @@ const ROUTE_PAIRS = [
     '/como-disfrutar-del-running-y-conseguir-acabar-cualquier-carrera-popular',
     '/enjoy-running-popular-races',
   ],
+  ['/cardio-de-bajo-impacto-para-quemar-grasa', '/low-impact-cardio'],
+  ['/como-combinar-natacion-y-pesas-sin-perder-musculo', '/swimming-and-weights'],
+  ['/como-combinar-cardio-y-pesas-para-mujeres', '/cardio-and-weights-for-women'],
+  ['/cardio-liss-baja-intensidad-larga-duracion', '/liss-cardio-guide'],
+  ['/bicicletas-electricas-para-perder-peso', '/electric-bikes-weight-loss'],
+  ['/kayak-paddle-surf-beneficios', '/kayak-paddleboarding-benefits'],
+  ['/bicicleta-eliptica-vs-bicicleta-estatica-cual-es-mejor', '/elliptical-vs-stationary-bike'],
+  ['/bicicleta-estatica-vs-cinta-de-correr', '/stationary-bike-vs-treadmill'],
+  ['/beneficios-de-la-bicicleta-de-aire-y-como-entrenar-con-ella', '/air-bike-benefits'],
+  ['/ejercicio-aerobico', '/aerobic-exercise'],
 ];
 
 const pairFor = (pathname) => {
