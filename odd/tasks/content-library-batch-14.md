@@ -145,8 +145,9 @@ before the commit, so the checklist never lags the work.
 - [x] 7. Parent — manual checks: 92 internal links on the 20 built pages resolve; 152 TOC anchors
       match their heading ids; 0 `.md` links, 0 `#` links, 0 em dashes; 2 text tables (LISS 3 columns,
       bike vs treadmill 2 columns); sitemap 302 URLs and 906 alternates.
-- [ ] 8. Parent — record the pages in the session handoff and `PLAN.md`; commit and push; verify
-      production; deliver the 20 URLs.
+- [x] 8. Parent — record the pages in the session handoff and `PLAN.md`; commit `2e888e0` and push
+      (`05cf00d..2e888e0`), then verify production: **302 sitemap URLs**, 906 alternates and
+      `/en/liss-cardio-guide/` answers 200.
 
 ## Acceptance criteria
 
@@ -182,6 +183,20 @@ Observed on 2026-11-12:
 | Article counts | 145 ES, 145 EN, 145 hero directories |
 | Text tables | 2 (LISS 3 columns, bike vs treadmill 2 columns) |
 | New hero hashes | 10 unique, 140–463 KB, all JPEG |
+| Production after the push | **302 sitemap URLs**, 906 alternates, new routes 200 |
+
+## Native review assessment (2026-11-12)
+
+RDD is `on` (global scope). Read-only `gentle-ai review assess` with the untracked mockups excluded
+(`--untracked-scope exclude`, inventory `sha256:5d53f361…252dab`):
+
+| Range | Risk | Paths / lines | `review_due` | Reason |
+| --- | --- | --- | --- | --- |
+| `05cf00d..HEAD` (batch 14 content + routes + docs) | medium | 36 / 2,483 | false | `under_budget` |
+
+No native review was started: the provider reports the candidate under the slice budget, so no consent
+envelope and no lineage. The batch 10 transaction `review-bf1585fd7f8b1c1f` remains open and
+untouched; it is a different lineage.
 
 ## Notes for the next batch
 
