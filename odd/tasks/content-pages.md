@@ -164,6 +164,7 @@ Legend: `ES` = Spanish published, `EN` = English published.
 | `multipower-para-superar-puntos-de-estancamiento` | yes | yes | yes | 0 em dashes | pass |
 | `rango-completo-de-movimiento-rom` | yes | yes | yes | 0 em dashes | pass |
 | `dolor-crecimiento-muscular` | yes | yes | yes | 0 em dashes | pass |
+| `como-respirar-mientras-entrenamos` | yes | yes | yes | 0 em dashes | pass |
 
 ## Resume (2026-11-11)
 
@@ -260,7 +261,7 @@ Legend: `ES` = Spanish published, `EN` = English published.
 - [x] ES · [x] EN — `/multipower-para-superar-puntos-de-estancamiento/` — Uso del multipower para superar puntos de estancamiento
 - [x] ES · [x] EN — `/rango-completo-de-movimiento-rom/` — Rango completo de movimiento (ROM), cuando utilizarlo
 - [x] ES · [x] EN — `/dolor-crecimiento-muscular/` — Dolor muscular no implica crecimiento muscular
-- [ ] ES · [ ] EN — `/como-respirar-mientras-entrenamos/` — Como respirar durante los ejercicios de gimnasio
+- [x] ES · [x] EN — `/como-respirar-mientras-entrenamos/` — Como respirar durante los ejercicios de gimnasio
 - [ ] ES · [ ] EN — `/menos-grasa-mas-musculo/` — Como ganar músculo y perder grasa al mismo tiempo
 - [ ] ES · [ ] EN — `/entrenamiento-con-companero/` — Entrenamiento con un compañero
 
