@@ -176,6 +176,7 @@ Legend: `ES` = Spanish published, `EN` = English published.
 | `cardio-liss-baja-intensidad-larga-duracion` | yes | yes | yes | 0 em dashes | pass |
 | `bicicletas-electricas-para-perder-peso` | yes | yes | yes | 0 em dashes | pass |
 | `kayak-paddle-surf-beneficios` | yes | yes | yes | 0 em dashes | pass |
+| `bicicleta-eliptica-vs-bicicleta-estatica-cual-es-mejor` | yes | yes | yes | 0 em dashes | pass |
 
 ## Resume (2026-11-12)
 
@@ -289,7 +290,7 @@ Legend: `ES` = Spanish published, `EN` = English published.
 - [x] ES · [x] EN — `/cardio-liss-baja-intensidad-larga-duracion/` — Guía de Cardio LISS: Quema Grasa sin Perder Músculo
 - [x] ES · [x] EN — `/bicicletas-electricas-para-perder-peso/` — Bicicletas eléctricas: ¿Se pierde peso realmente con ellas?
 - [x] ES · [x] EN — `/kayak-paddle-surf-beneficios/` — Kayak y Paddle Surf \| Descubre todos sus beneficios
-- [ ] ES · [ ] EN — `/bicicleta-eliptica-vs-bicicleta-estatica-cual-es-mejor/` — Bicicleta elíptica Vs. Bicicleta Estática ¿Cuál es mejor?
+- [x] ES · [x] EN — `/bicicleta-eliptica-vs-bicicleta-estatica-cual-es-mejor/` — Bicicleta elíptica Vs. Bicicleta Estática ¿Cuál es mejor?
 - [ ] ES · [ ] EN — `/bicicleta-estatica-vs-cinta-de-correr/` — Bicicleta Estática vs. Cinta de Correr: ¿Cuál Elegir?
 - [ ] ES · [ ] EN — `/beneficios-de-la-bicicleta-de-aire-y-como-entrenar-con-ella/` — Bicicleta de aire: Guía definitiva para quemar grasa rápido
 - [ ] ES · [ ] EN — `/ejercicio-aerobico/` — Ejercicio aeróbico: quema grasa y fortalece tu corazón
