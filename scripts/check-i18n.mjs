@@ -269,6 +269,26 @@ const PAGES = [
   ['en', '/en/training-with-music/'],
   ['es', '/es/normas-para-hacer-del-gimnasio-un-lugar-mejor-y-sentirte-agusto/'],
   ['en', '/en/gym-etiquette/'],
+  ['es', '/es/como-entrenar-con-altas-temperaturas/'],
+  ['en', '/en/training-in-hot-weather/'],
+  ['es', '/es/multipower-para-superar-puntos-de-estancamiento/'],
+  ['en', '/en/smith-machine-sticking-points/'],
+  ['es', '/es/rango-completo-de-movimiento-rom/'],
+  ['en', '/en/range-of-motion-training/'],
+  ['es', '/es/dolor-crecimiento-muscular/'],
+  ['en', '/en/muscle-soreness-and-growth/'],
+  ['es', '/es/como-respirar-mientras-entrenamos/'],
+  ['en', '/en/breathing-while-lifting/'],
+  ['es', '/es/menos-grasa-mas-musculo/'],
+  ['en', '/en/lose-fat-gain-muscle/'],
+  ['es', '/es/entrenamiento-con-companero/'],
+  ['en', '/en/training-partner-benefits/'],
+  ['es', '/es/guia-de-entrenamiento-hitt/'],
+  ['en', '/en/hiit-training-guide/'],
+  ['es', '/es/rutina-entrenamiento-natacion/'],
+  ['en', '/en/swimming-workout-routine/'],
+  ['es', '/es/como-disfrutar-del-running-y-conseguir-acabar-cualquier-carrera-popular/'],
+  ['en', '/en/enjoy-running-popular-races/'],
 ];
 
 // Content routes, keyed by a stable id with the slug each locale publishes. The
@@ -561,6 +581,28 @@ const ROUTES = {
   gymEtiquette: {
     es: '/normas-para-hacer-del-gimnasio-un-lugar-mejor-y-sentirte-agusto',
     en: '/gym-etiquette',
+  },
+  trainingHotWeather: {
+    es: '/como-entrenar-con-altas-temperaturas',
+    en: '/training-in-hot-weather',
+  },
+  smithMachineStickingPoints: {
+    es: '/multipower-para-superar-puntos-de-estancamiento',
+    en: '/smith-machine-sticking-points',
+  },
+  rangeOfMotion: { es: '/rango-completo-de-movimiento-rom', en: '/range-of-motion-training' },
+  muscleSoreness: { es: '/dolor-crecimiento-muscular', en: '/muscle-soreness-and-growth' },
+  breathingWhileLifting: {
+    es: '/como-respirar-mientras-entrenamos',
+    en: '/breathing-while-lifting',
+  },
+  loseFatGainMuscle: { es: '/menos-grasa-mas-musculo', en: '/lose-fat-gain-muscle' },
+  trainingPartner: { es: '/entrenamiento-con-companero', en: '/training-partner-benefits' },
+  hiitGuide: { es: '/guia-de-entrenamiento-hitt', en: '/hiit-training-guide' },
+  swimmingRoutine: { es: '/rutina-entrenamiento-natacion', en: '/swimming-workout-routine' },
+  runningPopularRaces: {
+    es: '/como-disfrutar-del-running-y-conseguir-acabar-cualquier-carrera-popular',
+    en: '/enjoy-running-popular-races',
   },
 };
 

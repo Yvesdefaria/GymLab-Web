@@ -158,6 +158,19 @@ const ROUTE_PAIRS = [
     '/normas-para-hacer-del-gimnasio-un-lugar-mejor-y-sentirte-agusto',
     '/gym-etiquette',
   ],
+  ['/como-entrenar-con-altas-temperaturas', '/training-in-hot-weather'],
+  ['/multipower-para-superar-puntos-de-estancamiento', '/smith-machine-sticking-points'],
+  ['/rango-completo-de-movimiento-rom', '/range-of-motion-training'],
+  ['/dolor-crecimiento-muscular', '/muscle-soreness-and-growth'],
+  ['/como-respirar-mientras-entrenamos', '/breathing-while-lifting'],
+  ['/menos-grasa-mas-musculo', '/lose-fat-gain-muscle'],
+  ['/entrenamiento-con-companero', '/training-partner-benefits'],
+  ['/guia-de-entrenamiento-hitt', '/hiit-training-guide'],
+  ['/rutina-entrenamiento-natacion', '/swimming-workout-routine'],
+  [
+    '/como-disfrutar-del-running-y-conseguir-acabar-cualquier-carrera-popular',
+    '/enjoy-running-popular-races',
+  ],
 ];
 
 const pairFor = (pathname) => {
