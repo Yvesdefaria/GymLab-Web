@@ -178,6 +178,7 @@ Legend: `ES` = Spanish published, `EN` = English published.
 | `kayak-paddle-surf-beneficios` | yes | yes | yes | 0 em dashes | pass |
 | `bicicleta-eliptica-vs-bicicleta-estatica-cual-es-mejor` | yes | yes | yes | 0 em dashes | pass |
 | `bicicleta-estatica-vs-cinta-de-correr` | yes | yes | yes | 0 em dashes | pass |
+| `beneficios-de-la-bicicleta-de-aire-y-como-entrenar-con-ella` | yes | yes | yes | 0 em dashes | pass |
 
 ## Resume (2026-11-12)
 
@@ -293,7 +294,7 @@ Legend: `ES` = Spanish published, `EN` = English published.
 - [x] ES · [x] EN — `/kayak-paddle-surf-beneficios/` — Kayak y Paddle Surf \| Descubre todos sus beneficios
 - [x] ES · [x] EN — `/bicicleta-eliptica-vs-bicicleta-estatica-cual-es-mejor/` — Bicicleta elíptica Vs. Bicicleta Estática ¿Cuál es mejor?
 - [x] ES · [x] EN — `/bicicleta-estatica-vs-cinta-de-correr/` — Bicicleta Estática vs. Cinta de Correr: ¿Cuál Elegir?
-- [ ] ES · [ ] EN — `/beneficios-de-la-bicicleta-de-aire-y-como-entrenar-con-ella/` — Bicicleta de aire: Guía definitiva para quemar grasa rápido
+- [x] ES · [x] EN — `/beneficios-de-la-bicicleta-de-aire-y-como-entrenar-con-ella/` — Bicicleta de aire: Guía definitiva para quemar grasa rápido
 - [ ] ES · [ ] EN — `/ejercicio-aerobico/` — Ejercicio aeróbico: quema grasa y fortalece tu corazón
 - [ ] ES · [ ] EN — `/entrenamiento-cardiovascular-en-tu-programa-de-fitness/` — Entrenamiento cardiovascular en tu programa de Fitness
 - [ ] ES · [ ] EN — `/rutinas-ejercicio-aerobico/` — Rutinas de cardio para perder grasa
