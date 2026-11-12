@@ -142,8 +142,9 @@ before the commit, so the checklist never lags the work.
 - [x] 7. Parent — manual checks: 86 internal links across the 20 built pages resolve; 110 TOC anchors
       match their heading ids; 0 `.md` links, 0 `#` links, 0 em dashes; 3 routine tables (swimming,
       three columns and footnotes outside); sitemap 282 URLs and 846 alternates.
-- [ ] 8. Parent — record the pages in the session handoff and `PLAN.md`; commit and push; verify
-      production.
+- [x] 8. Parent — record the pages in the session handoff and `PLAN.md`; commit `a6db2d3` and push
+      (`3da6079..a6db2d3`), then verify production: **282 sitemap URLs**, 846 alternates and the
+      five sampled batch 13 routes answer 200.
 
 ## Acceptance criteria
 
@@ -179,6 +180,7 @@ Observed on 2026-11-12:
 | Article counts | 135 ES, 135 EN, 135 hero directories |
 | Routine tables | 3 (swimming), three columns, footnotes after the table |
 | New hero hashes | 10 unique, 98–389 KB, all JPEG |
+| Production after the push | **282 sitemap URLs**, 846 alternates, batch 13 routes 200 |
 
 ## Notes for the next batch
 
