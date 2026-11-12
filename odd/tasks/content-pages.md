@@ -170,6 +170,7 @@ Legend: `ES` = Spanish published, `EN` = English published.
 | `guia-de-entrenamiento-hitt` | yes | yes | yes | 0 em dashes | pass |
 | `rutina-entrenamiento-natacion` | yes | yes | yes | 0 em dashes | pass |
 | `como-disfrutar-del-running-y-conseguir-acabar-cualquier-carrera-popular` | yes | yes | yes | 0 em dashes | pass |
+| `cardio-de-bajo-impacto-para-quemar-grasa` | yes | yes | yes | 0 em dashes | pass |
 
 ## Resume (2026-11-12)
 
@@ -277,7 +278,7 @@ Legend: `ES` = Spanish published, `EN` = English published.
 - [x] ES · [x] EN — `/guia-de-entrenamiento-hitt/` — Guía de Entrenamiento HIIT: Rutinas y Beneficios Reales
 - [x] ES · [x] EN — `/rutina-entrenamiento-natacion/` — Rutina de entrenamiento de natación de 3 días a la semana ✓
 - [x] ES · [x] EN — `/como-disfrutar-del-running-y-conseguir-acabar-cualquier-carrera-popular/` — Running Fácil: Claves para Terminar Carreras Populares
-- [ ] ES · [ ] EN — `/cardio-de-bajo-impacto-para-quemar-grasa/` — Cardio de Bajo Impacto para Proteger tus Articulaciones
+- [x] ES · [x] EN — `/cardio-de-bajo-impacto-para-quemar-grasa/` — Cardio de Bajo Impacto para Proteger tus Articulaciones
 - [ ] ES · [ ] EN — `/como-combinar-natacion-y-pesas-sin-perder-musculo/` — Cómo combinar natación y pesas sin perder músculo
 - [ ] ES · [ ] EN — `/como-combinar-cardio-y-pesas-para-mujeres/` — Cómo combinar cardio y pesas para mujeres
 - [ ] ES · [ ] EN — `/cardio-liss-baja-intensidad-larga-duracion/` — Guía de Cardio LISS: Quema Grasa sin Perder Músculo
