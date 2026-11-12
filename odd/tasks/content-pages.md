@@ -9,18 +9,18 @@ Legend: `ES` = Spanish published, `EN` = English published.
 
 ## Progress
 
-- **Built: 125 / 792** (ES 125, EN 125).
-- Last batch: 10 pages, from `/mitos-estupidos-debes-entrenar-cada-musculo-solo-una-vez-por-semana/` to `/normas-para-hacer-del-gimnasio-un-lugar-mejor-y-sentirte-agusto/`.
+- **Built: 135 / 792** (ES 135, EN 135).
+- Last batch: 10 pages, from `/como-entrenar-con-altas-temperaturas/` to `/como-disfrutar-del-running-y-conseguir-acabar-cualquier-carrera-popular/`.
 
 | Block | Articles | Built |
 | --- | ---: | ---: |
-| Entrenamiento | 222 | 86 |
+| Entrenamiento | 222 | 96 |
 | Por Músculo | 80 | 5 |
 | Rutinas | 80 | 0 |
 | Ejercicios | 196 | 34 |
 | Nutrición | 191 | 0 |
 | Mujer Fitness | 23 | 0 |
-| **Total** | **792** | **125** |
+| **Total** | **792** | **135** |
 
 ## Copy gate (mandatory before ticking ES/EN)
 
@@ -171,14 +171,16 @@ Legend: `ES` = Spanish published, `EN` = English published.
 | `rutina-entrenamiento-natacion` | yes | yes | yes | 0 em dashes | pass |
 | `como-disfrutar-del-running-y-conseguir-acabar-cualquier-carrera-popular` | yes | yes | yes | 0 em dashes | pass |
 
-## Resume (2026-11-11)
+## Resume (2026-11-12)
 
-- Built: **125/792**; **125 unique heroes**; **batch 12 built and green**.
+- Built: **135/792**; **135 unique hero paths**; **batch 13 built and green**.
 - One archive row is discarded and must stay out: the FiveStars Fitness congress page.
-- Batch 12 passes `npm run verify`: 6,375 copy checks, 266 pages, 4,216 i18n checks.
-- Full handoff: `odd/tasks/content-library-session.md`; batch record: `odd/tasks/content-library-batch-12.md`.
-- Next: the first unchecked row after `/normas-para-hacer-del-gimnasio-un-lugar-mejor-y-sentirte-agusto/`, which is
-  `/como-entrenar-con-altas-temperaturas/`.
+- Batch 13 passes `npm run verify`: 6,885 copy checks, 286 pages, 4,526 i18n checks.
+- Full handoff: `odd/tasks/content-library-session.md`; batch record: `odd/tasks/content-library-batch-13.md`.
+- Next: the first unchecked row after `/como-disfrutar-del-running-y-conseguir-acabar-cualquier-carrera-popular/`, which is
+  `/cardio-de-bajo-impacto-para-quemar-grasa/`.
+- Follow-up: `/ejercicios-en-polea-ventajas`, `/escoger-actividad-en-tu-vuelta-al-gimnasio` and
+  `/jalones-frontales-brazos-rectos` share a byte-identical hero; replace two of them in a later batch.
 - Verify with `npm run verify`; review with `npm run dev` at `http://localhost:4321`.
 
 ## Entrenamiento (222)
