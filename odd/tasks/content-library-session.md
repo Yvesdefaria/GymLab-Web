@@ -114,8 +114,9 @@ Start the dev server with `npm run dev` for local review.
   resolve; zero `.md` links, zero `#` links and zero em dashes; 98 TOC anchors match their heading
   ids; 4 text tables across the batch.
 - Commits, one per page with its checklist rows marked: `450b4b5`, `0805fa5`, `38b400f`, `6a6d477`,
-  `a22798a`, `7df4c26`, `1d57668`, `0ff1ccc`, `74a528b`, `928661b`; routes `4e7fb20`; docs after
-  this. Push and production verification recorded in the batch 16 doc.
+  `a22798a`, `7df4c26`, `1d57668`, `0ff1ccc`, `74a528b`, `928661b`; routes `4e7fb20`; docs
+  `2b4612d`; push record `87d9965`. Pushed `04821a5..87d9965`; production verified at **342 sitemap
+  URLs** and 1,026 alternates.
 - **Gotcha:** `check:copy` compares hero paths, not bytes; hash every new hero. Also compare the
   Commons source file: batch 16 reused the range-of-motion photo under a different crop.
 - **Gotcha:** Wikimedia Commons rate-limits the Action API; leave 4–10 s between calls.
