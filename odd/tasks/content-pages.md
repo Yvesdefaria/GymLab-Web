@@ -198,6 +198,7 @@ Legend: `ES` = Spanish published, `EN` = English published.
 | `consigue-correr-30-minutos-seguidos` | yes | yes | yes | 0 em dashes | pass |
 | `caminar-como-metodo-para-perder-grasa-y-estar-en-forma` | yes | yes | yes | 0 em dashes | pass |
 | `bicicleta-para-perder-grasa` | yes | yes | yes | 0 em dashes | pass |
+| `spinning-mejores-consejos-por-nivel` | yes | yes | yes | 0 em dashes | pass |
 
 ## Resume (2026-11-13)
 
@@ -333,7 +334,7 @@ Legend: `ES` = Spanish published, `EN` = English published.
 - [x] ES · [x] EN — `/consigue-correr-30-minutos-seguidos/` — Cómo correr treinta minutos seguidos sin parar \| ¡Funciona!
 - [x] ES · [x] EN — `/caminar-como-metodo-para-perder-grasa-y-estar-en-forma/` — Cómo caminar te ayuda a perder grasa y estar en forma
 - [x] ES · [x] EN — `/bicicleta-para-perder-grasa/` — La bicicleta para perder grasa y mejorar la capacidad aeróbica
-- [ ] ES · [ ] EN — `/spinning-mejores-consejos-por-nivel/` — Spinning, los mejores consejos según tu nivel
+- [x] ES · [x] EN — `/spinning-mejores-consejos-por-nivel/` — Spinning, los mejores consejos según tu nivel
 
 ### Entrenamiento (25)
 
