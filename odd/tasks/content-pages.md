@@ -183,6 +183,7 @@ Legend: `ES` = Spanish published, `EN` = English published.
 | `entrenamiento-cardiovascular-en-tu-programa-de-fitness` | yes | yes | yes | 0 em dashes | pass |
 | `rutinas-ejercicio-aerobico` | yes | yes | yes | 0 em dashes | pass |
 | `pesas-salud-cardiovascular` | yes | yes | yes | 0 em dashes | pass |
+| `cardio-ayunas` | yes | yes | yes | 0 em dashes | pass |
 
 ## Resume (2026-11-12)
 
@@ -303,7 +304,7 @@ Legend: `ES` = Spanish published, `EN` = English published.
 - [x] ES · [x] EN — `/entrenamiento-cardiovascular-en-tu-programa-de-fitness/` — Entrenamiento cardiovascular en tu programa de Fitness
 - [x] ES · [x] EN — `/rutinas-ejercicio-aerobico/` — Rutinas de cardio para perder grasa
 - [x] ES · [x] EN — `/pesas-salud-cardiovascular/` — Las pesas benefician tu salud cardiovascular
-- [ ] ES · [ ] EN — `/cardio-ayunas/` — Cardio en ayunas: Beneficios y consejos clave
+- [x] ES · [x] EN — `/cardio-ayunas/` — Cardio en ayunas: Beneficios y consejos clave
 - [ ] ES · [ ] EN — `/metodos-continuos-ejercicio-aerobico/` — Métodos continuos de ejercicio aeróbico
 - [ ] ES · [ ] EN — `/maquinas-ejercicio-aerobico/` — Máquinas de ejercicio aeróbico
 - [ ] ES · [ ] EN — `/adaptaciones-cuerpo-ejercicio-aerobico/` — Cómo el ejercicio aeróbico transforma tu cuerpo \| Adaptaciones
