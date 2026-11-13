@@ -194,6 +194,16 @@ const ROUTE_PAIRS = [
   ['/ejercicio-aerobico-perder-masa-muscular', '/aerobic-exercise-muscle-loss'],
   ['/demasiado-aerobico-puede-ser-malo-para-perder-grasa', '/too-much-cardio-fat-loss'],
   ['/calcular-frecuencia-cardiaca-maxima', '/max-heart-rate'],
+  ['/ropa-y-calzado-para-el-ejercicio-cardiovascular', '/clothing-and-shoes-for-cardio'],
+  ['/saltar-comba', '/jump-rope-training'],
+  ['/flato-prevenirlo-eliminarlo', '/side-stitch-prevention'],
+  ['/cinta-correr-vs-bicicleta-para-quemar-grasa', '/treadmill-vs-bike-fat-burning'],
+  ['/test-de-cooper', '/cooper-test'],
+  ['/consigue-correr-30-minutos-seguidos', '/run-30-minutes-nonstop'],
+  ['/caminar-como-metodo-para-perder-grasa-y-estar-en-forma', '/walking-for-fat-loss'],
+  ['/bicicleta-para-perder-grasa', '/cycling-for-fat-loss'],
+  ['/spinning-mejores-consejos-por-nivel', '/spinning-tips-by-level'],
+  ['/entrenamiento-alta-intensidad', '/high-intensity-training'],
 ];
 
 const pairFor = (pathname) => {

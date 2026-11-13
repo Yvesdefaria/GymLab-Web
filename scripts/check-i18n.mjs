@@ -329,6 +329,26 @@ const PAGES = [
   ['en', '/en/too-much-cardio-fat-loss/'],
   ['es', '/es/calcular-frecuencia-cardiaca-maxima/'],
   ['en', '/en/max-heart-rate/'],
+  ['es', '/es/ropa-y-calzado-para-el-ejercicio-cardiovascular/'],
+  ['en', '/en/clothing-and-shoes-for-cardio/'],
+  ['es', '/es/saltar-comba/'],
+  ['en', '/en/jump-rope-training/'],
+  ['es', '/es/flato-prevenirlo-eliminarlo/'],
+  ['en', '/en/side-stitch-prevention/'],
+  ['es', '/es/cinta-correr-vs-bicicleta-para-quemar-grasa/'],
+  ['en', '/en/treadmill-vs-bike-fat-burning/'],
+  ['es', '/es/test-de-cooper/'],
+  ['en', '/en/cooper-test/'],
+  ['es', '/es/consigue-correr-30-minutos-seguidos/'],
+  ['en', '/en/run-30-minutes-nonstop/'],
+  ['es', '/es/caminar-como-metodo-para-perder-grasa-y-estar-en-forma/'],
+  ['en', '/en/walking-for-fat-loss/'],
+  ['es', '/es/bicicleta-para-perder-grasa/'],
+  ['en', '/en/cycling-for-fat-loss/'],
+  ['es', '/es/spinning-mejores-consejos-por-nivel/'],
+  ['en', '/en/spinning-tips-by-level/'],
+  ['es', '/es/entrenamiento-alta-intensidad/'],
+  ['en', '/en/high-intensity-training/'],
 ];
 
 // Content routes, keyed by a stable id with the slug each locale publishes. The
@@ -700,6 +720,28 @@ const ROUTES = {
     en: '/too-much-cardio-fat-loss',
   },
   maxHeartRate: { es: '/calcular-frecuencia-cardiaca-maxima', en: '/max-heart-rate' },
+  cardioClothing: {
+    es: '/ropa-y-calzado-para-el-ejercicio-cardiovascular',
+    en: '/clothing-and-shoes-for-cardio',
+  },
+  jumpRope: { es: '/saltar-comba', en: '/jump-rope-training' },
+  sideStitch: { es: '/flato-prevenirlo-eliminarlo', en: '/side-stitch-prevention' },
+  treadmillVsBike: {
+    es: '/cinta-correr-vs-bicicleta-para-quemar-grasa',
+    en: '/treadmill-vs-bike-fat-burning',
+  },
+  cooperTest: { es: '/test-de-cooper', en: '/cooper-test' },
+  run30Minutes: { es: '/consigue-correr-30-minutos-seguidos', en: '/run-30-minutes-nonstop' },
+  walkingFatLoss: {
+    es: '/caminar-como-metodo-para-perder-grasa-y-estar-en-forma',
+    en: '/walking-for-fat-loss',
+  },
+  cyclingFatLoss: { es: '/bicicleta-para-perder-grasa', en: '/cycling-for-fat-loss' },
+  spinningTips: { es: '/spinning-mejores-consejos-por-nivel', en: '/spinning-tips-by-level' },
+  highIntensityTraining: {
+    es: '/entrenamiento-alta-intensidad',
+    en: '/high-intensity-training',
+  },
 };
 
 const routeId = (path) => {
