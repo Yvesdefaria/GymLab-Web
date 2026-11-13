@@ -193,6 +193,7 @@ Legend: `ES` = Spanish published, `EN` = English published.
 | `ropa-y-calzado-para-el-ejercicio-cardiovascular` | yes | yes | yes | 0 em dashes | pass |
 | `saltar-comba` | yes | yes | yes | 0 em dashes | pass |
 | `flato-prevenirlo-eliminarlo` | yes | yes | yes | 0 em dashes | pass |
+| `cinta-correr-vs-bicicleta-para-quemar-grasa` | yes | yes | yes | 0 em dashes | pass |
 
 ## Resume (2026-11-13)
 
@@ -323,7 +324,7 @@ Legend: `ES` = Spanish published, `EN` = English published.
 - [x] ES · [x] EN — `/ropa-y-calzado-para-el-ejercicio-cardiovascular/` — Ropa y calzado para el ejercicio cardiovascular
 - [x] ES · [x] EN — `/saltar-comba/` — Saltar a la comba como ejercicio aeróbico
 - [x] ES · [x] EN — `/flato-prevenirlo-eliminarlo/` — Flato, como prevenirlo y eliminarlo
-- [ ] ES · [ ] EN — `/cinta-correr-vs-bicicleta-para-quemar-grasa/` — Cinta de correr vs bicicleta estática: ¿Cuál quema más grasa?
+- [x] ES · [x] EN — `/cinta-correr-vs-bicicleta-para-quemar-grasa/` — Cinta de correr vs bicicleta estática: ¿Cuál quema más grasa?
 - [ ] ES · [ ] EN — `/test-de-cooper/` — Test de Cooper: Evalúa tu resistencia aeróbica
 - [ ] ES · [ ] EN — `/consigue-correr-30-minutos-seguidos/` — Cómo correr treinta minutos seguidos sin parar \| ¡Funciona!
 - [ ] ES · [ ] EN — `/caminar-como-metodo-para-perder-grasa-y-estar-en-forma/` — Cómo caminar te ayuda a perder grasa y estar en forma
