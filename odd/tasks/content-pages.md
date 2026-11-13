@@ -9,18 +9,18 @@ Legend: `ES` = Spanish published, `EN` = English published.
 
 ## Progress
 
-- **Built: 145 / 792** (ES 145, EN 145).
-- Last batch: 10 pages, from `/cardio-de-bajo-impacto-para-quemar-grasa/` to `/ejercicio-aerobico/`.
+- **Built: 155 / 792** (ES 155, EN 155).
+- Last batch: 10 pages, from `/entrenamiento-cardiovascular-en-tu-programa-de-fitness/` to `/calcular-frecuencia-cardiaca-maxima/`.
 
 | Block | Articles | Built |
 | --- | ---: | ---: |
-| Entrenamiento | 222 | 106 |
+| Entrenamiento | 222 | 116 |
 | Por Músculo | 80 | 5 |
 | Rutinas | 80 | 0 |
 | Ejercicios | 196 | 34 |
 | Nutrición | 191 | 0 |
 | Mujer Fitness | 23 | 0 |
-| **Total** | **792** | **145** |
+| **Total** | **792** | **155** |
 
 ## Copy gate (mandatory before ticking ES/EN)
 
@@ -191,14 +191,14 @@ Legend: `ES` = Spanish published, `EN` = English published.
 | `demasiado-aerobico-puede-ser-malo-para-perder-grasa` | yes | yes | yes | 0 em dashes | pass |
 | `calcular-frecuencia-cardiaca-maxima` | yes | yes | yes | 0 em dashes | pass |
 
-## Resume (2026-11-12)
+## Resume (2026-11-13)
 
-- Built: **145/792**; **145 unique hero paths**; **batch 14 built and green**.
+- Built: **155/792**; **155 unique hero paths**; **batch 15 built and green**.
 - One archive row is discarded and must stay out: the FiveStars Fitness congress page.
-- Batch 14 passes `npm run verify`: 7,395 copy checks, 306 pages, 4,836 i18n checks.
-- Full handoff: `odd/tasks/content-library-session.md`; batch record: `odd/tasks/content-library-batch-14.md`.
-- Next: the first unchecked row after `/ejercicio-aerobico/`, which is
-  `/entrenamiento-cardiovascular-en-tu-programa-de-fitness/`.
+- Batch 15 passes `npm run verify`: 7,905 copy checks, 326 pages, 5,146 i18n checks.
+- Full handoff: `odd/tasks/content-library-session.md`; batch record: `odd/tasks/content-library-batch-15.md`.
+- Next: the first unchecked row after `/calcular-frecuencia-cardiaca-maxima/`, which is
+  `/ropa-y-calzado-para-el-ejercicio-cardiovascular/`.
 - Follow-up: `/ejercicios-en-polea-ventajas`, `/escoger-actividad-en-tu-vuelta-al-gimnasio` and
   `/jalones-frontales-brazos-rectos` share a byte-identical hero; replace two of them in a later batch.
 - Verify with `npm run verify`; review with `npm run dev` at `http://localhost:4321`.
