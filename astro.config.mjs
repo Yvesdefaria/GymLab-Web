@@ -181,6 +181,19 @@ const ROUTE_PAIRS = [
   ['/bicicleta-estatica-vs-cinta-de-correr', '/stationary-bike-vs-treadmill'],
   ['/beneficios-de-la-bicicleta-de-aire-y-como-entrenar-con-ella', '/air-bike-benefits'],
   ['/ejercicio-aerobico', '/aerobic-exercise'],
+  [
+    '/entrenamiento-cardiovascular-en-tu-programa-de-fitness',
+    '/cardiovascular-training-in-your-program',
+  ],
+  ['/rutinas-ejercicio-aerobico', '/aerobic-exercise-routines'],
+  ['/pesas-salud-cardiovascular', '/weights-and-cardiovascular-health'],
+  ['/cardio-ayunas', '/fasted-cardio'],
+  ['/metodos-continuos-ejercicio-aerobico', '/continuous-aerobic-methods'],
+  ['/maquinas-ejercicio-aerobico', '/aerobic-machines'],
+  ['/adaptaciones-cuerpo-ejercicio-aerobico', '/aerobic-adaptations'],
+  ['/ejercicio-aerobico-perder-masa-muscular', '/aerobic-exercise-muscle-loss'],
+  ['/demasiado-aerobico-puede-ser-malo-para-perder-grasa', '/too-much-cardio-fat-loss'],
+  ['/calcular-frecuencia-cardiaca-maxima', '/max-heart-rate'],
 ];
 
 const pairFor = (pathname) => {

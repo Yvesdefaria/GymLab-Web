@@ -309,6 +309,26 @@ const PAGES = [
   ['en', '/en/air-bike-benefits/'],
   ['es', '/es/ejercicio-aerobico/'],
   ['en', '/en/aerobic-exercise/'],
+  ['es', '/es/entrenamiento-cardiovascular-en-tu-programa-de-fitness/'],
+  ['en', '/en/cardiovascular-training-in-your-program/'],
+  ['es', '/es/rutinas-ejercicio-aerobico/'],
+  ['en', '/en/aerobic-exercise-routines/'],
+  ['es', '/es/pesas-salud-cardiovascular/'],
+  ['en', '/en/weights-and-cardiovascular-health/'],
+  ['es', '/es/cardio-ayunas/'],
+  ['en', '/en/fasted-cardio/'],
+  ['es', '/es/metodos-continuos-ejercicio-aerobico/'],
+  ['en', '/en/continuous-aerobic-methods/'],
+  ['es', '/es/maquinas-ejercicio-aerobico/'],
+  ['en', '/en/aerobic-machines/'],
+  ['es', '/es/adaptaciones-cuerpo-ejercicio-aerobico/'],
+  ['en', '/en/aerobic-adaptations/'],
+  ['es', '/es/ejercicio-aerobico-perder-masa-muscular/'],
+  ['en', '/en/aerobic-exercise-muscle-loss/'],
+  ['es', '/es/demasiado-aerobico-puede-ser-malo-para-perder-grasa/'],
+  ['en', '/en/too-much-cardio-fat-loss/'],
+  ['es', '/es/calcular-frecuencia-cardiaca-maxima/'],
+  ['en', '/en/max-heart-rate/'],
 ];
 
 // Content routes, keyed by a stable id with the slug each locale publishes. The
@@ -652,6 +672,34 @@ const ROUTES = {
     en: '/air-bike-benefits',
   },
   aerobicExercise: { es: '/ejercicio-aerobico', en: '/aerobic-exercise' },
+  cardioInProgram: {
+    es: '/entrenamiento-cardiovascular-en-tu-programa-de-fitness',
+    en: '/cardiovascular-training-in-your-program',
+  },
+  aerobicRoutines: { es: '/rutinas-ejercicio-aerobico', en: '/aerobic-exercise-routines' },
+  weightsCardioHealth: {
+    es: '/pesas-salud-cardiovascular',
+    en: '/weights-and-cardiovascular-health',
+  },
+  fastedCardio: { es: '/cardio-ayunas', en: '/fasted-cardio' },
+  continuousAerobic: {
+    es: '/metodos-continuos-ejercicio-aerobico',
+    en: '/continuous-aerobic-methods',
+  },
+  aerobicMachines: { es: '/maquinas-ejercicio-aerobico', en: '/aerobic-machines' },
+  aerobicAdaptations: {
+    es: '/adaptaciones-cuerpo-ejercicio-aerobico',
+    en: '/aerobic-adaptations',
+  },
+  aerobicMuscleLoss: {
+    es: '/ejercicio-aerobico-perder-masa-muscular',
+    en: '/aerobic-exercise-muscle-loss',
+  },
+  tooMuchCardio: {
+    es: '/demasiado-aerobico-puede-ser-malo-para-perder-grasa',
+    en: '/too-much-cardio-fat-loss',
+  },
+  maxHeartRate: { es: '/calcular-frecuencia-cardiaca-maxima', en: '/max-heart-rate' },
 };
 
 const routeId = (path) => {
