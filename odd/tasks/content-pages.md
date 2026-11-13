@@ -192,6 +192,7 @@ Legend: `ES` = Spanish published, `EN` = English published.
 | `calcular-frecuencia-cardiaca-maxima` | yes | yes | yes | 0 em dashes | pass |
 | `ropa-y-calzado-para-el-ejercicio-cardiovascular` | yes | yes | yes | 0 em dashes | pass |
 | `saltar-comba` | yes | yes | yes | 0 em dashes | pass |
+| `flato-prevenirlo-eliminarlo` | yes | yes | yes | 0 em dashes | pass |
 
 ## Resume (2026-11-13)
 
@@ -321,7 +322,7 @@ Legend: `ES` = Spanish published, `EN` = English published.
 - [x] ES · [x] EN — `/calcular-frecuencia-cardiaca-maxima/` — Cómo calcular tu frecuencia cardíaca máxima fácilmente
 - [x] ES · [x] EN — `/ropa-y-calzado-para-el-ejercicio-cardiovascular/` — Ropa y calzado para el ejercicio cardiovascular
 - [x] ES · [x] EN — `/saltar-comba/` — Saltar a la comba como ejercicio aeróbico
-- [ ] ES · [ ] EN — `/flato-prevenirlo-eliminarlo/` — Flato, como prevenirlo y eliminarlo
+- [x] ES · [x] EN — `/flato-prevenirlo-eliminarlo/` — Flato, como prevenirlo y eliminarlo
 - [ ] ES · [ ] EN — `/cinta-correr-vs-bicicleta-para-quemar-grasa/` — Cinta de correr vs bicicleta estática: ¿Cuál quema más grasa?
 - [ ] ES · [ ] EN — `/test-de-cooper/` — Test de Cooper: Evalúa tu resistencia aeróbica
 - [ ] ES · [ ] EN — `/consigue-correr-30-minutos-seguidos/` — Cómo correr treinta minutos seguidos sin parar \| ¡Funciona!
