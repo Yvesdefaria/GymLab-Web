@@ -191,6 +191,7 @@ Legend: `ES` = Spanish published, `EN` = English published.
 | `demasiado-aerobico-puede-ser-malo-para-perder-grasa` | yes | yes | yes | 0 em dashes | pass |
 | `calcular-frecuencia-cardiaca-maxima` | yes | yes | yes | 0 em dashes | pass |
 | `ropa-y-calzado-para-el-ejercicio-cardiovascular` | yes | yes | yes | 0 em dashes | pass |
+| `saltar-comba` | yes | yes | yes | 0 em dashes | pass |
 
 ## Resume (2026-11-13)
 
@@ -319,7 +320,7 @@ Legend: `ES` = Spanish published, `EN` = English published.
 - [x] ES · [x] EN — `/demasiado-aerobico-puede-ser-malo-para-perder-grasa/` — Demasiado aeróbico puede ser malo para perder grasa
 - [x] ES · [x] EN — `/calcular-frecuencia-cardiaca-maxima/` — Cómo calcular tu frecuencia cardíaca máxima fácilmente
 - [x] ES · [x] EN — `/ropa-y-calzado-para-el-ejercicio-cardiovascular/` — Ropa y calzado para el ejercicio cardiovascular
-- [ ] ES · [ ] EN — `/saltar-comba/` — Saltar a la comba como ejercicio aeróbico
+- [x] ES · [x] EN — `/saltar-comba/` — Saltar a la comba como ejercicio aeróbico
 - [ ] ES · [ ] EN — `/flato-prevenirlo-eliminarlo/` — Flato, como prevenirlo y eliminarlo
 - [ ] ES · [ ] EN — `/cinta-correr-vs-bicicleta-para-quemar-grasa/` — Cinta de correr vs bicicleta estática: ¿Cuál quema más grasa?
 - [ ] ES · [ ] EN — `/test-de-cooper/` — Test de Cooper: Evalúa tu resistencia aeróbica
