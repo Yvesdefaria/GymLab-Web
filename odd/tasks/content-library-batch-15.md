@@ -141,8 +141,9 @@ before the commit, so the checklist never lags the work.
 - [x] 7. Parent — `npm run verify`: `check:copy` 7,905/7,905, build 326 pages, `check:i18n`
       5,146/5,146. Manual: 84 internal links resolve; 104 TOC anchors match; 0 `.md`, 0 `#`, 0 em
       dashes; sitemap 322 URLs and 966 alternates.
-- [ ] 8. Parent — record the pages in the session handoff and `PLAN.md`; commit and push; verify
-      production; deliver the 20 local URLs.
+- [x] 8. Parent — record the pages in the session handoff and `PLAN.md`; commit `953229c` and push
+      (`7917ae6..953229c`), then verify production: **322 sitemap URLs**, 966 alternates and
+      `/en/max-heart-rate/` answers 200.
 
 ## Acceptance criteria
 
@@ -178,6 +179,20 @@ Observed on 2026-11-13:
 | Article counts | 155 ES, 155 EN, 155 hero directories |
 | Tables | 8 text tables (2 in page 1, 6 in page 2, 1 in page 6) |
 | New hero hashes | 10 unique after two replacements, 116–395 KB |
+| Production after the push | **322 sitemap URLs**, 966 alternates, new routes 200 |
+
+## Native review assessment (2026-11-13)
+
+RDD is `on` (global scope). Read-only `gentle-ai review assess` with the untracked mockups excluded
+(`--untracked-scope exclude`, inventory `sha256:5d53f361…252dab`):
+
+| Range | Risk | Paths / lines | `review_due` | Reason |
+| --- | --- | --- | --- | --- |
+| `7917ae6..HEAD` (batch 15 content + routes + docs) | medium | 39 / 2,383 | false | `under_budget` |
+
+No native review was started: the provider reports the candidate under the slice budget, so no consent
+envelope and no lineage. The batch 10 transaction `review-bf1585fd7f8b1c1f` remains open and
+untouched; it is a different lineage.
 
 ## Notes for the next batch
 
