@@ -199,6 +199,7 @@ Legend: `ES` = Spanish published, `EN` = English published.
 | `caminar-como-metodo-para-perder-grasa-y-estar-en-forma` | yes | yes | yes | 0 em dashes | pass |
 | `bicicleta-para-perder-grasa` | yes | yes | yes | 0 em dashes | pass |
 | `spinning-mejores-consejos-por-nivel` | yes | yes | yes | 0 em dashes | pass |
+| `entrenamiento-alta-intensidad` | yes | yes | yes | 0 em dashes | pass |
 
 ## Resume (2026-11-13)
 
@@ -338,7 +339,7 @@ Legend: `ES` = Spanish published, `EN` = English published.
 
 ### Entrenamiento (25)
 
-- [ ] ES · [ ] EN — `/entrenamiento-alta-intensidad/` — Entrenamiento de alta intensidad \| Las mejores técnicas
+- [x] ES · [x] EN — `/entrenamiento-alta-intensidad/` — Entrenamiento de alta intensidad \| Las mejores técnicas
 - [ ] ES · [ ] EN — `/series-gigantes/` — Series Gigantes 【Las superseries más intensas】
 - [ ] ES · [ ] EN — `/memoria-muscular-que-es-como-funciona/` — Memoria Muscular: Qué es y Cómo Recuperar tu Nivel
 - [ ] ES · [ ] EN — `/aeke-s1-pro-entrenamiento-domestico-con-ia/` — AEKE S1 Pro: entrenamiento doméstico personalizado con IA
