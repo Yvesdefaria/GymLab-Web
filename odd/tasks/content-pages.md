@@ -181,6 +181,7 @@ Legend: `ES` = Spanish published, `EN` = English published.
 | `beneficios-de-la-bicicleta-de-aire-y-como-entrenar-con-ella` | yes | yes | yes | 0 em dashes | pass |
 | `ejercicio-aerobico` | yes | yes | yes | 0 em dashes | pass |
 | `entrenamiento-cardiovascular-en-tu-programa-de-fitness` | yes | yes | yes | 0 em dashes | pass |
+| `rutinas-ejercicio-aerobico` | yes | yes | yes | 0 em dashes | pass |
 
 ## Resume (2026-11-12)
 
@@ -299,7 +300,7 @@ Legend: `ES` = Spanish published, `EN` = English published.
 - [x] ES · [x] EN — `/beneficios-de-la-bicicleta-de-aire-y-como-entrenar-con-ella/` — Bicicleta de aire: Guía definitiva para quemar grasa rápido
 - [x] ES · [x] EN — `/ejercicio-aerobico/` — Ejercicio aeróbico: quema grasa y fortalece tu corazón
 - [x] ES · [x] EN — `/entrenamiento-cardiovascular-en-tu-programa-de-fitness/` — Entrenamiento cardiovascular en tu programa de Fitness
-- [ ] ES · [ ] EN — `/rutinas-ejercicio-aerobico/` — Rutinas de cardio para perder grasa
+- [x] ES · [x] EN — `/rutinas-ejercicio-aerobico/` — Rutinas de cardio para perder grasa
 - [ ] ES · [ ] EN — `/pesas-salud-cardiovascular/` — Las pesas benefician tu salud cardiovascular
 - [ ] ES · [ ] EN — `/cardio-ayunas/` — Cardio en ayunas: Beneficios y consejos clave
 - [ ] ES · [ ] EN — `/metodos-continuos-ejercicio-aerobico/` — Métodos continuos de ejercicio aeróbico
