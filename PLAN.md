@@ -12,32 +12,32 @@ Last updated: 2026-11-11.
   TypeScript strict, fully static. Languages `es` (default) and `en-GB`, both under a locale prefix.
 - Production is **live** at `https://gymlab.dev`, served by the Worker `gymlab-web` with static assets.
   It is not Cloudflare Pages. Deploy with `npx wrangler deploy`.
-- Production is live with batch 15 (pushed 2026-11-13): **326 pages** and **322 sitemap URLs**.
-  Gates: `check:copy` **7,905/7,905**, build **326 pages**, `check:i18n` **5,146/5,146**.
+- Production is live with batch 16 (pushed 2026-11-13): **346 pages** and **342 sitemap URLs**.
+  Gates: `check:copy` **8,415/8,415**, build **346 pages**, `check:i18n` **5,456/5,456**.
 - `app.gymlab.dev` is `noindex` with a real `robots.txt`.
 - The landing, the three calculators, the 404 and the legal pages all ship in both locales.
 - Measurement and the SQL recipe: see "Reading analytics" below and `COMPLETED.md` Appendix B.
 
-## Content library — 155 / 792 (2026-11-13)
+## Content library — 165 / 792 (2026-11-13)
 
-- **155 bilingual pages** (ES 155, EN 155), **155 unique hero paths**. Blocks: Entrenamiento 116,
+- **165 bilingual pages** (ES 165, EN 165), **165 unique hero paths**. Blocks: Entrenamiento 126,
   Por Músculo 5, Ejercicios 34.
-- **Batch 15 is built, green and pushed (2026-11-13).** The build has **326 pages** and **322 sitemap
+- **Batch 16 is built, green and pushed (2026-11-13).** The build has **346 pages** and **342 sitemap
   URLs**.
-- Gates: `npm run verify` = `check:copy` **7,905/7,905** + build **326 pages** + `check:i18n`
-  **5,146/5,146**.
+- Gates: `npm run verify` = `check:copy` **8,415/8,415** + build **346 pages** + `check:i18n`
+  **5,456/5,456**.
 - Docs: `odd/tasks/content-library-session.md` (start here next session),
-  `odd/tasks/content-pages.md` (per-page checklist + resume), `odd/tasks/content-library-batch-15.md`
+  `odd/tasks/content-pages.md` (per-page checklist + resume), `odd/tasks/content-library-batch-16.md`
   (the last batch) and `odd/tasks/guides-page-contract.md` (the page contract and copy gate).
-- **Next 10:** `/ropa-y-calzado-para-el-ejercicio-cardiovascular/` and the rows after it.
+- **Next 10:** `/series-gigantes/` and the rows after it.
 - **Follow-up:** `/ejercicios-en-polea-ventajas`, `/escoger-actividad-en-tu-vuelta-al-gimnasio` and
   `/jalones-frontales-brazos-rectos` share a byte-identical hero; replace two of them.
 - **Discarded:** `/congresos-profesores-factores-clave-fivestars-fitness/` does not go to production
   (owner decision, 2026-11-07).
 - Future batches deploy via Workers Builds on the push; run `npm run verify` first.
-- Image rule: one unique hero per page; `check:copy` fails on a duplicate path. Batches 5-15 heroes are
+- Image rule: one unique hero per page; `check:copy` fails on a duplicate path. Batches 5-16 heroes are
   Wikimedia Commons (CC0/CC BY/CC BY-SA/public domain); the `alt` includes the credit.
-- Engram topic `content-library/handoff` covers through batch 15; the scaling architecture is PLAN
+- Engram topic `content-library/handoff` covers through batch 16; the scaling architecture is PLAN
   Phase 7.
 
 ## Deployed on 2026-10-29

@@ -9,18 +9,18 @@ Legend: `ES` = Spanish published, `EN` = English published.
 
 ## Progress
 
-- **Built: 155 / 792** (ES 155, EN 155).
-- Last batch: 10 pages, from `/entrenamiento-cardiovascular-en-tu-programa-de-fitness/` to `/calcular-frecuencia-cardiaca-maxima/`.
+- **Built: 165 / 792** (ES 165, EN 165).
+- Last batch: 10 pages, from `/ropa-y-calzado-para-el-ejercicio-cardiovascular/` to `/entrenamiento-alta-intensidad/`.
 
 | Block | Articles | Built |
 | --- | ---: | ---: |
-| Entrenamiento | 222 | 116 |
+| Entrenamiento | 222 | 126 |
 | Por Músculo | 80 | 5 |
 | Rutinas | 80 | 0 |
 | Ejercicios | 196 | 34 |
 | Nutrición | 191 | 0 |
 | Mujer Fitness | 23 | 0 |
-| **Total** | **792** | **155** |
+| **Total** | **792** | **165** |
 
 ## Copy gate (mandatory before ticking ES/EN)
 
@@ -203,12 +203,11 @@ Legend: `ES` = Spanish published, `EN` = English published.
 
 ## Resume (2026-11-13)
 
-- Built: **155/792**; **155 unique hero paths**; **batch 15 built and green**.
+- Built: **165/792**; **165 unique hero paths**; **batch 16 built and green**.
 - One archive row is discarded and must stay out: the FiveStars Fitness congress page.
-- Batch 15 passes `npm run verify`: 7,905 copy checks, 326 pages, 5,146 i18n checks.
-- Full handoff: `odd/tasks/content-library-session.md`; batch record: `odd/tasks/content-library-batch-15.md`.
-- Next: the first unchecked row after `/calcular-frecuencia-cardiaca-maxima/`, which is
-  `/ropa-y-calzado-para-el-ejercicio-cardiovascular/`.
+- Batch 16 passes `npm run verify`: 8,415 copy checks, 346 pages, 5,456 i18n checks.
+- Full handoff: `odd/tasks/content-library-session.md`; batch record: `odd/tasks/content-library-batch-16.md`.
+- Next: the first unchecked row after `/entrenamiento-alta-intensidad/`, which is `/series-gigantes/`.
 - Follow-up: `/ejercicios-en-polea-ventajas`, `/escoger-actividad-en-tu-vuelta-al-gimnasio` and
   `/jalones-frontales-brazos-rectos` share a byte-identical hero; replace two of them in a later batch.
 - Verify with `npm run verify`; review with `npm run dev` at `http://localhost:4321`.

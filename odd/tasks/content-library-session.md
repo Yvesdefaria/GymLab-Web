@@ -9,20 +9,20 @@ Last updated: 2026-11-12. Read this first next session.
 
 ## State
 
-- **155 / 792 bilingual pages** (ES 155, EN 155).
-- Blocks: Entrenamiento **116**, Por Músculo **5**, Ejercicios **34**.
-- **155 unique hero paths.** Three older pages share a byte-identical hero (see the follow-up below).
-- **Batch 15 is built, green and pushed (2026-11-13).** The build has **326 pages** and
-  **322 sitemap URLs**.
+- **165 / 792 bilingual pages** (ES 165, EN 165).
+- Blocks: Entrenamiento **126**, Por Músculo **5**, Ejercicios **34**.
+- **165 unique hero paths.** Three older pages share a byte-identical hero (see the follow-up below).
+- **Batch 16 is built, green and pushed (2026-11-13).** The build has **346 pages** and
+  **342 sitemap URLs**.
 - One archive row is discarded and must stay out: the FiveStars Fitness congress page.
-- Batch record: `odd/tasks/content-library-batch-15.md`.
+- Batch record: `odd/tasks/content-library-batch-16.md`.
 
 ## Gates
 
 ```powershell
-npm run check:copy   # 7,905/7,905
-npm run build        # 326 pages
-npm run check:i18n   # 5,146/5,146
+npm run check:copy   # 8,415/8,415
+npm run build        # 346 pages
+npm run check:i18n   # 5,456/5,456
 npm run verify       # all three, in that order
 npm run dev          # http://localhost:4321
 ```
@@ -44,21 +44,22 @@ Start the dev server with `npm run dev` for local review.
   contractions, natural muscle growth, training with music, gym etiquette, training in hot weather,
   Smith-machine plateaus, range of motion, soreness versus growth, breathing and body recomposition,
   and training with a partner.
-- **Ejercicio Cardiovascular (23):** the 13 from batch 14, plus where cardio fits in a programme,
-  cardio routines, weights and heart health, fasted cardio, continuous methods, aerobic machines,
-  aerobic adaptations, aerobic training and muscle loss, too much cardio and maximum heart rate.
+- **Ejercicio Cardiovascular (33):** the 23 from batch 15, plus clothing and shoes, jump rope, side
+  stitch, treadmill vs bike, the Cooper test, the 30-minute running plan, walking, cycling and
+  spinning.
+- **Entrenamiento (1):** high-intensity training methods and rules.
 - **Recovery and planning (10):** back-pain exercises (YMYL), stretching, stretching circuit, muscle
   failure, periodization, exercise and immune system, deload week, sleep, training planning and
   muscle recovery.
 
 ## Next 10
 
-1. Start at `/ropa-y-calzado-para-el-ejercicio-cardiovascular/`.
-2. Then `/saltar-comba/`, `/flato-prevenirlo-eliminarlo/`,
-   `/cinta-correr-vs-bicicleta-para-quemar-grasa/`, `/test-de-cooper/`,
-   `/consigue-correr-30-minutos-seguidos/`, `/caminar-como-metodo-para-perder-grasa-y-estar-en-forma/`,
-   `/bicicleta-para-perder-grasa/`, `/spinning-mejores-consejos-por-nivel/` and
-   `/entrenamiento-alta-intensidad/` (first row of the next Entrenamiento subsection).
+1. Start at `/series-gigantes/`.
+2. Then `/memoria-muscular-que-es-como-funciona/`,
+   `/aeke-s1-pro-entrenamiento-domestico-con-ia/`, `/mejores-ejercicios-en-maquina-de-musculacion/`,
+   `/entrenamiento-funcional/`, `/calentamiento-y-estiramientos/`,
+   `/como-aplicar-los-beneficios-del-yoga-al-culturismo/`, `/superseries/`, `/principios-weider/`
+   and `/repeticiones-forzadas/`.
 3. Keep the same copy, unique-hero and gate flow.
 4. Replace two of the three pages that share a byte-identical hero: `/ejercicios-en-polea-ventajas`,
    `/escoger-actividad-en-tu-vuelta-al-gimnasio`, `/jalones-frontales-brazos-rectos`.
@@ -103,24 +104,22 @@ Start the dev server with `npm run dev` for local review.
 
 ## Session close (2026-11-13)
 
-- Batch 15 wrote 10 page pairs (20 files) from `/entrenamiento-cardiovascular-…/` to
-  `/calcular-frecuencia-cardiaca-maxima/`: 155/792 pages, 10 new unique heroes.
-- Two writers ran sequentially, five pairs each; a server restart interrupted the second writer and
-  the rerun completed the same five pairs. The parent replaced two duplicated heroes, added the
+- Batch 16 wrote 10 page pairs (20 files) from `/ropa-y-calzado-…/` to
+  `/entrenamiento-alta-intensidad/`: 165/792 pages, 10 new unique heroes.
+- Two writers ran sequentially, five pairs each; the parent replaced one reused hero, added the
   cross-links, registered the routes and ran the gates.
-- Gates are green: `check:copy` 7,905/7,905, build **326 pages**, `check:i18n` 5,146/5,146, sitemap
-  **322 URLs** with 966 alternates.
+- Gates are green: `check:copy` 8,415/8,415, build **346 pages**, `check:i18n` 5,456/5,456, sitemap
+  **342 URLs** with 1,026 alternates.
 - Structural checks the gate does not cover, run by hand on the 20 built pages: 84 internal links all
-  resolve; zero `.md` links, zero `#` links and zero em dashes; 104 TOC anchors match their heading
-  ids; 8 text tables across the batch.
-- Commits, one per page with its checklist rows marked: `f73e3bf`, `3cb25d9`, `9f29db4`, `c48b44a`,
-  `480dc89`, `a12c220`, `2193647`, `26f9b22`, `f3d936f`, `3ae7307`; routes `ab22bdb`; docs
-  `953229c`; push record `764c9e9`. Pushed `7917ae6..764c9e9`; production verified at **322 sitemap
-  URLs** and 966 alternates.
-- **Gotcha:** `check:copy` compares hero paths, not bytes; hash every new hero. Two batch 15 heroes
-  repeated earlier images and had to be replaced.
+  resolve; zero `.md` links, zero `#` links and zero em dashes; 98 TOC anchors match their heading
+  ids; 4 text tables across the batch.
+- Commits, one per page with its checklist rows marked: `450b4b5`, `0805fa5`, `38b400f`, `6a6d477`,
+  `a22798a`, `7df4c26`, `1d57668`, `0ff1ccc`, `74a528b`, `928661b`; routes `4e7fb20`; docs after
+  this. Push and production verification recorded in the batch 16 doc.
+- **Gotcha:** `check:copy` compares hero paths, not bytes; hash every new hero. Also compare the
+  Commons source file: batch 16 reused the range-of-motion photo under a different crop.
 - **Gotcha:** Wikimedia Commons rate-limits the Action API; leave 4–10 s between calls.
-- **Archive edits:** two data tables that only existed as JPGs were transcribed; the printed
-  programme totals were preserved even where the listed sessions add up differently.
-- Next session starts at `/ropa-y-calzado-para-el-ejercicio-cardiovascular/`.
+- **Archive edits:** the Cooper test has no distance table, so category distances were not invented;
+  "isotónicas o hipotrónicas" was corrected to hipotónicas.
+- Next session starts at `/series-gigantes/`.
 - Engram topic `content-library/handoff` is updated with this state.
