@@ -188,6 +188,7 @@ Legend: `ES` = Spanish published, `EN` = English published.
 | `maquinas-ejercicio-aerobico` | yes | yes | yes | 0 em dashes | pass |
 | `adaptaciones-cuerpo-ejercicio-aerobico` | yes | yes | yes | 0 em dashes | pass |
 | `ejercicio-aerobico-perder-masa-muscular` | yes | yes | yes | 0 em dashes | pass |
+| `demasiado-aerobico-puede-ser-malo-para-perder-grasa` | yes | yes | yes | 0 em dashes | pass |
 
 ## Resume (2026-11-12)
 
@@ -313,7 +314,7 @@ Legend: `ES` = Spanish published, `EN` = English published.
 - [x] ES · [x] EN — `/maquinas-ejercicio-aerobico/` — Máquinas de ejercicio aeróbico
 - [x] ES · [x] EN — `/adaptaciones-cuerpo-ejercicio-aerobico/` — Cómo el ejercicio aeróbico transforma tu cuerpo \| Adaptaciones
 - [x] ES · [x] EN — `/ejercicio-aerobico-perder-masa-muscular/` — Ejercicio Aeróbico: ¿Provoca Pérdida de Masa Muscular?
-- [ ] ES · [ ] EN — `/demasiado-aerobico-puede-ser-malo-para-perder-grasa/` — Demasiado aeróbico puede ser malo para perder grasa
+- [x] ES · [x] EN — `/demasiado-aerobico-puede-ser-malo-para-perder-grasa/` — Demasiado aeróbico puede ser malo para perder grasa
 - [ ] ES · [ ] EN — `/calcular-frecuencia-cardiaca-maxima/` — Cómo calcular tu frecuencia cardíaca máxima fácilmente
 - [ ] ES · [ ] EN — `/ropa-y-calzado-para-el-ejercicio-cardiovascular/` — Ropa y calzado para el ejercicio cardiovascular
 - [ ] ES · [ ] EN — `/saltar-comba/` — Saltar a la comba como ejercicio aeróbico
