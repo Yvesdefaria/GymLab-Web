@@ -189,6 +189,7 @@ Legend: `ES` = Spanish published, `EN` = English published.
 | `adaptaciones-cuerpo-ejercicio-aerobico` | yes | yes | yes | 0 em dashes | pass |
 | `ejercicio-aerobico-perder-masa-muscular` | yes | yes | yes | 0 em dashes | pass |
 | `demasiado-aerobico-puede-ser-malo-para-perder-grasa` | yes | yes | yes | 0 em dashes | pass |
+| `calcular-frecuencia-cardiaca-maxima` | yes | yes | yes | 0 em dashes | pass |
 
 ## Resume (2026-11-12)
 
@@ -315,7 +316,7 @@ Legend: `ES` = Spanish published, `EN` = English published.
 - [x] ES · [x] EN — `/adaptaciones-cuerpo-ejercicio-aerobico/` — Cómo el ejercicio aeróbico transforma tu cuerpo \| Adaptaciones
 - [x] ES · [x] EN — `/ejercicio-aerobico-perder-masa-muscular/` — Ejercicio Aeróbico: ¿Provoca Pérdida de Masa Muscular?
 - [x] ES · [x] EN — `/demasiado-aerobico-puede-ser-malo-para-perder-grasa/` — Demasiado aeróbico puede ser malo para perder grasa
-- [ ] ES · [ ] EN — `/calcular-frecuencia-cardiaca-maxima/` — Cómo calcular tu frecuencia cardíaca máxima fácilmente
+- [x] ES · [x] EN — `/calcular-frecuencia-cardiaca-maxima/` — Cómo calcular tu frecuencia cardíaca máxima fácilmente
 - [ ] ES · [ ] EN — `/ropa-y-calzado-para-el-ejercicio-cardiovascular/` — Ropa y calzado para el ejercicio cardiovascular
 - [ ] ES · [ ] EN — `/saltar-comba/` — Saltar a la comba como ejercicio aeróbico
 - [ ] ES · [ ] EN — `/flato-prevenirlo-eliminarlo/` — Flato, como prevenirlo y eliminarlo
