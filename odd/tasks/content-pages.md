@@ -195,6 +195,7 @@ Legend: `ES` = Spanish published, `EN` = English published.
 | `flato-prevenirlo-eliminarlo` | yes | yes | yes | 0 em dashes | pass |
 | `cinta-correr-vs-bicicleta-para-quemar-grasa` | yes | yes | yes | 0 em dashes | pass |
 | `test-de-cooper` | yes | yes | yes | 0 em dashes | pass |
+| `consigue-correr-30-minutos-seguidos` | yes | yes | yes | 0 em dashes | pass |
 
 ## Resume (2026-11-13)
 
@@ -327,7 +328,7 @@ Legend: `ES` = Spanish published, `EN` = English published.
 - [x] ES · [x] EN — `/flato-prevenirlo-eliminarlo/` — Flato, como prevenirlo y eliminarlo
 - [x] ES · [x] EN — `/cinta-correr-vs-bicicleta-para-quemar-grasa/` — Cinta de correr vs bicicleta estática: ¿Cuál quema más grasa?
 - [x] ES · [x] EN — `/test-de-cooper/` — Test de Cooper: Evalúa tu resistencia aeróbica
-- [ ] ES · [ ] EN — `/consigue-correr-30-minutos-seguidos/` — Cómo correr treinta minutos seguidos sin parar \| ¡Funciona!
+- [x] ES · [x] EN — `/consigue-correr-30-minutos-seguidos/` — Cómo correr treinta minutos seguidos sin parar \| ¡Funciona!
 - [ ] ES · [ ] EN — `/caminar-como-metodo-para-perder-grasa-y-estar-en-forma/` — Cómo caminar te ayuda a perder grasa y estar en forma
 - [ ] ES · [ ] EN — `/bicicleta-para-perder-grasa/` — La bicicleta para perder grasa y mejorar la capacidad aeróbica
 - [ ] ES · [ ] EN — `/spinning-mejores-consejos-por-nivel/` — Spinning, los mejores consejos según tu nivel
