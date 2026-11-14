@@ -210,6 +210,7 @@ Legend: `ES` = Spanish published, `EN` = English published.
 | `superseries` | yes | yes | yes | 0 em dashes | pass |
 | `principios-weider` | yes | yes | yes | 0 em dashes | pass |
 | `repeticiones-forzadas` | yes | yes | yes | 0 em dashes | pass |
+| `repeticiones-parciales` | yes | yes | yes | 0 em dashes | pass |
 
 ## Resume (2026-11-13)
 
@@ -359,7 +360,7 @@ Legend: `ES` = Spanish published, `EN` = English published.
 - [x] ES · [x] EN — `/superseries/` — Superseries, la técnica de alta intensidad más efectiva
 - [x] ES · [x] EN — `/principios-weider/` — Principios Weider: claves para un entrenamiento efectivo
 - [x] ES · [x] EN — `/repeticiones-forzadas/` — Repeticiones Forzadas: Técnica para Incrementar la Hipertrofia
-- [ ] ES · [ ] EN — `/repeticiones-parciales/` — Repeticiones Parciales, alta intensidad para más músculo
+- [x] ES · [x] EN — `/repeticiones-parciales/` — Repeticiones Parciales, alta intensidad para más músculo
 - [ ] ES · [ ] EN — `/entrenamiento-superlento/` — Entrenamiento Superlento: Ejercicios para la Hipertrofia
 - [ ] ES · [ ] EN — `/repeticiones-con-trampa/` — Repeticiones con trampa
 - [ ] ES · [ ] EN — `/series-descendentes/` — Series descendentes \| Gana más músculo con las Drop Sets
