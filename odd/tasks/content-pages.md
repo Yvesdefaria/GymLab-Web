@@ -216,6 +216,7 @@ Legend: `ES` = Spanish published, `EN` = English published.
 | `series-descendentes` | yes | yes | yes | 0 em dashes | pass |
 | `prefatiga` | yes | yes | yes | 0 em dashes | pass |
 | `triseries` | yes | yes | yes | 0 em dashes | pass |
+| `tecnica-descanso-pausa` | yes | yes | yes | 0 em dashes | pass |
 
 ## Resume (2026-11-13)
 
@@ -372,7 +373,7 @@ Legend: `ES` = Spanish published, `EN` = English published.
 - [x] ES · [x] EN — `/prefatiga/` — Entrenamiento de Prefatiga: ¡Revelado el Secreto del Crecimiento!
 - [x] ES · [x] EN — `/triseries/` — Triseries \| Técnica y rutinas con triseries
 - [ ] ES · [ ] EN — `/velocidad-repeticiones/` — Entrenando con repeticiones lentas o rápidas ⇨ ¿Usar Ambas? — **FUSIONADA en `/tiempos-entrenamiento/` + `/en/rep-tempo/` (decisión del owner, 2026-11-14): no se publica como página.**
-- [ ] ES · [ ] EN — `/tecnica-descanso-pausa/` — Técnica de Descanso/Pausa (Rest/Pause) \| Intensidad máxima
+- [x] ES · [x] EN — `/tecnica-descanso-pausa/` — Técnica de Descanso/Pausa (Rest/Pause) \| Intensidad máxima
 - [ ] ES · [ ] EN — `/series-alternativas/` — Series alternativas
 - [ ] ES · [ ] EN — `/repeticiones-negativas/` — Repeticiones negativas: el secreto para ganar músculo
 - [ ] ES · [ ] EN — `/ejercicios-de-alta-intensidad/` — Ejercicios de alta intensidad para finalizar el entrenamiento
