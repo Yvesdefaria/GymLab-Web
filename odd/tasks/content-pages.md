@@ -203,6 +203,8 @@ Legend: `ES` = Spanish published, `EN` = English published.
 
 | `series-gigantes` | yes | yes | yes | 0 em dashes | pass |
 
+| `memoria-muscular-que-es-como-funciona` | yes | yes | yes | 0 em dashes | pass |
+
 ## Resume (2026-11-13)
 
 - Built: **165/792**; **165 unique hero paths**; **batch 16 built and green**.
@@ -342,7 +344,7 @@ Legend: `ES` = Spanish published, `EN` = English published.
 
 - [x] ES · [x] EN — `/entrenamiento-alta-intensidad/` — Entrenamiento de alta intensidad \| Las mejores técnicas
 - [x] ES · [x] EN — `/series-gigantes/` — Series Gigantes 【Las superseries más intensas】
-- [ ] ES · [ ] EN — `/memoria-muscular-que-es-como-funciona/` — Memoria Muscular: Qué es y Cómo Recuperar tu Nivel
+- [x] ES · [x] EN — `/memoria-muscular-que-es-como-funciona/` — Memoria Muscular: Qué es y Cómo Recuperar tu Nivel
 - [ ] ES · [ ] EN — `/aeke-s1-pro-entrenamiento-domestico-con-ia/` — AEKE S1 Pro: entrenamiento doméstico personalizado con IA
 - [ ] ES · [ ] EN — `/mejores-ejercicios-en-maquina-de-musculacion/` — Los diez mejores ejercicios en máquina de musculación
 - [ ] ES · [ ] EN — `/entrenamiento-funcional/` — Entrenamiento funcional: pros, contras y mejores ejercicios
