@@ -195,8 +195,10 @@ before the commit, so the checklist never lags the work.
 - [x] 8. Parent — `npm run verify`: `check:copy` 8,925/8,925, build 366 pages, `check:i18n`
       5,766/5,766. Manual: 448 internal links resolve; 122 TOC anchors match; 0 `.md` links, 0 empty
       `#` links, 0 em dashes in the 20 sources; sitemap 362 URLs and 1,086 alternates.
-- [ ] 9. Parent — record the pages in the session handoff and `PLAN.md`; commit, push, verify
-       production.
+- [x] 9. Parent — record the pages in the session handoff and `PLAN.md` (`c92e74d`); push
+       `1f423a3..c92e74d` and verify production: **362 sitemap URLs**, 1,086 alternates and
+       `/es/series-gigantes/`, `/en/giant-sets/`, `/en/forced-reps/` answering 200 on 2026-11-14.
+       Push record commit added after the verification.
 
 ## Acceptance criteria
 
