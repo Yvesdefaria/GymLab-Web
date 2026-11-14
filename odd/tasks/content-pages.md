@@ -212,6 +212,7 @@ Legend: `ES` = Spanish published, `EN` = English published.
 | `repeticiones-forzadas` | yes | yes | yes | 0 em dashes | pass |
 | `repeticiones-parciales` | yes | yes | yes | 0 em dashes | pass |
 | `entrenamiento-superlento` | yes | yes | yes | 0 em dashes | pass |
+| `repeticiones-con-trampa` | yes | yes | yes | 0 em dashes | pass |
 
 ## Resume (2026-11-13)
 
@@ -363,7 +364,7 @@ Legend: `ES` = Spanish published, `EN` = English published.
 - [x] ES · [x] EN — `/repeticiones-forzadas/` — Repeticiones Forzadas: Técnica para Incrementar la Hipertrofia
 - [x] ES · [x] EN — `/repeticiones-parciales/` — Repeticiones Parciales, alta intensidad para más músculo
 - [x] ES · [x] EN — `/entrenamiento-superlento/` — Entrenamiento Superlento: Ejercicios para la Hipertrofia
-- [ ] ES · [ ] EN — `/repeticiones-con-trampa/` — Repeticiones con trampa
+- [x] ES · [x] EN — `/repeticiones-con-trampa/` — Repeticiones con trampa
 - [ ] ES · [ ] EN — `/series-descendentes/` — Series descendentes \| Gana más músculo con las Drop Sets
 - [ ] ES · [ ] EN — `/prefatiga/` — Entrenamiento de Prefatiga: ¡Revelado el Secreto del Crecimiento!
 - [ ] ES · [ ] EN — `/triseries/` — Triseries \| Técnica y rutinas con triseries
