@@ -367,6 +367,24 @@ const PAGES = [
   ['en', '/en/weider-principles/'],
   ['es', '/es/repeticiones-forzadas/'],
   ['en', '/en/forced-reps/'],
+  ['es', '/es/repeticiones-parciales/'],
+  ['en', '/en/partial-reps/'],
+  ['es', '/es/entrenamiento-superlento/'],
+  ['en', '/en/super-slow-training/'],
+  ['es', '/es/repeticiones-con-trampa/'],
+  ['en', '/en/cheat-reps/'],
+  ['es', '/es/series-descendentes/'],
+  ['en', '/en/drop-sets/'],
+  ['es', '/es/prefatiga/'],
+  ['en', '/en/pre-fatigue/'],
+  ['es', '/es/triseries/'],
+  ['en', '/en/tri-sets/'],
+  ['es', '/es/tecnica-descanso-pausa/'],
+  ['en', '/en/rest-pause/'],
+  ['es', '/es/series-alternativas/'],
+  ['en', '/en/alternating-sets/'],
+  ['es', '/es/repeticiones-negativas/'],
+  ['en', '/en/negative-reps/'],
 ];
 
 // Content routes, keyed by a stable id with the slug each locale publishes. The
@@ -775,6 +793,15 @@ const ROUTES = {
   supersets: { es: '/superseries', en: '/supersets' },
   weiderPrinciples: { es: '/principios-weider', en: '/weider-principles' },
   forcedReps: { es: '/repeticiones-forzadas', en: '/forced-reps' },
+  partialReps: { es: '/repeticiones-parciales', en: '/partial-reps' },
+  superSlowTraining: { es: '/entrenamiento-superlento', en: '/super-slow-training' },
+  cheatReps: { es: '/repeticiones-con-trampa', en: '/cheat-reps' },
+  dropSets: { es: '/series-descendentes', en: '/drop-sets' },
+  preFatigue: { es: '/prefatiga', en: '/pre-fatigue' },
+  triSets: { es: '/triseries', en: '/tri-sets' },
+  restPause: { es: '/tecnica-descanso-pausa', en: '/rest-pause' },
+  alternatingSets: { es: '/series-alternativas', en: '/alternating-sets' },
+  negativeReps: { es: '/repeticiones-negativas', en: '/negative-reps' },
 };
 
 const routeId = (path) => {

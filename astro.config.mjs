@@ -213,6 +213,15 @@ const ROUTE_PAIRS = [
   ['/superseries', '/supersets'],
   ['/principios-weider', '/weider-principles'],
   ['/repeticiones-forzadas', '/forced-reps'],
+  ['/repeticiones-parciales', '/partial-reps'],
+  ['/entrenamiento-superlento', '/super-slow-training'],
+  ['/repeticiones-con-trampa', '/cheat-reps'],
+  ['/series-descendentes', '/drop-sets'],
+  ['/prefatiga', '/pre-fatigue'],
+  ['/triseries', '/tri-sets'],
+  ['/tecnica-descanso-pausa', '/rest-pause'],
+  ['/series-alternativas', '/alternating-sets'],
+  ['/repeticiones-negativas', '/negative-reps'],
 ];
 
 const pairFor = (pathname) => {
