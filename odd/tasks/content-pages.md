@@ -365,7 +365,7 @@ Legend: `ES` = Spanish published, `EN` = English published.
 - [ ] ES · [ ] EN — `/series-descendentes/` — Series descendentes \| Gana más músculo con las Drop Sets
 - [ ] ES · [ ] EN — `/prefatiga/` — Entrenamiento de Prefatiga: ¡Revelado el Secreto del Crecimiento!
 - [ ] ES · [ ] EN — `/triseries/` — Triseries \| Técnica y rutinas con triseries
-- [ ] ES · [ ] EN — `/velocidad-repeticiones/` — Entrenando con repeticiones lentas o rápidas ⇨ ¿Usar Ambas?
+- [ ] ES · [ ] EN — `/velocidad-repeticiones/` — Entrenando con repeticiones lentas o rápidas ⇨ ¿Usar Ambas? — **FUSIONADA en `/tiempos-entrenamiento/` + `/en/rep-tempo/` (decisión del owner, 2026-11-14): no se publica como página.**
 - [ ] ES · [ ] EN — `/tecnica-descanso-pausa/` — Técnica de Descanso/Pausa (Rest/Pause) \| Intensidad máxima
 - [ ] ES · [ ] EN — `/series-alternativas/` — Series alternativas
 - [ ] ES · [ ] EN — `/repeticiones-negativas/` — Repeticiones negativas: el secreto para ganar músculo

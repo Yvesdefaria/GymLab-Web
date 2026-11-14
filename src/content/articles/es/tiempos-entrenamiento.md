@@ -71,6 +71,16 @@ Dos estudios recientes mostraron el valor de variar la velocidad de entrenamient
 
 El primero concluyó que, para seguir subiendo los kilajes, conviene entrenar tanto a velocidad lenta como a velocidad rápida. El segundo encontró que el entrenamiento lento produce aumentos de fuerza más significativos que el rápido, pero también que el rápido por sí solo no genera cambios tan grandes como la combinación de ambos.
 
+## Cómo combinar ritmos en la misma serie
+
+La velocidad tiene matices. En la fase de subida, mover el peso con intención explosiva recluta las fibras de contracción rápida, las que más fuerza producen y más capacidad de crecimiento tienen. Con cargas ligeras, esa intención es la que marca la diferencia.
+
+También puedes mezclar ritmos dentro de una misma serie. Con una carga relativamente ligera, por ejemplo el 75 % de tu repetición máxima, haz 10 repeticiones lentas en las dos fases, 10 repeticiones muy rápidas y 10 repeticiones a velocidad normal. La mezcla busca fatigar ambos tipos de fibras, las rápidas y las lentas. Es una alternativa a las series de 100 repeticiones cuando no tienes tiempo.
+
+Ese 10/10/10 es un recurso ocasional para cerrar una sesión o un ejercicio, no la forma de hacer todas las series. La velocidad normal y controlada sigue siendo la referencia para la mayoría de las series. El trabajo lento se reserva para uno o dos ejercicios, y el [entrenamiento superlento](/es/entrenamiento-superlento/) explica cómo aplicarlo sin convertir toda la rutina en una cuenta de segundos.
+
+Para elegir ejercicios, los movimientos multiarticulares encajan con las repeticiones rápidas y los de aislamiento con las lentas. No fuerces la velocidad rápida con un peso que no dominas. La intención de mover rápido no es lo mismo que perder el control.
+
 ## El consejo final
 
 Este tipo de entrenamiento debe aplicarse cuando ya tienes una base sólida de fuerza máxima. Con el tiempo, muchos atletas obtienen grandes resultados en los ejercicios de alta velocidad, pero antes necesitan construir esa base con movimientos lentos y seguir incluyéndolos a lo largo de toda su carrera para asegurar un progreso continuo.

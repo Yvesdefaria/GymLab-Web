@@ -71,6 +71,16 @@ Two recent studies showed the value of varying training speed compared with keep
 
 The first concluded that, to keep adding kilos, you should train at both slow and fast speeds. The second found that slow training produces more significant strength gains than fast training, but also that fast training alone does not produce changes as large as a combination of both.
 
+## How to combine speeds in the same set
+
+Speed is not one thing. On the way up, moving the weight with explosive intent recruits fast-twitch fibres, the ones that produce the most force and have the greatest growth capacity. With light loads, that intent is what makes the difference.
+
+You can also mix rhythms inside one set. With a relatively light load, for example 75% of your one-rep max, do 10 slow reps in both phases, 10 very fast reps and 10 reps at normal speed. The mix aims to fatigue both fibre types, fast and slow. It is an alternative to 100-rep sets when you do not have time.
+
+That 10/10/10 is an occasional finisher for a session or an exercise, not the way to run every set. Normal, controlled speed remains the reference for most sets. Slow work is reserved for one or two exercises, and the [super-slow training guide](/en/super-slow-training/) explains how to apply it without turning the whole routine into a count of seconds.
+
+For exercise choice, multi-joint movements suit fast reps and isolation movements suit slow ones. Do not force fast reps with a weight you do not control. The intent to move fast is not the same as losing control.
+
 ## The final piece of advice
 
 This kind of training should be applied once you already have a solid base of maximum strength. In time, many athletes get great results from high-speed exercises, but first they need to build that base with slow movements and keep including them throughout their athletic career to secure continuous progress.
