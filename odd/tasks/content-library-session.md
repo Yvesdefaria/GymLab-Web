@@ -9,20 +9,21 @@ Last updated: 2026-11-12. Read this first next session.
 
 ## State
 
-- **165 / 792 bilingual pages** (ES 165, EN 165).
-- Blocks: Entrenamiento **126**, Por Músculo **5**, Ejercicios **34**.
-- **165 unique hero paths.** Three older pages share a byte-identical hero (see the follow-up below).
-- **Batch 16 is built, green and pushed (2026-11-13).** The build has **346 pages** and
-  **342 sitemap URLs**.
+- **175 / 792 bilingual pages** (ES 175, EN 175).
+- Blocks: Entrenamiento **136**, Por Músculo **5**, Ejercicios **34**.
+- **175 unique hero paths.** Three suspected pairs from earlier batches remain (dHash 1–5, same
+  author); the batch 17 quadruple defect was fixed. See the follow-up in `PLAN.md`.
+- **Batch 17 is built, green and pushed (2026-11-14).** The build has **366 pages** and
+  **362 sitemap URLs**.
 - One archive row is discarded and must stay out: the FiveStars Fitness congress page.
-- Batch record: `odd/tasks/content-library-batch-16.md`.
+- Batch record: `odd/tasks/content-library-batch-17.md`.
 
 ## Gates
 
 ```powershell
-npm run check:copy   # 8,415/8,415
-npm run build        # 346 pages
-npm run check:i18n   # 5,456/5,456
+npm run check:copy   # 8,925/8,925
+npm run build        # 366 pages
+npm run check:i18n   # 5,766/5,766
 npm run verify       # all three, in that order
 npm run dev          # http://localhost:4321
 ```
@@ -47,23 +48,23 @@ Start the dev server with `npm run dev` for local review.
 - **Ejercicio Cardiovascular (33):** the 23 from batch 15, plus clothing and shoes, jump rope, side
   stitch, treadmill vs bike, the Cooper test, the 30-minute running plan, walking, cycling and
   spinning.
-- **Entrenamiento (1):** high-intensity training methods and rules.
+- **Entrenamiento (11):** high-intensity training methods and rules, giant sets, muscle memory, the
+  AEKE S1 Pro home gym, the ten machine exercises, functional training, the gym warm-up, yoga for
+  bodybuilders, supersets, the Weider principles and forced reps.
 - **Recovery and planning (10):** back-pain exercises (YMYL), stretching, stretching circuit, muscle
   failure, periodization, exercise and immune system, deload week, sleep, training planning and
   muscle recovery.
 
 ## Next 10
 
-1. Start at `/series-gigantes/`.
-2. Then `/memoria-muscular-que-es-como-funciona/`,
-   `/aeke-s1-pro-entrenamiento-domestico-con-ia/`, `/mejores-ejercicios-en-maquina-de-musculacion/`,
-   `/entrenamiento-funcional/`, `/calentamiento-y-estiramientos/`,
-   `/como-aplicar-los-beneficios-del-yoga-al-culturismo/`, `/superseries/`, `/principios-weider/`
-   and `/repeticiones-forzadas/`.
-3. Keep the same copy, unique-hero and gate flow.
-4. Replace two of the three pages that share a byte-identical hero: `/ejercicios-en-polea-ventajas`,
-   `/escoger-actividad-en-tu-vuelta-al-gimnasio`, `/jalones-frontales-brazos-rectos`.
-5. The scaling architecture is deferred to PLAN Phase 7; do not implement it during content batches.
+1. Start at `/repeticiones-parciales/` and follow the pending rows in `content-pages.md` in order:
+   partial reps, super-slow training, cheat reps, drop sets, pre-fatigue, tri-sets, rep speed,
+   rest-pause, alternating sets.
+2. Keep the same copy, unique-hero and gate flow.
+3. Before publishing another photo from Shixart1985, Nenad Stojkovic or Miguel Angel Omaña Rojas,
+   compare the Commons file title and the dHash against the 175 existing heroes: three suspected
+   duplicate pairs remain from earlier batches.
+4. The scaling architecture is deferred to PLAN Phase 7; do not implement it during content batches.
 
 ## Page contract (short)
 
@@ -102,25 +103,27 @@ Start the dev server with `npm run dev` for local review.
 - Engram topic `content-library/handoff` covers the current state; the scaling architecture is PLAN
   Phase 7.
 
-## Session close (2026-11-13)
+## Session close (2026-11-14)
 
-- Batch 16 wrote 10 page pairs (20 files) from `/ropa-y-calzado-…/` to
-  `/entrenamiento-alta-intensidad/`: 165/792 pages, 10 new unique heroes.
-- Two writers ran sequentially, five pairs each; the parent replaced one reused hero, added the
-  cross-links, registered the routes and ran the gates.
-- Gates are green: `check:copy` 8,415/8,415, build **346 pages**, `check:i18n` 5,456/5,456, sitemap
-  **342 URLs** with 1,026 alternates.
-- Structural checks the gate does not cover, run by hand on the 20 built pages: 84 internal links all
-  resolve; zero `.md` links, zero `#` links and zero em dashes; 98 TOC anchors match their heading
-  ids; 4 text tables across the batch.
-- Commits, one per page with its checklist rows marked: `450b4b5`, `0805fa5`, `38b400f`, `6a6d477`,
-  `a22798a`, `7df4c26`, `1d57668`, `0ff1ccc`, `74a528b`, `928661b`; routes `4e7fb20`; docs
-  `2b4612d`; push record `87d9965`. Pushed `04821a5..87d9965`; production verified at **342 sitemap
-  URLs** and 1,026 alternates.
-- **Gotcha:** `check:copy` compares hero paths, not bytes; hash every new hero. Also compare the
-  Commons source file: batch 16 reused the range-of-motion photo under a different crop.
-- **Gotcha:** Wikimedia Commons rate-limits the Action API; leave 4–10 s between calls.
-- **Archive edits:** the Cooper test has no distance table, so category distances were not invented;
-  "isotónicas o hipotrónicas" was corrected to hipotónicas.
-- Next session starts at `/series-gigantes/`.
+- Batch 17 wrote 10 page pairs (20 files) from `/series-gigantes/` to `/repeticiones-forzadas/`:
+  175/792 pages, 10 new unique heroes.
+- Two writers ran sequentially, five pairs each; the parent replaced four duplicate heroes (one in
+  the new batch, three legacy), added 32 cross-links, registered the routes and ran the gates.
+- Gates are green: `check:copy` 8,925/8,925, build **366 pages**, `check:i18n` 5,766/5,766, sitemap
+  **362 URLs** with 1,086 alternates.
+- Structural checks the gate does not cover, run on the 20 built pages: 448 internal links all
+  resolve; zero `.md` links, zero empty `#` links and zero em dashes in the sources; 122 TOC anchors
+  match their heading ids; 10 tables across the batch, all within the three-column rule.
+- Commits, one per page with its checklist rows marked: `c15c777`, `b72a26f`, `b9ce05b`, `23263c5`,
+  `49a0855`, `a62e485`, `8aacab2`, `79d23b6`, `fb44ae0`, `840556d`; routes `aa4ef35`; duplicate-hero
+  fix `a5a77f1`; docs commit and push record added at close.
+- **Gotcha:** `check:copy` compares hero paths, not bytes. A byte-different crop of an already-used
+  Commons photo passes the gate, so hash every new hero and compare the Commons file title. Batch 17
+  found one new reuse and three legacy ones this way.
+- **Gotcha:** Wikimedia Commons rate-limits the Action API and rejects thumbnail widths outside its
+  allowed list; leave 4–10 s between calls and take the thumb URL from `iiurlwidth`.
+- **Archive edits:** the AEKE page is a neutral overview with manufacturer-attributed specs, no links
+  and no funding or lifetime claims; the Weider page drops the lactate-inflates-cells claim; the
+  muscle-memory page drops the impossible hypertrophy-while-detraining sentence.
+- Next session starts at `/repeticiones-parciales/`.
 - Engram topic `content-library/handoff` is updated with this state.

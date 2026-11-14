@@ -9,18 +9,18 @@ Legend: `ES` = Spanish published, `EN` = English published.
 
 ## Progress
 
-- **Built: 165 / 792** (ES 165, EN 165).
-- Last batch: 10 pages, from `/ropa-y-calzado-para-el-ejercicio-cardiovascular/` to `/entrenamiento-alta-intensidad/`.
+- **Built: 175 / 792** (ES 175, EN 175).
+- Last batch: 10 pages, from `/series-gigantes/` to `/repeticiones-forzadas/`.
 
 | Block | Articles | Built |
 | --- | ---: | ---: |
-| Entrenamiento | 222 | 126 |
+| Entrenamiento | 222 | 136 |
 | Por Músculo | 80 | 5 |
 | Rutinas | 80 | 0 |
 | Ejercicios | 196 | 34 |
 | Nutrición | 191 | 0 |
 | Mujer Fitness | 23 | 0 |
-| **Total** | **792** | **165** |
+| **Total** | **792** | **175** |
 
 ## Copy gate (mandatory before ticking ES/EN)
 
