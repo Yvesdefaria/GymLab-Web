@@ -207,6 +207,8 @@ Legend: `ES` = Spanish published, `EN` = English published.
 
 | `aeke-s1-pro-entrenamiento-domestico-con-ia` | yes | yes | yes | 0 em dashes | pass |
 
+| `mejores-ejercicios-en-maquina-de-musculacion` | yes | yes | yes | 0 em dashes | pass |
+
 ## Resume (2026-11-13)
 
 - Built: **165/792**; **165 unique hero paths**; **batch 16 built and green**.
@@ -348,7 +350,7 @@ Legend: `ES` = Spanish published, `EN` = English published.
 - [x] ES · [x] EN — `/series-gigantes/` — Series Gigantes 【Las superseries más intensas】
 - [x] ES · [x] EN — `/memoria-muscular-que-es-como-funciona/` — Memoria Muscular: Qué es y Cómo Recuperar tu Nivel
 - [x] ES · [x] EN — `/aeke-s1-pro-entrenamiento-domestico-con-ia/` — AEKE S1 Pro: entrenamiento doméstico personalizado con IA
-- [ ] ES · [ ] EN — `/mejores-ejercicios-en-maquina-de-musculacion/` — Los diez mejores ejercicios en máquina de musculación
+- [x] ES · [x] EN — `/mejores-ejercicios-en-maquina-de-musculacion/` — Los diez mejores ejercicios en máquina de musculación
 - [ ] ES · [ ] EN — `/entrenamiento-funcional/` — Entrenamiento funcional: pros, contras y mejores ejercicios
 - [ ] ES · [ ] EN — `/calentamiento-y-estiramientos/` — Como calentar en el gimnasio
 - [ ] ES · [ ] EN — `/como-aplicar-los-beneficios-del-yoga-al-culturismo/` — Como aplicar los beneficios del Yoga al culturismo
