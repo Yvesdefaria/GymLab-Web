@@ -206,7 +206,6 @@ const ROUTE_PAIRS = [
   ['/entrenamiento-alta-intensidad', '/high-intensity-training'],
   ['/series-gigantes', '/giant-sets'],
   ['/memoria-muscular-que-es-como-funciona', '/muscle-memory'],
-  ['/aeke-s1-pro-entrenamiento-domestico-con-ia', '/aeke-s1-pro-ai-home-gym'],
   ['/mejores-ejercicios-en-maquina-de-musculacion', '/best-machine-exercises'],
   ['/entrenamiento-funcional', '/functional-training'],
   ['/calentamiento-y-estiramientos', '/gym-warm-up'],

@@ -353,8 +353,6 @@ const PAGES = [
   ['en', '/en/giant-sets/'],
   ['es', '/es/memoria-muscular-que-es-como-funciona/'],
   ['en', '/en/muscle-memory/'],
-  ['es', '/es/aeke-s1-pro-entrenamiento-domestico-con-ia/'],
-  ['en', '/en/aeke-s1-pro-ai-home-gym/'],
   ['es', '/es/mejores-ejercicios-en-maquina-de-musculacion/'],
   ['en', '/en/best-machine-exercises/'],
   ['es', '/es/entrenamiento-funcional/'],
@@ -764,10 +762,6 @@ const ROUTES = {
   },
   giantSets: { es: '/series-gigantes', en: '/giant-sets' },
   muscleMemory: { es: '/memoria-muscular-que-es-como-funciona', en: '/muscle-memory' },
-  aekeS1Pro: {
-    es: '/aeke-s1-pro-entrenamiento-domestico-con-ia',
-    en: '/aeke-s1-pro-ai-home-gym',
-  },
   machineExercises: {
     es: '/mejores-ejercicios-en-maquina-de-musculacion',
     en: '/best-machine-exercises',

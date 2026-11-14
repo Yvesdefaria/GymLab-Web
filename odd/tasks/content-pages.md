@@ -9,18 +9,19 @@ Legend: `ES` = Spanish published, `EN` = English published.
 
 ## Progress
 
-- **Built: 175 / 792** (ES 175, EN 175).
-- Last batch: 10 pages, from `/series-gigantes/` to `/repeticiones-forzadas/`.
+- **Built: 174 / 792** (ES 174, EN 174).
+- Last batch: 10 pages, from `/series-gigantes/` to `/repeticiones-forzadas/`; 9 built, the AEKE S1
+  Pro row discarded by the owner.
 
 | Block | Articles | Built |
 | --- | ---: | ---: |
-| Entrenamiento | 222 | 136 |
+| Entrenamiento | 222 | 135 |
 | Por Músculo | 80 | 5 |
 | Rutinas | 80 | 0 |
 | Ejercicios | 196 | 34 |
 | Nutrición | 191 | 0 |
 | Mujer Fitness | 23 | 0 |
-| **Total** | **792** | **175** |
+| **Total** | **792** | **174** |
 
 ## Copy gate (mandatory before ticking ES/EN)
 
@@ -200,25 +201,14 @@ Legend: `ES` = Spanish published, `EN` = English published.
 | `bicicleta-para-perder-grasa` | yes | yes | yes | 0 em dashes | pass |
 | `spinning-mejores-consejos-por-nivel` | yes | yes | yes | 0 em dashes | pass |
 | `entrenamiento-alta-intensidad` | yes | yes | yes | 0 em dashes | pass |
-
 | `series-gigantes` | yes | yes | yes | 0 em dashes | pass |
-
 | `memoria-muscular-que-es-como-funciona` | yes | yes | yes | 0 em dashes | pass |
-
-| `aeke-s1-pro-entrenamiento-domestico-con-ia` | yes | yes | yes | 0 em dashes | pass |
-
 | `mejores-ejercicios-en-maquina-de-musculacion` | yes | yes | yes | 0 em dashes | pass |
-
 | `entrenamiento-funcional` | yes | yes | yes | 0 em dashes | pass |
-
 | `calentamiento-y-estiramientos` | yes | yes | yes | 0 em dashes | pass |
-
 | `como-aplicar-los-beneficios-del-yoga-al-culturismo` | yes | yes | yes | 0 em dashes | pass |
-
 | `superseries` | yes | yes | yes | 0 em dashes | pass |
-
 | `principios-weider` | yes | yes | yes | 0 em dashes | pass |
-
 | `repeticiones-forzadas` | yes | yes | yes | 0 em dashes | pass |
 
 ## Resume (2026-11-13)
@@ -361,7 +351,7 @@ Legend: `ES` = Spanish published, `EN` = English published.
 - [x] ES · [x] EN — `/entrenamiento-alta-intensidad/` — Entrenamiento de alta intensidad \| Las mejores técnicas
 - [x] ES · [x] EN — `/series-gigantes/` — Series Gigantes 【Las superseries más intensas】
 - [x] ES · [x] EN — `/memoria-muscular-que-es-como-funciona/` — Memoria Muscular: Qué es y Cómo Recuperar tu Nivel
-- [x] ES · [x] EN — `/aeke-s1-pro-entrenamiento-domestico-con-ia/` — AEKE S1 Pro: entrenamiento doméstico personalizado con IA
+- [ ] ES · [ ] EN — `/aeke-s1-pro-entrenamiento-domestico-con-ia/` — AEKE S1 Pro: entrenamiento doméstico personalizado con IA — **DESCARTADA: no va a producción (decisión del owner, 2026-11-14).**
 - [x] ES · [x] EN — `/mejores-ejercicios-en-maquina-de-musculacion/` — Los diez mejores ejercicios en máquina de musculación
 - [x] ES · [x] EN — `/entrenamiento-funcional/` — Entrenamiento funcional: pros, contras y mejores ejercicios
 - [x] ES · [x] EN — `/calentamiento-y-estiramientos/` — Como calentar en el gimnasio
