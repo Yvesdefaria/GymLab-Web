@@ -349,6 +349,26 @@ const PAGES = [
   ['en', '/en/spinning-tips-by-level/'],
   ['es', '/es/entrenamiento-alta-intensidad/'],
   ['en', '/en/high-intensity-training/'],
+  ['es', '/es/series-gigantes/'],
+  ['en', '/en/giant-sets/'],
+  ['es', '/es/memoria-muscular-que-es-como-funciona/'],
+  ['en', '/en/muscle-memory/'],
+  ['es', '/es/aeke-s1-pro-entrenamiento-domestico-con-ia/'],
+  ['en', '/en/aeke-s1-pro-ai-home-gym/'],
+  ['es', '/es/mejores-ejercicios-en-maquina-de-musculacion/'],
+  ['en', '/en/best-machine-exercises/'],
+  ['es', '/es/entrenamiento-funcional/'],
+  ['en', '/en/functional-training/'],
+  ['es', '/es/calentamiento-y-estiramientos/'],
+  ['en', '/en/gym-warm-up/'],
+  ['es', '/es/como-aplicar-los-beneficios-del-yoga-al-culturismo/'],
+  ['en', '/en/yoga-for-bodybuilding/'],
+  ['es', '/es/superseries/'],
+  ['en', '/en/supersets/'],
+  ['es', '/es/principios-weider/'],
+  ['en', '/en/weider-principles/'],
+  ['es', '/es/repeticiones-forzadas/'],
+  ['en', '/en/forced-reps/'],
 ];
 
 // Content routes, keyed by a stable id with the slug each locale publishes. The
@@ -742,6 +762,25 @@ const ROUTES = {
     es: '/entrenamiento-alta-intensidad',
     en: '/high-intensity-training',
   },
+  giantSets: { es: '/series-gigantes', en: '/giant-sets' },
+  muscleMemory: { es: '/memoria-muscular-que-es-como-funciona', en: '/muscle-memory' },
+  aekeS1Pro: {
+    es: '/aeke-s1-pro-entrenamiento-domestico-con-ia',
+    en: '/aeke-s1-pro-ai-home-gym',
+  },
+  machineExercises: {
+    es: '/mejores-ejercicios-en-maquina-de-musculacion',
+    en: '/best-machine-exercises',
+  },
+  functionalTraining: { es: '/entrenamiento-funcional', en: '/functional-training' },
+  gymWarmUp: { es: '/calentamiento-y-estiramientos', en: '/gym-warm-up' },
+  yogaBodybuilding: {
+    es: '/como-aplicar-los-beneficios-del-yoga-al-culturismo',
+    en: '/yoga-for-bodybuilding',
+  },
+  supersets: { es: '/superseries', en: '/supersets' },
+  weiderPrinciples: { es: '/principios-weider', en: '/weider-principles' },
+  forcedReps: { es: '/repeticiones-forzadas', en: '/forced-reps' },
 };
 
 const routeId = (path) => {

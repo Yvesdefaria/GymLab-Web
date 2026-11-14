@@ -204,6 +204,16 @@ const ROUTE_PAIRS = [
   ['/bicicleta-para-perder-grasa', '/cycling-for-fat-loss'],
   ['/spinning-mejores-consejos-por-nivel', '/spinning-tips-by-level'],
   ['/entrenamiento-alta-intensidad', '/high-intensity-training'],
+  ['/series-gigantes', '/giant-sets'],
+  ['/memoria-muscular-que-es-como-funciona', '/muscle-memory'],
+  ['/aeke-s1-pro-entrenamiento-domestico-con-ia', '/aeke-s1-pro-ai-home-gym'],
+  ['/mejores-ejercicios-en-maquina-de-musculacion', '/best-machine-exercises'],
+  ['/entrenamiento-funcional', '/functional-training'],
+  ['/calentamiento-y-estiramientos', '/gym-warm-up'],
+  ['/como-aplicar-los-beneficios-del-yoga-al-culturismo', '/yoga-for-bodybuilding'],
+  ['/superseries', '/supersets'],
+  ['/principios-weider', '/weider-principles'],
+  ['/repeticiones-forzadas', '/forced-reps'],
 ];
 
 const pairFor = (pathname) => {
