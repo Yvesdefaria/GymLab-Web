@@ -211,6 +211,8 @@ Legend: `ES` = Spanish published, `EN` = English published.
 
 | `entrenamiento-funcional` | yes | yes | yes | 0 em dashes | pass |
 
+| `calentamiento-y-estiramientos` | yes | yes | yes | 0 em dashes | pass |
+
 ## Resume (2026-11-13)
 
 - Built: **165/792**; **165 unique hero paths**; **batch 16 built and green**.
@@ -354,7 +356,7 @@ Legend: `ES` = Spanish published, `EN` = English published.
 - [x] ES · [x] EN — `/aeke-s1-pro-entrenamiento-domestico-con-ia/` — AEKE S1 Pro: entrenamiento doméstico personalizado con IA
 - [x] ES · [x] EN — `/mejores-ejercicios-en-maquina-de-musculacion/` — Los diez mejores ejercicios en máquina de musculación
 - [x] ES · [x] EN — `/entrenamiento-funcional/` — Entrenamiento funcional: pros, contras y mejores ejercicios
-- [ ] ES · [ ] EN — `/calentamiento-y-estiramientos/` — Como calentar en el gimnasio
+- [x] ES · [x] EN — `/calentamiento-y-estiramientos/` — Como calentar en el gimnasio
 - [ ] ES · [ ] EN — `/como-aplicar-los-beneficios-del-yoga-al-culturismo/` — Como aplicar los beneficios del Yoga al culturismo
 - [ ] ES · [ ] EN — `/superseries/` — Superseries, la técnica de alta intensidad más efectiva
 - [ ] ES · [ ] EN — `/principios-weider/` — Principios Weider: claves para un entrenamiento efectivo
