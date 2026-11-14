@@ -4,7 +4,7 @@ Handoff document to continue this project in a new session. Canonical project ru
 `AGENTS.md`. Closed work and the measurement baselines are archived in `COMPLETED.md`; task-by-task
 evidence lives in `odd/tasks/*.md` and in Engram (project `webgymlab`).
 
-Last updated: 2026-11-11.
+Last updated: 2026-11-14.
 
 ## Where we are
 
@@ -39,6 +39,228 @@ Last updated: 2026-11-11.
   Wikimedia Commons (CC0/CC BY/CC BY-SA/public domain); the `alt` includes the credit.
 - Engram topic `content-library/handoff` covers through batch 16; the scaling architecture is PLAN
   Phase 7.
+
+## Content and growth — phased plan (2026-11-05)
+
+Ten marketing skills were run against the repo and the live zone (`seo-audit`, `schema`,
+`site-architecture`, `content-strategy`, `ai-seo`, `programmatic-seo`, `cro`, `copy-editing`,
+`image`, `launch`). Conclusions are grouped into phases; each phase is a work unit. Phases 8 and 9
+come from the app-side roadmap (2026-11-13).
+
+**Correction to the record:** the first guide is built locally but **not deployed**.
+`https://gymlab.dev/es/rutinas-espalda/` and `/en/back-routines/` return `404`; the live
+`sitemap-0.xml` still publishes 12 URLs while `dist/` has 14. Local `main` is 2 commits ahead
+(`db3343b`, `ca8dd8e`).
+
+### Phase 0 — Ship what exists
+
+- [ ] Push `db3343b` + `ca8dd8e`; verify both article URLs return `200` and `sitemap-0.xml` has 14 URLs.
+- [ ] Fix the article language switch: it renders `/en/rutinas-espalda/` and `/es/back-routines/`, both
+      `404`. `localeSwitchPath` only swaps the prefix because the article pair is not in `ROUTES`.
+      Pass `alternates` into `Header` or resolve the slug from the collection.
+- [ ] Extend `check:i18n` to assert every `lang-switch` href resolves to a built file. The gate
+      validates canonical and hreflang (correct), not the visible switcher.
+
+### Phase 1 — Article contract
+
+- [ ] Add `Article` + `BreadcrumbList` JSON-LD to `ArticleLayout`: author = Organization GymLab,
+      real `datePublished`/`dateModified`. Articles currently ship **zero** structured data.
+- [ ] Set `og:type=article` and a 1200×630 per-article OG image; `og:type` stays `website` today.
+- [ ] Add `author` and dates to the content schema; extend the gate to assert the article graph.
+- [ ] Fix the voseo in the article CTA ("Llevá" → "Lleva") and align it with the neutral-Spanish rule.
+
+### Phase 2 — Information architecture and discovery
+
+- [ ] Build the guides hub at 3–5 URLs before scaling: `/es/guias/` (index), one section hub listing
+      the article, article → hub breadcrumb. Then flip `GUIDES_ENABLED` with real hrefs.
+- [ ] The cluster has internal links but no hub; the menu is still disabled. Link it from the hub,
+      the landing and 2–3 sibling guides.
+- [ ] Publish `llms.txt` (currently `404`) while AI Search already makes ~1,770 requests/30 d.
+- [ ] Deploy the redirect map with the first bulk publish: old slug → `/es/<slug>/` `301`, generated
+      from the archive manifest, 20 sampled before release.
+
+### Phase 3 — Conversion
+
+- [ ] Make the offer singular and true. Today "Prueba la app" points at the working web app while the
+      chips below say "Próximamente en Google Play / App Store", and the email FAQ asks to hear about
+      a launch of something already usable. Split: web app = "Probar en el navegador"; stores =
+      "Avísame cuando llegue".
+- [ ] Change the article CTA from "Descargar la app" to "Abrir la app"; it currently promises a
+      download that does not exist.
+- [ ] Add a trust line by every CTA: "Sin cuenta · Gratis · Tus datos en tu teléfono" (all true).
+- [ ] Add a chooser above the eleven tables: goal → routine → days, so the reader picks in ten seconds.
+
+### Phase 4 — Copy and content quality
+
+- [ ] Grow the 3 calculators to 800+ words: definition, formula, worked example, comparison table,
+      4–6 FAQs. They are 203–241 words today and are the only link-earning assets.
+- [x] Normalise the article to `tú` (it mixes 8 vosotros forms with 17 tú forms), fix the three
+      broken sentences, the orphan footnote asterisks and "el sitio indicado". **Done for the 46
+      pages; `check:copy` enforces it.**
+- [ ] Add one link from each calculator to its matching guide and one from the guide to each calculator.
+
+### Phase 5 — Images
+
+- [ ] Build the image pipeline before article #2: move heroes to `src/assets`, render `<Picture>` with
+      AVIF/WebP at 480/768/1200 px, quality ~80, budget ≤150 KB at 1200 px. The current hero is a
+      single 3375×2250 JPEG at 462 KB with no `srcset`.
+- [ ] Make `heroSource`, `heroLicense` and `heroAuthor` **required** frontmatter. 792 images cannot be
+      audited retroactively; a required field is the only ledger that survives.
+- [ ] Add `/content/*` to `public/_headers`; heroes carry no cache rule today.
+- [ ] Keep every image vendored: the CSP is `img-src 'self'`, so hotlinked sources break when the CSP
+      leaves report-only.
+
+### Phase 6 — Scale, after the template is right
+
+- [x] 20-article pilot and 20-exercise pilot, then measure before scaling to 792 / 873. **46 pages
+      built; the measurement on 2026-11-19 is still pending.**
+- [ ] Read Search Console on **2026-11-19** before adding volume.
+- [ ] Ordering guard: every page must ship an asset the original lacked (unique prose, data, images) or
+      792 pages repeat the same thin/duplicate-content risk as 873 template pages.
+
+### Phase 7 — Scaling architecture (deferred, 2026-11-06)
+
+- **Audit and acceptance criteria:** `odd/tasks/architecture-scaling.md`; this phase starts after the
+  current content batch and does not change the page chrome.
+- [ ] Generate one bilingual article manifest from the frontmatter `alternate` and consume it in
+      `astro.config.mjs` and `scripts/check-i18n.mjs`; remove the manual `ROUTE_PAIRS` / `PAGES` /
+      `ROUTES` duplication. Keep the gate strict.
+- [ ] Generate or validate `src/data/guides-nav.ts` (counts, section hrefs, block hrefs) from the
+      published pages; replace the hardcoded 792 and `#` hrefs. Flip `GUIDES_ENABLED` only when
+      `/es/guias/` and the section hubs exist.
+- [ ] Optional: extract shared calculator chrome/styles for the 3 calculator pages; keep the math in
+      `src/lib/calculators.ts`; do not build a universal page component.
+- [ ] Keep the composition: `BaseLayout` → Header/Footer; `ArticleLayout`/`LegalLayout` →
+      `BaseLayout`; no page-level chrome. Header/Footer changes remain one-file changes.
+- **Trap:** scaling either archive before the template is right ships every defect 1,584 times; the
+  sequence is to ship one, fix the contract, build the hub, then scale.
+
+### Phase 8 — Analytics: GA4 + Search Console + MCP
+
+- [x] Search Console verified by DNS and sitemap submitted on 2026-10-30 (see *Owner actions*).
+- [ ] Create the GA4 property and a web data stream for `gymlab.dev`; obtain the `G-XXXXXXXXXX`
+      measurement ID. GA4 does not exist today: no `gtag`, no measurement ID, no analytics vendor.
+- [ ] Add the tag in the Astro layout, gated by an explicit consent banner: default state *denied*,
+      `gtag` never fires before an explicit choice, reject as prominent as accept, no pre-checked box,
+      and the privacy page explains what is collected and how to withdraw.
+- [ ] Confirm the tag with Realtime, then link Search Console to GA4 for query-level joins.
+- [ ] Install the GA4 and Search Console MCP servers and prove each with a real query against this
+      property, not a handshake. An MCP pointed at a property with no tag returns nothing, so this
+      step comes last.
+
+### Phase 9 — Calculators from the app
+
+- [ ] Copy the nine pure calculators (`oneRepMax`, `imc`, `tdee`, `macros`, `navy`, `bodyComposition`,
+      `water`, `plates`, `converter`) and `calculators.vectors.json` verbatim from
+      `ProyectoGymLab/odd/tasks/fase-146-calculadoras-compartidas.md`; do not reimplement any formula.
+- [ ] Add a parity test that runs the vectors against the local copy; a drifted formula fails here.
+- [ ] Build the content around the math: explanation, formula used, worked example, edge cases.
+- [ ] Ship one static page per calculator in both locales with the bilingual/canonical contract and
+      the existing calculator JSON-LD; close when `npm run build` and `npm run check:i18n` are green.
+
+## Open work
+
+### T15 — SEO, open items
+
+- [ ] **Routine pages** from the app seed — **blocked by decision**: which routines to publish and the
+      shape of the seed.
+- [ ] **Search Console reading at 4 weeks** — first useful read ~**2026-11-19**. Prioritise by real
+      impressions, not intuition. Verification is done; submitting the sitemap is the open step and
+      lives under *Search Console* in owner actions below.
+- [x] **Social card completed** (2026-10-29, `99f1ed2`): `twitter:image:alt`, `og:image:type` and
+      `og:locale:alternate`, plus three gate assertions per landing.
+- **Deliberately not done, with reasons:**
+      - `lastmod` in the sitemap: the only value available is the build date, which moves on
+        docs-only commits. A `lastmod` that is not the content's real change date teaches Google to
+        distrust the field, which is the opposite of what it is for.
+      - A per-locale OG image: there is one card for both locales; `og:locale:alternate` declares the
+        other audience without inventing a second design. Worth doing only when someone can compose
+        an English card that matches the Spanish one.
+
+### T16 — Cloudflare, open items
+
+- [ ] **Web Analytics beacon on `app.gymlab.dev`** — **blocked by decision, not technique**: it is a new
+      collection that the privacy policy and Play Data Safety do not declare yet, and the app repo
+      requires an approved manual push. The three steps go together.
+- [ ] **Re-measure with the SQL API**: cache hit ratio and 404 volume after the WAF, plus the effect of
+      the new `/assets/*` rate-limit exclusion. The 6,551 404s (39%) in `COMPLETED.md` Appendix B predate
+      the WAF, so the next reading should drop hard.
+- [x] **`early_hints` reverted to `off`** (2026-10-29). Turning it on in T16b produced **832**
+      weighted `504` responses in six days (24–29 Oct, re-measured; the earlier note said 671), every one
+      with `requestSource = "earlyHintsCache"`, against **zero** in the baseline window. The prefetch
+      fails consistently and warms almost nothing at this traffic level. Evidence in `COMPLETED.md`
+      → Appendix C.
+- [ ] **LCP**: re-check the hero `preload` and the five `woff2`. The 3.31 s baseline (12 of 28 samples
+      above 2.5 s) was measured **with** `early_hints` on, so it is not a clean baseline either way.
+      Needs a fresh reading after the revert.
+- [ ] **Zero external referrers**: nobody arrives from search or social. Crosses with T15.
+      **Unverifiable with the current token**: `clientRefererHost` returns `403` (see the blockers
+      table). Needs a wider analytics scope before this claim can be confirmed or denied.
+
+## Owner actions (not delegable)
+
+- [ ] **2FA on the Cloudflare account.** Verified still off on 2026-10-28. The account has a single
+      user holding Super Administrator - All Privileges, so one password is the whole domain.
+- [ ] **Automatic renewal at DonDominio** — the only open item left from T9.
+- [ ] **DNSSEC** — load the DS record at DonDominio.
+- [ ] **DMARC: `p=none` → `p=quarantine`.** The record exists and is valid, so mail is not being
+      rejected; it just enforces nothing, which is what Cloudflare flags as "DMARC policy is
+      insecure". Read a few days of reports in `gymlab@gymlab.dev` first, then tighten. Doing it blind
+      can drop legitimate mail from any sender that is not aligned.
+- [ ] **Play Console declarations** (Health apps + Data safety), tied to the app beacon below.
+
+### Search Console — get the site indexed
+
+**State:** the Domain property is **already verified by DNS**. The `google-site-verification=4FZDknwez…`
+TXT sits on the apex, so it covers `gymlab.dev`, `www.gymlab.dev` and `app.gymlab.dev`. What is *not*
+confirmed is the sitemap submission — and nothing gets indexed until Google crawls.
+
+This is the bottleneck for every SEO change shipped on 2026-10-29: 12 URLs, the calculator schema and
+the landing graph are invisible until they are crawled.
+
+- [x] **Submit `https://gymlab.dev/sitemap-index.xml`** under *Sitemaps* — **done 2026-10-30**, status
+      *Correcto*. It publishes 12 URLs (6 pages × 2 locales) with `hreflang` alternates.
+      Gotcha that cost a round trip: the field takes a **full URL on a Domain property** and **a bare
+      path on a URL-prefix property**. Typing the wrong one for the selected property returns
+      "not a valid path".
+- [ ] **Request indexing** in *URL Inspection* for the four that matter most, one at a time (the daily
+      quota is small): `/es/`, `/en/`, `/es/calculadora-imc/`, `/es/calcular-calorias/`.
+- [ ] **Check coverage after 48–72 h**: 12 discovered, and the only exclusions should be the `noindex`
+      redirect stubs plus `app.gymlab.dev`.
+- [ ] **Confirm the enhancements appear**: `SoftwareApplication` on the landing and `BreadcrumbList` on
+      the calculators show up under *Enhancements* once crawled.
+- [ ] **First useful Performance read ~2026-11-19.** Anything optimised before that date is a guess.
+
+## Pending native review
+
+**Open transaction `review-bf1585fd7f8b1c1f` (2026-11-08/09).** Created for the batch 10 route
+registration only: base tree `1c601a15…b0643`, candidate `a0c88663…d2dde`, 6 files, 279 changed
+lines, risk `medium` (executable change in `astro.config.mjs`), one selected lens `review-reliability`,
+correction budget 140. The reviewer task was interrupted before it produced a capture, so the
+transaction is still in state `reviewing` with **no verdict and no receipt**. Nothing was mutated:
+no correction ran, no authority was burned. Resume with the bound
+`gentle-ai review status` for that lineage and repository context, or leave it open; delivery is
+under ordinary repository policy either way.
+
+Two facts worth keeping:
+
+- The **whole batch** (base `6547621`, 36 files, 2,131 lines) was consented to and refused by the
+  native preflight with `lens_context_budget_exceeded`. That stop is terminal: no authority is
+  created, retrying the same candidate cannot succeed, and the fix is smaller candidates. The 20
+  article files are therefore **not** natively reviewed; they are covered by `check:copy`,
+  `check:i18n`, the internal-link resolution check and the TOC-anchor check.
+- The stale `review-bb1b28cdd5e6324c` record (2026-10-24) no longer exists in the authority store:
+  `review status` reports zero lineages. There is nothing to resolve there.
+
+A decline or an open transaction never disables RDD: `gentle-ai review mode status` reads `on`,
+decided by the global scope, with the clone-local scope unset.
+
+## Pending in the app repo
+
+**Nothing.** On 2026-11-04 the owner authorized the pushes: `main` went `bdad47f7` → `7e575b8f`
+(58 commits, including the PWA auto-update merge) and then `7e575b8f` → `4e5f5c55` (F139.18 plus the
+`app.gymlab.dev` soft-404 fix). Local and `origin/main` are in sync, and the soft-404 fix is deployed
+as Worker version `383f72c2`.
 
 ## Deployed on 2026-10-29
 
@@ -238,208 +460,6 @@ custom ruleset back to its single original rule.
 The bottleneck is not security or performance: it is 12 indexable URLs against 873 exercises,
 68 routines and 9 calculators. The pSEO catalogue stays a product decision (see Backlog), but the
 sequence is now explicit: fix measurement, ship the 20-exercise pilot, measure, then scale.
-
-## Content and growth — phased plan (2026-11-05)
-
-Ten marketing skills were run against the repo and the live zone (`seo-audit`, `schema`,
-`site-architecture`, `content-strategy`, `ai-seo`, `programmatic-seo`, `cro`, `copy-editing`,
-`image`, `launch`). Conclusions are grouped into phases; each phase is a work unit.
-
-**Correction to the record:** the first guide is built locally but **not deployed**.
-`https://gymlab.dev/es/rutinas-espalda/` and `/en/back-routines/` return `404`; the live
-`sitemap-0.xml` still publishes 12 URLs while `dist/` has 14. Local `main` is 2 commits ahead
-(`db3343b`, `ca8dd8e`).
-
-### Phase 0 — Ship what exists
-
-- [ ] Push `db3343b` + `ca8dd8e`; verify both article URLs return `200` and `sitemap-0.xml` has 14 URLs.
-- [ ] Fix the article language switch: it renders `/en/rutinas-espalda/` and `/es/back-routines/`, both
-      `404`. `localeSwitchPath` only swaps the prefix because the article pair is not in `ROUTES`.
-      Pass `alternates` into `Header` or resolve the slug from the collection.
-- [ ] Extend `check:i18n` to assert every `lang-switch` href resolves to a built file. The gate
-      validates canonical and hreflang (correct), not the visible switcher.
-
-### Phase 1 — Article contract
-
-- [ ] Add `Article` + `BreadcrumbList` JSON-LD to `ArticleLayout`: author = Organization GymLab,
-      real `datePublished`/`dateModified`. Articles currently ship **zero** structured data.
-- [ ] Set `og:type=article` and a 1200×630 per-article OG image; `og:type` stays `website` today.
-- [ ] Add `author` and dates to the content schema; extend the gate to assert the article graph.
-- [ ] Fix the voseo in the article CTA ("Llevá" → "Lleva") and align it with the neutral-Spanish rule.
-
-### Phase 2 — Information architecture and discovery
-
-- [ ] Build the guides hub at 3–5 URLs before scaling: `/es/guias/` (index), one section hub listing
-      the article, article → hub breadcrumb. Then flip `GUIDES_ENABLED` with real hrefs.
-- [ ] The cluster has internal links but no hub; the menu is still disabled. Link it from the hub,
-      the landing and 2–3 sibling guides.
-- [ ] Publish `llms.txt` (currently `404`) while AI Search already makes ~1,770 requests/30 d.
-- [ ] Deploy the redirect map with the first bulk publish: old slug → `/es/<slug>/` `301`, generated
-      from the archive manifest, 20 sampled before release.
-
-### Phase 3 — Conversion
-
-- [ ] Make the offer singular and true. Today "Prueba la app" points at the working web app while the
-      chips below say "Próximamente en Google Play / App Store", and the email FAQ asks to hear about
-      a launch of something already usable. Split: web app = "Probar en el navegador"; stores =
-      "Avísame cuando llegue".
-- [ ] Change the article CTA from "Descargar la app" to "Abrir la app"; it currently promises a
-      download that does not exist.
-- [ ] Add a trust line by every CTA: "Sin cuenta · Gratis · Tus datos en tu teléfono" (all true).
-- [ ] Add a chooser above the eleven tables: goal → routine → days, so the reader picks in ten seconds.
-
-### Phase 4 — Copy and content quality
-
-- [ ] Grow the 3 calculators to 800+ words: definition, formula, worked example, comparison table,
-      4–6 FAQs. They are 203–241 words today and are the only link-earning assets.
-- [x] Normalise the article to `tú` (it mixes 8 vosotros forms with 17 tú forms), fix the three
-      broken sentences, the orphan footnote asterisks and "el sitio indicado". **Done for the 46
-      pages; `check:copy` enforces it.**
-- [ ] Add one link from each calculator to its matching guide and one from the guide to each calculator.
-
-### Phase 5 — Images
-
-- [ ] Build the image pipeline before article #2: move heroes to `src/assets`, render `<Picture>` with
-      AVIF/WebP at 480/768/1200 px, quality ~80, budget ≤150 KB at 1200 px. The current hero is a
-      single 3375×2250 JPEG at 462 KB with no `srcset`.
-- [ ] Make `heroSource`, `heroLicense` and `heroAuthor` **required** frontmatter. 792 images cannot be
-      audited retroactively; a required field is the only ledger that survives.
-- [ ] Add `/content/*` to `public/_headers`; heroes carry no cache rule today.
-- [ ] Keep every image vendored: the CSP is `img-src 'self'`, so hotlinked sources break when the CSP
-      leaves report-only.
-
-### Phase 6 — Scale, after the template is right
-
-- [x] 20-article pilot and 20-exercise pilot, then measure before scaling to 792 / 873. **46 pages
-      built; the measurement on 2026-11-19 is still pending.**
-- [ ] Read Search Console on **2026-11-19** before adding volume.
-- [ ] Ordering guard: every page must ship an asset the original lacked (unique prose, data, images) or
-      792 pages repeat the same thin/duplicate-content risk as 873 template pages.
-
-### Phase 7 — Scaling architecture (deferred, 2026-11-06)
-
-Full audit and acceptance criteria: `odd/tasks/architecture-scaling.md`. This phase starts after the
-current content batch; it does not change the page chrome.
-
-- [ ] Generate one bilingual article manifest from the frontmatter `alternate` and consume it in
-      `astro.config.mjs` and `scripts/check-i18n.mjs`; remove the manual `ROUTE_PAIRS` / `PAGES` /
-      `ROUTES` duplication. Keep the gate strict.
-- [ ] Generate or validate `src/data/guides-nav.ts` (counts, section hrefs, block hrefs) from the
-      published pages; replace the hardcoded 792 and `#` hrefs. Flip `GUIDES_ENABLED` only when
-      `/es/guias/` and the section hubs exist.
-- [ ] Optional: extract shared calculator chrome/styles for the 3 calculator pages; keep the math in
-      `src/lib/calculators.ts`; do not build a universal page component.
-- [ ] Keep the composition: `BaseLayout` → Header/Footer; `ArticleLayout`/`LegalLayout` →
-      `BaseLayout`; no page-level chrome. Header/Footer changes remain one-file changes.
-
-**The trap across the content phases and the scaling phase:** scaling either archive before the
-template is right ships every defect 1,584 times. The sequence is: ship one, fix the contract, build
-the hub, then scale.
-
-## Pending in the app repo
-
-**Nothing.** On 2026-11-04 the owner authorized the pushes: `main` went `bdad47f7` → `7e575b8f`
-(58 commits, including the PWA auto-update merge) and then `7e575b8f` → `4e5f5c55` (F139.18 plus the
-`app.gymlab.dev` soft-404 fix). Local and `origin/main` are in sync, and the soft-404 fix is deployed
-as Worker version `383f72c2`.
-
-## Owner actions (not delegable)
-
-- [ ] **2FA on the Cloudflare account.** Verified still off on 2026-10-28. The account has a single
-      user holding Super Administrator - All Privileges, so one password is the whole domain.
-- [ ] **Automatic renewal at DonDominio** — the only open item left from T9.
-- [ ] **DNSSEC** — load the DS record at DonDominio.
-- [ ] **DMARC: `p=none` → `p=quarantine`.** The record exists and is valid, so mail is not being
-      rejected; it just enforces nothing, which is what Cloudflare flags as "DMARC policy is
-      insecure". Read a few days of reports in `gymlab@gymlab.dev` first, then tighten. Doing it blind
-      can drop legitimate mail from any sender that is not aligned.
-- [ ] **Play Console declarations** (Health apps + Data safety), tied to the app beacon below.
-
-### Search Console — get the site indexed
-
-**State:** the Domain property is **already verified by DNS**. The `google-site-verification=4FZDknwez…`
-TXT sits on the apex, so it covers `gymlab.dev`, `www.gymlab.dev` and `app.gymlab.dev`. What is *not*
-confirmed is the sitemap submission — and nothing gets indexed until Google crawls.
-
-This is the bottleneck for every SEO change shipped on 2026-10-29: 12 URLs, the calculator schema and
-the landing graph are invisible until they are crawled.
-
-- [x] **Submit `https://gymlab.dev/sitemap-index.xml`** under *Sitemaps* — **done 2026-10-30**, status
-      *Correcto*. It publishes 12 URLs (6 pages × 2 locales) with `hreflang` alternates.
-      Gotcha that cost a round trip: the field takes a **full URL on a Domain property** and **a bare
-      path on a URL-prefix property**. Typing the wrong one for the selected property returns
-      "not a valid path".
-- [ ] **Request indexing** in *URL Inspection* for the four that matter most, one at a time (the daily
-      quota is small): `/es/`, `/en/`, `/es/calculadora-imc/`, `/es/calcular-calorias/`.
-- [ ] **Check coverage after 48–72 h**: 12 discovered, and the only exclusions should be the `noindex`
-      redirect stubs plus `app.gymlab.dev`.
-- [ ] **Confirm the enhancements appear**: `SoftwareApplication` on the landing and `BreadcrumbList` on
-      the calculators show up under *Enhancements* once crawled.
-- [ ] **First useful Performance read ~2026-11-19.** Anything optimised before that date is a guess.
-
-
-## Pending native review
-
-**Open transaction `review-bf1585fd7f8b1c1f` (2026-11-08/09).** Created for the batch 10 route
-registration only: base tree `1c601a15…b0643`, candidate `a0c88663…d2dde`, 6 files, 279 changed
-lines, risk `medium` (executable change in `astro.config.mjs`), one selected lens `review-reliability`,
-correction budget 140. The reviewer task was interrupted before it produced a capture, so the
-transaction is still in state `reviewing` with **no verdict and no receipt**. Nothing was mutated:
-no correction ran, no authority was burned. Resume with the bound
-`gentle-ai review status` for that lineage and repository context, or leave it open; delivery is
-under ordinary repository policy either way.
-
-Two facts worth keeping:
-
-- The **whole batch** (base `6547621`, 36 files, 2,131 lines) was consented to and refused by the
-  native preflight with `lens_context_budget_exceeded`. That stop is terminal: no authority is
-  created, retrying the same candidate cannot succeed, and the fix is smaller candidates. The 20
-  article files are therefore **not** natively reviewed; they are covered by `check:copy`,
-  `check:i18n`, the internal-link resolution check and the TOC-anchor check.
-- The stale `review-bb1b28cdd5e6324c` record (2026-10-24) no longer exists in the authority store:
-  `review status` reports zero lineages. There is nothing to resolve there.
-
-A decline or an open transaction never disables RDD: `gentle-ai review mode status` reads `on`,
-decided by the global scope, with the clone-local scope unset.
-
-## Open work
-
-### T15 — SEO, open items
-
-- [ ] **Routine pages** from the app seed — **blocked by decision**: which routines to publish and the
-      shape of the seed.
-- [ ] **Search Console reading at 4 weeks** — first useful read ~**2026-11-19**. Prioritise by real
-      impressions, not intuition. Verification is done; submitting the sitemap is the open step and
-      lives under *Search Console* in owner actions above.
-- [x] **Social card completed** (2026-10-29, `99f1ed2`): `twitter:image:alt`, `og:image:type` and
-      `og:locale:alternate`, plus three gate assertions per landing.
-- **Deliberately not done, with reasons:**
-      - `lastmod` in the sitemap: the only value available is the build date, which moves on
-        docs-only commits. A `lastmod` that is not the content's real change date teaches Google to
-        distrust the field, which is the opposite of what it is for.
-      - A per-locale OG image: there is one card for both locales; `og:locale:alternate` declares the
-        other audience without inventing a second design. Worth doing only when someone can compose
-        an English card that matches the Spanish one.
-
-### T16 — Cloudflare, open items
-
-- [ ] **Web Analytics beacon on `app.gymlab.dev`** — **blocked by decision, not technique**: it is a new
-      collection that the privacy policy and Play Data Safety do not declare yet, and the app repo
-      requires an approved manual push. The three steps go together.
-- [ ] **Re-measure with the SQL API**: cache hit ratio and 404 volume after the WAF, plus the effect of
-      the new `/assets/*` rate-limit exclusion. The 6,551 404s (39%) in `COMPLETED.md` Appendix B predate
-      the WAF, so the next reading should drop hard.
-- [x] **`early_hints` reverted to `off`** (2026-10-29). Turning it on in T16b produced **832**
-      weighted `504` responses in six days (24–29 Oct, re-measured; the earlier note said 671), every one
-      with `requestSource = "earlyHintsCache"`, against **zero** in the baseline window. The prefetch
-      fails consistently and warms almost nothing at this traffic level. Evidence in `COMPLETED.md`
-      → Appendix C.
-- [ ] **LCP**: re-check the hero `preload` and the five `woff2`. The 3.31 s baseline (12 of 28 samples
-      above 2.5 s) was measured **with** `early_hints` on, so it is not a clean baseline either way.
-      Needs a fresh reading after the revert.
-- [ ] **Zero external referrers**: nobody arrives from search or social. Crosses with T15.
-      **Unverifiable with the current token**: `clientRefererHost` returns `403` (see the blockers
-      table). Needs a wider analytics scope before this claim can be confirmed or denied.
 
 ## Reading analytics
 
