@@ -213,6 +213,7 @@ Legend: `ES` = Spanish published, `EN` = English published.
 | `repeticiones-parciales` | yes | yes | yes | 0 em dashes | pass |
 | `entrenamiento-superlento` | yes | yes | yes | 0 em dashes | pass |
 | `repeticiones-con-trampa` | yes | yes | yes | 0 em dashes | pass |
+| `series-descendentes` | yes | yes | yes | 0 em dashes | pass |
 
 ## Resume (2026-11-13)
 
@@ -365,7 +366,7 @@ Legend: `ES` = Spanish published, `EN` = English published.
 - [x] ES · [x] EN — `/repeticiones-parciales/` — Repeticiones Parciales, alta intensidad para más músculo
 - [x] ES · [x] EN — `/entrenamiento-superlento/` — Entrenamiento Superlento: Ejercicios para la Hipertrofia
 - [x] ES · [x] EN — `/repeticiones-con-trampa/` — Repeticiones con trampa
-- [ ] ES · [ ] EN — `/series-descendentes/` — Series descendentes \| Gana más músculo con las Drop Sets
+- [x] ES · [x] EN — `/series-descendentes/` — Series descendentes \| Gana más músculo con las Drop Sets
 - [ ] ES · [ ] EN — `/prefatiga/` — Entrenamiento de Prefatiga: ¡Revelado el Secreto del Crecimiento!
 - [ ] ES · [ ] EN — `/triseries/` — Triseries \| Técnica y rutinas con triseries
 - [ ] ES · [ ] EN — `/velocidad-repeticiones/` — Entrenando con repeticiones lentas o rápidas ⇨ ¿Usar Ambas? — **FUSIONADA en `/tiempos-entrenamiento/` + `/en/rep-tempo/` (decisión del owner, 2026-11-14): no se publica como página.**
