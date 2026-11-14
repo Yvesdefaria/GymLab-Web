@@ -218,6 +218,7 @@ Legend: `ES` = Spanish published, `EN` = English published.
 | `triseries` | yes | yes | yes | 0 em dashes | pass |
 | `tecnica-descanso-pausa` | yes | yes | yes | 0 em dashes | pass |
 | `series-alternativas` | yes | yes | yes | 0 em dashes | pass |
+| `repeticiones-negativas` | yes | yes | yes | 0 em dashes | pass |
 
 ## Resume (2026-11-13)
 
@@ -376,7 +377,7 @@ Legend: `ES` = Spanish published, `EN` = English published.
 - [ ] ES · [ ] EN — `/velocidad-repeticiones/` — Entrenando con repeticiones lentas o rápidas ⇨ ¿Usar Ambas? — **FUSIONADA en `/tiempos-entrenamiento/` + `/en/rep-tempo/` (decisión del owner, 2026-11-14): no se publica como página.**
 - [x] ES · [x] EN — `/tecnica-descanso-pausa/` — Técnica de Descanso/Pausa (Rest/Pause) \| Intensidad máxima
 - [x] ES · [x] EN — `/series-alternativas/` — Series alternativas
-- [ ] ES · [ ] EN — `/repeticiones-negativas/` — Repeticiones negativas: el secreto para ganar músculo
+- [x] ES · [x] EN — `/repeticiones-negativas/` — Repeticiones negativas: el secreto para ganar músculo
 - [ ] ES · [ ] EN — `/ejercicios-de-alta-intensidad/` — Ejercicios de alta intensidad para finalizar el entrenamiento
 - [ ] ES · [ ] EN — `/principio-de-contraccion-maxima/` — Contracción Máxima \| Técnica avanzada de hipertrofia
 - [ ] ES · [ ] EN — `/cuando-ir-al-traumatologo-experiencia-personal/` — Cuándo ir al traumatólogo y no autodiagnosticarte \| Mi experiencia
