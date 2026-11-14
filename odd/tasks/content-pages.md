@@ -9,19 +9,19 @@ Legend: `ES` = Spanish published, `EN` = English published.
 
 ## Progress
 
-- **Built: 174 / 792** (ES 174, EN 174).
-- Last batch: 10 pages, from `/series-gigantes/` to `/repeticiones-forzadas/`; 9 built, the AEKE S1
-  Pro row discarded by the owner.
+- **Built: 183 / 792** (ES 183, EN 183).
+- Last batch: 9 pages built from `/repeticiones-parciales/` to `/repeticiones-negativas/`, plus
+  `/velocidad-repeticiones/` fused into `/es/tiempos-entrenamiento/` + `/en/rep-tempo/`.
 
 | Block | Articles | Built |
 | --- | ---: | ---: |
-| Entrenamiento | 222 | 135 |
+| Entrenamiento | 222 | 144 |
 | Por Músculo | 80 | 5 |
 | Rutinas | 80 | 0 |
 | Ejercicios | 196 | 34 |
 | Nutrición | 191 | 0 |
 | Mujer Fitness | 23 | 0 |
-| **Total** | **792** | **174** |
+| **Total** | **792** | **183** |
 
 ## Copy gate (mandatory before ticking ES/EN)
 

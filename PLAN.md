@@ -12,25 +12,25 @@ Last updated: 2026-11-14.
   TypeScript strict, fully static. Languages `es` (default) and `en-GB`, both under a locale prefix.
 - Production is **live** at `https://gymlab.dev`, served by the Worker `gymlab-web` with static assets.
   It is not Cloudflare Pages. Deploy with `npx wrangler deploy`.
-- Production is live with batch 16; batch 17 is built and green locally with the AEKE S1 Pro pair
-  removed, pending the push: **364 pages** and **360 sitemap URLs**.
-  Gates: `check:copy` **8,874/8,874**, build **364 pages**, `check:i18n` **5,735/5,735**.
+- Production is live with batch 17; batch 18 is built and green locally, pending the push: **382 pages**
+  and **378 sitemap URLs**.
+  Gates: `check:copy` **9,333/9,333**, build **382 pages**, `check:i18n` **6,014/6,014**.
 - `app.gymlab.dev` is `noindex` with a real `robots.txt`.
 - The landing, the three calculators, the 404 and the legal pages all ship in both locales.
 - Measurement and the SQL recipe: see "Reading analytics" below and `COMPLETED.md` Appendix B.
 
-## Content library — 174 / 792 (2026-11-14)
+## Content library — 183 / 792 (2026-11-14)
 
-- **174 bilingual pages** (ES 174, EN 174), **174 unique hero paths**. Blocks: Entrenamiento 135,
+- **183 bilingual pages** (ES 183, EN 183), **183 unique hero paths**. Blocks: Entrenamiento 144,
   Por Músculo 5, Ejercicios 34.
-- **Batch 17 is built and green (2026-11-14).** The local build has **364 pages** and **360 sitemap
+- **Batch 18 is built and green (2026-11-14).** The local build has **382 pages** and **378 sitemap
   URLs**; the push awaits the owner's go-ahead.
-- Gates: `npm run verify` = `check:copy` **8,874/8,874** + build **364 pages** + `check:i18n`
-  **5,735/5,735**.
+- Gates: `npm run verify` = `check:copy` **9,333/9,333** + build **382 pages** + `check:i18n`
+  **6,014/6,014**.
 - Docs: `odd/tasks/content-library-session.md` (start here next session),
-  `odd/tasks/content-pages.md` (per-page checklist + resume), `odd/tasks/content-library-batch-17.md`
+  `odd/tasks/content-pages.md` (per-page checklist + resume), `odd/tasks/content-library-batch-18.md`
   (the last batch) and `odd/tasks/guides-page-contract.md` (the page contract and copy gate).
-- **Next 10:** `/repeticiones-parciales/` and the rows after it.
+- **Next 10:** `/ejercicios-de-alta-intensidad/` and the rows after it.
 - **Follow-up:** `/ejercicios-en-polea-ventajas`, `/escoger-actividad-en-tu-vuelta-al-gimnasio` and
   `/jalones-frontales-brazos-rectos` shared a byte-identical hero; batch 17 replaced two of them.
   Three suspected pairs remain from earlier batches (dHash 1-5, same author): `remo-polea-sentado`
@@ -40,10 +40,12 @@ Last updated: 2026-11-14.
   (owner decision, 2026-11-07). `/aeke-s1-pro-entrenamiento-domestico-con-ia/` was published with
   batch 17 and removed the same day by owner decision (2026-11-14); its pair, hero, routes and
   checklist row are gone and the row is marked DESCARTADA.
+  `/velocidad-repeticiones/` was fused into `/es/tiempos-entrenamiento/` + `/en/rep-tempo/` instead of
+  published (owner decision, 2026-11-14); its row is marked FUSIONADA.
 - Future batches deploy via Workers Builds on the push; run `npm run verify` first.
-- Image rule: one unique hero per page; `check:copy` fails on a duplicate path. Batches 5-17 heroes are
+- Image rule: one unique hero per page; `check:copy` fails on a duplicate path. Batches 5-18 heroes are
   Wikimedia Commons (CC0/CC BY/CC BY-SA/public domain); the `alt` includes the credit.
-- Engram topic `content-library/handoff` covers through batch 17; the scaling architecture is PLAN
+- Engram topic `content-library/handoff` covers through batch 18; the scaling architecture is PLAN
   Phase 7.
 
 ## Content and growth — phased plan (2026-11-05)
