@@ -206,8 +206,12 @@ target page and the date.
        `check:copy` 9,333/9,333, build 382 pages, `check:i18n` 6,014/6,014; 404 internal links
        resolve; 112 TOC anchors match; 0 `.md` links, 0 empty `#` links, 0 em dashes in the 20
        sources; 12 tables; sitemap 378 URLs and 1,134 alternates.
-- [ ] 9. Parent — record the pages in the session handoff and `PLAN.md`; commit, then **ask the owner
-       before pushing**.
+- [x] 9. Parent — record the pages in the session handoff and `PLAN.md`; push `6df914a..7aa2ca8` on the
+       owner's explicit go-ahead and verify production: **378 sitemap URLs**, 1,134 alternates, and the
+       new routes answering 200 on 2026-11-14 (`/es/repeticiones-parciales/`, `/en/partial-reps/`,
+       `/en/drop-sets/`, `/en/tri-sets/`, `/en/rest-pause/`, `/en/alternating-sets/`,
+       `/en/negative-reps/`, `/es/triseries/`, `/es/tecnica-descanso-pausa/`, plus the merged
+       `/es/tiempos-entrenamiento/`).
 
 ## Acceptance criteria
 
@@ -288,6 +292,11 @@ envelope and no lineage.
 
 ## Notes for the next batch
 
+- The batch is live: pushed `6df914a..7aa2ca8` on 2026-11-14 and verified in production.
+- **Incident during the close:** a PowerShell pipeline (`Get-Content` into `Set-Content -NoNewline`)
+  collapsed `PLAN.md` to a single line inside the docs commit. It was restored from the previous
+  commit and the edits were re-applied before the push; the amended commit is `7aa2ca8`. Never pipe
+  `Get-Content` into `Set-Content` for these docs.
 - Next 10 starts at `/ejercicios-de-alta-intensidad/`.
 - `velocidad-repeticiones` is fused, not pending: do not rebuild it.
 - The archive's `triseries` had two garbled exercise names (`remo sentado en polea, de pie`,

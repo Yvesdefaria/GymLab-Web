@@ -13,8 +13,8 @@ Last updated: 2026-11-12. Read this first next session.
 - Blocks: Entrenamiento **144**, Por Músculo **5**, Ejercicios **34**.
 - **183 unique hero paths.** Three suspected pairs from earlier batches remain (dHash 1-5, same
   author); the batch 17 and 18 duplicates were fixed. See the follow-up in `PLAN.md`.
-- **Batch 18 is built and green locally (2026-11-14); batch 17 is the last one live.** Pending: push
-  batch 18, which leaves the build at **382 pages** and **378 sitemap URLs**.
+- **Batch 18 is built, green, pushed and live (2026-11-14).** The build has **382 pages** and
+  **378 sitemap URLs**.
 - Three archive rows are settled and must stay out: the FiveStars Fitness congress page (discarded),
   the AEKE S1 Pro page (discarded 2026-11-14) and `/velocidad-repeticiones/` (fused into the tempo
   page, 2026-11-14).
@@ -118,8 +118,9 @@ Start the dev server with `npm run dev` for local review.
   empty `#` links and zero em dashes in the sources; 112 TOC anchors match; 12 tables, all within the
   three-column rule.
 - Commits: pages `c5f12c8`, `af0e50e`, `fa86bb4`, `9cff69c`, `6c15137`, `48a124d`, `eb8b531`,
-  `db4d137`, `983ded4`; merge `fac33b0`; routes `e0ae34f`; docs commit and push added at close.
-  **The push waits for the owner's go-ahead.**
+  `db4d137`, `983ded4`; merge `fac33b0`; routes `e0ae34f`; docs `7aa2ca8`. Pushed
+  `6df914a..7aa2ca8` with the owner's explicit go-ahead; production verified at **378 sitemap URLs**
+  and 1,134 alternates, with the new routes answering 200.
 - **Gotcha:** a small Commons photo can pass every gate; check pixel dimensions, not only file size.
   The seated calf-raise source was 640×384 and had to be replaced.
 - **Gotcha:** `check:copy` does not validate link resolution; the 404-link check is a separate script.

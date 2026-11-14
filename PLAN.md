@@ -12,8 +12,7 @@ Last updated: 2026-11-14.
   TypeScript strict, fully static. Languages `es` (default) and `en-GB`, both under a locale prefix.
 - Production is **live** at `https://gymlab.dev`, served by the Worker `gymlab-web` with static assets.
   It is not Cloudflare Pages. Deploy with `npx wrangler deploy`.
-- Production is live with batch 17; batch 18 is built and green locally, pending the push: **382 pages**
-  and **378 sitemap URLs**.
+- Production is live with batch 18 (pushed 2026-11-14): **382 pages** and **378 sitemap URLs**.
   Gates: `check:copy` **9,333/9,333**, build **382 pages**, `check:i18n` **6,014/6,014**.
 - `app.gymlab.dev` is `noindex` with a real `robots.txt`.
 - The landing, the three calculators, the 404 and the legal pages all ship in both locales.
@@ -23,8 +22,8 @@ Last updated: 2026-11-14.
 
 - **183 bilingual pages** (ES 183, EN 183), **183 unique hero paths**. Blocks: Entrenamiento 144,
   Por Músculo 5, Ejercicios 34.
-- **Batch 18 is built and green (2026-11-14).** The local build has **382 pages** and **378 sitemap
-  URLs**; the push awaits the owner's go-ahead.
+- **Batch 18 is built, green and pushed (2026-11-14).** The build has **382 pages** and **378 sitemap
+  URLs**.
 - Gates: `npm run verify` = `check:copy` **9,333/9,333** + build **382 pages** + `check:i18n`
   **6,014/6,014**.
 - Docs: `odd/tasks/content-library-session.md` (start here next session),
