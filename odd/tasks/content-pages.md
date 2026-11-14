@@ -201,6 +201,8 @@ Legend: `ES` = Spanish published, `EN` = English published.
 | `spinning-mejores-consejos-por-nivel` | yes | yes | yes | 0 em dashes | pass |
 | `entrenamiento-alta-intensidad` | yes | yes | yes | 0 em dashes | pass |
 
+| `series-gigantes` | yes | yes | yes | 0 em dashes | pass |
+
 ## Resume (2026-11-13)
 
 - Built: **165/792**; **165 unique hero paths**; **batch 16 built and green**.
@@ -339,7 +341,7 @@ Legend: `ES` = Spanish published, `EN` = English published.
 ### Entrenamiento (25)
 
 - [x] ES · [x] EN — `/entrenamiento-alta-intensidad/` — Entrenamiento de alta intensidad \| Las mejores técnicas
-- [ ] ES · [ ] EN — `/series-gigantes/` — Series Gigantes 【Las superseries más intensas】
+- [x] ES · [x] EN — `/series-gigantes/` — Series Gigantes 【Las superseries más intensas】
 - [ ] ES · [ ] EN — `/memoria-muscular-que-es-como-funciona/` — Memoria Muscular: Qué es y Cómo Recuperar tu Nivel
 - [ ] ES · [ ] EN — `/aeke-s1-pro-entrenamiento-domestico-con-ia/` — AEKE S1 Pro: entrenamiento doméstico personalizado con IA
 - [ ] ES · [ ] EN — `/mejores-ejercicios-en-maquina-de-musculacion/` — Los diez mejores ejercicios en máquina de musculación
