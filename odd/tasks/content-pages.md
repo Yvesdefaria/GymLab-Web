@@ -217,6 +217,8 @@ Legend: `ES` = Spanish published, `EN` = English published.
 
 | `superseries` | yes | yes | yes | 0 em dashes | pass |
 
+| `principios-weider` | yes | yes | yes | 0 em dashes | pass |
+
 ## Resume (2026-11-13)
 
 - Built: **165/792**; **165 unique hero paths**; **batch 16 built and green**.
@@ -363,7 +365,7 @@ Legend: `ES` = Spanish published, `EN` = English published.
 - [x] ES · [x] EN — `/calentamiento-y-estiramientos/` — Como calentar en el gimnasio
 - [x] ES · [x] EN — `/como-aplicar-los-beneficios-del-yoga-al-culturismo/` — Como aplicar los beneficios del Yoga al culturismo
 - [x] ES · [x] EN — `/superseries/` — Superseries, la técnica de alta intensidad más efectiva
-- [ ] ES · [ ] EN — `/principios-weider/` — Principios Weider: claves para un entrenamiento efectivo
+- [x] ES · [x] EN — `/principios-weider/` — Principios Weider: claves para un entrenamiento efectivo
 - [ ] ES · [ ] EN — `/repeticiones-forzadas/` — Repeticiones Forzadas: Técnica para Incrementar la Hipertrofia
 - [ ] ES · [ ] EN — `/repeticiones-parciales/` — Repeticiones Parciales, alta intensidad para más músculo
 - [ ] ES · [ ] EN — `/entrenamiento-superlento/` — Entrenamiento Superlento: Ejercicios para la Hipertrofia
