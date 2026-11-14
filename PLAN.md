@@ -12,20 +12,21 @@ Last updated: 2026-11-14.
   TypeScript strict, fully static. Languages `es` (default) and `en-GB`, both under a locale prefix.
 - Production is **live** at `https://gymlab.dev`, served by the Worker `gymlab-web` with static assets.
   It is not Cloudflare Pages. Deploy with `npx wrangler deploy`.
-- Production is live with batch 17 (pushed 2026-11-14): **366 pages** and **362 sitemap URLs**.
-  Gates: `check:copy` **8,925/8,925**, build **366 pages**, `check:i18n` **5,766/5,766**.
+- Production is live with batch 16; batch 17 is built and green locally with the AEKE S1 Pro pair
+  removed, pending the push: **364 pages** and **360 sitemap URLs**.
+  Gates: `check:copy` **8,874/8,874**, build **364 pages**, `check:i18n` **5,735/5,735**.
 - `app.gymlab.dev` is `noindex` with a real `robots.txt`.
 - The landing, the three calculators, the 404 and the legal pages all ship in both locales.
 - Measurement and the SQL recipe: see "Reading analytics" below and `COMPLETED.md` Appendix B.
 
-## Content library — 175 / 792 (2026-11-14)
+## Content library — 174 / 792 (2026-11-14)
 
-- **175 bilingual pages** (ES 175, EN 175), **175 unique hero paths**. Blocks: Entrenamiento 136,
+- **174 bilingual pages** (ES 174, EN 174), **174 unique hero paths**. Blocks: Entrenamiento 135,
   Por Músculo 5, Ejercicios 34.
-- **Batch 17 is built, green and pushed (2026-11-14).** The build has **366 pages** and **362 sitemap
-  URLs**.
-- Gates: `npm run verify` = `check:copy` **8,925/8,925** + build **366 pages** + `check:i18n`
-  **5,766/5,766**.
+- **Batch 17 is built and green (2026-11-14).** The local build has **364 pages** and **360 sitemap
+  URLs**; the push awaits the owner's go-ahead.
+- Gates: `npm run verify` = `check:copy` **8,874/8,874** + build **364 pages** + `check:i18n`
+  **5,735/5,735**.
 - Docs: `odd/tasks/content-library-session.md` (start here next session),
   `odd/tasks/content-pages.md` (per-page checklist + resume), `odd/tasks/content-library-batch-17.md`
   (the last batch) and `odd/tasks/guides-page-contract.md` (the page contract and copy gate).
@@ -36,7 +37,9 @@ Last updated: 2026-11-14.
   with `superserie-de-espalda-para-terminar-tu-rutina`, `como-respirar-mientras-entrenamos` with
   `levantar-aumentar-peso`, and `pullover-barra` with `repeticion-maxima`.
 - **Discarded:** `/congresos-profesores-factores-clave-fivestars-fitness/` does not go to production
-  (owner decision, 2026-11-07).
+  (owner decision, 2026-11-07). `/aeke-s1-pro-entrenamiento-domestico-con-ia/` was published with
+  batch 17 and removed the same day by owner decision (2026-11-14); its pair, hero, routes and
+  checklist row are gone and the row is marked DESCARTADA.
 - Future batches deploy via Workers Builds on the push; run `npm run verify` first.
 - Image rule: one unique hero per page; `check:copy` fails on a duplicate path. Batches 5-17 heroes are
   Wikimedia Commons (CC0/CC BY/CC BY-SA/public domain); the `alt` includes the credit.

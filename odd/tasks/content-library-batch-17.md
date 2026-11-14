@@ -16,7 +16,7 @@ per page with its evidence here.
 | --- | --- | --- | --- | ---: | --- | --- |
 | 1 | `series-gigantes` | `giant-sets` | `series-gigantes.md` | 504 | series gigantes | |
 | 2 | `memoria-muscular-que-es-como-funciona` | `muscle-memory` | `memoria-muscular-que-es-como-funciona.md` | 1,607 | memoria muscular | |
-| 3 | `aeke-s1-pro-entrenamiento-domestico-con-ia` | `aeke-s1-pro-ai-home-gym` | `aeke-s1-pro-entrenamiento-domestico-con-ia.md` | 1,283 | gimnasio doméstico con IA | |
+| 3 | ~~`aeke-s1-pro-entrenamiento-domestico-con-ia`~~ | ~~`aeke-s1-pro-ai-home-gym`~~ | `aeke-s1-pro-entrenamiento-domestico-con-ia.md` | 1,283 | gimnasio doméstico con IA | discarded 2026-11-14 |
 | 4 | `mejores-ejercicios-en-maquina-de-musculacion` | `best-machine-exercises` | `mejores-ejercicios-en-maquina-de-musculacion.md` | 1,100 | ejercicios en máquina | |
 | 5 | `entrenamiento-funcional` | `functional-training` | `entrenamiento-funcional.md` | 1,631 | entrenamiento funcional | |
 | 6 | `calentamiento-y-estiramientos` | `gym-warm-up` | `calentamiento-y-estiramientos.md` | 1,212 | cómo calentar en el gimnasio | |
@@ -57,10 +57,10 @@ each other or themselves.
    the two mechanisms the archive describes, and drop that sentence.
 7. **AEKE S1 Pro:** the archive is a commercial advertorial with UTM links, unverifiable funding
    numbers, a 39-versus-40-day date error, a wrong pound-to-kilogram conversion and a "lifetime
-   access" promise. The page ships as a neutral overview: every hardware spec is attributed to the
-   manufacturer ("según el fabricante"), with zero outbound commercial links, zero funding or price
-   figures and zero lifetime-access promise. If the owner prefers to drop the row, that is one row
-   and one pair to remove; the decision is recorded here.
+   access" promise. It was rewritten as a neutral overview with manufacturer-attributed specs, zero
+   outbound links and zero funding or price figures, then **discarded by the owner on 2026-11-14**:
+   the pair, its hero, its routes and its checklist row are removed. Do not rebuild it in a later
+   batch.
 8. **Machine exercises:** keep the ten exercises, fix the gender error and the heading levels, and
    drop the pandemic-era commentary and the 100x100fitness link. The joint-stress caveat stays.
 9. **Functional training:** keep both tables (routine by level and pros/cons) inside the 3-column
@@ -199,6 +199,10 @@ before the commit, so the checklist never lags the work.
        `1f423a3..c92e74d` and verify production: **362 sitemap URLs**, 1,086 alternates and
        `/es/series-gigantes/`, `/en/giant-sets/`, `/en/forced-reps/` answering 200 on 2026-11-14.
        Push record commit added after the verification.
+- [x] 10. Owner decision (2026-11-14) — discard the AEKE S1 Pro pair: files, hero, routes and
+       checklist row removed; the row is marked DESCARTADA like the FiveStars one. Gates after the
+       removal: `check:copy` 8,874/8,874, build 364 pages, `check:i18n` 5,735/5,735, sitemap
+       **360 URLs** and 1,080 alternates. Not pushed yet: awaiting the owner's go-ahead.
 
 ## Acceptance criteria
 
@@ -238,7 +242,7 @@ Test-first exception: prose and images have no runnable deterministic RED; `chec
 | --- | --- | --- | --- | ---: | --- |
 | 1 | `series-gigantes` | ES + EN | 330 KB · CC BY 2.0 | 8,466 | `c15c777` |
 | 2 | `memoria-muscular-que-es-como-funciona` | ES + EN | 226 KB · CC BY 2.0 | 8,517 | `b72a26f` |
-| 3 | `aeke-s1-pro-entrenamiento-domestico-con-ia` | ES + EN | 155 KB · CC BY 2.0 | 8,568 | `b9ce05b` |
+| 3 | ~~`aeke-s1-pro-entrenamiento-domestico-con-ia`~~ | — | — | — | `b9ce05b`, removed 2026-11-14 |
 | 4 | `mejores-ejercicios-en-maquina-de-musculacion` | ES + EN | 235 KB · CC BY 2.0 | 8,619 | `23263c5` |
 | 5 | `entrenamiento-funcional` | ES + EN | 206 KB · public domain | 8,670 | `49a0855` |
 | 6 | `calentamiento-y-estiramientos` | ES + EN | 285 KB · CC BY 2.0 | 8,721 | `a62e485` |
@@ -251,16 +255,16 @@ Test-first exception: prose and images have no runnable deterministic RED; `chec
 
 | Check | Result |
 | --- | --- |
-| `npm run check:copy` | **8,925/8,925** |
-| `npm run build` | **366 pages** (346 + 20) |
-| `npm run check:i18n` | **5,766/5,766** |
-| `dist/sitemap-0.xml` | **362 URLs**, 1,086 `hreflang` alternates |
-| Internal links on the 20 built pages | **448**, all resolve |
+| `npm run check:copy` | **8,874/8,874** |
+| `npm run build` | **364 pages** (346 + 20 − 2) |
+| `npm run check:i18n` | **5,735/5,735** |
+| `dist/sitemap-0.xml` | **360 URLs**, 1,080 `hreflang` alternates |
+| Internal links on the 18 built pages | 448 at write time; the removed pair carried no inbound links |
 | `.md` links · empty `#` links · em dashes in sources | 0 · 0 · 0 |
-| TOC anchors vs heading ids | **122/122** match |
-| Tables | 10 `<table>` elements: 2 routine in giant sets, 2 text in functional, 1 text in supersets, per locale |
-| Hero duplicates (dHash ≤ 10 across 175) | 4 pairs before the fix, 0 at distance 0 after it; 4 suspected pre-existing pairs at distance 1–9 documented in `PLAN.md` |
-| Article counts | 175 ES, 175 EN, 175 hero directories |
+| TOC anchors vs heading ids | **122/122** match at write time |
+| Tables | 10 `<table>` elements in the batch: 2 routine in giant sets, 2 text in functional, 1 text in supersets, per locale |
+| Hero duplicates (dHash ≤ 10 across 174) | 4 pairs before the fix, 0 at distance 0 after it; 3 suspected pre-existing pairs at distance 1–9 documented in `PLAN.md` |
+| Article counts | 174 ES, 174 EN, 174 hero directories |
 
 ## Native review assessment (2026-11-14)
 

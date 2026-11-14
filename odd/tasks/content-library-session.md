@@ -9,21 +9,22 @@ Last updated: 2026-11-12. Read this first next session.
 
 ## State
 
-- **175 / 792 bilingual pages** (ES 175, EN 175).
-- Blocks: Entrenamiento **136**, Por Músculo **5**, Ejercicios **34**.
-- **175 unique hero paths.** Three suspected pairs from earlier batches remain (dHash 1–5, same
+- **174 / 792 bilingual pages** (ES 174, EN 174).
+- Blocks: Entrenamiento **135**, Por Músculo **5**, Ejercicios **34**.
+- **174 unique hero paths.** Three suspected pairs from earlier batches remain (dHash 1–5, same
   author); the batch 17 quadruple defect was fixed. See the follow-up in `PLAN.md`.
-- **Batch 17 is built, green and pushed (2026-11-14).** The build has **366 pages** and
-  **362 sitemap URLs**.
-- One archive row is discarded and must stay out: the FiveStars Fitness congress page.
+- **Batch 17 is built and green (2026-11-14); batch 16 is the last one live.** Pending: push the
+  AEKE S1 Pro removal, which leaves the build at **364 pages** and **360 sitemap URLs**.
+- Two archive rows are discarded and must stay out: the FiveStars Fitness congress page and the AEKE
+  S1 Pro page (owner decision, 2026-11-14).
 - Batch record: `odd/tasks/content-library-batch-17.md`.
 
 ## Gates
 
 ```powershell
-npm run check:copy   # 8,925/8,925
-npm run build        # 366 pages
-npm run check:i18n   # 5,766/5,766
+npm run check:copy   # 8,874/8,874
+npm run build        # 364 pages
+npm run check:i18n   # 5,735/5,735
 npm run verify       # all three, in that order
 npm run dev          # http://localhost:4321
 ```
@@ -48,9 +49,9 @@ Start the dev server with `npm run dev` for local review.
 - **Ejercicio Cardiovascular (33):** the 23 from batch 15, plus clothing and shoes, jump rope, side
   stitch, treadmill vs bike, the Cooper test, the 30-minute running plan, walking, cycling and
   spinning.
-- **Entrenamiento (11):** high-intensity training methods and rules, giant sets, muscle memory, the
-  AEKE S1 Pro home gym, the ten machine exercises, functional training, the gym warm-up, yoga for
-  bodybuilders, supersets, the Weider principles and forced reps.
+- **Entrenamiento (10):** high-intensity training methods and rules, giant sets, muscle memory, the
+  ten machine exercises, functional training, the gym warm-up, yoga for bodybuilders, supersets, the
+  Weider principles and forced reps.
 - **Recovery and planning (10):** back-pain exercises (YMYL), stretching, stretching circuit, muscle
   failure, periodization, exercise and immune system, deload week, sleep, training planning and
   muscle recovery.
@@ -105,25 +106,27 @@ Start the dev server with `npm run dev` for local review.
 
 ## Session close (2026-11-14)
 
-- Batch 17 wrote 10 page pairs (20 files) from `/series-gigantes/` to `/repeticiones-forzadas/`:
-  175/792 pages, 10 new unique heroes.
+- Batch 17 wrote 9 page pairs (18 files) from `/series-gigantes/` to `/repeticiones-forzadas/`:
+  174/792 pages, 9 new unique heroes. The tenth row, AEKE S1 Pro, was discarded by the owner the same
+  day and its pair, hero and routes were removed.
 - Two writers ran sequentially, five pairs each; the parent replaced four duplicate heroes (one in
   the new batch, three legacy), added 32 cross-links, registered the routes and ran the gates.
-- Gates are green: `check:copy` 8,925/8,925, build **366 pages**, `check:i18n` 5,766/5,766, sitemap
-  **362 URLs** with 1,086 alternates.
-- Structural checks the gate does not cover, run on the 20 built pages: 448 internal links all
-  resolve; zero `.md` links, zero empty `#` links and zero em dashes in the sources; 122 TOC anchors
-  match their heading ids; 10 tables across the batch, all within the three-column rule.
-- Commits, one per page with its checklist rows marked: `c15c777`, `b72a26f`, `b9ce05b`, `23263c5`,
-  `49a0855`, `a62e485`, `8aacab2`, `79d23b6`, `fb44ae0`, `840556d`; routes `aa4ef35`; duplicate-hero
-  fix `a5a77f1`; docs commit and push record added at close.
+- Gates with the removal applied: `check:copy` 8,874/8,874, build **364 pages**, `check:i18n`
+  5,735/5,735, sitemap **360 URLs** with 1,080 alternates.
+- Structural checks the gate does not cover, run on the built pages: 448 internal links all resolve;
+  zero `.md` links, zero empty `#` links and zero em dashes in the sources; 122 TOC anchors match
+  their heading ids; 10 tables across the batch, all within the three-column rule.
+- Commits, one per page with its checklist rows marked: `c15c777`, `b72a26f`, `b9ce05b` (AEKE,
+  removed later), `23263c5`, `49a0855`, `a62e485`, `8aacab2`, `79d23b6`, `fb44ae0`, `840556d`;
+  routes `aa4ef35`; duplicate-hero fix `a5a77f1`; docs `c92e74d`; push record `ca61cdc`.
+  `1f423a3..ca61cdc` reached production with the AEKE page; the removal commit is local until the
+  owner approves the push.
 - **Gotcha:** `check:copy` compares hero paths, not bytes. A byte-different crop of an already-used
   Commons photo passes the gate, so hash every new hero and compare the Commons file title. Batch 17
   found one new reuse and three legacy ones this way.
 - **Gotcha:** Wikimedia Commons rate-limits the Action API and rejects thumbnail widths outside its
   allowed list; leave 4–10 s between calls and take the thumb URL from `iiurlwidth`.
-- **Archive edits:** the AEKE page is a neutral overview with manufacturer-attributed specs, no links
-  and no funding or lifetime claims; the Weider page drops the lactate-inflates-cells claim; the
-  muscle-memory page drops the impossible hypertrophy-while-detraining sentence.
+- **Archive edits:** the Weider page drops the lactate-inflates-cells claim; the muscle-memory page
+  drops the impossible hypertrophy-while-detraining sentence; the AEKE row is discarded.
 - Next session starts at `/repeticiones-parciales/`.
 - Engram topic `content-library/handoff` is updated with this state.
