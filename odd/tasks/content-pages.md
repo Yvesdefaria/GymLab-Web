@@ -411,7 +411,7 @@ Legend: `ES` = Spanish published, `EN` = English published.
 - [x] ES · [x] EN — `/estiramiento-de-la-parte-posterior-de-los-hombros/` — Estiramientos de hombros esenciales para el gimnasio
 - [x] ES · [x] EN — `/rutina-para-trabajar-tus-hombros-de-forma-completa/` — Rutina para trabajar tus hombros de forma completa
 - [x] ES · [x] EN — `/los-trucos-de-arnold-para-desarrollar-sus-hombros/` — Los trucos de Arnold para desarrollar sus hombros
-- [ ] ES · [ ] EN — `/entrenar-los-trapecios-con-los-hombros-o-con-la-espalda/` — Entrenar los trapecios con los hombros o con la espalda
+- [x] ES · [x] EN — `/entrenar-los-trapecios-con-los-hombros-o-con-la-espalda/` — Entrenar los trapecios con los hombros o con la espalda
 - [ ] ES · [ ] EN — `/remo-de-pie-agarre-amplitud/` — La amplitud de agarre en el remo de pie
 
 ### Físicos de leyenda (12)
