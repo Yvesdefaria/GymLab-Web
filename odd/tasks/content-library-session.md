@@ -9,25 +9,25 @@ Last updated: 2026-11-12. Read this first next session.
 
 ## State
 
-- **201 / 792 bilingual pages** (ES 201, EN 201).
-- Blocks: Entrenamiento **162**, Por Músculo **5**, Ejercicios **34**.
-- **201 unique hero paths.** One exact duplicate pair remains from an earlier batch
-  (`remo-polea-sentado` with `superserie-de-espalda-para-terminar-tu-rutina`); the batch 17 to 20
+- **211 / 792 bilingual pages** (ES 211, EN 211).
+- Blocks: Entrenamiento **172**, Por Músculo **5**, Ejercicios **34**.
+- **211 unique hero paths.** One exact duplicate pair remains from an earlier batch
+  (`remo-polea-sentado` with `superserie-de-espalda-para-terminar-tu-rutina`); the batch 17 to 21
   duplicates were fixed. See the follow-up in `PLAN.md`.
-- **Batch 20 is built, green and committed (2026-11-15).** The build has **418 pages** and
-  **414 sitemap URLs**. The last eight rows of the Prevención block shipped as pages; the two
-  duplicate rows were fused.
+- **Batch 21 is built, green and committed (2026-11-15).** The build has **438 pages** and
+  **434 sitemap URLs**. The Entrenamiento del Hombro block is closed and Físicos de leyenda has its
+  first page.
 - Four archive rows are settled and must stay out: the FiveStars Fitness congress page (discarded),
   the AEKE S1 Pro page (discarded 2026-11-14), `/velocidad-repeticiones/` (fused into the tempo page,
   2026-11-14) and the two batch 20 fusions (2026-11-15).
-- Batch record: `odd/tasks/content-library-batch-20.md`.
+- Batch record: `odd/tasks/content-library-batch-21.md`.
 
 ## Gates
 
 ```powershell
-npm run check:copy   # 10,251/10,251
-npm run build        # 418 pages
-npm run check:i18n   # 6,572/6,572
+npm run check:copy   # 10,761/10,761
+npm run build        # 438 pages
+npm run check:i18n   # 6,882/6,882
 npm run verify       # all three, in that order
 npm run dev          # http://localhost:4321
 ```
@@ -63,19 +63,22 @@ Start the dev server with `npm run dev` for local review.
   correct posture, physiotherapy for chronic pain, soreness (DOMS), overtraining, active recovery,
   central nervous system fatigue, tennis elbow, carpal tunnel, Achilles tendinopathy, plantar
   fasciitis, training with back problems and patellar tendinopathy.
+- **Entrenamiento del Hombro (9):** rear delts, trap execution, the military press comparison, shoulder
+  anatomy, shoulder stretches, the complete routine, Arnold's techniques, trap placement and the
+  upright row grip.
+- **Físicos de Leyenda (1):** Jay Cutler's hamstring routine.
 - **Recovery and planning (10):** back-pain exercises (YMYL), stretching, stretching circuit, muscle
   failure, periodization, exercise and immune system, deload week, sleep, training planning and
   muscle recovery.
 
 ## Next 10
 
-1. Start at `/consejos-entrenar-deltoides-posterior/` and follow the pending rows in
-   `content-pages.md` in order; the Entrenamiento del Hombro block has nine rows, then Físicos de
-   leyenda.
+1. Start at `/franco-columbu-dieta-y-entrenamiento/` and follow the pending rows in
+   `content-pages.md` in order; Físicos de leyenda has eleven rows left.
 2. Keep the same copy, unique-hero and gate flow.
-3. Before publishing another photo from Shixart1985, Nenad Stojkovic, Miguel Angel Omaña Rojas or the
-   InjuryMap illustration family, compare the Commons file title and the dHash against the 201
-   existing heroes.
+3. Before publishing another photo from Shixart1985, Nenad Stojkovic, Miguel Angel Omaña Rojas, the
+   InjuryMap illustration family or PTPioneer, compare the Commons file title and the dHash against
+   the 211 existing heroes.
 4. The scaling architecture is deferred to PLAN Phase 7; do not implement it during content batches.
 
 ## Page contract (short)
@@ -114,6 +117,29 @@ Start the dev server with `npm run dev` for local review.
 - Phase 6: read Search Console on 2026-11-19 before scaling beyond the 115-page pilot.
 - Engram topic `content-library/handoff` covers the current state; the scaling architecture is PLAN
   Phase 7.
+
+## Session close (2026-11-15, batch 21)
+
+- Batch 21 closed the Entrenamiento del Hombro block and opened Físicos de leyenda: 10 page pairs
+  (20 files) from `/consejos-entrenar-deltoides-posterior/` to `/rutina-de-femorales/`, 211/792 pages,
+  10 new heroes.
+- Writers: A took pages 1-5, B pages 6-10. The parent registered the routes, fixed two table defects
+  in `ArticleLayout` and committed per page.
+- Gates: `check:copy` 10,761/10,761, build **438 pages**, `check:i18n` 6,882/6,882, sitemap
+  **434 URLs** with 1,302 alternates.
+- Structural checks: 94 internal links resolve; zero external links, `.md` links, `#` links, inline
+  images, manual anchors or em dashes. All 20 pages render at 390 px with no horizontal overflow.
+- Commits: layout `9aa6efe`; pages `2627eb4`, `cb95795`, `ddab839`, `426075b`, `d6f1d8b`, `7f2c335`,
+  `2b6da59`, `fa889a6`, `f3e6232`, `21d56bb`; routes `1693e32`. Push pending owner go-ahead together
+  with batches 19 and 20.
+- **Gotcha:** Astro scopes the trailing element of `:global(X) Y`. A rule written as
+  `:global(table) th:nth-child(1)` needs the `th` inside `:global()` too, or the markdown cells, which
+  carry no scope attribute, never match. The text-table and routine-table mobile rules both depend on it.
+- **Gotcha:** the routine table's 58/21/21 geometry overflows a 390 px phone by 8 px because
+  "Repeticiones" does not fit a 73 px column; the mobile block now uses 52/18/30 with tighter header
+  padding.
+- Next session starts at `/franco-columbu-dieta-y-entrenamiento/`.
+- Engram topic `content-library/handoff` is updated with this state.
 
 ## Session close (2026-11-15, batch 20)
 
