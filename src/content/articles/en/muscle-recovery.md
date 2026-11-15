@@ -62,6 +62,20 @@ Rest is the least considered factor. The body needs time to recover from any ten
 
 More and more people practise yoga and meditation. Any system that relaxes you helps recovery: you gain strength and size and train more intensely.
 
+## The recovery journal
+
+Five numbers every morning turn recovery into something you can read: resting heart rate, bodyweight, hours of sleep, soreness in each area from 1 to 10, and how much you want to train.
+
+For two weeks change nothing. That is your reference. After that, three rules.
+
+- A day with two extra points in a single variable gets written down and nothing else.
+- Two days in a row with two extra points in one variable, or three variables worse, call for an extra rest day.
+- If the weekly average climbs three points across three or more variables, take a full deload week.
+
+Resting heart rate has its own threshold: ten beats above your reference, held for a week. Losing more than 2 % of bodyweight in seven days also calls for a stop.
+
+None of these numbers is a diagnosis. They are early warnings, and they work better next to the [deload week](/en/deload-week/) and the guide to [overtraining](/en/overtraining/).
+
 ## In short
 
 Recovery is a process with many steps and all of them matter. Recovery increases energy and the muscle's capacity to respond to exercise, and it prevents injuries. If you want to reach your goals, be disciplined about it.

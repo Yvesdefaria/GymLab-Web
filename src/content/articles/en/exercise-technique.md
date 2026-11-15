@@ -48,6 +48,16 @@ Volume has a practical ceiling. Alternating sets drain glycogen and increase pro
 
 Adding sets beyond those numbers does not seem to improve stimulation. The session turns into strength-endurance work with heavy fatigue, recovery stretches out and, if you keep the scheme for weeks, overtraining appears. You can fine-tune the split with the guide to [training volume](/en/training-volume/).
 
+## Setting up before the first rep
+
+The first rep decides the rest of the set. Before the bar moves, the feet find their place, the hands take the grip, the back is set and the abdomen braces as if you were about to take a punch. Then the load comes off the racks with a firm back, not with a yank.
+
+With dumbbells there is one extra step: balance them at the same height before you start, so both travel the same path.
+
+Concentration is part of technique. Look at the muscle you are working, count the reps and decide in advance which one will be the last. The final reps are the ones that deform, and a rep that needs momentum does not add, it takes away. When the bar drifts or the body arches to move it, the set is over.
+
+If you want a clear limit, the [cheat rep](/en/cheat-reps/) has its own space in the library: outside it, the set stops.
+
 ## How to apply technique to every set
 
 Applying exercise technique to every set means repeating the same pattern with a weight you can control. Before the first set, decide which muscle you want to train and which range you will respect. During the set, check three things on every rep: that you lower more slowly than you lift, that you do not lock the joint at the end and that the weight moves through the muscle rather than through momentum.

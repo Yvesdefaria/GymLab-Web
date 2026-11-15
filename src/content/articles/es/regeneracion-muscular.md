@@ -62,6 +62,20 @@ El descanso es el factor menos tenido en cuenta. El organismo necesita tiempo pa
 
 Cada vez más gente practica yoga y meditación. Cualquier sistema que te relaje beneficia la recuperación: ganas fuerza y tamaño y entrenas con más intensidad.
 
+## El diario de recuperación
+
+Un cuaderno con cinco datos cada mañana convierte la recuperación en algo que puedes leer: la frecuencia cardiaca en reposo, el peso corporal, las horas de sueño, el dolor muscular de cada zona de 1 a 10 y las ganas de entrenar.
+
+Durante dos semanas no cambies nada. Eso es tu referencia. A partir de ahí, las reglas son tres.
+
+- Un día con dos puntos más en una sola variable se anota y se sigue.
+- Dos días seguidos con dos puntos más en una variable, o con tres variables peor, piden un día extra de descanso.
+- Si la media de la semana sube tres puntos en tres variables o más, toca una semana entera de descarga.
+
+La frecuencia en reposo tiene su propio umbral: diez pulsaciones por encima de tu referencia, mantenidas durante una semana. Perder más del 2 % del peso en siete días también pide parar.
+
+Ninguno de estos números es un diagnóstico. Son avisos para adelantarte, y funcionan mejor junto a la [semana de descarga](/es/semana-de-descarga/) y a la guía de [sobreentrenamiento](/es/sobreentrenamiento/).
+
 ## En resumen
 
 La regeneración es un proceso con muchos pasos y todos importan. La recuperación aumenta la energía y la capacidad muscular de responder al ejercicio y evita lesiones. Si quieres alcanzar tus objetivos, sé disciplinado con ella.

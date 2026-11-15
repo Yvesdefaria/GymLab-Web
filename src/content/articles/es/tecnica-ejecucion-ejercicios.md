@@ -48,6 +48,16 @@ El volumen tiene un techo práctico. El trabajo de series alternadas vacía el g
 
 Sumar series por encima de esas cifras parece no mejorar la estimulación. La sesión se desplaza hacia un trabajo de fuerza-resistencia con mucha fatiga, la recuperación se alarga y, si mantienes el esquema durante semanas, aparece el sobreentrenamiento. Puedes afinar el reparto con la guía de [volumen de entrenamiento](/es/volumen-de-entrenamiento/).
 
+## La puesta a punto antes de la primera repetición
+
+La primera repetición decide el resto de la serie. Antes de mover la barra, los pies buscan su sitio, las manos toman el agarre, la espalda se coloca y el abdomen se tensa con aire, como si fueras a recibir un golpe. Después se saca el peso de los soportes con la espalda firme, no con un tirón.
+
+Con mancuernas hay un paso extra: equilibrarlas a la misma altura antes de empezar, para que las dos recorran el mismo camino.
+
+La concentración es parte de la técnica. Mira la zona que trabajas, cuenta las repeticiones y decide de antemano cuál será la última. Las finales son las que se deforman, y una repetición que necesita impulso no suma, resta. Cuando la barra se desvía o el cuerpo se arquea para pasarla, la serie ha terminado.
+
+Si quieres un límite claro, la [repetición con trampa](/es/repeticiones-con-trampa/) tiene su propio espacio en la biblioteca: fuera de él, la serie se corta.
+
 ## Cómo aplicar la técnica en cada serie
 
 Aplicar la técnica de ejecución en cada serie significa repetir el mismo patrón con un peso que puedas controlar. Antes de la primera serie, decide qué músculo quieres trabajar y qué recorrido vas a respetar. Durante la serie, comprueba tres cosas en cada repetición: que bajas más lento de lo que subes, que no bloqueas la articulación al final y que el músculo mueve el peso y no el impulso.
