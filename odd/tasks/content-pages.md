@@ -391,7 +391,7 @@ Legend: `ES` = Spanish published, `EN` = English published.
 - [x] ES · [x] EN — `/dolor-cronico-y-fisioterapia-tratamientos-que-funcionan/` — Fisioterapia para Dolor Crónico: Tratamientos Efectivos
 - [x] ES · [x] EN — `/agujetas-causas-y-como-hacer-que-desaparezcan/` — Agujetas, como eliminarlas y reducir sus molestias
 - [x] ES · [x] EN — `/sobreentrenamiento/` — Sobreentrenamiento \| ¡Como evitarlo para progresar más!
-- [ ] ES · [ ] EN — `/recuperacion-activa-entrenamiento/` — Recuperación activa en el entrenamiento
+- [x] ES · [x] EN — `/recuperacion-activa-entrenamiento/` — Recuperación activa en el entrenamiento
 - [ ] ES · [ ] EN — `/fatiga-del-sistema-nervioso-central-snc/` — Fatiga del Sistema Nervioso Central (SNC) \| ¡Supéralo!
 - [ ] ES · [ ] EN — `/recuperacion-para-mas-musculo-rendimiento/` — Guía completa de recuperación muscular ✓ Recupera y CRECE! — **FUSIONADA en `/regeneracion-muscular/` + `/en/muscle-recovery/` (decisión del owner, 2026-11-15): no se publica como página.**
 - [ ] ES · [ ] EN — `/epicondilitis/` — Epicondilitis: ¡Qué es y cómo recuperarte para el gimnasio!
