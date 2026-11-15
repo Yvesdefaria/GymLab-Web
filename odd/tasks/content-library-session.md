@@ -9,24 +9,25 @@ Last updated: 2026-11-12. Read this first next session.
 
 ## State
 
-- **193 / 792 bilingual pages** (ES 193, EN 193).
-- Blocks: Entrenamiento **154**, Por Músculo **5**, Ejercicios **34**.
-- **193 unique hero paths.** One exact duplicate pair remains from an earlier batch
-  (`remo-polea-sentado` with `superserie-de-espalda-para-terminar-tu-rutina`); the batch 17, 18 and 19
+- **201 / 792 bilingual pages** (ES 201, EN 201).
+- Blocks: Entrenamiento **162**, Por Músculo **5**, Ejercicios **34**.
+- **201 unique hero paths.** One exact duplicate pair remains from an earlier batch
+  (`remo-polea-sentado` with `superserie-de-espalda-para-terminar-tu-rutina`); the batch 17 to 20
   duplicates were fixed. See the follow-up in `PLAN.md`.
-- **Batch 19 is built, green and committed (2026-11-15).** The build has **402 pages** and
-  **398 sitemap URLs**.
-- Three archive rows are settled and must stay out: the FiveStars Fitness congress page (discarded),
-  the AEKE S1 Pro page (discarded 2026-11-14) and `/velocidad-repeticiones/` (fused into the tempo
-  page, 2026-11-14).
-- Batch record: `odd/tasks/content-library-batch-19.md`.
+- **Batch 20 is built, green and committed (2026-11-15).** The build has **418 pages** and
+  **414 sitemap URLs**. The last eight rows of the Prevención block shipped as pages; the two
+  duplicate rows were fused.
+- Four archive rows are settled and must stay out: the FiveStars Fitness congress page (discarded),
+  the AEKE S1 Pro page (discarded 2026-11-14), `/velocidad-repeticiones/` (fused into the tempo page,
+  2026-11-14) and the two batch 20 fusions (2026-11-15).
+- Batch record: `odd/tasks/content-library-batch-20.md`.
 
 ## Gates
 
 ```powershell
-npm run check:copy   # 9,843/9,843
-npm run build        # 402 pages
-npm run check:i18n   # 6,324/6,324
+npm run check:copy   # 10,251/10,251
+npm run build        # 418 pages
+npm run check:i18n   # 6,572/6,572
 npm run verify       # all three, in that order
 npm run dev          # http://localhost:4321
 ```
@@ -58,17 +59,23 @@ Start the dev server with `npm run dev` for local review.
   peak-contraction principle, when to see a sports doctor and training through summer.
 - **Prevención y Recuperación de Lesiones (6):** the most injurious exercises, common gym injuries,
   correct posture, physiotherapy for chronic pain, soreness (DOMS) and overtraining.
+- **Prevención y Recuperación de Lesiones (14):** the most injurious exercises, common gym injuries,
+  correct posture, physiotherapy for chronic pain, soreness (DOMS), overtraining, active recovery,
+  central nervous system fatigue, tennis elbow, carpal tunnel, Achilles tendinopathy, plantar
+  fasciitis, training with back problems and patellar tendinopathy.
 - **Recovery and planning (10):** back-pain exercises (YMYL), stretching, stretching circuit, muscle
   failure, periodization, exercise and immune system, deload week, sleep, training planning and
   muscle recovery.
 
 ## Next 10
 
-1. Start at `/recuperacion-activa-entrenamiento/` and follow the pending rows in `content-pages.md`
-   in order; the Prevención y Recuperación de Lesiones block has ten rows left.
+1. Start at `/consejos-entrenar-deltoides-posterior/` and follow the pending rows in
+   `content-pages.md` in order; the Entrenamiento del Hombro block has nine rows, then Físicos de
+   leyenda.
 2. Keep the same copy, unique-hero and gate flow.
-3. Before publishing another photo from Shixart1985, Nenad Stojkovic or Miguel Angel Omaña Rojas,
-   compare the Commons file title and the dHash against the 193 existing heroes.
+3. Before publishing another photo from Shixart1985, Nenad Stojkovic, Miguel Angel Omaña Rojas or the
+   InjuryMap illustration family, compare the Commons file title and the dHash against the 201
+   existing heroes.
 4. The scaling architecture is deferred to PLAN Phase 7; do not implement it during content batches.
 
 ## Page contract (short)
@@ -107,6 +114,26 @@ Start the dev server with `npm run dev` for local review.
 - Phase 6: read Search Console on 2026-11-19 before scaling beyond the 115-page pilot.
 - Engram topic `content-library/handoff` covers the current state; the scaling architecture is PLAN
   Phase 7.
+
+## Session close (2026-11-15, batch 20)
+
+- Batch 20 closed the Prevención y Recuperación de Lesiones block: 8 page pairs (16 files) from
+  `/recuperacion-activa-entrenamiento/` to `/tendinitis-rotuliana/`, 201/792 pages, 8 new heroes.
+  Two rows were fused into published pages by owner decision (see the checklist).
+- Writers: A took pages 1-4, B pages 5-8. The parent wrote the two fusions, registered the routes,
+  ran the gates and committed per page.
+- Gates: `check:copy` 10,251/10,251, build **418 pages**, `check:i18n` 6,572/6,572, sitemap
+  **414 URLs** with 1,242 alternates.
+- Structural checks: 116 internal links resolve; zero external links, `.md` links, `#` links, inline
+  images, manual anchors or em dashes. All 16 pages render at 390 px with no horizontal overflow.
+- Commits: fusions `a2fcb70`; pages `76e550d`, `980eed6`, `dfa320f`, `e4459bb`, `4f8af70`, `f698299`,
+  `cd02fb9`, `eb04662`; routes `f5770e6`. Push pending owner go-ahead together with batch 19.
+- **Gotcha:** the InjuryMap illustrations carry baked-in labels, Spanish on the plantar fascia figure
+  and English on the spine figure, so each shows a foreign label on the other locale.
+- **Gotcha:** `check:copy` still does not resolve internal links nor measure heroes; both are separate
+  passes.
+- Next session starts at `/consejos-entrenar-deltoides-posterior/`.
+- Engram topic `content-library/handoff` is updated with this state.
 
 ## Session close (2026-11-15, batch 19)
 

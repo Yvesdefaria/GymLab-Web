@@ -13,29 +13,31 @@ Last updated: 2026-11-14.
 - Production is **live** at `https://gymlab.dev`, served by the Worker `gymlab-web` with static assets.
   It is not Cloudflare Pages. Deploy with `npx wrangler deploy`.
 - Production is live with batch 18 (pushed 2026-11-14): **382 pages** and **378 sitemap URLs**.
-  Batch 19 is committed locally and **not pushed yet**: **402 pages** and **398 sitemap URLs**.
-  Gates after batch 19: `check:copy` **9,843/9,843**, build **402 pages**, `check:i18n`
-  **6,324/6,324**.
+  Batches 19 and 20 are committed locally and **not pushed yet**: **418 pages** and **414 sitemap
+  URLs**. Gates after batch 20: `check:copy` **10,251/10,251**, build **418 pages**, `check:i18n`
+  **6,572/6,572**.
 - `app.gymlab.dev` is `noindex` with a real `robots.txt`.
 - The landing, the three calculators, the 404 and the legal pages all ship in both locales.
 - Measurement and the SQL recipe: see "Reading analytics" below and `COMPLETED.md` Appendix B.
 
-## Content library — 193 / 792 (2026-11-15)
+## Content library — 201 / 792 (2026-11-15)
 
-- **193 bilingual pages** (ES 193, EN 193), **193 unique hero paths**. Blocks: Entrenamiento 154,
+- **201 bilingual pages** (ES 201, EN 201), **201 unique hero paths**. Blocks: Entrenamiento 162,
   Por Músculo 5, Ejercicios 34.
-- **Batch 19 is built, green and committed (2026-11-15), not pushed.** The build has **402 pages** and
-  **398 sitemap URLs**.
-- Gates: `npm run verify` = `check:copy` **9,843/9,843** + build **402 pages** + `check:i18n`
-  **6,324/6,324**.
+- **Batch 20 is built, green and committed (2026-11-15), not pushed.** The build has **418 pages** and
+  **414 sitemap URLs**. The Prevención y Recuperación de Lesiones block is closed: eight rows shipped
+  as pages and two were fused.
+- Gates: `npm run verify` = `check:copy` **10,251/10,251** + build **418 pages** + `check:i18n`
+  **6,572/6,572**.
 - Docs: `odd/tasks/content-library-session.md` (start here next session),
-  `odd/tasks/content-pages.md` (per-page checklist + resume), `odd/tasks/content-library-batch-19.md`
+  `odd/tasks/content-pages.md` (per-page checklist + resume), `odd/tasks/content-library-batch-20.md`
   (the last batch) and `odd/tasks/guides-page-contract.md` (the page contract and copy gate).
-- **Next 10:** `/recuperacion-activa-entrenamiento/` and the rows after it, still inside the
-  Prevención y Recuperación de Lesiones block.
+- **Next 10:** `/consejos-entrenar-deltoides-posterior/` and the Entrenamiento del Hombro block.
 - **Follow-up:** one exact duplicate hero pair remains from an earlier batch (dHash 0):
-  `remo-polea-sentado` with `superserie-de-espalda-para-terminar-tu-rutina`. Two other suspected pairs
-  were cleared by the batch 19 dHash pass over all 193 heroes.
+  `remo-polea-sentado` with `superserie-de-espalda-para-terminar-tu-rutina`. The batch 19 and 20 dHash
+  passes cleared the other suspected pairs. The batch 20 injury illustrations carry labels baked into
+  the image (Spanish on the plantar fascia figure, English on the spine figure), so each shows a
+  foreign label on the other locale; crop them when the Phase 5 image pipeline lands.
 - **Discarded:** `/congresos-profesores-factores-clave-fivestars-fitness/` does not go to production
   (owner decision, 2026-11-07). `/aeke-s1-pro-entrenamiento-domestico-con-ia/` was published with
   batch 17 and removed the same day by owner decision (2026-11-14); its pair, hero, routes and
@@ -45,7 +47,7 @@ Last updated: 2026-11-14.
 - Future batches deploy via Workers Builds on the push; run `npm run verify` first.
 - Image rule: one unique hero per page; `check:copy` fails on a duplicate path. Batches 5-18 heroes are
   Wikimedia Commons (CC0/CC BY/CC BY-SA/public domain); the `alt` includes the credit.
-- Engram topic `content-library/handoff` covers through batch 19; the scaling architecture is PLAN
+- Engram topic `content-library/handoff` covers through batch 20; the scaling architecture is PLAN
   Phase 7.
 
 ## Content and growth — phased plan (2026-11-05)
