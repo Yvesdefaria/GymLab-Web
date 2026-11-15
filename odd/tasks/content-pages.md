@@ -408,7 +408,7 @@ Legend: `ES` = Spanish published, `EN` = English published.
 - [x] ES · [x] EN — `/entrenamiento-trapecios/` — Entrenamiento de los trapecios
 - [x] ES · [x] EN — `/press-militar-contra-press-tras-nuca/` — Press Militar contra Press tras nuca
 - [x] ES · [x] EN — `/anatomia-hombros/` — Anatomía del Hombro
-- [ ] ES · [ ] EN — `/estiramiento-de-la-parte-posterior-de-los-hombros/` — Estiramientos de hombros esenciales para el gimnasio
+- [x] ES · [x] EN — `/estiramiento-de-la-parte-posterior-de-los-hombros/` — Estiramientos de hombros esenciales para el gimnasio
 - [ ] ES · [ ] EN — `/rutina-para-trabajar-tus-hombros-de-forma-completa/` — Rutina para trabajar tus hombros de forma completa
 - [ ] ES · [ ] EN — `/los-trucos-de-arnold-para-desarrollar-sus-hombros/` — Los trucos de Arnold para desarrollar sus hombros
 - [ ] ES · [ ] EN — `/entrenar-los-trapecios-con-los-hombros-o-con-la-espalda/` — Entrenar los trapecios con los hombros o con la espalda
