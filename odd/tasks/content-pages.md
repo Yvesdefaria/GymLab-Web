@@ -416,7 +416,7 @@ Legend: `ES` = Spanish published, `EN` = English published.
 
 ### Físicos de leyenda (12)
 
-- [ ] ES · [ ] EN — `/rutina-de-femorales/` — Rutina de Femorales de Jay Cutler
+- [x] ES · [x] EN — `/rutina-de-femorales/` — Rutina de Femorales de Jay Cutler
 - [ ] ES · [ ] EN — `/franco-columbu-dieta-y-entrenamiento/` — Franco Columbu: Dieta y Entrenamiento del León Sardo
 - [ ] ES · [ ] EN — `/ronnie-coleman-rutina-y-dieta-tributo/` — Ronnie Coleman, rutina y dieta (Tributo al rey del culturismo)
 - [ ] ES · [ ] EN — `/mike-mentzer-heavy-duty-entrena-menos-y-crece-mas/` — Mike Mentzer y el Heavy Duty: Entrena menos y crece más
