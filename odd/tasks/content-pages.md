@@ -394,7 +394,7 @@ Legend: `ES` = Spanish published, `EN` = English published.
 - [x] ES · [x] EN — `/recuperacion-activa-entrenamiento/` — Recuperación activa en el entrenamiento
 - [x] ES · [x] EN — `/fatiga-del-sistema-nervioso-central-snc/` — Fatiga del Sistema Nervioso Central (SNC) \| ¡Supéralo!
 - [ ] ES · [ ] EN — `/recuperacion-para-mas-musculo-rendimiento/` — Guía completa de recuperación muscular ✓ Recupera y CRECE! — **FUSIONADA en `/regeneracion-muscular/` + `/en/muscle-recovery/` (decisión del owner, 2026-11-15): no se publica como página.**
-- [ ] ES · [ ] EN — `/epicondilitis/` — Epicondilitis: ¡Qué es y cómo recuperarte para el gimnasio!
+- [x] ES · [x] EN — `/epicondilitis/` — Epicondilitis: ¡Qué es y cómo recuperarte para el gimnasio!
 - [ ] ES · [ ] EN — `/ejecucion-estricta-y-concentracion-evitar-lesiones/` — Ejecución estricta y concentración, la clave para evitar lesiones — **FUSIONADA en `/tecnica-ejecucion-ejercicios/` + `/en/exercise-technique/` (decisión del owner, 2026-11-15): no se publica como página.**
 - [ ] ES · [ ] EN — `/sindrome-tunel-carpiano/` — Síndrome del Túnel Carpiano: Síntomas, Causas y Tratamiento
 - [ ] ES · [ ] EN — `/tendinitis-tendon-aquiles/` — Tendinitis del tendón de aquiles
