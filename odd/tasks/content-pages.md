@@ -387,7 +387,7 @@ Legend: `ES` = Spanish published, `EN` = English published.
 
 - [x] ES · [x] EN — `/ejercicios-de-gimnasio-mas-lesivos/` — Ejercicios peligrosos que debemos evitar en el gimnasio
 - [x] ES · [x] EN — `/lesiones-comunes-en-el-gimnasio-prevencion/` — Lesiones comunes en el gimnasio: evítalas y recupérate
-- [ ] ES · [ ] EN — `/la-postura-correcta-un-factor-importante-en-nuestro-deporte/` — La postura correcta, un factor importante en nuestro deporte
+- [x] ES · [x] EN — `/la-postura-correcta-un-factor-importante-en-nuestro-deporte/` — La postura correcta, un factor importante en nuestro deporte
 - [ ] ES · [ ] EN — `/dolor-cronico-y-fisioterapia-tratamientos-que-funcionan/` — Fisioterapia para Dolor Crónico: Tratamientos Efectivos
 - [ ] ES · [ ] EN — `/agujetas-causas-y-como-hacer-que-desaparezcan/` — Agujetas, como eliminarlas y reducir sus molestias
 - [ ] ES · [ ] EN — `/sobreentrenamiento/` — Sobreentrenamiento \| ¡Como evitarlo para progresar más!
