@@ -398,7 +398,7 @@ Legend: `ES` = Spanish published, `EN` = English published.
 - [ ] ES · [ ] EN — `/ejecucion-estricta-y-concentracion-evitar-lesiones/` — Ejecución estricta y concentración, la clave para evitar lesiones — **FUSIONADA en `/tecnica-ejecucion-ejercicios/` + `/en/exercise-technique/` (decisión del owner, 2026-11-15): no se publica como página.**
 - [x] ES · [x] EN — `/sindrome-tunel-carpiano/` — Síndrome del Túnel Carpiano: Síntomas, Causas y Tratamiento
 - [x] ES · [x] EN — `/tendinitis-tendon-aquiles/` — Tendinitis del tendón de aquiles
-- [ ] ES · [ ] EN — `/fascitis-plantar-causas-y-tratamiento/` — Fascitis plantar, causas y tratamiento
+- [x] ES · [x] EN — `/fascitis-plantar-causas-y-tratamiento/` — Fascitis plantar, causas y tratamiento
 - [ ] ES · [ ] EN — `/entrenamiento-problemas-espalda/` — Guía de entrenamiento para personas con problemas de espalda
 - [ ] ES · [ ] EN — `/tendinitis-rotuliana/` — Tendinitis Rotuliana o "Rodilla del Saltador"
 
