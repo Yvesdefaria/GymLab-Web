@@ -314,3 +314,10 @@ runs `npm run verify`, checks link resolution, TOC anchors and table geometry, a
 5. **The leg-extension / sissy-squat superset says the archive has no prescription** instead of
    inventing sets and reps; it reuses the page's own 3 rounds and 2 minutes.
 
+### Native assessment
+
+`gentle-ai review assess` over `6293327..HEAD` (36 paths, 2,377 changed lines, untracked mockups
+declared as excluded): risk **medium**, reason `executable_change` on `astro.config.mjs`,
+`review_due: false`, `review_due_reason: under_budget`. No native review transaction was opened.
+
+
