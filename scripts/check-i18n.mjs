@@ -421,6 +421,26 @@ const PAGES = [
   ['en', '/en/training-with-back-pain/'],
   ['es', '/es/tendinitis-rotuliana/'],
   ['en', '/en/patellar-tendinopathy/'],
+  ['es', '/es/consejos-entrenar-deltoides-posterior/'],
+  ['en', '/en/rear-delt-training/'],
+  ['es', '/es/entrenamiento-trapecios/'],
+  ['en', '/en/trapezius-training/'],
+  ['es', '/es/press-militar-contra-press-tras-nuca/'],
+  ['en', '/en/military-press-vs-behind-neck-press/'],
+  ['es', '/es/anatomia-hombros/'],
+  ['en', '/en/shoulder-anatomy/'],
+  ['es', '/es/estiramiento-de-la-parte-posterior-de-los-hombros/'],
+  ['en', '/en/shoulder-stretches/'],
+  ['es', '/es/rutina-para-trabajar-tus-hombros-de-forma-completa/'],
+  ['en', '/en/complete-shoulder-workout/'],
+  ['es', '/es/los-trucos-de-arnold-para-desarrollar-sus-hombros/'],
+  ['en', '/en/arnold-shoulder-training/'],
+  ['es', '/es/entrenar-los-trapecios-con-los-hombros-o-con-la-espalda/'],
+  ['en', '/en/trap-training-placement/'],
+  ['es', '/es/remo-de-pie-agarre-amplitud/'],
+  ['en', '/en/upright-row-grip-width/'],
+  ['es', '/es/rutina-de-femorales/'],
+  ['en', '/en/jay-cutler-hamstring-routine/'],
 ];
 
 // Content routes, keyed by a stable id with the slug each locale publishes. The
@@ -903,6 +923,43 @@ const ROUTES = {
   patellarTendinopathy: {
     es: '/tendinitis-rotuliana',
     en: '/patellar-tendinopathy',
+  },
+  rearDeltTraining: {
+    es: '/consejos-entrenar-deltoides-posterior',
+    en: '/rear-delt-training',
+  },
+  trapeziusTraining: {
+    es: '/entrenamiento-trapecios',
+    en: '/trapezius-training',
+  },
+  pressBehindNeck: {
+    es: '/press-militar-contra-press-tras-nuca',
+    en: '/military-press-vs-behind-neck-press',
+  },
+  shoulderAnatomy: { es: '/anatomia-hombros', en: '/shoulder-anatomy' },
+  shoulderStretches: {
+    es: '/estiramiento-de-la-parte-posterior-de-los-hombros',
+    en: '/shoulder-stretches',
+  },
+  completeShoulderWorkout: {
+    es: '/rutina-para-trabajar-tus-hombros-de-forma-completa',
+    en: '/complete-shoulder-workout',
+  },
+  arnoldShoulders: {
+    es: '/los-trucos-de-arnold-para-desarrollar-sus-hombros',
+    en: '/arnold-shoulder-training',
+  },
+  trapPlacement: {
+    es: '/entrenar-los-trapecios-con-los-hombros-o-con-la-espalda',
+    en: '/trap-training-placement',
+  },
+  uprightRowGrip: {
+    es: '/remo-de-pie-agarre-amplitud',
+    en: '/upright-row-grip-width',
+  },
+  cutlerHamstrings: {
+    es: '/rutina-de-femorales',
+    en: '/jay-cutler-hamstring-routine',
   },
 };
 

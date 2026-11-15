@@ -240,6 +240,16 @@ const ROUTE_PAIRS = [
   ['/fascitis-plantar-causas-y-tratamiento', '/plantar-fasciitis'],
   ['/entrenamiento-problemas-espalda', '/training-with-back-pain'],
   ['/tendinitis-rotuliana', '/patellar-tendinopathy'],
+  ['/consejos-entrenar-deltoides-posterior', '/rear-delt-training'],
+  ['/entrenamiento-trapecios', '/trapezius-training'],
+  ['/press-militar-contra-press-tras-nuca', '/military-press-vs-behind-neck-press'],
+  ['/anatomia-hombros', '/shoulder-anatomy'],
+  ['/estiramiento-de-la-parte-posterior-de-los-hombros', '/shoulder-stretches'],
+  ['/rutina-para-trabajar-tus-hombros-de-forma-completa', '/complete-shoulder-workout'],
+  ['/los-trucos-de-arnold-para-desarrollar-sus-hombros', '/arnold-shoulder-training'],
+  ['/entrenar-los-trapecios-con-los-hombros-o-con-la-espalda', '/trap-training-placement'],
+  ['/remo-de-pie-agarre-amplitud', '/upright-row-grip-width'],
+  ['/rutina-de-femorales', '/jay-cutler-hamstring-routine'],
 ];
 
 const pairFor = (pathname) => {
