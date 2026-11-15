@@ -399,7 +399,7 @@ Legend: `ES` = Spanish published, `EN` = English published.
 - [x] ES · [x] EN — `/sindrome-tunel-carpiano/` — Síndrome del Túnel Carpiano: Síntomas, Causas y Tratamiento
 - [x] ES · [x] EN — `/tendinitis-tendon-aquiles/` — Tendinitis del tendón de aquiles
 - [x] ES · [x] EN — `/fascitis-plantar-causas-y-tratamiento/` — Fascitis plantar, causas y tratamiento
-- [ ] ES · [ ] EN — `/entrenamiento-problemas-espalda/` — Guía de entrenamiento para personas con problemas de espalda
+- [x] ES · [x] EN — `/entrenamiento-problemas-espalda/` — Guía de entrenamiento para personas con problemas de espalda
 - [ ] ES · [ ] EN — `/tendinitis-rotuliana/` — Tendinitis Rotuliana o "Rodilla del Saltador"
 
 ### Entrenamiento del Hombro (9)
