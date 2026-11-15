@@ -405,7 +405,7 @@ Legend: `ES` = Spanish published, `EN` = English published.
 ### Entrenamiento del Hombro (9)
 
 - [x] ES · [x] EN — `/consejos-entrenar-deltoides-posterior/` — Como entrenar el deltoides posterior \| Rutina y Consejos
-- [ ] ES · [ ] EN — `/entrenamiento-trapecios/` — Entrenamiento de los trapecios
+- [x] ES · [x] EN — `/entrenamiento-trapecios/` — Entrenamiento de los trapecios
 - [ ] ES · [ ] EN — `/press-militar-contra-press-tras-nuca/` — Press Militar contra Press tras nuca
 - [ ] ES · [ ] EN — `/anatomia-hombros/` — Anatomía del Hombro
 - [ ] ES · [ ] EN — `/estiramiento-de-la-parte-posterior-de-los-hombros/` — Estiramientos de hombros esenciales para el gimnasio
