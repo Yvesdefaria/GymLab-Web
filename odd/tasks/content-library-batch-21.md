@@ -285,7 +285,9 @@ page.
   "Repeticiones" out of its 73 px column and the page scrolled sideways by 8 px, and the fix needed
   the whole selector inside `:global()` because Astro scopes the trailing element and the markdown
   cells carry no scope attribute.
-- Native assessment: run by the parent after the docs commit.
+- Native assessment: `gentle-ai review assess` over `7d0ce0e..HEAD` (37 paths, 2,029 changed lines,
+  untracked mockups excluded) reports risk **medium**, `review_due: false`,
+  `review_due_reason: under_budget`. No review transaction was opened.
 
 ### Editorial resolutions worth keeping
 
