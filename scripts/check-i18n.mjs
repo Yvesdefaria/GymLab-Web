@@ -405,6 +405,22 @@ const PAGES = [
   ['en', '/en/delayed-onset-muscle-soreness/'],
   ['es', '/es/sobreentrenamiento/'],
   ['en', '/en/overtraining/'],
+  ['es', '/es/recuperacion-activa-entrenamiento/'],
+  ['en', '/en/active-recovery/'],
+  ['es', '/es/fatiga-del-sistema-nervioso-central-snc/'],
+  ['en', '/en/central-nervous-system-fatigue/'],
+  ['es', '/es/epicondilitis/'],
+  ['en', '/en/tennis-elbow/'],
+  ['es', '/es/sindrome-tunel-carpiano/'],
+  ['en', '/en/carpal-tunnel-syndrome/'],
+  ['es', '/es/tendinitis-tendon-aquiles/'],
+  ['en', '/en/achilles-tendinopathy/'],
+  ['es', '/es/fascitis-plantar-causas-y-tratamiento/'],
+  ['en', '/en/plantar-fasciitis/'],
+  ['es', '/es/entrenamiento-problemas-espalda/'],
+  ['en', '/en/training-with-back-pain/'],
+  ['es', '/es/tendinitis-rotuliana/'],
+  ['en', '/en/patellar-tendinopathy/'],
 ];
 
 // Content routes, keyed by a stable id with the slug each locale publishes. The
@@ -859,6 +875,35 @@ const ROUTES = {
     en: '/delayed-onset-muscle-soreness',
   },
   overtraining: { es: '/sobreentrenamiento', en: '/overtraining' },
+  activeRecovery: {
+    es: '/recuperacion-activa-entrenamiento',
+    en: '/active-recovery',
+  },
+  cnsFatigue: {
+    es: '/fatiga-del-sistema-nervioso-central-snc',
+    en: '/central-nervous-system-fatigue',
+  },
+  tennisElbow: { es: '/epicondilitis', en: '/tennis-elbow' },
+  carpalTunnel: {
+    es: '/sindrome-tunel-carpiano',
+    en: '/carpal-tunnel-syndrome',
+  },
+  achillesTendinopathy: {
+    es: '/tendinitis-tendon-aquiles',
+    en: '/achilles-tendinopathy',
+  },
+  plantarFasciitis: {
+    es: '/fascitis-plantar-causas-y-tratamiento',
+    en: '/plantar-fasciitis',
+  },
+  backPainTraining: {
+    es: '/entrenamiento-problemas-espalda',
+    en: '/training-with-back-pain',
+  },
+  patellarTendinopathy: {
+    es: '/tendinitis-rotuliana',
+    en: '/patellar-tendinopathy',
+  },
 };
 
 const routeId = (path) => {

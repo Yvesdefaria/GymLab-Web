@@ -232,6 +232,14 @@ const ROUTE_PAIRS = [
   ['/dolor-cronico-y-fisioterapia-tratamientos-que-funcionan', '/chronic-pain-physiotherapy'],
   ['/agujetas-causas-y-como-hacer-que-desaparezcan', '/delayed-onset-muscle-soreness'],
   ['/sobreentrenamiento', '/overtraining'],
+  ['/recuperacion-activa-entrenamiento', '/active-recovery'],
+  ['/fatiga-del-sistema-nervioso-central-snc', '/central-nervous-system-fatigue'],
+  ['/epicondilitis', '/tennis-elbow'],
+  ['/sindrome-tunel-carpiano', '/carpal-tunnel-syndrome'],
+  ['/tendinitis-tendon-aquiles', '/achilles-tendinopathy'],
+  ['/fascitis-plantar-causas-y-tratamiento', '/plantar-fasciitis'],
+  ['/entrenamiento-problemas-espalda', '/training-with-back-pain'],
+  ['/tendinitis-rotuliana', '/patellar-tendinopathy'],
 ];
 
 const pairFor = (pathname) => {
