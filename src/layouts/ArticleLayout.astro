@@ -578,6 +578,27 @@ const copy = {
       font-size: 0.9rem;
       line-height: 1.35;
     }
+
+    /* The 58/21/21 geometry does not survive a 390px phone: "Repeticiones"
+       alone overflows its 73px column and the page scrolls sideways. */
+    .article-body :global(table:not(.text-table) th:nth-child(1)),
+    .article-body :global(table:not(.text-table) td:nth-child(1)) {
+      width: 52%;
+    }
+
+    .article-body :global(table:not(.text-table) th:nth-child(2)),
+    .article-body :global(table:not(.text-table) td:nth-child(2)) {
+      width: 18%;
+    }
+
+    .article-body :global(table:not(.text-table) th:nth-child(3)),
+    .article-body :global(table:not(.text-table) td:nth-child(3)) {
+      width: 30%;
+    }
+
+    .article-body :global(table:not(.text-table) thead th) {
+      padding: 0.6rem 0.5rem;
+    }
   }
 
   .article-body :global(img) {
