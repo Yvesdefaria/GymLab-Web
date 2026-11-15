@@ -222,6 +222,16 @@ const ROUTE_PAIRS = [
   ['/tecnica-descanso-pausa', '/rest-pause'],
   ['/series-alternativas', '/alternating-sets'],
   ['/repeticiones-negativas', '/negative-reps'],
+  ['/ejercicios-de-alta-intensidad', '/high-intensity-exercises'],
+  ['/principio-de-contraccion-maxima', '/peak-contraction-principle'],
+  ['/cuando-ir-al-traumatologo-experiencia-personal', '/when-to-see-a-sports-doctor'],
+  ['/como-mantener-y-mejorar-tu-forma-fisica-durante-el-verano', '/maintain-fitness-in-summer'],
+  ['/ejercicios-de-gimnasio-mas-lesivos', '/most-injurious-gym-exercises'],
+  ['/lesiones-comunes-en-el-gimnasio-prevencion', '/common-gym-injuries'],
+  ['/la-postura-correcta-un-factor-importante-en-nuestro-deporte', '/correct-posture-for-training'],
+  ['/dolor-cronico-y-fisioterapia-tratamientos-que-funcionan', '/chronic-pain-physiotherapy'],
+  ['/agujetas-causas-y-como-hacer-que-desaparezcan', '/delayed-onset-muscle-soreness'],
+  ['/sobreentrenamiento', '/overtraining'],
 ];
 
 const pairFor = (pathname) => {

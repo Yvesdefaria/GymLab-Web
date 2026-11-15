@@ -385,6 +385,26 @@ const PAGES = [
   ['en', '/en/alternating-sets/'],
   ['es', '/es/repeticiones-negativas/'],
   ['en', '/en/negative-reps/'],
+  ['es', '/es/ejercicios-de-alta-intensidad/'],
+  ['en', '/en/high-intensity-exercises/'],
+  ['es', '/es/principio-de-contraccion-maxima/'],
+  ['en', '/en/peak-contraction-principle/'],
+  ['es', '/es/cuando-ir-al-traumatologo-experiencia-personal/'],
+  ['en', '/en/when-to-see-a-sports-doctor/'],
+  ['es', '/es/como-mantener-y-mejorar-tu-forma-fisica-durante-el-verano/'],
+  ['en', '/en/maintain-fitness-in-summer/'],
+  ['es', '/es/ejercicios-de-gimnasio-mas-lesivos/'],
+  ['en', '/en/most-injurious-gym-exercises/'],
+  ['es', '/es/lesiones-comunes-en-el-gimnasio-prevencion/'],
+  ['en', '/en/common-gym-injuries/'],
+  ['es', '/es/la-postura-correcta-un-factor-importante-en-nuestro-deporte/'],
+  ['en', '/en/correct-posture-for-training/'],
+  ['es', '/es/dolor-cronico-y-fisioterapia-tratamientos-que-funcionan/'],
+  ['en', '/en/chronic-pain-physiotherapy/'],
+  ['es', '/es/agujetas-causas-y-como-hacer-que-desaparezcan/'],
+  ['en', '/en/delayed-onset-muscle-soreness/'],
+  ['es', '/es/sobreentrenamiento/'],
+  ['en', '/en/overtraining/'],
 ];
 
 // Content routes, keyed by a stable id with the slug each locale publishes. The
@@ -802,6 +822,43 @@ const ROUTES = {
   restPause: { es: '/tecnica-descanso-pausa', en: '/rest-pause' },
   alternatingSets: { es: '/series-alternativas', en: '/alternating-sets' },
   negativeReps: { es: '/repeticiones-negativas', en: '/negative-reps' },
+  highIntensityExercises: {
+    es: '/ejercicios-de-alta-intensidad',
+    en: '/high-intensity-exercises',
+  },
+  peakContraction: {
+    es: '/principio-de-contraccion-maxima',
+    en: '/peak-contraction-principle',
+  },
+  whenToSeeSportsDoctor: {
+    es: '/cuando-ir-al-traumatologo-experiencia-personal',
+    en: '/when-to-see-a-sports-doctor',
+  },
+  maintainFitnessSummer: {
+    es: '/como-mantener-y-mejorar-tu-forma-fisica-durante-el-verano',
+    en: '/maintain-fitness-in-summer',
+  },
+  injuriousGymExercises: {
+    es: '/ejercicios-de-gimnasio-mas-lesivos',
+    en: '/most-injurious-gym-exercises',
+  },
+  commonGymInjuries: {
+    es: '/lesiones-comunes-en-el-gimnasio-prevencion',
+    en: '/common-gym-injuries',
+  },
+  correctPosture: {
+    es: '/la-postura-correcta-un-factor-importante-en-nuestro-deporte',
+    en: '/correct-posture-for-training',
+  },
+  chronicPainPhysiotherapy: {
+    es: '/dolor-cronico-y-fisioterapia-tratamientos-que-funcionan',
+    en: '/chronic-pain-physiotherapy',
+  },
+  delayedOnsetSoreness: {
+    es: '/agujetas-causas-y-como-hacer-que-desaparezcan',
+    en: '/delayed-onset-muscle-soreness',
+  },
+  overtraining: { es: '/sobreentrenamiento', en: '/overtraining' },
 };
 
 const routeId = (path) => {
