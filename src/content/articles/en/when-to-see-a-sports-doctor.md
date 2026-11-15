@@ -85,7 +85,7 @@ Strengthening the gluteus medius and maximus, the adductors and the core stabili
     <tr><td>Low back pain that will not settle, with hip stiffness</td><td>Long hours sitting, turning</td><td>Sports doctor appointment to rule out FAI</td></tr>
     <tr><td>Stab in the groin or deep clicking</td><td>Sport with changes of direction</td><td>Sports doctor and specific X-ray</td></tr>
     <tr><td>Mild discomfort after training</td><td>Improves in 48 to 72 hours</td><td>Adjust the load; if it persists, book</td></tr>
-    <tr><td>Night pain, limping, loss of strength</td><td>Progressive, wakes you up</td><td>Priority sports doctor appointment</td></tr>
+    <tr><td>Night pain, limping, loss of strength</td><td>Progressive and wakes you up</td><td>Priority sports doctor appointment</td></tr>
   </tbody>
 </table>
 

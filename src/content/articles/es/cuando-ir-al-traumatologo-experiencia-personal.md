@@ -85,7 +85,7 @@ Fortalecer glúteo medio y mayor, aductores y core estabiliza la pelvis y repart
     <tr><td>Dolor lumbar que no cede y rigidez de cadera</td><td>Mucho tiempo sentado, giros</td><td>Cita con traumatología para descartar un FAI</td></tr>
     <tr><td>Pinchazo en la ingle o chasquido profundo</td><td>Deporte con cambios de dirección</td><td>Traumatología y radiografía específica</td></tr>
     <tr><td>Molestia leve después de entrenar</td><td>Mejora en 48 a 72 horas</td><td>Ajustar la carga; si persiste, cita</td></tr>
-    <tr><td>Dolor nocturno, cojera, pérdida de fuerza</td><td>Progresivo, te despierta</td><td>Cita prioritaria con traumatología</td></tr>
+    <tr><td>Dolor nocturno, cojera, pérdida de fuerza</td><td>Progresivo y te despierta</td><td>Cita prioritaria con traumatología</td></tr>
   </tbody>
 </table>
 

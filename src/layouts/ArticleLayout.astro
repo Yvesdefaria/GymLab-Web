@@ -556,6 +556,30 @@ const copy = {
     white-space: normal;
   }
 
+  /* On a 390px screen a 24% first column is 84px: the display face breaks words
+     like "chasquido" mid-syllable. Give it the room instead. */
+  @media (max-width: 640px) {
+    .article-body :global(table.text-table th:nth-child(1)),
+    .article-body :global(table.text-table td:nth-child(1)) {
+      width: 30%;
+    }
+
+    .article-body :global(table.text-table th:nth-child(2)),
+    .article-body :global(table.text-table td:nth-child(2)) {
+      width: 30%;
+    }
+
+    .article-body :global(table.text-table th:nth-child(3)),
+    .article-body :global(table.text-table td:nth-child(3)) {
+      width: 40%;
+    }
+
+    .article-body :global(table.text-table tbody td:first-child) {
+      font-size: 0.9rem;
+      line-height: 1.35;
+    }
+  }
+
   .article-body :global(img) {
     max-width: 100%;
     height: auto;
