@@ -275,7 +275,10 @@ and commits per page.
   `remo-polea-sentado` / `superserie-de-espalda-para-terminar-tu-rutina`. One false positive at
   distance 5 (`fascitis-plantar` vs `jalones-agarre-cerrado`) was checked by eye: a light foot
   illustration against a dark gym photo, not a duplicate.
-- Native assessment: pending, run by the parent after the docs commit.
+- Native assessment: `gentle-ai review assess` over `99d531a..HEAD` (34 paths, 1,793 changed lines,
+  untracked mockups excluded) reports risk **medium**, reason `executable_change` on
+  `astro.config.mjs`, `review_due: false`, `review_due_reason: under_budget`. No review transaction
+  was opened.
 
 ### Known limitation
 
