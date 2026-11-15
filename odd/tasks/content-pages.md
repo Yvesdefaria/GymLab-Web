@@ -380,7 +380,7 @@ Legend: `ES` = Spanish published, `EN` = English published.
 - [x] ES · [x] EN — `/repeticiones-negativas/` — Repeticiones negativas: el secreto para ganar músculo
 - [x] ES · [x] EN — `/ejercicios-de-alta-intensidad/` — Ejercicios de alta intensidad para finalizar el entrenamiento
 - [x] ES · [x] EN — `/principio-de-contraccion-maxima/` — Contracción Máxima \| Técnica avanzada de hipertrofia
-- [ ] ES · [ ] EN — `/cuando-ir-al-traumatologo-experiencia-personal/` — Cuándo ir al traumatólogo y no autodiagnosticarte \| Mi experiencia
+- [x] ES · [x] EN — `/cuando-ir-al-traumatologo-experiencia-personal/` — Cuándo ir al traumatólogo y no autodiagnosticarte \| Mi experiencia
 - [ ] ES · [ ] EN — `/como-mantener-y-mejorar-tu-forma-fisica-durante-el-verano/` — Cómo mantener y mejorar tu forma física durante el verano
 
 ### Prevención y Recuperación de Lesiones (16)
