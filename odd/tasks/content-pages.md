@@ -385,7 +385,7 @@ Legend: `ES` = Spanish published, `EN` = English published.
 
 ### Prevención y Recuperación de Lesiones (16)
 
-- [ ] ES · [ ] EN — `/ejercicios-de-gimnasio-mas-lesivos/` — Ejercicios peligrosos que debemos evitar en el gimnasio
+- [x] ES · [x] EN — `/ejercicios-de-gimnasio-mas-lesivos/` — Ejercicios peligrosos que debemos evitar en el gimnasio
 - [ ] ES · [ ] EN — `/lesiones-comunes-en-el-gimnasio-prevencion/` — Lesiones comunes en el gimnasio: evítalas y recupérate
 - [ ] ES · [ ] EN — `/la-postura-correcta-un-factor-importante-en-nuestro-deporte/` — La postura correcta, un factor importante en nuestro deporte
 - [ ] ES · [ ] EN — `/dolor-cronico-y-fisioterapia-tratamientos-que-funcionan/` — Fisioterapia para Dolor Crónico: Tratamientos Efectivos
