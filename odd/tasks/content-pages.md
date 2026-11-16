@@ -478,7 +478,7 @@ Legend: `ES` = Spanish published, `EN` = English published.
 ### Entrenamiento de los Bíceps (7)
 
 - [x] ES · [x] EN — `/flexion-brazos-compartida/` — Flexión de Brazos Compartida \| ¡Desafía tus bíceps!
-- [ ] ES · [ ] EN — `/rutinas-biceps/` — Rutinas de bíceps y como entrenarlo \| 100% Actualizadas 2025
+- [x] ES · [x] EN — `/rutinas-biceps/` — Rutinas de bíceps y como entrenarlo \| 100% Actualizadas 2025
 - [ ] ES · [ ] EN — `/biceps-grandes/` — Bíceps más grandes en seis fases
 - [ ] ES · [ ] EN — `/anatomia-biceps-antebrazo/` — Músculos del Bíceps \| Anatomía y consejos de entrenamiento
 - [ ] ES · [ ] EN — `/posicion-de-muneca-en-el-curl-de-biceps/` — Posición de muñeca en el curl de bíceps
