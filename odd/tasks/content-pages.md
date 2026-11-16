@@ -511,7 +511,7 @@ Legend: `ES` = Spanish published, `EN` = English published.
 - [x] ES · [x] EN — `/encogimientos-banco-inclinado/` — Encogimientos en banco inclinado \| 100% intensidad
 - [x] ES · [x] EN — `/encogimientos-maquina/` — Encogimientos en máquina \| Contrae tu abdomen al máximo
 - [x] ES · [x] EN — `/encogimientos-polea-2/` — Encogimientos en polea, arrodillado \| 100% hipertrófico
-- [ ] ES · [ ] EN — `/rodar-con-barra/` — Rodar con la barra (Rodamiento abdominal)
+- [x] ES · [x] EN — `/rodar-con-barra/` — Rodar con la barra (Rodamiento abdominal)
 - [ ] ES · [ ] EN — `/encogimientos-abdominales-suelo/` — Encogimientos abdominales en suelo \| ¡Lo básico funciona!
 - [ ] ES · [ ] EN — `/encogimientos-en-polea-de-pie/` — Encogimientos en polea, de pie \| Máxima hipertrofia abdominal
 - [ ] ES · [ ] EN — `/bicicleta-oblicuos/` — Bicicleta abdominal para oblicuos
