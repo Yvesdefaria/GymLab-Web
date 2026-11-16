@@ -451,7 +451,7 @@ Legend: `ES` = Spanish published, `EN` = English published.
 - [x] ES · [x] EN — `/entrenamiento-del-cuadriceps-mitos/` — Mitos en el entrenamiento del cuádriceps
 - [x] ES · [x] EN — `/mejores-ejercicios-cuadriceps/` — Mejores ejercicios de cuádriceps \| Revienta los pantalones
 - [x] ES · [x] EN — `/como-calentar-para-tu-entrenamiento-de-gluteos/` — Como calentar para tu entrenamiento de glúteos
-- [ ] ES · [ ] EN — `/anatomia-femorales/` — Anatomía y músculos de los femorales (isquiotibiales)
+- [x] ES · [x] EN — `/anatomia-femorales/` — Anatomía y músculos de los femorales (isquiotibiales)
 - [ ] ES · [ ] EN — `/prensa-posicion-pies/` — Posición de los pies en la prensa \| Optimiza tus resultados
 - [ ] ES · [ ] EN — `/sentadilla-mirada-al-frente/` — En la sentadilla, mirada al frente
 - [ ] ES · [ ] EN — `/grandes-gemelos-elevaciones-de-pie-o-sentado/` — Grandes gemelos... ¿elevaciones de pie o sentado?
