@@ -9,7 +9,7 @@ Legend: `ES` = Spanish published, `EN` = English published.
 
 ## Progress
 
-- **Built: 251 / 792** (ES 251, EN 251).
+- **Built: 261 / 792** (ES 261, EN 261).
 - Last batch: 10 pages built from `/anatomia-del-pecho/` to
   `/posicion-de-muneca-en-el-curl-de-biceps/`; the chest block is closed and the biceps block has five of
   seven.
@@ -20,13 +20,13 @@ Legend: `ES` = Spanish published, `EN` = English published.
 
 | Block | Articles | Built |
 | --- | ---: | ---: |
-| Entrenamiento | 222 | 212 |
+| Entrenamiento | 222 | 222 |
 | Por Músculo | 80 | 5 |
 | Rutinas | 80 | 0 |
 | Ejercicios | 196 | 34 |
 | Nutrición | 191 | 0 |
 | Mujer Fitness | 23 | 0 |
-| **Total** | **792** | **251** |
+| **Total** | **792** | **261** |
 
 ## Copy gate (mandatory before ticking ES/EN)
 
@@ -477,7 +477,7 @@ Legend: `ES` = Spanish published, `EN` = English published.
 - [x] ES · [x] EN — `/maquinas-pesos-libres-al-entrenar-el-pecho/` — Máquinas vs. Pesos libres al entrenar el pecho
 - [x] ES · [x] EN — `/mancuernas-entrenando-pecho/` — Utilizar mancuernas al entrenar el pecho
 
-### Entrenamiento de los Bíceps (7) — 5/7
+### Entrenamiento de los Bíceps (7) — COMPLETO
 
 - [x] ES · [x] EN — `/flexion-brazos-compartida/` — Flexión de Brazos Compartida \| ¡Desafía tus bíceps!
 - [x] ES · [x] EN — `/rutinas-biceps/` — Rutinas de bíceps y como entrenarlo \| 100% Actualizadas 2025
@@ -487,7 +487,7 @@ Legend: `ES` = Spanish published, `EN` = English published.
 - [x] ES · [x] EN — `/consigue-grandes-brazos/` — Consigue grandes brazos dejando fuera el braquial
 - [x] ES · [x] EN — `/aumentar-biceps/` — Consejos para aumentar tus bíceps
 
-### Entrenamiento del Tríceps (3)
+### Entrenamiento del Tríceps (3) — COMPLETO
 
 - [x] ES · [x] EN — `/rutinas-triceps/` — Rutinas de Tríceps \| Gana más músculo en 2025
 - [x] ES · [x] EN — `/cabeza-larga-del-triceps/` — Ataca la cabeza larga del tríceps
@@ -495,7 +495,7 @@ Legend: `ES` = Spanish published, `EN` = English published.
 
 ## Por Músculo (80)
 
-### Abdomen (39)
+### Abdomen (39) — 5/39
 
 - [x] ES · [x] EN — `/entrenamiento-abdominal-por-dorian-yates/` — Rutina y entrenamiento abdominal por Dorian Yates
 - [x] ES · [x] EN — `/encogimientos-sobre-balon-ejercicio/` — Encogimientos en balón de ejercicio (Fitball) \| 100% Efectivo

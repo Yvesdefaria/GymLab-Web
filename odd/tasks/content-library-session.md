@@ -9,9 +9,9 @@ Last updated: 2026-11-12. Read this first next session.
 
 ## State
 
-- **251 / 792 bilingual pages** (ES 251, EN 251).
-- Blocks: Entrenamiento **212**, Por Músculo **5**, Ejercicios **34**.
-- **251 unique hero paths.** One exact duplicate pair remains from an earlier batch
+- **261 / 792 bilingual pages** (ES 261, EN 261).
+- Blocks: Entrenamiento **222**, Por Músculo **5**, Ejercicios **34**.
+- **261 unique hero paths.** One exact duplicate pair remains from an earlier batch
   (`remo-polea-sentado` with `superserie-de-espalda-para-terminar-tu-rutina`); the batch 17 to 24
   duplicates were fixed. See the follow-up in `PLAN.md`.
 - **Batch 25 is built, green and committed (2026-11-16).** The build has **518 pages** and
@@ -19,14 +19,14 @@ Last updated: 2026-11-12. Read this first next session.
 - Five archive rows are settled and must stay out: the FiveStars Fitness congress page (discarded),
   the AEKE S1 Pro page (discarded 2026-11-14), `/velocidad-repeticiones/` (fused into the tempo page,
   2026-11-14) and the two batch 20 fusions (2026-11-15).
-- Batch record: `odd/tasks/content-library-batch-25.md`.
+- Batch record: `odd/tasks/content-library-batch-26.md`.
 
 ## Gates
 
 ```powershell
-npm run check:copy   # 12,801/12,801
-npm run build        # 518 pages
-npm run check:i18n   # 8,122/8,122
+npm run check:copy   # 13,311/13,311
+npm run build        # 538 pages
+npm run check:i18n   # 8,432/8,432
 npm run verify       # all three, in that order
 npm run dev          # http://localhost:4321
 ```

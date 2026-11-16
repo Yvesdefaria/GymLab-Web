@@ -13,26 +13,26 @@ Last updated: 2026-11-14.
 - Production is **live** at `https://gymlab.dev`, served by the Worker `gymlab-web` with static assets.
   It is not Cloudflare Pages. Deploy with `npx wrangler deploy`.
 - Production is live with batch 18 (pushed 2026-11-14): **382 pages** and **378 sitemap URLs**.
-  Batches 19 to 25 are committed locally and **not pushed yet**: **518 pages** and **514 sitemap
-  URLs**. Gates after batch 25: `check:copy` **12,801/12,801**, build **518 pages**, `check:i18n`
-  **8,122/8,122**.
+  Batches 19 to 26 are committed locally and **not pushed yet**: **538 pages** and **534 sitemap
+  URLs**. Gates after batch 26: `check:copy` **13,311/13,311**, build **538 pages**, `check:i18n`
+  **8,432/8,432**.
 - `app.gymlab.dev` is `noindex` with a real `robots.txt`.
 - The landing, the three calculators, the 404 and the legal pages all ship in both locales.
 - Measurement and the SQL recipe: see "Reading analytics" below and `COMPLETED.md` Appendix B.
 
-## Content library — 251 / 792 (2026-11-16)
+## Content library — 261 / 792 (2026-11-16)
 
-- **251 bilingual pages** (ES 251, EN 251), **251 unique hero paths**. Blocks: Entrenamiento 212,
+- **261 bilingual pages** (ES 261, EN 261), **261 unique hero paths**. Blocks: Entrenamiento 222,
   Por Músculo 5, Ejercicios 34.
-- **Batch 25 is built, green and committed (2026-11-16), not pushed.** The build has **518 pages** and
-  **514 sitemap URLs**. Físicos de leyenda, Entrenamiento de las Piernas and Entrenamiento del Pecho are
-  closed; the biceps block has five of seven.
+- **Batch 26 is built, green and committed (2026-11-16), not pushed.** The build has **538 pages** and
+  **534 sitemap URLs**. Físicos de leyenda, Piernas, Pecho, Bíceps and Tríceps are closed; abdomen has
+  five of thirty-nine.
 - Gates: `npm run verify` = `check:copy` **12,291/12,291** + build **498 pages** + `check:i18n`
-  **8,122/8,122**.
+  **8,432/8,432**.
 - Docs: `odd/tasks/content-library-session.md` (start here next session),
-  `odd/tasks/content-pages.md` (per-page checklist + resume), `odd/tasks/content-library-batch-25.md`
+  `odd/tasks/content-pages.md` (per-page checklist + resume), `odd/tasks/content-library-batch-26.md`
   (the last batch) and `odd/tasks/guides-page-contract.md` (the page contract and copy gate).
-- **Next 10:** `/consigue-grandes-brazos/` and the rest of the biceps block.
+- **Next 10:** `/abdominales-ejercicios-colgado/` and the rest of the abdomen block.
 - **Follow-up:** one exact duplicate hero pair remains from an earlier batch (dHash 0):
   `remo-polea-sentado` with `superserie-de-espalda-para-terminar-tu-rutina`. The batch 19 and 20 dHash
   passes cleared the other suspected pairs. The batch 20 injury illustrations carry labels baked into
@@ -47,7 +47,7 @@ Last updated: 2026-11-14.
 - Future batches deploy via Workers Builds on the push; run `npm run verify` first.
 - Image rule: one unique hero per page; `check:copy` fails on a duplicate path. Batches 5-18 heroes are
   Wikimedia Commons (CC0/CC BY/CC BY-SA/public domain); the `alt` includes the credit.
-- Engram topic `content-library/handoff` covers through batch 25; the scaling architecture is PLAN
+- Engram topic `content-library/handoff` covers through batch 26; the scaling architecture is PLAN
   Phase 7.
 
 ## Content and growth — phased plan (2026-11-05)
