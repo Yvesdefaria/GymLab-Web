@@ -292,3 +292,9 @@ hero dHash, and commits per page.
 column by 3 px at 390 px. It cannot wrap because the numeric columns are `white-space: nowrap` and the
 string has no break opportunity. Invisible in practice; recorded so the next session can decide.
 
+### Native assessment
+
+`gentle-ai review assess` over `754e115..HEAD` (36 paths, 2,419 changed lines, untracked mockups
+excluded) reports risk **medium**, `review_due: false`, `review_due_reason: under_budget`. No review
+transaction was opened.
+
