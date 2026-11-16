@@ -485,7 +485,7 @@ Legend: `ES` = Spanish published, `EN` = English published.
 - [x] ES · [x] EN — `/anatomia-biceps-antebrazo/` — Músculos del Bíceps \| Anatomía y consejos de entrenamiento
 - [x] ES · [x] EN — `/posicion-de-muneca-en-el-curl-de-biceps/` — Posición de muñeca en el curl de bíceps
 - [x] ES · [x] EN — `/consigue-grandes-brazos/` — Consigue grandes brazos dejando fuera el braquial
-- [ ] ES · [ ] EN — `/aumentar-biceps/` — Consejos para aumentar tus bíceps
+- [x] ES · [x] EN — `/aumentar-biceps/` — Consejos para aumentar tus bíceps
 
 ### Entrenamiento del Tríceps (3)
 
