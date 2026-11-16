@@ -20,8 +20,9 @@ Last updated: 2026-11-16. Read this first next session.
 - Five archive rows are settled and must stay out: the FiveStars Fitness congress page (discarded),
   the AEKE S1 Pro page (discarded 2026-11-14), `/velocidad-repeticiones/` (fused into the tempo page,
   2026-11-14) and the two batch 20 fusions (2026-11-15).
-- **Nothing is pushed since batch 18.** Batches 19 to 32 sit on local `main`, waiting for the
-  owner's go-ahead.
+- **Production runs batch 32 (pushed 2026-11-16).** Batches 19 to 32 are live; `origin/main` is at
+  the push and nothing is pending locally. The deploy was verified against the live sitemap
+  (**654 URLs**, 1,962 alternates) and four new routes answering 200.
 - Batch records: `odd/tasks/content-library-batch-30.md`, `-31.md` and `-32.md`.
 
 ## Gates
@@ -148,7 +149,31 @@ Start the dev server with `npm run dev` for local review.
   published, so the bench reverse crunch page can link its floor regression when that page is next
   touched. One pre-existing 3 px clipped cell in `/rutinas-espalda/` (a nowrap numeric column) is
   documented in the batch 22 record.
-- **Push is the owner's call:** batches 19 to 32 sit on local `main`, waiting for the go-ahead.
+- **Push is the owner's call:** satisfied on 2026-11-16. Batches 19 to 32 were pushed from
+  `6293327` to `f7f8de1`; production serves 658 pages.
+
+## Session close (2026-11-16, push of batches 19-32)
+
+- Pushed `6293327..f7f8de1`: **180 commits**, batches 19 to 32. Nothing is pending locally and
+  `origin/main` matches `main`.
+- Gates at the push: `check:copy` **16,371/16,371**, build **658 pages**, `check:i18n`
+  **10,292/10,292**.
+- Production verified after the Workers build: sitemap **654 URLs** with 1,962 alternates, and the
+  new routes answer 200 (`/es/rutinas-pecho/`, `/en/chest-routines/`, `/es/face-pull/`,
+  `/en/calf-routines/`, `/es/plancha-lateral-tecnica-y-beneficios/`, `/en/bench-press-strength/`).
+- Library at **321 / 792**. Closed: Abdomen 39/39, Hombro 5/5, Rutinas de Bíceps 7/7, Pecho 9/9,
+  Rutinas de Pierna 3/3. Pierna is 2/9.
+- **Where the next session starts:** `/rutina-volumen-pierna-completa/`, then
+  `/rutina-de-piernas-de-doble-division/`, `/rutinas-pierna/`,
+  `/entrenamiento-de-gemelos-diferente/`, `/entrenar-femorales/`,
+  `/rutinas-cuadriceps-objetivos/` and `/rutina-de-piernas-con-sentadillas-de-la-vieja-escuela/`.
+  After those, the three loose routine rows.
+- **Not started, by design:** Phase 10 (coupling audit and themeability) ships no visual change; the
+  next redesign should wait for it. Phase 1 (article JSON-LD and OG image), Phase 2 (guides hub and
+  menu), Phase 5 (image pipeline) and Phase 6 (Search Console read on 2026-11-19) remain open.
+- **Two clean-up items nobody owns yet:** the six stray images in the repo root
+  (`bands.jpg`, `curl.jpg`, `fly.jpg`, `front.jpg`, `me.jpg`, `model.jpg`) and the eleven untracked
+  mockups in `odd/mockups/`; both predate this session.
 
 ## Session close (2026-11-16, batches 30, 31 and 32)
 

@@ -12,10 +12,9 @@ Last updated: 2026-11-16.
   TypeScript strict, fully static. Languages `es` (default) and `en-GB`, both under a locale prefix.
 - Production is **live** at `https://gymlab.dev`, served by the Worker `gymlab-web` with static assets.
   It is not Cloudflare Pages. Deploy with `npx wrangler deploy`.
-- Production is live with batch 18 (pushed 2026-11-14): **382 pages** and **378 sitemap URLs**.
-  Batches 19 to 32 are committed locally and **not pushed yet**: **658 pages** and **654 sitemap
-  URLs**. Gates after batch 32: `check:copy` **16,371/16,371**, build **658 pages**, `check:i18n`
-  **10,292/10,292**.
+- Production is **live with batch 32** (pushed 2026-11-16): **658 pages** and **654 sitemap URLs**
+  with 1,962 alternates. Gates at the push: `check:copy` **16,371/16,371**, build **658 pages**,
+  `check:i18n` **10,292/10,292**. Nothing is pending locally.
 - `app.gymlab.dev` is `noindex` with a real `robots.txt`.
 - The landing, the three calculators, the 404 and the legal pages all ship in both locales.
 - Measurement and the SQL recipe: see "Reading analytics" below and `COMPLETED.md` Appendix B.
@@ -24,7 +23,7 @@ Last updated: 2026-11-16.
 
 - **321 bilingual pages** (ES 321, EN 321), **321 unique hero paths**. Blocks: Entrenamiento 272,
   Por Músculo 5, Ejercicios 34.
-- **Batches 30, 31 and 32 are built, green and committed (2026-11-16), not pushed.** The build has
+- **Batches 30, 31 and 32 are built, green, committed and pushed (2026-11-16).** Production runs
   **658 pages** and **654 sitemap URLs**. Abdomen (39/39), Hombro (5/5), Rutinas de Bíceps (7/7) and
   Pecho (9/9) are closed; Rutinas de Pierna is 3/3 and Pierna has two of nine.
 - Gates: `npm run verify` = `check:copy` **16,371/16,371** + build **658 pages** + `check:i18n`
