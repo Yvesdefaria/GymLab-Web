@@ -1,6 +1,6 @@
 # Content library — session handoff
 
-Last updated: 2026-11-12. Read this first next session.
+Last updated: 2026-11-16. Read this first next session.
 
 - Per-page record: `odd/tasks/content-pages.md`
 - Page contract and copy gate: `odd/tasks/guides-page-contract.md`
@@ -14,13 +14,13 @@ Last updated: 2026-11-12. Read this first next session.
 - **271 unique hero paths.** One exact duplicate pair remains from an earlier batch
   (`remo-polea-sentado` with `superserie-de-espalda-para-terminar-tu-rutina`); the batch 17 to 27
   duplicates were fixed. See the follow-up in `PLAN.md`.
-- **Batch 27 survived an unfinished parallel run and is now committed (2026-11-16).** The build has
-  **558 pages** and **554 sitemap URLs**. Biceps (7/7) and triceps (3/3) are closed; abdomen has
-  fifteen of thirty-nine.
+- **Batch 27 is built, green and committed (2026-11-16).** The build has
+  **558 pages** and **554 sitemap URLs**. Biceps (7/7) and triceps (3/3) are
+  closed; abdomen has fifteen of thirty-nine.
 - Five archive rows are settled and must stay out: the FiveStars Fitness congress page (discarded),
   the AEKE S1 Pro page (discarded 2026-11-14), `/velocidad-repeticiones/` (fused into the tempo page,
   2026-11-14) and the two batch 20 fusions (2026-11-15).
-- **Nothing is pushed since batch 18.** Batches 19 to 27 sit on local `main`, 118 commits ahead of
+- **Nothing is pushed since batch 18.** Batches 19 to 27 sit on local `main`, 121 commits ahead of
   `origin/main`, waiting for the owner's go-ahead.
 - Batch record: `odd/tasks/content-library-batch-27.md`.
 
@@ -135,12 +135,33 @@ Start the dev server with `npm run dev` for local review.
 - Phase 6: read Search Console on 2026-11-19 before scaling beyond the 115-page pilot.
 - Engram topic `content-library/handoff` covers the current state; the scaling architecture is PLAN
   Phase 7.
-- **Open defects to pick up, none blocking:** two links from batch 26 (`/entrenamiento-abdominal-por-dorian-yates/`
-  and `/abdominales-isometricos/`) point at `volumen-de-entrenamiento` and `rutinas-ejercicios-abdominales`
-  because `/perder-grasa-abdominal-con-abdominales/` and `/plancha-lateral-tecnica-y-beneficios/` do not
-  exist yet; re-point them when those rows ship. One pre-existing 3 px clipped cell in
-  `/rutinas-espalda/` (a nowrap numeric column) is documented in the batch 22 record.
-- **Push is the owner's call:** 106 commits on local `main`, batches 19 to 26.
+- **Open defects to pick up, none blocking:** one link from batch 26
+  (`/abdominales-isometricos/`) points at `rutinas-ejercicios-abdominales` because
+  `/plancha-lateral-tecnica-y-beneficios/` does not exist yet; re-point it when that row ships. The
+  Dorian Yates pair now links `/perder-grasa-abdominal-con-abdominales/` (batch 27). One pre-existing
+  3 px clipped cell in `/rutinas-espalda/` (a nowrap numeric column) is documented in the batch 22
+  record.
+- **Push is the owner's call:** batches 19 to 27 sit on local `main`, waiting for the go-ahead.
+
+## Session close (2026-11-16, batch 27)
+
+- Batch 27 added ten abdomen pairs from `/abdominales-ejercicios-colgado/` to `/rodar-con-barra/`:
+  261 → 271/792, abdomen 5/39 → 15/39, 10 new heroes. Writers A and B split pages 1-5 and 6-10; the
+  parent added the hub cross-links, rebuilt one hero crop, ran the gates and committed per page.
+- Gates: `check:copy` 13,821/13,821, build **558 pages**, `check:i18n` 8,742/8,742, sitemap
+  **554 URLs** with 1,662 alternates. 100 internal links, 0 broken; all 20 pages clean at 390 px.
+- Commits: pages `edd9506`, `8178ef5`, `dace7d7`, `2e2e6f0`, `0dac076`, `7c23769`, `5dd9b1e`,
+  `86ad6aa`, `db13f12`, `f28b312`; routes `7fa76c6`; docs `65e9b14`.
+- **Gotcha:** the archive's "encogimientos en banco inclinado" is a decline bench. The page says it
+  once and keeps the archive slug.
+- **Gotcha:** `1112 Muscles of the Abdomen` (OpenStax) is 1046 px wide, labelled in English and has
+  its caption inside the file. Crop above the caption row (y=575 of 1351) before scaling to 1280; the
+  plate is upscaled 1.22×, still passes, and is now the smallest source hero in the library.
+- **Gotcha:** the obvious "Sit-up with weight" photo hashes 0 against the Dorian Yates hero
+  (`embhoo`). The dHash check caught it before vendoring.
+- **Gotcha:** the Commons API answers 429 after a handful of queries and 400 for thumbnail widths
+  outside its allowed list; `Special:FilePath/<file>?width=1280` still works.
+- Next session starts at `/encogimientos-abdominales-suelo/`.
 
 ## Session close (2026-11-16, batches 24, 25 and 26)
 

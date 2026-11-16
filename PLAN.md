@@ -27,7 +27,7 @@ Last updated: 2026-11-14.
 - **Batch 27 is built, green and committed (2026-11-16), not pushed.** The build has **558 pages** and
   **554 sitemap URLs**. Físicos de leyenda, Piernas, Pecho, Bíceps and Tríceps are closed; abdomen has
   fifteen of thirty-nine.
-- Gates: `npm run verify` = `check:copy` **12,291/12,291** + build **498 pages** + `check:i18n`
+- Gates: `npm run verify` = `check:copy` **13,821/13,821** + build **558 pages** + `check:i18n`
   **8,742/8,742**.
 - Docs: `odd/tasks/content-library-session.md` (start here next session),
   `odd/tasks/content-pages.md` (per-page checklist + resume), `odd/tasks/content-library-batch-27.md`

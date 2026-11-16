@@ -11,8 +11,7 @@ Legend: `ES` = Spanish published, `EN` = English published.
 
 - **Built: 271 / 792** (ES 271, EN 271).
 - Last batch: 10 abdomen pages built from `/abdominales-ejercicios-colgado/` to
-  `/posicion-de-muneca-en-el-curl-de-biceps/`; the chest block is closed and the biceps block has five of
-  seven.
+  `/rodar-con-barra/`; the abdomen block has fifteen of thirty-nine.
 - Blocks finished end to end: Entrenamiento del Hombro (9), Físicos de leyenda (12), Entrenamiento de
   la Espalda (10), Rutinas de Espalda (4), Espalda (1), Ejercicios de Espalda (31), Ejercicio
   Cardiovascular (32), Entrenamiento de las Piernas (18) and Entrenamiento del Pecho (6). Their

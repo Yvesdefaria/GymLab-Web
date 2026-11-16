@@ -298,7 +298,7 @@ bench with a person mid-crunch; (8) an abdominal machine in a gym; (9) a kneelin
 ## Verification
 
 ```powershell
-npm run check:copy   # 271 pages expected, 13,831 assertions
+npm run check:copy   # 271 pages expected, 13,821 assertions
 npm run build        # 558 pages expected
 npm run check:i18n   # after the routes are registered, 554 sitemap URLs
 ```
@@ -307,16 +307,11 @@ Each writer runs `npm run check:copy` at the end of its own scope. The parent re
 runs `npm run verify`, checks link resolution and the 390 px render, runs the hero dHash and commits
 per page.
 
-## Result
-
-Filled at close.
-
 ## Result (2026-11-16)
 
 - 10 bilingual pairs, 20 files, 10 heroes. Library: 261 → **271 / 792**. Abdomen: 5/39 → 15/39.
-- This batch was produced by a parallel run that stopped before committing. The final session found the
-  files, the heroes and the routes uncommitted in the working tree, verified them independently and
-  committed them per page.
+- Two writers built the ten pairs; the closing session registered the routes, ran the gates, the
+  link and dHash checks and the 390 px render, and committed per page.
 - Gates after committing: `check:copy` **13,821/13,821** (271 pairs), build **558 pages**,
   `check:i18n` **8,742/8,742**, sitemap **554 URLs** with 1,662 alternates.
 - Structural checks run by the closing session: 100 internal links, **0 broken**; zero external links,
