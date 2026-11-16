@@ -599,6 +599,16 @@ const copy = {
     .article-body :global(table:not(.text-table) thead th) {
       padding: 0.6rem 0.5rem;
     }
+
+    /* Five-number rep strings ("15, 12, 12, 20, 20") cannot fit the reps column
+       at 390px and the column is nowrap, so they clipped. Let them wrap at the
+       commas and step the size down one notch. */
+    .article-body :global(table:not(.text-table) tbody td:nth-child(2)),
+    .article-body :global(table:not(.text-table) tbody td:nth-child(3)) {
+      white-space: normal;
+      font-size: 0.8rem;
+      line-height: 1.35;
+    }
   }
 
   .article-body :global(img) {
