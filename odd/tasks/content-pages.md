@@ -9,19 +9,22 @@ Legend: `ES` = Spanish published, `EN` = English published.
 
 ## Progress
 
-- **Built: 183 / 792** (ES 183, EN 183).
-- Last batch: 9 pages built from `/repeticiones-parciales/` to `/repeticiones-negativas/`, plus
-  `/velocidad-repeticiones/` fused into `/es/tiempos-entrenamiento/` + `/en/rep-tempo/`.
+- **Built: 231 / 792** (ES 231, EN 231).
+- Last batch: 10 pages built from `/serie-dorian-yates/` to `/prensa-posicion-pies/`; the
+  Entrenamiento del Hombro and Físicos de leyenda blocks are closed.
+- Blocks finished end to end: Entrenamiento del Hombro (9), Físicos de leyenda (12), Entrenamiento de
+  la Espalda (10), Rutinas de Espalda (4), Espalda (1), Ejercicios de Espalda (31) and Ejercicio
+  Cardiovascular (32). Their headings are marked `— COMPLETO`; partial blocks show their ratio.
 
 | Block | Articles | Built |
 | --- | ---: | ---: |
-| Entrenamiento | 222 | 144 |
+| Entrenamiento | 222 | 192 |
 | Por Músculo | 80 | 5 |
 | Rutinas | 80 | 0 |
 | Ejercicios | 196 | 34 |
 | Nutrición | 191 | 0 |
 | Mujer Fitness | 23 | 0 |
-| **Total** | **792** | **183** |
+| **Total** | **792** | **231** |
 
 ## Copy gate (mandatory before ticking ES/EN)
 
@@ -233,7 +236,7 @@ Legend: `ES` = Spanish published, `EN` = English published.
 
 ## Entrenamiento (222)
 
-### Musculación (84)
+### Musculación (84) — 83/84
 
 - [x] ES · [x] EN — `/plantilla-entrenamiento/` — Plantilla de entrenamiento (PDF y Fotos) \| Las Mejores de 2026
 - [x] ES · [x] EN — `/prueba-flexibilidad/` — Prueba de Flexibilidad \| ¡Descubre si eres elástico!
@@ -320,7 +323,7 @@ Legend: `ES` = Spanish published, `EN` = English published.
 - [x] ES · [x] EN — `/menos-grasa-mas-musculo/` — Como ganar músculo y perder grasa al mismo tiempo
 - [x] ES · [x] EN — `/entrenamiento-con-companero/` — Entrenamiento con un compañero
 
-### Ejercicio Cardiovascular (32)
+### Ejercicio Cardiovascular (32) — COMPLETO
 
 - [x] ES · [x] EN — `/guia-de-entrenamiento-hitt/` — Guía de Entrenamiento HIIT: Rutinas y Beneficios Reales
 - [x] ES · [x] EN — `/rutina-entrenamiento-natacion/` — Rutina de entrenamiento de natación de 3 días a la semana ✓
@@ -355,7 +358,7 @@ Legend: `ES` = Spanish published, `EN` = English published.
 - [x] ES · [x] EN — `/bicicleta-para-perder-grasa/` — La bicicleta para perder grasa y mejorar la capacidad aeróbica
 - [x] ES · [x] EN — `/spinning-mejores-consejos-por-nivel/` — Spinning, los mejores consejos según tu nivel
 
-### Entrenamiento (25)
+### Entrenamiento (25) — 23/25
 
 - [x] ES · [x] EN — `/entrenamiento-alta-intensidad/` — Entrenamiento de alta intensidad \| Las mejores técnicas
 - [x] ES · [x] EN — `/series-gigantes/` — Series Gigantes 【Las superseries más intensas】
@@ -383,7 +386,7 @@ Legend: `ES` = Spanish published, `EN` = English published.
 - [x] ES · [x] EN — `/cuando-ir-al-traumatologo-experiencia-personal/` — Cuándo ir al traumatólogo y no autodiagnosticarte \| Mi experiencia
 - [x] ES · [x] EN — `/como-mantener-y-mejorar-tu-forma-fisica-durante-el-verano/` — Cómo mantener y mejorar tu forma física durante el verano
 
-### Prevención y Recuperación de Lesiones (16)
+### Prevención y Recuperación de Lesiones (16) — 14/16
 
 - [x] ES · [x] EN — `/ejercicios-de-gimnasio-mas-lesivos/` — Ejercicios peligrosos que debemos evitar en el gimnasio
 - [x] ES · [x] EN — `/lesiones-comunes-en-el-gimnasio-prevencion/` — Lesiones comunes en el gimnasio: evítalas y recupérate
@@ -402,7 +405,7 @@ Legend: `ES` = Spanish published, `EN` = English published.
 - [x] ES · [x] EN — `/entrenamiento-problemas-espalda/` — Guía de entrenamiento para personas con problemas de espalda
 - [x] ES · [x] EN — `/tendinitis-rotuliana/` — Tendinitis Rotuliana o "Rodilla del Saltador"
 
-### Entrenamiento del Hombro (9)
+### Entrenamiento del Hombro (9) — COMPLETO
 
 - [x] ES · [x] EN — `/consejos-entrenar-deltoides-posterior/` — Como entrenar el deltoides posterior \| Rutina y Consejos
 - [x] ES · [x] EN — `/entrenamiento-trapecios/` — Entrenamiento de los trapecios
@@ -414,7 +417,7 @@ Legend: `ES` = Spanish published, `EN` = English published.
 - [x] ES · [x] EN — `/entrenar-los-trapecios-con-los-hombros-o-con-la-espalda/` — Entrenar los trapecios con los hombros o con la espalda
 - [x] ES · [x] EN — `/remo-de-pie-agarre-amplitud/` — La amplitud de agarre en el remo de pie
 
-### Físicos de leyenda (12)
+### Físicos de leyenda (12) — COMPLETO
 
 - [x] ES · [x] EN — `/rutina-de-femorales/` — Rutina de Femorales de Jay Cutler
 - [x] ES · [x] EN — `/franco-columbu-dieta-y-entrenamiento/` — Franco Columbu: Dieta y Entrenamiento del León Sardo
@@ -429,7 +432,7 @@ Legend: `ES` = Spanish published, `EN` = English published.
 - [x] ES · [x] EN — `/shawn-ray-preparando-la-competicion/` — Shawn Ray, preparando la competición
 - [x] ES · [x] EN — `/serie-dorian-yates/` — La Serie de Dorian Yates
 
-### Entrenamiento de la Espalda (10)
+### Entrenamiento de la Espalda (10) — COMPLETO
 
 - [x] ES · [x] EN — `/ejercicios-dolor-de-espalda/` — Ejercicios para el dolor de espalda
 - [x] ES · [x] EN — `/rutinas-espalda/` — Rutinas de espalda y como entrenarla \| Efectivas 100% en 2025
@@ -442,7 +445,7 @@ Legend: `ES` = Spanish published, `EN` = English published.
 - [x] ES · [x] EN — `/espalda-baja-fuerte/` — Como tener una espalda baja fuerte
 - [x] ES · [x] EN — `/anatomia-de-la-espalda/` — Anatomía y músculos de la espalda \| ¡Entrénalos!
 
-### Entrenamiento de las Piernas (18)
+### Entrenamiento de las Piernas (18) — 9/18
 
 - [x] ES · [x] EN — `/sentadilla-con-caja-alturas/` — Sentadilla con caja, cuestión de altura
 - [x] ES · [x] EN — `/beneficios-hip-thrust/` — Beneficios de hacer rutinas de Hip Thrust \| Glúteos tonificados
@@ -580,7 +583,7 @@ Legend: `ES` = Spanish published, `EN` = English published.
 - [ ] ES · [ ] EN — `/rutinas-cuadriceps-objetivos/` — Rutinas de cuádriceps para objetivos especificos
 - [ ] ES · [ ] EN — `/rutina-de-piernas-con-sentadillas-de-la-vieja-escuela/` — Rutina de piernas con sentadillas de la vieja escuela
 
-### Rutinas de Espalda (4)
+### Rutinas de Espalda (4) — COMPLETO
 
 - [x] ES · [x] EN — `/dominadas-programa-avanzado/` — Programa de dominadas avanzado
 - [x] ES · [x] EN — `/rutina-espalda-amplitud-densidad/` — Programa de entrenamiento de espalda de amplitud y densidad
@@ -599,7 +602,7 @@ Legend: `ES` = Spanish published, `EN` = English published.
 
 - [ ] ES · [ ] EN — `/rutina-para-sorprender-a-tus-triceps/` — Rutina para sorprender a tus tríceps
 
-### Espalda (1)
+### Espalda (1) — COMPLETO
 
 - [x] ES · [x] EN — `/superserie-de-espalda-para-terminar-tu-rutina/` — La mejor superserie para terminar tu rutina de espalda
 
@@ -725,7 +728,7 @@ Legend: `ES` = Spanish published, `EN` = English published.
 - [ ] ES · [ ] EN — `/extension-tumbado-con-barra-z-y-press-de-banca-con-agarre-cerrado/` — Extensión tumbado con barra Z y Press de banca con agarre cerrado
 - [ ] ES · [ ] EN — `/flexiones-para-triceps-en-suelo/` — Flexiones para tríceps en suelo \| Efectividad Máxima
 
-### Ejercicios (8)
+### Ejercicios (8) — 1/8
 
 - [x] ES · [x] EN — `/ejercicios-espalda/` — Ejercicios de Espalda \| Los mejores para tu rutina en 2025
 - [ ] ES · [ ] EN — `/ejercicios-pecho/` — Ejercicios de Pecho \| Los más efectivos y útiles en 2026
@@ -751,7 +754,7 @@ Legend: `ES` = Spanish published, `EN` = English published.
 - [ ] ES · [ ] EN — `/sentadillas-con-mancuerna-por-encima-de-la-cabeza/` — Sentadillas con mancuerna por encima de la cabeza
 - [ ] ES · [ ] EN — `/peso-muerto-rumano/` — Peso Muerto Rumano \| El mejor ejercicio para tus femorales
 
-### Ejercicios de Pecho (27)
+### Ejercicios de Pecho (27) — 2/27
 
 - [ ] ES · [ ] EN — `/fondos-pecho/` — Fondos en paralelas para pecho \| Gran ejercicio "Old School"
 - [ ] ES · [ ] EN — `/press-banca-barra/` — Press de banca con barra
@@ -857,7 +860,7 @@ Legend: `ES` = Spanish published, `EN` = English published.
 - [ ] ES · [ ] EN — `/sentadilla-zercher/` — Sentadilla Zercher: Técnica y beneficios clave
 - [ ] ES · [ ] EN — `/sentadilla-con-mancuernas/` — Sentadilla con mancuernas
 
-### Ejercicios de Espalda (31)
+### Ejercicios de Espalda (31) — COMPLETO
 
 - [x] ES · [x] EN — `/remo-en-polea-a-una-mano-de-pie/` — Remo en polea a una mano de pie \| ¡Congestión para el dorsal!
 - [x] ES · [x] EN — `/peso-muerto-piernas-rigidas-mancuernas/` — Peso Muerto Piernas Rígidas con Mancuernas: Guía Completa
