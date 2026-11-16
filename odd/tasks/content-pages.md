@@ -426,7 +426,7 @@ Legend: `ES` = Spanish published, `EN` = English published.
 - [x] ES · [x] EN — `/andreia-brazier-dieta-y-rutina-de-entrenamiento/` — Andreia Brazier, dieta y rutina de entrenamiento
 - [x] ES · [x] EN — `/larry-scott/` — Larry Scott
 - [x] ES · [x] EN — `/ejercicios-de-arnold-schwarzenegger/` — Los ejercicios de Arnold Schwarzenegger
-- [ ] ES · [ ] EN — `/shawn-ray-preparando-la-competicion/` — Shawn Ray, preparando la competición
+- [x] ES · [x] EN — `/shawn-ray-preparando-la-competicion/` — Shawn Ray, preparando la competición
 - [ ] ES · [ ] EN — `/serie-dorian-yates/` — La Serie de Dorian Yates
 
 ### Entrenamiento de la Espalda (10)
