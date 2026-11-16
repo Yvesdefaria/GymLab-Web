@@ -31,15 +31,20 @@ The rest is physiology with a name: a muscle performs slightly better when its a
 
 ## The weekly split
 
-| Day | Session | Focus |
-| --- | --- | --- |
-| Monday | Biceps and triceps in supersets | Triceps emphasis |
-| Tuesday | Legs | Lower body |
-| Wednesday | Chest and shoulders | Push |
-| Thursday | Rest | Recovery |
-| Friday | Triceps and biceps in supersets | Biceps emphasis |
-| Saturday | Back | Pull |
-| Sunday | Rest | Recovery |
+<table class="text-table">
+<thead>
+<tr><th>Day</th><th>Session</th><th>Focus</th></tr>
+</thead>
+<tbody>
+<tr><td>Monday</td><td>Biceps and triceps in supersets</td><td>Triceps emphasis</td></tr>
+<tr><td>Tuesday</td><td>Legs</td><td>Lower body</td></tr>
+<tr><td>Wednesday</td><td>Chest and shoulders</td><td>Push</td></tr>
+<tr><td>Thursday</td><td>Rest</td><td>Recovery</td></tr>
+<tr><td>Friday</td><td>Triceps and biceps in supersets</td><td>Biceps emphasis</td></tr>
+<tr><td>Saturday</td><td>Back</td><td>Pull</td></tr>
+<tr><td>Sunday</td><td>Rest</td><td>Recovery</td></tr>
+</tbody>
+</table>
 
 ## Day 1: triceps emphasis
 

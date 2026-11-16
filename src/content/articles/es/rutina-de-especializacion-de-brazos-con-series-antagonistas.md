@@ -31,15 +31,20 @@ El resto es fisiología con nombre: un músculo rinde algo más cuando su antago
 
 ## La distribución semanal
 
-| Día | Sesión | Enfoque |
-| --- | --- | --- |
-| Lunes | Bíceps y tríceps en superserie | Énfasis en tríceps |
-| Martes | Piernas | Tren inferior |
-| Miércoles | Pecho y hombros | Empuje |
-| Jueves | Descanso | Recuperación |
-| Viernes | Tríceps y bíceps en superserie | Énfasis en bíceps |
-| Sábado | Espalda | Tirón |
-| Domingo | Descanso | Recuperación |
+<table class="text-table">
+<thead>
+<tr><th>Día</th><th>Sesión</th><th>Enfoque</th></tr>
+</thead>
+<tbody>
+<tr><td>Lunes</td><td>Bíceps y tríceps en superserie</td><td>Énfasis en tríceps</td></tr>
+<tr><td>Martes</td><td>Piernas</td><td>Tren inferior</td></tr>
+<tr><td>Miércoles</td><td>Pecho y hombros</td><td>Empuje</td></tr>
+<tr><td>Jueves</td><td>Descanso</td><td>Recuperación</td></tr>
+<tr><td>Viernes</td><td>Tríceps y bíceps en superserie</td><td>Énfasis en bíceps</td></tr>
+<tr><td>Sábado</td><td>Espalda</td><td>Tirón</td></tr>
+<tr><td>Domingo</td><td>Descanso</td><td>Recuperación</td></tr>
+</tbody>
+</table>
 
 ## Día 1: énfasis en tríceps
 
