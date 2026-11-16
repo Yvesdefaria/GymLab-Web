@@ -255,7 +255,9 @@ per page.
 - 390 px render: all 20 pages clean, no page-level overflow and no clipped table cell.
 - Heroes: 1200-1280 px wide, 34-232 KB. dHash over all 231 heroes gives 230 distinct values; only the
   pre-existing `remo-polea-sentado` pair is identical.
-- Native assessment: run after the docs commit.
+- Native assessment: `gentle-ai review assess` over `dc580ed..HEAD` (36 paths, 1,948 changed lines,
+  untracked mockups excluded) reports risk **medium**, `review_due: false`,
+  `review_due_reason: under_budget`. No review transaction was opened.
 
 ### Two heroes replaced by the parent
 
