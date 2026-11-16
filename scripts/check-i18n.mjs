@@ -521,6 +521,26 @@ const PAGES = [
   ['en', '/en/biceps-forearm-anatomy/'],
   ['es', '/es/posicion-de-muneca-en-el-curl-de-biceps/'],
   ['en', '/en/wrist-position-biceps-curl/'],
+  ['es', '/es/consigue-grandes-brazos/'],
+  ['en', '/en/build-big-arms/'],
+  ['es', '/es/aumentar-biceps/'],
+  ['en', '/en/grow-biceps/'],
+  ['es', '/es/rutinas-triceps/'],
+  ['en', '/en/triceps-routines/'],
+  ['es', '/es/cabeza-larga-del-triceps/'],
+  ['en', '/en/triceps-long-head/'],
+  ['es', '/es/anatomia-triceps/'],
+  ['en', '/en/triceps-anatomy/'],
+  ['es', '/es/entrenamiento-abdominal-por-dorian-yates/'],
+  ['en', '/en/dorian-yates-abs/'],
+  ['es', '/es/encogimientos-sobre-balon-ejercicio/'],
+  ['en', '/en/swiss-ball-crunches/'],
+  ['es', '/es/giros-en-disco/'],
+  ['en', '/en/plate-twists/'],
+  ['es', '/es/rutinas-ejercicios-abdominales/'],
+  ['en', '/en/ab-workout-routines/'],
+  ['es', '/es/abdominales-isometricos/'],
+  ['en', '/en/isometric-abs/'],
 ];
 
 // Content routes, keyed by a stable id with the slug each locale publishes. The
@@ -1162,6 +1182,28 @@ const ROUTES = {
     es: '/posicion-de-muneca-en-el-curl-de-biceps',
     en: '/wrist-position-biceps-curl',
   },
+  buildBigArms: { es: '/consigue-grandes-brazos', en: '/build-big-arms' },
+  growBiceps: { es: '/aumentar-biceps', en: '/grow-biceps' },
+  tricepsRoutines: { es: '/rutinas-triceps', en: '/triceps-routines' },
+  tricepsLongHead: {
+    es: '/cabeza-larga-del-triceps',
+    en: '/triceps-long-head',
+  },
+  tricepsAnatomy: { es: '/anatomia-triceps', en: '/triceps-anatomy' },
+  dorianAbs: {
+    es: '/entrenamiento-abdominal-por-dorian-yates',
+    en: '/dorian-yates-abs',
+  },
+  swissBallCrunch: {
+    es: '/encogimientos-sobre-balon-ejercicio',
+    en: '/swiss-ball-crunches',
+  },
+  plateTwists: { es: '/giros-en-disco', en: '/plate-twists' },
+  abRoutines: {
+    es: '/rutinas-ejercicios-abdominales',
+    en: '/ab-workout-routines',
+  },
+  isometricAbs: { es: '/abdominales-isometricos', en: '/isometric-abs' },
 };
 
 const routeId = (path) => {

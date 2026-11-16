@@ -290,6 +290,16 @@ const ROUTE_PAIRS = [
   ['/biceps-grandes', '/bigger-biceps'],
   ['/anatomia-biceps-antebrazo', '/biceps-forearm-anatomy'],
   ['/posicion-de-muneca-en-el-curl-de-biceps', '/wrist-position-biceps-curl'],
+  ['/consigue-grandes-brazos', '/build-big-arms'],
+  ['/aumentar-biceps', '/grow-biceps'],
+  ['/rutinas-triceps', '/triceps-routines'],
+  ['/cabeza-larga-del-triceps', '/triceps-long-head'],
+  ['/anatomia-triceps', '/triceps-anatomy'],
+  ['/entrenamiento-abdominal-por-dorian-yates', '/dorian-yates-abs'],
+  ['/encogimientos-sobre-balon-ejercicio', '/swiss-ball-crunches'],
+  ['/giros-en-disco', '/plate-twists'],
+  ['/rutinas-ejercicios-abdominales', '/ab-workout-routines'],
+  ['/abdominales-isometricos', '/isometric-abs'],
 ];
 
 const pairFor = (pathname) => {
