@@ -270,6 +270,16 @@ const ROUTE_PAIRS = [
   ['/como-calentar-para-tu-entrenamiento-de-gluteos', '/glute-workout-warm-up'],
   ['/anatomia-femorales', '/hamstring-anatomy'],
   ['/prensa-posicion-pies', '/leg-press-foot-position'],
+  ['/sentadilla-mirada-al-frente', '/squat-head-position'],
+  ['/grandes-gemelos-elevaciones-de-pie-o-sentado', '/standing-vs-seated-calf-raises'],
+  ['/sentadilla-prensa', '/squat-vs-leg-press'],
+  ['/anatomia-gemelo-soleo', '/calf-anatomy'],
+  ['/como-proteger-tus-rodillas-en-el-entrenamiento-de-cuadriceps', '/protect-knees-quad-training'],
+  ['/anatomia-y-entrenamiento-del-tibial-anterior', '/tibialis-anterior'],
+  ['/zancadas-estaticas-zancadas-caminando-cual-es-mas-efectiva', '/static-vs-walking-lunges'],
+  ['/anatomia-de-la-cadera-gluteos', '/hip-anatomy'],
+  ['/como-ganar-volumen-en-los-gemelos', '/calf-growth'],
+  ['/press-de-banca-mas-efectivo-con-mancuernas-o-con-barra', '/dumbbell-vs-barbell-bench-press'],
 ];
 
 const pairFor = (pathname) => {

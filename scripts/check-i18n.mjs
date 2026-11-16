@@ -481,6 +481,26 @@ const PAGES = [
   ['en', '/en/hamstring-anatomy/'],
   ['es', '/es/prensa-posicion-pies/'],
   ['en', '/en/leg-press-foot-position/'],
+  ['es', '/es/sentadilla-mirada-al-frente/'],
+  ['en', '/en/squat-head-position/'],
+  ['es', '/es/grandes-gemelos-elevaciones-de-pie-o-sentado/'],
+  ['en', '/en/standing-vs-seated-calf-raises/'],
+  ['es', '/es/sentadilla-prensa/'],
+  ['en', '/en/squat-vs-leg-press/'],
+  ['es', '/es/anatomia-gemelo-soleo/'],
+  ['en', '/en/calf-anatomy/'],
+  ['es', '/es/como-proteger-tus-rodillas-en-el-entrenamiento-de-cuadriceps/'],
+  ['en', '/en/protect-knees-quad-training/'],
+  ['es', '/es/anatomia-y-entrenamiento-del-tibial-anterior/'],
+  ['en', '/en/tibialis-anterior/'],
+  ['es', '/es/zancadas-estaticas-zancadas-caminando-cual-es-mas-efectiva/'],
+  ['en', '/en/static-vs-walking-lunges/'],
+  ['es', '/es/anatomia-de-la-cadera-gluteos/'],
+  ['en', '/en/hip-anatomy/'],
+  ['es', '/es/como-ganar-volumen-en-los-gemelos/'],
+  ['en', '/en/calf-growth/'],
+  ['es', '/es/press-de-banca-mas-efectivo-con-mancuernas-o-con-barra/'],
+  ['en', '/en/dumbbell-vs-barbell-bench-press/'],
 ];
 
 // Content routes, keyed by a stable id with the slug each locale publishes. The
@@ -1065,6 +1085,34 @@ const ROUTES = {
   legPressFootPosition: {
     es: '/prensa-posicion-pies',
     en: '/leg-press-foot-position',
+  },
+  squatGaze: {
+    es: '/sentadilla-mirada-al-frente',
+    en: '/squat-head-position',
+  },
+  calfPosition: {
+    es: '/grandes-gemelos-elevaciones-de-pie-o-sentado',
+    en: '/standing-vs-seated-calf-raises',
+  },
+  squatVsPress: { es: '/sentadilla-prensa', en: '/squat-vs-leg-press' },
+  calfAnatomy: { es: '/anatomia-gemelo-soleo', en: '/calf-anatomy' },
+  kneeWarmUp: {
+    es: '/como-proteger-tus-rodillas-en-el-entrenamiento-de-cuadriceps',
+    en: '/protect-knees-quad-training',
+  },
+  tibialisAnterior: {
+    es: '/anatomia-y-entrenamiento-del-tibial-anterior',
+    en: '/tibialis-anterior',
+  },
+  lungeComparison: {
+    es: '/zancadas-estaticas-zancadas-caminando-cual-es-mas-efectiva',
+    en: '/static-vs-walking-lunges',
+  },
+  hipAnatomy: { es: '/anatomia-de-la-cadera-gluteos', en: '/hip-anatomy' },
+  calfGrowth: { es: '/como-ganar-volumen-en-los-gemelos', en: '/calf-growth' },
+  benchComparison: {
+    es: '/press-de-banca-mas-efectivo-con-mancuernas-o-con-barra',
+    en: '/dumbbell-vs-barbell-bench-press',
   },
 };
 
