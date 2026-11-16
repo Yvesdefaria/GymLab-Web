@@ -461,6 +461,26 @@ const PAGES = [
   ['en', '/en/arnold-schwarzenegger-exercises/'],
   ['es', '/es/shawn-ray-preparando-la-competicion/'],
   ['en', '/en/shawn-ray-competition-prep/'],
+  ['es', '/es/serie-dorian-yates/'],
+  ['en', '/en/dorian-yates-series/'],
+  ['es', '/es/sentadilla-con-caja-alturas/'],
+  ['en', '/en/box-squat-heights/'],
+  ['es', '/es/beneficios-hip-thrust/'],
+  ['en', '/en/hip-thrust-benefits/'],
+  ['es', '/es/entrenamiento-del-femoral-o-tendon-de-la-corva/'],
+  ['en', '/en/hamstring-training-guide/'],
+  ['es', '/es/anatomia-del-cuadriceps/'],
+  ['en', '/en/quadriceps-anatomy/'],
+  ['es', '/es/entrenamiento-del-cuadriceps-mitos/'],
+  ['en', '/en/quadriceps-training-myths/'],
+  ['es', '/es/mejores-ejercicios-cuadriceps/'],
+  ['en', '/en/best-quadriceps-exercises/'],
+  ['es', '/es/como-calentar-para-tu-entrenamiento-de-gluteos/'],
+  ['en', '/en/glute-workout-warm-up/'],
+  ['es', '/es/anatomia-femorales/'],
+  ['en', '/en/hamstring-anatomy/'],
+  ['es', '/es/prensa-posicion-pies/'],
+  ['en', '/en/leg-press-foot-position/'],
 ];
 
 // Content routes, keyed by a stable id with the slug each locale publishes. The
@@ -1011,6 +1031,40 @@ const ROUTES = {
   shawnRay: {
     es: '/shawn-ray-preparando-la-competicion',
     en: '/shawn-ray-competition-prep',
+  },
+  dorianYates: { es: '/serie-dorian-yates', en: '/dorian-yates-series' },
+  boxSquatHeights: {
+    es: '/sentadilla-con-caja-alturas',
+    en: '/box-squat-heights',
+  },
+  hipThrust: { es: '/beneficios-hip-thrust', en: '/hip-thrust-benefits' },
+  hamstringTraining: {
+    es: '/entrenamiento-del-femoral-o-tendon-de-la-corva',
+    en: '/hamstring-training-guide',
+  },
+  quadricepsAnatomy: {
+    es: '/anatomia-del-cuadriceps',
+    en: '/quadriceps-anatomy',
+  },
+  quadricepsMyths: {
+    es: '/entrenamiento-del-cuadriceps-mitos',
+    en: '/quadriceps-training-myths',
+  },
+  quadricepsExercises: {
+    es: '/mejores-ejercicios-cuadriceps',
+    en: '/best-quadriceps-exercises',
+  },
+  gluteWarmUp: {
+    es: '/como-calentar-para-tu-entrenamiento-de-gluteos',
+    en: '/glute-workout-warm-up',
+  },
+  hamstringAnatomy: {
+    es: '/anatomia-femorales',
+    en: '/hamstring-anatomy',
+  },
+  legPressFootPosition: {
+    es: '/prensa-posicion-pies',
+    en: '/leg-press-foot-position',
   },
 };
 

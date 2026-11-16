@@ -260,6 +260,16 @@ const ROUTE_PAIRS = [
   ['/larry-scott', '/larry-scott'],
   ['/ejercicios-de-arnold-schwarzenegger', '/arnold-schwarzenegger-exercises'],
   ['/shawn-ray-preparando-la-competicion', '/shawn-ray-competition-prep'],
+  ['/serie-dorian-yates', '/dorian-yates-series'],
+  ['/sentadilla-con-caja-alturas', '/box-squat-heights'],
+  ['/beneficios-hip-thrust', '/hip-thrust-benefits'],
+  ['/entrenamiento-del-femoral-o-tendon-de-la-corva', '/hamstring-training-guide'],
+  ['/anatomia-del-cuadriceps', '/quadriceps-anatomy'],
+  ['/entrenamiento-del-cuadriceps-mitos', '/quadriceps-training-myths'],
+  ['/mejores-ejercicios-cuadriceps', '/best-quadriceps-exercises'],
+  ['/como-calentar-para-tu-entrenamiento-de-gluteos', '/glute-workout-warm-up'],
+  ['/anatomia-femorales', '/hamstring-anatomy'],
+  ['/prensa-posicion-pies', '/leg-press-foot-position'],
 ];
 
 const pairFor = (pathname) => {
