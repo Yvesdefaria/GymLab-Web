@@ -503,7 +503,7 @@ Legend: `ES` = Spanish published, `EN` = English published.
 - [x] ES · [x] EN — `/rutinas-ejercicios-abdominales/` — Rutinas de Abdominales con ejercicios 100% efectivos ✔✔
 - [x] ES · [x] EN — `/abdominales-isometricos/` — Abdominales isométricos \| Trabajo de core sin movimiento
 - [x] ES · [x] EN — `/abdominales-ejercicios-colgado/` — Ejercicios "Colgado" de abdominales
-- [ ] ES · [ ] EN — `/abdominales-cambiatufisico/` — Rutina de abdominales de 4 días a la semana \| Plan Avanzado
+- [x] ES · [x] EN — `/abdominales-cambiatufisico/` — Rutina de abdominales de 4 días a la semana \| Plan Avanzado
 - [ ] ES · [ ] EN — `/ejercicios-de-abdominales/` — Ejercicios de Abdominales ⇨ Los más efectivos en 2026
 - [ ] ES · [ ] EN — `/perder-grasa-abdominal-con-abdominales/` — Perder grasa en el abdomen haciendo abdominales \| ¿Fake?
 - [ ] ES · [ ] EN — `/rutina-abdominales-para-culturismo/` — Rutina de abdominales para hipertrofiar tu abdomen
