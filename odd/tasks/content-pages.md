@@ -422,7 +422,7 @@ Legend: `ES` = Spanish published, `EN` = English published.
 - [x] ES · [x] EN — `/mike-mentzer-heavy-duty-entrena-menos-y-crece-mas/` — Mike Mentzer y el Heavy Duty: Entrena menos y crece más
 - [x] ES · [x] EN — `/ganadores-mr-olympia/` — Ganadores del Mr.Olympia, máxima competición culturista
 - [x] ES · [x] EN — `/rutina-y-dieta-de-jeff-seid/` — Rutina y dieta de Jeff Seid \| 100% Auténtica 2026
-- [ ] ES · [ ] EN — `/simeon-panda-rutina-de-entrenamiento-y-dieta/` — Rutina y Dieta de Simeon Panda \| 100% Efectiva
+- [x] ES · [x] EN — `/simeon-panda-rutina-de-entrenamiento-y-dieta/` — Rutina y Dieta de Simeon Panda \| 100% Efectiva
 - [ ] ES · [ ] EN — `/andreia-brazier-dieta-y-rutina-de-entrenamiento/` — Andreia Brazier, dieta y rutina de entrenamiento
 - [ ] ES · [ ] EN — `/larry-scott/` — Larry Scott
 - [ ] ES · [ ] EN — `/ejercicios-de-arnold-schwarzenegger/` — Los ejercicios de Arnold Schwarzenegger
