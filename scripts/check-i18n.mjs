@@ -441,6 +441,26 @@ const PAGES = [
   ['en', '/en/upright-row-grip-width/'],
   ['es', '/es/rutina-de-femorales/'],
   ['en', '/en/jay-cutler-hamstring-routine/'],
+  ['es', '/es/franco-columbu-dieta-y-entrenamiento/'],
+  ['en', '/en/franco-columbu-diet-and-training/'],
+  ['es', '/es/ronnie-coleman-rutina-y-dieta-tributo/'],
+  ['en', '/en/ronnie-coleman-routine-and-diet/'],
+  ['es', '/es/mike-mentzer-heavy-duty-entrena-menos-y-crece-mas/'],
+  ['en', '/en/mike-mentzer-heavy-duty/'],
+  ['es', '/es/ganadores-mr-olympia/'],
+  ['en', '/en/mr-olympia-winners/'],
+  ['es', '/es/rutina-y-dieta-de-jeff-seid/'],
+  ['en', '/en/jeff-seid-routine-and-diet/'],
+  ['es', '/es/simeon-panda-rutina-de-entrenamiento-y-dieta/'],
+  ['en', '/en/simeon-panda-routine-and-diet/'],
+  ['es', '/es/andreia-brazier-dieta-y-rutina-de-entrenamiento/'],
+  ['en', '/en/andreia-brazier-diet-and-routine/'],
+  ['es', '/es/larry-scott/'],
+  ['en', '/en/larry-scott/'],
+  ['es', '/es/ejercicios-de-arnold-schwarzenegger/'],
+  ['en', '/en/arnold-schwarzenegger-exercises/'],
+  ['es', '/es/shawn-ray-preparando-la-competicion/'],
+  ['en', '/en/shawn-ray-competition-prep/'],
 ];
 
 // Content routes, keyed by a stable id with the slug each locale publishes. The
@@ -960,6 +980,37 @@ const ROUTES = {
   cutlerHamstrings: {
     es: '/rutina-de-femorales',
     en: '/jay-cutler-hamstring-routine',
+  },
+  francoColumbu: {
+    es: '/franco-columbu-dieta-y-entrenamiento',
+    en: '/franco-columbu-diet-and-training',
+  },
+  ronnieColeman: {
+    es: '/ronnie-coleman-rutina-y-dieta-tributo',
+    en: '/ronnie-coleman-routine-and-diet',
+  },
+  mentzerHeavyDuty: {
+    es: '/mike-mentzer-heavy-duty-entrena-menos-y-crece-mas',
+    en: '/mike-mentzer-heavy-duty',
+  },
+  mrOlympiaWinners: { es: '/ganadores-mr-olympia', en: '/mr-olympia-winners' },
+  jeffSeid: { es: '/rutina-y-dieta-de-jeff-seid', en: '/jeff-seid-routine-and-diet' },
+  simeonPanda: {
+    es: '/simeon-panda-rutina-de-entrenamiento-y-dieta',
+    en: '/simeon-panda-routine-and-diet',
+  },
+  andreiaBrazier: {
+    es: '/andreia-brazier-dieta-y-rutina-de-entrenamiento',
+    en: '/andreia-brazier-diet-and-routine',
+  },
+  larryScott: { es: '/larry-scott', en: '/larry-scott' },
+  arnoldExercises: {
+    es: '/ejercicios-de-arnold-schwarzenegger',
+    en: '/arnold-schwarzenegger-exercises',
+  },
+  shawnRay: {
+    es: '/shawn-ray-preparando-la-competicion',
+    en: '/shawn-ray-competition-prep',
   },
 };
 

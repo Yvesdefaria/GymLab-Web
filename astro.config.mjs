@@ -250,6 +250,16 @@ const ROUTE_PAIRS = [
   ['/entrenar-los-trapecios-con-los-hombros-o-con-la-espalda', '/trap-training-placement'],
   ['/remo-de-pie-agarre-amplitud', '/upright-row-grip-width'],
   ['/rutina-de-femorales', '/jay-cutler-hamstring-routine'],
+  ['/franco-columbu-dieta-y-entrenamiento', '/franco-columbu-diet-and-training'],
+  ['/ronnie-coleman-rutina-y-dieta-tributo', '/ronnie-coleman-routine-and-diet'],
+  ['/mike-mentzer-heavy-duty-entrena-menos-y-crece-mas', '/mike-mentzer-heavy-duty'],
+  ['/ganadores-mr-olympia', '/mr-olympia-winners'],
+  ['/rutina-y-dieta-de-jeff-seid', '/jeff-seid-routine-and-diet'],
+  ['/simeon-panda-rutina-de-entrenamiento-y-dieta', '/simeon-panda-routine-and-diet'],
+  ['/andreia-brazier-dieta-y-rutina-de-entrenamiento', '/andreia-brazier-diet-and-routine'],
+  ['/larry-scott', '/larry-scott'],
+  ['/ejercicios-de-arnold-schwarzenegger', '/arnold-schwarzenegger-exercises'],
+  ['/shawn-ray-preparando-la-competicion', '/shawn-ray-competition-prep'],
 ];
 
 const pairFor = (pathname) => {
