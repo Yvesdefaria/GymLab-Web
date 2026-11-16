@@ -38,7 +38,7 @@ All three patterns show up in the lifts and in daily life: carrying a box, pushi
 
 The front plank is done face down, supported on the forearms and toes, with the body in line from head to heels. The head looks at the floor, the hips neither rise nor sag, and the glutes and abs hold the position.
 
-It is the entry point to the category, not the whole category. The side plank works the flank with the body side-on and the support on one forearm, and the [weighted version](/en/weighted-plank/) adds a plate on the back or a single-arm lift to raise the demand.
+It is the entry point to the category, not the whole category. The [side plank](/en/side-plank/) works the flank with the body side-on and the support on one forearm, and the [weighted version](/en/weighted-plank/) adds a plate on the back or a single-arm lift to raise the demand.
 
 The logical progression: hold the position, hold it longer, then add load or remove support. The guide to [ab workout routines](/en/ab-workout-routines/) places this work inside a full plan.
 

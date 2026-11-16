@@ -38,7 +38,7 @@ Los tres patrones aparecen en los levantamientos y en la vida diaria: cargar una
 
 La plancha frontal se hace boca abajo, con el apoyo en los antebrazos y las puntas de los pies, y el cuerpo en línea desde la cabeza hasta los talones. La cabeza mira al suelo, la cadera no sube ni cae y los glúteos y el abdomen mantienen la posición.
 
-Es el punto de entrada de la categoría, no la categoría entera. La plancha lateral trabaja el costado con el cuerpo de perfil y el apoyo en un antebrazo, y la [versión con peso](/es/plancha-con-peso/) añade un disco sobre la espalda o una elevación de un brazo para subir la exigencia.
+Es el punto de entrada de la categoría, no la categoría entera. La [plancha lateral](/es/plancha-lateral-tecnica-y-beneficios/) trabaja el costado con el cuerpo de perfil y el apoyo en un antebrazo, y la [versión con peso](/es/plancha-con-peso/) añade un disco sobre la espalda o una elevación de un brazo para subir la exigencia.
 
 La progresión lógica es esta: primero aguantar la posición, después aguantar más tiempo, y al final añadir carga o quitar apoyos. La guía de [rutinas de ejercicios abdominales](/es/rutinas-ejercicios-abdominales/) coloca este trabajo dentro de un plan completo.
 
