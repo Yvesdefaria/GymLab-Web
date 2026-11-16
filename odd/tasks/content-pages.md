@@ -464,7 +464,7 @@ Legend: `ES` = Spanish published, `EN` = English published.
 - [x] ES · [x] EN — `/anatomia-y-entrenamiento-del-tibial-anterior/` — Anatomía y entrenamiento del tibial anterior
 - [x] ES · [x] EN — `/zancadas-estaticas-zancadas-caminando-cual-es-mas-efectiva/` — Zancadas estáticas y zancadas caminando, ¿Cual es más efectiva?
 - [x] ES · [x] EN — `/anatomia-de-la-cadera-gluteos/` — Anatomía y músculos de la cadera \| ¡Tu CORE importa!
-- [ ] ES · [ ] EN — `/como-ganar-volumen-en-los-gemelos/` — Como ganar volumen en los gemelos
+- [x] ES · [x] EN — `/como-ganar-volumen-en-los-gemelos/` — Como ganar volumen en los gemelos
 
 ### Entrenamiento del Pecho (6)
 
