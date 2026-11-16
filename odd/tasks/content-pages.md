@@ -468,7 +468,7 @@ Legend: `ES` = Spanish published, `EN` = English published.
 
 ### Entrenamiento del Pecho (6)
 
-- [ ] ES · [ ] EN — `/press-de-banca-mas-efectivo-con-mancuernas-o-con-barra/` — Press de banca... ¿Más efectivo con mancuernas o con barra?
+- [x] ES · [x] EN — `/press-de-banca-mas-efectivo-con-mancuernas-o-con-barra/` — Press de banca... ¿Más efectivo con mancuernas o con barra?
 - [ ] ES · [ ] EN — `/anatomia-del-pecho/` — Anatomía y músculos del pecho \| ¡Entrena tus puntos débiles!
 - [ ] ES · [ ] EN — `/ejercicios-inclinados-para-pecho/` — Ejercicios de Pecho Inclinados para un pectoral más completo
 - [ ] ES · [ ] EN — `/consejos-ganar-musculo-pectoral/` — Guía de entrenamiento de pecho para ganar más músculo
