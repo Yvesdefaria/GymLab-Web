@@ -280,6 +280,16 @@ const ROUTE_PAIRS = [
   ['/anatomia-de-la-cadera-gluteos', '/hip-anatomy'],
   ['/como-ganar-volumen-en-los-gemelos', '/calf-growth'],
   ['/press-de-banca-mas-efectivo-con-mancuernas-o-con-barra', '/dumbbell-vs-barbell-bench-press'],
+  ['/anatomia-del-pecho', '/chest-anatomy'],
+  ['/ejercicios-inclinados-para-pecho', '/incline-chest-exercises'],
+  ['/consejos-ganar-musculo-pectoral', '/build-pectoral-muscle'],
+  ['/maquinas-pesos-libres-al-entrenar-el-pecho', '/machines-vs-free-weights-chest'],
+  ['/mancuernas-entrenando-pecho', '/dumbbells-for-chest'],
+  ['/flexion-brazos-compartida', '/partner-biceps-curl'],
+  ['/rutinas-biceps', '/biceps-routines'],
+  ['/biceps-grandes', '/bigger-biceps'],
+  ['/anatomia-biceps-antebrazo', '/biceps-forearm-anatomy'],
+  ['/posicion-de-muneca-en-el-curl-de-biceps', '/wrist-position-biceps-curl'],
 ];
 
 const pairFor = (pathname) => {

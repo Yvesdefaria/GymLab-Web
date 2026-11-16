@@ -501,6 +501,26 @@ const PAGES = [
   ['en', '/en/calf-growth/'],
   ['es', '/es/press-de-banca-mas-efectivo-con-mancuernas-o-con-barra/'],
   ['en', '/en/dumbbell-vs-barbell-bench-press/'],
+  ['es', '/es/anatomia-del-pecho/'],
+  ['en', '/en/chest-anatomy/'],
+  ['es', '/es/ejercicios-inclinados-para-pecho/'],
+  ['en', '/en/incline-chest-exercises/'],
+  ['es', '/es/consejos-ganar-musculo-pectoral/'],
+  ['en', '/en/build-pectoral-muscle/'],
+  ['es', '/es/maquinas-pesos-libres-al-entrenar-el-pecho/'],
+  ['en', '/en/machines-vs-free-weights-chest/'],
+  ['es', '/es/mancuernas-entrenando-pecho/'],
+  ['en', '/en/dumbbells-for-chest/'],
+  ['es', '/es/flexion-brazos-compartida/'],
+  ['en', '/en/partner-biceps-curl/'],
+  ['es', '/es/rutinas-biceps/'],
+  ['en', '/en/biceps-routines/'],
+  ['es', '/es/biceps-grandes/'],
+  ['en', '/en/bigger-biceps/'],
+  ['es', '/es/anatomia-biceps-antebrazo/'],
+  ['en', '/en/biceps-forearm-anatomy/'],
+  ['es', '/es/posicion-de-muneca-en-el-curl-de-biceps/'],
+  ['en', '/en/wrist-position-biceps-curl/'],
 ];
 
 // Content routes, keyed by a stable id with the slug each locale publishes. The
@@ -1113,6 +1133,34 @@ const ROUTES = {
   benchComparison: {
     es: '/press-de-banca-mas-efectivo-con-mancuernas-o-con-barra',
     en: '/dumbbell-vs-barbell-bench-press',
+  },
+  chestAnatomy: { es: '/anatomia-del-pecho', en: '/chest-anatomy' },
+  inclineChest: {
+    es: '/ejercicios-inclinados-para-pecho',
+    en: '/incline-chest-exercises',
+  },
+  buildPectoral: {
+    es: '/consejos-ganar-musculo-pectoral',
+    en: '/build-pectoral-muscle',
+  },
+  machinesVsFreeWeights: {
+    es: '/maquinas-pesos-libres-al-entrenar-el-pecho',
+    en: '/machines-vs-free-weights-chest',
+  },
+  dumbbellsForChest: {
+    es: '/mancuernas-entrenando-pecho',
+    en: '/dumbbells-for-chest',
+  },
+  partnerCurl: { es: '/flexion-brazos-compartida', en: '/partner-biceps-curl' },
+  bicepsRoutines: { es: '/rutinas-biceps', en: '/biceps-routines' },
+  biggerBiceps: { es: '/biceps-grandes', en: '/bigger-biceps' },
+  bicepsForearmAnatomy: {
+    es: '/anatomia-biceps-antebrazo',
+    en: '/biceps-forearm-anatomy',
+  },
+  wristPositionCurl: {
+    es: '/posicion-de-muneca-en-el-curl-de-biceps',
+    en: '/wrist-position-biceps-curl',
   },
 };
 
