@@ -9,24 +9,25 @@ Last updated: 2026-11-12. Read this first next session.
 
 ## State
 
-- **231 / 792 bilingual pages** (ES 231, EN 231).
-- Blocks: Entrenamiento **192**, Por Músculo **5**, Ejercicios **34**.
-- **231 unique hero paths.** One exact duplicate pair remains from an earlier batch
-  (`remo-polea-sentado` with `superserie-de-espalda-para-terminar-tu-rutina`); the batch 17 to 23
+- **241 / 792 bilingual pages** (ES 241, EN 241).
+- Blocks: Entrenamiento **202**, Por Músculo **5**, Ejercicios **34**.
+- **241 unique hero paths.** One exact duplicate pair remains from an earlier batch
+  (`remo-polea-sentado` with `superserie-de-espalda-para-terminar-tu-rutina`); the batch 17 to 24
   duplicates were fixed. See the follow-up in `PLAN.md`.
-- **Batch 23 is built, green and committed (2026-11-16).** The build has **478 pages** and
-  **474 sitemap URLs**. Físicos de leyenda is closed with twelve pages and the legs block has opened.
+- **Batch 24 is built, green and committed (2026-11-16).** The build has **498 pages** and
+  **494 sitemap URLs**. Físicos de leyenda and Entrenamiento de las Piernas are closed; the chest
+  block has its first page.
 - Five archive rows are settled and must stay out: the FiveStars Fitness congress page (discarded),
   the AEKE S1 Pro page (discarded 2026-11-14), `/velocidad-repeticiones/` (fused into the tempo page,
   2026-11-14) and the two batch 20 fusions (2026-11-15).
-- Batch record: `odd/tasks/content-library-batch-23.md`.
+- Batch record: `odd/tasks/content-library-batch-24.md`.
 
 ## Gates
 
 ```powershell
-npm run check:copy   # 11,781/11,781
-npm run build        # 478 pages
-npm run check:i18n   # 7,502/7,502
+npm run check:copy   # 12,291/12,291
+npm run build        # 498 pages
+npm run check:i18n   # 7,812/7,812
 npm run verify       # all three, in that order
 npm run dev          # http://localhost:4321
 ```
@@ -69,17 +70,20 @@ Start the dev server with `npm run dev` for local review.
 - **Físicos de Leyenda (11):** Jay Cutler's hamstring routine, Franco Columbu, Ronnie Coleman,
   Mike Mentzer and the Heavy Duty, the complete Mr. Olympia winners, Jeff Seid, Simeon Panda,
   Andreia Brazier, Larry Scott, Arnold's exercises and Shawn Ray's competition preparation.
-- **Entrenamiento de las Piernas (9):** box squat heights, hip thrust benefits, hamstring training,
+- **Entrenamiento de las Piernas (18):** box squat heights, hip thrust benefits, hamstring training,
   quadriceps anatomy, quadriceps myths, the best quadriceps exercises, the glute warm-up, hamstring
-  anatomy and leg press foot position.
+  anatomy, leg press foot position, squat gaze, standing versus seated calf raises, squat versus leg
+  press, calf anatomy, the knee-friendly warm-up, tibialis anterior, static versus walking lunges, hip
+  anatomy and calf growth.
+- **Entrenamiento del Pecho (1):** dumbbells versus barbell on the bench press.
 - **Recovery and planning (10):** back-pain exercises (YMYL), stretching, stretching circuit, muscle
   failure, periodization, exercise and immune system, deload week, sleep, training planning and
   muscle recovery.
 
 ## Next 10
 
-1. Start at `/sentadilla-mirada-al-frente/` and follow the pending rows in `content-pages.md` in order;
-   the legs block has five rows left, then the next block.
+1. Start at `/anatomia-del-pecho/` and follow the pending rows in `content-pages.md` in order; the
+   chest block has five rows left.
 2. Keep the same copy, unique-hero and gate flow.
 3. Before publishing another photo from Shixart1985, Nenad Stojkovic, Miguel Angel Omaña Rojas, the
    InjuryMap family, PTPioneer, KeepActive Australia, Everkinetic or Wellcome Collection, compare the
@@ -123,6 +127,19 @@ Start the dev server with `npm run dev` for local review.
 - Phase 6: read Search Console on 2026-11-19 before scaling beyond the 115-page pilot.
 - Engram topic `content-library/handoff` covers the current state; the scaling architecture is PLAN
   Phase 7.
+
+## Session close (2026-11-16, batch 24)
+
+- Batch 24 closed the legs block and opened chest: 10 page pairs (20 files), 241/792 pages, 10 new
+  heroes. Writers A and B split pages 1-5 and 6-10; the parent registered routes, fixed one table
+  wrap defect and committed per page.
+- Gates: `check:copy` 12,291/12,291, build **498 pages**, `check:i18n` 7,812/7,812, sitemap
+  **494 URLs** with 1,482 alternates.
+- Commits: layout `f0f5cfd`; pages `80d4887`, `cd2b232`, `cad1da0`, `722d7fd`, `ec207ae`,
+  `2dbd755`, `160ad41`, `ae0ec06`, `0815d71`, `728641a`; routes `d3d44fa`.
+- **Gotcha:** the reps column is nowrap, so a five-number string clips; on mobile those two columns
+  now wrap at the commas and drop to 0.8rem.
+- Next session starts at `/anatomia-del-pecho/`.
 
 ## Session close (2026-11-16, batch 23)
 
