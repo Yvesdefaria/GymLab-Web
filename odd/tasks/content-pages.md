@@ -425,7 +425,7 @@ Legend: `ES` = Spanish published, `EN` = English published.
 - [x] ES · [x] EN — `/simeon-panda-rutina-de-entrenamiento-y-dieta/` — Rutina y Dieta de Simeon Panda \| 100% Efectiva
 - [x] ES · [x] EN — `/andreia-brazier-dieta-y-rutina-de-entrenamiento/` — Andreia Brazier, dieta y rutina de entrenamiento
 - [x] ES · [x] EN — `/larry-scott/` — Larry Scott
-- [ ] ES · [ ] EN — `/ejercicios-de-arnold-schwarzenegger/` — Los ejercicios de Arnold Schwarzenegger
+- [x] ES · [x] EN — `/ejercicios-de-arnold-schwarzenegger/` — Los ejercicios de Arnold Schwarzenegger
 - [ ] ES · [ ] EN — `/shawn-ray-preparando-la-competicion/` — Shawn Ray, preparando la competición
 - [ ] ES · [ ] EN — `/serie-dorian-yates/` — La Serie de Dorian Yates
 
