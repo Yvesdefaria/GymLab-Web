@@ -9,25 +9,24 @@ Last updated: 2026-11-12. Read this first next session.
 
 ## State
 
-- **211 / 792 bilingual pages** (ES 211, EN 211).
-- Blocks: Entrenamiento **172**, Por Músculo **5**, Ejercicios **34**.
-- **211 unique hero paths.** One exact duplicate pair remains from an earlier batch
-  (`remo-polea-sentado` with `superserie-de-espalda-para-terminar-tu-rutina`); the batch 17 to 21
+- **221 / 792 bilingual pages** (ES 221, EN 221).
+- Blocks: Entrenamiento **182**, Por Músculo **5**, Ejercicios **34**.
+- **221 unique hero paths.** One exact duplicate pair remains from an earlier batch
+  (`remo-polea-sentado` with `superserie-de-espalda-para-terminar-tu-rutina`); the batch 17 to 22
   duplicates were fixed. See the follow-up in `PLAN.md`.
-- **Batch 21 is built, green and committed (2026-11-15).** The build has **438 pages** and
-  **434 sitemap URLs**. The Entrenamiento del Hombro block is closed and Físicos de leyenda has its
-  first page.
-- Four archive rows are settled and must stay out: the FiveStars Fitness congress page (discarded),
+- **Batch 22 is built, green and committed (2026-11-16).** The build has **458 pages** and
+  **454 sitemap URLs**. Físicos de leyenda has eleven pages; `/serie-dorian-yates/` is the last row.
+- Five archive rows are settled and must stay out: the FiveStars Fitness congress page (discarded),
   the AEKE S1 Pro page (discarded 2026-11-14), `/velocidad-repeticiones/` (fused into the tempo page,
   2026-11-14) and the two batch 20 fusions (2026-11-15).
-- Batch record: `odd/tasks/content-library-batch-21.md`.
+- Batch record: `odd/tasks/content-library-batch-22.md`.
 
 ## Gates
 
 ```powershell
-npm run check:copy   # 10,761/10,761
-npm run build        # 438 pages
-npm run check:i18n   # 6,882/6,882
+npm run check:copy   # 11,271/11,271
+npm run build        # 458 pages
+npm run check:i18n   # 7,192/7,192
 npm run verify       # all three, in that order
 npm run dev          # http://localhost:4321
 ```
@@ -67,18 +66,21 @@ Start the dev server with `npm run dev` for local review.
   anatomy, shoulder stretches, the complete routine, Arnold's techniques, trap placement and the
   upright row grip.
 - **Físicos de Leyenda (1):** Jay Cutler's hamstring routine.
+- **Físicos de Leyenda (11):** Jay Cutler's hamstring routine, Franco Columbu, Ronnie Coleman,
+  Mike Mentzer and the Heavy Duty, the complete Mr. Olympia winners, Jeff Seid, Simeon Panda,
+  Andreia Brazier, Larry Scott, Arnold's exercises and Shawn Ray's competition preparation.
 - **Recovery and planning (10):** back-pain exercises (YMYL), stretching, stretching circuit, muscle
   failure, periodization, exercise and immune system, deload week, sleep, training planning and
   muscle recovery.
 
 ## Next 10
 
-1. Start at `/franco-columbu-dieta-y-entrenamiento/` and follow the pending rows in
-   `content-pages.md` in order; Físicos de leyenda has eleven rows left.
+1. Start at `/serie-dorian-yates/`, the last Físicos de leyenda row, and then follow the pending rows
+   in `content-pages.md` in order.
 2. Keep the same copy, unique-hero and gate flow.
 3. Before publishing another photo from Shixart1985, Nenad Stojkovic, Miguel Angel Omaña Rojas, the
-   InjuryMap illustration family or PTPioneer, compare the Commons file title and the dHash against
-   the 211 existing heroes.
+   InjuryMap illustration family, PTPioneer or KeepActive Australia, compare the Commons file title
+   and the dHash against the 221 existing heroes.
 4. The scaling architecture is deferred to PLAN Phase 7; do not implement it during content batches.
 
 ## Page contract (short)
@@ -117,6 +119,28 @@ Start the dev server with `npm run dev` for local review.
 - Phase 6: read Search Console on 2026-11-19 before scaling beyond the 115-page pilot.
 - Engram topic `content-library/handoff` covers the current state; the scaling architecture is PLAN
   Phase 7.
+
+## Session close (2026-11-16, batch 22)
+
+- Batch 22 published ten of the eleven remaining Físicos de leyenda rows: 10 page pairs (20 files)
+  from Franco Columbu to Shawn Ray, 221/792 pages, 10 new heroes. `/serie-dorian-yates/` is the last.
+- Writers: A took pages 1-5, B pages 6-10. The parent verified the Olympia list against the public
+  source, fixed one clipped reps cell, registered the routes and committed per page.
+- Gates: `check:copy` 11,271/11,271, build **458 pages**, `check:i18n` 7,192/7,192, sitemap
+  **454 URLs** with 1,362 alternates.
+- Structural checks: 96 internal links resolve; zero external links, `.md` links, `#` links, inline
+  images, manual anchors, em dashes or supplement sections. All 20 pages render at 390 px with no
+  overflow.
+- Commits: pages `f066884`, `8287b93`, `2f47115`, `8fd66c3`, `8e09690`, `19700ff`, `f7ef4e0`, `1d923ef`,
+  `632feaf`, `0c7c445`; routes `10f3b1f`. Push pending owner go-ahead together with batches 19-21.
+- **Gotcha:** `white-space: nowrap` on the sets and reps columns means any cell text longer than the
+  column clips instead of wrapping. Keep rep strings numeric and explain exceptions in the prose.
+- **Gotcha:** the Commons thumbnail endpoint rejects arbitrary widths on `upload.wikimedia.org`;
+  `Special:FilePath/<file>?width=N` still returns the requested size.
+- **Gotcha:** `guia-de-entrenamiento-hitt` is the HIIT cardio guide, not high-intensity strength
+  training; the strength page is `entrenamiento-alta-intensidad`.
+- Next session starts at `/serie-dorian-yates/`.
+- Engram topic `content-library/handoff` is updated with this state.
 
 ## Session close (2026-11-15, batch 21)
 
