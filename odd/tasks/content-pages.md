@@ -456,7 +456,7 @@ Legend: `ES` = Spanish published, `EN` = English published.
 - [x] ES · [x] EN — `/como-calentar-para-tu-entrenamiento-de-gluteos/` — Como calentar para tu entrenamiento de glúteos
 - [x] ES · [x] EN — `/anatomia-femorales/` — Anatomía y músculos de los femorales (isquiotibiales)
 - [x] ES · [x] EN — `/prensa-posicion-pies/` — Posición de los pies en la prensa \| Optimiza tus resultados
-- [ ] ES · [ ] EN — `/sentadilla-mirada-al-frente/` — En la sentadilla, mirada al frente
+- [x] ES · [x] EN — `/sentadilla-mirada-al-frente/` — En la sentadilla, mirada al frente
 - [ ] ES · [ ] EN — `/grandes-gemelos-elevaciones-de-pie-o-sentado/` — Grandes gemelos... ¿elevaciones de pie o sentado?
 - [ ] ES · [ ] EN — `/sentadilla-prensa/` — Sentadilla y prensa, lo mejor para tus piernas
 - [ ] ES · [ ] EN — `/anatomia-gemelo-soleo/` — Anatomía y músculos del gemelo y sóleo \| ¡Pura roca!
