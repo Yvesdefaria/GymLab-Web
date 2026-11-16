@@ -505,7 +505,7 @@ Legend: `ES` = Spanish published, `EN` = English published.
 - [x] ES · [x] EN — `/abdominales-ejercicios-colgado/` — Ejercicios "Colgado" de abdominales
 - [x] ES · [x] EN — `/abdominales-cambiatufisico/` — Rutina de abdominales de 4 días a la semana \| Plan Avanzado
 - [x] ES · [x] EN — `/ejercicios-de-abdominales/` — Ejercicios de Abdominales ⇨ Los más efectivos en 2026
-- [ ] ES · [ ] EN — `/perder-grasa-abdominal-con-abdominales/` — Perder grasa en el abdomen haciendo abdominales \| ¿Fake?
+- [x] ES · [x] EN — `/perder-grasa-abdominal-con-abdominales/` — Perder grasa en el abdomen haciendo abdominales \| ¿Fake?
 - [ ] ES · [ ] EN — `/rutina-abdominales-para-culturismo/` — Rutina de abdominales para hipertrofiar tu abdomen
 - [ ] ES · [ ] EN — `/rutina-abdominales-ab/` — Rutina de Abdominales A/B \| Dos días a la semana
 - [ ] ES · [ ] EN — `/encogimientos-banco-inclinado/` — Encogimientos en banco inclinado \| 100% intensidad
