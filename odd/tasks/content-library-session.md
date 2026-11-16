@@ -9,26 +9,27 @@ Last updated: 2026-11-12. Read this first next session.
 
 ## State
 
-- **261 / 792 bilingual pages** (ES 261, EN 261).
-- Blocks: Entrenamiento **222**, Por Músculo **5**, Ejercicios **34**.
-- **261 unique hero paths.** One exact duplicate pair remains from an earlier batch
-  (`remo-polea-sentado` with `superserie-de-espalda-para-terminar-tu-rutina`); the batch 17 to 24
+- **271 / 792 bilingual pages** (ES 271, EN 271).
+- Blocks: Entrenamiento **232**, Por Músculo **5**, Ejercicios **34**.
+- **271 unique hero paths.** One exact duplicate pair remains from an earlier batch
+  (`remo-polea-sentado` with `superserie-de-espalda-para-terminar-tu-rutina`); the batch 17 to 27
   duplicates were fixed. See the follow-up in `PLAN.md`.
-- **Batch 26 is built, green and committed (2026-11-16).** The build has **538 pages** and
-  **534 sitemap URLs**. Biceps (7/7) and triceps (3/3) are closed; abdomen has five of thirty-nine.
+- **Batch 27 survived an unfinished parallel run and is now committed (2026-11-16).** The build has
+  **558 pages** and **554 sitemap URLs**. Biceps (7/7) and triceps (3/3) are closed; abdomen has
+  fifteen of thirty-nine.
 - Five archive rows are settled and must stay out: the FiveStars Fitness congress page (discarded),
   the AEKE S1 Pro page (discarded 2026-11-14), `/velocidad-repeticiones/` (fused into the tempo page,
   2026-11-14) and the two batch 20 fusions (2026-11-15).
-- **Nothing is pushed since batch 18.** Batches 19 to 26 sit on local `main`, 106 commits ahead of
+- **Nothing is pushed since batch 18.** Batches 19 to 27 sit on local `main`, 118 commits ahead of
   `origin/main`, waiting for the owner's go-ahead.
-- Batch record: `odd/tasks/content-library-batch-26.md`.
+- Batch record: `odd/tasks/content-library-batch-27.md`.
 
 ## Gates
 
 ```powershell
-npm run check:copy   # 13,311/13,311
-npm run build        # 538 pages
-npm run check:i18n   # 8,432/8,432
+npm run check:copy   # 13,821/13,821
+npm run build        # 558 pages
+npm run check:i18n   # 8,742/8,742
 npm run verify       # all three, in that order
 npm run dev          # http://localhost:4321
 ```
@@ -89,12 +90,12 @@ Start the dev server with `npm run dev` for local review.
 
 ## Next 10
 
-1. Start at `/abdominales-ejercicios-colgado/` and follow the pending rows in `content-pages.md` in
-   order; the abdomen block has thirty-four rows left.
+1. Take the next unchecked row in `content-pages.md`; the abdomen block has twenty-four rows left
+   after batch 27 (5/39 in batch 26, 15/39 now).
 2. Keep the same copy, unique-hero and gate flow.
 3. Before publishing another photo from Shixart1985, Nenad Stojkovic, Miguel Angel Omaña Rojas, the
    InjuryMap family, PTPioneer, KeepActive Australia, Everkinetic or Wellcome Collection, compare the
-   Commons file title and the dHash against the 261 existing heroes. Those sets have already produced
+   Commons file title and the dHash against the 271 existing heroes. Those sets have already produced
    four collisions.
 4. The scaling architecture is deferred to PLAN Phase 7; do not implement it during content batches.
 

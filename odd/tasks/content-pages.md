@@ -9,8 +9,8 @@ Legend: `ES` = Spanish published, `EN` = English published.
 
 ## Progress
 
-- **Built: 261 / 792** (ES 261, EN 261).
-- Last batch: 10 pages built from `/anatomia-del-pecho/` to
+- **Built: 271 / 792** (ES 271, EN 271).
+- Last batch: 10 abdomen pages built from `/abdominales-ejercicios-colgado/` to
   `/posicion-de-muneca-en-el-curl-de-biceps/`; the chest block is closed and the biceps block has five of
   seven.
 - Blocks finished end to end: Entrenamiento del Hombro (9), Físicos de leyenda (12), Entrenamiento de
@@ -26,7 +26,7 @@ Legend: `ES` = Spanish published, `EN` = English published.
 | Ejercicios | 196 | 34 |
 | Nutrición | 191 | 0 |
 | Mujer Fitness | 23 | 0 |
-| **Total** | **792** | **261** |
+| **Total** | **792** | **271** |
 
 ## Copy gate (mandatory before ticking ES/EN)
 
@@ -495,7 +495,7 @@ Legend: `ES` = Spanish published, `EN` = English published.
 
 ## Por Músculo (80)
 
-### Abdomen (39) — 5/39
+### Abdomen (39) — 15/39
 
 - [x] ES · [x] EN — `/entrenamiento-abdominal-por-dorian-yates/` — Rutina y entrenamiento abdominal por Dorian Yates
 - [x] ES · [x] EN — `/encogimientos-sobre-balon-ejercicio/` — Encogimientos en balón de ejercicio (Fitball) \| 100% Efectivo
