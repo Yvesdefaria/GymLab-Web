@@ -9,25 +9,24 @@ Last updated: 2026-11-12. Read this first next session.
 
 ## State
 
-- **241 / 792 bilingual pages** (ES 241, EN 241).
-- Blocks: Entrenamiento **202**, Por Músculo **5**, Ejercicios **34**.
-- **241 unique hero paths.** One exact duplicate pair remains from an earlier batch
+- **251 / 792 bilingual pages** (ES 251, EN 251).
+- Blocks: Entrenamiento **212**, Por Músculo **5**, Ejercicios **34**.
+- **251 unique hero paths.** One exact duplicate pair remains from an earlier batch
   (`remo-polea-sentado` with `superserie-de-espalda-para-terminar-tu-rutina`); the batch 17 to 24
   duplicates were fixed. See the follow-up in `PLAN.md`.
-- **Batch 24 is built, green and committed (2026-11-16).** The build has **498 pages** and
-  **494 sitemap URLs**. Físicos de leyenda and Entrenamiento de las Piernas are closed; the chest
-  block has its first page.
+- **Batch 25 is built, green and committed (2026-11-16).** The build has **518 pages** and
+  **514 sitemap URLs**. Chest is closed at 6/6 and the biceps block has five of its seven pages.
 - Five archive rows are settled and must stay out: the FiveStars Fitness congress page (discarded),
   the AEKE S1 Pro page (discarded 2026-11-14), `/velocidad-repeticiones/` (fused into the tempo page,
   2026-11-14) and the two batch 20 fusions (2026-11-15).
-- Batch record: `odd/tasks/content-library-batch-24.md`.
+- Batch record: `odd/tasks/content-library-batch-25.md`.
 
 ## Gates
 
 ```powershell
-npm run check:copy   # 12,291/12,291
-npm run build        # 498 pages
-npm run check:i18n   # 7,812/7,812
+npm run check:copy   # 12,801/12,801
+npm run build        # 518 pages
+npm run check:i18n   # 8,122/8,122
 npm run verify       # all three, in that order
 npm run dev          # http://localhost:4321
 ```
@@ -75,15 +74,18 @@ Start the dev server with `npm run dev` for local review.
   anatomy, leg press foot position, squat gaze, standing versus seated calf raises, squat versus leg
   press, calf anatomy, the knee-friendly warm-up, tibialis anterior, static versus walking lunges, hip
   anatomy and calf growth.
-- **Entrenamiento del Pecho (1):** dumbbells versus barbell on the bench press.
+- **Entrenamiento del Pecho (6):** dumbbells versus barbell, chest anatomy, the incline angle, gaining
+  pectoral muscle, machines versus free weights, and training chest with dumbbells.
+- **Entrenamiento de los Bíceps (5):** the partner curl, the ten routines, bigger biceps, biceps and
+  forearm anatomy, and wrist position in the curl.
 - **Recovery and planning (10):** back-pain exercises (YMYL), stretching, stretching circuit, muscle
   failure, periodization, exercise and immune system, deload week, sleep, training planning and
   muscle recovery.
 
 ## Next 10
 
-1. Start at `/anatomia-del-pecho/` and follow the pending rows in `content-pages.md` in order; the
-   chest block has five rows left.
+1. Start at `/consigue-grandes-brazos/` and follow the pending rows in `content-pages.md` in order;
+   the biceps block has two rows left, then the triceps block.
 2. Keep the same copy, unique-hero and gate flow.
 3. Before publishing another photo from Shixart1985, Nenad Stojkovic, Miguel Angel Omaña Rojas, the
    InjuryMap family, PTPioneer, KeepActive Australia, Everkinetic or Wellcome Collection, compare the
