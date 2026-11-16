@@ -14,11 +14,13 @@ Last updated: 2026-11-12. Read this first next session.
 - **261 unique hero paths.** One exact duplicate pair remains from an earlier batch
   (`remo-polea-sentado` with `superserie-de-espalda-para-terminar-tu-rutina`); the batch 17 to 24
   duplicates were fixed. See the follow-up in `PLAN.md`.
-- **Batch 25 is built, green and committed (2026-11-16).** The build has **518 pages** and
-  **514 sitemap URLs**. Chest is closed at 6/6 and the biceps block has five of its seven pages.
+- **Batch 26 is built, green and committed (2026-11-16).** The build has **538 pages** and
+  **534 sitemap URLs**. Biceps (7/7) and triceps (3/3) are closed; abdomen has five of thirty-nine.
 - Five archive rows are settled and must stay out: the FiveStars Fitness congress page (discarded),
   the AEKE S1 Pro page (discarded 2026-11-14), `/velocidad-repeticiones/` (fused into the tempo page,
   2026-11-14) and the two batch 20 fusions (2026-11-15).
+- **Nothing is pushed since batch 18.** Batches 19 to 26 sit on local `main`, 106 commits ahead of
+  `origin/main`, waiting for the owner's go-ahead.
 - Batch record: `odd/tasks/content-library-batch-26.md`.
 
 ## Gates
@@ -76,21 +78,24 @@ Start the dev server with `npm run dev` for local review.
   anatomy and calf growth.
 - **Entrenamiento del Pecho (6):** dumbbells versus barbell, chest anatomy, the incline angle, gaining
   pectoral muscle, machines versus free weights, and training chest with dumbbells.
-- **Entrenamiento de los Bíceps (5):** the partner curl, the ten routines, bigger biceps, biceps and
-  forearm anatomy, and wrist position in the curl.
+- **Entrenamiento de los Bíceps (7):** the partner curl, the ten routines, bigger biceps, biceps and
+  forearm anatomy, wrist position in the curl, big arms, and biceps progression.
+- **Entrenamiento del Tríceps (3):** the ten routines, the long head, and triceps anatomy.
+- **Abdomen (5):** Dorian Yates's routine, the Swiss-ball crunch, plate twists, the ab routine
+  catalogue and isometric abs.
 - **Recovery and planning (10):** back-pain exercises (YMYL), stretching, stretching circuit, muscle
   failure, periodization, exercise and immune system, deload week, sleep, training planning and
   muscle recovery.
 
 ## Next 10
 
-1. Start at `/consigue-grandes-brazos/` and follow the pending rows in `content-pages.md` in order;
-   the biceps block has two rows left, then the triceps block.
+1. Start at `/abdominales-ejercicios-colgado/` and follow the pending rows in `content-pages.md` in
+   order; the abdomen block has thirty-four rows left.
 2. Keep the same copy, unique-hero and gate flow.
 3. Before publishing another photo from Shixart1985, Nenad Stojkovic, Miguel Angel Omaña Rojas, the
    InjuryMap family, PTPioneer, KeepActive Australia, Everkinetic or Wellcome Collection, compare the
-   Commons file title and the dHash against the 231 existing heroes. That shoot has already produced
-   three collisions.
+   Commons file title and the dHash against the 261 existing heroes. Those sets have already produced
+   four collisions.
 4. The scaling architecture is deferred to PLAN Phase 7; do not implement it during content batches.
 
 ## Page contract (short)
@@ -129,6 +134,33 @@ Start the dev server with `npm run dev` for local review.
 - Phase 6: read Search Console on 2026-11-19 before scaling beyond the 115-page pilot.
 - Engram topic `content-library/handoff` covers the current state; the scaling architecture is PLAN
   Phase 7.
+- **Open defects to pick up, none blocking:** two links from batch 26 (`/entrenamiento-abdominal-por-dorian-yates/`
+  and `/abdominales-isometricos/`) point at `volumen-de-entrenamiento` and `rutinas-ejercicios-abdominales`
+  because `/perder-grasa-abdominal-con-abdominales/` and `/plancha-lateral-tecnica-y-beneficios/` do not
+  exist yet; re-point them when those rows ship. One pre-existing 3 px clipped cell in
+  `/rutinas-espalda/` (a nowrap numeric column) is documented in the batch 22 record.
+- **Push is the owner's call:** 106 commits on local `main`, batches 19 to 26.
+
+## Session close (2026-11-16, batches 24, 25 and 26)
+
+Three batches in one session, all committed, none pushed.
+
+- **Batch 24:** closed Entrenamiento de las Piernas (18/18) and opened chest. 10 pairs, 231 → 241.
+- **Batch 25:** closed chest (6/6) and put biceps at 5/7. 10 pairs, 241 → 251.
+- **Batch 26:** closed biceps (7/7) and triceps (3/3), opened abdomen (5/39). 10 pairs, 251 → 261.
+- Gates after the three: `check:copy` 13,311/13,311, build **538 pages**, `check:i18n` 8,432/8,432,
+  sitemap **534 URLs** with 1,602 alternates. 270 internal links across the 60 files, 0 broken. All 60
+  pages clean at 390 px. dHash over 261 heroes: 260 distinct.
+- Commits: 30 page commits, three route commits (`d3d44fa`, `bef44e4`, `8ad74c0`), batch docs and a
+  polish pass (`d54fd73`) that caught a writer's final edits made after its pages were committed.
+- **Editorial wins worth remembering:** the calf rule (straight leg = gastrocnemius, bent = soleus),
+  the incline ceiling at 30 degrees, the rectus abdominis as one muscle, the brachialis not being the
+  main flexor, and the biceps peak being genetic.
+- **Known thin pages:** `/cabeza-larga-del-triceps/` and `/como-proteger-tus-rodillas-en-el-entrenamiento-de-cuadriceps/`
+  are the shortest of the 60; both were built from 225 and 297 archive words.
+- **Pending decisions for the owner:** push the 106 commits, and whether
+  `/como-proteger-tus-rodillas/` and `/aumentar-biceps/` stay as pages or fold into their siblings when
+  the abdomen block is done.
 
 ## Session close (2026-11-16, batch 24)
 
