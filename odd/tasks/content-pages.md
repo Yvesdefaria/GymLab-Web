@@ -499,7 +499,7 @@ Legend: `ES` = Spanish published, `EN` = English published.
 
 - [x] ES · [x] EN — `/entrenamiento-abdominal-por-dorian-yates/` — Rutina y entrenamiento abdominal por Dorian Yates
 - [x] ES · [x] EN — `/encogimientos-sobre-balon-ejercicio/` — Encogimientos en balón de ejercicio (Fitball) \| 100% Efectivo
-- [ ] ES · [ ] EN — `/giros-en-disco/` — Giros en disco, un peligro para tus vértebras
+- [x] ES · [x] EN — `/giros-en-disco/` — Giros en disco, un peligro para tus vértebras
 - [ ] ES · [ ] EN — `/rutinas-ejercicios-abdominales/` — Rutinas de Abdominales con ejercicios 100% efectivos ✔✔
 - [ ] ES · [ ] EN — `/abdominales-isometricos/` — Abdominales isométricos \| Trabajo de core sin movimiento
 - [ ] ES · [ ] EN — `/abdominales-ejercicios-colgado/` — Ejercicios "Colgado" de abdominales
