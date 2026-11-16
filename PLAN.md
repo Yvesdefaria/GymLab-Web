@@ -13,25 +13,25 @@ Last updated: 2026-11-14.
 - Production is **live** at `https://gymlab.dev`, served by the Worker `gymlab-web` with static assets.
   It is not Cloudflare Pages. Deploy with `npx wrangler deploy`.
 - Production is live with batch 18 (pushed 2026-11-14): **382 pages** and **378 sitemap URLs**.
-  Batches 19 to 22 are committed locally and **not pushed yet**: **458 pages** and **454 sitemap
-  URLs**. Gates after batch 22: `check:copy` **11,271/11,271**, build **458 pages**, `check:i18n`
-  **7,192/7,192**.
+  Batches 19 to 23 are committed locally and **not pushed yet**: **478 pages** and **474 sitemap
+  URLs**. Gates after batch 23: `check:copy` **11,781/11,781**, build **478 pages**, `check:i18n`
+  **7,502/7,502**.
 - `app.gymlab.dev` is `noindex` with a real `robots.txt`.
 - The landing, the three calculators, the 404 and the legal pages all ship in both locales.
 - Measurement and the SQL recipe: see "Reading analytics" below and `COMPLETED.md` Appendix B.
 
-## Content library — 221 / 792 (2026-11-16)
+## Content library — 231 / 792 (2026-11-16)
 
-- **221 bilingual pages** (ES 221, EN 221), **221 unique hero paths**. Blocks: Entrenamiento 182,
+- **231 bilingual pages** (ES 231, EN 231), **231 unique hero paths**. Blocks: Entrenamiento 192,
   Por Músculo 5, Ejercicios 34.
-- **Batch 22 is built, green and committed (2026-11-16), not pushed.** The build has **458 pages** and
-  **454 sitemap URLs**. Físicos de leyenda has eleven pages; only `/serie-dorian-yates/` is missing.
-- Gates: `npm run verify` = `check:copy` **11,271/11,271** + build **458 pages** + `check:i18n`
-  **7,192/7,192**.
+- **Batch 23 is built, green and committed (2026-11-16), not pushed.** The build has **478 pages** and
+  **474 sitemap URLs**. Físicos de leyenda is closed with twelve pages; the legs block has nine.
+- Gates: `npm run verify` = `check:copy` **11,781/11,781** + build **478 pages** + `check:i18n`
+  **7,502/7,502**.
 - Docs: `odd/tasks/content-library-session.md` (start here next session),
-  `odd/tasks/content-pages.md` (per-page checklist + resume), `odd/tasks/content-library-batch-22.md`
+  `odd/tasks/content-pages.md` (per-page checklist + resume), `odd/tasks/content-library-batch-23.md`
   (the last batch) and `odd/tasks/guides-page-contract.md` (the page contract and copy gate).
-- **Next 10:** `/serie-dorian-yates/`, then the pending rows in the checklist.
+- **Next 10:** `/sentadilla-mirada-al-frente/` and the rest of the legs block.
 - **Follow-up:** one exact duplicate hero pair remains from an earlier batch (dHash 0):
   `remo-polea-sentado` with `superserie-de-espalda-para-terminar-tu-rutina`. The batch 19 and 20 dHash
   passes cleared the other suspected pairs. The batch 20 injury illustrations carry labels baked into
