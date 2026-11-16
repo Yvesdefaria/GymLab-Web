@@ -9,10 +9,9 @@ Legend: `ES` = Spanish published, `EN` = English published.
 
 ## Progress
 
-- **Built: 291 / 792** (ES 291, EN 291).
-- Last batch: 20 abdomen pages built from `/encogimientos-abdominales-suelo/` to
-  `/tijeras-de-piernas/` (batches 28 and 29); the abdomen block has thirty-five of
-  thirty-nine.
+- **Built: 321 / 792** (ES 321, EN 321).
+- Last batch: batch 32 closed Pecho and opened the leg and calf blocks;
+  321 pages built.
 - Blocks finished end to end: Entrenamiento del Hombro (9), Físicos de leyenda (12), Entrenamiento de
   la Espalda (10), Rutinas de Espalda (4), Espalda (1), Ejercicios de Espalda (31), Ejercicio
   Cardiovascular (32), Entrenamiento de las Piernas (18) and Entrenamiento del Pecho (6). Their
@@ -20,13 +19,13 @@ Legend: `ES` = Spanish published, `EN` = English published.
 
 | Block | Articles | Built |
 | --- | ---: | ---: |
-| Entrenamiento | 222 | 242 |
+| Entrenamiento | 222 | 272 |
 | Por Músculo | 80 | 5 |
 | Rutinas | 80 | 0 |
 | Ejercicios | 196 | 34 |
 | Nutrición | 191 | 0 |
 | Mujer Fitness | 23 | 0 |
-| **Total** | **792** | **291** |
+| **Total** | **792** | **321** |
 
 ## Copy gate (mandatory before ticking ES/EN)
 
@@ -495,7 +494,7 @@ Legend: `ES` = Spanish published, `EN` = English published.
 
 ## Por Músculo (80)
 
-### Abdomen (39) — 35/39
+### Abdomen (39) — COMPLETO
 
 - [x] ES · [x] EN — `/entrenamiento-abdominal-por-dorian-yates/` — Rutina y entrenamiento abdominal por Dorian Yates
 - [x] ES · [x] EN — `/encogimientos-sobre-balon-ejercicio/` — Encogimientos en balón de ejercicio (Fitball) \| 100% Efectivo
@@ -532,51 +531,51 @@ Legend: `ES` = Spanish published, `EN` = English published.
 - [x] ES · [x] EN — `/elevaciones-piernas-colgado/` — Elevaciones de piernas colgado \| 100% Abdominales
 - [x] ES · [x] EN — `/elevaciones-piernas-paralelas/` — Elevaciones de piernas en paralelas (Silla del capitán)
 - [x] ES · [x] EN — `/tijeras-de-piernas/` — Tijeras de piernas para abdominales
-- [ ] ES · [ ] EN — `/encogimientos-invertidos/` — Encogimientos invertidos \| Simple y efectivo para tu abdomen
-- [ ] ES · [ ] EN — `/encogimientos-uve/` — Encogimientos en V (Piernas rectas)
-- [ ] ES · [ ] EN — `/plancha-lateral-tecnica-y-beneficios/` — Plancha Lateral: Técnica Correcta, Beneficios y Errores
-- [ ] ES · [ ] EN — `/plancha-abdominal-ejercicio-de-core/` — Plancha Abdominal \| ¿El mejor ejercicio de core?
+- [x] ES · [x] EN — `/encogimientos-invertidos/` — Encogimientos invertidos \| Simple y efectivo para tu abdomen
+- [x] ES · [x] EN — `/encogimientos-uve/` — Encogimientos en V (Piernas rectas)
+- [x] ES · [x] EN — `/plancha-lateral-tecnica-y-beneficios/` — Plancha Lateral: Técnica Correcta, Beneficios y Errores
+- [x] ES · [x] EN — `/plancha-abdominal-ejercicio-de-core/` — Plancha Abdominal \| ¿El mejor ejercicio de core?
 
-### Hombro (5)
+### Hombro (5) — COMPLETO
 
-- [ ] ES · [ ] EN — `/rutina-hombros-pesos-libres/` — Rutinas de hombros con pesos libres
-- [ ] ES · [ ] EN — `/rutina-de-especializacion-de-hombros/` — Rutina de especialización de hombros
-- [ ] ES · [ ] EN — `/rutinas-hombros/` — Rutinas de hombro \| ¡Deltoides con más músculo en 2025!
-- [ ] ES · [ ] EN — `/rutina-de-hombro-para-deltoides-frontales-retrasados/` — Rutina de hombro para deltoides frontales retrasados
-- [ ] ES · [ ] EN — `/face-pull/` — Face Pull \| Lo mejor para tus deltoides posteriores
+- [x] ES · [x] EN — `/rutina-hombros-pesos-libres/` — Rutinas de hombros con pesos libres
+- [x] ES · [x] EN — `/rutina-de-especializacion-de-hombros/` — Rutina de especialización de hombros
+- [x] ES · [x] EN — `/rutinas-hombros/` — Rutinas de hombro \| ¡Deltoides con más músculo en 2025!
+- [x] ES · [x] EN — `/rutina-de-hombro-para-deltoides-frontales-retrasados/` — Rutina de hombro para deltoides frontales retrasados
+- [x] ES · [x] EN — `/face-pull/` — Face Pull \| Lo mejor para tus deltoides posteriores
 
-### Rutinas de Bíceps (7)
+### Rutinas de Bíceps (7) — COMPLETO
 
-- [ ] ES · [ ] EN — `/rutina-de-especializacion-de-brazos-con-series-antagonistas/` — Rutina de especialización de brazos con series antagonistas
-- [ ] ES · [ ] EN — `/programa-entrenamiento-brazos-lee-haney/` — Programa de entrenamiento de brazos de Lee Haney
-- [ ] ES · [ ] EN — `/rutina-de-antebrazos/` — Rutina de antebrazos de 10 minutos
-- [ ] ES · [ ] EN — `/rutina-de-ejercicios-para-desarrollar-los-biceps/` — Rutina de ejercicios para desarrollar los bíceps con negativas
-- [ ] ES · [ ] EN — `/rutina-de-biceps-tecnica-estricta/` — Rutina de bíceps con técnica estricta
-- [ ] ES · [ ] EN — `/biceps-culturistas/` — Entrenamiento de Bíceps para culturistas
-- [ ] ES · [ ] EN — `/rutina-desarrollar-brazos/` — Rutina para desarrollar los brazos
+- [x] ES · [x] EN — `/rutina-de-especializacion-de-brazos-con-series-antagonistas/` — Rutina de especialización de brazos con series antagonistas
+- [x] ES · [x] EN — `/programa-entrenamiento-brazos-lee-haney/` — Programa de entrenamiento de brazos de Lee Haney
+- [x] ES · [x] EN — `/rutina-de-antebrazos/` — Rutina de antebrazos de 10 minutos
+- [x] ES · [x] EN — `/rutina-de-ejercicios-para-desarrollar-los-biceps/` — Rutina de ejercicios para desarrollar los bíceps con negativas
+- [x] ES · [x] EN — `/rutina-de-biceps-tecnica-estricta/` — Rutina de bíceps con técnica estricta
+- [x] ES · [x] EN — `/biceps-culturistas/` — Entrenamiento de Bíceps para culturistas
+- [x] ES · [x] EN — `/rutina-desarrollar-brazos/` — Rutina para desarrollar los brazos
 
-### Pecho (9)
+### Pecho (9) — COMPLETO
 
-- [ ] ES · [ ] EN — `/rutinas-pecho/` — Rutinas de pecho y como entrenarlo \| Las mejores de 2026
-- [ ] ES · [ ] EN — `/fondos-pecho-triceps/` — Entrenamiento con fondos de pecho y tríceps de Arnold
-- [ ] ES · [ ] EN — `/mejorar-fuerza-press-de-banca/` — Guía para mejorar tu fuerza en el press de banca
-- [ ] ES · [ ] EN — `/rutinas-de-pecho-principiantes/` — Rutinas de pecho para principiantes
-- [ ] ES · [ ] EN — `/rutina-de-pecho-alternativa-al-press-de-banca/` — Rutina de pecho SIN press de banca \| ¿Efectiva?
-- [ ] ES · [ ] EN — `/entrena-tu-pecho-alternando-ejercicios-compuestos-y-de-aislamiento/` — Rutina de pecho alternando ejercicios compuestos y aislados
-- [ ] ES · [ ] EN — `/rutina-de-pecho-para-pectoral-superior-breve-pero-intensa/` — Rutina de pecho para pectoral superior ⇨ Efectividad 100%
-- [ ] ES · [ ] EN — `/rutina-de-especializacion-de-pecho/` — Rutina de especialización de pecho \| Dos días a la semana
-- [ ] ES · [ ] EN — `/programa-de-pecho-con-sistema-de-piramide/` — Programa de pecho de volumen muscular \| Sistema Piramidal
+- [x] ES · [x] EN — `/rutinas-pecho/` — Rutinas de pecho y como entrenarlo \| Las mejores de 2026
+- [x] ES · [x] EN — `/fondos-pecho-triceps/` — Entrenamiento con fondos de pecho y tríceps de Arnold
+- [x] ES · [x] EN — `/mejorar-fuerza-press-de-banca/` — Guía para mejorar tu fuerza en el press de banca
+- [x] ES · [x] EN — `/rutinas-de-pecho-principiantes/` — Rutinas de pecho para principiantes
+- [x] ES · [x] EN — `/rutina-de-pecho-alternativa-al-press-de-banca/` — Rutina de pecho SIN press de banca \| ¿Efectiva?
+- [x] ES · [x] EN — `/entrena-tu-pecho-alternando-ejercicios-compuestos-y-de-aislamiento/` — Rutina de pecho alternando ejercicios compuestos y aislados
+- [x] ES · [x] EN — `/rutina-de-pecho-para-pectoral-superior-breve-pero-intensa/` — Rutina de pecho para pectoral superior ⇨ Efectividad 100%
+- [x] ES · [x] EN — `/rutina-de-especializacion-de-pecho/` — Rutina de especialización de pecho \| Dos días a la semana
+- [x] ES · [x] EN — `/programa-de-pecho-con-sistema-de-piramide/` — Programa de pecho de volumen muscular \| Sistema Piramidal
 
 ### Rutinas de Pierna (3)
 
-- [ ] ES · [ ] EN — `/rutina-de-piernas-con-dia-ligero-y-dia-pesado/` — Rutina de piernas con día ligero y día pesado
-- [ ] ES · [ ] EN — `/rutina-de-especializacion-para-las-piernas/` — Rutina de especialización para las piernas
-- [ ] ES · [ ] EN — `/revienta-tus-piernas-en-15-minutos/` — Entrena tus piernas en 15 minutos
+- [x] ES · [x] EN — `/rutina-de-piernas-con-dia-ligero-y-dia-pesado/` — Rutina de piernas con día ligero y día pesado
+- [x] ES · [x] EN — `/rutina-de-especializacion-para-las-piernas/` — Rutina de especialización para las piernas
+- [x] ES · [x] EN — `/revienta-tus-piernas-en-15-minutos/` — Entrena tus piernas en 15 minutos
 
 ### Pierna (9)
 
-- [ ] ES · [ ] EN — `/rutina-de-gemelos-sin-maquinas/` — Rutina de gemelos sin máquinas
-- [ ] ES · [ ] EN — `/rutinas-de-gemelos-para-pantorrillas-esteticas-tonificadas/` — Rutinas de gemelos \| Pantorrillas más estéticas y tonificadas
+- [x] ES · [x] EN — `/rutina-de-gemelos-sin-maquinas/` — Rutina de gemelos sin máquinas
+- [x] ES · [x] EN — `/rutinas-de-gemelos-para-pantorrillas-esteticas-tonificadas/` — Rutinas de gemelos \| Pantorrillas más estéticas y tonificadas
 - [ ] ES · [ ] EN — `/rutina-volumen-pierna-completa/` — Rutina de pierna completa para volumen muscular \| 100% Efectiva
 - [ ] ES · [ ] EN — `/rutina-de-piernas-de-doble-division/` — Rutina de piernas de doble división \| ¡Doble frecuencia!
 - [ ] ES · [ ] EN — `/rutinas-pierna/` — Rutinas y entrenamiento de las Piernas

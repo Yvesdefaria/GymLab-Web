@@ -13,29 +13,30 @@ Last updated: 2026-11-14.
 - Production is **live** at `https://gymlab.dev`, served by the Worker `gymlab-web` with static assets.
   It is not Cloudflare Pages. Deploy with `npx wrangler deploy`.
 - Production is live with batch 18 (pushed 2026-11-14): **382 pages** and **378 sitemap URLs**.
-  Batches 19 to 29 are committed locally and **not pushed yet**: **598 pages** and **594 sitemap
-  URLs**. Gates after batch 29: `check:copy` **14,841/14,841**, build **598 pages**, `check:i18n`
-  **9,362/9,362**.
+  Batches 19 to 32 are committed locally and **not pushed yet**: **658 pages** and **654 sitemap
+  URLs**. Gates after batch 32: `check:copy` **16,371/16,371**, build **658 pages**, `check:i18n`
+  **10,292/10,292**.
 - `app.gymlab.dev` is `noindex` with a real `robots.txt`.
 - The landing, the three calculators, the 404 and the legal pages all ship in both locales.
 - Measurement and the SQL recipe: see "Reading analytics" below and `COMPLETED.md` Appendix B.
 
-## Content library — 291 / 792 (2026-11-16)
+## Content library — 321 / 792 (2026-11-16)
 
-- **291 bilingual pages** (ES 291, EN 291), **291 unique hero paths**. Blocks: Entrenamiento 262,
+- **321 bilingual pages** (ES 321, EN 321), **321 unique hero paths**. Blocks: Entrenamiento 272,
   Por Músculo 5, Ejercicios 34.
-- **Batches 28 and 29 are built, green and committed (2026-11-16), not pushed.** The build has
-  **598 pages** and **594 sitemap URLs**. Físicos de leyenda, Piernas, Pecho, Bíceps and Tríceps are
-  closed; abdomen has thirty-five of thirty-nine.
-- Gates: `npm run verify` = `check:copy` **14,841/14,841** + build **598 pages** + `check:i18n`
-  **9,362/9,362**.
+- **Batches 30, 31 and 32 are built, green and committed (2026-11-16), not pushed.** The build has
+  **658 pages** and **654 sitemap URLs**. Abdomen (39/39), Hombro (5/5), Rutinas de Bíceps (7/7) and
+  Pecho (9/9) are closed; Rutinas de Pierna is 3/3 and Pierna has two of nine.
+- Gates: `npm run verify` = `check:copy` **16,371/16,371** + build **658 pages** + `check:i18n`
+  **10,292/10,292**.
 - Docs: `odd/tasks/content-library-session.md` (start here next session),
   `odd/tasks/content-pages.md` (per-page checklist + resume),
-  `odd/tasks/content-library-batch-29.md` (the last batch) and `odd/tasks/guides-page-contract.md`
+  `odd/tasks/content-library-batch-32.md` (the last batch) and `odd/tasks/guides-page-contract.md`
   (the page contract and copy gate).
-- **Next 10:** the last four abdomen rows (`encogimientos-invertidos`, `encogimientos-uve`,
-  `plancha-lateral-tecnica-y-beneficios`, `plancha-abdominal-ejercicio-de-core`) and then the first
-  six rows of the next block; thirty-five of thirty-nine are done.
+- **Next 10:** the seven remaining Pierna rows (`rutina-volumen-pierna-completa`,
+  `rutina-de-piernas-de-doble-division`, `rutinas-pierna`, `entrenamiento-de-gemelos-diferente`,
+  `entrenar-femorales`, `rutinas-cuadriceps-objetivos`,
+  `rutina-de-piernas-con-sentadillas-de-la-vieja-escuela`) and then the three loose routine rows.
 - **Follow-up:** one exact duplicate hero pair remains from an earlier batch (dHash 0):
   `remo-polea-sentado` with `superserie-de-espalda-para-terminar-tu-rutina`. The batch 19 and 20 dHash
   passes cleared the other suspected pairs. The batch 20 injury illustrations carry labels baked into

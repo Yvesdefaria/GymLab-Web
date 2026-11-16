@@ -9,27 +9,27 @@ Last updated: 2026-11-16. Read this first next session.
 
 ## State
 
-- **291 / 792 bilingual pages** (ES 291, EN 291).
-- Blocks: Entrenamiento **262**, Por Músculo **5**, Ejercicios **34**.
-- **291 unique hero paths.** One exact duplicate pair remains from an earlier batch
-  (`remo-polea-sentado` with `superserie-de-espalda-para-terminar-tu-rutina`); the batch 17 to 29
+- **321 / 792 bilingual pages** (ES 321, EN 321).
+- Blocks: Entrenamiento **272**, Por Músculo **5**, Ejercicios **34**.
+- **321 unique hero paths.** One exact duplicate pair remains from an earlier batch
+  (`remo-polea-sentado` with `superserie-de-espalda-para-terminar-tu-rutina`); the batch 17 to 32
   duplicates were fixed. See the follow-up in `PLAN.md`.
-- **Batches 28 and 29 are built, green and committed (2026-11-16).** The build has
-  **598 pages** and **594 sitemap URLs**. Biceps (7/7) and triceps (3/3) are
-  closed; abdomen has thirty-five of thirty-nine.
+- **Batches 30, 31 and 32 are built, green and committed (2026-11-16).** The build has
+  **658 pages** and **654 sitemap URLs**. Abdomen (39/39), Hombro (5/5), Rutinas de Bíceps (7/7) and
+  Pecho (9/9) are closed; Rutinas de Pierna is 3/3 and Pierna has two of nine.
 - Five archive rows are settled and must stay out: the FiveStars Fitness congress page (discarded),
   the AEKE S1 Pro page (discarded 2026-11-14), `/velocidad-repeticiones/` (fused into the tempo page,
   2026-11-14) and the two batch 20 fusions (2026-11-15).
-- **Nothing is pushed since batch 18.** Batches 19 to 29 sit on local `main`, waiting for the
+- **Nothing is pushed since batch 18.** Batches 19 to 32 sit on local `main`, waiting for the
   owner's go-ahead.
-- Batch records: `odd/tasks/content-library-batch-28.md` and `content-library-batch-29.md`.
+- Batch records: `odd/tasks/content-library-batch-30.md`, `-31.md` and `-32.md`.
 
 ## Gates
 
 ```powershell
-npm run check:copy   # 14,841/14,841
-npm run build        # 598 pages
-npm run check:i18n   # 9,362/9,362
+npm run check:copy   # 16,371/16,371
+npm run build        # 658 pages
+npm run check:i18n   # 10,292/10,292
 npm run verify       # all three, in that order
 npm run dev          # http://localhost:4321
 ```
@@ -90,14 +90,17 @@ Start the dev server with `npm run dev` for local review.
 
 ## Next 10
 
-1. Take the next unchecked row in `content-pages.md`. Four abdomen rows are left:
-   `/encogimientos-invertidos/`, `/encogimientos-uve/`, `/plancha-lateral-tecnica-y-beneficios/`
-   and `/plancha-abdominal-ejercicio-de-core/`. After those, the next block starts.
+1. Take the next unchecked row in `content-pages.md`. Seven Pierna rows are left:
+   `/rutina-volumen-pierna-completa/`, `/rutina-de-piernas-de-doble-division/`, `/rutinas-pierna/`,
+   `/entrenamiento-de-gemelos-diferente/`, `/entrenar-femorales/`, `/rutinas-cuadriceps-objetivos/`
+   and `/rutina-de-piernas-con-sentadillas-de-la-vieja-escuela/`. After those, the three loose
+   routine rows (`Rutinas de Tríceps`, `Rutinas de Pecho`, `Tríceps`).
 2. Keep the same copy, unique-hero and gate flow.
 3. Before publishing another photo from Shixart1985, Nenad Stojkovic, Miguel Angel Omaña Rojas, the
    InjuryMap family, PTPioneer, KeepActive Australia, Everkinetic or Wellcome Collection, compare the
-   Commons file title and the dHash against the 291 existing heroes. Those sets have already produced
-   four collisions, and batch 29 found three more exact duplicates among cable-station photos.
+   Commons file title and the dHash against the 321 existing heroes. Those sets have already produced
+   four collisions, and batches 29 to 32 hit ten more exact duplicates among cable, squat and curl
+   photos.
 4. The scaling architecture is deferred to PLAN Phase 7; do not implement it during content batches.
 
 ## Page contract (short)
@@ -136,15 +139,36 @@ Start the dev server with `npm run dev` for local review.
 - Phase 6: read Search Console on 2026-11-19 before scaling beyond the 115-page pilot.
 - Engram topic `content-library/handoff` covers the current state; the scaling architecture is PLAN
   Phase 7.
-- **Open defects to pick up, none blocking:** one link from batch 26
-  (`/abdominales-isometricos/`) points at `rutinas-ejercicios-abdominales` because
-  `/plancha-lateral-tecnica-y-beneficios/` does not exist yet; re-point it when that row ships. The
-  Dorian Yates pair now links `/perder-grasa-abdominal-con-abdominales/` (batch 27), and the
-  isometric pair now links `/press-pallof/` and `/plancha-con-peso/` (batch 29). One pre-existing
-  3 px clipped cell in `/rutinas-espalda/` (a nowrap numeric column) is documented in the batch 22
-  record. `/encogimientos-invertidos/` is unpublished, so the bench reverse crunch page describes the
-  floor regression in prose; add the link when batch 30 ships that row.
-- **Push is the owner's call:** batches 19 to 29 sit on local `main`, waiting for the go-ahead.
+- **Open defects to pick up, none blocking:** the isometric pair now links `/plancha-lateral-tecnica-y-beneficios/`,
+  `/press-pallof/` and `/plancha-con-peso/` (batches 29 and 30). `/encogimientos-invertidos/` is
+  published, so the bench reverse crunch page can link its floor regression when that page is next
+  touched. One pre-existing 3 px clipped cell in `/rutinas-espalda/` (a nowrap numeric column) is
+  documented in the batch 22 record.
+- **Push is the owner's call:** batches 19 to 32 sit on local `main`, waiting for the go-ahead.
+
+## Session close (2026-11-16, batches 30, 31 and 32)
+
+- Three batches in one session, all committed, none pushed. Thirty pairs: 291 → **321 / 792**.
+  Abdomen, Hombro, Rutinas de Bíceps and Pecho are closed; Rutinas de Pierna is 3/3 and Pierna has two
+  of nine.
+- Writers: two per batch, pages 1-5 and 6-10, disjoint files. The parent fixed the `section` casing
+  against `guides-nav.ts`, stripped a PowerShell BOM from seven files, converted a clipped schedule
+  table to a text table and re-pointed the isometric pair at the new plank pages.
+- Gates: `check:copy` **16,371/16,371**, build **658 pages**, `check:i18n` **10,292/10,292**, sitemap
+  **654 URLs** with 1,962 alternates. 306 internal links across the 60 files, 0 broken. 321 heroes,
+  320 distinct dHash. All 60 pages clean at 390 px.
+- Commits: thirty page commits, `f1e7b00` (routes for 30-32) and a text-table fix.
+- **Gotcha:** a three-column markdown text table inherits the 58/21/21 routine geometry and clips its
+  middle column at 390 px. Schedules and comparisons must be `<table class="text-table">`.
+- **Gotcha:** `Set-Content -Encoding utf8` in PowerShell 5 writes a BOM. Use Python or .NET for
+  in-place encoding edits; the gate does not catch it, Astro tolerates it, but it is not shipped.
+- **Gotcha:** hero uniqueness decays during a parallel batch. A photo validated against 301 heroes can
+  collide with a page the other writer publishes minutes later; re-run the dHash after the pair
+  closes.
+- **Gotcha:** several archive pages carry no sets or reps (chest alternation, chest without bench,
+  shoulder routines 2-3-5-6). Declaring the general scheme in prose is the honest option; never fill a
+  table with invented numbers.
+- Next session starts at `/rutina-volumen-pierna-completa/`.
 
 ## Session close (2026-11-16, batches 28 and 29)
 
