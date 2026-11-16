@@ -458,7 +458,7 @@ Legend: `ES` = Spanish published, `EN` = English published.
 - [x] ES · [x] EN — `/prensa-posicion-pies/` — Posición de los pies en la prensa \| Optimiza tus resultados
 - [x] ES · [x] EN — `/sentadilla-mirada-al-frente/` — En la sentadilla, mirada al frente
 - [x] ES · [x] EN — `/grandes-gemelos-elevaciones-de-pie-o-sentado/` — Grandes gemelos... ¿elevaciones de pie o sentado?
-- [ ] ES · [ ] EN — `/sentadilla-prensa/` — Sentadilla y prensa, lo mejor para tus piernas
+- [x] ES · [x] EN — `/sentadilla-prensa/` — Sentadilla y prensa, lo mejor para tus piernas
 - [ ] ES · [ ] EN — `/anatomia-gemelo-soleo/` — Anatomía y músculos del gemelo y sóleo \| ¡Pura roca!
 - [ ] ES · [ ] EN — `/como-proteger-tus-rodillas-en-el-entrenamiento-de-cuadriceps/` — Como proteger tus rodillas en el entrenamiento de cuádriceps
 - [ ] ES · [ ] EN — `/anatomia-y-entrenamiento-del-tibial-anterior/` — Anatomía y entrenamiento del tibial anterior
