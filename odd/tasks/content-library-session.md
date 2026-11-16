@@ -137,6 +137,10 @@ Start the dev server with `npm run dev` for local review.
 - Phase 1: `Article` + `BreadcrumbList` JSON-LD, `og:type=article`, dates, per-article OG image.
 - Phase 2: guides hub, real menu hrefs, internal links from the landing and hubs.
 - Phase 6: read Search Console on 2026-11-19 before scaling beyond the 115-page pilot.
+- Phase 10: coupling audit and themeability (2026-11-16). Measured: the article route is a 24-line
+  wrapper, all 86 article CSS rules live in `ArticleLayout.astro`, the only class inside content is
+  `text-table`, and eight literal hex colours in `Header.astro` are not tokens. The phase exists so
+  the next redesign is one file, not 642 edits; it ships no visual change.
 - Engram topic `content-library/handoff` covers the current state; the scaling architecture is PLAN
   Phase 7.
 - **Open defects to pick up, none blocking:** the isometric pair now links `/plancha-lateral-tecnica-y-beneficios/`,

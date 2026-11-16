@@ -4,7 +4,7 @@ Handoff document to continue this project in a new session. Canonical project ru
 `AGENTS.md`. Closed work and the measurement baselines are archived in `COMPLETED.md`; task-by-task
 evidence lives in `odd/tasks/*.md` and in Engram (project `webgymlab`).
 
-Last updated: 2026-11-14.
+Last updated: 2026-11-16.
 
 ## Where we are
 
@@ -171,6 +171,37 @@ come from the app-side roadmap (2026-11-13).
 - [ ] Build the content around the math: explanation, formula used, worked example, edge cases.
 - [ ] Ship one static page per calculator in both locales with the bilingual/canonical contract and
       the existing calculator JSON-LD; close when `npm run build` and `npm run check:i18n` are green.
+
+### Phase 10 — Coupling audit and themeability (2026-11-16)
+
+Owner question behind this phase: changing the look of the article library must not mean touching 642
+pages. Measured today: the article route is a 24-line wrapper, the articles are markdown, all 86
+article CSS rules live in `ArticleLayout.astro`, and the only class used inside content is
+`text-table`. The coupling is real but concentrated, and this phase makes it explicit and cheap to
+change.
+
+- [ ] **Inventory the coupling points and write them into `odd/tasks/design-coupling.md`:** content →
+      layout (frontmatter fields, `lead`, H2 index, three-column tables, `text-table`, blockquote
+      notes, hero 16:9), `@theme` tokens → CSS, brand tokens → `gymlab-app/src/index.css` (ported
+      verbatim, so they can drift), route manifest duplication (`ROUTE_PAIRS` / `PAGES` / `ROUTES`,
+      already scoped by Phase 7), and gates → structure (`check-copy`, `check-i18n`).
+- [ ] Move the eight literal hex colours in `Header.astro` into `@theme`. Acceptance: no literal
+      colour outside `global.css`.
+- [ ] Extract the `<style>` block of `ArticleLayout.astro` (86 rules) to `src/styles/article.css` so
+      the chrome and the theme can be replaced independently of the component.
+- [ ] Tokenize the article geometry that is hardcoded today: 58/21/21 routine-table grid, 44rem body,
+      240px sticky index, the 390px overrides. Acceptance: a table redesign is a token change.
+- [ ] Document the content → layout contract as a boundary: what a redesign may change without
+      touching content, and what requires a content migration.
+- [ ] Add a gate that fails on a literal colour or a page-level `<style>` outside the allowed files,
+      so the coupling cannot creep back between redesigns.
+- [ ] Fold the three calculator pages onto the shared chrome scoped in Phase 7; do not build a
+      universal page component.
+- **Acceptance for the phase:** a palette swap is one file, a typography swap is one file, and an
+  article redesign is `ArticleLayout` plus `article.css`. Prove it by restyling three pages (one per
+  block) from the tokens alone.
+- **Trap:** this phase is not a redesign and ships no visual change. Its only product is that the next
+  redesign is cheap; mixing it with a visual refresh hides regressions in both.
 
 ## Open work
 
