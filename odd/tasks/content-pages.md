@@ -9,9 +9,10 @@ Legend: `ES` = Spanish published, `EN` = English published.
 
 ## Progress
 
-- **Built: 271 / 792** (ES 271, EN 271).
-- Last batch: 10 abdomen pages built from `/abdominales-ejercicios-colgado/` to
-  `/rodar-con-barra/`; the abdomen block has fifteen of thirty-nine.
+- **Built: 291 / 792** (ES 291, EN 291).
+- Last batch: 20 abdomen pages built from `/encogimientos-abdominales-suelo/` to
+  `/tijeras-de-piernas/` (batches 28 and 29); the abdomen block has thirty-five of
+  thirty-nine.
 - Blocks finished end to end: Entrenamiento del Hombro (9), Físicos de leyenda (12), Entrenamiento de
   la Espalda (10), Rutinas de Espalda (4), Espalda (1), Ejercicios de Espalda (31), Ejercicio
   Cardiovascular (32), Entrenamiento de las Piernas (18) and Entrenamiento del Pecho (6). Their
@@ -19,13 +20,13 @@ Legend: `ES` = Spanish published, `EN` = English published.
 
 | Block | Articles | Built |
 | --- | ---: | ---: |
-| Entrenamiento | 222 | 222 |
+| Entrenamiento | 222 | 242 |
 | Por Músculo | 80 | 5 |
 | Rutinas | 80 | 0 |
 | Ejercicios | 196 | 34 |
 | Nutrición | 191 | 0 |
 | Mujer Fitness | 23 | 0 |
-| **Total** | **792** | **271** |
+| **Total** | **792** | **291** |
 
 ## Copy gate (mandatory before ticking ES/EN)
 
@@ -494,7 +495,7 @@ Legend: `ES` = Spanish published, `EN` = English published.
 
 ## Por Músculo (80)
 
-### Abdomen (39) — 15/39
+### Abdomen (39) — 35/39
 
 - [x] ES · [x] EN — `/entrenamiento-abdominal-por-dorian-yates/` — Rutina y entrenamiento abdominal por Dorian Yates
 - [x] ES · [x] EN — `/encogimientos-sobre-balon-ejercicio/` — Encogimientos en balón de ejercicio (Fitball) \| 100% Efectivo
@@ -511,26 +512,26 @@ Legend: `ES` = Spanish published, `EN` = English published.
 - [x] ES · [x] EN — `/encogimientos-maquina/` — Encogimientos en máquina \| Contrae tu abdomen al máximo
 - [x] ES · [x] EN — `/encogimientos-polea-2/` — Encogimientos en polea, arrodillado \| 100% hipertrófico
 - [x] ES · [x] EN — `/rodar-con-barra/` — Rodar con la barra (Rodamiento abdominal)
-- [ ] ES · [ ] EN — `/encogimientos-abdominales-suelo/` — Encogimientos abdominales en suelo \| ¡Lo básico funciona!
-- [ ] ES · [ ] EN — `/encogimientos-en-polea-de-pie/` — Encogimientos en polea, de pie \| Máxima hipertrofia abdominal
-- [ ] ES · [ ] EN — `/bicicleta-oblicuos/` — Bicicleta abdominal para oblicuos
-- [ ] ES · [ ] EN — `/encogimientos-laterales-dedos-tobillos/` — Encogimientos laterales dedos a los tobillos
-- [ ] ES · [ ] EN — `/encogimientos-oblicuos/` — Encogimientos para oblicuos \| ¡Marca tu zona lateral!
-- [ ] ES · [ ] EN — `/encogimientos-oblicuos-banco-declinado/` — Encogimientos para oblicuos en banco declinado
-- [ ] ES · [ ] EN — `/encogimiento-lateral-mancuerna-de-pie/` — Encogimiento lateral con mancuerna de pie
-- [ ] ES · [ ] EN — `/elevaciones-piernas-oblicuos-tumbado/` — Elevaciones de piernas para oblicuos tumbado (Jacknife)
-- [ ] ES · [ ] EN — `/inclinacion-lateral-polea/` — Inclinación lateral en polea \| Desafía la fuerza de tu abdomen
-- [ ] ES · [ ] EN — `/encogimientos-oblicuos-polea/` — Encogimientos para oblicuos en polea
-- [ ] ES · [ ] EN — `/cortar-troncos-en-polea/` — Cortar troncos en polea o "Leñador" para abdomen
-- [ ] ES · [ ] EN — `/elevacion-lateral-de-piernas-colgado/` — Elevación lateral de piernas colgado \| Hipertrofia máxima
-- [ ] ES · [ ] EN — `/press-pallof/` — Press Pallof, isométrico para oblicuos
-- [ ] ES · [ ] EN — `/plancha-con-peso/` — Plancha abdominal con Peso \| Versión para Avanzados
-- [ ] ES · [ ] EN — `/encogimientos-invertidos-banco-inclinado/` — Encogimientos invertidos en banco inclinado
-- [ ] ES · [ ] EN — `/pull-in-banco-plano/` — Elevación de rodillas sentado (Pull-In)
-- [ ] ES · [ ] EN — `/elevaciones-piernas-banco-plano/` — Elevaciones de piernas en banco plano
-- [ ] ES · [ ] EN — `/elevaciones-piernas-colgado/` — Elevaciones de piernas colgado \| 100% Abdominales
-- [ ] ES · [ ] EN — `/elevaciones-piernas-paralelas/` — Elevaciones de piernas en paralelas (Silla del capitán)
-- [ ] ES · [ ] EN — `/tijeras-de-piernas/` — Tijeras de piernas para abdominales
+- [x] ES · [x] EN — `/encogimientos-abdominales-suelo/` — Encogimientos abdominales en suelo \| ¡Lo básico funciona!
+- [x] ES · [x] EN — `/encogimientos-en-polea-de-pie/` — Encogimientos en polea, de pie \| Máxima hipertrofia abdominal
+- [x] ES · [x] EN — `/bicicleta-oblicuos/` — Bicicleta abdominal para oblicuos
+- [x] ES · [x] EN — `/encogimientos-laterales-dedos-tobillos/` — Encogimientos laterales dedos a los tobillos
+- [x] ES · [x] EN — `/encogimientos-oblicuos/` — Encogimientos para oblicuos \| ¡Marca tu zona lateral!
+- [x] ES · [x] EN — `/encogimientos-oblicuos-banco-declinado/` — Encogimientos para oblicuos en banco declinado
+- [x] ES · [x] EN — `/encogimiento-lateral-mancuerna-de-pie/` — Encogimiento lateral con mancuerna de pie
+- [x] ES · [x] EN — `/elevaciones-piernas-oblicuos-tumbado/` — Elevaciones de piernas para oblicuos tumbado (Jacknife)
+- [x] ES · [x] EN — `/inclinacion-lateral-polea/` — Inclinación lateral en polea \| Desafía la fuerza de tu abdomen
+- [x] ES · [x] EN — `/encogimientos-oblicuos-polea/` — Encogimientos para oblicuos en polea
+- [x] ES · [x] EN — `/cortar-troncos-en-polea/` — Cortar troncos en polea o "Leñador" para abdomen
+- [x] ES · [x] EN — `/elevacion-lateral-de-piernas-colgado/` — Elevación lateral de piernas colgado \| Hipertrofia máxima
+- [x] ES · [x] EN — `/press-pallof/` — Press Pallof, isométrico para oblicuos
+- [x] ES · [x] EN — `/plancha-con-peso/` — Plancha abdominal con Peso \| Versión para Avanzados
+- [x] ES · [x] EN — `/encogimientos-invertidos-banco-inclinado/` — Encogimientos invertidos en banco inclinado
+- [x] ES · [x] EN — `/pull-in-banco-plano/` — Elevación de rodillas sentado (Pull-In)
+- [x] ES · [x] EN — `/elevaciones-piernas-banco-plano/` — Elevaciones de piernas en banco plano
+- [x] ES · [x] EN — `/elevaciones-piernas-colgado/` — Elevaciones de piernas colgado \| 100% Abdominales
+- [x] ES · [x] EN — `/elevaciones-piernas-paralelas/` — Elevaciones de piernas en paralelas (Silla del capitán)
+- [x] ES · [x] EN — `/tijeras-de-piernas/` — Tijeras de piernas para abdominales
 - [ ] ES · [ ] EN — `/encogimientos-invertidos/` — Encogimientos invertidos \| Simple y efectivo para tu abdomen
 - [ ] ES · [ ] EN — `/encogimientos-uve/` — Encogimientos en V (Piernas rectas)
 - [ ] ES · [ ] EN — `/plancha-lateral-tecnica-y-beneficios/` — Plancha Lateral: Técnica Correcta, Beneficios y Errores

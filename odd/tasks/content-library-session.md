@@ -9,27 +9,27 @@ Last updated: 2026-11-16. Read this first next session.
 
 ## State
 
-- **271 / 792 bilingual pages** (ES 271, EN 271).
-- Blocks: Entrenamiento **232**, Por Músculo **5**, Ejercicios **34**.
-- **271 unique hero paths.** One exact duplicate pair remains from an earlier batch
-  (`remo-polea-sentado` with `superserie-de-espalda-para-terminar-tu-rutina`); the batch 17 to 27
+- **291 / 792 bilingual pages** (ES 291, EN 291).
+- Blocks: Entrenamiento **262**, Por Músculo **5**, Ejercicios **34**.
+- **291 unique hero paths.** One exact duplicate pair remains from an earlier batch
+  (`remo-polea-sentado` with `superserie-de-espalda-para-terminar-tu-rutina`); the batch 17 to 29
   duplicates were fixed. See the follow-up in `PLAN.md`.
-- **Batch 27 is built, green and committed (2026-11-16).** The build has
-  **558 pages** and **554 sitemap URLs**. Biceps (7/7) and triceps (3/3) are
-  closed; abdomen has fifteen of thirty-nine.
+- **Batches 28 and 29 are built, green and committed (2026-11-16).** The build has
+  **598 pages** and **594 sitemap URLs**. Biceps (7/7) and triceps (3/3) are
+  closed; abdomen has thirty-five of thirty-nine.
 - Five archive rows are settled and must stay out: the FiveStars Fitness congress page (discarded),
   the AEKE S1 Pro page (discarded 2026-11-14), `/velocidad-repeticiones/` (fused into the tempo page,
   2026-11-14) and the two batch 20 fusions (2026-11-15).
-- **Nothing is pushed since batch 18.** Batches 19 to 27 sit on local `main`, 121 commits ahead of
-  `origin/main`, waiting for the owner's go-ahead.
-- Batch record: `odd/tasks/content-library-batch-27.md`.
+- **Nothing is pushed since batch 18.** Batches 19 to 29 sit on local `main`, waiting for the
+  owner's go-ahead.
+- Batch records: `odd/tasks/content-library-batch-28.md` and `content-library-batch-29.md`.
 
 ## Gates
 
 ```powershell
-npm run check:copy   # 13,821/13,821
-npm run build        # 558 pages
-npm run check:i18n   # 8,742/8,742
+npm run check:copy   # 14,841/14,841
+npm run build        # 598 pages
+npm run check:i18n   # 9,362/9,362
 npm run verify       # all three, in that order
 npm run dev          # http://localhost:4321
 ```
@@ -90,13 +90,14 @@ Start the dev server with `npm run dev` for local review.
 
 ## Next 10
 
-1. Take the next unchecked row in `content-pages.md`; the abdomen block has twenty-four rows left
-   after batch 27 (5/39 in batch 26, 15/39 now).
+1. Take the next unchecked row in `content-pages.md`. Four abdomen rows are left:
+   `/encogimientos-invertidos/`, `/encogimientos-uve/`, `/plancha-lateral-tecnica-y-beneficios/`
+   and `/plancha-abdominal-ejercicio-de-core/`. After those, the next block starts.
 2. Keep the same copy, unique-hero and gate flow.
 3. Before publishing another photo from Shixart1985, Nenad Stojkovic, Miguel Angel Omaña Rojas, the
    InjuryMap family, PTPioneer, KeepActive Australia, Everkinetic or Wellcome Collection, compare the
-   Commons file title and the dHash against the 271 existing heroes. Those sets have already produced
-   four collisions.
+   Commons file title and the dHash against the 291 existing heroes. Those sets have already produced
+   four collisions, and batch 29 found three more exact duplicates among cable-station photos.
 4. The scaling architecture is deferred to PLAN Phase 7; do not implement it during content batches.
 
 ## Page contract (short)
@@ -138,10 +139,36 @@ Start the dev server with `npm run dev` for local review.
 - **Open defects to pick up, none blocking:** one link from batch 26
   (`/abdominales-isometricos/`) points at `rutinas-ejercicios-abdominales` because
   `/plancha-lateral-tecnica-y-beneficios/` does not exist yet; re-point it when that row ships. The
-  Dorian Yates pair now links `/perder-grasa-abdominal-con-abdominales/` (batch 27). One pre-existing
+  Dorian Yates pair now links `/perder-grasa-abdominal-con-abdominales/` (batch 27), and the
+  isometric pair now links `/press-pallof/` and `/plancha-con-peso/` (batch 29). One pre-existing
   3 px clipped cell in `/rutinas-espalda/` (a nowrap numeric column) is documented in the batch 22
-  record.
-- **Push is the owner's call:** batches 19 to 27 sit on local `main`, waiting for the go-ahead.
+  record. `/encogimientos-invertidos/` is unpublished, so the bench reverse crunch page describes the
+  floor regression in prose; add the link when batch 30 ships that row.
+- **Push is the owner's call:** batches 19 to 29 sit on local `main`, waiting for the go-ahead.
+
+## Session close (2026-11-16, batches 28 and 29)
+
+- Two batches in one session, both committed, neither pushed. Batches 28 and 29 added twenty abdomen
+  pairs: 271 → **291 / 792**, abdomen 15/39 → **35/39**, twenty new heroes. Four rows stay for
+  batch 30.
+- Writers: two per batch, pages 1-5 and 6-10, disjoint files. The parent fixed the missing intra-batch
+  cross-links, added the isometric pair's links to the new Pallof and weighted-plank pages, registered
+  both batches' routes in one commit, ran the gates and committed per page.
+- Gates: `check:copy` **14,841/14,841**, build **598 pages**, `check:i18n` **9,362/9,362**, sitemap
+  **594 URLs** with 1,782 alternates. All 60 pages of batches 27-29 clean at 390 px. dHash over 291
+  heroes: 290 distinct, only the known `remo-polea-sentado` pair.
+- Commits: batch 28 pages `610eb6f`, `241003e`, `a70e95f`, `63842f2`, `c797d83`, `b318cca`,
+  `f1d8a83`, `d0bfb1c`, `e53623c`, `8a1cacc`; batch 29 pages `5a270d2`, `ae234cd`, `e49ec6e`,
+  `ecf8085`, `94111c3`, `3631ea5`, `28bed03`, `5c8c33f`, `bbcc62b`, `83bfb03`; routes shared.
+- **Gotcha:** the archive's rotation pages ("encogimientos con giro son peligrosos" on the hanging
+  side leg raise page) contradict the rotation pages of batch 28. House line: light load and a small
+  range are fine; the risk is heavy load, a fixed pelvis and a long lever at end range.
+- **Gotcha:** the obvious cable-station and hanging photos are largely spent. Three plausible cable
+  heroes hashed 0 against earlier pages, and five of the twenty new heroes are equipment or anatomy
+  fallbacks with an honest alt. Check the dHash immediately before downloading, not before searching.
+- **Gotcha:** Commons has no free photo of a Pallof press, a bicycle crunch, a finger-to-heel reach or
+  a side jackknife. Plan the alt around what exists instead of hunting the exact movement.
+- Next session starts at `/encogimientos-invertidos/`, then the three plank rows.
 
 ## Session close (2026-11-16, batch 27)
 
