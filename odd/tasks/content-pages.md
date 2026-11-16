@@ -444,7 +444,7 @@ Legend: `ES` = Spanish published, `EN` = English published.
 
 ### Entrenamiento de las Piernas (18)
 
-- [ ] ES · [ ] EN — `/sentadilla-con-caja-alturas/` — Sentadilla con caja, cuestión de altura
+- [x] ES · [x] EN — `/sentadilla-con-caja-alturas/` — Sentadilla con caja, cuestión de altura
 - [ ] ES · [ ] EN — `/beneficios-hip-thrust/` — Beneficios de hacer rutinas de Hip Thrust \| Glúteos tonificados
 - [ ] ES · [ ] EN — `/entrenamiento-del-femoral-o-tendon-de-la-corva/` — Guía de entrenamiento del femoral o tendón de la corva
 - [ ] ES · [ ] EN — `/anatomia-del-cuadriceps/` — Músculos y anatomía del cuádriceps explicados
