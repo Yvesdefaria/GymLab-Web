@@ -473,7 +473,7 @@ Legend: `ES` = Spanish published, `EN` = English published.
 - [x] ES · [x] EN — `/ejercicios-inclinados-para-pecho/` — Ejercicios de Pecho Inclinados para un pectoral más completo
 - [x] ES · [x] EN — `/consejos-ganar-musculo-pectoral/` — Guía de entrenamiento de pecho para ganar más músculo
 - [x] ES · [x] EN — `/maquinas-pesos-libres-al-entrenar-el-pecho/` — Máquinas vs. Pesos libres al entrenar el pecho
-- [ ] ES · [ ] EN — `/mancuernas-entrenando-pecho/` — Utilizar mancuernas al entrenar el pecho
+- [x] ES · [x] EN — `/mancuernas-entrenando-pecho/` — Utilizar mancuernas al entrenar el pecho
 
 ### Entrenamiento de los Bíceps (7)
 
