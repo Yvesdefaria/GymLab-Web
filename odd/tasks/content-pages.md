@@ -489,7 +489,7 @@ Legend: `ES` = Spanish published, `EN` = English published.
 
 ### Entrenamiento del Tríceps (3)
 
-- [ ] ES · [ ] EN — `/rutinas-triceps/` — Rutinas de Tríceps \| Gana más músculo en 2025
+- [x] ES · [x] EN — `/rutinas-triceps/` — Rutinas de Tríceps \| Gana más músculo en 2025
 - [ ] ES · [ ] EN — `/cabeza-larga-del-triceps/` — Ataca la cabeza larga del tríceps
 - [ ] ES · [ ] EN — `/anatomia-triceps/` — Anatomía del tríceps
 
