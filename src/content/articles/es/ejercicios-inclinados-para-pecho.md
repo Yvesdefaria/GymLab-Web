@@ -15,7 +15,7 @@ alternate: "/en/incline-chest-exercises/"
 updated: "2026-11-16"
 ---
 
-Las fibras altas del pectoral necesitan un empuje con el brazo en una línea distinta a la del banco plano. El press inclinado hace ese trabajo, y el detalle que lo arruina no está en los brazos: está en el respaldo.
+Las fibras superiores del pectoral necesitan un empuje con el brazo en una línea distinta a la del banco plano. El press inclinado hace ese trabajo, y el detalle que lo arruina no está en los brazos: está en el respaldo.
 
 ## Por qué el inclinado trabaja la parte alta
 
@@ -55,6 +55,6 @@ El error frecuente es acumular inclinaciones: press inclinado con barra, con man
 
 ## Cuándo volver al plano
 
-Si el pecho alto va por detrás del resto, tiene sentido pasar unas semanas con el inclinado como primer movimiento y dejar el plano y el declinado en segundo lugar. No desaparecen: bajan de prioridad mientras el inclinado recibe la carga buena.
+Si el pecho alto va por detrás del resto, tiene sentido pasar unas semanas con el inclinado como primer movimiento y dejar el plano y el declinado en segundo lugar. No desaparecen; bajan de prioridad mientras el inclinado recibe la carga buena.
 
 Pasado ese bloque, vuelve a la estructura habitual. El inclinado deja de ser el centro y ocupa el lugar que le toca, para no cargar siempre el mismo punto del hombro. La guía del [rango completo de movimiento](/es/rango-completo-de-movimiento-rom/) explica por qué conviene mantener el recorrido largo en este ejercicio en lugar de acortarlo para subir más peso. Y si el problema no es el ángulo sino el orden de la sesión, la guía para [ganar músculo pectoral](/es/consejos-ganar-musculo-pectoral/) reúne los errores que más frenan el desarrollo.

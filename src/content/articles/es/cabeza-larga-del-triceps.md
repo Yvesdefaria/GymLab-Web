@@ -19,7 +19,7 @@ Aislar una cabeza del tríceps es imposible: en cada extensión del codo trabaja
 
 ## Por qué la cabeza larga del tríceps responde al brazo alto
 
-La cabeza larga es la única del tríceps que actúa en el hombro. Con el brazo colgando trabaja en su rango corto; con el brazo por encima de la cabeza se alarga antes de contraerse. Ninguna otra posición cambia tanto su longitud, y de ahí sale la regla práctica: para cargarla, sube el brazo.
+La cabeza larga es la única del tríceps que actúa en el hombro. Con el brazo colgando trabaja en su rango corto; con el brazo por encima de la cabeza se alarga antes de contraerse. Ninguna otra posición cambia tanto su longitud. Para cargarla, sube el brazo.
 
 Un músculo que se contrae desde una posición estirada suele aprovechar mejor el recorrido. Esa es la razón por la que las extensiones por encima de la cabeza se usan para esta cabeza y los jalones para las otras dos.
 
@@ -27,7 +27,7 @@ Todo lo que ponga el brazo por encima del hombro entra en esta categoría: exten
 
 ## Jalón en polea: el codo al costado
 
-El jalón es un buen ejercicio de tríceps y un mal ejercicio para la cabeza larga. Con el codo pegado al torso, la cabeza larga queda acortada y el esfuerzo recae en la lateral, la que da volumen al brazo cuando lo miras de frente. Sirve para el tríceps entero y por eso aparece en todas las rutinas; no sirve para priorizar la larga.
+El jalón es un buen ejercicio de tríceps y una mala elección si lo que buscas es la cabeza larga. Con el codo pegado al torso, la cabeza larga queda acortada y el esfuerzo recae en la lateral, la que da volumen al brazo cuando lo miras de frente. Sirve para el tríceps entero y por eso aparece en casi todas las rutinas; no sirve para priorizar la larga.
 
 Su ventaja está en el control: la polea mantiene la tensión y permite un apretón de dos segundos sin riesgo. Si lo haces con cuerda, las manos giran y el trabajo se reparte también con la medial. Su mejor uso es el final de la sesión, cuando el tríceps ya está cansado y solo necesitas sumar trabajo con poco peso.
 

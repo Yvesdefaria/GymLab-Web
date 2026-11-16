@@ -19,15 +19,15 @@ Isolating one head of the triceps is impossible: all three work on every elbow e
 
 ## Why the triceps long head responds to a high arm
 
-The long head is the only part of the triceps that acts at the shoulder. With the arm hanging, it works in its short range; with the arm overhead, it lengthens before it contracts. No other position changes its length as much, and that gives the practical rule: to load it, raise the arm.
+The long head is the only part of the triceps that acts at the shoulder. With the arm hanging, it works in its short range; with the arm overhead, it lengthens before it contracts. No other position changes its length as much. To load it, raise the arm.
 
 A muscle that contracts from a stretched position tends to use the range better. That is why overhead extensions are used for this head and pushdowns for the other two.
 
-Everything that puts the arm above the shoulder falls into this group: two-arm dumbbell extension, EZ-bar extension lying on an incline bench and the cable version with a rope.
+Everything that puts the arm above the shoulder falls into this group: two-arm dumbbell extension, EZ-bar extension on an incline bench and the cable version with a rope.
 
 ## Cable pushdown: elbow at the side
 
-The pushdown is a good triceps exercise and a bad exercise for the long head. With the elbow pinned to the torso, the long head stays shortened and the effort falls on the lateral head, the one that adds size when you look at the arm from the front. It works the whole triceps and that is why it appears in every routine; it does not prioritise the long head.
+The pushdown is a good triceps exercise and a bad choice if you are after the long head. With the elbow pinned to the torso, the long head stays shortened and the effort falls on the lateral head, the one that adds size when you look at the arm from the front. It works the whole triceps and that is why it appears in almost every routine; it does not prioritise the long head.
 
 Its advantage is control: the cable keeps tension and allows a two-second squeeze without risk. With a rope, the hands rotate and the work is shared with the medial head. Its best use is the end of the session, when the triceps is already tired and you only need to add work with a light weight.
 
@@ -49,7 +49,7 @@ With one triceps session a week, two exercises per head are enough. With two ses
 
 ## The long-head routine
 
-It is the same routine that appears in the triceps routines guide, with the numbers as they stand. Two exercises and four sets each.
+It is the same routine that appears in the triceps routines guide, with the numbers exactly as listed. Two exercises and four sets each.
 
 | Exercise | Sets | Reps |
 | --- | --- | --- |

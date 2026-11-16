@@ -8,14 +8,14 @@ section: "Triceps Training"
 hero: "/content/rutinas-triceps/hero.jpg"
 heroAlt: "Woman doing a cable triceps pushdown with her elbows pinned to her body"
 heroCredit: "Wikimedia Commons · PTPioneer · CC BY 2.0"
-lead: "These **triceps routines** are ten plans for different goals: size, strength, definition, home training or a short session. They all use the same mechanic, elbow extension, and change the load, the sets and the rest."
+lead: "These **triceps routines** are ten plans for different goals: size, strength, definition, home training or a short session. All of them are built on elbow extension and differ in load, sets and rest."
 tags: ["Routines", "Triceps", "Sets and reps", "Strength"]
 meta: "Guide · 10 routines"
 alternate: "/es/rutinas-triceps/"
 updated: "2026-11-16"
 ---
 
-The triceps is the largest muscle in the arm and the simplest to train: extend the elbow against resistance. What decides the result is exercise order, load and rest.
+The triceps is the largest muscle in the arm and the simplest to train. What decides the result is exercise order, load and rest.
 
 ## How to choose a triceps routine
 
@@ -33,7 +33,7 @@ Aim for a weight that takes you to failure between 8 and 10 reps. If you can do 
 
 ## How to order the exercises
 
-Start with a multi-joint movement, while you are fresh: straight-body parallel-bar dips, bench dips with added weight or the close-grip bench press. The last one uses all three heads with help from the chest and the deltoid; do not take the grip narrower than 25 or 30 centimetres.
+Start with a multi-joint movement when the routine has one, while you are fresh: straight-body parallel-bar dips, bench dips with added weight or the close-grip bench press. The last one uses all three heads with help from the chest and the deltoid; keep the grip between 25 and 30 centimetres.
 
 The second exercise, when the routine allows it, goes overhead with both arms, to change the angle: EZ-bar extension, French press or dumbbell extension. Here you also want kilos, not a five-kilo dumbbell kickback.
 
@@ -52,7 +52,7 @@ Basic exercises and 6 to 12 rep ranges. It is the heaviest routine here.
 
 ## Giant-set triceps workout
 
-Four exercises back to back with no rest. Lying dumbbell extensions open and take more weight; the overhead extension loads the long head; the kickback adds shape; push-ups close with bodyweight.
+Four exercises back to back with no rest. Lying dumbbell extensions open the set and take more weight; the overhead extension loads the long head; the kickback adds shape; push-ups close with bodyweight.
 
 | Exercise | Sets | Reps |
 | --- | --- | --- |
@@ -108,7 +108,7 @@ High volume, for one triceps session a week. The first two exercises put the arm
 
 ## Routine for lateral-head priority
 
-If the lateral head lags. Isolating it completely is impossible: the triceps works as a whole on every extension.
+Use it if the lateral head lags. Isolating it completely is impossible: the triceps works as a whole on every extension.
 
 | Exercise | Sets | Reps |
 | --- | --- | --- |
@@ -118,7 +118,7 @@ If the lateral head lags. Isolating it completely is impossible: the triceps wor
 
 ## Triceps routine for strength
 
-Heavy loads and low reps. The first set of the first two exercises is a warm-up: 15 light reps through a full range.
+Heavy loads and low reps. The first set of the first exercise is a warm-up: 15 light reps through a full range.
 
 | Exercise | Sets | Reps |
 | --- | --- | --- |

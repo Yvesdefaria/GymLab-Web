@@ -33,7 +33,7 @@ Si una semana no superas el registro, repite la carga y busca una repetición m�
 
 ## El tempo 3-0-3 y la tensión constante
 
-Tres segundos para subir, ninguna pausa arriba, tres para bajar. Si quieres más tensión, usa 4-0-4. El número del medio es la pausa, y en este esquema es cero: la barra no se detiene en ningún extremo del recorrido.
+Tres segundos para subir, ninguna pausa arriba, tres para bajar. Si quieres más tensión, usa 4-0-4. El número del medio es la pausa, y aquí es cero. La barra no se detiene en ningún extremo del recorrido.
 
 Eso no contradice el rango completo. Una pausa breve arriba o un estiramiento controlado abajo son herramientas que tienen su momento, y el [rango completo de movimiento](/es/rango-completo-de-movimiento-rom/) explica cuándo. La regla del tempo habla de no parar la barra por costumbre entre repeticiones.
 

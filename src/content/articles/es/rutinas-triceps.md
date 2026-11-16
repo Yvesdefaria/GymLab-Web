@@ -15,7 +15,7 @@ alternate: "/en/triceps-routines/"
 updated: "2026-11-16"
 ---
 
-El tríceps es el músculo más grande del brazo y el más simple de entrenar: extender el codo con resistencia. Lo que decide el resultado es el orden de los ejercicios, el peso y el descanso.
+El tríceps es el músculo más grande del brazo y el más simple de entrenar. Lo que decide el resultado es el orden de los ejercicios, el peso y el descanso.
 
 ## Cómo elegir una rutina de tríceps
 
@@ -33,7 +33,7 @@ Apunta a un peso que te deje llegar al fallo entre 8 y 10 repeticiones. Si en fo
 
 ## Cómo ordenar los ejercicios
 
-Empieza por un movimiento multiarticular, cuando estás fresco: fondos en paralelas con el cuerpo recto, fondos entre bancos con lastre o press de banca con agarre cerrado. Este último lleva las tres cabezas con ayuda del pectoral y el deltoide; no cierres el agarre por debajo de 25 o 30 centímetros.
+Empieza por un movimiento multiarticular si la rutina lo incluye, cuando estás fresco: fondos en paralelas con el cuerpo recto, fondos entre bancos con lastre o press de banca con agarre cerrado. Este último lleva las tres cabezas con ayuda del pectoral y el deltoide; el agarre se queda entre 25 y 30 centímetros.
 
 El segundo ejercicio, cuando la rutina lo permite, va por encima de la cabeza y con las dos manos, para cambiar el ángulo: extensión con barra Z, press francés o extensión con mancuerna. Aquí también quieres kilos, no una patada con mancuerna de cinco kilos.
 
@@ -52,7 +52,7 @@ Ejercicios básicos y rangos de 6 a 12 repeticiones. Es la rutina con más carga
 
 ## Entrenamiento de tríceps en serie gigante
 
-Cuatro ejercicios encadenados sin descanso. La extensión acostado con mancuernas abre y admite más peso; la de encima de la cabeza carga la cabeza larga; la patada da forma; las flexiones cierran con el peso corporal.
+Cuatro ejercicios encadenados sin descanso. La extensión acostado con mancuernas abre y admite más peso; la que va por encima de la cabeza carga la cabeza larga; la patada da forma; las flexiones cierran con el peso corporal.
 
 | Ejercicio | Series | Reps |
 | --- | --- | --- |
@@ -108,7 +108,7 @@ Alto volumen, para una sesión semanal. Los dos primeros ejercicios ponen el bra
 
 ## Rutina para prioridad en la cabeza lateral del tríceps
 
-Si la cabeza lateral va retrasada. Aislarla del todo es imposible: el tríceps trabaja entero en cada extensión.
+Úsala si la cabeza lateral va retrasada. Aislarla del todo es imposible: el tríceps trabaja entero en cada extensión.
 
 | Ejercicio | Series | Reps |
 | --- | --- | --- |
@@ -118,7 +118,7 @@ Si la cabeza lateral va retrasada. Aislarla del todo es imposible: el tríceps t
 
 ## Rutina de tríceps para fuerza
 
-Cargas altas y repeticiones bajas. La primera serie de los dos primeros ejercicios es de calentamiento: 15 repeticiones con un peso ligero y recorrido completo.
+Cargas altas y repeticiones bajas. La primera serie del primer ejercicio es de calentamiento: 15 repeticiones con un peso ligero y recorrido completo.
 
 | Ejercicio | Series | Reps |
 | --- | --- | --- |

@@ -1,7 +1,7 @@
 ---
 lang: es
 title: "Brazos grandes: el curl en polea y el agarre correcto"
-description: "Brazos grandes con el curl en polea a dos manos, el agarre que carga el bíceps de verdad y los ejercicios que añaden grosor al brazo sin sumar series."
+description: "Brazos grandes con el curl en polea a dos manos, el agarre que pone a trabajar el bíceps y los ejercicios que añaden grosor al brazo sin sumar series."
 h1: "Consigue grandes brazos"
 block: "Entrenamiento"
 section: "Entrenamiento de los Bíceps"

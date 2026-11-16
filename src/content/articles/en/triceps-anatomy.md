@@ -15,7 +15,7 @@ alternate: "/es/anatomia-triceps/"
 updated: "2026-11-16"
 ---
 
-The triceps is the largest muscle in the arm and the one that gives the back of it its size. Its mechanic is simple, elbow extension, and its structure is not so simple: three heads with different origins and one shared insertion.
+The triceps is the largest muscle in the arm and the one that gives the back of it its size. The movement is simple: extend the elbow. Its structure is not so simple, with three heads of different origins and one shared insertion.
 
 ## The three heads of the triceps
 

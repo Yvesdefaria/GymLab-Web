@@ -15,11 +15,11 @@ alternate: "/es/aumentar-biceps/"
 updated: "2026-11-16"
 ---
 
-Biceps usually stall through repetition: the same session for months, with nobody checking whether the weight went up.
+Biceps usually stall through repetition: the same session for months and no record of whether the weight went up.
 
 ## How much weight you need to grow biceps
 
-A barbell curl of about 50 kg for several sets and a dumbbell curl of about 22.7 kg per hand without swinging are the benchmarks the original routine works with. They are not an entrance exam: they are a reasonable starting point for an intermediate lifter who already trains arms.
+A barbell curl of about 50 kg for several sets and a dumbbell curl of about 22.7 kg per hand without swinging are the benchmarks the original routine works with. They are not an entrance exam. They are a reasonable starting point for an intermediate lifter who already trains arms.
 
 Weight is chosen by execution. If the bar comes up with hip drive or the dumbbells cross at the end of the set, that is not your working weight. Drop one step and come back up when the rep comes out clean.
 
@@ -27,13 +27,13 @@ Weight is chosen by execution. If the bar comes up with hip drive or the dumbbel
 
 Every session, the goal is to beat the previous one on the final exercise: half a kilo more, or one or two more reps with the same technique. When you get it, move on to the next exercise and stop punishing the muscle.
 
-There is no need to add sets. Four sets with more weight are worth more than ten identical ones. Write down the load of each exercise: without a record, progression is a feeling.
+There is no need to add sets. Four sets with more weight are worth more than ten identical ones. Write down the load of each exercise. Without a record, progression is a feeling.
 
 If one week you do not beat the record, repeat the load and look for one more rep. Two sessions without progress are a signal to check recovery before adding another exercise.
 
 ## The 3-0-3 tempo and constant tension
 
-Three seconds up, no pause at the top, three down. If you want more tension, use 4-0-4. The middle number is the pause, and in this scheme it is zero: the bar does not stop at either end of the range.
+Three seconds up, no pause at the top, three down. If you want more tension, use 4-0-4. The middle number is the pause, and here it is zero. The bar does not stop at either end of the range.
 
 That does not contradict full range. A brief pause at the top or a controlled stretch at the bottom are tools that have their moment, and [range of motion](/en/range-of-motion-training/) explains when. The tempo rule is about not stopping the bar out of habit between reps.
 

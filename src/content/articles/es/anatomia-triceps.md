@@ -15,7 +15,7 @@ alternate: "/en/triceps-anatomy/"
 updated: "2026-11-16"
 ---
 
-El tríceps es el músculo más grande del brazo y el que da volumen a la parte de atrás. Su mecánica es simple, la extensión del codo, y su estructura no lo es tanto: tres cabezas con orígenes distintos y una inserción común.
+El tríceps es el músculo más grande del brazo y el que da volumen a la parte de atrás. Su mecánica es simple: extender el codo. Su estructura no lo es tanto, con tres cabezas de orígenes distintos y una inserción común.
 
 ## Las tres cabezas del tríceps
 

@@ -55,6 +55,6 @@ The common mistake is stacking inclines: barbell incline press, dumbbell incline
 
 ## When to go back to the flat bench
 
-If the upper chest trails the rest, it makes sense to spend a few weeks with the incline as the first movement and put the flat and decline presses second. They do not disappear: they drop in priority while the incline gets the good load.
+If the upper chest trails the rest, it makes sense to spend a few weeks with the incline as the first movement and put the flat and decline presses second. They do not disappear; they drop in priority while the incline gets the good load.
 
 After that block, go back to the usual structure. The incline stops being the centre and takes the place it deserves, so you are not always loading the same point of the shoulder. The guide to the [full range of motion](/en/range-of-motion-training/) explains why the long range is worth keeping in this exercise instead of shortening it to add weight. And if the problem is not the angle but the order of the session, the guide to [building pectoral muscle](/en/build-pectoral-muscle/) collects the mistakes that slow development down most.

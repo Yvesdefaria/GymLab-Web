@@ -1,7 +1,7 @@
 ---
 lang: en
 title: "Big arms: the cable curl and the grip that works"
-description: "Build big arms with the two-hand cable curl: the grip that truly loads the biceps, the set and rest scheme, and the variations that add arm thickness."
+description: "Build big arms with the two-hand cable curl: the grip that puts the biceps to work, the set and rest scheme, and the variations that add arm thickness."
 h1: "Build big arms"
 block: "Training"
 section: "Biceps Training"
@@ -30,7 +30,7 @@ The second decision is the angle of the arm against the torso. A standing curl, 
 The cable keeps tension through the whole range and lets you pin the elbows to the body without fighting gravity.
 
 1. Set both cables at the lowest position of the frame, one on each side.
-2. Clip a metal handle or a V rope to each cable.
+2. Clip a metal handle or a V rope attachment to each cable.
 3. Choose a weight that lets you keep strict form. More reps beats cheating with too much weight.
 4. Grab one handle with each hand, palms facing up.
 5. Pin the elbows to the body and lift without letting them drift apart or forward. If the elbows rise, the tension moves to the front deltoid and the pec minor.
