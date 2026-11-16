@@ -509,7 +509,7 @@ Legend: `ES` = Spanish published, `EN` = English published.
 - [x] ES · [x] EN — `/rutina-abdominales-para-culturismo/` — Rutina de abdominales para hipertrofiar tu abdomen
 - [x] ES · [x] EN — `/rutina-abdominales-ab/` — Rutina de Abdominales A/B \| Dos días a la semana
 - [x] ES · [x] EN — `/encogimientos-banco-inclinado/` — Encogimientos en banco inclinado \| 100% intensidad
-- [ ] ES · [ ] EN — `/encogimientos-maquina/` — Encogimientos en máquina \| Contrae tu abdomen al máximo
+- [x] ES · [x] EN — `/encogimientos-maquina/` — Encogimientos en máquina \| Contrae tu abdomen al máximo
 - [ ] ES · [ ] EN — `/encogimientos-polea-2/` — Encogimientos en polea, arrodillado \| 100% hipertrófico
 - [ ] ES · [ ] EN — `/rodar-con-barra/` — Rodar con la barra (Rodamiento abdominal)
 - [ ] ES · [ ] EN — `/encogimientos-abdominales-suelo/` — Encogimientos abdominales en suelo \| ¡Lo básico funciona!
