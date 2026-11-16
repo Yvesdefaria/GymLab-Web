@@ -418,7 +418,7 @@ Legend: `ES` = Spanish published, `EN` = English published.
 
 - [x] ES · [x] EN — `/rutina-de-femorales/` — Rutina de Femorales de Jay Cutler
 - [x] ES · [x] EN — `/franco-columbu-dieta-y-entrenamiento/` — Franco Columbu: Dieta y Entrenamiento del León Sardo
-- [ ] ES · [ ] EN — `/ronnie-coleman-rutina-y-dieta-tributo/` — Ronnie Coleman, rutina y dieta (Tributo al rey del culturismo)
+- [x] ES · [x] EN — `/ronnie-coleman-rutina-y-dieta-tributo/` — Ronnie Coleman, rutina y dieta (Tributo al rey del culturismo)
 - [ ] ES · [ ] EN — `/mike-mentzer-heavy-duty-entrena-menos-y-crece-mas/` — Mike Mentzer y el Heavy Duty: Entrena menos y crece más
 - [ ] ES · [ ] EN — `/ganadores-mr-olympia/` — Ganadores del Mr.Olympia, máxima competición culturista
 - [ ] ES · [ ] EN — `/rutina-y-dieta-de-jeff-seid/` — Rutina y dieta de Jeff Seid \| 100% Auténtica 2026
