@@ -9,22 +9,24 @@ Legend: `ES` = Spanish published, `EN` = English published.
 
 ## Progress
 
-- **Built: 231 / 792** (ES 231, EN 231).
-- Last batch: 10 pages built from `/serie-dorian-yates/` to `/prensa-posicion-pies/`; the
-  Entrenamiento del Hombro and Físicos de leyenda blocks are closed.
+- **Built: 251 / 792** (ES 251, EN 251).
+- Last batch: 10 pages built from `/anatomia-del-pecho/` to
+  `/posicion-de-muneca-en-el-curl-de-biceps/`; the chest block is closed and the biceps block has five of
+  seven.
 - Blocks finished end to end: Entrenamiento del Hombro (9), Físicos de leyenda (12), Entrenamiento de
-  la Espalda (10), Rutinas de Espalda (4), Espalda (1), Ejercicios de Espalda (31) and Ejercicio
-  Cardiovascular (32). Their headings are marked `— COMPLETO`; partial blocks show their ratio.
+  la Espalda (10), Rutinas de Espalda (4), Espalda (1), Ejercicios de Espalda (31), Ejercicio
+  Cardiovascular (32), Entrenamiento de las Piernas (18) and Entrenamiento del Pecho (6). Their
+  headings are marked `— COMPLETO`; partial blocks show their ratio.
 
 | Block | Articles | Built |
 | --- | ---: | ---: |
-| Entrenamiento | 222 | 192 |
+| Entrenamiento | 222 | 212 |
 | Por Músculo | 80 | 5 |
 | Rutinas | 80 | 0 |
 | Ejercicios | 196 | 34 |
 | Nutrición | 191 | 0 |
 | Mujer Fitness | 23 | 0 |
-| **Total** | **792** | **231** |
+| **Total** | **792** | **251** |
 
 ## Copy gate (mandatory before ticking ES/EN)
 
@@ -445,7 +447,7 @@ Legend: `ES` = Spanish published, `EN` = English published.
 - [x] ES · [x] EN — `/espalda-baja-fuerte/` — Como tener una espalda baja fuerte
 - [x] ES · [x] EN — `/anatomia-de-la-espalda/` — Anatomía y músculos de la espalda \| ¡Entrénalos!
 
-### Entrenamiento de las Piernas (18) — 9/18
+### Entrenamiento de las Piernas (18) — COMPLETO
 
 - [x] ES · [x] EN — `/sentadilla-con-caja-alturas/` — Sentadilla con caja, cuestión de altura
 - [x] ES · [x] EN — `/beneficios-hip-thrust/` — Beneficios de hacer rutinas de Hip Thrust \| Glúteos tonificados
@@ -466,7 +468,7 @@ Legend: `ES` = Spanish published, `EN` = English published.
 - [x] ES · [x] EN — `/anatomia-de-la-cadera-gluteos/` — Anatomía y músculos de la cadera \| ¡Tu CORE importa!
 - [x] ES · [x] EN — `/como-ganar-volumen-en-los-gemelos/` — Como ganar volumen en los gemelos
 
-### Entrenamiento del Pecho (6)
+### Entrenamiento del Pecho (6) — COMPLETO
 
 - [x] ES · [x] EN — `/press-de-banca-mas-efectivo-con-mancuernas-o-con-barra/` — Press de banca... ¿Más efectivo con mancuernas o con barra?
 - [x] ES · [x] EN — `/anatomia-del-pecho/` — Anatomía y músculos del pecho \| ¡Entrena tus puntos débiles!
@@ -475,7 +477,7 @@ Legend: `ES` = Spanish published, `EN` = English published.
 - [x] ES · [x] EN — `/maquinas-pesos-libres-al-entrenar-el-pecho/` — Máquinas vs. Pesos libres al entrenar el pecho
 - [x] ES · [x] EN — `/mancuernas-entrenando-pecho/` — Utilizar mancuernas al entrenar el pecho
 
-### Entrenamiento de los Bíceps (7)
+### Entrenamiento de los Bíceps (7) — 5/7
 
 - [x] ES · [x] EN — `/flexion-brazos-compartida/` — Flexión de Brazos Compartida \| ¡Desafía tus bíceps!
 - [x] ES · [x] EN — `/rutinas-biceps/` — Rutinas de bíceps y como entrenarlo \| 100% Actualizadas 2025
