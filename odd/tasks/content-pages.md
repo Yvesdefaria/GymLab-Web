@@ -462,7 +462,7 @@ Legend: `ES` = Spanish published, `EN` = English published.
 - [x] ES · [x] EN — `/anatomia-gemelo-soleo/` — Anatomía y músculos del gemelo y sóleo \| ¡Pura roca!
 - [x] ES · [x] EN — `/como-proteger-tus-rodillas-en-el-entrenamiento-de-cuadriceps/` — Como proteger tus rodillas en el entrenamiento de cuádriceps
 - [x] ES · [x] EN — `/anatomia-y-entrenamiento-del-tibial-anterior/` — Anatomía y entrenamiento del tibial anterior
-- [ ] ES · [ ] EN — `/zancadas-estaticas-zancadas-caminando-cual-es-mas-efectiva/` — Zancadas estáticas y zancadas caminando, ¿Cual es más efectiva?
+- [x] ES · [x] EN — `/zancadas-estaticas-zancadas-caminando-cual-es-mas-efectiva/` — Zancadas estáticas y zancadas caminando, ¿Cual es más efectiva?
 - [ ] ES · [ ] EN — `/anatomia-de-la-cadera-gluteos/` — Anatomía y músculos de la cadera \| ¡Tu CORE importa!
 - [ ] ES · [ ] EN — `/como-ganar-volumen-en-los-gemelos/` — Como ganar volumen en los gemelos
 
