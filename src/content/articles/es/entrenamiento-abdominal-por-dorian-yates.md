@@ -69,6 +69,6 @@ La rutina se puede copiar tal cual; lo que de verdad se traslada es el criterio:
 - Trata el abdomen como un músculo y dale carga, series y descanso.
 - Ejecuta despacio y busca el fallo alrededor de las veinte repeticiones, no cien repeticiones sueltas.
 - Incluye un básico pesado en cada sesión y deja que el torso estabilice.
-- No esperes que el entrenamiento abdominal revele el músculo: eso lo decide la grasa corporal.
+- No esperes que el entrenamiento abdominal revele el músculo: eso lo decide la [grasa corporal](/es/perder-grasa-abdominal-con-abdominales/).
 
 Si buscas más opciones, la guía de [rutinas de ejercicios abdominales](/es/rutinas-ejercicios-abdominales/) ordena cuatro planes por nivel. El [entrenamiento hasta el fallo](/es/fallo-muscular/) explica cuándo conviene buscarlo y cuándo no, y el [volumen de entrenamiento](/es/volumen-de-entrenamiento/) ayuda a repartir las series en la semana. Para el trabajo sin movimiento, la guía de [abdominales isométricos](/es/abdominales-isometricos/) cubre la otra mitad del bloque.

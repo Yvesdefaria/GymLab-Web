@@ -69,6 +69,6 @@ The routine is short and can be copied as it stands, but the thinking is what re
 - Treat the abs as a muscle and give them load, sets and rest.
 - Move slowly and chase failure around twenty reps, not a hundred loose reps.
 - Include one heavy basic in every session and let the torso stabilise.
-- Do not expect abdominal training to reveal the muscle: body fat decides that.
+- Do not expect abdominal training to reveal the muscle: [body fat](/en/spot-reduction-myth/) decides that.
 
 If you want more options, the guide to [ab workout routines](/en/ab-workout-routines/) lays out four plans by level. [Training to failure](/en/muscle-failure-training/) explains when to chase it and when not to, and [training volume](/en/training-volume/) helps spread the sets across the week. For work without movement, the guide to [isometric abs](/en/isometric-abs/) covers the other half of the block.
