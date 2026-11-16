@@ -541,6 +541,26 @@ const PAGES = [
   ['en', '/en/ab-workout-routines/'],
   ['es', '/es/abdominales-isometricos/'],
   ['en', '/en/isometric-abs/'],
+  ['es', '/es/abdominales-ejercicios-colgado/'],
+  ['en', '/en/hanging-ab-exercises/'],
+  ['es', '/es/abdominales-cambiatufisico/'],
+  ['en', '/en/four-day-ab-routine/'],
+  ['es', '/es/ejercicios-de-abdominales/'],
+  ['en', '/en/ab-exercises/'],
+  ['es', '/es/perder-grasa-abdominal-con-abdominales/'],
+  ['en', '/en/spot-reduction-myth/'],
+  ['es', '/es/rutina-abdominales-para-culturismo/'],
+  ['en', '/en/abs-hypertrophy-routine/'],
+  ['es', '/es/rutina-abdominales-ab/'],
+  ['en', '/en/ab-routine-a-b/'],
+  ['es', '/es/encogimientos-banco-inclinado/'],
+  ['en', '/en/decline-bench-crunches/'],
+  ['es', '/es/encogimientos-maquina/'],
+  ['en', '/en/machine-crunches/'],
+  ['es', '/es/encogimientos-polea-2/'],
+  ['en', '/en/kneeling-cable-crunches/'],
+  ['es', '/es/rodar-con-barra/'],
+  ['en', '/en/barbell-ab-rollout/'],
 ];
 
 // Content routes, keyed by a stable id with the slug each locale publishes. The
@@ -1204,6 +1224,31 @@ const ROUTES = {
     en: '/ab-workout-routines',
   },
   isometricAbs: { es: '/abdominales-isometricos', en: '/isometric-abs' },
+  hangingAbs: {
+    es: '/abdominales-ejercicios-colgado',
+    en: '/hanging-ab-exercises',
+  },
+  fourDayAbs: { es: '/abdominales-cambiatufisico', en: '/four-day-ab-routine' },
+  abExercises: { es: '/ejercicios-de-abdominales', en: '/ab-exercises' },
+  spotReduction: {
+    es: '/perder-grasa-abdominal-con-abdominales',
+    en: '/spot-reduction-myth',
+  },
+  absHypertrophy: {
+    es: '/rutina-abdominales-para-culturismo',
+    en: '/abs-hypertrophy-routine',
+  },
+  abRoutineAB: { es: '/rutina-abdominales-ab', en: '/ab-routine-a-b' },
+  declineBenchCrunch: {
+    es: '/encogimientos-banco-inclinado',
+    en: '/decline-bench-crunches',
+  },
+  machineCrunch: { es: '/encogimientos-maquina', en: '/machine-crunches' },
+  kneelingCableCrunch: {
+    es: '/encogimientos-polea-2',
+    en: '/kneeling-cable-crunches',
+  },
+  barbellRollout: { es: '/rodar-con-barra', en: '/barbell-ab-rollout' },
 };
 
 const routeId = (path) => {

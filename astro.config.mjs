@@ -300,6 +300,16 @@ const ROUTE_PAIRS = [
   ['/giros-en-disco', '/plate-twists'],
   ['/rutinas-ejercicios-abdominales', '/ab-workout-routines'],
   ['/abdominales-isometricos', '/isometric-abs'],
+  ['/abdominales-ejercicios-colgado', '/hanging-ab-exercises'],
+  ['/abdominales-cambiatufisico', '/four-day-ab-routine'],
+  ['/ejercicios-de-abdominales', '/ab-exercises'],
+  ['/perder-grasa-abdominal-con-abdominales', '/spot-reduction-myth'],
+  ['/rutina-abdominales-para-culturismo', '/abs-hypertrophy-routine'],
+  ['/rutina-abdominales-ab', '/ab-routine-a-b'],
+  ['/encogimientos-banco-inclinado', '/decline-bench-crunches'],
+  ['/encogimientos-maquina', '/machine-crunches'],
+  ['/encogimientos-polea-2', '/kneeling-cable-crunches'],
+  ['/rodar-con-barra', '/barbell-ab-rollout'],
 ];
 
 const pairFor = (pathname) => {
