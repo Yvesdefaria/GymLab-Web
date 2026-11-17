@@ -681,6 +681,26 @@ const PAGES = [
   ['en', '/en/rest-pause-chest-routine/'],
   ['es', '/es/rutina-para-sorprender-a-tus-triceps/'],
   ['en', '/en/triceps-shock-routine/'],
+  ['es', '/es/rutinas-de-fuerza/'],
+  ['en', '/en/strength-routines/'],
+  ['es', '/es/metodo-bilbo-rutina-de-fuerza/'],
+  ['en', '/en/bilbo-method/'],
+  ['es', '/es/rutina-de-fuerza-jim-wendler/'],
+  ['en', '/en/wendler-531/'],
+  ['es', '/es/rutina-5x5-fuerza-stronglifts-y-madcow/'],
+  ['en', '/en/stronglifts-madcow-5x5/'],
+  ['es', '/es/programa-de-entrenamiento-para-fuerza-del-tren-superior/'],
+  ['en', '/en/upper-body-strength-program/'],
+  ['es', '/es/rutina-starting-strength-guia/'],
+  ['en', '/en/starting-strength-guide/'],
+  ['es', '/es/entrenamiento-powerlifting/'],
+  ['en', '/en/powerlifting-training/'],
+  ['es', '/es/fuerza-3x2-6-semanas/'],
+  ['en', '/en/six-week-strength-ramp/'],
+  ['es', '/es/rutina-fuerza-3x3-de-stephan-korte/'],
+  ['en', '/en/korte-3x3/'],
+  ['es', '/es/entrenamiento-aleman/'],
+  ['en', '/en/german-volume-training/'],
 ];
 
 // Content routes, keyed by a stable id with the slug each locale publishes. The
@@ -1513,6 +1533,22 @@ const ROUTES = {
     en: '/rest-pause-chest-routine',
   },
   tricepsShockRoutine: { es: '/rutina-para-sorprender-a-tus-triceps', en: '/triceps-shock-routine' },
+  strengthRoutines: { es: '/rutinas-de-fuerza', en: '/strength-routines' },
+  bilboMethod: { es: '/metodo-bilbo-rutina-de-fuerza', en: '/bilbo-method' },
+  wendler531: { es: '/rutina-de-fuerza-jim-wendler', en: '/wendler-531' },
+  strongliftsMadcow: {
+    es: '/rutina-5x5-fuerza-stronglifts-y-madcow',
+    en: '/stronglifts-madcow-5x5',
+  },
+  upperBodyStrengthProgram: {
+    es: '/programa-de-entrenamiento-para-fuerza-del-tren-superior',
+    en: '/upper-body-strength-program',
+  },
+  startingStrengthGuide: { es: '/rutina-starting-strength-guia', en: '/starting-strength-guide' },
+  powerliftingTraining: { es: '/entrenamiento-powerlifting', en: '/powerlifting-training' },
+  sixWeekStrengthRamp: { es: '/fuerza-3x2-6-semanas', en: '/six-week-strength-ramp' },
+  korte3x3: { es: '/rutina-fuerza-3x3-de-stephan-korte', en: '/korte-3x3' },
+  germanVolumeTraining: { es: '/entrenamiento-aleman', en: '/german-volume-training' },
 };
 
 const routeId = (path) => {

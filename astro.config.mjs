@@ -370,6 +370,16 @@ const ROUTE_PAIRS = [
   ['/rutina-de-volumen-para-triceps-como-herraduras', '/triceps-mass-routine'],
   ['/rutina-de-pecho-de-dos-dias-a-la-semana-con-tecnica-descanso-pausa', '/rest-pause-chest-routine'],
   ['/rutina-para-sorprender-a-tus-triceps', '/triceps-shock-routine'],
+  ['/rutinas-de-fuerza', '/strength-routines'],
+  ['/metodo-bilbo-rutina-de-fuerza', '/bilbo-method'],
+  ['/rutina-de-fuerza-jim-wendler', '/wendler-531'],
+  ['/rutina-5x5-fuerza-stronglifts-y-madcow', '/stronglifts-madcow-5x5'],
+  ['/programa-de-entrenamiento-para-fuerza-del-tren-superior', '/upper-body-strength-program'],
+  ['/rutina-starting-strength-guia', '/starting-strength-guide'],
+  ['/entrenamiento-powerlifting', '/powerlifting-training'],
+  ['/fuerza-3x2-6-semanas', '/six-week-strength-ramp'],
+  ['/rutina-fuerza-3x3-de-stephan-korte', '/korte-3x3'],
+  ['/entrenamiento-aleman', '/german-volume-training'],
 ];
 
 const pairFor = (pathname) => {
