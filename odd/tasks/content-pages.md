@@ -9,9 +9,9 @@ Legend: `ES` = Spanish published, `EN` = English published.
 
 ## Progress
 
-- **Built: 391 / 792** (ES 391, EN 391).
-- Last batch: batch 39 closed Rutinas de Definición and opened Full Body;
-  391 pages built.
+- **Built: 401 / 792** (ES 401, EN 401).
+- Last batch: batch 40 closed Full Body and opened Deportes;
+  401 pages built.
 - Blocks finished end to end: Entrenamiento del Hombro (9), Físicos de leyenda (12), Entrenamiento de
   la Espalda (10), Rutinas de Espalda (4), Espalda (1), Ejercicios de Espalda (31), Ejercicio
   Cardiovascular (32), Entrenamiento de las Piernas (18), Entrenamiento del Pecho (6), Rutinas de
@@ -23,11 +23,11 @@ Legend: `ES` = Spanish published, `EN` = English published.
 | --- | ---: | ---: |
 | Entrenamiento | 222 | 217 |
 | Por Músculo | 80 | 80 |
-| Rutinas | 80 | 60 |
+| Rutinas | 80 | 70 |
 | Ejercicios | 196 | 34 |
 | Nutrición | 191 | 0 |
 | Mujer Fitness | 23 | 0 |
-| **Total** | **792** | **391** |
+| **Total** | **792** | **401** |
 
 The Built column counts the archive block of each page, not the frontmatter `block` (every guide ships
 with `block: "Entrenamiento"` for the site taxonomy). Five Entrenamiento rows are settled and will
@@ -682,23 +682,23 @@ never publish: two DESCARTADA and three FUSIONADA, so the publishable total is *
 - [x] ES · [x] EN — `/definicion-muscular-seis-dias/` — Rutina de definición muscular de seis días
 - [x] ES · [x] EN — `/rutina-de-series-descendentes/` — Rutina de definición con Series Descendentes
 
-### Rutinas Full Body o Cuerpo completo (5)
+### Rutinas Full Body o Cuerpo completo (5) — COMPLETO
 
 - [x] ES · [x] EN — `/rutina-full-body-dias-pesados/` — Rutina avanzada full-body con días pesados
 - [x] ES · [x] EN — `/rutina-de-cuerpo-completo-para-recuperar-la-forma/` — Rutina de cuerpo completo de 3 días a la semana \| Vuelta al GYM
-- [ ] ES · [ ] EN — `/rutina-masa-muscular-cuerpo-completo/` — Rutina de Cuerpo Entero Avanzada \| ¡Gana músculo!
-- [ ] ES · [ ] EN — `/rutina-sobreentrenamiento-controlado/` — Rutina de Sobreentrenamiento Controlado
-- [ ] ES · [ ] EN — `/rutinas-cuerpo-completo/` — Rutinas de cuerpo completo \| Beneficios y consejos TOP
+- [x] ES · [x] EN — `/rutina-masa-muscular-cuerpo-completo/` — Rutina de Cuerpo Entero Avanzada \| ¡Gana músculo!
+- [x] ES · [x] EN — `/rutina-sobreentrenamiento-controlado/` — Rutina de Sobreentrenamiento Controlado
+- [x] ES · [x] EN — `/rutinas-cuerpo-completo/` — Rutinas de cuerpo completo \| Beneficios y consejos TOP
 
 ### Rutinas Deportes (8)
 
-- [ ] ES · [ ] EN — `/rutina-de-entrenamiento-para-tenis-padel/` — Rutina de entrenamiento para Tenis y Pádel
-- [ ] ES · [ ] EN — `/rutina-futbol/` — Rutina para fuerza y velocidad en el fútbol
-- [ ] ES · [ ] EN — `/entrenamiento-de-fuerza-para-boxeadores-alcanza-tu-maximo-potencial/` — Entrenamiento de fuerza para boxeadores \| ¡Gana más potencia!
-- [ ] ES · [ ] EN — `/rutina-pesas-ciclismo/` — Rutina de pesas para ciclismo
-- [ ] ES · [ ] EN — `/rutina-pesas-corredores-atletismo/` — Rutina de pesas para corredores de fondo (Atletismo)
-- [ ] ES · [ ] EN — `/rutina-dieta-natacion/` — Rutina de pesas y dieta para natación
-- [ ] ES · [ ] EN — `/rutinas-deportes/` — Rutinas de pesas para otros deportes
+- [x] ES · [x] EN — `/rutina-de-entrenamiento-para-tenis-padel/` — Rutina de entrenamiento para Tenis y Pádel
+- [x] ES · [x] EN — `/rutina-futbol/` — Rutina para fuerza y velocidad en el fútbol
+- [x] ES · [x] EN — `/entrenamiento-de-fuerza-para-boxeadores-alcanza-tu-maximo-potencial/` — Entrenamiento de fuerza para boxeadores \| ¡Gana más potencia!
+- [x] ES · [x] EN — `/rutina-pesas-ciclismo/` — Rutina de pesas para ciclismo
+- [x] ES · [x] EN — `/rutina-pesas-corredores-atletismo/` — Rutina de pesas para corredores de fondo (Atletismo)
+- [x] ES · [x] EN — `/rutina-dieta-natacion/` — Rutina de pesas y dieta para natación
+- [x] ES · [x] EN — `/rutinas-deportes/` — Rutinas de pesas para otros deportes
 - [ ] ES · [ ] EN — `/rutina-dieta-baloncesto/` — Rutina de pesas y dieta para el Baloncesto
 
 ### Rutinas en Principiantes (9)

@@ -219,3 +219,25 @@ npm run check:copy   # 401 pages expected
 npm run build        # 818 pages expected
 npm run check:i18n   # 814 sitemap URLs
 ```
+
+## Result (2026-11-17)
+
+- 10 bilingual pairs, 20 files, 10 heroes. Library: 391 → **401 / 792**. Rutinas full body closed at
+  **5/5**; Rutinas de deportes at 7/8.
+- Gates: `check:copy` **20,451/20,451**, build **818 pages**, `check:i18n` **12,772/12,772**, sitemap
+  **814 URLs** with 2,442 alternates.
+- Structural checks: 108 internal links, **0 broken**; every table three columns; zero em dashes; no
+  BOM; 20 pages clean at 390 px and zero clipped cells across 140 page/width pairs. 401 heroes: the
+  only dHash pairs under distance 7 are the three pre-existing ones.
+- **Corrections made:** the mass page cut its 40-set heavy day, replaced the behind-the-neck press,
+  fixed the calorie line and kept Reeves, Park and Eder as history; the overtraining page became
+  functional overreaching with a deload; the full-body hub has no fourth programme; the tennis page
+  keeps its dips with a cue and gains a progression; football gets a set/rep scheme labelled as the
+  page's recommendation and a defined speed week; boxing gets the two sessions the archive never wrote
+  and rejects punching with dumbbells; cycling, running, swimming and the sports hub drop their diet
+  lists, supplement doses and bylines.
+- **Fixed by the parent:** the sports hub `meta` counted eight routines when only six sport pages were
+  published (eight rows include the hub itself). It now reads six, and batch 41 raises it to seven.
+- **Gotcha:** the two obvious Commons subjects for this batch were already vendored (a platform
+  barbell at distance 0, a Gothenburg gym at 0), and the hub's links live inside an HTML table that
+  the copy gate cannot exercise; the build and the render pass are the check.
