@@ -244,7 +244,7 @@ Volumen"` (EN `Volume routines`). All: `block: "Entrenamiento"` (EN `Training`),
 - Fix the origin (Feser, Poliquin, Gironda separate), the "non-functional hypertrophy" line, the
   four-day versus three-routine contradiction and the truncated tempo "4-0-".
 - Kill "Llámeme loco", "he conocido atletas", the "halla" typos and the comment CTA.
-- Link `rutinas-de-fuerza`, `rutinas-de-fuerza` is the hub, plus `volumen-de-entrenamiento`,
+- Link `rutinas-de-fuerza` (the hub), `volumen-de-entrenamiento`,
   `superseries`, `fallo-muscular`, `tiempo-de-descanso-entre-series`,
   `principio-adaptacion-sobrecarga-progresiva`, `rutinas-pecho`.
 
@@ -280,3 +280,27 @@ npm run check:copy   # 341 pages expected
 npm run build        # 698 pages expected
 npm run check:i18n   # 694 sitemap URLs
 ```
+
+## Result (2026-11-17)
+
+- 10 bilingual pairs, 20 files, 10 heroes. Library: 341 → **351 / 792**. Rutinas de Fuerza closed at
+  **9/9**; Rutinas de Volumen opened at 1/29 (páginas 1-9, `entrenamiento-aleman`).
+- Gates: `check:copy` **17,391/17,391**, build **698 pages**, `check:i18n` **10,912/10,912**, sitemap
+  **694 URLs** with 2,082 alternates.
+- Structural checks: 134 internal links, **0 broken**; every table three columns; zero em dashes; no
+  BOM; all 20 pages clean at 390 px after two fixes. 341 heroes: the only dHash pairs under distance 7
+  are the three pre-existing ones; every new hero is 14 or more away from anything else.
+- **Corrections made:** GVT origin fixed to Feser and Poliquin with Gironda separated; 10x10 capped at
+  four weeks and one main lift; the Wendler templates published once with the plus sets stated; the
+  Starting Strength increments split per lift and one coherent phase table; Madcow finally gets its
+  week; Bilbo's authorship marked undocumented and F=ma removed; Korte fixed to eight weeks and
+  11.3 kg; the 3x2 table rebuilt as a readable five-step ramp; the powerlifting plan rebuilt around the
+  three lifts; the force hub routes instead of repeating.
+- **Fixed at verification (390 px):** two schedule tables in `entrenamiento-powerlifting` and
+  `entrenamiento-aleman` used the routine grid with a long third header ("Series y repeticiones") and
+  overflowed 14 px. Both are now `<table class="text-table">`, in both locales.
+- **Gotcha:** `check:copy` catches an exact hero path duplicate, not a crop. A 1280x720 crop of a
+  library hero scores 1-5, and a distance of 6 has twice been the same photograph; open the closest
+  hero before vendoring.
+- **Gotcha:** any schedule or phase table with a long header belongs in `text-table`. The 58/21/21
+  routine geometry clips a 20-character header at 390 px even when the body cells are short.

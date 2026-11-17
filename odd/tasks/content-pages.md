@@ -9,24 +9,25 @@ Legend: `ES` = Spanish published, `EN` = English published.
 
 ## Progress
 
-- **Built: 331 / 792** (ES 331, EN 331).
-- Last batch: batch 33 closed Pierna and the three loose routine rows;
-  331 pages built.
+- **Built: 341 / 792** (ES 341, EN 341).
+- Last batch: batch 34 closed Rutinas de Fuerza and opened Rutinas de Volumen;
+  341 pages built.
 - Blocks finished end to end: Entrenamiento del Hombro (9), Físicos de leyenda (12), Entrenamiento de
   la Espalda (10), Rutinas de Espalda (4), Espalda (1), Ejercicios de Espalda (31), Ejercicio
   Cardiovascular (32), Entrenamiento de las Piernas (18), Entrenamiento del Pecho (6), Rutinas de
-  Pierna (3), Pierna (9), Rutinas de Tríceps (1), Rutinas de Pecho (1) and Tríceps (1). Their
+  Pierna (3), Pierna (9), Rutinas de Tríceps (1), Rutinas de Pecho (1), Tríceps (1) and Rutinas de
+  Fuerza (9). Their
   headings are marked `— COMPLETO`; partial blocks show their ratio.
 
 | Block | Articles | Built |
 | --- | ---: | ---: |
-| Entrenamiento | 222 | 282 |
+| Entrenamiento | 222 | 292 |
 | Por Músculo | 80 | 5 |
 | Rutinas | 80 | 0 |
 | Ejercicios | 196 | 34 |
 | Nutrición | 191 | 0 |
 | Mujer Fitness | 23 | 0 |
-| **Total** | **792** | **331** |
+| **Total** | **792** | **341** |
 
 ## Copy gate (mandatory before ticking ES/EN)
 
@@ -610,21 +611,21 @@ Legend: `ES` = Spanish published, `EN` = English published.
 
 ## Rutinas (80)
 
-### Rutinas de Fuerza (9)
+### Rutinas de Fuerza (9) — COMPLETO
 
-- [ ] ES · [ ] EN — `/rutinas-de-fuerza/` — Las Mejores Rutinas de Fuerza: Guía Definitiva 2026
-- [ ] ES · [ ] EN — `/metodo-bilbo-rutina-de-fuerza/` — Método Bilbo: gana fuerza máxima sin levantar pesado
-- [ ] ES · [ ] EN — `/rutina-de-fuerza-jim-wendler/` — Rutina 5/3/1 de Jim Wendler: Guía Completa y Ejemplos Prácticos
-- [ ] ES · [ ] EN — `/rutina-5x5-fuerza-stronglifts-y-madcow/` — Rutina 5x5: Fuerza e Hipertrofia con StrongLifts y Madcow
-- [ ] ES · [ ] EN — `/programa-de-entrenamiento-para-fuerza-del-tren-superior/` — Rutina de Fuerza de Tren Superior: Programa de 12 Semanas
-- [ ] ES · [ ] EN — `/rutina-starting-strength-guia/` — Rutina Starting Strength: Guía y Tablas para Ganar Fuerza
-- [ ] ES · [ ] EN — `/entrenamiento-powerlifting/` — Entrenamiento de Powerlifting \| Más fuerza y músculo
-- [ ] ES · [ ] EN — `/fuerza-3x2-6-semanas/` — Rutina de fuerza 3x2 de 6 semanas
-- [ ] ES · [ ] EN — `/rutina-fuerza-3x3-de-stephan-korte/` — Rutina de fuerza 3x3 de Stephan Korte
+- [x] ES · [x] EN — `/rutinas-de-fuerza/` — Las Mejores Rutinas de Fuerza: Guía Definitiva 2026
+- [x] ES · [x] EN — `/metodo-bilbo-rutina-de-fuerza/` — Método Bilbo: gana fuerza máxima sin levantar pesado
+- [x] ES · [x] EN — `/rutina-de-fuerza-jim-wendler/` — Rutina 5/3/1 de Jim Wendler: Guía Completa y Ejemplos Prácticos
+- [x] ES · [x] EN — `/rutina-5x5-fuerza-stronglifts-y-madcow/` — Rutina 5x5: Fuerza e Hipertrofia con StrongLifts y Madcow
+- [x] ES · [x] EN — `/programa-de-entrenamiento-para-fuerza-del-tren-superior/` — Rutina de Fuerza de Tren Superior: Programa de 12 Semanas
+- [x] ES · [x] EN — `/rutina-starting-strength-guia/` — Rutina Starting Strength: Guía y Tablas para Ganar Fuerza
+- [x] ES · [x] EN — `/entrenamiento-powerlifting/` — Entrenamiento de Powerlifting \| Más fuerza y músculo
+- [x] ES · [x] EN — `/fuerza-3x2-6-semanas/` — Rutina de fuerza 3x2 de 6 semanas
+- [x] ES · [x] EN — `/rutina-fuerza-3x3-de-stephan-korte/` — Rutina de fuerza 3x3 de Stephan Korte
 
 ### Rutinas de Volumen (29)
 
-- [ ] ES · [ ] EN — `/entrenamiento-aleman/` — Entrenamiento Alemán de Volumen Muscular\| Actualizado 2025
+- [x] ES · [x] EN — `/entrenamiento-aleman/` — Entrenamiento Alemán de Volumen Muscular\| Actualizado 2025
 - [ ] ES · [ ] EN — `/rutina-de-tiron-empujon/` — Rutinas de entrenamiento Tirón-Empujón \| Divide y Vencerás ✔
 - [ ] ES · [ ] EN — `/rutina-volumen-arnold-schwarzenegger/` — Rutina de volumen de Arnold Schwarzenegger \| Update 2025
 - [ ] ES · [ ] EN — `/rutina-entrenamiento/` — Rutina de Entrenamiento Completa \| 5 Meses de Entrenamiento

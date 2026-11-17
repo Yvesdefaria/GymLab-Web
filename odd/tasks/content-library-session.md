@@ -9,21 +9,21 @@ Last updated: 2026-11-16. Read this first next session.
 
 ## State
 
-- **331 / 792 bilingual pages** (ES 331, EN 331).
-- Blocks: Entrenamiento **282**, Por Músculo **5**, Ejercicios **34**.
-- **331 unique hero paths.** One exact duplicate pair remains from an earlier batch
+- **351 / 792 bilingual pages** (ES 351, EN 351).
+- Blocks: Entrenamiento **292**, Por Músculo **5**, Ejercicios **34**.
+- **351 unique hero paths.** One exact duplicate pair remains from an earlier batch
   (`remo-polea-sentado` with `superserie-de-espalda-para-terminar-tu-rutina`), plus two pre-existing
-  near pairs at dHash 4 and 5; the batch 17 to 33 duplicates were fixed. See `PLAN.md`.
-- **Batch 33 is built, green and committed (2026-11-17).** The build has **678 pages** and **674
+  near pairs at dHash 4 and 5; the batch 17 to 34 duplicates were fixed. See `PLAN.md`.
+- **Batch 34 is built, green and committed (2026-11-17).** The build has **698 pages** and **694
   sitemap URLs**. Abdomen (39/39), Hombro (5/5), Rutinas de Bíceps (7/7), Pecho (9/9), Pierna (9/9),
-  Rutinas de Pierna (3/3), Rutinas de Tríceps (1/1), Rutinas de Pecho (1/1) and Tríceps (1/1) are
-  closed. Rutinas de Fuerza is 0/9.
+  Rutinas de Pierna (3/3), Rutinas de Tríceps (1/1), Rutinas de Pecho (1/1), Tríceps (1/1) and
+  Rutinas de Fuerza (9/9) are closed. Rutinas de Volumen is 1/29.
 - Five archive rows are settled and must stay out: the FiveStars Fitness congress page (discarded),
   the AEKE S1 Pro page (discarded 2026-11-14), `/velocidad-repeticiones/` (fused into the tempo page,
   2026-11-14) and the two batch 20 fusions (2026-11-15).
 - **Production runs batch 32 (pushed 2026-11-16).** Batches 19 to 32 are live; `origin/main` is at
-  the batch 32 docs push. Batch 33 is committed locally and not pushed.
-- Batch records: `odd/tasks/content-library-batch-31.md`, `-32.md` and `-33.md`.
+  the batch 32 docs push. Batches 33 and 34 are committed locally and not pushed.
+- Batch records: `odd/tasks/content-library-batch-32.md`, `-33.md` and `-34.md`.
 
 ## Gates
 
@@ -91,10 +91,10 @@ Start the dev server with `npm run dev` for local review.
 
 ## Next 10
 
-1. Batch 34 is the nine Rutinas de Fuerza rows plus `entrenamiento-aleman`: the brief already exists
-   at `odd/tasks/content-library-batch-34.md`. After it, batch 35 takes the next ten Rutinas de
-   Volumen rows from `/rutina-de-tiron-empujon/` to
-   `/rutina-con-superseries-musculos-antagonistas/`.
+1. Batch 35 is the next ten Rutinas de Volumen rows from `/rutina-de-tiron-empujon/` to
+   `/rutina-con-superseries-musculos-antagonistas/`; the brief already exists at
+   `odd/tasks/content-library-batch-35.md`. After it, the volume block continues with
+   `/rutina-con-multipower/`.
 2. Keep the same copy, unique-hero and gate flow.
 3. Before publishing another photo from Shixart1985, Nenad Stojkovic, Miguel Angel Omaña Rojas, the
    InjuryMap family, PTPioneer, KeepActive Australia, Everkinetic or Wellcome Collection, compare the
@@ -149,6 +149,24 @@ Start the dev server with `npm run dev` for local review.
   documented in the batch 22 record.
 - **Push is the owner's call:** satisfied on 2026-11-16. Batches 19 to 32 were pushed from
   `6293327` to `f7f8de1`; production serves 658 pages.
+
+## Session close (2026-11-17, batch 34)
+
+- Batch 34 closed Rutinas de Fuerza and opened Rutinas de Volumen: 10 pairs, 341 → **351 / 792**.
+  Rutinas de Fuerza **9/9**; Rutinas de Volumen 1/29.
+- Writers: A pages 1-5 (hub, Bilbo, Wendler, 5x5, upper-body programme), B pages 6-10 (Starting
+  Strength, powerlifting, 3x2, Korte, GVT), disjoint files. The parent registered the routes, fixed two
+  390 px table defects, ran the gates and committed per page.
+- Gates: `check:copy` **17,391/17,391**, build **698 pages**, `check:i18n` **10,912/10,912**, sitemap
+  **694 URLs** with 2,082 alternates. 134 internal links, **0 broken**; all 20 pages clean at 390 px.
+- Heroes: 341 files; the only dHash pairs under distance 7 are the three pre-existing ones.
+- Commits: pages `b4ca8ea`, `93f82b3`, `7d8e75e`, `9d9b7ad`, `2bc10b8`, `27ad035`, `0c0cb54`,
+  `e6e8b7d`, `98196d9`, `20af704`; routes `028ab29`.
+- **Gotcha:** a schedule table with a long header ("Series y repeticiones") overflows 14 px at 390 px
+  in the routine grid even when its cells are short. Schedules are `<table class="text-table">`.
+- **Gotcha:** a hero at dHash 6 can still be the same photograph (a tighter crop). Open the closest
+  hero before vendoring, not only when the distance is 0.
+- Next session starts at `/rutina-de-tiron-empujon/`; the batch 35 brief is already written.
 
 ## Session close (2026-11-17, batch 33)
 
