@@ -360,6 +360,16 @@ const ROUTE_PAIRS = [
   ['/revienta-tus-piernas-en-15-minutos', '/fifteen-minute-leg-workout'],
   ['/rutina-de-gemelos-sin-maquinas', '/calf-routine-no-machines'],
   ['/rutinas-de-gemelos-para-pantorrillas-esteticas-tonificadas', '/calf-routines'],
+  ['/rutina-volumen-pierna-completa', '/leg-routine-for-mass'],
+  ['/rutina-de-piernas-de-doble-division', '/two-day-leg-split'],
+  ['/rutinas-pierna', '/leg-routines'],
+  ['/entrenamiento-de-gemelos-diferente', '/unconventional-calf-training'],
+  ['/entrenar-femorales', '/eccentric-hamstring-training'],
+  ['/rutinas-cuadriceps-objetivos', '/quad-routines-by-goal'],
+  ['/rutina-de-piernas-con-sentadillas-de-la-vieja-escuela', '/old-school-squat-leg-routine'],
+  ['/rutina-de-volumen-para-triceps-como-herraduras', '/triceps-mass-routine'],
+  ['/rutina-de-pecho-de-dos-dias-a-la-semana-con-tecnica-descanso-pausa', '/rest-pause-chest-routine'],
+  ['/rutina-para-sorprender-a-tus-triceps', '/triceps-shock-routine'],
 ];
 
 const pairFor = (pathname) => {

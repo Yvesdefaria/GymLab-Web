@@ -661,6 +661,26 @@ const PAGES = [
   ['en', '/en/calf-routine-no-machines/'],
   ['es', '/es/rutinas-de-gemelos-para-pantorrillas-esteticas-tonificadas/'],
   ['en', '/en/calf-routines/'],
+  ['es', '/es/rutina-volumen-pierna-completa/'],
+  ['en', '/en/leg-routine-for-mass/'],
+  ['es', '/es/rutina-de-piernas-de-doble-division/'],
+  ['en', '/en/two-day-leg-split/'],
+  ['es', '/es/rutinas-pierna/'],
+  ['en', '/en/leg-routines/'],
+  ['es', '/es/entrenamiento-de-gemelos-diferente/'],
+  ['en', '/en/unconventional-calf-training/'],
+  ['es', '/es/entrenar-femorales/'],
+  ['en', '/en/eccentric-hamstring-training/'],
+  ['es', '/es/rutinas-cuadriceps-objetivos/'],
+  ['en', '/en/quad-routines-by-goal/'],
+  ['es', '/es/rutina-de-piernas-con-sentadillas-de-la-vieja-escuela/'],
+  ['en', '/en/old-school-squat-leg-routine/'],
+  ['es', '/es/rutina-de-volumen-para-triceps-como-herraduras/'],
+  ['en', '/en/triceps-mass-routine/'],
+  ['es', '/es/rutina-de-pecho-de-dos-dias-a-la-semana-con-tecnica-descanso-pausa/'],
+  ['en', '/en/rest-pause-chest-routine/'],
+  ['es', '/es/rutina-para-sorprender-a-tus-triceps/'],
+  ['en', '/en/triceps-shock-routine/'],
 ];
 
 // Content routes, keyed by a stable id with the slug each locale publishes. The
@@ -1471,6 +1491,28 @@ const ROUTES = {
     es: '/rutinas-de-gemelos-para-pantorrillas-esteticas-tonificadas',
     en: '/calf-routines',
   },
+  legRoutineForMass: { es: '/rutina-volumen-pierna-completa', en: '/leg-routine-for-mass' },
+  twoDayLegSplit: { es: '/rutina-de-piernas-de-doble-division', en: '/two-day-leg-split' },
+  legRoutines: { es: '/rutinas-pierna', en: '/leg-routines' },
+  unconventionalCalfTraining: {
+    es: '/entrenamiento-de-gemelos-diferente',
+    en: '/unconventional-calf-training',
+  },
+  eccentricHamstringTraining: { es: '/entrenar-femorales', en: '/eccentric-hamstring-training' },
+  quadRoutinesByGoal: { es: '/rutinas-cuadriceps-objetivos', en: '/quad-routines-by-goal' },
+  oldSchoolSquatLegRoutine: {
+    es: '/rutina-de-piernas-con-sentadillas-de-la-vieja-escuela',
+    en: '/old-school-squat-leg-routine',
+  },
+  tricepsMassRoutine: {
+    es: '/rutina-de-volumen-para-triceps-como-herraduras',
+    en: '/triceps-mass-routine',
+  },
+  restPauseChestRoutine: {
+    es: '/rutina-de-pecho-de-dos-dias-a-la-semana-con-tecnica-descanso-pausa',
+    en: '/rest-pause-chest-routine',
+  },
+  tricepsShockRoutine: { es: '/rutina-para-sorprender-a-tus-triceps', en: '/triceps-shock-routine' },
 };
 
 const routeId = (path) => {
