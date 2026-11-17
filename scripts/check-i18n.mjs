@@ -781,6 +781,26 @@ const PAGES = [
   ['en', '/en/hundred-rep-routine/'],
   ['es', '/es/rutina-definicion-avanzada-3-meses/'],
   ['en', '/en/advanced-cutting-plan/'],
+  ['es', '/es/entrenamiento-espartano/'],
+  ['en', '/en/spartan-workout/'],
+  ['es', '/es/ponte-en-forma-en-28-dias/'],
+  ['en', '/en/get-fit-in-28-days/'],
+  ['es', '/es/rutina-definicion-ectomorfos/'],
+  ['en', '/en/ectomorph-cutting-routine/'],
+  ['es', '/es/rutina-quema-grasa-sin-hacer-aerobicos/'],
+  ['en', '/en/fat-loss-without-cardio/'],
+  ['es', '/es/rutinas-definicion-grupos-musculares/'],
+  ['en', '/en/cutting-routines-by-muscle/'],
+  ['es', '/es/rutina-quemar-grasa-vacaciones/'],
+  ['en', '/en/vacation-fat-loss-routine/'],
+  ['es', '/es/definicion-muscular-seis-dias/'],
+  ['en', '/en/six-day-cutting-routine/'],
+  ['es', '/es/rutina-de-series-descendentes/'],
+  ['en', '/en/drop-set-routine/'],
+  ['es', '/es/rutina-full-body-dias-pesados/'],
+  ['en', '/en/heavy-day-full-body-routine/'],
+  ['es', '/es/rutina-de-cuerpo-completo-para-recuperar-la-forma/'],
+  ['en', '/en/three-day-full-body-return/'],
 ];
 
 // Content routes, keyed by a stable id with the slug each locale publishes. The
@@ -1726,6 +1746,34 @@ const ROUTES = {
   },
   hundredRepRoutine: { es: '/entrenamiento-cien-repeticiones', en: '/hundred-rep-routine' },
   advancedCuttingPlan: { es: '/rutina-definicion-avanzada-3-meses', en: '/advanced-cutting-plan' },
+  spartanWorkout: { es: '/entrenamiento-espartano', en: '/spartan-workout' },
+  getFitIn28Days: { es: '/ponte-en-forma-en-28-dias', en: '/get-fit-in-28-days' },
+  ectomorphCuttingRoutine: {
+    es: '/rutina-definicion-ectomorfos',
+    en: '/ectomorph-cutting-routine',
+  },
+  fatLossWithoutCardio: {
+    es: '/rutina-quema-grasa-sin-hacer-aerobicos',
+    en: '/fat-loss-without-cardio',
+  },
+  cuttingRoutinesByMuscle: {
+    es: '/rutinas-definicion-grupos-musculares',
+    en: '/cutting-routines-by-muscle',
+  },
+  vacationFatLossRoutine: {
+    es: '/rutina-quemar-grasa-vacaciones',
+    en: '/vacation-fat-loss-routine',
+  },
+  sixDayCuttingRoutine: { es: '/definicion-muscular-seis-dias', en: '/six-day-cutting-routine' },
+  dropSetRoutine: { es: '/rutina-de-series-descendentes', en: '/drop-set-routine' },
+  heavyDayFullBodyRoutine: {
+    es: '/rutina-full-body-dias-pesados',
+    en: '/heavy-day-full-body-routine',
+  },
+  threeDayFullBodyReturn: {
+    es: '/rutina-de-cuerpo-completo-para-recuperar-la-forma',
+    en: '/three-day-full-body-return',
+  },
 };
 
 const routeId = (path) => {

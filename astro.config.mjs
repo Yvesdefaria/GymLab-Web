@@ -420,6 +420,16 @@ const ROUTE_PAIRS = [
   ['/rutina-de-choque-alta-frecuencia', '/high-frequency-shock-routine'],
   ['/entrenamiento-cien-repeticiones', '/hundred-rep-routine'],
   ['/rutina-definicion-avanzada-3-meses', '/advanced-cutting-plan'],
+  ['/entrenamiento-espartano', '/spartan-workout'],
+  ['/ponte-en-forma-en-28-dias', '/get-fit-in-28-days'],
+  ['/rutina-definicion-ectomorfos', '/ectomorph-cutting-routine'],
+  ['/rutina-quema-grasa-sin-hacer-aerobicos', '/fat-loss-without-cardio'],
+  ['/rutinas-definicion-grupos-musculares', '/cutting-routines-by-muscle'],
+  ['/rutina-quemar-grasa-vacaciones', '/vacation-fat-loss-routine'],
+  ['/definicion-muscular-seis-dias', '/six-day-cutting-routine'],
+  ['/rutina-de-series-descendentes', '/drop-set-routine'],
+  ['/rutina-full-body-dias-pesados', '/heavy-day-full-body-routine'],
+  ['/rutina-de-cuerpo-completo-para-recuperar-la-forma', '/three-day-full-body-return'],
 ];
 
 const pairFor = (pathname) => {
