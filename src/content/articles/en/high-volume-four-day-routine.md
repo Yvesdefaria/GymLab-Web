@@ -98,9 +98,9 @@ On pull-ups, if you can do more than ten reps, hang a dumbbell between your legs
 
 | Exercise | Sets | Reps |
 | --- | --- | --- |
-| French press + close-grip bench press | 4 | 15 warm-up, 10+10, 10+10, 10+10 |
+| French press + close-grip bench press | 4 | 10+10 |
 | Parallel bar dips | 4 | 12 |
-| Cable pushdown + reverse-grip pushdown | 3 | 10+10, 10+10, 10+10 |
+| Cable pushdown + reverse-grip pushdown | 3 | 10+10 |
 | Leg extension | 3 | 12, 8, 8 |
 | Leg press | 5 | 10, 8, 8, 8, 10 |
 | Lying leg curl | 2 | 12, 8 |
@@ -108,7 +108,7 @@ On pull-ups, if you can do more than ten reps, hang a dumbbell between your legs
 | Dumbbell lunges | 4 | 10 |
 | Seated calf raise + standing calf raise | 4 | 15-20 + 15-20 |
 
-The triceps and legs day is the longest: 35 sets, several of them with two parts. If time gets tight, cut the lunges before the Romanian deadlift.
+The triceps and legs day is the longest: 35 sets, several of them with two parts. In the combined French press, the first of the four sets is a 15-rep warm-up; the three working sets go at 10+10. If time gets tight, cut the lunges before the Romanian deadlift.
 
 ## Cardio, abs and sleep
 

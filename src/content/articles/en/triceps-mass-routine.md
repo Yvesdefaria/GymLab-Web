@@ -29,7 +29,7 @@ What does not exist is an exercise that works only one head. Any movement that e
 | --- | --- | --- |
 | Close-grip Smith machine bench press | 4 | 12, 10, 8, 5 |
 | Seated overhead dumbbell extension | 3 | 10 |
-| Parallel-bar dips with negatives | 2 | To failure + 2 or 3 partials |
+| Parallel-bar dips with negatives | 2 | To failure |
 
 That is nine working sets, without warm-up. The first exercise carries the heaviest load and the last one carries failure. In between sits the isolation work.
 

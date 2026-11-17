@@ -98,9 +98,9 @@ En las dominadas, si pasas de diez repeticiones, cuelga una mancuerna entre las 
 
 | Ejercicio | Series | Reps |
 | --- | --- | --- |
-| Press francés + press de banca cerrado | 4 | 15 de calentamiento, 10+10, 10+10, 10+10 |
+| Press francés + press de banca cerrado | 4 | 10+10 |
 | Fondos en paralelas | 4 | 12 |
-| Jalones en polea + jalones con agarre invertido | 3 | 10+10, 10+10, 10+10 |
+| Jalones en polea + jalones con agarre invertido | 3 | 10+10 |
 | Extensiones de cuádriceps | 3 | 12, 8, 8 |
 | Prensa | 5 | 10, 8, 8, 8, 10 |
 | Femoral tumbado | 2 | 12, 8 |
@@ -108,7 +108,7 @@ En las dominadas, si pasas de diez repeticiones, cuelga una mancuerna entre las 
 | Zancadas con mancuernas | 4 | 10 |
 | Gemelo sentado + gemelo de pie | 4 | 15-20 + 15-20 |
 
-El día de tríceps y pierna es el más largo: 35 series, y varias de ellas con dos tramos. Si llegas justo de tiempo, recorta las zancadas antes que el peso muerto rumano.
+El día de tríceps y pierna es el más largo: 35 series, y varias de ellas con dos tramos. En el press francés combinado, la primera de las cuatro series es un calentamiento de 15 repeticiones; las tres de trabajo van a 10+10. Si llegas justo de tiempo, recorta las zancadas antes que el peso muerto rumano.
 
 ## Cardio, abdomen y sueño
 

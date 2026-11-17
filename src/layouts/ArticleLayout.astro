@@ -496,7 +496,9 @@ const copy = {
     font-variant-numeric: tabular-nums;
     letter-spacing: 0.03em;
     text-align: right;
-    white-space: nowrap;
+    /* Long rep strings ("15, 15, 12, 12, 12") are wider than the 21% column at
+       tablet widths. Wrapping beats clipping; short strings look identical. */
+    white-space: normal;
   }
 
   .article-body :global(tbody td:nth-child(2)) {

@@ -29,7 +29,7 @@ Lo que no existe es un ejercicio que trabaje solo una cabeza. Cualquier movimien
 | --- | --- | --- |
 | Press de banca con agarre cerrado en multipower | 4 | 12, 10, 8, 5 |
 | Extensión con mancuerna sentado, sobre la cabeza | 3 | 10 |
-| Fondos en paralelas con negativas | 2 | Al fallo + 2 o 3 parciales |
+| Fondos en paralelas con negativas | 2 | Al fallo |
 
 Son nueve series de trabajo, sin calentamiento. El primer ejercicio lleva la carga más alta y el último lleva el fallo. En medio queda el trabajo de aislamiento.
 
