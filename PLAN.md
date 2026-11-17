@@ -19,25 +19,21 @@ Last updated: 2026-11-16.
 - The landing, the three calculators, the 404 and the legal pages all ship in both locales.
 - Measurement and the SQL recipe: see "Reading analytics" below and `COMPLETED.md` Appendix B.
 
-## Content library — 351 / 792 (2026-11-17)
+## Content library — 361 / 792 (2026-11-17)
 
-- **351 bilingual pages** (ES 351, EN 351), **351 unique hero paths**. Blocks: Entrenamiento 302,
+- **361 bilingual pages** (ES 361, EN 361), **361 unique hero paths**. Blocks: Entrenamiento 312,
   Por Músculo 5, Ejercicios 34.
-- **Batches 33, 34 and 35 are built, green and committed (2026-11-17), not pushed.** The build has
-  **718 pages** and **714 sitemap URLs**. Abdomen (39/39), Hombro (5/5), Rutinas de Bíceps (7/7),
-  Pecho (9/9), Pierna (9/9), Rutinas de Pierna (3/3), Rutinas de Tríceps (1/1), Rutinas de Pecho (1/1),
-  Tríceps (1/1) and Rutinas de Fuerza (9/9) are closed; Rutinas de Volumen is 11/29.
-- Gates: `npm run verify` = `check:copy` **17,901/17,901** + build **718 pages** + `check:i18n`
-  **11,222/11,222**.
+- **Batches 33 to 36 are built, green and committed (2026-11-17), not pushed.** The build has
+  **738 pages** and **734 sitemap URLs**. Fifteen blocks are closed; Rutinas de Volumen is 21/29.
+- Gates: `npm run verify` = `check:copy` **18,411/18,411** + build **738 pages** + `check:i18n`
+  **11,532/11,532**.
 - Docs: `odd/tasks/content-library-session.md` (start here next session),
   `odd/tasks/content-pages.md` (per-page checklist + resume),
-  `odd/tasks/content-library-batch-35.md` (the last batch) and `odd/tasks/guides-page-contract.md`
+  `odd/tasks/content-library-batch-36.md` (the last batch) and `odd/tasks/guides-page-contract.md`
   (the page contract and copy gate).
-- **Next 10:** the volume block continues at `rutina-con-multipower`, then `rutinas-pesas-casa`,
-  `series-infinitas-rutina-de-pesas-de-alta-intensidad`, `como-ganar-peso`,
-  `tablas-de-entrenamiento-de-volumen-masa-muscular`, `rutina-volumen-muscular-intermedios`,
-  `rutina-y-dieta-gemelos-harrison`, `rutinas-heavy-duty`, `rutina-volumen-ectomorfos` and
-  `rutina-ganar-masa-muscular`.
+- **Next 10:** batch 37 closes Rutinas de Volumen and opens Rutinas de Definición, from
+  `rutina-volumen-pecho-hombro-espalda` to `rutina-definicion-pesas-cardio`; the brief exists at
+  `odd/tasks/content-library-batch-37.md`.
 - **Follow-up:** three hero pairs remain under dHash 7, all from earlier batches: one exact duplicate
   (`remo-polea-sentado` with `superserie-de-espalda-para-terminar-tu-rutina`) and two near pairs at 4
   and 5. A 1280x720 crop of a library hero hashes 1-6 from the original, so writers must open the

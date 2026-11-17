@@ -9,9 +9,9 @@ Legend: `ES` = Spanish published, `EN` = English published.
 
 ## Progress
 
-- **Built: 351 / 792** (ES 351, EN 351).
-- Last batch: batch 35 added ten Rutinas de Volumen rows (11 of 29 built);
-  351 pages built.
+- **Built: 361 / 792** (ES 361, EN 361).
+- Last batch: batch 36 added ten Rutinas de Volumen rows (21 of 29 built);
+  361 pages built.
 - Blocks finished end to end: Entrenamiento del Hombro (9), Físicos de leyenda (12), Entrenamiento de
   la Espalda (10), Rutinas de Espalda (4), Espalda (1), Ejercicios de Espalda (31), Ejercicio
   Cardiovascular (32), Entrenamiento de las Piernas (18), Entrenamiento del Pecho (6), Rutinas de
@@ -21,13 +21,13 @@ Legend: `ES` = Spanish published, `EN` = English published.
 
 | Block | Articles | Built |
 | --- | ---: | ---: |
-| Entrenamiento | 222 | 302 |
+| Entrenamiento | 222 | 312 |
 | Por Músculo | 80 | 5 |
 | Rutinas | 80 | 0 |
 | Ejercicios | 196 | 34 |
 | Nutrición | 191 | 0 |
 | Mujer Fitness | 23 | 0 |
-| **Total** | **792** | **351** |
+| **Total** | **792** | **361** |
 
 ## Copy gate (mandatory before ticking ES/EN)
 
@@ -636,16 +636,16 @@ Legend: `ES` = Spanish published, `EN` = English published.
 - [x] ES · [x] EN — `/rutina-hipertrofia-total-tres-meses/` — Rutina de Hipertrofia Total de 3 Meses \| La Mejor de 2026
 - [x] ES · [x] EN — `/sistema-anti-culturismo-abbh1/` — Sistema Anti-Culturismo ABBH1: Gana Músculo Real
 - [x] ES · [x] EN — `/rutina-con-superseries-musculos-antagonistas/` — Rutina con Superseries de Músculos Antagonistas
-- [ ] ES · [ ] EN — `/rutina-con-multipower/` — Rutina de entrenamiento con Multipower
-- [ ] ES · [ ] EN — `/rutinas-pesas-casa/` — Rutinas de ejercicios en casa \| Gana más músculo en 2025
-- [ ] ES · [ ] EN — `/series-infinitas-rutina-de-pesas-de-alta-intensidad/` — Series infinitas, rutina de pesas de alta intensidad
-- [ ] ES · [ ] EN — `/como-ganar-peso/` — Ganar peso (Rutina y consejos)
-- [ ] ES · [ ] EN — `/tablas-de-entrenamiento-de-volumen-masa-muscular/` — Tabla de entrenamiento de Volumen y Masa Muscular con dietas
-- [ ] ES · [ ] EN — `/rutina-volumen-muscular-intermedios/` — Rutina de volumen muscular \| Nivel intermedio
-- [ ] ES · [ ] EN — `/rutina-y-dieta-gemelos-harrison/` — Rutina y dieta de los gemelos Harrison
-- [ ] ES · [ ] EN — `/rutinas-heavy-duty/` — Rutinas Heavy duty, breve y muy intenso
-- [ ] ES · [ ] EN — `/rutina-volumen-ectomorfos/` — Rutina de volumen muscular para ectomorfos \| Efectividad 100%
-- [ ] ES · [ ] EN — `/rutina-ganar-masa-muscular/` — Rutina y dieta para ganar músculo de forma natural ©
+- [x] ES · [x] EN — `/rutina-con-multipower/` — Rutina de entrenamiento con Multipower
+- [x] ES · [x] EN — `/rutinas-pesas-casa/` — Rutinas de ejercicios en casa \| Gana más músculo en 2025
+- [x] ES · [x] EN — `/series-infinitas-rutina-de-pesas-de-alta-intensidad/` — Series infinitas, rutina de pesas de alta intensidad
+- [x] ES · [x] EN — `/como-ganar-peso/` — Ganar peso (Rutina y consejos)
+- [x] ES · [x] EN — `/tablas-de-entrenamiento-de-volumen-masa-muscular/` — Tabla de entrenamiento de Volumen y Masa Muscular con dietas
+- [x] ES · [x] EN — `/rutina-volumen-muscular-intermedios/` — Rutina de volumen muscular \| Nivel intermedio
+- [x] ES · [x] EN — `/rutina-y-dieta-gemelos-harrison/` — Rutina y dieta de los gemelos Harrison
+- [x] ES · [x] EN — `/rutinas-heavy-duty/` — Rutinas Heavy duty, breve y muy intenso
+- [x] ES · [x] EN — `/rutina-volumen-ectomorfos/` — Rutina de volumen muscular para ectomorfos \| Efectividad 100%
+- [x] ES · [x] EN — `/rutina-ganar-masa-muscular/` — Rutina y dieta para ganar músculo de forma natural ©
 - [ ] ES · [ ] EN — `/rutina-volumen-pecho-hombro-espalda/` — Rutina de volumen para pecho, hombro y espalda \| Más Músculo ✓
 - [ ] ES · [ ] EN — `/rutina-volumen-alta-frecuencia/` — Rutinas de volumen de alta frecuencia
 - [ ] ES · [ ] EN — `/rutina-volumen-progresiva-cuatro-dias/` — Rutina de volumen progresiva de 4 días

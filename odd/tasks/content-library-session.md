@@ -9,21 +9,20 @@ Last updated: 2026-11-16. Read this first next session.
 
 ## State
 
-- **351 / 792 bilingual pages** (ES 351, EN 351).
-- Blocks: Entrenamiento **302**, Por Músculo **5**, Ejercicios **34**.
-- **351 unique hero paths.** One exact duplicate pair remains from an earlier batch
+- **361 / 792 bilingual pages** (ES 361, EN 361).
+- Blocks: Entrenamiento **312**, Por Músculo **5**, Ejercicios **34**.
+- **361 unique hero paths.** One exact duplicate pair remains from an earlier batch
   (`remo-polea-sentado` with `superserie-de-espalda-para-terminar-tu-rutina`), plus two pre-existing
-  near pairs at dHash 4 and 5; the batch 17 to 35 duplicates were fixed. See `PLAN.md`.
-- **Batch 35 is built, green and committed (2026-11-17).** The build has **718 pages** and **714
-  sitemap URLs**. Abdomen (39/39), Hombro (5/5), Rutinas de Bíceps (7/7), Pecho (9/9), Pierna (9/9),
-  Rutinas de Pierna (3/3), Rutinas de Tríceps (1/1), Rutinas de Pecho (1/1), Tríceps (1/1) and
-  Rutinas de Fuerza (9/9) are closed. Rutinas de Volumen is 11/29.
+  near pairs at dHash 4 and 5; the batch 17 to 36 duplicates were fixed. See `PLAN.md`.
+- **Batch 36 is built, green and committed (2026-11-17).** The build has **738 pages** and **734
+  sitemap URLs**. Fifteen blocks are closed; Rutinas de Volumen is 21/29 and Rutinas de Definición
+  has not started.
 - Five archive rows are settled and must stay out: the FiveStars Fitness congress page (discarded),
   the AEKE S1 Pro page (discarded 2026-11-14), `/velocidad-repeticiones/` (fused into the tempo page,
   2026-11-14) and the two batch 20 fusions (2026-11-15).
 - **Production runs batch 32 (pushed 2026-11-16).** Batches 19 to 32 are live; `origin/main` is at
-  the batch 32 docs push. Batches 33, 34 and 35 are committed locally and not pushed.
-- Batch records: `odd/tasks/content-library-batch-33.md`, `-34.md` and `-35.md`.
+  the batch 32 docs push. Batches 33 to 36 are committed locally and not pushed.
+- Batch records: `odd/tasks/content-library-batch-34.md`, `-35.md` and `-36.md`.
 
 ## Gates
 
@@ -91,11 +90,10 @@ Start the dev server with `npm run dev` for local review.
 
 ## Next 10
 
-1. Batch 36 continues Rutinas de Volumen from `/rutina-con-multipower/`:
-   `/rutinas-pesas-casa/`, `/series-infinitas-rutina-de-pesas-de-alta-intensidad/`, `/como-ganar-peso/`,
-   `/tablas-de-entrenamiento-de-volumen-masa-muscular/`, `/rutina-volumen-muscular-intermedios/`,
-   `/rutina-y-dieta-gemelos-harrison/`, `/rutinas-heavy-duty/`, `/rutina-volumen-ectomorfos/`,
-   `/rutina-ganar-masa-muscular/`.
+1. Batch 37 closes Rutinas de Volumen and opens Rutinas de Definición: from
+   `/rutina-volumen-pecho-hombro-espalda/` to `/rutina-definicion-pesas-cardio/`; the brief already
+   exists at `odd/tasks/content-library-batch-37.md`. After it, the cutting block continues at
+   `/rutina-de-definicion-con-series-compuestas/`.
 2. Keep the same copy, unique-hero and gate flow.
 3. Before publishing another photo from Shixart1985, Nenad Stojkovic, Miguel Angel Omaña Rojas, the
    InjuryMap family, PTPioneer, KeepActive Australia, Everkinetic or Wellcome Collection, compare the
@@ -150,6 +148,25 @@ Start the dev server with `npm run dev` for local review.
   documented in the batch 22 record.
 - **Push is the owner's call:** satisfied on 2026-11-16. Batches 19 to 32 were pushed from
   `6293327` to `f7f8de1`; production serves 658 pages.
+
+## Session close (2026-11-17, batch 36)
+
+- Batch 36 added ten Rutinas de Volumen pairs: 351 → **361 / 792**, volume block at 21/29.
+- Writers: A pages 1-5 (Smith machine, home dumbbells, infinite sets, gaining weight, volume tables),
+  B pages 6-10 (intermediate, Harrison twins, Heavy Duty, ectomorph, natural mass), disjoint files.
+  The parent registered routes, verified 140 page/width pairs, ran the gates and committed per page.
+- Gates: `check:copy` **18,411/18,411**, build **738 pages**, `check:i18n` **11,532/11,532**, sitemap
+  **734 URLs** with 2,202 alternates. 116 internal links, **0 broken**; 20 pages clean at 390 px and
+  no clipped cell at any width from 360 to 1280.
+- Heroes: 361 files; the only dHash pairs under 7 are the three pre-existing ones.
+- Commits: pages `7ed334a`, `c84744c`, `369fd40`, `1f57a98`, `f5c9c0d`, `917bb82`, `9dfd059`,
+  `75b8e2d`, `19a7b4f`, `4abc616`; routes `b7b7c65`.
+- **Gotcha:** the shared `%TEMP%\opencode` directory accumulated a `struct.py`, which shadows the
+  standard library and breaks every Python script that imports Pillow. Parent helpers now live in
+  `%TEMP%\opencode-parent`; never run analysis scripts from the shared folder.
+- **Gotcha:** a re-crop of a library hero can hash at 9, so "1-6" is not the full duplicate band.
+  Open the closest hero before vendoring, whatever the distance.
+- Next session starts at `/rutina-volumen-pecho-hombro-espalda/`; the batch 37 brief is written.
 
 ## Session close (2026-11-17, batches 33, 34 and 35)
 
