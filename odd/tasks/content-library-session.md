@@ -173,6 +173,13 @@ Start the dev server with `npm run dev` for local review.
   `<table class="text-table">`.
 - **Gotcha:** writers report prose and table-inclusive word counts differently; say which method a
   batch record uses.
+- **Fixed after owner review (2026-11-17):** long rep strings clipped inside routine tables between
+  768 and 1280 px, because the sets and reps cells were `nowrap` above the mobile breakpoint. They now
+  wrap at every width (`ArticleLayout`, `75d5d61`); two cells were shortened and the warm-up detail
+  moved to prose. Re-checked at 1280, 1024, 900, 768, 480, 390 and 360 over the 60 pages of batches
+  33-35: zero clipped cells.
+- **Open defect, not from these batches:** every page, landing included, scrolls ~51 px sideways at
+  exactly 768 px (~1 px at 820); 700 and 900 are clean. Tracked in `PLAN.md` T17.
 - Next session starts at `/rutina-con-multipower/`.
 
 ## Session close (2026-11-17, batch 34)

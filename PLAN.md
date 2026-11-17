@@ -19,28 +19,31 @@ Last updated: 2026-11-16.
 - The landing, the three calculators, the 404 and the legal pages all ship in both locales.
 - Measurement and the SQL recipe: see "Reading analytics" below and `COMPLETED.md` Appendix B.
 
-## Content library — 321 / 792 (2026-11-16)
+## Content library — 351 / 792 (2026-11-17)
 
-- **321 bilingual pages** (ES 321, EN 321), **321 unique hero paths**. Blocks: Entrenamiento 272,
+- **351 bilingual pages** (ES 351, EN 351), **351 unique hero paths**. Blocks: Entrenamiento 302,
   Por Músculo 5, Ejercicios 34.
-- **Batches 30, 31 and 32 are built, green, committed and pushed (2026-11-16).** Production runs
-  **658 pages** and **654 sitemap URLs**. Abdomen (39/39), Hombro (5/5), Rutinas de Bíceps (7/7) and
-  Pecho (9/9) are closed; Rutinas de Pierna is 3/3 and Pierna has two of nine.
-- Gates: `npm run verify` = `check:copy` **16,371/16,371** + build **658 pages** + `check:i18n`
-  **10,292/10,292**.
+- **Batches 33, 34 and 35 are built, green and committed (2026-11-17), not pushed.** The build has
+  **718 pages** and **714 sitemap URLs**. Abdomen (39/39), Hombro (5/5), Rutinas de Bíceps (7/7),
+  Pecho (9/9), Pierna (9/9), Rutinas de Pierna (3/3), Rutinas de Tríceps (1/1), Rutinas de Pecho (1/1),
+  Tríceps (1/1) and Rutinas de Fuerza (9/9) are closed; Rutinas de Volumen is 11/29.
+- Gates: `npm run verify` = `check:copy` **17,901/17,901** + build **718 pages** + `check:i18n`
+  **11,222/11,222**.
 - Docs: `odd/tasks/content-library-session.md` (start here next session),
   `odd/tasks/content-pages.md` (per-page checklist + resume),
-  `odd/tasks/content-library-batch-32.md` (the last batch) and `odd/tasks/guides-page-contract.md`
+  `odd/tasks/content-library-batch-35.md` (the last batch) and `odd/tasks/guides-page-contract.md`
   (the page contract and copy gate).
-- **Next 10:** the seven remaining Pierna rows (`rutina-volumen-pierna-completa`,
-  `rutina-de-piernas-de-doble-division`, `rutinas-pierna`, `entrenamiento-de-gemelos-diferente`,
-  `entrenar-femorales`, `rutinas-cuadriceps-objetivos`,
-  `rutina-de-piernas-con-sentadillas-de-la-vieja-escuela`) and then the three loose routine rows.
-- **Follow-up:** one exact duplicate hero pair remains from an earlier batch (dHash 0):
-  `remo-polea-sentado` with `superserie-de-espalda-para-terminar-tu-rutina`. The batch 19 and 20 dHash
-  passes cleared the other suspected pairs. The batch 20 injury illustrations carry labels baked into
-  the image (Spanish on the plantar fascia figure, English on the spine figure), so each shows a
-  foreign label on the other locale; crop them when the Phase 5 image pipeline lands.
+- **Next 10:** the volume block continues at `rutina-con-multipower`, then `rutinas-pesas-casa`,
+  `series-infinitas-rutina-de-pesas-de-alta-intensidad`, `como-ganar-peso`,
+  `tablas-de-entrenamiento-de-volumen-masa-muscular`, `rutina-volumen-muscular-intermedios`,
+  `rutina-y-dieta-gemelos-harrison`, `rutinas-heavy-duty`, `rutina-volumen-ectomorfos` and
+  `rutina-ganar-masa-muscular`.
+- **Follow-up:** three hero pairs remain under dHash 7, all from earlier batches: one exact duplicate
+  (`remo-polea-sentado` with `superserie-de-espalda-para-terminar-tu-rutina`) and two near pairs at 4
+  and 5. A 1280x720 crop of a library hero hashes 1-6 from the original, so writers must open the
+  closest hero, not only check for 0. The batch 20 injury illustrations carry labels baked into the
+  image (Spanish on the plantar fascia figure, English on the spine figure), so each shows a foreign
+  label on the other locale; crop them when the Phase 5 image pipeline lands.
 - **Discarded:** `/congresos-profesores-factores-clave-fivestars-fitness/` does not go to production
   (owner decision, 2026-11-07). `/aeke-s1-pro-entrenamiento-domestico-con-ia/` was published with
   batch 17 and removed the same day by owner decision (2026-11-14); its pair, hero, routes and
@@ -50,7 +53,7 @@ Last updated: 2026-11-16.
 - Future batches deploy via Workers Builds on the push; run `npm run verify` first.
 - Image rule: one unique hero per page; `check:copy` fails on a duplicate path. Batches 5-18 heroes are
   Wikimedia Commons (CC0/CC BY/CC BY-SA/public domain); the `alt` includes the credit.
-- Engram topic `content-library/handoff` covers through batch 27; the scaling architecture is PLAN
+- Engram topic `content-library/handoff` covers through batch 35; the scaling architecture is PLAN
   Phase 7.
 
 ## Content and growth — phased plan (2026-11-05)
@@ -240,6 +243,16 @@ change.
 - [ ] **Zero external referrers**: nobody arrives from search or social. Crosses with T15.
       **Unverifiable with the current token**: `clientRefererHost` returns `403` (see the blockers
       table). Needs a wider analytics scope before this claim can be confirmed or denied.
+
+### T17 — Layout, open items
+
+- [ ] **Site-wide horizontal overflow at 768-820 px.** Every page, including the landing (`/es/`),
+      scrolls ~51 px sideways at exactly 768 px and ~1 px at 820; 700 and 900 are clean. It predates
+      batches 33-35 and is not caused by the article tables. Find the element that keeps its width
+      when the article grid switches at 900 px.
+- [x] **Long rep strings in routine tables** (2026-11-17): the reps column was `nowrap` above the
+      mobile breakpoint, so five-number strings clipped between 768 and 1280 px. The cells now wrap
+      at every width; short strings look identical.
 
 ## Owner actions (not delegable)
 
