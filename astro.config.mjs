@@ -440,6 +440,16 @@ const ROUTE_PAIRS = [
   ['/rutina-pesas-corredores-atletismo', '/running-strength-training'],
   ['/rutina-dieta-natacion', '/swimming-strength-and-diet'],
   ['/rutinas-deportes', '/sport-routines'],
+  ['/rutina-dieta-baloncesto', '/basketball-strength-and-diet'],
+  ['/rutina-mantenimiento', '/maintenance-routine'],
+  ['/rutinas-full-body', '/full-body-training-levels'],
+  ['/rutina-de-entrenamiento-primer-mes-en-el-gimnasio', '/first-three-months-gym'],
+  ['/rutinas-pesas-principiantes-pdf', '/beginner-routines-printable'],
+  ['/rutina-principiantes-abab', '/beginner-abab-routine'],
+  ['/rutinas-pesas-principiantes', '/beginner-weight-routines'],
+  ['/programa-principiantes', '/beginner-volume-program'],
+  ['/rutina-principiantes-cinco-semanas', '/five-week-beginner-routine'],
+  ['/programa-de-ejercicio-intensivo-para-principiantes', '/intensive-beginner-program'],
 ];
 
 const pairFor = (pathname) => {

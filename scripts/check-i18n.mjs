@@ -821,6 +821,26 @@ const PAGES = [
   ['en', '/en/swimming-strength-and-diet/'],
   ['es', '/es/rutinas-deportes/'],
   ['en', '/en/sport-routines/'],
+  ['es', '/es/rutina-dieta-baloncesto/'],
+  ['en', '/en/basketball-strength-and-diet/'],
+  ['es', '/es/rutina-mantenimiento/'],
+  ['en', '/en/maintenance-routine/'],
+  ['es', '/es/rutinas-full-body/'],
+  ['en', '/en/full-body-training-levels/'],
+  ['es', '/es/rutina-de-entrenamiento-primer-mes-en-el-gimnasio/'],
+  ['en', '/en/first-three-months-gym/'],
+  ['es', '/es/rutinas-pesas-principiantes-pdf/'],
+  ['en', '/en/beginner-routines-printable/'],
+  ['es', '/es/rutina-principiantes-abab/'],
+  ['en', '/en/beginner-abab-routine/'],
+  ['es', '/es/rutinas-pesas-principiantes/'],
+  ['en', '/en/beginner-weight-routines/'],
+  ['es', '/es/programa-principiantes/'],
+  ['en', '/en/beginner-volume-program/'],
+  ['es', '/es/rutina-principiantes-cinco-semanas/'],
+  ['en', '/en/five-week-beginner-routine/'],
+  ['es', '/es/programa-de-ejercicio-intensivo-para-principiantes/'],
+  ['en', '/en/intensive-beginner-program/'],
 ];
 
 // Content routes, keyed by a stable id with the slug each locale publishes. The
@@ -1816,6 +1836,31 @@ const ROUTES = {
   },
   swimmingStrengthAndDiet: { es: '/rutina-dieta-natacion', en: '/swimming-strength-and-diet' },
   sportRoutines: { es: '/rutinas-deportes', en: '/sport-routines' },
+  basketballStrengthAndDiet: {
+    es: '/rutina-dieta-baloncesto',
+    en: '/basketball-strength-and-diet',
+  },
+  maintenanceRoutine: { es: '/rutina-mantenimiento', en: '/maintenance-routine' },
+  fullBodyTrainingLevels: { es: '/rutinas-full-body', en: '/full-body-training-levels' },
+  firstThreeMonthsGym: {
+    es: '/rutina-de-entrenamiento-primer-mes-en-el-gimnasio',
+    en: '/first-three-months-gym',
+  },
+  beginnerRoutinesPrintable: {
+    es: '/rutinas-pesas-principiantes-pdf',
+    en: '/beginner-routines-printable',
+  },
+  beginnerAbabRoutine: { es: '/rutina-principiantes-abab', en: '/beginner-abab-routine' },
+  beginnerWeightRoutines: { es: '/rutinas-pesas-principiantes', en: '/beginner-weight-routines' },
+  beginnerVolumeProgram: { es: '/programa-principiantes', en: '/beginner-volume-program' },
+  fiveWeekBeginnerRoutine: {
+    es: '/rutina-principiantes-cinco-semanas',
+    en: '/five-week-beginner-routine',
+  },
+  intensiveBeginnerProgram: {
+    es: '/programa-de-ejercicio-intensivo-para-principiantes',
+    en: '/intensive-beginner-program',
+  },
 };
 
 const routeId = (path) => {
