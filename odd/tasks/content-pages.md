@@ -9,9 +9,9 @@ Legend: `ES` = Spanish published, `EN` = English published.
 
 ## Progress
 
-- **Built: 371 / 792** (ES 371, EN 371).
-- Last batch: batch 37 closed Rutinas de Volumen and opened Rutinas de Definición;
-  371 pages built.
+- **Built: 381 / 792** (ES 381, EN 381).
+- Last batch: batch 38 took Rutinas de Definición to 12 of 20;
+  381 pages built.
 - Blocks finished end to end: Entrenamiento del Hombro (9), Físicos de leyenda (12), Entrenamiento de
   la Espalda (10), Rutinas de Espalda (4), Espalda (1), Ejercicios de Espalda (31), Ejercicio
   Cardiovascular (32), Entrenamiento de las Piernas (18), Entrenamiento del Pecho (6), Rutinas de
@@ -21,13 +21,13 @@ Legend: `ES` = Spanish published, `EN` = English published.
 
 | Block | Articles | Built |
 | --- | ---: | ---: |
-| Entrenamiento | 222 | 322 |
+| Entrenamiento | 222 | 332 |
 | Por Músculo | 80 | 5 |
 | Rutinas | 80 | 0 |
 | Ejercicios | 196 | 34 |
 | Nutrición | 191 | 0 |
 | Mujer Fitness | 23 | 0 |
-| **Total** | **792** | **371** |
+| **Total** | **792** | **381** |
 
 ## Copy gate (mandatory before ticking ES/EN)
 
@@ -659,16 +659,16 @@ Legend: `ES` = Spanish published, `EN` = English published.
 
 - [x] ES · [x] EN — `/rutina-definicion-altos-kilajes/` — Rutina de definición de altos kilajes y cardio
 - [x] ES · [x] EN — `/rutina-definicion-pesas-cardio/` — Rutina de definición de pesas y cardio \| La mejor de 2025
-- [ ] ES · [ ] EN — `/rutina-de-definicion-con-series-compuestas/` — Rutina de definición con series compuestas
-- [ ] ES · [ ] EN — `/como-orientar-tu-rutina-de-pesas-para-perder-grasa/` — Rutina de pesas para perder grasa \| Paso a paso
-- [ ] ES · [ ] EN — `/rutinas-de-definicion/` — Rutinas de Definición Muscular y Quema Grasas
-- [ ] ES · [ ] EN — `/rutinas-torso-pierna/` — Rutinas Torso Piernas \| Más Volumen y Fuerza en 2026
-- [ ] ES · [ ] EN — `/metodo-tabata/` — Método Tabata \| Alta Intensidad para Quemar Grasa
-- [ ] ES · [ ] EN — `/entrenamiento-perder-grasa/` — Entrenamiento para perder grasa \| Quémala con SuperSeries
-- [ ] ES · [ ] EN — `/entrenamiento-ahorrar-tiempo/` — Entrenamientos para ahorrar tiempo
-- [ ] ES · [ ] EN — `/rutina-de-choque-alta-frecuencia/` — Rutina de choque tirón-empujon y alta frecuencia
-- [ ] ES · [ ] EN — `/entrenamiento-cien-repeticiones/` — Rutina de las 100 repeticiones
-- [ ] ES · [ ] EN — `/rutina-definicion-avanzada-3-meses/` — Rutina de Definición Avanzada \| Efectiva 100% ©
+- [x] ES · [x] EN — `/rutina-de-definicion-con-series-compuestas/` — Rutina de definición con series compuestas
+- [x] ES · [x] EN — `/como-orientar-tu-rutina-de-pesas-para-perder-grasa/` — Rutina de pesas para perder grasa \| Paso a paso
+- [x] ES · [x] EN — `/rutinas-de-definicion/` — Rutinas de Definición Muscular y Quema Grasas
+- [x] ES · [x] EN — `/rutinas-torso-pierna/` — Rutinas Torso Piernas \| Más Volumen y Fuerza en 2026
+- [x] ES · [x] EN — `/metodo-tabata/` — Método Tabata \| Alta Intensidad para Quemar Grasa
+- [x] ES · [x] EN — `/entrenamiento-perder-grasa/` — Entrenamiento para perder grasa \| Quémala con SuperSeries
+- [x] ES · [x] EN — `/entrenamiento-ahorrar-tiempo/` — Entrenamientos para ahorrar tiempo
+- [x] ES · [x] EN — `/rutina-de-choque-alta-frecuencia/` — Rutina de choque tirón-empujon y alta frecuencia
+- [x] ES · [x] EN — `/entrenamiento-cien-repeticiones/` — Rutina de las 100 repeticiones
+- [x] ES · [x] EN — `/rutina-definicion-avanzada-3-meses/` — Rutina de Definición Avanzada \| Efectiva 100% ©
 - [ ] ES · [ ] EN — `/entrenamiento-espartano/` — Entrenamiento Espartano, Rutina y Dieta solo para Guerreros
 - [ ] ES · [ ] EN — `/ponte-en-forma-en-28-dias/` — Rutina de puesta en forma de 28 días
 - [ ] ES · [ ] EN — `/rutina-definicion-ectomorfos/` — Rutina para definición (volumen para ectomorfos)

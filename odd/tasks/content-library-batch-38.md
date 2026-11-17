@@ -235,3 +235,26 @@ npm run check:copy   # 381 pages expected
 npm run build        # 778 pages expected
 npm run check:i18n   # 774 sitemap URLs
 ```
+
+## Result (2026-11-17)
+
+- 10 bilingual pairs, 20 files, 10 heroes. Library: 371 → **381 / 792**. Rutinas de Definición
+  **12/20**; Rutinas de Volumen stays closed at 29/29.
+- Gates: `check:copy` **19,431/19,431**, build **778 pages**, `check:i18n` **12,152/12,152**, sitemap
+  **774 URLs** with 2,322 alternates.
+- Structural checks: 120 internal links, **0 broken**; every table three columns; zero em dashes; no
+  BOM; 20 pages clean at 390 px and zero clipped cells across 140 page/width pairs (360 to 1280).
+  381 heroes: the only dHash pairs under distance 7 are the three pre-existing ones.
+- **Corrections made:** the hub became a hub with an eleven-row table and no sample routine; the
+  torso/legs page publishes the 3/4/6-day maps and the rep wave; Tabata keeps its cycle-ergometer
+  origin and a load rule; the 100-rep page corrects the load to 30-40 % of the 1RM and keeps the
+  cluster rest; five disconnected sessions became one weekly order; the shock block runs one to four
+  weeks; the advanced plan gained the load rule and the week-12 deload; the EPOC and "efectividad
+  100 %" claims died.
+- **Added as page guidance, not archive data:** page 1's deload shape (same week with one round fewer
+  per block), its logging advice and its missed-day rule. The archive is silent on all three.
+- **Known thin page:** page 4 (torso/legs) runs 563 prose words in Spanish and 520 in English, under
+  the 600 floor, with four tables carrying the prescription. Revisit only if it ranks and bounces.
+- **Gotcha:** the Commons gym pool is effectively spent. Seven of twelve candidates in this batch
+  duplicated an existing hero at distance 0-7, including two that collided with pages vendored
+  minutes earlier by the other writer. Re-hash after both writers land.

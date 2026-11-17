@@ -9,19 +9,19 @@ Last updated: 2026-11-16. Read this first next session.
 
 ## State
 
-- **371 / 792 bilingual pages** (ES 371, EN 371).
-- Blocks: Entrenamiento **322**, Por Músculo **5**, Ejercicios **34**.
-- **371 unique hero paths.** One exact duplicate pair remains from an earlier batch
+- **381 / 792 bilingual pages** (ES 381, EN 381).
+- Blocks: Entrenamiento **332**, Por Músculo **5**, Ejercicios **34**.
+- **381 unique hero paths.** One exact duplicate pair remains from an earlier batch
   (`remo-polea-sentado` with `superserie-de-espalda-para-terminar-tu-rutina`), plus two pre-existing
-  near pairs at dHash 4 and 5; the batch 17 to 37 duplicates were fixed. See `PLAN.md`.
-- **Batch 37 is built, green and committed (2026-11-17).** The build has **758 pages** and **754
-  sitemap URLs**. Rutinas de Volumen is closed at **29/29**; Rutinas de Definición is 2/20.
+  near pairs at dHash 4 and 5; the batch 17 to 38 duplicates were fixed. See `PLAN.md`.
+- **Batch 38 is built, green and committed (2026-11-17).** The build has **778 pages** and **774
+  sitemap URLs**. Rutinas de Volumen is closed at **29/29**; Rutinas de Definición is 12/20.
 - Five archive rows are settled and must stay out: the FiveStars Fitness congress page (discarded),
   the AEKE S1 Pro page (discarded 2026-11-14), `/velocidad-repeticiones/` (fused into the tempo page,
   2026-11-14) and the two batch 20 fusions (2026-11-15).
 - **Production runs batch 32 (pushed 2026-11-16).** Batches 19 to 32 are live; `origin/main` is at
-  the batch 32 docs push. Batches 33 to 37 are committed locally and not pushed.
-- Batch records: `odd/tasks/content-library-batch-35.md`, `-36.md` and `-37.md`.
+  the batch 32 docs push. Batches 33 to 38 are committed locally and not pushed.
+- Batch records: `odd/tasks/content-library-batch-36.md`, `-37.md` and `-38.md`.
 
 ## Gates
 
@@ -89,9 +89,9 @@ Start the dev server with `npm run dev` for local review.
 
 ## Next 10
 
-1. Batch 38 is the ten remaining Rutinas de Definición rows, from
-   `/rutina-de-definicion-con-series-compuestas/` to `/rutina-definicion-avanzada-3-meses/`; the brief
-   already exists at `odd/tasks/content-library-batch-38.md`. The block reaches 12/20.
+1. Batch 39 is the last eight Rutinas de Definición rows, from `/entrenamiento-espartano/` to
+   `/rutina-de-series-descendentes/`, plus the first two Rutinas Full Body rows. Write the brief after
+   mapping those sources; Rutinas de Definición closes at 20/20.
 2. Keep the same copy, unique-hero and gate flow.
 3. Before publishing another photo from Shixart1985, Nenad Stojkovic, Miguel Angel Omaña Rojas, the
    InjuryMap family, PTPioneer, KeepActive Australia, Everkinetic or Wellcome Collection, compare the
@@ -146,6 +146,24 @@ Start the dev server with `npm run dev` for local review.
   documented in the batch 22 record.
 - **Push is the owner's call:** satisfied on 2026-11-16. Batches 19 to 32 were pushed from
   `6293327` to `f7f8de1`; production serves 658 pages.
+
+## Session close (2026-11-17, batch 38)
+
+- Batch 38 took Rutinas de Definición to **12/20**: 371 → **381 / 792**.
+- Writers: A pages 1-5 (compound-set routine, weight training for fat loss, cutting hub, torso/legs,
+  Tabata), B pages 6-10 (superset cut, time-saving, shock block, 100 reps, advanced plan), disjoint
+  files. A's page 1 was sent back once for length (597/546 prose) and returned at 969/905.
+- Gates: `check:copy` **19,431/19,431**, build **778 pages**, `check:i18n` **12,152/12,152**, sitemap
+  **774 URLs** with 2,322 alternates. 120 internal links, **0 broken**; 20 pages clean at 390 px and no
+  clipped cell from 360 to 1280.
+- Heroes: 381 files; the only dHash pairs under 7 are the three pre-existing ones. Seven of twelve
+  candidates duplicated an existing hero, including two that collided with the other writer's page
+  vendored minutes earlier.
+- Commits: pages `48113ce`, `6ff2a0b`, `ff0261c`, `82b020f`, `3a752a5`, `d0d2d7c`, `13d353c`,
+  `c8c12c5`, `85040d9`, `6fd326c`; routes `87f4dbc`.
+- **Known thin page:** `/es/rutinas-torso-pierna/` runs 563 prose words in Spanish and 520 in English;
+  the four tables carry the prescription.
+- Next session starts at `/entrenamiento-espartano/`; batch 39 needs its source map and brief.
 
 ## Session close (2026-11-17, batch 37)
 
