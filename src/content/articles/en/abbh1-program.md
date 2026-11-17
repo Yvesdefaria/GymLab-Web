@@ -79,4 +79,4 @@ The stimulus here is mechanical and metabolic at once: enough weight to recruit 
 
 Adding biceps curls or calf raises because the plan looks short. Ignoring the 60 seconds and resting three minutes. Going to failure on the fourth set and not reaching the tenth. And eating as if the volume were low: four days of heavy work is not a small cost.
 
-The plan does not need supplements. It needs enough calories and protein and four weeks without changing the exercises. If you want more work for chest or legs, the [chest routines](/en/chest-routines/) and [leg routines](/en/leg-routines/) pages have options by goal.
+The plan runs on enough calories and protein and four weeks without changing the exercises. If you want more work for chest or legs, the [chest routines](/en/chest-routines/) and [leg routines](/en/leg-routines/) pages have options by goal.

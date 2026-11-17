@@ -43,7 +43,7 @@ Cardio is optional: two or three days of 20 to 30 minutes at an easy or moderate
 
 ## How to choose by your days and your goal
 
-The table orders the routines in the block by days and by who they are for. All of them are published; none is an invented example.
+The table orders the routines in the block by available days and by goal. All of them are published and linked.
 
 <table class="text-table">
   <thead>
@@ -71,7 +71,7 @@ If your priority is legs, the full leg routine is added to an upper-body plan or
 
 ## How to start the first block
 
-Choose one routine and run it for eight weeks without changing it. Write down the weight and reps of the first session; that is your reference. If a week is broken by travel or illness, pick up where you left off instead of starting from zero.
+Choose one routine and run it for eight weeks without changing it. Write down the weight and reps of the first session; that is your reference. If a week is broken by travel or illness, pick up where you left off instead of starting from zero. One bad week does not ruin a block; changing routines every month does.
 
 The first block does not need advanced techniques. Straight sets, enough rest and two or three exercises per muscle are enough to know whether the plan fits.
 

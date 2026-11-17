@@ -79,4 +79,4 @@ El estímulo aquí es mecánico y metabólico a la vez: suficiente peso para rec
 
 Añadir curl de bíceps o elevaciones de gemelo porque el plan parece corto. Ignorar los 60 segundos y descansar tres minutos. Ir al fallo en la cuarta serie y no llegar a la décima. Y comer como si el volumen fuera bajo: el gasto de cuatro días de trabajo pesado no es pequeño.
 
-El plan no necesita suplementos. Necesita calorías y proteína suficientes y cuatro semanas sin cambiar los ejercicios. Si quieres más trabajo para pecho o pierna, las páginas de [rutinas de pecho](/es/rutinas-pecho/) y [rutinas de pierna](/es/rutinas-pierna/) tienen opciones por objetivo.
+El plan se sostiene con calorías y proteína suficientes y cuatro semanas sin cambiar los ejercicios. Si quieres más trabajo para pecho o pierna, las páginas de [rutinas de pecho](/es/rutinas-pecho/) y [rutinas de pierna](/es/rutinas-pierna/) tienen opciones por objetivo.

@@ -43,7 +43,7 @@ Cardio opcional: dos o tres días de 20 a 30 minutos a ritmo bajo o moderado. Un
 
 ## Cómo elegir según tus días y tu objetivo
 
-La tabla ordena las rutinas del bloque por días y por para quién son. Todas están publicadas; ninguna es un ejemplo inventado.
+La tabla ordena las rutinas del bloque por días disponibles y por objetivo. Todas están publicadas y enlazadas.
 
 <table class="text-table">
   <thead>
@@ -71,7 +71,7 @@ Si tu prioridad es la pierna, la rutina de pierna completa se añade a un plan d
 
 ## Cómo empezar el primer bloque
 
-Elige una rutina y hazla durante ocho semanas sin cambiarla. Anota el peso y las repeticiones de la primera sesión; esa es tu referencia. Si una semana se rompe por un viaje o una enfermedad, retoma donde lo dejaste en lugar de empezar de cero.
+Elige una rutina y hazla durante ocho semanas sin cambiarla. Anota el peso y las repeticiones de la primera sesión; esa es tu referencia. Si una semana se rompe por un viaje o una enfermedad, retoma donde lo dejaste en lugar de empezar de cero. Una semana mala no arruina un bloque; cambiar de rutina cada mes sí.
 
 El primer bloque no necesita técnicas avanzadas. Series rectas, descansos suficientes y dos o tres ejercicios por músculo bastan para saber si el plan encaja.
 

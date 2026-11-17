@@ -258,4 +258,4 @@ Un día de pierna mantiene la fuerza y algo de masa, pero no la desarrolla como 
 
 El primero es añadir series o ejercicios a una rutina que ya tiene cinco días y técnicas de alta intensidad. El segundo es entrenar los cinco días seguidos sin dormir ni comer para ello. El tercero es medir el progreso por el peso corporal y no por las repeticiones que se completan. El [volumen de entrenamiento](/es/volumen-de-entrenamiento/) que puedes recuperar manda más que el número de ejercicios de la tabla.
 
-Si una semana no llegas a las repeticiones, repite el peso. Si llegas a todas con dos repeticiones de reserva, sube un poco. La comida y el sueño no son un complemento del plan: son parte del plan.
+Si una semana no llegas a las repeticiones, repite el peso. Si llegas a todas con dos repeticiones de reserva, sube un poco. La comida y el sueño forman parte del plan, igual que las series.

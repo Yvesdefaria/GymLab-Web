@@ -258,4 +258,4 @@ One leg day maintains strength and some mass, but does not develop it like two d
 
 The first is adding sets or exercises to a routine that already has five days and high-intensity techniques. The second is training five days in a row without sleeping or eating for it. The third is measuring progress by body weight instead of the reps you complete. The [training volume](/en/training-volume/) you can recover from matters more than the number of exercises in the table.
 
-If you miss the reps one week, repeat the weight. If you hit them all with two reps in reserve, add a little. Food and sleep are not a complement to the plan: they are part of the plan.
+If you miss the reps one week, repeat the weight. If you hit them all with two reps in reserve, add a little. Food and sleep are part of the plan, just like the sets.

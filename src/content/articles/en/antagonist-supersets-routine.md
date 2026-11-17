@@ -17,7 +17,7 @@ updated: "2026-11-17"
 
 A normal superset chains two exercises for the same muscle. The antagonist version alternates two opposite patterns: press with row, curl with extension, leg extension with leg curl. The general theory is in [supersets](/en/supersets/); this page keeps what changes when the pair is opposite.
 
-The advantage is not only the clock. When one muscle works, its antagonist relaxes; by alternating, the second exercise finds the opposite side fresh and usually moves more weight or more reps than in a normal set. That is the reason to pair press with row and not two presses in a row.
+The advantage goes beyond the clock. When one muscle works, its antagonist relaxes; by alternating, the second exercise finds the opposite side fresh and usually moves more weight or more reps than in a normal set. That is the reason to pair press with row and not two presses in a row.
 
 The real rest is short: 0 to 15 seconds between the two exercises in the pair and 60 to 90 seconds after closing it. The original version prescribed 30 to 60 seconds between exercises; that is a modified superset, not a superset.
 
