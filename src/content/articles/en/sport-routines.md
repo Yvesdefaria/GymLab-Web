@@ -1,7 +1,7 @@
 ---
 lang: en
 title: "Strength routines for sports: how to adapt your plan"
-description: "Three rules to adapt a strength routine to your sport, one example per family and the six plans for tennis, football, boxing, cycling, running and swimming."
+description: "Three rules to adapt your strength routine to a sport, one example per family and seven plans: tennis, football, boxing, cycling, running, swimming, basketball."
 h1: "Strength routines for other sports"
 block: "Training"
 section: "Sport routines"
@@ -10,7 +10,7 @@ heroAlt: "Several balls from different sports lying on the grass"
 heroCredit: "Wikimedia Commons · Marcus Quigmire · CC BY-SA 2.0"
 lead: "**Strength routines for sports** change with the sport: the dominant pattern, the angle you train and the point in the season. These three rules order the adaptation and the six published routines show it."
 tags: ["Sports", "Strength", "Adaptation", "Season"]
-meta: "Guide · 6 routines"
+meta: "Guide · 7 routines"
 alternate: "/es/rutinas-deportes/"
 updated: "2026-11-17"
 ---
@@ -65,6 +65,7 @@ Each one starts from its original material and publishes the session with sets, 
 - Cycling: [cycling strength](/en/cycling-strength-training/), five blocks of 3x15 at a slow tempo.
 - Running: [running strength](/en/running-strength-training/), two days of 1 to 3 sets of 10 to 15 reps and the load kept away from the long run.
 - Swimming: [swimming strength and diet](/en/swimming-strength-and-diet/), one session of seven groups and the protein that supports volume.
+- Basketball: [basketball strength and diet](/en/basketball-strength-and-diet/), four strength days with the weekly plan in text and protein per kilo.
 
 ## How to choose and when to change
 

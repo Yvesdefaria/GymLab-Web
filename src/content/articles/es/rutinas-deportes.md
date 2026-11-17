@@ -1,7 +1,7 @@
 ---
 lang: es
 title: "Rutinas de pesas para deportes: guía para adaptar tu plan"
-description: "Tres reglas para adaptar una rutina de pesas a tu deporte, un ejemplo por familia y las seis rutinas para tenis, fútbol, boxeo, ciclismo, carrera y natación."
+description: "Tres reglas para adaptar tu rutina de pesas al deporte, un ejemplo por familia y siete rutinas: tenis, fútbol, boxeo, ciclismo, carrera, natación y baloncesto."
 h1: "Rutinas de pesas para otros deportes"
 block: "Entrenamiento"
 section: "Rutinas de deportes"
@@ -10,7 +10,7 @@ heroAlt: "Varios balones de deportes distintos sobre la hierba"
 heroCredit: "Wikimedia Commons · Marcus Quigmire · CC BY-SA 2.0"
 lead: "Las **rutinas de pesas para deportes** cambian con el deporte: el patrón que manda, el ángulo que se entrena y el momento de la temporada. Estas tres reglas ordenan la adaptación y las seis rutinas publicadas la muestran."
 tags: ["Deportes", "Fuerza", "Adaptación", "Temporada"]
-meta: "Guía · 6 rutinas"
+meta: "Guía · 7 rutinas"
 alternate: "/en/sport-routines/"
 updated: "2026-11-17"
 ---
@@ -65,6 +65,7 @@ Cada una arranca de su material original y publica la sesión con series, repeti
 - Ciclismo: [pesas para ciclismo](/es/rutina-pesas-ciclismo/), cinco bloques de 3x15 a tempo lento.
 - Carrera: [pesas para corredores](/es/rutina-pesas-corredores-atletismo/), dos días de 1 a 3 series de 10 a 15 repeticiones y la carga lejos del rodaje largo.
 - Natación: [pesas y dieta para natación](/es/rutina-dieta-natacion/), una sesión de siete grupos y la proteína que sostiene el volumen.
+- Baloncesto: [rutina y dieta para baloncesto](/es/rutina-dieta-baloncesto/), cuatro días de fuerza con el plan semanal en texto y la proteína por kilo.
 
 ## Cómo elegir y cuándo cambiar
 
