@@ -721,6 +721,26 @@ const PAGES = [
   ['en', '/en/abbh1-program/'],
   ['es', '/es/rutina-con-superseries-musculos-antagonistas/'],
   ['en', '/en/antagonist-supersets-routine/'],
+  ['es', '/es/rutina-con-multipower/'],
+  ['en', '/en/smith-machine-routine/'],
+  ['es', '/es/rutinas-pesas-casa/'],
+  ['en', '/en/home-dumbbell-routines/'],
+  ['es', '/es/series-infinitas-rutina-de-pesas-de-alta-intensidad/'],
+  ['en', '/en/infinite-sets-routine/'],
+  ['es', '/es/como-ganar-peso/'],
+  ['en', '/en/how-to-gain-weight/'],
+  ['es', '/es/tablas-de-entrenamiento-de-volumen-masa-muscular/'],
+  ['en', '/en/volume-training-tables/'],
+  ['es', '/es/rutina-volumen-muscular-intermedios/'],
+  ['en', '/en/intermediate-volume-routine/'],
+  ['es', '/es/rutina-y-dieta-gemelos-harrison/'],
+  ['en', '/en/harrison-twins-routine/'],
+  ['es', '/es/rutinas-heavy-duty/'],
+  ['en', '/en/heavy-duty-routines/'],
+  ['es', '/es/rutina-volumen-ectomorfos/'],
+  ['en', '/en/ectomorph-volume-routine/'],
+  ['es', '/es/rutina-ganar-masa-muscular/'],
+  ['en', '/en/natural-muscle-building-routine/'],
 ];
 
 // Content routes, keyed by a stable id with the slug each locale publishes. The
@@ -1593,6 +1613,28 @@ const ROUTES = {
   antagonistSupersetsRoutine: {
     es: '/rutina-con-superseries-musculos-antagonistas',
     en: '/antagonist-supersets-routine',
+  },
+  smithMachineRoutine: { es: '/rutina-con-multipower', en: '/smith-machine-routine' },
+  homeDumbbellRoutines: { es: '/rutinas-pesas-casa', en: '/home-dumbbell-routines' },
+  infiniteSetsRoutine: {
+    es: '/series-infinitas-rutina-de-pesas-de-alta-intensidad',
+    en: '/infinite-sets-routine',
+  },
+  howToGainWeight: { es: '/como-ganar-peso', en: '/how-to-gain-weight' },
+  volumeTrainingTables: {
+    es: '/tablas-de-entrenamiento-de-volumen-masa-muscular',
+    en: '/volume-training-tables',
+  },
+  intermediateVolumeRoutine: {
+    es: '/rutina-volumen-muscular-intermedios',
+    en: '/intermediate-volume-routine',
+  },
+  harrisonTwinsRoutine: { es: '/rutina-y-dieta-gemelos-harrison', en: '/harrison-twins-routine' },
+  heavyDutyRoutines: { es: '/rutinas-heavy-duty', en: '/heavy-duty-routines' },
+  ectomorphVolumeRoutine: { es: '/rutina-volumen-ectomorfos', en: '/ectomorph-volume-routine' },
+  naturalMuscleBuildingRoutine: {
+    es: '/rutina-ganar-masa-muscular',
+    en: '/natural-muscle-building-routine',
   },
 };
 

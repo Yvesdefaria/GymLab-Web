@@ -390,6 +390,16 @@ const ROUTE_PAIRS = [
   ['/rutina-hipertrofia-total-tres-meses', '/twelve-week-hypertrophy-plan'],
   ['/sistema-anti-culturismo-abbh1', '/abbh1-program'],
   ['/rutina-con-superseries-musculos-antagonistas', '/antagonist-supersets-routine'],
+  ['/rutina-con-multipower', '/smith-machine-routine'],
+  ['/rutinas-pesas-casa', '/home-dumbbell-routines'],
+  ['/series-infinitas-rutina-de-pesas-de-alta-intensidad', '/infinite-sets-routine'],
+  ['/como-ganar-peso', '/how-to-gain-weight'],
+  ['/tablas-de-entrenamiento-de-volumen-masa-muscular', '/volume-training-tables'],
+  ['/rutina-volumen-muscular-intermedios', '/intermediate-volume-routine'],
+  ['/rutina-y-dieta-gemelos-harrison', '/harrison-twins-routine'],
+  ['/rutinas-heavy-duty', '/heavy-duty-routines'],
+  ['/rutina-volumen-ectomorfos', '/ectomorph-volume-routine'],
+  ['/rutina-ganar-masa-muscular', '/natural-muscle-building-routine'],
 ];
 
 const pairFor = (pathname) => {
