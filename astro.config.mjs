@@ -380,6 +380,16 @@ const ROUTE_PAIRS = [
   ['/fuerza-3x2-6-semanas', '/six-week-strength-ramp'],
   ['/rutina-fuerza-3x3-de-stephan-korte', '/korte-3x3'],
   ['/entrenamiento-aleman', '/german-volume-training'],
+  ['/rutina-de-tiron-empujon', '/push-pull-routine'],
+  ['/rutina-volumen-arnold-schwarzenegger', '/arnold-volume-routine'],
+  ['/rutina-entrenamiento', '/five-month-training-plan'],
+  ['/rutina-volumen-alta-intensidad', '/high-volume-four-day-routine'],
+  ['/rutina-masa-muscular-triple-division', '/three-way-split'],
+  ['/plan-de-entrenamiento-de-gimnasio-anual', '/annual-training-plan'],
+  ['/rutinas-de-volumen', '/volume-routines'],
+  ['/rutina-hipertrofia-total-tres-meses', '/twelve-week-hypertrophy-plan'],
+  ['/sistema-anti-culturismo-abbh1', '/abbh1-program'],
+  ['/rutina-con-superseries-musculos-antagonistas', '/antagonist-supersets-routine'],
 ];
 
 const pairFor = (pathname) => {

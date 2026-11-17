@@ -701,6 +701,26 @@ const PAGES = [
   ['en', '/en/korte-3x3/'],
   ['es', '/es/entrenamiento-aleman/'],
   ['en', '/en/german-volume-training/'],
+  ['es', '/es/rutina-de-tiron-empujon/'],
+  ['en', '/en/push-pull-routine/'],
+  ['es', '/es/rutina-volumen-arnold-schwarzenegger/'],
+  ['en', '/en/arnold-volume-routine/'],
+  ['es', '/es/rutina-entrenamiento/'],
+  ['en', '/en/five-month-training-plan/'],
+  ['es', '/es/rutina-volumen-alta-intensidad/'],
+  ['en', '/en/high-volume-four-day-routine/'],
+  ['es', '/es/rutina-masa-muscular-triple-division/'],
+  ['en', '/en/three-way-split/'],
+  ['es', '/es/plan-de-entrenamiento-de-gimnasio-anual/'],
+  ['en', '/en/annual-training-plan/'],
+  ['es', '/es/rutinas-de-volumen/'],
+  ['en', '/en/volume-routines/'],
+  ['es', '/es/rutina-hipertrofia-total-tres-meses/'],
+  ['en', '/en/twelve-week-hypertrophy-plan/'],
+  ['es', '/es/sistema-anti-culturismo-abbh1/'],
+  ['en', '/en/abbh1-program/'],
+  ['es', '/es/rutina-con-superseries-musculos-antagonistas/'],
+  ['en', '/en/antagonist-supersets-routine/'],
 ];
 
 // Content routes, keyed by a stable id with the slug each locale publishes. The
@@ -1549,6 +1569,31 @@ const ROUTES = {
   sixWeekStrengthRamp: { es: '/fuerza-3x2-6-semanas', en: '/six-week-strength-ramp' },
   korte3x3: { es: '/rutina-fuerza-3x3-de-stephan-korte', en: '/korte-3x3' },
   germanVolumeTraining: { es: '/entrenamiento-aleman', en: '/german-volume-training' },
+  pushPullRoutine: { es: '/rutina-de-tiron-empujon', en: '/push-pull-routine' },
+  arnoldVolumeRoutine: {
+    es: '/rutina-volumen-arnold-schwarzenegger',
+    en: '/arnold-volume-routine',
+  },
+  fiveMonthTrainingPlan: { es: '/rutina-entrenamiento', en: '/five-month-training-plan' },
+  highVolumeFourDayRoutine: {
+    es: '/rutina-volumen-alta-intensidad',
+    en: '/high-volume-four-day-routine',
+  },
+  threeWaySplit: { es: '/rutina-masa-muscular-triple-division', en: '/three-way-split' },
+  annualTrainingPlan: {
+    es: '/plan-de-entrenamiento-de-gimnasio-anual',
+    en: '/annual-training-plan',
+  },
+  volumeRoutines: { es: '/rutinas-de-volumen', en: '/volume-routines' },
+  twelveWeekHypertrophyPlan: {
+    es: '/rutina-hipertrofia-total-tres-meses',
+    en: '/twelve-week-hypertrophy-plan',
+  },
+  abbh1Program: { es: '/sistema-anti-culturismo-abbh1', en: '/abbh1-program' },
+  antagonistSupersetsRoutine: {
+    es: '/rutina-con-superseries-musculos-antagonistas',
+    en: '/antagonist-supersets-routine',
+  },
 };
 
 const routeId = (path) => {
