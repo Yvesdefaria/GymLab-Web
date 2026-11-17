@@ -271,3 +271,9 @@ npm run check:i18n   # 714 sitemap URLs
   at `scrollWidth` per cell, not only at document overflow.
 - **Gotcha:** the writer reports count prose and table-inclusive words differently; state the method
   in the batch record or the numbers look contradictory.
+- **Known approximations:** page 6's hero is a 2007 wall calendar (the alt describes the months and the
+  week column, not the year). Page 8 condenses the archive's 22 tables into 12 programme tables and
+  two block tables, keeping every exercise and rep scheme. Page 9 leaves the core exercise without
+  sets and reps because the archive gives none, and invents no numbers.
+- **Final copy pass:** `b3c7681` tightened seven files after the page commits (neutral phrasing where
+  a negation list or a "not only" reveal had survived). Gates re-run green after it.
