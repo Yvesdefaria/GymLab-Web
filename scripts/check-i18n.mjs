@@ -741,6 +741,26 @@ const PAGES = [
   ['en', '/en/ectomorph-volume-routine/'],
   ['es', '/es/rutina-ganar-masa-muscular/'],
   ['en', '/en/natural-muscle-building-routine/'],
+  ['es', '/es/rutina-volumen-pecho-hombro-espalda/'],
+  ['en', '/en/torso-volume-routine/'],
+  ['es', '/es/rutina-volumen-alta-frecuencia/'],
+  ['en', '/en/high-frequency-volume-routine/'],
+  ['es', '/es/rutina-volumen-progresiva-cuatro-dias/'],
+  ['en', '/en/progressive-four-day-routine/'],
+  ['es', '/es/rutina-weider-principiantes-intermedios/'],
+  ['en', '/en/weider-beginner-routine/'],
+  ['es', '/es/volumen-muscular-estancamiento/'],
+  ['en', '/en/muscle-plateau-routine/'],
+  ['es', '/es/rutina-pesas-tras-inactividad/'],
+  ['en', '/en/return-to-training-routine/'],
+  ['es', '/es/entrenamiento-de-hipertrofia-hst/'],
+  ['en', '/en/hst-training/'],
+  ['es', '/es/programa-hormona-crecimiento/'],
+  ['en', '/en/growth-hormone-program/'],
+  ['es', '/es/rutina-definicion-altos-kilajes/'],
+  ['en', '/en/heavy-load-cutting-routine/'],
+  ['es', '/es/rutina-definicion-pesas-cardio/'],
+  ['en', '/en/weights-and-cardio-cutting-routine/'],
 ];
 
 // Content routes, keyed by a stable id with the slug each locale publishes. The
@@ -1635,6 +1655,34 @@ const ROUTES = {
   naturalMuscleBuildingRoutine: {
     es: '/rutina-ganar-masa-muscular',
     en: '/natural-muscle-building-routine',
+  },
+  torsoVolumeRoutine: { es: '/rutina-volumen-pecho-hombro-espalda', en: '/torso-volume-routine' },
+  highFrequencyVolumeRoutine: {
+    es: '/rutina-volumen-alta-frecuencia',
+    en: '/high-frequency-volume-routine',
+  },
+  progressiveFourDayRoutine: {
+    es: '/rutina-volumen-progresiva-cuatro-dias',
+    en: '/progressive-four-day-routine',
+  },
+  weiderBeginnerRoutine: {
+    es: '/rutina-weider-principiantes-intermedios',
+    en: '/weider-beginner-routine',
+  },
+  musclePlateauRoutine: { es: '/volumen-muscular-estancamiento', en: '/muscle-plateau-routine' },
+  returnToTrainingRoutine: {
+    es: '/rutina-pesas-tras-inactividad',
+    en: '/return-to-training-routine',
+  },
+  hstTraining: { es: '/entrenamiento-de-hipertrofia-hst', en: '/hst-training' },
+  growthHormoneProgram: { es: '/programa-hormona-crecimiento', en: '/growth-hormone-program' },
+  heavyLoadCuttingRoutine: {
+    es: '/rutina-definicion-altos-kilajes',
+    en: '/heavy-load-cutting-routine',
+  },
+  weightsAndCardioCuttingRoutine: {
+    es: '/rutina-definicion-pesas-cardio',
+    en: '/weights-and-cardio-cutting-routine',
   },
 };
 

@@ -400,6 +400,16 @@ const ROUTE_PAIRS = [
   ['/rutinas-heavy-duty', '/heavy-duty-routines'],
   ['/rutina-volumen-ectomorfos', '/ectomorph-volume-routine'],
   ['/rutina-ganar-masa-muscular', '/natural-muscle-building-routine'],
+  ['/rutina-volumen-pecho-hombro-espalda', '/torso-volume-routine'],
+  ['/rutina-volumen-alta-frecuencia', '/high-frequency-volume-routine'],
+  ['/rutina-volumen-progresiva-cuatro-dias', '/progressive-four-day-routine'],
+  ['/rutina-weider-principiantes-intermedios', '/weider-beginner-routine'],
+  ['/volumen-muscular-estancamiento', '/muscle-plateau-routine'],
+  ['/rutina-pesas-tras-inactividad', '/return-to-training-routine'],
+  ['/entrenamiento-de-hipertrofia-hst', '/hst-training'],
+  ['/programa-hormona-crecimiento', '/growth-hormone-program'],
+  ['/rutina-definicion-altos-kilajes', '/heavy-load-cutting-routine'],
+  ['/rutina-definicion-pesas-cardio', '/weights-and-cardio-cutting-routine'],
 ];
 
 const pairFor = (pathname) => {
