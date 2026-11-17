@@ -247,3 +247,27 @@ npm run check:copy   # 351 pages expected
 npm run build        # 718 pages expected
 npm run check:i18n   # 714 sitemap URLs
 ```
+
+## Result (2026-11-17)
+
+- 10 bilingual pairs, 20 files, 10 heroes. Library: 341 → **351 / 792**. Rutinas de Volumen 11/29
+  (the German Volume Training page from batch 34 plus these ten).
+- Gates: `check:copy` **17,901/17,901**, build **718 pages**, `check:i18n` **11,222/11,222**, sitemap
+  **714 URLs** with 2,142 alternates.
+- Structural checks: 120 internal links, **0 broken**; every table three columns; zero em dashes; no
+  BOM; prose bodies 616-1,085 words; all 20 pages clean at 390 px after one fix. 351 heroes: the only
+  dHash pairs under distance 7 are the three pre-existing ones; every new hero is 11 or more away.
+- **Corrections made:** the push/pull plan stopped being reprinted in the annual plan; the "annual"
+  plan is presented as the 33 weeks it contains plus a labelled recommendation; Arnold's original
+  volume is reported history, not a plan; the 25-week plan is called 25 weeks and its 33-set day lands
+  on 25; the four-day volume routine reorders back off consecutive days; the triple split publishes
+  the 3-day and 5-day distributions; the hub becomes a decision table; the hypertrophy plan is
+  labelled an upper-body specialization; ABBH1 is attributed as a simplification of Waterbury; the
+  antagonist page links `superseries` and fixes its non-antagonist pairs.
+- **Fixed at verification (390 px):** eight schedule tables ("Día | Sesión | Series x reps") in
+  `rutina-entrenamiento` and `five-month-training-plan` clipped their middle column in the routine
+  grid. All eight are now `<table class="text-table">` in both locales.
+- **Gotcha:** a schedule table can overflow 0 px and still clip its cells; the render check must look
+  at `scrollWidth` per cell, not only at document overflow.
+- **Gotcha:** the writer reports count prose and table-inclusive words differently; state the method
+  in the batch record or the numbers look contradictory.

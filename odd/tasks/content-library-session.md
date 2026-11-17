@@ -10,20 +10,20 @@ Last updated: 2026-11-16. Read this first next session.
 ## State
 
 - **351 / 792 bilingual pages** (ES 351, EN 351).
-- Blocks: Entrenamiento **292**, Por Músculo **5**, Ejercicios **34**.
+- Blocks: Entrenamiento **302**, Por Músculo **5**, Ejercicios **34**.
 - **351 unique hero paths.** One exact duplicate pair remains from an earlier batch
   (`remo-polea-sentado` with `superserie-de-espalda-para-terminar-tu-rutina`), plus two pre-existing
-  near pairs at dHash 4 and 5; the batch 17 to 34 duplicates were fixed. See `PLAN.md`.
-- **Batch 34 is built, green and committed (2026-11-17).** The build has **698 pages** and **694
+  near pairs at dHash 4 and 5; the batch 17 to 35 duplicates were fixed. See `PLAN.md`.
+- **Batch 35 is built, green and committed (2026-11-17).** The build has **718 pages** and **714
   sitemap URLs**. Abdomen (39/39), Hombro (5/5), Rutinas de Bíceps (7/7), Pecho (9/9), Pierna (9/9),
   Rutinas de Pierna (3/3), Rutinas de Tríceps (1/1), Rutinas de Pecho (1/1), Tríceps (1/1) and
-  Rutinas de Fuerza (9/9) are closed. Rutinas de Volumen is 1/29.
+  Rutinas de Fuerza (9/9) are closed. Rutinas de Volumen is 11/29.
 - Five archive rows are settled and must stay out: the FiveStars Fitness congress page (discarded),
   the AEKE S1 Pro page (discarded 2026-11-14), `/velocidad-repeticiones/` (fused into the tempo page,
   2026-11-14) and the two batch 20 fusions (2026-11-15).
 - **Production runs batch 32 (pushed 2026-11-16).** Batches 19 to 32 are live; `origin/main` is at
-  the batch 32 docs push. Batches 33 and 34 are committed locally and not pushed.
-- Batch records: `odd/tasks/content-library-batch-32.md`, `-33.md` and `-34.md`.
+  the batch 32 docs push. Batches 33, 34 and 35 are committed locally and not pushed.
+- Batch records: `odd/tasks/content-library-batch-33.md`, `-34.md` and `-35.md`.
 
 ## Gates
 
@@ -91,10 +91,11 @@ Start the dev server with `npm run dev` for local review.
 
 ## Next 10
 
-1. Batch 35 is the next ten Rutinas de Volumen rows from `/rutina-de-tiron-empujon/` to
-   `/rutina-con-superseries-musculos-antagonistas/`; the brief already exists at
-   `odd/tasks/content-library-batch-35.md`. After it, the volume block continues with
-   `/rutina-con-multipower/`.
+1. Batch 36 continues Rutinas de Volumen from `/rutina-con-multipower/`:
+   `/rutinas-pesas-casa/`, `/series-infinitas-rutina-de-pesas-de-alta-intensidad/`, `/como-ganar-peso/`,
+   `/tablas-de-entrenamiento-de-volumen-masa-muscular/`, `/rutina-volumen-muscular-intermedios/`,
+   `/rutina-y-dieta-gemelos-harrison/`, `/rutinas-heavy-duty/`, `/rutina-volumen-ectomorfos/`,
+   `/rutina-ganar-masa-muscular/`.
 2. Keep the same copy, unique-hero and gate flow.
 3. Before publishing another photo from Shixart1985, Nenad Stojkovic, Miguel Angel Omaña Rojas, the
    InjuryMap family, PTPioneer, KeepActive Australia, Everkinetic or Wellcome Collection, compare the
@@ -150,9 +151,33 @@ Start the dev server with `npm run dev` for local review.
 - **Push is the owner's call:** satisfied on 2026-11-16. Batches 19 to 32 were pushed from
   `6293327` to `f7f8de1`; production serves 658 pages.
 
+## Session close (2026-11-17, batches 33, 34 and 35)
+
+- Three batches in one session, all committed, none pushed: **30 pairs**, 321 → **351 / 792**.
+  Batch 33 closed Pierna (9/9), Rutinas de Pierna (3/3), Rutinas de Tríceps (1/1), Rutinas de Pecho
+  (1/1) and Tríceps (1/1). Batch 34 closed Rutinas de Fuerza (9/9) and opened Rutinas de Volumen.
+  Batch 35 took that block to **11/29**.
+- Writers: two per batch, pages 1-5 and 6-10 in disjoint files. The parent wrote the three briefs from
+  source maps, registered routes, fixed three 390 px table defects, ran the gates and committed per
+  page.
+- Gates after the three: `check:copy` **17,901/17,901**, build **718 pages**, `check:i18n`
+  **11,222/11,222**, sitemap **714 URLs** with 2,142 alternates. 410 internal links across the 60
+  files, 0 broken. All 60 pages clean at 390 px.
+- Commits: batch 33 `87a98f4`-`4830d3c` plus routes `3f34e3a`; batch 34 `b4ca8ea`-`20af704` plus
+  routes `028ab29`; batch 35 `fe28d68`-`a1037c2` plus routes `9f29bc5`.
+- **Gotcha:** `check:copy` only catches an exact hero path duplicate. A 1280x720 crop of a library
+  hero hashes 1-6 from the original, so the dHash distance must be read and the closest hero opened
+  before vendoring.
+- **Gotcha:** schedule tables with long cells or headers clip at 390 px even when the document does
+  not overflow. The render check must inspect every cell's `scrollWidth`, and schedules belong in
+  `<table class="text-table">`.
+- **Gotcha:** writers report prose and table-inclusive word counts differently; say which method a
+  batch record uses.
+- Next session starts at `/rutina-con-multipower/`.
+
 ## Session close (2026-11-17, batch 34)
 
-- Batch 34 closed Rutinas de Fuerza and opened Rutinas de Volumen: 10 pairs, 341 → **351 / 792**.
+- Batch 34 closed Rutinas de Fuerza and opened Rutinas de Volumen: 10 pairs, 331 → **341 / 792**.
   Rutinas de Fuerza **9/9**; Rutinas de Volumen 1/29.
 - Writers: A pages 1-5 (hub, Bilbo, Wendler, 5x5, upper-body programme), B pages 6-10 (Starting
   Strength, powerlifting, 3x2, Korte, GVT), disjoint files. The parent registered the routes, fixed two

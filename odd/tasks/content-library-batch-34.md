@@ -283,7 +283,7 @@ npm run check:i18n   # 694 sitemap URLs
 
 ## Result (2026-11-17)
 
-- 10 bilingual pairs, 20 files, 10 heroes. Library: 341 → **351 / 792**. Rutinas de Fuerza closed at
+- 10 bilingual pairs, 20 files, 10 heroes. Library: 331 → **341 / 792**. Rutinas de Fuerza closed at
   **9/9**; Rutinas de Volumen opened at 1/29 (páginas 1-9, `entrenamiento-aleman`).
 - Gates: `check:copy` **17,391/17,391**, build **698 pages**, `check:i18n` **10,912/10,912**, sitemap
   **694 URLs** with 2,082 alternates.

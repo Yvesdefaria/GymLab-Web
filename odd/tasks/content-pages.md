@@ -9,9 +9,9 @@ Legend: `ES` = Spanish published, `EN` = English published.
 
 ## Progress
 
-- **Built: 341 / 792** (ES 341, EN 341).
-- Last batch: batch 34 closed Rutinas de Fuerza and opened Rutinas de Volumen;
-  341 pages built.
+- **Built: 351 / 792** (ES 351, EN 351).
+- Last batch: batch 35 added ten Rutinas de Volumen rows (11 of 29 built);
+  351 pages built.
 - Blocks finished end to end: Entrenamiento del Hombro (9), Físicos de leyenda (12), Entrenamiento de
   la Espalda (10), Rutinas de Espalda (4), Espalda (1), Ejercicios de Espalda (31), Ejercicio
   Cardiovascular (32), Entrenamiento de las Piernas (18), Entrenamiento del Pecho (6), Rutinas de
@@ -21,13 +21,13 @@ Legend: `ES` = Spanish published, `EN` = English published.
 
 | Block | Articles | Built |
 | --- | ---: | ---: |
-| Entrenamiento | 222 | 292 |
+| Entrenamiento | 222 | 302 |
 | Por Músculo | 80 | 5 |
 | Rutinas | 80 | 0 |
 | Ejercicios | 196 | 34 |
 | Nutrición | 191 | 0 |
 | Mujer Fitness | 23 | 0 |
-| **Total** | **792** | **341** |
+| **Total** | **792** | **351** |
 
 ## Copy gate (mandatory before ticking ES/EN)
 
@@ -626,16 +626,16 @@ Legend: `ES` = Spanish published, `EN` = English published.
 ### Rutinas de Volumen (29)
 
 - [x] ES · [x] EN — `/entrenamiento-aleman/` — Entrenamiento Alemán de Volumen Muscular\| Actualizado 2025
-- [ ] ES · [ ] EN — `/rutina-de-tiron-empujon/` — Rutinas de entrenamiento Tirón-Empujón \| Divide y Vencerás ✔
-- [ ] ES · [ ] EN — `/rutina-volumen-arnold-schwarzenegger/` — Rutina de volumen de Arnold Schwarzenegger \| Update 2025
-- [ ] ES · [ ] EN — `/rutina-entrenamiento/` — Rutina de Entrenamiento Completa \| 5 Meses de Entrenamiento
-- [ ] ES · [ ] EN — `/rutina-volumen-alta-intensidad/` — Rutina de alto volumen de entrenamiento \| 4 días a la semana
-- [ ] ES · [ ] EN — `/rutina-masa-muscular-triple-division/` — Rutina de masa muscular de triple división \| 3-5 días semanales
-- [ ] ES · [ ] EN — `/plan-de-entrenamiento-de-gimnasio-anual/` — Plan de Entrenamiento Anual \| La Rutina de Gimnasio de 2026
-- [ ] ES · [ ] EN — `/rutinas-de-volumen/` — Rutinas de Volumen \| Lo mejor para ganar volumen en 2026
-- [ ] ES · [ ] EN — `/rutina-hipertrofia-total-tres-meses/` — Rutina de Hipertrofia Total de 3 Meses \| La Mejor de 2026
-- [ ] ES · [ ] EN — `/sistema-anti-culturismo-abbh1/` — Sistema Anti-Culturismo ABBH1: Gana Músculo Real
-- [ ] ES · [ ] EN — `/rutina-con-superseries-musculos-antagonistas/` — Rutina con Superseries de Músculos Antagonistas
+- [x] ES · [x] EN — `/rutina-de-tiron-empujon/` — Rutinas de entrenamiento Tirón-Empujón \| Divide y Vencerás ✔
+- [x] ES · [x] EN — `/rutina-volumen-arnold-schwarzenegger/` — Rutina de volumen de Arnold Schwarzenegger \| Update 2025
+- [x] ES · [x] EN — `/rutina-entrenamiento/` — Rutina de Entrenamiento Completa \| 5 Meses de Entrenamiento
+- [x] ES · [x] EN — `/rutina-volumen-alta-intensidad/` — Rutina de alto volumen de entrenamiento \| 4 días a la semana
+- [x] ES · [x] EN — `/rutina-masa-muscular-triple-division/` — Rutina de masa muscular de triple división \| 3-5 días semanales
+- [x] ES · [x] EN — `/plan-de-entrenamiento-de-gimnasio-anual/` — Plan de Entrenamiento Anual \| La Rutina de Gimnasio de 2026
+- [x] ES · [x] EN — `/rutinas-de-volumen/` — Rutinas de Volumen \| Lo mejor para ganar volumen en 2026
+- [x] ES · [x] EN — `/rutina-hipertrofia-total-tres-meses/` — Rutina de Hipertrofia Total de 3 Meses \| La Mejor de 2026
+- [x] ES · [x] EN — `/sistema-anti-culturismo-abbh1/` — Sistema Anti-Culturismo ABBH1: Gana Músculo Real
+- [x] ES · [x] EN — `/rutina-con-superseries-musculos-antagonistas/` — Rutina con Superseries de Músculos Antagonistas
 - [ ] ES · [ ] EN — `/rutina-con-multipower/` — Rutina de entrenamiento con Multipower
 - [ ] ES · [ ] EN — `/rutinas-pesas-casa/` — Rutinas de ejercicios en casa \| Gana más músculo en 2025
 - [ ] ES · [ ] EN — `/series-infinitas-rutina-de-pesas-de-alta-intensidad/` — Series infinitas, rutina de pesas de alta intensidad
