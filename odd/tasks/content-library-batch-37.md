@@ -231,3 +231,25 @@ npm run check:copy   # 371 pages expected
 npm run build        # 758 pages expected
 npm run check:i18n   # 754 sitemap URLs
 ```
+
+## Result (2026-11-17)
+
+- 10 bilingual pairs, 20 files, 10 heroes. Library: 361 → **371 / 792**. Rutinas de Volumen closed at
+  **29/29**; Rutinas de Definición opened at 2/20.
+- Gates: `check:copy` **18,921/18,921**, build **758 pages**, `check:i18n` **11,842/11,842**, sitemap
+  **754 URLs** with 2,262 alternates.
+- Structural checks: 116 internal links, **0 broken**; every table three columns; zero em dashes; no
+  BOM; 20 pages clean at 390 px and zero clipped cells across 140 page/width pairs (360 to 1280).
+  371 heroes: the only dHash pairs under distance 7 are the three pre-existing ones; every new hero is
+  14 or more away.
+- **Corrections made:** the torso routine's image was transcribed (sets 4/3/4/3, reps 10-8-6-4, rest
+  60-90 s) and Sunday named as the rest day; high frequency keeps one plan; "progresiva" gained the
+  double progression and a 36-set ceiling; Weider gained the three-day beginner application and lost
+  the invented set-system attribution; the plateau page runs 12 weeks with the deload at week 13; the
+  return-to-training week 4 matches 5 s/55 s; HST uses one calibration rule and kg only; the GH page
+  dropped the hormone premise, the supplement stack and the 1,133 kcal day; the two cutting pages own
+  distinct angles and cross-link each other.
+- **Known approximation:** page 5 keeps the archive's duplicated shoulder days and explains them as the
+  block's doubled group with a set-cut guard, instead of reordering the rotation.
+- **Gotcha:** a dHash of 7 can be a false positive (a food photo against an anatomy plate) and a
+  distance-6 crop can be the same photograph; only opening both images settles it.

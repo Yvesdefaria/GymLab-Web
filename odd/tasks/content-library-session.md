@@ -9,20 +9,19 @@ Last updated: 2026-11-16. Read this first next session.
 
 ## State
 
-- **361 / 792 bilingual pages** (ES 361, EN 361).
-- Blocks: Entrenamiento **312**, Por Músculo **5**, Ejercicios **34**.
-- **361 unique hero paths.** One exact duplicate pair remains from an earlier batch
+- **371 / 792 bilingual pages** (ES 371, EN 371).
+- Blocks: Entrenamiento **322**, Por Músculo **5**, Ejercicios **34**.
+- **371 unique hero paths.** One exact duplicate pair remains from an earlier batch
   (`remo-polea-sentado` with `superserie-de-espalda-para-terminar-tu-rutina`), plus two pre-existing
-  near pairs at dHash 4 and 5; the batch 17 to 36 duplicates were fixed. See `PLAN.md`.
-- **Batch 36 is built, green and committed (2026-11-17).** The build has **738 pages** and **734
-  sitemap URLs**. Fifteen blocks are closed; Rutinas de Volumen is 21/29 and Rutinas de Definición
-  has not started.
+  near pairs at dHash 4 and 5; the batch 17 to 37 duplicates were fixed. See `PLAN.md`.
+- **Batch 37 is built, green and committed (2026-11-17).** The build has **758 pages** and **754
+  sitemap URLs**. Rutinas de Volumen is closed at **29/29**; Rutinas de Definición is 2/20.
 - Five archive rows are settled and must stay out: the FiveStars Fitness congress page (discarded),
   the AEKE S1 Pro page (discarded 2026-11-14), `/velocidad-repeticiones/` (fused into the tempo page,
   2026-11-14) and the two batch 20 fusions (2026-11-15).
 - **Production runs batch 32 (pushed 2026-11-16).** Batches 19 to 32 are live; `origin/main` is at
-  the batch 32 docs push. Batches 33 to 36 are committed locally and not pushed.
-- Batch records: `odd/tasks/content-library-batch-34.md`, `-35.md` and `-36.md`.
+  the batch 32 docs push. Batches 33 to 37 are committed locally and not pushed.
+- Batch records: `odd/tasks/content-library-batch-35.md`, `-36.md` and `-37.md`.
 
 ## Gates
 
@@ -90,10 +89,9 @@ Start the dev server with `npm run dev` for local review.
 
 ## Next 10
 
-1. Batch 37 closes Rutinas de Volumen and opens Rutinas de Definición: from
-   `/rutina-volumen-pecho-hombro-espalda/` to `/rutina-definicion-pesas-cardio/`; the brief already
-   exists at `odd/tasks/content-library-batch-37.md`. After it, the cutting block continues at
-   `/rutina-de-definicion-con-series-compuestas/`.
+1. Batch 38 is the ten remaining Rutinas de Definición rows, from
+   `/rutina-de-definicion-con-series-compuestas/` to `/rutina-definicion-avanzada-3-meses/`; the brief
+   already exists at `odd/tasks/content-library-batch-38.md`. The block reaches 12/20.
 2. Keep the same copy, unique-hero and gate flow.
 3. Before publishing another photo from Shixart1985, Nenad Stojkovic, Miguel Angel Omaña Rojas, the
    InjuryMap family, PTPioneer, KeepActive Australia, Everkinetic or Wellcome Collection, compare the
@@ -148,6 +146,23 @@ Start the dev server with `npm run dev` for local review.
   documented in the batch 22 record.
 - **Push is the owner's call:** satisfied on 2026-11-16. Batches 19 to 32 were pushed from
   `6293327` to `f7f8de1`; production serves 658 pages.
+
+## Session close (2026-11-17, batch 37)
+
+- Batch 37 closed Rutinas de Volumen and opened Rutinas de Definición: 361 → **371 / 792**;
+  Volume **29/29**, Definition 2/20.
+- Writers: A pages 1-5 (torso, high frequency, progressive four-day, Weider, plateau), B pages 6-10
+  (return to training, HST, GH page, heavy-load cutting, weights and cardio), disjoint files. The
+  parent registered routes, verified 140 page/width pairs, ran the gates and committed per page.
+- Gates: `check:copy` **18,921/18,921**, build **758 pages**, `check:i18n` **11,842/11,842**, sitemap
+  **754 URLs** with 2,262 alternates. 116 internal links, **0 broken**; 20 pages clean at 390 px and
+  no clipped cell from 360 to 1280.
+- Heroes: 371 files; the only dHash pairs under 7 are the three pre-existing ones.
+- Commits: pages `f0d1a37`, `8aa31f7`, `625e162`, `71994da`, `a2c6fe1`, `c52d2fa`, `819dad5`,
+  `c072dbe`, `746b877`, `d6d5347`; routes `ba48d1b`.
+- **Gotcha:** a dHash of 7 can be a false positive and a distance-6 crop can be the same photograph.
+  Opening both images is the only reliable check.
+- Next session starts at `/rutina-de-definicion-con-series-compuestas/`; the batch 38 brief is written.
 
 ## Session close (2026-11-17, batch 36)
 

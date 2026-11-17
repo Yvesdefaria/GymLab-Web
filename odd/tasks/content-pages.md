@@ -9,9 +9,9 @@ Legend: `ES` = Spanish published, `EN` = English published.
 
 ## Progress
 
-- **Built: 361 / 792** (ES 361, EN 361).
-- Last batch: batch 36 added ten Rutinas de Volumen rows (21 of 29 built);
-  361 pages built.
+- **Built: 371 / 792** (ES 371, EN 371).
+- Last batch: batch 37 closed Rutinas de Volumen and opened Rutinas de Definición;
+  371 pages built.
 - Blocks finished end to end: Entrenamiento del Hombro (9), Físicos de leyenda (12), Entrenamiento de
   la Espalda (10), Rutinas de Espalda (4), Espalda (1), Ejercicios de Espalda (31), Ejercicio
   Cardiovascular (32), Entrenamiento de las Piernas (18), Entrenamiento del Pecho (6), Rutinas de
@@ -21,13 +21,13 @@ Legend: `ES` = Spanish published, `EN` = English published.
 
 | Block | Articles | Built |
 | --- | ---: | ---: |
-| Entrenamiento | 222 | 312 |
+| Entrenamiento | 222 | 322 |
 | Por Músculo | 80 | 5 |
 | Rutinas | 80 | 0 |
 | Ejercicios | 196 | 34 |
 | Nutrición | 191 | 0 |
 | Mujer Fitness | 23 | 0 |
-| **Total** | **792** | **361** |
+| **Total** | **792** | **371** |
 
 ## Copy gate (mandatory before ticking ES/EN)
 
@@ -623,7 +623,7 @@ Legend: `ES` = Spanish published, `EN` = English published.
 - [x] ES · [x] EN — `/fuerza-3x2-6-semanas/` — Rutina de fuerza 3x2 de 6 semanas
 - [x] ES · [x] EN — `/rutina-fuerza-3x3-de-stephan-korte/` — Rutina de fuerza 3x3 de Stephan Korte
 
-### Rutinas de Volumen (29)
+### Rutinas de Volumen (29) — COMPLETO
 
 - [x] ES · [x] EN — `/entrenamiento-aleman/` — Entrenamiento Alemán de Volumen Muscular\| Actualizado 2025
 - [x] ES · [x] EN — `/rutina-de-tiron-empujon/` — Rutinas de entrenamiento Tirón-Empujón \| Divide y Vencerás ✔
@@ -646,19 +646,19 @@ Legend: `ES` = Spanish published, `EN` = English published.
 - [x] ES · [x] EN — `/rutinas-heavy-duty/` — Rutinas Heavy duty, breve y muy intenso
 - [x] ES · [x] EN — `/rutina-volumen-ectomorfos/` — Rutina de volumen muscular para ectomorfos \| Efectividad 100%
 - [x] ES · [x] EN — `/rutina-ganar-masa-muscular/` — Rutina y dieta para ganar músculo de forma natural ©
-- [ ] ES · [ ] EN — `/rutina-volumen-pecho-hombro-espalda/` — Rutina de volumen para pecho, hombro y espalda \| Más Músculo ✓
-- [ ] ES · [ ] EN — `/rutina-volumen-alta-frecuencia/` — Rutinas de volumen de alta frecuencia
-- [ ] ES · [ ] EN — `/rutina-volumen-progresiva-cuatro-dias/` — Rutina de volumen progresiva de 4 días
-- [ ] ES · [ ] EN — `/rutina-weider-principiantes-intermedios/` — Rutina weider para principiantes-intermedios
-- [ ] ES · [ ] EN — `/volumen-muscular-estancamiento/` — Rutina de volumen muscular contra el estancamiento
-- [ ] ES · [ ] EN — `/rutina-pesas-tras-inactividad/` — Rutina de 4 semanas tras un tiempo inactivo
-- [ ] ES · [ ] EN — `/entrenamiento-de-hipertrofia-hst/` — Rutina de entrenamiento HST ✔ Puro Músculo!!
-- [ ] ES · [ ] EN — `/programa-hormona-crecimiento/` — Programa de aumento de hormona del crecimiento
+- [x] ES · [x] EN — `/rutina-volumen-pecho-hombro-espalda/` — Rutina de volumen para pecho, hombro y espalda \| Más Músculo ✓
+- [x] ES · [x] EN — `/rutina-volumen-alta-frecuencia/` — Rutinas de volumen de alta frecuencia
+- [x] ES · [x] EN — `/rutina-volumen-progresiva-cuatro-dias/` — Rutina de volumen progresiva de 4 días
+- [x] ES · [x] EN — `/rutina-weider-principiantes-intermedios/` — Rutina weider para principiantes-intermedios
+- [x] ES · [x] EN — `/volumen-muscular-estancamiento/` — Rutina de volumen muscular contra el estancamiento
+- [x] ES · [x] EN — `/rutina-pesas-tras-inactividad/` — Rutina de 4 semanas tras un tiempo inactivo
+- [x] ES · [x] EN — `/entrenamiento-de-hipertrofia-hst/` — Rutina de entrenamiento HST ✔ Puro Músculo!!
+- [x] ES · [x] EN — `/programa-hormona-crecimiento/` — Programa de aumento de hormona del crecimiento
 
 ### Rutinas de Definición (20)
 
-- [ ] ES · [ ] EN — `/rutina-definicion-altos-kilajes/` — Rutina de definición de altos kilajes y cardio
-- [ ] ES · [ ] EN — `/rutina-definicion-pesas-cardio/` — Rutina de definición de pesas y cardio \| La mejor de 2025
+- [x] ES · [x] EN — `/rutina-definicion-altos-kilajes/` — Rutina de definición de altos kilajes y cardio
+- [x] ES · [x] EN — `/rutina-definicion-pesas-cardio/` — Rutina de definición de pesas y cardio \| La mejor de 2025
 - [ ] ES · [ ] EN — `/rutina-de-definicion-con-series-compuestas/` — Rutina de definición con series compuestas
 - [ ] ES · [ ] EN — `/como-orientar-tu-rutina-de-pesas-para-perder-grasa/` — Rutina de pesas para perder grasa \| Paso a paso
 - [ ] ES · [ ] EN — `/rutinas-de-definicion/` — Rutinas de Definición Muscular y Quema Grasas

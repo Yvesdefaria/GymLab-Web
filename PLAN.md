@@ -19,21 +19,22 @@ Last updated: 2026-11-16.
 - The landing, the three calculators, the 404 and the legal pages all ship in both locales.
 - Measurement and the SQL recipe: see "Reading analytics" below and `COMPLETED.md` Appendix B.
 
-## Content library — 361 / 792 (2026-11-17)
+## Content library — 371 / 792 (2026-11-17)
 
-- **361 bilingual pages** (ES 361, EN 361), **361 unique hero paths**. Blocks: Entrenamiento 312,
+- **371 bilingual pages** (ES 371, EN 371), **371 unique hero paths**. Blocks: Entrenamiento 322,
   Por Músculo 5, Ejercicios 34.
-- **Batches 33 to 36 are built, green and committed (2026-11-17), not pushed.** The build has
-  **738 pages** and **734 sitemap URLs**. Fifteen blocks are closed; Rutinas de Volumen is 21/29.
-- Gates: `npm run verify` = `check:copy` **18,411/18,411** + build **738 pages** + `check:i18n`
-  **11,532/11,532**.
+- **Batches 33 to 37 are built, green and committed (2026-11-17), not pushed.** The build has
+  **758 pages** and **754 sitemap URLs**. Rutinas de Volumen is closed at 29/29; Rutinas de Definición
+  is 2/20.
+- Gates: `npm run verify` = `check:copy` **18,921/18,921** + build **758 pages** + `check:i18n`
+  **11,842/11,842**.
 - Docs: `odd/tasks/content-library-session.md` (start here next session),
   `odd/tasks/content-pages.md` (per-page checklist + resume),
-  `odd/tasks/content-library-batch-36.md` (the last batch) and `odd/tasks/guides-page-contract.md`
+  `odd/tasks/content-library-batch-37.md` (the last batch) and `odd/tasks/guides-page-contract.md`
   (the page contract and copy gate).
-- **Next 10:** batch 37 closes Rutinas de Volumen and opens Rutinas de Definición, from
-  `rutina-volumen-pecho-hombro-espalda` to `rutina-definicion-pesas-cardio`; the brief exists at
-  `odd/tasks/content-library-batch-37.md`.
+- **Next 10:** batch 38 takes the ten remaining Rutinas de Definición rows, from
+  `rutina-de-definicion-con-series-compuestas` to `rutina-definicion-avanzada-3-meses`; the brief
+  exists at `odd/tasks/content-library-batch-38.md`.
 - **Follow-up:** three hero pairs remain under dHash 7, all from earlier batches: one exact duplicate
   (`remo-polea-sentado` with `superserie-de-espalda-para-terminar-tu-rutina`) and two near pairs at 4
   and 5. A 1280x720 crop of a library hero hashes 1-6 from the original, so writers must open the
