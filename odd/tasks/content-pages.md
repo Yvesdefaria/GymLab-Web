@@ -9,9 +9,9 @@ Legend: `ES` = Spanish published, `EN` = English published.
 
 ## Progress
 
-- **Built: 401 / 792** (ES 401, EN 401).
-- Last batch: batch 40 closed Full Body and opened Deportes;
-  401 pages built.
+- **Built: 411 / 792** (ES 411, EN 411).
+- Last batch: batch 41 closed Deportes and Principiantes; the whole Rutinas block is done;
+  411 pages built.
 - Blocks finished end to end: Entrenamiento del Hombro (9), Físicos de leyenda (12), Entrenamiento de
   la Espalda (10), Rutinas de Espalda (4), Espalda (1), Ejercicios de Espalda (31), Ejercicio
   Cardiovascular (32), Entrenamiento de las Piernas (18), Entrenamiento del Pecho (6), Rutinas de
@@ -23,11 +23,11 @@ Legend: `ES` = Spanish published, `EN` = English published.
 | --- | ---: | ---: |
 | Entrenamiento | 222 | 217 |
 | Por Músculo | 80 | 80 |
-| Rutinas | 80 | 70 |
+| Rutinas | 80 | 80 |
 | Ejercicios | 196 | 34 |
 | Nutrición | 191 | 0 |
 | Mujer Fitness | 23 | 0 |
-| **Total** | **792** | **401** |
+| **Total** | **792** | **411** |
 
 The Built column counts the archive block of each page, not the frontmatter `block` (every guide ships
 with `block: "Entrenamiento"` for the site taxonomy). Five Entrenamiento rows are settled and will
@@ -690,7 +690,7 @@ never publish: two DESCARTADA and three FUSIONADA, so the publishable total is *
 - [x] ES · [x] EN — `/rutina-sobreentrenamiento-controlado/` — Rutina de Sobreentrenamiento Controlado
 - [x] ES · [x] EN — `/rutinas-cuerpo-completo/` — Rutinas de cuerpo completo \| Beneficios y consejos TOP
 
-### Rutinas Deportes (8)
+### Rutinas Deportes (8) — COMPLETO
 
 - [x] ES · [x] EN — `/rutina-de-entrenamiento-para-tenis-padel/` — Rutina de entrenamiento para Tenis y Pádel
 - [x] ES · [x] EN — `/rutina-futbol/` — Rutina para fuerza y velocidad en el fútbol
@@ -699,19 +699,19 @@ never publish: two DESCARTADA and three FUSIONADA, so the publishable total is *
 - [x] ES · [x] EN — `/rutina-pesas-corredores-atletismo/` — Rutina de pesas para corredores de fondo (Atletismo)
 - [x] ES · [x] EN — `/rutina-dieta-natacion/` — Rutina de pesas y dieta para natación
 - [x] ES · [x] EN — `/rutinas-deportes/` — Rutinas de pesas para otros deportes
-- [ ] ES · [ ] EN — `/rutina-dieta-baloncesto/` — Rutina de pesas y dieta para el Baloncesto
+- [x] ES · [x] EN — `/rutina-dieta-baloncesto/` — Rutina de pesas y dieta para el Baloncesto
 
-### Rutinas en Principiantes (9)
+### Rutinas en Principiantes (9) — COMPLETO
 
-- [ ] ES · [ ] EN — `/rutina-mantenimiento/` — Rutina de mantenimiento, rutinas para mantenerse en forma
-- [ ] ES · [ ] EN — `/rutinas-full-body/` — Rutinas Full Body, entrena tu cuerpo entero \| Update 2025
-- [ ] ES · [ ] EN — `/rutina-de-entrenamiento-primer-mes-en-el-gimnasio/` — Rutina de entrenamiento para tus primeros 3 meses
-- [ ] ES · [ ] EN — `/rutinas-pesas-principiantes-pdf/` — Dos rutinas de pesas para principiantes (PDF descarga directa)
-- [ ] ES · [ ] EN — `/rutina-principiantes-abab/` — Rutina para principiantes ABAB
-- [ ] ES · [ ] EN — `/rutinas-pesas-principiantes/` — Rutinas de pesas para principiantes \| Gana músculo... Rápido
-- [ ] ES · [ ] EN — `/programa-principiantes/` — Programa para principiantes de volumen ✓
-- [ ] ES · [ ] EN — `/rutina-principiantes-cinco-semanas/` — Rutina para principiantes de cinco semanas
-- [ ] ES · [ ] EN — `/programa-de-ejercicio-intensivo-para-principiantes/` — Programa de ejercicio intensivo para principiantes
+- [x] ES · [x] EN — `/rutina-mantenimiento/` — Rutina de mantenimiento, rutinas para mantenerse en forma
+- [x] ES · [x] EN — `/rutinas-full-body/` — Rutinas Full Body, entrena tu cuerpo entero \| Update 2025
+- [x] ES · [x] EN — `/rutina-de-entrenamiento-primer-mes-en-el-gimnasio/` — Rutina de entrenamiento para tus primeros 3 meses
+- [x] ES · [x] EN — `/rutinas-pesas-principiantes-pdf/` — Dos rutinas de pesas para principiantes (PDF descarga directa)
+- [x] ES · [x] EN — `/rutina-principiantes-abab/` — Rutina para principiantes ABAB
+- [x] ES · [x] EN — `/rutinas-pesas-principiantes/` — Rutinas de pesas para principiantes \| Gana músculo... Rápido
+- [x] ES · [x] EN — `/programa-principiantes/` — Programa para principiantes de volumen ✓
+- [x] ES · [x] EN — `/rutina-principiantes-cinco-semanas/` — Rutina para principiantes de cinco semanas
+- [x] ES · [x] EN — `/programa-de-ejercicio-intensivo-para-principiantes/` — Programa de ejercicio intensivo para principiantes
 
 ## Ejercicios (196)
 

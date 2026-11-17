@@ -203,3 +203,24 @@ npm run check:copy   # 411 pages expected
 npm run build        # 838 pages expected
 npm run check:i18n   # 834 sitemap URLs
 ```
+
+## Result (2026-11-17)
+
+- 10 bilingual pairs, 20 files, 10 heroes. Library: 401 → **411 / 792**. Rutinas de deportes closed at
+  **8/8** and Rutinas en Principiantes at **9/9**; the whole Rutinas block is done at **80/80**.
+- Gates: `check:copy` **20,961/20,961**, build **838 pages**, `check:i18n` **13,082/13,082**, sitemap
+  **834 URLs** with 2,502 alternates.
+- Structural checks: 104 internal links, **0 broken**; every table three columns; zero em dashes; no
+  BOM; 20 pages clean at 390 px and zero clipped cells across 140 page/width pairs after one fix.
+  411 heroes: the only dHash pairs under distance 7 are the three pre-existing ones.
+- **Corrections made:** the basketball week was transcribed from its image and the diet gained protein
+  per kilo with a labelled calorie estimate; maintenance keeps one plan and its four-week wave; the
+  full-body levels fix the `3x8` notation and drop the metabolism claims; the first three months
+  publish three series and name the monthly variable; the printable page is built from the image and
+  labels its 3x10 as the page's recommendation; ABAB maps A-B-rest-A-B and cuts 63 sets to 43; the
+  weight routines are three lifting days plus two cardio; the twelve-week programme respects 48 hours
+  and bridges week seven; the five-week rotation publishes one 8-10 scheme; the intensive programme
+  stays at its fourteen real weeks.
+- **Fixed by the parent:** the sports hub `meta` went from six to seven and gained the basketball row
+  and description; maintenance `meta` says one routine; the weeks-1-to-3 table in the twelve-week
+  programme became a `text-table` because its "Semana 1" header clipped at 360 px in the routine grid.

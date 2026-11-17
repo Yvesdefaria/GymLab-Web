@@ -9,21 +9,22 @@ Last updated: 2026-11-16. Read this first next session.
 
 ## State
 
-- **401 / 792 bilingual pages** (ES 401, EN 401).
+- **411 / 792 bilingual pages** (ES 411, EN 411).
 - Blocks by archive section: Entrenamiento **217/222** (the five missing rows are settled: two
-  descartadas and three fusionadas), Por Músculo **80/80**, Rutinas **70/80**, Ejercicios **34/196**,
+  descartadas and three fusionadas), Por Músculo **80/80**, Rutinas **80/80**, Ejercicios **34/196**,
   Nutrición 0/191, Mujer Fitness 0/23. The publishable total is 787.
-- **401 unique hero paths.** One exact duplicate pair remains from an earlier batch
+- **411 unique hero paths.** One exact duplicate pair remains from an earlier batch
   (`remo-polea-sentado` with `superserie-de-espalda-para-terminar-tu-rutina`), plus two pre-existing
-  near pairs at dHash 4 and 5; the batch 17 to 40 duplicates were fixed. See `PLAN.md`.
-- **Batch 40 is built, green and committed (2026-11-17).** The build has **818 pages** and **814
-  sitemap URLs**. Rutinas full body is closed at **5/5**; Rutinas de deportes is 7/8.
+  near pairs at dHash 4 and 5; the batch 17 to 41 duplicates were fixed. See `PLAN.md`.
+- **Batch 41 is built, green and committed (2026-11-17).** The build has **838 pages** and **834
+  sitemap URLs**. The whole Rutinas block is closed: fuerza 9/9, volumen 29/29, definición 20/20, full
+  body 5/5, deportes 8/8, principiantes 9/9.
 - Five archive rows are settled and must stay out: the FiveStars Fitness congress page (discarded),
   the AEKE S1 Pro page (discarded 2026-11-14), `/velocidad-repeticiones/` (fused into the tempo page,
   2026-11-14) and the two batch 20 fusions (2026-11-15).
 - **Production runs batch 32 (pushed 2026-11-16).** Batches 19 to 32 are live; `origin/main` is at
-  the batch 32 docs push. Batches 33 to 40 are committed locally and not pushed.
-- Batch records: `odd/tasks/content-library-batch-38.md`, `-39.md` and `-40.md`.
+  the batch 32 docs push. Batches 33 to 41 are committed locally and not pushed.
+- Batch records: `odd/tasks/content-library-batch-39.md`, `-40.md` and `-41.md`.
 
 ## Gates
 
@@ -91,9 +92,8 @@ Start the dev server with `npm run dev` for local review.
 
 ## Next 10
 
-1. Batch 41 is the last Rutinas de deportes row plus the nine Rutinas en Principiantes rows, from
-   `/rutina-dieta-baloncesto/` to `/programa-de-ejercicio-intensivo-para-principiantes/`; the brief
-   already exists at `odd/tasks/content-library-batch-41.md`. It closes the whole Rutinas block.
+1. The Rutinas block is finished; the next rows are Ejercicios de Tríceps (17), starting with
+   `/jalones-barra-recta/`. Write the batch 42 brief after mapping the first ten of those sources.
 2. Keep the same copy, unique-hero and gate flow.
 3. Before publishing another photo from Shixart1985, Nenad Stojkovic, Miguel Angel Omaña Rojas, the
    InjuryMap family, PTPioneer, KeepActive Australia, Everkinetic or Wellcome Collection, compare the
@@ -148,6 +148,26 @@ Start the dev server with `npm run dev` for local review.
   documented in the batch 22 record.
 - **Push is the owner's call:** satisfied on 2026-11-16. Batches 19 to 32 were pushed from
   `6293327` to `f7f8de1`; production serves 658 pages.
+
+## Session close (2026-11-17, batch 41)
+
+- Batch 41 closed the whole Rutinas block: 401 → **411 / 792**. Deportes **8/8**, Principiantes
+  **9/9**, and Rutinas **80/80** end to end.
+- Writers: A pages 1-5 (basketball, maintenance, full-body levels, first three months, printable),
+  B pages 6-10 (ABAB, weight routines, twelve-week programme, five weeks, intensive), disjoint files.
+  The parent registered routes, fixed the sports hub count and row, converted one week table, ran the
+  gates and committed per page.
+- Gates: `check:copy` **20,961/20,961**, build **838 pages**, `check:i18n` **13,082/13,082**, sitemap
+  **834 URLs** with 2,502 alternates. 104 internal links, **0 broken**; no clipped cell from 360 to
+  1280 after one fix.
+- Heroes: 411 files; the only dHash pairs under 7 are the three pre-existing ones.
+- Commits: pages `66cd656`, `acb1d05`, `4303e45`, `f30ac73`, `82cc3fe`, `a9ecf66`, `f126ca5`,
+  `b09d87e`, `8b86385`, `c871809`; hub fix `940956c`; routes `6f7313e`.
+- **Gotcha:** a week header as short as "Semana 1" clips in the 52 % first column at 360 px when the
+  table uses the routine grid; week tables are `text-table`, like every other schedule.
+- **Gotcha:** a long render loop can fail transiently while the dev server recompiles; re-run before
+  chasing a layout bug.
+- Next session starts at `/jalones-barra-recta/`; the Ejercicios block needs its source map.
 
 ## Session close (2026-11-17, batch 40)
 

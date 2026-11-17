@@ -19,23 +19,22 @@ Last updated: 2026-11-16.
 - The landing, the three calculators, the 404 and the legal pages all ship in both locales.
 - Measurement and the SQL recipe: see "Reading analytics" below and `COMPLETED.md` Appendix B.
 
-## Content library — 401 / 792 (2026-11-17)
+## Content library — 411 / 792 (2026-11-17)
 
-- **401 bilingual pages** (ES 401, EN 401), **401 unique hero paths**. By archive section:
-  Entrenamiento 217/222 (five rows settled), Por Músculo 80/80, Rutinas 70/80, Ejercicios 34/196,
+- **411 bilingual pages** (ES 411, EN 411), **411 unique hero paths**. By archive section:
+  Entrenamiento 217/222 (five rows settled), Por Músculo 80/80, **Rutinas 80/80**, Ejercicios 34/196,
   Nutrición 0/191, Mujer Fitness 0/23. Publishable total: **787**.
-- **Batches 33 to 40 are built, green and committed (2026-11-17), not pushed.** The build has
-  **818 pages** and **814 sitemap URLs**. Rutinas de Volumen is closed at 29/29, Rutinas de Definición
-  at 20/20, Rutinas full body at 5/5; Rutinas de deportes is 7/8.
-- Gates: `npm run verify` = `check:copy` **20,451/20,451** + build **818 pages** + `check:i18n`
-  **12,772/12,772**.
+- **Batches 33 to 41 are built, green and committed (2026-11-17), not pushed.** The build has
+  **838 pages** and **834 sitemap URLs**. The whole Rutinas block is closed: fuerza 9/9, volumen 29/29,
+  definición 20/20, full body 5/5, deportes 8/8, principiantes 9/9.
+- Gates: `npm run verify` = `check:copy` **20,961/20,961** + build **838 pages** + `check:i18n`
+  **13,082/13,082**.
 - Docs: `odd/tasks/content-library-session.md` (start here next session),
   `odd/tasks/content-pages.md` (per-page checklist + resume),
-  `odd/tasks/content-library-batch-40.md` (the last batch) and `odd/tasks/guides-page-contract.md`
+  `odd/tasks/content-library-batch-41.md` (the last batch) and `odd/tasks/guides-page-contract.md`
   (the page contract and copy gate).
-- **Next 10:** batch 41 is the last Rutinas de deportes row plus the nine Rutinas en Principiantes
-  rows, from `rutina-dieta-baloncesto` to `programa-de-ejercicio-intensivo-para-principiantes`; the
-  brief exists at `odd/tasks/content-library-batch-41.md`.
+- **Next 10:** the Ejercicios de Tríceps block (17 rows) starts at `jalones-barra-recta`; write the
+  batch 42 brief after mapping the first ten sources.
 - **Follow-up:** three hero pairs remain under dHash 7, all from earlier batches: one exact duplicate
   (`remo-polea-sentado` with `superserie-de-espalda-para-terminar-tu-rutina`) and two near pairs at 4
   and 5. A 1280x720 crop of a library hero hashes 1-6 from the original, so writers must open the
