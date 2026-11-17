@@ -761,6 +761,26 @@ const PAGES = [
   ['en', '/en/heavy-load-cutting-routine/'],
   ['es', '/es/rutina-definicion-pesas-cardio/'],
   ['en', '/en/weights-and-cardio-cutting-routine/'],
+  ['es', '/es/rutina-de-definicion-con-series-compuestas/'],
+  ['en', '/en/compound-set-cutting-routine/'],
+  ['es', '/es/como-orientar-tu-rutina-de-pesas-para-perder-grasa/'],
+  ['en', '/en/weight-training-for-fat-loss/'],
+  ['es', '/es/rutinas-de-definicion/'],
+  ['en', '/en/cutting-routines/'],
+  ['es', '/es/rutinas-torso-pierna/'],
+  ['en', '/en/torso-legs-split/'],
+  ['es', '/es/metodo-tabata/'],
+  ['en', '/en/tabata-method/'],
+  ['es', '/es/entrenamiento-perder-grasa/'],
+  ['en', '/en/fat-loss-superset-workout/'],
+  ['es', '/es/entrenamiento-ahorrar-tiempo/'],
+  ['en', '/en/time-saving-workouts/'],
+  ['es', '/es/rutina-de-choque-alta-frecuencia/'],
+  ['en', '/en/high-frequency-shock-routine/'],
+  ['es', '/es/entrenamiento-cien-repeticiones/'],
+  ['en', '/en/hundred-rep-routine/'],
+  ['es', '/es/rutina-definicion-avanzada-3-meses/'],
+  ['en', '/en/advanced-cutting-plan/'],
 ];
 
 // Content routes, keyed by a stable id with the slug each locale publishes. The
@@ -1684,6 +1704,28 @@ const ROUTES = {
     es: '/rutina-definicion-pesas-cardio',
     en: '/weights-and-cardio-cutting-routine',
   },
+  compoundSetCuttingRoutine: {
+    es: '/rutina-de-definicion-con-series-compuestas',
+    en: '/compound-set-cutting-routine',
+  },
+  weightTrainingForFatLoss: {
+    es: '/como-orientar-tu-rutina-de-pesas-para-perder-grasa',
+    en: '/weight-training-for-fat-loss',
+  },
+  cuttingRoutines: { es: '/rutinas-de-definicion', en: '/cutting-routines' },
+  torsoLegsSplit: { es: '/rutinas-torso-pierna', en: '/torso-legs-split' },
+  tabataMethod: { es: '/metodo-tabata', en: '/tabata-method' },
+  fatLossSupersetWorkout: {
+    es: '/entrenamiento-perder-grasa',
+    en: '/fat-loss-superset-workout',
+  },
+  timeSavingWorkouts: { es: '/entrenamiento-ahorrar-tiempo', en: '/time-saving-workouts' },
+  highFrequencyShockRoutine: {
+    es: '/rutina-de-choque-alta-frecuencia',
+    en: '/high-frequency-shock-routine',
+  },
+  hundredRepRoutine: { es: '/entrenamiento-cien-repeticiones', en: '/hundred-rep-routine' },
+  advancedCuttingPlan: { es: '/rutina-definicion-avanzada-3-meses', en: '/advanced-cutting-plan' },
 };
 
 const routeId = (path) => {

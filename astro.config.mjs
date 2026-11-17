@@ -410,6 +410,16 @@ const ROUTE_PAIRS = [
   ['/programa-hormona-crecimiento', '/growth-hormone-program'],
   ['/rutina-definicion-altos-kilajes', '/heavy-load-cutting-routine'],
   ['/rutina-definicion-pesas-cardio', '/weights-and-cardio-cutting-routine'],
+  ['/rutina-de-definicion-con-series-compuestas', '/compound-set-cutting-routine'],
+  ['/como-orientar-tu-rutina-de-pesas-para-perder-grasa', '/weight-training-for-fat-loss'],
+  ['/rutinas-de-definicion', '/cutting-routines'],
+  ['/rutinas-torso-pierna', '/torso-legs-split'],
+  ['/metodo-tabata', '/tabata-method'],
+  ['/entrenamiento-perder-grasa', '/fat-loss-superset-workout'],
+  ['/entrenamiento-ahorrar-tiempo', '/time-saving-workouts'],
+  ['/rutina-de-choque-alta-frecuencia', '/high-frequency-shock-routine'],
+  ['/entrenamiento-cien-repeticiones', '/hundred-rep-routine'],
+  ['/rutina-definicion-avanzada-3-meses', '/advanced-cutting-plan'],
 ];
 
 const pairFor = (pathname) => {
