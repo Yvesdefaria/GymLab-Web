@@ -9,21 +9,21 @@ Last updated: 2026-11-16. Read this first next session.
 
 ## State
 
-- **321 / 792 bilingual pages** (ES 321, EN 321).
-- Blocks: Entrenamiento **272**, Por Músculo **5**, Ejercicios **34**.
-- **321 unique hero paths.** One exact duplicate pair remains from an earlier batch
-  (`remo-polea-sentado` with `superserie-de-espalda-para-terminar-tu-rutina`); the batch 17 to 32
-  duplicates were fixed. See the follow-up in `PLAN.md`.
-- **Batches 30, 31 and 32 are built, green and committed (2026-11-16).** The build has
-  **658 pages** and **654 sitemap URLs**. Abdomen (39/39), Hombro (5/5), Rutinas de Bíceps (7/7) and
-  Pecho (9/9) are closed; Rutinas de Pierna is 3/3 and Pierna has two of nine.
+- **331 / 792 bilingual pages** (ES 331, EN 331).
+- Blocks: Entrenamiento **282**, Por Músculo **5**, Ejercicios **34**.
+- **331 unique hero paths.** One exact duplicate pair remains from an earlier batch
+  (`remo-polea-sentado` with `superserie-de-espalda-para-terminar-tu-rutina`), plus two pre-existing
+  near pairs at dHash 4 and 5; the batch 17 to 33 duplicates were fixed. See `PLAN.md`.
+- **Batch 33 is built, green and committed (2026-11-17).** The build has **678 pages** and **674
+  sitemap URLs**. Abdomen (39/39), Hombro (5/5), Rutinas de Bíceps (7/7), Pecho (9/9), Pierna (9/9),
+  Rutinas de Pierna (3/3), Rutinas de Tríceps (1/1), Rutinas de Pecho (1/1) and Tríceps (1/1) are
+  closed. Rutinas de Fuerza is 0/9.
 - Five archive rows are settled and must stay out: the FiveStars Fitness congress page (discarded),
   the AEKE S1 Pro page (discarded 2026-11-14), `/velocidad-repeticiones/` (fused into the tempo page,
   2026-11-14) and the two batch 20 fusions (2026-11-15).
 - **Production runs batch 32 (pushed 2026-11-16).** Batches 19 to 32 are live; `origin/main` is at
-  the push and nothing is pending locally. The deploy was verified against the live sitemap
-  (**654 URLs**, 1,962 alternates) and four new routes answering 200.
-- Batch records: `odd/tasks/content-library-batch-30.md`, `-31.md` and `-32.md`.
+  the batch 32 docs push. Batch 33 is committed locally and not pushed.
+- Batch records: `odd/tasks/content-library-batch-31.md`, `-32.md` and `-33.md`.
 
 ## Gates
 
@@ -91,17 +91,15 @@ Start the dev server with `npm run dev` for local review.
 
 ## Next 10
 
-1. Take the next unchecked row in `content-pages.md`. Seven Pierna rows are left:
-   `/rutina-volumen-pierna-completa/`, `/rutina-de-piernas-de-doble-division/`, `/rutinas-pierna/`,
-   `/entrenamiento-de-gemelos-diferente/`, `/entrenar-femorales/`, `/rutinas-cuadriceps-objetivos/`
-   and `/rutina-de-piernas-con-sentadillas-de-la-vieja-escuela/`. After those, the three loose
-   routine rows (`Rutinas de Tríceps`, `Rutinas de Pecho`, `Tríceps`).
+1. Batch 34 is the nine Rutinas de Fuerza rows plus `entrenamiento-aleman`: the brief already exists
+   at `odd/tasks/content-library-batch-34.md`. After it, batch 35 takes the next ten Rutinas de
+   Volumen rows from `/rutina-de-tiron-empujon/` to
+   `/rutina-con-superseries-musculos-antagonistas/`.
 2. Keep the same copy, unique-hero and gate flow.
 3. Before publishing another photo from Shixart1985, Nenad Stojkovic, Miguel Angel Omaña Rojas, the
    InjuryMap family, PTPioneer, KeepActive Australia, Everkinetic or Wellcome Collection, compare the
-   Commons file title and the dHash against the 321 existing heroes. Those sets have already produced
-   four collisions, and batches 29 to 32 hit ten more exact duplicates among cable, squat and curl
-   photos.
+   Commons file title and the dHash against the 331 existing heroes. A crop of a library hero scores
+   1-5 and is a duplicate in practice, not only at 0.
 4. The scaling architecture is deferred to PLAN Phase 7; do not implement it during content batches.
 
 ## Page contract (short)
@@ -151,6 +149,26 @@ Start the dev server with `npm run dev` for local review.
   documented in the batch 22 record.
 - **Push is the owner's call:** satisfied on 2026-11-16. Batches 19 to 32 were pushed from
   `6293327` to `f7f8de1`; production serves 658 pages.
+
+## Session close (2026-11-17, batch 33)
+
+- Batch 33 closed Pierna and the three loose routine rows: 10 pairs, 321 → **331 / 792**. Pierna 9/9,
+  Rutinas de Pierna 3/3, Rutinas de Tríceps 1/1, Rutinas de Pecho 1/1 and Tríceps 1/1.
+- Writers: A took pages 1-5 (leg mass, double split, hub, calves, hamstrings), B pages 6-10 (quad
+  templates, old-school squats, triceps mass, rest-pause chest, triceps shock), disjoint files. Both
+  returned green; the parent registered the routes, ran the gates, the 390 px pass and the commits.
+- Gates: `check:copy` **16,881/16,881**, build **678 pages**, `check:i18n` **10,602/10,602**, sitemap
+  **674 URLs** with 2,022 alternates. 156 internal links, **0 broken**; all 20 pages clean at 390 px.
+- Heroes: 331 files. The only dHash pairs under distance 7 are the three pre-existing ones
+  (`remo-polea-sentado` 0, `como-respirar-mientras-entrenamos` 4, `pullover-barra` 5); every new hero
+  is 13 or more away from anything else.
+- Commits: pages `87a98f4`, `1426ae9`, `9d7bca5`, `06780fc`, `077c6ff`, `a3eae69`, `9d4afa8`,
+  `737def5`, `1694731`, `4830d3c`; routes `3f34e3a`.
+- **Gotcha:** `check:copy` catches an exact hero path duplicate, not a crop. A 1280x720 crop of a
+  library photo hashes 1-5 from the original, so the dHash distance must be read, not only the zero.
+- **Gotcha:** Commons has no usable free photo of a leg extension machine or a gym parallel-bar dip;
+  pages 6 and 10 use equipment fallbacks with an alt that names only what is visible.
+- Next session starts at `/rutinas-de-fuerza/`; the batch 34 brief is already written.
 
 ## Session close (2026-11-16, push of batches 19-32)
 

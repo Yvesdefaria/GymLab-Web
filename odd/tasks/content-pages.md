@@ -9,23 +9,24 @@ Legend: `ES` = Spanish published, `EN` = English published.
 
 ## Progress
 
-- **Built: 321 / 792** (ES 321, EN 321).
-- Last batch: batch 32 closed Pecho and opened the leg and calf blocks;
-  321 pages built.
+- **Built: 331 / 792** (ES 331, EN 331).
+- Last batch: batch 33 closed Pierna and the three loose routine rows;
+  331 pages built.
 - Blocks finished end to end: Entrenamiento del Hombro (9), Físicos de leyenda (12), Entrenamiento de
   la Espalda (10), Rutinas de Espalda (4), Espalda (1), Ejercicios de Espalda (31), Ejercicio
-  Cardiovascular (32), Entrenamiento de las Piernas (18) and Entrenamiento del Pecho (6). Their
+  Cardiovascular (32), Entrenamiento de las Piernas (18), Entrenamiento del Pecho (6), Rutinas de
+  Pierna (3), Pierna (9), Rutinas de Tríceps (1), Rutinas de Pecho (1) and Tríceps (1). Their
   headings are marked `— COMPLETO`; partial blocks show their ratio.
 
 | Block | Articles | Built |
 | --- | ---: | ---: |
-| Entrenamiento | 222 | 272 |
+| Entrenamiento | 222 | 282 |
 | Por Músculo | 80 | 5 |
 | Rutinas | 80 | 0 |
 | Ejercicios | 196 | 34 |
 | Nutrición | 191 | 0 |
 | Mujer Fitness | 23 | 0 |
-| **Total** | **792** | **321** |
+| **Total** | **792** | **331** |
 
 ## Copy gate (mandatory before ticking ES/EN)
 
@@ -572,17 +573,17 @@ Legend: `ES` = Spanish published, `EN` = English published.
 - [x] ES · [x] EN — `/rutina-de-especializacion-para-las-piernas/` — Rutina de especialización para las piernas
 - [x] ES · [x] EN — `/revienta-tus-piernas-en-15-minutos/` — Entrena tus piernas en 15 minutos
 
-### Pierna (9)
+### Pierna (9) — COMPLETO
 
 - [x] ES · [x] EN — `/rutina-de-gemelos-sin-maquinas/` — Rutina de gemelos sin máquinas
 - [x] ES · [x] EN — `/rutinas-de-gemelos-para-pantorrillas-esteticas-tonificadas/` — Rutinas de gemelos \| Pantorrillas más estéticas y tonificadas
-- [ ] ES · [ ] EN — `/rutina-volumen-pierna-completa/` — Rutina de pierna completa para volumen muscular \| 100% Efectiva
-- [ ] ES · [ ] EN — `/rutina-de-piernas-de-doble-division/` — Rutina de piernas de doble división \| ¡Doble frecuencia!
-- [ ] ES · [ ] EN — `/rutinas-pierna/` — Rutinas y entrenamiento de las Piernas
-- [ ] ES · [ ] EN — `/entrenamiento-de-gemelos-diferente/` — Entrenamiento de gemelos diferente
-- [ ] ES · [ ] EN — `/entrenar-femorales/` — Entrena al máximo tus femorales
-- [ ] ES · [ ] EN — `/rutinas-cuadriceps-objetivos/` — Rutinas de cuádriceps para objetivos especificos
-- [ ] ES · [ ] EN — `/rutina-de-piernas-con-sentadillas-de-la-vieja-escuela/` — Rutina de piernas con sentadillas de la vieja escuela
+- [x] ES · [x] EN — `/rutina-volumen-pierna-completa/` — Rutina de pierna completa para volumen muscular \| 100% Efectiva
+- [x] ES · [x] EN — `/rutina-de-piernas-de-doble-division/` — Rutina de piernas de doble división \| ¡Doble frecuencia!
+- [x] ES · [x] EN — `/rutinas-pierna/` — Rutinas y entrenamiento de las Piernas
+- [x] ES · [x] EN — `/entrenamiento-de-gemelos-diferente/` — Entrenamiento de gemelos diferente
+- [x] ES · [x] EN — `/entrenar-femorales/` — Entrena al máximo tus femorales
+- [x] ES · [x] EN — `/rutinas-cuadriceps-objetivos/` — Rutinas de cuádriceps para objetivos especificos
+- [x] ES · [x] EN — `/rutina-de-piernas-con-sentadillas-de-la-vieja-escuela/` — Rutina de piernas con sentadillas de la vieja escuela
 
 ### Rutinas de Espalda (4) — COMPLETO
 
@@ -591,17 +592,17 @@ Legend: `ES` = Spanish published, `EN` = English published.
 - [x] ES · [x] EN — `/como-entrenar-la-espalda-en-quince-minutos/` — Como entrenar la espalda en quince minutos
 - [x] ES · [x] EN — `/rutina-de-espalda-para-dorsales-mas-grandes-y-musculados/` — Rutina de espalda para dorsales más grandes y musculados
 
-### Rutinas de Tríceps (1)
+### Rutinas de Tríceps (1) — COMPLETO
 
-- [ ] ES · [ ] EN — `/rutina-de-volumen-para-triceps-como-herraduras/` — Rutina de volumen para tríceps como herraduras
+- [x] ES · [x] EN — `/rutina-de-volumen-para-triceps-como-herraduras/` — Rutina de volumen para tríceps como herraduras
 
-### Rutinas de Pecho (1)
+### Rutinas de Pecho (1) — COMPLETO
 
-- [ ] ES · [ ] EN — `/rutina-de-pecho-de-dos-dias-a-la-semana-con-tecnica-descanso-pausa/` — Rutina de pecho de dos días a la semana con descanso-pausa
+- [x] ES · [x] EN — `/rutina-de-pecho-de-dos-dias-a-la-semana-con-tecnica-descanso-pausa/` — Rutina de pecho de dos días a la semana con descanso-pausa
 
-### Tríceps (1)
+### Tríceps (1) — COMPLETO
 
-- [ ] ES · [ ] EN — `/rutina-para-sorprender-a-tus-triceps/` — Rutina para sorprender a tus tríceps
+- [x] ES · [x] EN — `/rutina-para-sorprender-a-tus-triceps/` — Rutina para sorprender a tus tríceps
 
 ### Espalda (1) — COMPLETO
 
