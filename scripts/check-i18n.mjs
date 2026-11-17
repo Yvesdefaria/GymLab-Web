@@ -801,6 +801,26 @@ const PAGES = [
   ['en', '/en/heavy-day-full-body-routine/'],
   ['es', '/es/rutina-de-cuerpo-completo-para-recuperar-la-forma/'],
   ['en', '/en/three-day-full-body-return/'],
+  ['es', '/es/rutina-masa-muscular-cuerpo-completo/'],
+  ['en', '/en/full-body-mass-routine/'],
+  ['es', '/es/rutina-sobreentrenamiento-controlado/'],
+  ['en', '/en/controlled-overtraining-routine/'],
+  ['es', '/es/rutinas-cuerpo-completo/'],
+  ['en', '/en/full-body-routines/'],
+  ['es', '/es/rutina-de-entrenamiento-para-tenis-padel/'],
+  ['en', '/en/tennis-padel-training/'],
+  ['es', '/es/rutina-futbol/'],
+  ['en', '/en/football-strength-routine/'],
+  ['es', '/es/entrenamiento-de-fuerza-para-boxeadores-alcanza-tu-maximo-potencial/'],
+  ['en', '/en/boxing-strength-training/'],
+  ['es', '/es/rutina-pesas-ciclismo/'],
+  ['en', '/en/cycling-strength-training/'],
+  ['es', '/es/rutina-pesas-corredores-atletismo/'],
+  ['en', '/en/running-strength-training/'],
+  ['es', '/es/rutina-dieta-natacion/'],
+  ['en', '/en/swimming-strength-and-diet/'],
+  ['es', '/es/rutinas-deportes/'],
+  ['en', '/en/sport-routines/'],
 ];
 
 // Content routes, keyed by a stable id with the slug each locale publishes. The
@@ -1774,6 +1794,28 @@ const ROUTES = {
     es: '/rutina-de-cuerpo-completo-para-recuperar-la-forma',
     en: '/three-day-full-body-return',
   },
+  fullBodyMassRoutine: { es: '/rutina-masa-muscular-cuerpo-completo', en: '/full-body-mass-routine' },
+  controlledOvertrainingRoutine: {
+    es: '/rutina-sobreentrenamiento-controlado',
+    en: '/controlled-overtraining-routine',
+  },
+  fullBodyRoutines: { es: '/rutinas-cuerpo-completo', en: '/full-body-routines' },
+  tennisPadelTraining: {
+    es: '/rutina-de-entrenamiento-para-tenis-padel',
+    en: '/tennis-padel-training',
+  },
+  footballStrengthRoutine: { es: '/rutina-futbol', en: '/football-strength-routine' },
+  boxingStrengthTraining: {
+    es: '/entrenamiento-de-fuerza-para-boxeadores-alcanza-tu-maximo-potencial',
+    en: '/boxing-strength-training',
+  },
+  cyclingStrengthTraining: { es: '/rutina-pesas-ciclismo', en: '/cycling-strength-training' },
+  runningStrengthTraining: {
+    es: '/rutina-pesas-corredores-atletismo',
+    en: '/running-strength-training',
+  },
+  swimmingStrengthAndDiet: { es: '/rutina-dieta-natacion', en: '/swimming-strength-and-diet' },
+  sportRoutines: { es: '/rutinas-deportes', en: '/sport-routines' },
 };
 
 const routeId = (path) => {

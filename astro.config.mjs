@@ -430,6 +430,16 @@ const ROUTE_PAIRS = [
   ['/rutina-de-series-descendentes', '/drop-set-routine'],
   ['/rutina-full-body-dias-pesados', '/heavy-day-full-body-routine'],
   ['/rutina-de-cuerpo-completo-para-recuperar-la-forma', '/three-day-full-body-return'],
+  ['/rutina-masa-muscular-cuerpo-completo', '/full-body-mass-routine'],
+  ['/rutina-sobreentrenamiento-controlado', '/controlled-overtraining-routine'],
+  ['/rutinas-cuerpo-completo', '/full-body-routines'],
+  ['/rutina-de-entrenamiento-para-tenis-padel', '/tennis-padel-training'],
+  ['/rutina-futbol', '/football-strength-routine'],
+  ['/entrenamiento-de-fuerza-para-boxeadores-alcanza-tu-maximo-potencial', '/boxing-strength-training'],
+  ['/rutina-pesas-ciclismo', '/cycling-strength-training'],
+  ['/rutina-pesas-corredores-atletismo', '/running-strength-training'],
+  ['/rutina-dieta-natacion', '/swimming-strength-and-diet'],
+  ['/rutinas-deportes', '/sport-routines'],
 ];
 
 const pairFor = (pathname) => {
