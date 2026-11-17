@@ -19,21 +19,23 @@ Last updated: 2026-11-16.
 - The landing, the three calculators, the 404 and the legal pages all ship in both locales.
 - Measurement and the SQL recipe: see "Reading analytics" below and `COMPLETED.md` Appendix B.
 
-## Content library — 381 / 792 (2026-11-17)
+## Content library — 391 / 792 (2026-11-17)
 
-- **381 bilingual pages** (ES 381, EN 381), **381 unique hero paths**. Blocks: Entrenamiento 332,
-  Por Músculo 5, Ejercicios 34.
-- **Batches 33 to 38 are built, green and committed (2026-11-17), not pushed.** The build has
-  **778 pages** and **774 sitemap URLs**. Rutinas de Volumen is closed at 29/29; Rutinas de Definición
-  is 12/20.
-- Gates: `npm run verify` = `check:copy` **19,431/19,431** + build **778 pages** + `check:i18n`
-  **12,152/12,152**.
+- **391 bilingual pages** (ES 391, EN 391), **391 unique hero paths**. By archive section:
+  Entrenamiento 217/222 (five rows settled), Por Músculo 80/80, Rutinas 60/80, Ejercicios 34/196,
+  Nutrición 0/191, Mujer Fitness 0/23. Publishable total: **787**.
+- **Batches 33 to 39 are built, green and committed (2026-11-17), not pushed.** The build has
+  **798 pages** and **794 sitemap URLs**. Rutinas de Volumen is closed at 29/29, Rutinas de Definición
+  at 20/20; Rutinas full body is 2/5.
+- Gates: `npm run verify` = `check:copy` **19,941/19,941** + build **798 pages** + `check:i18n`
+  **12,462/12,462**.
 - Docs: `odd/tasks/content-library-session.md` (start here next session),
   `odd/tasks/content-pages.md` (per-page checklist + resume),
-  `odd/tasks/content-library-batch-38.md` (the last batch) and `odd/tasks/guides-page-contract.md`
+  `odd/tasks/content-library-batch-39.md` (the last batch) and `odd/tasks/guides-page-contract.md`
   (the page contract and copy gate).
-- **Next 10:** batch 39 is the last eight Rutinas de Definición rows plus the first two Rutinas Full
-  Body rows, from `entrenamiento-espartano` to `rutina-full-body-dias-pesados`.
+- **Next 10:** batch 40 is the last three Rutinas full body rows plus the first seven Rutinas de
+  deportes rows, from `rutina-masa-muscular-cuerpo-completo` to `rutinas-deportes`; the brief exists at
+  `odd/tasks/content-library-batch-40.md`.
 - **Follow-up:** three hero pairs remain under dHash 7, all from earlier batches: one exact duplicate
   (`remo-polea-sentado` with `superserie-de-espalda-para-terminar-tu-rutina`) and two near pairs at 4
   and 5. A 1280x720 crop of a library hero hashes 1-6 from the original, so writers must open the

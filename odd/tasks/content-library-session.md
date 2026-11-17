@@ -9,19 +9,21 @@ Last updated: 2026-11-16. Read this first next session.
 
 ## State
 
-- **381 / 792 bilingual pages** (ES 381, EN 381).
-- Blocks: Entrenamiento **332**, Por Músculo **5**, Ejercicios **34**.
-- **381 unique hero paths.** One exact duplicate pair remains from an earlier batch
+- **391 / 792 bilingual pages** (ES 391, EN 391).
+- Blocks by archive section: Entrenamiento **217/222** (the five missing rows are settled: two
+  descartadas and three fusionadas), Por Músculo **80/80**, Rutinas **60/80**, Ejercicios **34/196**,
+  Nutrición 0/191, Mujer Fitness 0/23. The publishable total is 787.
+- **391 unique hero paths.** One exact duplicate pair remains from an earlier batch
   (`remo-polea-sentado` with `superserie-de-espalda-para-terminar-tu-rutina`), plus two pre-existing
-  near pairs at dHash 4 and 5; the batch 17 to 38 duplicates were fixed. See `PLAN.md`.
-- **Batch 38 is built, green and committed (2026-11-17).** The build has **778 pages** and **774
-  sitemap URLs**. Rutinas de Volumen is closed at **29/29**; Rutinas de Definición is 12/20.
+  near pairs at dHash 4 and 5; the batch 17 to 39 duplicates were fixed. See `PLAN.md`.
+- **Batch 39 is built, green and committed (2026-11-17).** The build has **798 pages** and **794
+  sitemap URLs**. Rutinas de Definición is closed at **20/20**; Rutinas full body is 2/5.
 - Five archive rows are settled and must stay out: the FiveStars Fitness congress page (discarded),
   the AEKE S1 Pro page (discarded 2026-11-14), `/velocidad-repeticiones/` (fused into the tempo page,
   2026-11-14) and the two batch 20 fusions (2026-11-15).
 - **Production runs batch 32 (pushed 2026-11-16).** Batches 19 to 32 are live; `origin/main` is at
-  the batch 32 docs push. Batches 33 to 38 are committed locally and not pushed.
-- Batch records: `odd/tasks/content-library-batch-36.md`, `-37.md` and `-38.md`.
+  the batch 32 docs push. Batches 33 to 39 are committed locally and not pushed.
+- Batch records: `odd/tasks/content-library-batch-37.md`, `-38.md` and `-39.md`.
 
 ## Gates
 
@@ -89,9 +91,10 @@ Start the dev server with `npm run dev` for local review.
 
 ## Next 10
 
-1. Batch 39 is the last eight Rutinas de Definición rows, from `/entrenamiento-espartano/` to
-   `/rutina-de-series-descendentes/`, plus the first two Rutinas Full Body rows. Write the brief after
-   mapping those sources; Rutinas de Definición closes at 20/20.
+1. Batch 40 is the last three Rutinas full body rows plus the first seven Rutinas de deportes rows,
+   from `/rutina-masa-muscular-cuerpo-completo/` to `/rutinas-deportes/`; the brief already exists at
+   `odd/tasks/content-library-batch-40.md`. After it, batch 41 takes the last sport row and the nine
+   beginner rows.
 2. Keep the same copy, unique-hero and gate flow.
 3. Before publishing another photo from Shixart1985, Nenad Stojkovic, Miguel Angel Omaña Rojas, the
    InjuryMap family, PTPioneer, KeepActive Australia, Everkinetic or Wellcome Collection, compare the
@@ -146,6 +149,23 @@ Start the dev server with `npm run dev` for local review.
   documented in the batch 22 record.
 - **Push is the owner's call:** satisfied on 2026-11-16. Batches 19 to 32 were pushed from
   `6293327` to `f7f8de1`; production serves 658 pages.
+
+## Session close (2026-11-17, batch 39)
+
+- Batch 39 closed Rutinas de Definición and opened Rutinas full body: 381 → **391 / 792**.
+  Definition **20/20**, Full Body 2/5.
+- Writers: A pages 1-5, B pages 6-10, disjoint files. The parent registered routes, converted four
+  pages' in-cell asterisks to words, verified 140 page/width pairs, ran the gates and committed.
+- Gates: `check:copy` **19,941/19,941**, build **798 pages**, `check:i18n` **12,462/12,462**, sitemap
+  **794 URLs** with 2,382 alternates. 112 internal links, **0 broken**; no clipped cell from 360 to
+  1280.
+- Heroes: 391 files; the only dHash pairs under 7 are the three pre-existing ones. Two candidates at
+  distance 7 and 13 were the same photographs as library heroes.
+- Commits: pages `1b85c60`, `a0a65cd`, `252ed16`, `0a92dc7`, `87db291`, `56f6334`, `6ebc2ed`,
+  `3795b33`, `fc85bac`, `ebc4a54`; routes `8c0182f`.
+- **Gotcha:** the gate does not catch a footnote marker inside a table cell; `15\*` plus a blockquote
+  is a rendering defect the structural pass must find.
+- Next session starts at `/rutina-masa-muscular-cuerpo-completo/`; the batch 40 brief is written.
 
 ## Session close (2026-11-17, batch 38)
 

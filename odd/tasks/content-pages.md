@@ -9,9 +9,9 @@ Legend: `ES` = Spanish published, `EN` = English published.
 
 ## Progress
 
-- **Built: 381 / 792** (ES 381, EN 381).
-- Last batch: batch 38 took Rutinas de Definición to 12 of 20;
-  381 pages built.
+- **Built: 391 / 792** (ES 391, EN 391).
+- Last batch: batch 39 closed Rutinas de Definición and opened Full Body;
+  391 pages built.
 - Blocks finished end to end: Entrenamiento del Hombro (9), Físicos de leyenda (12), Entrenamiento de
   la Espalda (10), Rutinas de Espalda (4), Espalda (1), Ejercicios de Espalda (31), Ejercicio
   Cardiovascular (32), Entrenamiento de las Piernas (18), Entrenamiento del Pecho (6), Rutinas de
@@ -21,13 +21,17 @@ Legend: `ES` = Spanish published, `EN` = English published.
 
 | Block | Articles | Built |
 | --- | ---: | ---: |
-| Entrenamiento | 222 | 332 |
-| Por Músculo | 80 | 5 |
-| Rutinas | 80 | 0 |
+| Entrenamiento | 222 | 217 |
+| Por Músculo | 80 | 80 |
+| Rutinas | 80 | 60 |
 | Ejercicios | 196 | 34 |
 | Nutrición | 191 | 0 |
 | Mujer Fitness | 23 | 0 |
-| **Total** | **792** | **381** |
+| **Total** | **792** | **391** |
+
+The Built column counts the archive block of each page, not the frontmatter `block` (every guide ships
+with `block: "Entrenamiento"` for the site taxonomy). Five Entrenamiento rows are settled and will
+never publish: two DESCARTADA and three FUSIONADA, so the publishable total is **787**.
 
 ## Copy gate (mandatory before ticking ES/EN)
 
@@ -655,7 +659,7 @@ Legend: `ES` = Spanish published, `EN` = English published.
 - [x] ES · [x] EN — `/entrenamiento-de-hipertrofia-hst/` — Rutina de entrenamiento HST ✔ Puro Músculo!!
 - [x] ES · [x] EN — `/programa-hormona-crecimiento/` — Programa de aumento de hormona del crecimiento
 
-### Rutinas de Definición (20)
+### Rutinas de Definición (20) — COMPLETO
 
 - [x] ES · [x] EN — `/rutina-definicion-altos-kilajes/` — Rutina de definición de altos kilajes y cardio
 - [x] ES · [x] EN — `/rutina-definicion-pesas-cardio/` — Rutina de definición de pesas y cardio \| La mejor de 2025
@@ -669,19 +673,19 @@ Legend: `ES` = Spanish published, `EN` = English published.
 - [x] ES · [x] EN — `/rutina-de-choque-alta-frecuencia/` — Rutina de choque tirón-empujon y alta frecuencia
 - [x] ES · [x] EN — `/entrenamiento-cien-repeticiones/` — Rutina de las 100 repeticiones
 - [x] ES · [x] EN — `/rutina-definicion-avanzada-3-meses/` — Rutina de Definición Avanzada \| Efectiva 100% ©
-- [ ] ES · [ ] EN — `/entrenamiento-espartano/` — Entrenamiento Espartano, Rutina y Dieta solo para Guerreros
-- [ ] ES · [ ] EN — `/ponte-en-forma-en-28-dias/` — Rutina de puesta en forma de 28 días
-- [ ] ES · [ ] EN — `/rutina-definicion-ectomorfos/` — Rutina para definición (volumen para ectomorfos)
-- [ ] ES · [ ] EN — `/rutina-quema-grasa-sin-hacer-aerobicos/` — Rutina para quemar grasa sin hacer aeróbicos
-- [ ] ES · [ ] EN — `/rutinas-definicion-grupos-musculares/` — Rutinas de definición por grupos musculares
-- [ ] ES · [ ] EN — `/rutina-quemar-grasa-vacaciones/` — Rutina para quemar grasa en vacaciones
-- [ ] ES · [ ] EN — `/definicion-muscular-seis-dias/` — Rutina de definición muscular de seis días
-- [ ] ES · [ ] EN — `/rutina-de-series-descendentes/` — Rutina de definición con Series Descendentes
+- [x] ES · [x] EN — `/entrenamiento-espartano/` — Entrenamiento Espartano, Rutina y Dieta solo para Guerreros
+- [x] ES · [x] EN — `/ponte-en-forma-en-28-dias/` — Rutina de puesta en forma de 28 días
+- [x] ES · [x] EN — `/rutina-definicion-ectomorfos/` — Rutina para definición (volumen para ectomorfos)
+- [x] ES · [x] EN — `/rutina-quema-grasa-sin-hacer-aerobicos/` — Rutina para quemar grasa sin hacer aeróbicos
+- [x] ES · [x] EN — `/rutinas-definicion-grupos-musculares/` — Rutinas de definición por grupos musculares
+- [x] ES · [x] EN — `/rutina-quemar-grasa-vacaciones/` — Rutina para quemar grasa en vacaciones
+- [x] ES · [x] EN — `/definicion-muscular-seis-dias/` — Rutina de definición muscular de seis días
+- [x] ES · [x] EN — `/rutina-de-series-descendentes/` — Rutina de definición con Series Descendentes
 
 ### Rutinas Full Body o Cuerpo completo (5)
 
-- [ ] ES · [ ] EN — `/rutina-full-body-dias-pesados/` — Rutina avanzada full-body con días pesados
-- [ ] ES · [ ] EN — `/rutina-de-cuerpo-completo-para-recuperar-la-forma/` — Rutina de cuerpo completo de 3 días a la semana \| Vuelta al GYM
+- [x] ES · [x] EN — `/rutina-full-body-dias-pesados/` — Rutina avanzada full-body con días pesados
+- [x] ES · [x] EN — `/rutina-de-cuerpo-completo-para-recuperar-la-forma/` — Rutina de cuerpo completo de 3 días a la semana \| Vuelta al GYM
 - [ ] ES · [ ] EN — `/rutina-masa-muscular-cuerpo-completo/` — Rutina de Cuerpo Entero Avanzada \| ¡Gana músculo!
 - [ ] ES · [ ] EN — `/rutina-sobreentrenamiento-controlado/` — Rutina de Sobreentrenamiento Controlado
 - [ ] ES · [ ] EN — `/rutinas-cuerpo-completo/` — Rutinas de cuerpo completo \| Beneficios y consejos TOP
