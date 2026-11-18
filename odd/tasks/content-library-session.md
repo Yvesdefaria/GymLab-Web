@@ -76,8 +76,8 @@ library and breaks every Python process that imports Pillow.
   own files with a grep and report, never fix them.
 - **Dev server.** A long render loop can fail transiently while Astro recompiles; re-run before chasing
   a layout bug.
-- **Repo state.** 150 commits are local and unpushed; production runs batch 32. The 18 untracked files
-  (six stray images in the root, twelve mockups) predate this work.
+- **Repo state.** The local branch is more than 150 commits ahead of origin; production runs batch 32.
+  The 18 untracked files (six stray images in the root, twelve mockups) predate this work.
 
 ## What is built
 
@@ -86,6 +86,9 @@ The per-page record in `content-pages.md` is authoritative; this section summari
 (217/222 with five settled rows), and the Ejercicios block is at **64/196**: Espalda complete, Tríceps
 complete at 17/17, the four catalogue hubs live, and Pecho, Femoral, Hombro, Bíceps, Cuádriceps,
 Gemelo, Trapecios and Básicos in progress.
+
+The list below describes the blocks finished before batch 42; the checklist and the batch records carry
+the current per-page state.
 
 - **Entrenamiento de la Espalda (9):** rutinas, anatomía, elegir dominadas, mancuernas, consejos,
   espalda baja, agarres, cómo ampliar dorsales, mejores jalones para la parte inferior.
@@ -212,7 +215,8 @@ Gemelo, Trapecios and Básicos in progress.
   strings wrap at every width; a week table in the twelve-week programme and six hub week tables became
   `text-table`; and the reverse-grip pushdown hero was replaced with the matching Everkinetic
   illustration (`f1135fc`).
-- **150 commits are local and unpushed**; production runs batch 32. The push is the owner's call.
+- **More than 150 commits are local and unpushed**; production runs batch 32. The push is the owner's
+  call.
 - Next session starts at `/femoral-maquina-sentado-2/`; the Rutinas block is finished and the
   Ejercicios block is the only content block left besides Nutrición and Mujer Fitness.
 
