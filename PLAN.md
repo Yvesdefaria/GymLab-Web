@@ -19,21 +19,21 @@ Last updated: 2026-11-16.
 - The landing, the three calculators, the 404 and the legal pages all ship in both locales.
 - Measurement and the SQL recipe: see "Reading analytics" below and `COMPLETED.md` Appendix B.
 
-## Content library — 431 / 792 (2026-11-18)
+## Content library — 441 / 792 (2026-11-18)
 
-- **431 bilingual pages** (ES 431, EN 431), **431 unique hero paths**. By archive section:
-  Entrenamiento 217/222 (five rows settled), Por Músculo 80/80, **Rutinas 80/80**, Ejercicios 54/196,
+- **441 bilingual pages** (ES 441, EN 441), **441 unique hero paths**. By archive section:
+  Entrenamiento 217/222 (five rows settled), Por Músculo 80/80, **Rutinas 80/80**, Ejercicios 64/196,
   Nutrición 0/191, Mujer Fitness 0/23. Publishable total: **787**.
-- **Batches 33 to 43 are built, green and committed, not pushed.** The build has **878 pages** and
-  **874 sitemap URLs**. Tríceps is closed at 17/17; the first three catalogue hubs are live.
-- Gates: `npm run verify` = `check:copy` **21,981/21,981** + build **878 pages** + `check:i18n`
-  **13,702/13,702**.
+- **Batches 33 to 44 are built, green and committed, not pushed.** The build has **898 pages** and
+  **894 sitemap URLs**. The four exercise catalogue hubs are live; Ejercicios is 64/196.
+- Gates: `npm run verify` = `check:copy` **22,491/22,491** + build **898 pages** + `check:i18n`
+  **14,012/14,012**.
 - Docs: `odd/tasks/content-library-session.md` (start here next session),
   `odd/tasks/content-pages.md` (per-page checklist + resume),
-  `odd/tasks/content-library-batch-43.md` (the last batch) and `odd/tasks/guides-page-contract.md`
+  `odd/tasks/content-library-batch-44.md` (the last batch) and `odd/tasks/guides-page-contract.md`
   (the page contract and copy gate).
-- **Next 10:** batch 44 is the four remaining catalogue rows plus the first six Femoral y Glúteos
-  rows; the brief exists at `odd/tasks/content-library-batch-44.md`.
+- **Next 10:** batch 45 continues Ejercicios de Femoral y Glúteos at `femoral-maquina-sentado-2` and
+  then opens Ejercicios de Pecho at `fondos-pecho`.
 - **Follow-up:** three hero pairs remain under dHash 7, all from earlier batches: one exact duplicate
   (`remo-polea-sentado` with `superserie-de-espalda-para-terminar-tu-rutina`) and two near pairs at 4
   and 5. A 1280x720 crop of a library hero hashes 1-6 from the original, so writers must open the

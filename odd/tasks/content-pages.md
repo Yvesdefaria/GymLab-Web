@@ -9,9 +9,9 @@ Legend: `ES` = Spanish published, `EN` = English published.
 
 ## Progress
 
-- **Built: 431 / 792** (ES 431, EN 431).
-- Last batch: batch 43 closed Tríceps and published the first three exercise hubs;
-  431 pages built.
+- **Built: 441 / 792** (ES 441, EN 441).
+- Last batch: batch 44 published the remaining hubs and opened femoral and glute;
+  441 pages built.
 - Blocks finished end to end: Entrenamiento del Hombro (9), Físicos de leyenda (12), Entrenamiento de
   la Espalda (10), Rutinas de Espalda (4), Espalda (1), Ejercicios de Espalda (31), Ejercicio
   Cardiovascular (32), Entrenamiento de las Piernas (18), Entrenamiento del Pecho (6), Rutinas de
@@ -24,10 +24,10 @@ Legend: `ES` = Spanish published, `EN` = English published.
 | Entrenamiento | 222 | 217 |
 | Por Músculo | 80 | 80 |
 | Rutinas | 80 | 80 |
-| Ejercicios | 196 | 54 |
+| Ejercicios | 196 | 64 |
 | Nutrición | 191 | 0 |
 | Mujer Fitness | 23 | 0 |
-| **Total** | **792** | **431** |
+| **Total** | **792** | **441** |
 
 The Built column counts the archive block of each page, not the frontmatter `block` (every guide ships
 with `block: "Entrenamiento"` for the site taxonomy). Five Entrenamiento rows are settled and will
@@ -741,19 +741,19 @@ never publish: two DESCARTADA and three FUSIONADA, so the publishable total is *
 - [x] ES · [x] EN — `/ejercicios-pecho/` — Ejercicios de Pecho \| Los más efectivos y útiles en 2026
 - [x] ES · [x] EN — `/ejercicios-antebrazo/` — Ejercicios de Antebrazo \| Los más efectivos en 2025
 - [x] ES · [x] EN — `/ejercicios-triceps/` — Ejercicios de Tríceps \| Consigue brazos con volumen en 2025
-- [ ] ES · [ ] EN — `/ejercicios-pierna/` — Ejercicios de Piernas \| Mejora tu tren inferior en 2025
-- [ ] ES · [ ] EN — `/ejercicios-biceps/` — Ejercicios de Bíceps \| Selección 2025, efectividad máxima
-- [ ] ES · [ ] EN — `/ejercicios-trapecios/` — Ejercicios de Trapecios \| Los más efectivos en 2025
-- [ ] ES · [ ] EN — `/manguito-rotadores-hombro/` — Ejercicios y Entrenamiento del Rotador del Hombro
+- [x] ES · [x] EN — `/ejercicios-pierna/` — Ejercicios de Piernas \| Mejora tu tren inferior en 2025
+- [x] ES · [x] EN — `/ejercicios-biceps/` — Ejercicios de Bíceps \| Selección 2025, efectividad máxima
+- [x] ES · [x] EN — `/ejercicios-trapecios/` — Ejercicios de Trapecios \| Los más efectivos en 2025
+- [x] ES · [x] EN — `/manguito-rotadores-hombro/` — Ejercicios y Entrenamiento del Rotador del Hombro
 
 ### Ejercicios de Femoral y Gluteos (12)
 
-- [ ] ES · [ ] EN — `/femoral-maquina-tumbado-2/` — Femoral en máquina tumbado \| Curl de piernas
-- [ ] ES · [ ] EN — `/puentes-gluteo-2/` — Puentes para glúteos en suelo \| ¡Tonifica y fortalece!
-- [ ] ES · [ ] EN — `/extension-de-cadera-gluteos/` — Extensión de cadera para glúteos \| 100% Efectivo
-- [ ] ES · [ ] EN — `/sentadilla-hack-inversa/` — ¿Qué es la Sentadilla Hack Inversa? Guía Completa 2026
-- [ ] ES · [ ] EN — `/extensiones-gluteos-polea-2/` — Extensiones de Glúteos en Polea: Técnica y Beneficios
-- [ ] ES · [ ] EN — `/femoral-maquina-de-pie-2/` — Femoral en máquina de pie
+- [x] ES · [x] EN — `/femoral-maquina-tumbado-2/` — Femoral en máquina tumbado \| Curl de piernas
+- [x] ES · [x] EN — `/puentes-gluteo-2/` — Puentes para glúteos en suelo \| ¡Tonifica y fortalece!
+- [x] ES · [x] EN — `/extension-de-cadera-gluteos/` — Extensión de cadera para glúteos \| 100% Efectivo
+- [x] ES · [x] EN — `/sentadilla-hack-inversa/` — ¿Qué es la Sentadilla Hack Inversa? Guía Completa 2026
+- [x] ES · [x] EN — `/extensiones-gluteos-polea-2/` — Extensiones de Glúteos en Polea: Técnica y Beneficios
+- [x] ES · [x] EN — `/femoral-maquina-de-pie-2/` — Femoral en máquina de pie
 - [ ] ES · [ ] EN — `/femoral-maquina-sentado-2/` — Femoral en máquina sentado
 - [ ] ES · [ ] EN — `/abductores-maquina-2/` — Abducción de cadera en máquina \| ¿Es realmente efectivo?
 - [ ] ES · [ ] EN — `/peso-muerto-rumano-mancuernas/` — Peso Muerto Rumano con Mancuernas \| Glúteos e Isquiotibiales

@@ -9,21 +9,21 @@ Last updated: 2026-11-16. Read this first next session.
 
 ## State
 
-- **431 / 792 bilingual pages** (ES 431, EN 431).
+- **441 / 792 bilingual pages** (ES 441, EN 441).
 - Blocks by archive section: Entrenamiento **217/222** (the five missing rows are settled: two
-  descartadas and three fusionadas), Por Músculo **80/80**, Rutinas **80/80**, Ejercicios **54/196**,
+  descartadas and three fusionadas), Por Músculo **80/80**, Rutinas **80/80**, Ejercicios **64/196**,
   Nutrición 0/191, Mujer Fitness 0/23. The publishable total is 787.
-- **431 unique hero paths.** One exact duplicate pair remains from an earlier batch
+- **441 unique hero paths.** One exact duplicate pair remains from an earlier batch
   (`remo-polea-sentado` with `superserie-de-espalda-para-terminar-tu-rutina`), plus two pre-existing
-  near pairs at dHash 4 and 5; the batch 17 to 43 duplicates were fixed. See `PLAN.md`.
-- **Batch 43 is built, green and committed (2026-11-18).** The build has **878 pages** and **874
-  sitemap URLs**. Tríceps is closed at **17/17**; Ejercicios is 54/196.
+  near pairs at dHash 4 and 5; the batch 17 to 44 duplicates were fixed. See `PLAN.md`.
+- **Batch 44 is built, green and committed (2026-11-18).** The build has **898 pages** and **894
+  sitemap URLs**. The four exercise catalogue hubs are live; Ejercicios is 64/196.
 - Five archive rows are settled and must stay out: the FiveStars Fitness congress page (discarded),
   the AEKE S1 Pro page (discarded 2026-11-14), `/velocidad-repeticiones/` (fused into the tempo page,
   2026-11-14) and the two batch 20 fusions (2026-11-15).
 - **Production runs batch 32 (pushed 2026-11-16).** Batches 19 to 32 are live; `origin/main` is at
-  the batch 32 docs push. Batches 33 to 43 are committed locally and not pushed.
-- Batch records: `odd/tasks/content-library-batch-41.md`, `-42.md` and `-43.md`.
+  the batch 32 docs push. Batches 33 to 44 are committed locally and not pushed.
+- Batch records: `odd/tasks/content-library-batch-42.md`, `-43.md` and `-44.md`.
 
 ## Gates
 
@@ -91,9 +91,11 @@ Start the dev server with `npm run dev` for local review.
 
 ## Next 10
 
-1. Batch 44 is the four remaining catalogue rows (`ejercicios-pierna`, `ejercicios-biceps`,
-   `ejercicios-trapecios`, `manguito-rotadores-hombro`) plus the first six Ejercicios de Femoral y
-   Glúteos rows; the brief already exists at `odd/tasks/content-library-batch-44.md`.
+1. Ejercicios de Femoral y Glúteos continues at `/femoral-maquina-sentado-2/`, then `abductores-maquina-2`,
+   `peso-muerto-rumano-mancuernas`, `flexion-femoral-acostado-con-mancuerna`,
+   `sentadillas-con-mancuerna-por-encima-de-la-cabeza` and `peso-muerto-rumano`; after those, the
+   Ejercicios de Pecho block starts at `/fondos-pecho/`. Write the batch 45 brief after mapping the ten
+   sources.
 2. Keep the same copy, unique-hero and gate flow.
 3. Before publishing another photo from Shixart1985, Nenad Stojkovic, Miguel Angel Omaña Rojas, the
    InjuryMap family, PTPioneer, KeepActive Australia, Everkinetic or Wellcome Collection, compare the
@@ -148,6 +150,27 @@ Start the dev server with `npm run dev` for local review.
   documented in the batch 22 record.
 - **Push is the owner's call:** satisfied on 2026-11-16. Batches 19 to 32 were pushed from
   `6293327` to `f7f8de1`; production serves 658 pages.
+
+## Session close (2026-11-18, batch 44)
+
+- Batch 44 published the four remaining catalogue hubs and opened femoral and glute: 431 → **441 /
+  792**. Ejercicios **64/196**; Femoral y glúteos 6/12.
+- Writers: A pages 1-5 (pierna, bíceps, trapecios, manguito, curl tumbado), B pages 6-10 (puente,
+  extensión de cadera, hack inversa, polea, curl de pie), disjoint files. The parent converted six hub
+  week tables, registered routes, verified 140 page/width pairs, ran the gates and committed.
+- Gates: `check:copy` **22,491/22,491**, build **898 pages**, `check:i18n` **14,012/14,012**, sitemap
+  **894 URLs** with 2,682 alternates. 112 internal links, **0 broken**; no clipped cell from 360 to
+  1280 after the table fix.
+- Heroes: 441 files; the only dHash pairs under 7 are the three pre-existing ones. Five heroes are
+  Everkinetic illustrations; four first-choice photos were exact duplicates of existing heroes.
+- Commits: pages `2f4b301`, `09555c6`, `f060d42`, `0994b51`, `a757fde`, `44bc805`, `7277ed4`,
+  `0a178a1`, `4f3f653`, `58147cb`; routes `9f028c7`.
+- **Gotcha:** hub week tables with a long middle column clip at 360 px in the routine grid; schedules
+  are `text-table`, including inside hubs.
+- **Gotcha:** Wikimedia renders SVGs at any width through
+  `thumb.wikimedia.org/.../thumb/.../<W>px-<Name>.svg.png`; 1280 works and 1600 returns 400 on tall
+  files.
+- Next session starts at `/femoral-maquina-sentado-2/`; batch 45 continues femoral and glute.
 
 ## Session close (2026-11-18, batch 43)
 

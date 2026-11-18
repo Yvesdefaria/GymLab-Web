@@ -221,3 +221,27 @@ npm run check:copy   # 441 pages expected
 npm run build        # 898 pages expected
 npm run check:i18n   # 894 sitemap URLs
 ```
+
+## Result (2026-11-18)
+
+- 10 bilingual pairs, 20 files, 10 heroes. Library: 431 → **441 / 792**. Ejercicios **64/196**;
+  Femoral y glúteos 6/12. All four exercise catalogue hubs are live.
+- Gates: `check:copy` **22,491/22,491**, build **898 pages**, `check:i18n` **14,012/14,012**, sitemap
+  **894 URLs** with 2,682 alternates.
+- Structural checks: 112 internal links, **0 broken**; zero em dashes; no BOM; zero clipped cells
+  across 140 page/width pairs after one fix. 441 heroes: the only dHash pairs under distance 7 are the
+  three pre-existing ones.
+- **Corrections made:** the leg hub is organised by function with doses and a weekly template; the
+  biceps hub puts the long head with the shoulder extended and the short head with it flexed; traps are
+  elevation, upward rotation and retraction with caveats on the behind-neck shrug and narrow upright
+  row; the cuff gained 45- and 90-degree external rotation, the full-can raise and lost its prehab
+  guarantee; the lying curl keeps the pelvis down; the bridge line is shoulders-hips-knees; hip
+  extension stops 10-20 degrees past neutral; the reverse hack publishes the real setup; the cable
+  kickback explains its three levers; the standing curl admits the hamstrings cross the hip.
+- **Fixed by the parent:** the hub week tables used the routine grid and clipped their middle column at
+  360-390 px in six files (pierna, bíceps and trapecios, both locales). All six became
+  `<table class="text-table">`.
+- **Known approximation:** five heroes are Everkinetic illustrations because Commons has no usable photo
+  of a glute bridge, a cable kickback, a standing leg curl, a reverse hack squat or a machine
+  extension. Four first-choice photos were exact duplicates of existing heroes and were rejected.
+- **Known thin page:** the English `lying-leg-curl` runs 597 prose words, three under the floor.
