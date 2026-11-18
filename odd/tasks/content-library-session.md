@@ -1,6 +1,6 @@
 # Content library — session handoff
 
-Last updated: 2026-11-16. Read this first next session.
+Last updated: 2026-11-18. Read this first next session.
 
 - Per-page record: `odd/tasks/content-pages.md`
 - Page contract and copy gate: `odd/tasks/guides-page-contract.md`
@@ -28,16 +28,64 @@ Last updated: 2026-11-16. Read this first next session.
 ## Gates
 
 ```powershell
-npm run check:copy   # 16,371/16,371
-npm run build        # 658 pages
-npm run check:i18n   # 10,292/10,292
+npm run check:copy   # 22,491/22,491
+npm run build        # 898 pages
+npm run check:i18n   # 14,012/14,012, 894 sitemap URLs
 npm run verify       # all three, in that order
 npm run dev          # http://localhost:4321
 ```
 
 Start the dev server with `npm run dev` for local review.
 
+## How to run the next batch
+
+1. Take the first unchecked row in `content-pages.md`; the checklist is in archive order.
+2. Map the ten sources with one read-only explorer: every routine, set, rep, percentage and rest with
+   line cites; the numeric, medical and marketing claims; the register violations; the overlap with
+   published pages; the one error to fix; and one honest angle per page.
+3. Write `odd/tasks/content-library-batch-NN.md`: scope table (ES/EN slugs, source, words, keyword),
+   binding conflicts, global rules with the link whitelist, tables and hero rules, per-page
+   instructions, writer split, hero shortlist and the expected gate counts (pages = articles × 2 + 16,
+   sitemap = pages − 4).
+4. Register the routes before the writers finish: `ROUTE_PAIRS` in `astro.config.mjs`, and both `PAGES`
+   and `ROUTES` in `scripts/check-i18n.mjs`. `check:i18n` is the gate that proves the pairing.
+5. Launch two writers on disjoint files (`src/content/articles/{es,en}` plus
+   `public/content/<es-slug>/hero.jpg`), each with the batch document, the contract, the
+   `copy-editing` skill and `.agents/product-marketing.md`. Writers run `npm run check:copy` only; the
+   parent builds, verifies and commits.
+6. Verify with the parent scripts in `%TEMP%\opencode-parent` (`verify-NN.py`, `render-widths-NN.py`),
+   then `npm run verify`, then tick `content-pages.md` (header, block row, `— COMPLETO` headings),
+   update this file and `PLAN.md`, and commit per page plus routes and docs.
+
+Never run analysis scripts from `%TEMP%\opencode`: a writer's `struct.py` there shadows the standard
+library and breaks every Python process that imports Pillow.
+
+## Gotchas that keep costing time
+
+- **Heroes.** dHash 0 is a duplicate, crops have measured up to 14, and a distance of 7 can still be the
+  same photograph. Open the closest hero before vendoring, always. The obvious Commons gym photos are
+  spent; Everkinetic's `Category:Weight training diagrams` is the fallback, rendered through
+  `thumb.wikimedia.org/.../<1280>px-<File>.svg.png` (1600 returns 400 on tall SVGs).
+- **Tables.** The routine grid is 58/21/21 and clips any long header or long middle cell at 360–390 px.
+  Schedules, week maps, phase tables, decision tables and hub summaries are `<table class="text-table">`.
+- **Section casing.** `section` must match `src/data/guides-nav.ts` and the published pages, not the
+  batch brief: 18 pages use `"Ejercicios de Tríceps"` with a capital T.
+- **Encoding.** `Set-Content -Encoding utf8` writes a BOM that breaks the `---` frontmatter split. Use
+  Python or the edit tool.
+- **Parallel writers.** A writer's gate can fail on the other writer's half-written files; verify your
+  own files with a grep and report, never fix them.
+- **Dev server.** A long render loop can fail transiently while Astro recompiles; re-run before chasing
+  a layout bug.
+- **Repo state.** 150 commits are local and unpushed; production runs batch 32. The 18 untracked files
+  (six stray images in the root, twelve mockups) predate this work.
+
 ## What is built
+
+The per-page record in `content-pages.md` is authoritative; this section summarises the blocks. At
+**441 pages**, Por Músculo (80/80) and Rutinas (80/80) are closed, Entrenamiento is effectively closed
+(217/222 with five settled rows), and the Ejercicios block is at **64/196**: Espalda complete, Tríceps
+complete at 17/17, the four catalogue hubs live, and Pecho, Femoral, Hombro, Bíceps, Cuádriceps,
+Gemelo, Trapecios and Básicos in progress.
 
 - **Entrenamiento de la Espalda (9):** rutinas, anatomía, elegir dominadas, mancuernas, consejos,
   espalda baja, agarres, cómo ampliar dorsales, mejores jalones para la parte inferior.
@@ -99,8 +147,8 @@ Start the dev server with `npm run dev` for local review.
 2. Keep the same copy, unique-hero and gate flow.
 3. Before publishing another photo from Shixart1985, Nenad Stojkovic, Miguel Angel Omaña Rojas, the
    InjuryMap family, PTPioneer, KeepActive Australia, Everkinetic or Wellcome Collection, compare the
-   Commons file title and the dHash against the 331 existing heroes. A crop of a library hero scores
-   1-5 and is a duplicate in practice, not only at 0.
+   Commons file title and the dHash against the 441 existing heroes. A crop of a library hero scores
+   1-14 and is a duplicate in practice, not only at 0.
 4. The scaling architecture is deferred to PLAN Phase 7; do not implement it during content batches.
 
 ## Page contract (short)
@@ -150,6 +198,23 @@ Start the dev server with `npm run dev` for local review.
   documented in the batch 22 record.
 - **Push is the owner's call:** satisfied on 2026-11-16. Batches 19 to 32 were pushed from
   `6293327` to `f7f8de1`; production serves 658 pages.
+
+## Session close (2026-11-18, wrap: batches 33 to 44)
+
+- Twelve batches in one session: **321 → 441 / 792**, 120 bilingual pairs, 240 files, 120 heroes.
+  Closed: Pierna 9/9, Rutinas de Pierna 3/3, Rutinas de Tríceps, Rutinas de Pecho, Tríceps (routine),
+  Rutinas de Fuerza 9/9, Rutinas de Volumen 29/29, Rutinas de Definición 20/20, Rutinas full body 5/5,
+  Rutinas de deportes 8/8, Rutinas en Principiantes 9/9, Ejercicios de Tríceps 17/17 and the four
+  exercise catalogue hubs. Rutinas is 80/80.
+- Final gates: `check:copy` **22,491/22,491**, build **898 pages**, `check:i18n` **14,012/14,012**,
+  sitemap **894 URLs** with 2,682 alternates.
+- **Fixed after owner review:** the reps column no longer forces `nowrap` (`75d5d61`), so long rep
+  strings wrap at every width; a week table in the twelve-week programme and six hub week tables became
+  `text-table`; and the reverse-grip pushdown hero was replaced with the matching Everkinetic
+  illustration (`f1135fc`).
+- **150 commits are local and unpushed**; production runs batch 32. The push is the owner's call.
+- Next session starts at `/femoral-maquina-sentado-2/`; the Rutinas block is finished and the
+  Ejercicios block is the only content block left besides Nutrición and Mujer Fitness.
 
 ## Session close (2026-11-18, batch 44)
 
