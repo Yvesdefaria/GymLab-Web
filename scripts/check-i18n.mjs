@@ -881,6 +881,26 @@ const PAGES = [
   ['en', '/en/forearm-exercises/'],
   ['es', '/es/ejercicios-triceps/'],
   ['en', '/en/triceps-exercises/'],
+  ['es', '/es/ejercicios-pierna/'],
+  ['en', '/en/leg-exercises/'],
+  ['es', '/es/ejercicios-biceps/'],
+  ['en', '/en/biceps-exercises/'],
+  ['es', '/es/ejercicios-trapecios/'],
+  ['en', '/en/trap-exercises/'],
+  ['es', '/es/manguito-rotadores-hombro/'],
+  ['en', '/en/rotator-cuff-exercises/'],
+  ['es', '/es/femoral-maquina-tumbado-2/'],
+  ['en', '/en/lying-leg-curl/'],
+  ['es', '/es/puentes-gluteo-2/'],
+  ['en', '/en/glute-bridge/'],
+  ['es', '/es/extension-de-cadera-gluteos/'],
+  ['en', '/en/hip-extension-glutes/'],
+  ['es', '/es/sentadilla-hack-inversa/'],
+  ['en', '/en/reverse-hack-squat/'],
+  ['es', '/es/extensiones-gluteos-polea-2/'],
+  ['en', '/en/cable-glute-kickback/'],
+  ['es', '/es/femoral-maquina-de-pie-2/'],
+  ['en', '/en/standing-leg-curl/'],
 ];
 
 // Content routes, keyed by a stable id with the slug each locale publishes. The
@@ -1939,6 +1959,16 @@ const ROUTES = {
   chestExercises: { es: '/ejercicios-pecho', en: '/chest-exercises' },
   forearmExercises: { es: '/ejercicios-antebrazo', en: '/forearm-exercises' },
   tricepsExercises: { es: '/ejercicios-triceps', en: '/triceps-exercises' },
+  legExercises: { es: '/ejercicios-pierna', en: '/leg-exercises' },
+  bicepsExercises: { es: '/ejercicios-biceps', en: '/biceps-exercises' },
+  trapExercises: { es: '/ejercicios-trapecios', en: '/trap-exercises' },
+  rotatorCuffExercises: { es: '/manguito-rotadores-hombro', en: '/rotator-cuff-exercises' },
+  lyingLegCurl: { es: '/femoral-maquina-tumbado-2', en: '/lying-leg-curl' },
+  gluteBridge: { es: '/puentes-gluteo-2', en: '/glute-bridge' },
+  hipExtensionGlutes: { es: '/extension-de-cadera-gluteos', en: '/hip-extension-glutes' },
+  reverseHackSquat: { es: '/sentadilla-hack-inversa', en: '/reverse-hack-squat' },
+  cableGluteKickback: { es: '/extensiones-gluteos-polea-2', en: '/cable-glute-kickback' },
+  standingLegCurl: { es: '/femoral-maquina-de-pie-2', en: '/standing-leg-curl' },
 };
 
 const routeId = (path) => {

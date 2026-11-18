@@ -470,6 +470,16 @@ const ROUTE_PAIRS = [
   ['/ejercicios-pecho', '/chest-exercises'],
   ['/ejercicios-antebrazo', '/forearm-exercises'],
   ['/ejercicios-triceps', '/triceps-exercises'],
+  ['/ejercicios-pierna', '/leg-exercises'],
+  ['/ejercicios-biceps', '/biceps-exercises'],
+  ['/ejercicios-trapecios', '/trap-exercises'],
+  ['/manguito-rotadores-hombro', '/rotator-cuff-exercises'],
+  ['/femoral-maquina-tumbado-2', '/lying-leg-curl'],
+  ['/puentes-gluteo-2', '/glute-bridge'],
+  ['/extension-de-cadera-gluteos', '/hip-extension-glutes'],
+  ['/sentadilla-hack-inversa', '/reverse-hack-squat'],
+  ['/extensiones-gluteos-polea-2', '/cable-glute-kickback'],
+  ['/femoral-maquina-de-pie-2', '/standing-leg-curl'],
 ];
 
 const pairFor = (pathname) => {
