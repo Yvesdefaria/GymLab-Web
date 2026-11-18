@@ -26,8 +26,8 @@ Objective: the last seven Ejercicios de Tríceps rows plus the first three catal
 | 9 | `ejercicios-antebrazo` | `forearm-exercises` | `ejercicios/ejercicios-antebrazo.md` | 977 | ejercicios de antebrazo | |
 | 10 | `ejercicios-triceps` | `triceps-exercises` | `ejercicios/ejercicios-triceps.md` | 1,303 | ejercicios de tríceps | |
 
-Pages 1-7 and 10: `section: "Ejercicios de tríceps"` (EN `Triceps exercises`). Page 8: `"Ejercicios de
-pecho"` (`Chest exercises`). Page 9: `"Ejercicios de bíceps y antebrazo"` (`Biceps and forearm
+Pages 1-7 and 10: `section: "Ejercicios de Tríceps"` (EN `Triceps exercises`, capitalised like the 18
+pages already published in the section). Page 8: `"Ejercicios de pecho"` (`Chest exercises`). Page 9: `"Ejercicios de bíceps y antebrazo"` (`Biceps and forearm
 exercises`). All: `block: "Entrenamiento"` (EN `Training`), `updated: "2026-11-18"`.
 
 ## Conflicts the batch settles (binding)
@@ -215,3 +215,25 @@ npm run check:copy   # 431 pages expected
 npm run build        # 878 pages expected
 npm run check:i18n   # 874 sitemap URLs
 ```
+
+## Result (2026-11-18)
+
+- 10 bilingual pairs, 20 files, 10 heroes. Library: 421 → **431 / 792**. Ejercicios **54/196**;
+  Tríceps closed at **17/17**. The three first catalogue hubs are live.
+- Gates: `check:copy` **21,981/21,981**, build **878 pages**, `check:i18n` **13,702/13,702**, sitemap
+  **874 URLs** with 2,622 alternates.
+- Structural checks: 156 internal links, **0 broken**; every table three columns; zero em dashes; no
+  BOM; zero clipped cells across 140 page/width pairs. 431 heroes: the only dHash pairs under distance
+  7 are the three pre-existing ones.
+- **Corrections made:** the overhead extension fixed its elbow contradiction; the rope pushdown owns
+  the grip rotation and answers the lock question; the machine extension gained the seat setting and
+  the fixed-cam cost; bench dips set depth by bench height and a neutral shoulder; the assisted machine
+  lost its ten-muscle list and its rehab line; the combo page became a post-exhaustion protocol; the
+  push-up dropped its isolation claim; the chest, forearm and triceps hubs became decision pages with
+  doses and a weekly order.
+- **Fixed by the parent:** Writer A used `section: "Ejercicios de tríceps"` (lowercase) while the 18
+  published pages and Writer B's hub use `"Ejercicios de Tríceps"`. The five files were normalised to
+  the established capitalisation.
+- **Known approximation:** four heroes are Everkinetic illustrations because Commons has no honest
+  photo of a machine extension or an assisted dip machine, and its only dip-machine photo is already
+  the hero of `fondos`.

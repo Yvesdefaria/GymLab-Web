@@ -9,21 +9,21 @@ Last updated: 2026-11-16. Read this first next session.
 
 ## State
 
-- **421 / 792 bilingual pages** (ES 421, EN 421).
+- **431 / 792 bilingual pages** (ES 431, EN 431).
 - Blocks by archive section: Entrenamiento **217/222** (the five missing rows are settled: two
-  descartadas and three fusionadas), Por Músculo **80/80**, Rutinas **80/80**, Ejercicios **44/196**,
+  descartadas and three fusionadas), Por Músculo **80/80**, Rutinas **80/80**, Ejercicios **54/196**,
   Nutrición 0/191, Mujer Fitness 0/23. The publishable total is 787.
-- **421 unique hero paths.** One exact duplicate pair remains from an earlier batch
+- **431 unique hero paths.** One exact duplicate pair remains from an earlier batch
   (`remo-polea-sentado` with `superserie-de-espalda-para-terminar-tu-rutina`), plus two pre-existing
-  near pairs at dHash 4 and 5; the batch 17 to 42 duplicates were fixed. See `PLAN.md`.
-- **Batch 42 is built, green and committed (2026-11-18).** The build has **858 pages** and **854
-  sitemap URLs**. Rutinas is closed end to end (80/80); Ejercicios is at 44/196 and Tríceps at 10/17.
+  near pairs at dHash 4 and 5; the batch 17 to 43 duplicates were fixed. See `PLAN.md`.
+- **Batch 43 is built, green and committed (2026-11-18).** The build has **878 pages** and **874
+  sitemap URLs**. Tríceps is closed at **17/17**; Ejercicios is 54/196.
 - Five archive rows are settled and must stay out: the FiveStars Fitness congress page (discarded),
   the AEKE S1 Pro page (discarded 2026-11-14), `/velocidad-repeticiones/` (fused into the tempo page,
   2026-11-14) and the two batch 20 fusions (2026-11-15).
 - **Production runs batch 32 (pushed 2026-11-16).** Batches 19 to 32 are live; `origin/main` is at
-  the batch 32 docs push. Batches 33 to 42 are committed locally and not pushed.
-- Batch records: `odd/tasks/content-library-batch-40.md`, `-41.md` and `-42.md`.
+  the batch 32 docs push. Batches 33 to 43 are committed locally and not pushed.
+- Batch records: `odd/tasks/content-library-batch-41.md`, `-42.md` and `-43.md`.
 
 ## Gates
 
@@ -91,11 +91,10 @@ Start the dev server with `npm run dev` for local review.
 
 ## Next 10
 
-1. Batch 43 closes Ejercicios de Tríceps (last seven) and opens the catalogue hubs with
-   `ejercicios-pecho`, `ejercicios-antebrazo` and `ejercicios-triceps`; the brief already exists at
-   `odd/tasks/content-library-batch-43.md`.
-2. Batch 44 takes the four remaining catalogue rows plus the first six Femoral y Glúteos rows.
-3. Keep the same copy, unique-hero and gate flow.
+1. Batch 44 is the four remaining catalogue rows (`ejercicios-pierna`, `ejercicios-biceps`,
+   `ejercicios-trapecios`, `manguito-rotadores-hombro`) plus the first six Ejercicios de Femoral y
+   Glúteos rows; the brief already exists at `odd/tasks/content-library-batch-44.md`.
+2. Keep the same copy, unique-hero and gate flow.
 3. Before publishing another photo from Shixart1985, Nenad Stojkovic, Miguel Angel Omaña Rojas, the
    InjuryMap family, PTPioneer, KeepActive Australia, Everkinetic or Wellcome Collection, compare the
    Commons file title and the dHash against the 331 existing heroes. A crop of a library hero scores
@@ -149,6 +148,26 @@ Start the dev server with `npm run dev` for local review.
   documented in the batch 22 record.
 - **Push is the owner's call:** satisfied on 2026-11-16. Batches 19 to 32 were pushed from
   `6293327` to `f7f8de1`; production serves 658 pages.
+
+## Session close (2026-11-18, batch 43)
+
+- Batch 43 closed Tríceps and published the first three catalogue hubs: 421 → **431 / 792**.
+  Ejercicios **54/196**, Tríceps **17/17**.
+- Writers: A pages 1-5, B pages 6-10, disjoint files. The parent normalised the section capitalisation,
+  registered routes, verified 140 page/width pairs, ran the gates and committed per page.
+- Gates: `check:copy` **21,981/21,981**, build **878 pages**, `check:i18n` **13,702/13,702**, sitemap
+  **874 URLs** with 2,622 alternates. 156 internal links, **0 broken**; no clipped cell from 360 to
+  1280.
+- Heroes: 431 files; the only dHash pairs under 7 are the three pre-existing ones. Four heroes are
+  Everkinetic illustrations because Commons has no honest photo of a machine extension or an assisted
+  dip machine.
+- Commits: pages `5c27916`, `9b7ed00`, `47fd4c8`, `889b320`, `21553bf`, `e03e19c`, `15eea4d`,
+  `0af464b`, `14403bd`, `46a8091`; routes `a5d0e8b`.
+- **Gotcha:** two writers can disagree on `section` casing; the 18 published pages and the nav decide,
+  and the parent normalised five files after the fact.
+- **Gotcha:** the triceps hub links all 17 triceps exercise pages, so it depends on the other writer's
+  five files landing; `check:i18n` is what catches a missing half.
+- Next session starts at `/ejercicios-pierna/`; the batch 44 brief is written.
 
 ## Session close (2026-11-18, batch 42)
 

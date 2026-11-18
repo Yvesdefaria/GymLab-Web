@@ -9,9 +9,9 @@ Legend: `ES` = Spanish published, `EN` = English published.
 
 ## Progress
 
-- **Built: 421 / 792** (ES 421, EN 421).
-- Last batch: batch 42 opened the Ejercicios block with ten triceps pages;
-  421 pages built.
+- **Built: 431 / 792** (ES 431, EN 431).
+- Last batch: batch 43 closed Tríceps and published the first three exercise hubs;
+  431 pages built.
 - Blocks finished end to end: Entrenamiento del Hombro (9), Físicos de leyenda (12), Entrenamiento de
   la Espalda (10), Rutinas de Espalda (4), Espalda (1), Ejercicios de Espalda (31), Ejercicio
   Cardiovascular (32), Entrenamiento de las Piernas (18), Entrenamiento del Pecho (6), Rutinas de
@@ -24,10 +24,10 @@ Legend: `ES` = Spanish published, `EN` = English published.
 | Entrenamiento | 222 | 217 |
 | Por Músculo | 80 | 80 |
 | Rutinas | 80 | 80 |
-| Ejercicios | 196 | 44 |
+| Ejercicios | 196 | 54 |
 | Nutrición | 191 | 0 |
 | Mujer Fitness | 23 | 0 |
-| **Total** | **792** | **421** |
+| **Total** | **792** | **431** |
 
 The Built column counts the archive block of each page, not the frontmatter `block` (every guide ships
 with `block: "Entrenamiento"` for the site taxonomy). Five Entrenamiento rows are settled and will
@@ -715,7 +715,7 @@ never publish: two DESCARTADA and three FUSIONADA, so the publishable total is *
 
 ## Ejercicios (196)
 
-### Ejercicios de Tríceps (17)
+### Ejercicios de Tríceps (17) — COMPLETO
 
 - [x] ES · [x] EN — `/jalones-barra-recta/` — Jalones de tríceps en polea \| Un básico para mejores tríceps
 - [x] ES · [x] EN — `/patadas-triceps-polea/` — Patadas de triceps en polea
@@ -727,20 +727,20 @@ never publish: two DESCARTADA and three FUSIONADA, so the publishable total is *
 - [x] ES · [x] EN — `/extensiones-mancuerna-tumbado/` — Extensiones de tríceps tumbado con mancuernas
 - [x] ES · [x] EN — `/jalones-polea-agarre-inverso/` — Jalones en polea con agarre inverso ⇨ Tríceps como Rocas!
 - [x] ES · [x] EN — `/press-banca-agarre-cerrado-en-multipower/` — Press de banca agarre cerrado en multipower
-- [ ] ES · [ ] EN — `/extensiones-mancuerna-sentado/` — Extensiones de tríceps con mancuerna por encima de la cabeza
-- [ ] ES · [ ] EN — `/jalones-cuerda/` — Jalones con cuerda para tríceps \| Máxima Congestión
-- [ ] ES · [ ] EN — `/extensiones-triceps-maquina/` — Extensiones en máquina de tríceps \| Técnica y Beneficios
-- [ ] ES · [ ] EN — `/fondos-entre-bancos/` — Fondos entre bancos ⇨ 100% EFECTIVO para el pecho
-- [ ] ES · [ ] EN — `/fondos-maquina-triceps/` — Fondos en máquina para tríceps \| Seguro y efectivo
-- [ ] ES · [ ] EN — `/extension-tumbado-con-barra-z-y-press-de-banca-con-agarre-cerrado/` — Extensión tumbado con barra Z y Press de banca con agarre cerrado
-- [ ] ES · [ ] EN — `/flexiones-para-triceps-en-suelo/` — Flexiones para tríceps en suelo \| Efectividad Máxima
+- [x] ES · [x] EN — `/extensiones-mancuerna-sentado/` — Extensiones de tríceps con mancuerna por encima de la cabeza
+- [x] ES · [x] EN — `/jalones-cuerda/` — Jalones con cuerda para tríceps \| Máxima Congestión
+- [x] ES · [x] EN — `/extensiones-triceps-maquina/` — Extensiones en máquina de tríceps \| Técnica y Beneficios
+- [x] ES · [x] EN — `/fondos-entre-bancos/` — Fondos entre bancos ⇨ 100% EFECTIVO para el pecho
+- [x] ES · [x] EN — `/fondos-maquina-triceps/` — Fondos en máquina para tríceps \| Seguro y efectivo
+- [x] ES · [x] EN — `/extension-tumbado-con-barra-z-y-press-de-banca-con-agarre-cerrado/` — Extensión tumbado con barra Z y Press de banca con agarre cerrado
+- [x] ES · [x] EN — `/flexiones-para-triceps-en-suelo/` — Flexiones para tríceps en suelo \| Efectividad Máxima
 
 ### Ejercicios (8) — 1/8
 
 - [x] ES · [x] EN — `/ejercicios-espalda/` — Ejercicios de Espalda \| Los mejores para tu rutina en 2025
-- [ ] ES · [ ] EN — `/ejercicios-pecho/` — Ejercicios de Pecho \| Los más efectivos y útiles en 2026
-- [ ] ES · [ ] EN — `/ejercicios-antebrazo/` — Ejercicios de Antebrazo \| Los más efectivos en 2025
-- [ ] ES · [ ] EN — `/ejercicios-triceps/` — Ejercicios de Tríceps \| Consigue brazos con volumen en 2025
+- [x] ES · [x] EN — `/ejercicios-pecho/` — Ejercicios de Pecho \| Los más efectivos y útiles en 2026
+- [x] ES · [x] EN — `/ejercicios-antebrazo/` — Ejercicios de Antebrazo \| Los más efectivos en 2025
+- [x] ES · [x] EN — `/ejercicios-triceps/` — Ejercicios de Tríceps \| Consigue brazos con volumen en 2025
 - [ ] ES · [ ] EN — `/ejercicios-pierna/` — Ejercicios de Piernas \| Mejora tu tren inferior en 2025
 - [ ] ES · [ ] EN — `/ejercicios-biceps/` — Ejercicios de Bíceps \| Selección 2025, efectividad máxima
 - [ ] ES · [ ] EN — `/ejercicios-trapecios/` — Ejercicios de Trapecios \| Los más efectivos en 2025
