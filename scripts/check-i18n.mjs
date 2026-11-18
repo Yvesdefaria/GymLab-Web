@@ -841,6 +841,26 @@ const PAGES = [
   ['en', '/en/five-week-beginner-routine/'],
   ['es', '/es/programa-de-ejercicio-intensivo-para-principiantes/'],
   ['en', '/en/intensive-beginner-program/'],
+  ['es', '/es/jalones-barra-recta/'],
+  ['en', '/en/cable-triceps-pushdown/'],
+  ['es', '/es/patadas-triceps-polea/'],
+  ['en', '/en/cable-triceps-kickback/'],
+  ['es', '/es/patadas-con-mancuerna/'],
+  ['en', '/en/dumbbell-triceps-kickback/'],
+  ['es', '/es/press-banca-agarre-cerrado/'],
+  ['en', '/en/close-grip-bench-press/'],
+  ['es', '/es/extensiones-triceps-en-polea-baja/'],
+  ['en', '/en/low-pulley-triceps-extension/'],
+  ['es', '/es/fondos/'],
+  ['en', '/en/triceps-dips/'],
+  ['es', '/es/press-frances/'],
+  ['en', '/en/lying-triceps-extension/'],
+  ['es', '/es/extensiones-mancuerna-tumbado/'],
+  ['en', '/en/lying-dumbbell-triceps-extension/'],
+  ['es', '/es/jalones-polea-agarre-inverso/'],
+  ['en', '/en/reverse-grip-triceps-pushdown/'],
+  ['es', '/es/press-banca-agarre-cerrado-en-multipower/'],
+  ['en', '/en/smith-machine-close-grip-bench/'],
 ];
 
 // Content routes, keyed by a stable id with the slug each locale publishes. The
@@ -1860,6 +1880,28 @@ const ROUTES = {
   intensiveBeginnerProgram: {
     es: '/programa-de-ejercicio-intensivo-para-principiantes',
     en: '/intensive-beginner-program',
+  },
+  cableTricepsPushdown: { es: '/jalones-barra-recta', en: '/cable-triceps-pushdown' },
+  cableTricepsKickback: { es: '/patadas-triceps-polea', en: '/cable-triceps-kickback' },
+  dumbbellTricepsKickback: { es: '/patadas-con-mancuerna', en: '/dumbbell-triceps-kickback' },
+  closeGripBenchPress: { es: '/press-banca-agarre-cerrado', en: '/close-grip-bench-press' },
+  lowPulleyTricepsExtension: {
+    es: '/extensiones-triceps-en-polea-baja',
+    en: '/low-pulley-triceps-extension',
+  },
+  tricepsDips: { es: '/fondos', en: '/triceps-dips' },
+  lyingTricepsExtension: { es: '/press-frances', en: '/lying-triceps-extension' },
+  lyingDumbbellTricepsExtension: {
+    es: '/extensiones-mancuerna-tumbado',
+    en: '/lying-dumbbell-triceps-extension',
+  },
+  reverseGripTricepsPushdown: {
+    es: '/jalones-polea-agarre-inverso',
+    en: '/reverse-grip-triceps-pushdown',
+  },
+  smithMachineCloseGripBench: {
+    es: '/press-banca-agarre-cerrado-en-multipower',
+    en: '/smith-machine-close-grip-bench',
   },
 };
 

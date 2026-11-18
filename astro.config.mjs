@@ -450,6 +450,16 @@ const ROUTE_PAIRS = [
   ['/programa-principiantes', '/beginner-volume-program'],
   ['/rutina-principiantes-cinco-semanas', '/five-week-beginner-routine'],
   ['/programa-de-ejercicio-intensivo-para-principiantes', '/intensive-beginner-program'],
+  ['/jalones-barra-recta', '/cable-triceps-pushdown'],
+  ['/patadas-triceps-polea', '/cable-triceps-kickback'],
+  ['/patadas-con-mancuerna', '/dumbbell-triceps-kickback'],
+  ['/press-banca-agarre-cerrado', '/close-grip-bench-press'],
+  ['/extensiones-triceps-en-polea-baja', '/low-pulley-triceps-extension'],
+  ['/fondos', '/triceps-dips'],
+  ['/press-frances', '/lying-triceps-extension'],
+  ['/extensiones-mancuerna-tumbado', '/lying-dumbbell-triceps-extension'],
+  ['/jalones-polea-agarre-inverso', '/reverse-grip-triceps-pushdown'],
+  ['/press-banca-agarre-cerrado-en-multipower', '/smith-machine-close-grip-bench'],
 ];
 
 const pairFor = (pathname) => {
