@@ -9,9 +9,9 @@ Legend: `ES` = Spanish published, `EN` = English published.
 
 ## Progress
 
-- **Built: 411 / 792** (ES 411, EN 411).
-- Last batch: batch 41 closed Deportes and Principiantes; the whole Rutinas block is done;
-  411 pages built.
+- **Built: 421 / 792** (ES 421, EN 421).
+- Last batch: batch 42 opened the Ejercicios block with ten triceps pages;
+  421 pages built.
 - Blocks finished end to end: Entrenamiento del Hombro (9), Físicos de leyenda (12), Entrenamiento de
   la Espalda (10), Rutinas de Espalda (4), Espalda (1), Ejercicios de Espalda (31), Ejercicio
   Cardiovascular (32), Entrenamiento de las Piernas (18), Entrenamiento del Pecho (6), Rutinas de
@@ -24,10 +24,10 @@ Legend: `ES` = Spanish published, `EN` = English published.
 | Entrenamiento | 222 | 217 |
 | Por Músculo | 80 | 80 |
 | Rutinas | 80 | 80 |
-| Ejercicios | 196 | 34 |
+| Ejercicios | 196 | 44 |
 | Nutrición | 191 | 0 |
 | Mujer Fitness | 23 | 0 |
-| **Total** | **792** | **411** |
+| **Total** | **792** | **421** |
 
 The Built column counts the archive block of each page, not the frontmatter `block` (every guide ships
 with `block: "Entrenamiento"` for the site taxonomy). Five Entrenamiento rows are settled and will
@@ -717,16 +717,16 @@ never publish: two DESCARTADA and three FUSIONADA, so the publishable total is *
 
 ### Ejercicios de Tríceps (17)
 
-- [ ] ES · [ ] EN — `/jalones-barra-recta/` — Jalones de tríceps en polea \| Un básico para mejores tríceps
-- [ ] ES · [ ] EN — `/patadas-triceps-polea/` — Patadas de triceps en polea
-- [ ] ES · [ ] EN — `/patadas-con-mancuerna/` — Patadas de tríceps con mancuerna
-- [ ] ES · [ ] EN — `/press-banca-agarre-cerrado/` — Press de Banca con Agarre Cerrado: Técnica y Beneficios
-- [ ] ES · [ ] EN — `/extensiones-triceps-en-polea-baja/` — Extensiones de tríceps en polea baja \| Tríceps más marcados
-- [ ] ES · [ ] EN — `/fondos/` — Fondos en paralelas para tríceps \| ¡Tríceps más grandes!
-- [ ] ES · [ ] EN — `/press-frances/` — Extensiones de tríceps tumbado con barra Z (Press Francés)
-- [ ] ES · [ ] EN — `/extensiones-mancuerna-tumbado/` — Extensiones de tríceps tumbado con mancuernas
-- [ ] ES · [ ] EN — `/jalones-polea-agarre-inverso/` — Jalones en polea con agarre inverso ⇨ Tríceps como Rocas!
-- [ ] ES · [ ] EN — `/press-banca-agarre-cerrado-en-multipower/` — Press de banca agarre cerrado en multipower
+- [x] ES · [x] EN — `/jalones-barra-recta/` — Jalones de tríceps en polea \| Un básico para mejores tríceps
+- [x] ES · [x] EN — `/patadas-triceps-polea/` — Patadas de triceps en polea
+- [x] ES · [x] EN — `/patadas-con-mancuerna/` — Patadas de tríceps con mancuerna
+- [x] ES · [x] EN — `/press-banca-agarre-cerrado/` — Press de Banca con Agarre Cerrado: Técnica y Beneficios
+- [x] ES · [x] EN — `/extensiones-triceps-en-polea-baja/` — Extensiones de tríceps en polea baja \| Tríceps más marcados
+- [x] ES · [x] EN — `/fondos/` — Fondos en paralelas para tríceps \| ¡Tríceps más grandes!
+- [x] ES · [x] EN — `/press-frances/` — Extensiones de tríceps tumbado con barra Z (Press Francés)
+- [x] ES · [x] EN — `/extensiones-mancuerna-tumbado/` — Extensiones de tríceps tumbado con mancuernas
+- [x] ES · [x] EN — `/jalones-polea-agarre-inverso/` — Jalones en polea con agarre inverso ⇨ Tríceps como Rocas!
+- [x] ES · [x] EN — `/press-banca-agarre-cerrado-en-multipower/` — Press de banca agarre cerrado en multipower
 - [ ] ES · [ ] EN — `/extensiones-mancuerna-sentado/` — Extensiones de tríceps con mancuerna por encima de la cabeza
 - [ ] ES · [ ] EN — `/jalones-cuerda/` — Jalones con cuerda para tríceps \| Máxima Congestión
 - [ ] ES · [ ] EN — `/extensiones-triceps-maquina/` — Extensiones en máquina de tríceps \| Técnica y Beneficios

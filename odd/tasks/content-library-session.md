@@ -9,22 +9,21 @@ Last updated: 2026-11-16. Read this first next session.
 
 ## State
 
-- **411 / 792 bilingual pages** (ES 411, EN 411).
+- **421 / 792 bilingual pages** (ES 421, EN 421).
 - Blocks by archive section: Entrenamiento **217/222** (the five missing rows are settled: two
-  descartadas and three fusionadas), Por Músculo **80/80**, Rutinas **80/80**, Ejercicios **34/196**,
+  descartadas and three fusionadas), Por Músculo **80/80**, Rutinas **80/80**, Ejercicios **44/196**,
   Nutrición 0/191, Mujer Fitness 0/23. The publishable total is 787.
-- **411 unique hero paths.** One exact duplicate pair remains from an earlier batch
+- **421 unique hero paths.** One exact duplicate pair remains from an earlier batch
   (`remo-polea-sentado` with `superserie-de-espalda-para-terminar-tu-rutina`), plus two pre-existing
-  near pairs at dHash 4 and 5; the batch 17 to 41 duplicates were fixed. See `PLAN.md`.
-- **Batch 41 is built, green and committed (2026-11-17).** The build has **838 pages** and **834
-  sitemap URLs**. The whole Rutinas block is closed: fuerza 9/9, volumen 29/29, definición 20/20, full
-  body 5/5, deportes 8/8, principiantes 9/9.
+  near pairs at dHash 4 and 5; the batch 17 to 42 duplicates were fixed. See `PLAN.md`.
+- **Batch 42 is built, green and committed (2026-11-18).** The build has **858 pages** and **854
+  sitemap URLs**. Rutinas is closed end to end (80/80); Ejercicios is at 44/196 and Tríceps at 10/17.
 - Five archive rows are settled and must stay out: the FiveStars Fitness congress page (discarded),
   the AEKE S1 Pro page (discarded 2026-11-14), `/velocidad-repeticiones/` (fused into the tempo page,
   2026-11-14) and the two batch 20 fusions (2026-11-15).
 - **Production runs batch 32 (pushed 2026-11-16).** Batches 19 to 32 are live; `origin/main` is at
-  the batch 32 docs push. Batches 33 to 41 are committed locally and not pushed.
-- Batch records: `odd/tasks/content-library-batch-39.md`, `-40.md` and `-41.md`.
+  the batch 32 docs push. Batches 33 to 42 are committed locally and not pushed.
+- Batch records: `odd/tasks/content-library-batch-40.md`, `-41.md` and `-42.md`.
 
 ## Gates
 
@@ -92,9 +91,11 @@ Start the dev server with `npm run dev` for local review.
 
 ## Next 10
 
-1. The Rutinas block is finished; the next rows are Ejercicios de Tríceps (17), starting with
-   `/jalones-barra-recta/`. Write the batch 42 brief after mapping the first ten of those sources.
-2. Keep the same copy, unique-hero and gate flow.
+1. Batch 43 closes Ejercicios de Tríceps (last seven) and opens the catalogue hubs with
+   `ejercicios-pecho`, `ejercicios-antebrazo` and `ejercicios-triceps`; the brief already exists at
+   `odd/tasks/content-library-batch-43.md`.
+2. Batch 44 takes the four remaining catalogue rows plus the first six Femoral y Glúteos rows.
+3. Keep the same copy, unique-hero and gate flow.
 3. Before publishing another photo from Shixart1985, Nenad Stojkovic, Miguel Angel Omaña Rojas, the
    InjuryMap family, PTPioneer, KeepActive Australia, Everkinetic or Wellcome Collection, compare the
    Commons file title and the dHash against the 331 existing heroes. A crop of a library hero scores
@@ -148,6 +149,24 @@ Start the dev server with `npm run dev` for local review.
   documented in the batch 22 record.
 - **Push is the owner's call:** satisfied on 2026-11-16. Batches 19 to 32 were pushed from
   `6293327` to `f7f8de1`; production serves 658 pages.
+
+## Session close (2026-11-18, batch 42)
+
+- Batch 42 opened the Ejercicios block with ten triceps pages: 411 → **421 / 792**. Ejercicios
+  **44/196**, Tríceps 10/17.
+- Writers: A pages 1-5, B pages 6-10, disjoint files. The parent registered routes, verified 140
+  page/width pairs, ran the gates and committed per page.
+- Gates: `check:copy` **21,471/21,471**, build **858 pages**, `check:i18n` **13,392/13,392**, sitemap
+  **854 URLs** with 2,562 alternates. 106 internal links, **0 broken**; no clipped cell from 360 to
+  1280.
+- Heroes: 421 files; the only dHash pairs under 7 are the three pre-existing ones.
+- Commits: pages `ff945e1`, `4d56dd1`, `f952812`, `2a55b03`, `554d536`, `541f95c`, `4f6f2bd`,
+  `1d9aa09`, `370d08a`, `24de023`; routes `951b92c`.
+- **Gotcha:** the brief listed `ejercicios-triceps` as a published hub, but it is batch 43's row.
+  Writer A dropped it instead of shipping dead links; the hub arrives next batch.
+- **Gotcha:** Commons has exactly one Smith machine photo and it is already a hero, so the Smith page
+  uses a free-bar bench press with an honest alt.
+- Next session starts at `/extensiones-mancuerna-sentado/`; the batch 43 brief is written.
 
 ## Session close (2026-11-17, batch 41)
 
