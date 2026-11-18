@@ -861,6 +861,26 @@ const PAGES = [
   ['en', '/en/reverse-grip-triceps-pushdown/'],
   ['es', '/es/press-banca-agarre-cerrado-en-multipower/'],
   ['en', '/en/smith-machine-close-grip-bench/'],
+  ['es', '/es/extensiones-mancuerna-sentado/'],
+  ['en', '/en/overhead-dumbbell-triceps-extension/'],
+  ['es', '/es/jalones-cuerda/'],
+  ['en', '/en/rope-triceps-pushdown/'],
+  ['es', '/es/extensiones-triceps-maquina/'],
+  ['en', '/en/machine-triceps-extension/'],
+  ['es', '/es/fondos-entre-bancos/'],
+  ['en', '/en/bench-dips/'],
+  ['es', '/es/fondos-maquina-triceps/'],
+  ['en', '/en/assisted-dip-machine/'],
+  ['es', '/es/extension-tumbado-con-barra-z-y-press-de-banca-con-agarre-cerrado/'],
+  ['en', '/en/triceps-superset-extension-close-grip/'],
+  ['es', '/es/flexiones-para-triceps-en-suelo/'],
+  ['en', '/en/triceps-push-ups/'],
+  ['es', '/es/ejercicios-pecho/'],
+  ['en', '/en/chest-exercises/'],
+  ['es', '/es/ejercicios-antebrazo/'],
+  ['en', '/en/forearm-exercises/'],
+  ['es', '/es/ejercicios-triceps/'],
+  ['en', '/en/triceps-exercises/'],
 ];
 
 // Content routes, keyed by a stable id with the slug each locale publishes. The
@@ -1903,6 +1923,22 @@ const ROUTES = {
     es: '/press-banca-agarre-cerrado-en-multipower',
     en: '/smith-machine-close-grip-bench',
   },
+  overheadDumbbellTricepsExtension: {
+    es: '/extensiones-mancuerna-sentado',
+    en: '/overhead-dumbbell-triceps-extension',
+  },
+  ropeTricepsPushdown: { es: '/jalones-cuerda', en: '/rope-triceps-pushdown' },
+  machineTricepsExtension: { es: '/extensiones-triceps-maquina', en: '/machine-triceps-extension' },
+  benchDips: { es: '/fondos-entre-bancos', en: '/bench-dips' },
+  assistedDipMachine: { es: '/fondos-maquina-triceps', en: '/assisted-dip-machine' },
+  tricepsSupersetExtensionCloseGrip: {
+    es: '/extension-tumbado-con-barra-z-y-press-de-banca-con-agarre-cerrado',
+    en: '/triceps-superset-extension-close-grip',
+  },
+  tricepsPushUps: { es: '/flexiones-para-triceps-en-suelo', en: '/triceps-push-ups' },
+  chestExercises: { es: '/ejercicios-pecho', en: '/chest-exercises' },
+  forearmExercises: { es: '/ejercicios-antebrazo', en: '/forearm-exercises' },
+  tricepsExercises: { es: '/ejercicios-triceps', en: '/triceps-exercises' },
 };
 
 const routeId = (path) => {

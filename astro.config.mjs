@@ -460,6 +460,16 @@ const ROUTE_PAIRS = [
   ['/extensiones-mancuerna-tumbado', '/lying-dumbbell-triceps-extension'],
   ['/jalones-polea-agarre-inverso', '/reverse-grip-triceps-pushdown'],
   ['/press-banca-agarre-cerrado-en-multipower', '/smith-machine-close-grip-bench'],
+  ['/extensiones-mancuerna-sentado', '/overhead-dumbbell-triceps-extension'],
+  ['/jalones-cuerda', '/rope-triceps-pushdown'],
+  ['/extensiones-triceps-maquina', '/machine-triceps-extension'],
+  ['/fondos-entre-bancos', '/bench-dips'],
+  ['/fondos-maquina-triceps', '/assisted-dip-machine'],
+  ['/extension-tumbado-con-barra-z-y-press-de-banca-con-agarre-cerrado', '/triceps-superset-extension-close-grip'],
+  ['/flexiones-para-triceps-en-suelo', '/triceps-push-ups'],
+  ['/ejercicios-pecho', '/chest-exercises'],
+  ['/ejercicios-antebrazo', '/forearm-exercises'],
+  ['/ejercicios-triceps', '/triceps-exercises'],
 ];
 
 const pairFor = (pathname) => {
