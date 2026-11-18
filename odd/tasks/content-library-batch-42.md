@@ -225,3 +225,7 @@ npm run check:i18n   # 854 sitemap URLs
 - **Known approximation:** the only free Smith machine photo was already the hero of
   `multipower-para-superar-puntos-de-estancamiento`, so the Smith page uses a free-bar bench press and
   its alt says so.
+- **Fixed after owner review (2026-11-18):** the reverse-grip pushdown used a lat-pulldown station
+  photo that did not match the exercise. It now uses the Everkinetic illustration
+  `Reverse grip triceps pushdown 2.svg` (CC BY-SA 3.0), with the alt describing the underhand grip and
+  the bar at hip height.
