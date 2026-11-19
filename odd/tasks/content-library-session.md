@@ -226,6 +226,10 @@ the current per-page state.
 - **Editorial win:** the bench-to-neck row ships as a correction page, not a how-to; the archive's
   premise is priced, not denied. The decline and machine pages own their resistance lines instead of
   repeating "guided bar, 8-12 reps".
+- **Fixed after owner review (2026-11-19):** `/es/cruces-en-polea-baja/` and its English pair closed
+  with a one-sentence "Para seguir" block. It now carries four links in both locales (exercises,
+  routines, anatomy, technique); commit `b9abb81`. The hero stays: an equipment close-up that the alt
+  describes honestly, not an exercise photo.
 - Next session starts at `/pullover-con-mancuerna-en-banco-inclinado/`, then Ejercicios de Hombro.
 
 ## Session close (2026-11-19, batch 45)

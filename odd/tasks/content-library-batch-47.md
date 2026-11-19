@@ -292,3 +292,7 @@ npm run check:i18n   # 14,942 assertions, 954 sitemap URLs, 2,862 alternates
   `e5811e5`, `2e1dcb2`, `589b11b`; routes `3d427fb`.
 - **Known approximation:** the plate-loaded incline and the vertical machine press are siblings in
   the same line-art style; the equipment differs, and the alt names it.
+- **Fixed after owner review (2026-11-19):** `/es/cruces-en-polea-baja/` and `/en/low-cable-crossover/`
+  closed with a one-sentence "Para seguir" block, thinner than the house pattern. It now carries four
+  links in both locales (exercises, routines, anatomy, technique) and reads 870/790 words. Commit
+  `b9abb81`. The hero stays: an equipment close-up the alt describes honestly.
