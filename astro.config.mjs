@@ -500,6 +500,16 @@ const ROUTE_PAIRS = [
   ['/press-plano-mancuernas', '/flat-dumbbell-press'],
   ['/cruces-polea', '/high-cable-crossover'],
   ['/aperturas-peck-deck', '/pec-deck-fly'],
+  ['/press-vertical-aparato', '/vertical-chest-press-machine'],
+  ['/flexiones', '/push-ups'],
+  ['/press-banca-multipower', '/smith-machine-bench-press'],
+  ['/press-banca-cuello', '/guillotine-press'],
+  ['/aperturas-pecho-maquina', '/machine-chest-fly'],
+  ['/aperturas-polea-banco-plano', '/flat-bench-cable-fly'],
+  ['/press-inclinado-maquina-discos', '/plate-loaded-incline-press'],
+  ['/press-declinado-en-multipower', '/smith-machine-decline-press'],
+  ['/press-de-pecho-en-maquina-horizontal', '/horizontal-chest-press-machine'],
+  ['/cruces-en-polea-baja', '/low-cable-crossover'],
 ];
 
 const pairFor = (pathname) => {

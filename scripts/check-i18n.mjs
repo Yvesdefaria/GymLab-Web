@@ -941,6 +941,26 @@ const PAGES = [
   ['en', '/en/high-cable-crossover/'],
   ['es', '/es/aperturas-peck-deck/'],
   ['en', '/en/pec-deck-fly/'],
+  ['es', '/es/press-vertical-aparato/'],
+  ['en', '/en/vertical-chest-press-machine/'],
+  ['es', '/es/flexiones/'],
+  ['en', '/en/push-ups/'],
+  ['es', '/es/press-banca-multipower/'],
+  ['en', '/en/smith-machine-bench-press/'],
+  ['es', '/es/press-banca-cuello/'],
+  ['en', '/en/guillotine-press/'],
+  ['es', '/es/aperturas-pecho-maquina/'],
+  ['en', '/en/machine-chest-fly/'],
+  ['es', '/es/aperturas-polea-banco-plano/'],
+  ['en', '/en/flat-bench-cable-fly/'],
+  ['es', '/es/press-inclinado-maquina-discos/'],
+  ['en', '/en/plate-loaded-incline-press/'],
+  ['es', '/es/press-declinado-en-multipower/'],
+  ['en', '/en/smith-machine-decline-press/'],
+  ['es', '/es/press-de-pecho-en-maquina-horizontal/'],
+  ['en', '/en/horizontal-chest-press-machine/'],
+  ['es', '/es/cruces-en-polea-baja/'],
+  ['en', '/en/low-cable-crossover/'],
 ];
 
 // Content routes, keyed by a stable id with the slug each locale publishes. The
@@ -2029,6 +2049,16 @@ const ROUTES = {
   flatDumbbellPress: { es: '/press-plano-mancuernas', en: '/flat-dumbbell-press' },
   highCableCrossover: { es: '/cruces-polea', en: '/high-cable-crossover' },
   pecDeckFly: { es: '/aperturas-peck-deck', en: '/pec-deck-fly' },
+  verticalChestPressMachine: { es: '/press-vertical-aparato', en: '/vertical-chest-press-machine' },
+  pushUps: { es: '/flexiones', en: '/push-ups' },
+  smithMachineBenchPress: { es: '/press-banca-multipower', en: '/smith-machine-bench-press' },
+  guillotinePress: { es: '/press-banca-cuello', en: '/guillotine-press' },
+  machineChestFly: { es: '/aperturas-pecho-maquina', en: '/machine-chest-fly' },
+  flatBenchCableFly: { es: '/aperturas-polea-banco-plano', en: '/flat-bench-cable-fly' },
+  plateLoadedInclinePress: { es: '/press-inclinado-maquina-discos', en: '/plate-loaded-incline-press' },
+  smithMachineDeclinePress: { es: '/press-declinado-en-multipower', en: '/smith-machine-decline-press' },
+  horizontalChestPressMachine: { es: '/press-de-pecho-en-maquina-horizontal', en: '/horizontal-chest-press-machine' },
+  lowCableCrossover: { es: '/cruces-en-polea-baja', en: '/low-cable-crossover' },
 };
 
 const routeId = (path) => {
