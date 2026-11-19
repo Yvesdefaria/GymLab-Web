@@ -901,6 +901,26 @@ const PAGES = [
   ['en', '/en/cable-glute-kickback/'],
   ['es', '/es/femoral-maquina-de-pie-2/'],
   ['en', '/en/standing-leg-curl/'],
+  ['es', '/es/femoral-maquina-sentado-2/'],
+  ['en', '/en/seated-leg-curl/'],
+  ['es', '/es/abductores-maquina-2/'],
+  ['en', '/en/hip-abduction-machine/'],
+  ['es', '/es/peso-muerto-rumano-mancuernas/'],
+  ['en', '/en/dumbbell-romanian-deadlift/'],
+  ['es', '/es/flexion-femoral-acostado-con-mancuerna/'],
+  ['en', '/en/dumbbell-lying-leg-curl/'],
+  ['es', '/es/sentadillas-con-mancuerna-por-encima-de-la-cabeza/'],
+  ['en', '/en/overhead-dumbbell-squat/'],
+  ['es', '/es/peso-muerto-rumano/'],
+  ['en', '/en/romanian-deadlift/'],
+  ['es', '/es/fondos-pecho/'],
+  ['en', '/en/chest-dips/'],
+  ['es', '/es/press-banca-barra/'],
+  ['en', '/en/barbell-bench-press/'],
+  ['es', '/es/aperturas-inclinadas-polea/'],
+  ['en', '/en/incline-cable-fly/'],
+  ['es', '/es/press-inclinado-multipower/'],
+  ['en', '/en/smith-machine-incline-press/'],
 ];
 
 // Content routes, keyed by a stable id with the slug each locale publishes. The
@@ -1969,6 +1989,16 @@ const ROUTES = {
   reverseHackSquat: { es: '/sentadilla-hack-inversa', en: '/reverse-hack-squat' },
   cableGluteKickback: { es: '/extensiones-gluteos-polea-2', en: '/cable-glute-kickback' },
   standingLegCurl: { es: '/femoral-maquina-de-pie-2', en: '/standing-leg-curl' },
+  seatedLegCurl: { es: '/femoral-maquina-sentado-2', en: '/seated-leg-curl' },
+  hipAbductionMachine: { es: '/abductores-maquina-2', en: '/hip-abduction-machine' },
+  dumbbellRomanianDeadlift: { es: '/peso-muerto-rumano-mancuernas', en: '/dumbbell-romanian-deadlift' },
+  dumbbellLyingLegCurl: { es: '/flexion-femoral-acostado-con-mancuerna', en: '/dumbbell-lying-leg-curl' },
+  overheadDumbbellSquat: { es: '/sentadillas-con-mancuerna-por-encima-de-la-cabeza', en: '/overhead-dumbbell-squat' },
+  romanianDeadlift: { es: '/peso-muerto-rumano', en: '/romanian-deadlift' },
+  chestDips: { es: '/fondos-pecho', en: '/chest-dips' },
+  barbellBenchPress: { es: '/press-banca-barra', en: '/barbell-bench-press' },
+  inclineCableFly: { es: '/aperturas-inclinadas-polea', en: '/incline-cable-fly' },
+  smithMachineInclinePress: { es: '/press-inclinado-multipower', en: '/smith-machine-incline-press' },
 };
 
 const routeId = (path) => {
