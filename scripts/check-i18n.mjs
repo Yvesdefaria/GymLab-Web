@@ -921,6 +921,26 @@ const PAGES = [
   ['en', '/en/incline-cable-fly/'],
   ['es', '/es/press-inclinado-multipower/'],
   ['en', '/en/smith-machine-incline-press/'],
+  ['es', '/es/press-inclinado-mancuernas/'],
+  ['en', '/en/incline-dumbbell-press/'],
+  ['es', '/es/press-inclinado-barra/'],
+  ['en', '/en/incline-barbell-press/'],
+  ['es', '/es/aperturas-mancuernas-banco-inclinado/'],
+  ['en', '/en/incline-dumbbell-fly/'],
+  ['es', '/es/press-declinado-mancuernas/'],
+  ['en', '/en/decline-dumbbell-press/'],
+  ['es', '/es/aperturas-mancuernas-banco-declinado/'],
+  ['en', '/en/decline-dumbbell-fly/'],
+  ['es', '/es/press-declinado-barra/'],
+  ['en', '/en/decline-barbell-press/'],
+  ['es', '/es/aperturas-planas-mancuernas/'],
+  ['en', '/en/flat-dumbbell-fly/'],
+  ['es', '/es/press-plano-mancuernas/'],
+  ['en', '/en/flat-dumbbell-press/'],
+  ['es', '/es/cruces-polea/'],
+  ['en', '/en/high-cable-crossover/'],
+  ['es', '/es/aperturas-peck-deck/'],
+  ['en', '/en/pec-deck-fly/'],
 ];
 
 // Content routes, keyed by a stable id with the slug each locale publishes. The
@@ -1999,6 +2019,16 @@ const ROUTES = {
   barbellBenchPress: { es: '/press-banca-barra', en: '/barbell-bench-press' },
   inclineCableFly: { es: '/aperturas-inclinadas-polea', en: '/incline-cable-fly' },
   smithMachineInclinePress: { es: '/press-inclinado-multipower', en: '/smith-machine-incline-press' },
+  inclineDumbbellPress: { es: '/press-inclinado-mancuernas', en: '/incline-dumbbell-press' },
+  inclineBarbellPress: { es: '/press-inclinado-barra', en: '/incline-barbell-press' },
+  inclineDumbbellFly: { es: '/aperturas-mancuernas-banco-inclinado', en: '/incline-dumbbell-fly' },
+  declineDumbbellPress: { es: '/press-declinado-mancuernas', en: '/decline-dumbbell-press' },
+  declineDumbbellFly: { es: '/aperturas-mancuernas-banco-declinado', en: '/decline-dumbbell-fly' },
+  declineBarbellPress: { es: '/press-declinado-barra', en: '/decline-barbell-press' },
+  flatDumbbellFly: { es: '/aperturas-planas-mancuernas', en: '/flat-dumbbell-fly' },
+  flatDumbbellPress: { es: '/press-plano-mancuernas', en: '/flat-dumbbell-press' },
+  highCableCrossover: { es: '/cruces-polea', en: '/high-cable-crossover' },
+  pecDeckFly: { es: '/aperturas-peck-deck', en: '/pec-deck-fly' },
 };
 
 const routeId = (path) => {

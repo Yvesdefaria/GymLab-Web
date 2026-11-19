@@ -490,6 +490,16 @@ const ROUTE_PAIRS = [
   ['/press-banca-barra', '/barbell-bench-press'],
   ['/aperturas-inclinadas-polea', '/incline-cable-fly'],
   ['/press-inclinado-multipower', '/smith-machine-incline-press'],
+  ['/press-inclinado-mancuernas', '/incline-dumbbell-press'],
+  ['/press-inclinado-barra', '/incline-barbell-press'],
+  ['/aperturas-mancuernas-banco-inclinado', '/incline-dumbbell-fly'],
+  ['/press-declinado-mancuernas', '/decline-dumbbell-press'],
+  ['/aperturas-mancuernas-banco-declinado', '/decline-dumbbell-fly'],
+  ['/press-declinado-barra', '/decline-barbell-press'],
+  ['/aperturas-planas-mancuernas', '/flat-dumbbell-fly'],
+  ['/press-plano-mancuernas', '/flat-dumbbell-press'],
+  ['/cruces-polea', '/high-cable-crossover'],
+  ['/aperturas-peck-deck', '/pec-deck-fly'],
 ];
 
 const pairFor = (pathname) => {
