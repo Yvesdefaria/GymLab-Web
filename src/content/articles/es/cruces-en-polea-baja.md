@@ -67,4 +67,4 @@ Las [aperturas en máquina](/es/aperturas-pecho-maquina/) hacen un trabajo parec
 
 ## Para seguir con el pecho
 
-Los [ejercicios de pecho](/es/ejercicios-pecho/) reúnen todas las variantes y las [rutinas de pecho](/es/rutinas-pecho/) ordenan la semana.
+Los [ejercicios de pecho](/es/ejercicios-pecho/) reúnen todas las variantes y las [rutinas de pecho](/es/rutinas-pecho/) ordenan la semana. La [anatomía del pecho](/es/anatomia-del-pecho/) explica por qué ninguna dirección del cable cambia la cabeza que trabaja, y la [técnica de ejecución](/es/tecnica-ejecucion-ejercicios/) repasa los detalles que comparten todos los cruces.

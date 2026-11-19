@@ -67,4 +67,4 @@ The [machine fly](/en/machine-chest-fly/) does similar work with a guided path, 
 
 ## Where to go next
 
-The [chest exercises](/en/chest-exercises/) page collects every variation and the [chest routines](/en/chest-routines/) order the week.
+The [chest exercises](/en/chest-exercises/) page collects every variation and the [chest routines](/en/chest-routines/) order the week. [Chest anatomy](/en/chest-anatomy/) explains why no cable direction changes which head does the work, and [exercise technique](/en/exercise-technique/) covers the details every fly shares.
