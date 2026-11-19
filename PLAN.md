@@ -19,27 +19,33 @@ Last updated: 2026-11-16.
 - The landing, the three calculators, the 404 and the legal pages all ship in both locales.
 - Measurement and the SQL recipe: see "Reading analytics" below and `COMPLETED.md` Appendix B.
 
-## Content library — 441 / 792 (2026-11-18)
+## Content library — 451 / 792 (2026-11-19)
 
-- **441 bilingual pages** (ES 441, EN 441), **441 unique hero paths**. By archive section:
-  Entrenamiento 217/222 (five rows settled), Por Músculo 80/80, **Rutinas 80/80**, Ejercicios 64/196,
-  Nutrición 0/191, Mujer Fitness 0/23. Publishable total: **787**.
-- **Batches 33 to 44 are built, green and committed, not pushed.** The build has **898 pages** and
-  **894 sitemap URLs**. The four exercise catalogue hubs are live; Ejercicios is 64/196.
-- Gates: `npm run verify` = `check:copy` **22,491/22,491** + build **898 pages** + `check:i18n`
-  **14,012/14,012**.
+- **451 bilingual pages** (ES 451, EN 451), **451 unique hero paths**. By archive section:
+  Entrenamiento 217/222 (five rows settled), Por Músculo 80/80, **Rutinas 80/80**, Ejercicios 74/196,
+  Nutrición 0/191, Mujer Fitness 0/23. Publishable total: **787**. Femoral y glúteos is closed at 12/12;
+  Pecho is 6/27.
+- **Batches 33 to 45 are built, green and committed, not pushed.** The build has **918 pages** and
+  **914 sitemap URLs**. The four exercise catalogue hubs and the barbell bench press flagship page are
+  live locally; Ejercicios is 74/196.
+- Gates: `npm run verify` = `check:copy` **23,001/23,001** + build **918 pages** + `check:i18n`
+  **14,322/14,322** (914 sitemap URLs, 2,742 alternates).
 - Docs: `odd/tasks/content-library-session.md` (start here next session),
   `odd/tasks/content-pages.md` (per-page checklist + resume),
-  `odd/tasks/content-library-batch-44.md` (the last batch) and `odd/tasks/guides-page-contract.md`
+  `odd/tasks/content-library-batch-45.md` (the last batch) and `odd/tasks/guides-page-contract.md`
   (the page contract and copy gate).
-- **Next 10:** batch 45 continues Ejercicios de Femoral y Glúteos at `femoral-maquina-sentado-2` and
-  then opens Ejercicios de Pecho at `fondos-pecho`.
-- **Follow-up:** three hero pairs remain under dHash 7, all from earlier batches: one exact duplicate
-  (`remo-polea-sentado` with `superserie-de-espalda-para-terminar-tu-rutina`) and two near pairs at 4
-  and 5. A 1280x720 crop of a library hero hashes 1-6 from the original, so writers must open the
-  closest hero, not only check for 0. The batch 20 injury illustrations carry labels baked into the
-  image (Spanish on the plantar fascia figure, English on the spine figure), so each shows a foreign
-  label on the other locale; crop them when the Phase 5 image pipeline lands.
+- **Next 10:** batch 46 continues Ejercicios de Pecho at `press-inclinado-mancuernas`, `press-inclinado-barra`,
+  `aperturas-mancuernas-banco-inclinado`, `press-declinado-mancuernas`,
+  `aperturas-mancuernas-banco-declinado`, `press-declinado-barra`, `aperturas-planas-mancuernas`,
+  `press-plano-mancuernas`, `cruces-polea` and `aperturas-peck-deck`.
+- **Follow-up:** five hero pairs remain under dHash 7: the pre-existing exact duplicate
+  (`remo-polea-sentado` with `superserie-de-espalda-para-terminar-tu-rutina`), two near pairs at 4
+  and 5, and two new pairs at 4 and 5 between `fondos-pecho` and two Everkinetic pulldown
+  illustrations, checked by eye and different drawings (white line art hashes close because empty
+  space dominates). A 1280x720 crop of a library hero hashes 1-6 from the original, so writers must
+  open the closest hero, not only check for 0. The batch 20 injury illustrations carry labels baked
+  into the image (Spanish on the plantar fascia figure, English on the spine figure), so each shows a
+  foreign label on the other locale; crop them when the Phase 5 image pipeline lands.
 - **Discarded:** `/congresos-profesores-factores-clave-fivestars-fitness/` does not go to production
   (owner decision, 2026-11-07). `/aeke-s1-pro-entrenamiento-domestico-con-ia/` was published with
   batch 17 and removed the same day by owner decision (2026-11-14); its pair, hero, routes and

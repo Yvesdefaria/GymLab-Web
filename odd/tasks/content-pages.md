@@ -9,9 +9,9 @@ Legend: `ES` = Spanish published, `EN` = English published.
 
 ## Progress
 
-- **Built: 441 / 792** (ES 441, EN 441).
-- Last batch: batch 44 published the remaining hubs and opened femoral and glute;
-  441 pages built.
+- **Built: 451 / 792** (ES 451, EN 451).
+- Last batch: batch 45 closed femoral and glute and opened chest exercises;
+  451 pages built.
 - Blocks finished end to end: Entrenamiento del Hombro (9), Físicos de leyenda (12), Entrenamiento de
   la Espalda (10), Rutinas de Espalda (4), Espalda (1), Ejercicios de Espalda (31), Ejercicio
   Cardiovascular (32), Entrenamiento de las Piernas (18), Entrenamiento del Pecho (6), Rutinas de
@@ -24,10 +24,10 @@ Legend: `ES` = Spanish published, `EN` = English published.
 | Entrenamiento | 222 | 217 |
 | Por Músculo | 80 | 80 |
 | Rutinas | 80 | 80 |
-| Ejercicios | 196 | 64 |
+| Ejercicios | 196 | 74 |
 | Nutrición | 191 | 0 |
 | Mujer Fitness | 23 | 0 |
-| **Total** | **792** | **441** |
+| **Total** | **792** | **451** |
 
 The Built column counts the archive block of each page, not the frontmatter `block` (every guide ships
 with `block: "Entrenamiento"` for the site taxonomy). Five Entrenamiento rows are settled and will
@@ -746,7 +746,7 @@ never publish: two DESCARTADA and three FUSIONADA, so the publishable total is *
 - [x] ES · [x] EN — `/ejercicios-trapecios/` — Ejercicios de Trapecios \| Los más efectivos en 2025
 - [x] ES · [x] EN — `/manguito-rotadores-hombro/` — Ejercicios y Entrenamiento del Rotador del Hombro
 
-### Ejercicios de Femoral y Gluteos (12)
+### Ejercicios de Femoral y Gluteos (12) — COMPLETO
 
 - [x] ES · [x] EN — `/femoral-maquina-tumbado-2/` — Femoral en máquina tumbado \| Curl de piernas
 - [x] ES · [x] EN — `/puentes-gluteo-2/` — Puentes para glúteos en suelo \| ¡Tonifica y fortalece!
@@ -754,19 +754,19 @@ never publish: two DESCARTADA and three FUSIONADA, so the publishable total is *
 - [x] ES · [x] EN — `/sentadilla-hack-inversa/` — ¿Qué es la Sentadilla Hack Inversa? Guía Completa 2026
 - [x] ES · [x] EN — `/extensiones-gluteos-polea-2/` — Extensiones de Glúteos en Polea: Técnica y Beneficios
 - [x] ES · [x] EN — `/femoral-maquina-de-pie-2/` — Femoral en máquina de pie
-- [ ] ES · [ ] EN — `/femoral-maquina-sentado-2/` — Femoral en máquina sentado
-- [ ] ES · [ ] EN — `/abductores-maquina-2/` — Abducción de cadera en máquina \| ¿Es realmente efectivo?
-- [ ] ES · [ ] EN — `/peso-muerto-rumano-mancuernas/` — Peso Muerto Rumano con Mancuernas \| Glúteos e Isquiotibiales
-- [ ] ES · [ ] EN — `/flexion-femoral-acostado-con-mancuerna/` — Flexión Femoral Acostado con Mancuerna \| Mejores Isquiotibiales
-- [ ] ES · [ ] EN — `/sentadillas-con-mancuerna-por-encima-de-la-cabeza/` — Sentadillas con mancuerna por encima de la cabeza
-- [ ] ES · [ ] EN — `/peso-muerto-rumano/` — Peso Muerto Rumano \| El mejor ejercicio para tus femorales
+- [x] ES · [x] EN — `/femoral-maquina-sentado-2/` — Femoral en máquina sentado
+- [x] ES · [x] EN — `/abductores-maquina-2/` — Abducción de cadera en máquina \| ¿Es realmente efectivo?
+- [x] ES · [x] EN — `/peso-muerto-rumano-mancuernas/` — Peso Muerto Rumano con Mancuernas \| Glúteos e Isquiotibiales
+- [x] ES · [x] EN — `/flexion-femoral-acostado-con-mancuerna/` — Flexión Femoral Acostado con Mancuerna \| Mejores Isquiotibiales
+- [x] ES · [x] EN — `/sentadillas-con-mancuerna-por-encima-de-la-cabeza/` — Sentadillas con mancuerna por encima de la cabeza
+- [x] ES · [x] EN — `/peso-muerto-rumano/` — Peso Muerto Rumano \| El mejor ejercicio para tus femorales
 
-### Ejercicios de Pecho (27) — 2/27
+### Ejercicios de Pecho (27) — 6/27
 
-- [ ] ES · [ ] EN — `/fondos-pecho/` — Fondos en paralelas para pecho \| Gran ejercicio "Old School"
-- [ ] ES · [ ] EN — `/press-banca-barra/` — Press de banca con barra
-- [ ] ES · [ ] EN — `/aperturas-inclinadas-polea/` — Aperturas en poleas en banco inclinado \| Máxima Congestión
-- [ ] ES · [ ] EN — `/press-inclinado-multipower/` — Press inclinado en Multipower \| ¿El mejor ejercicio de pecho?
+- [x] ES · [x] EN — `/fondos-pecho/` — Fondos en paralelas para pecho \| Gran ejercicio "Old School"
+- [x] ES · [x] EN — `/press-banca-barra/` — Press de banca con barra
+- [x] ES · [x] EN — `/aperturas-inclinadas-polea/` — Aperturas en poleas en banco inclinado \| Máxima Congestión
+- [x] ES · [x] EN — `/press-inclinado-multipower/` — Press inclinado en Multipower \| ¿El mejor ejercicio de pecho?
 - [ ] ES · [ ] EN — `/press-inclinado-mancuernas/` — Press con mancuernas en banco inclinado ⇨ Ejecución y Consejos!
 - [ ] ES · [ ] EN — `/press-inclinado-barra/` — Press con barra en banco inclinado \| Mejores pectorales
 - [ ] ES · [ ] EN — `/aperturas-mancuernas-banco-inclinado/` — Aperturas con mancuerna en banco inclinado \| Gana + Pecho

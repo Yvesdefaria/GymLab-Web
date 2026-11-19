@@ -1,6 +1,6 @@
 # Content library — session handoff
 
-Last updated: 2026-11-18. Read this first next session.
+Last updated: 2026-11-19. Read this first next session.
 
 - Per-page record: `odd/tasks/content-pages.md`
 - Page contract and copy gate: `odd/tasks/guides-page-contract.md`
@@ -9,28 +9,29 @@ Last updated: 2026-11-18. Read this first next session.
 
 ## State
 
-- **441 / 792 bilingual pages** (ES 441, EN 441).
+- **451 / 792 bilingual pages** (ES 451, EN 451).
 - Blocks by archive section: Entrenamiento **217/222** (the five missing rows are settled: two
-  descartadas and three fusionadas), Por Músculo **80/80**, Rutinas **80/80**, Ejercicios **64/196**,
+  descartadas and three fusionadas), Por Músculo **80/80**, Rutinas **80/80**, Ejercicios **74/196**,
   Nutrición 0/191, Mujer Fitness 0/23. The publishable total is 787.
-- **441 unique hero paths.** One exact duplicate pair remains from an earlier batch
-  (`remo-polea-sentado` with `superserie-de-espalda-para-terminar-tu-rutina`), plus two pre-existing
-  near pairs at dHash 4 and 5; the batch 17 to 44 duplicates were fixed. See `PLAN.md`.
-- **Batch 44 is built, green and committed (2026-11-18).** The build has **898 pages** and **894
-  sitemap URLs**. The four exercise catalogue hubs are live; Ejercicios is 64/196.
+- **451 unique hero paths.** Three pre-existing dHash pairs remain under 7 (`remo-polea-sentado` at 0,
+  two near pairs at 4 and 5), plus two new line-art pairs at 4 and 5 between `fondos-pecho` and two
+  Everkinetic pulldown illustrations, confirmed as different drawings by eye. See `PLAN.md`.
+- **Batch 45 is built, green and committed (2026-11-19).** The build has **918 pages** and **914
+  sitemap URLs**. Femoral y glúteos is closed at **12/12**; Pecho is 6/27 and the barbell bench press
+  flagship page is live locally.
 - Five archive rows are settled and must stay out: the FiveStars Fitness congress page (discarded),
   the AEKE S1 Pro page (discarded 2026-11-14), `/velocidad-repeticiones/` (fused into the tempo page,
   2026-11-14) and the two batch 20 fusions (2026-11-15).
 - **Production runs batch 32 (pushed 2026-11-16).** Batches 19 to 32 are live; `origin/main` is at
-  the batch 32 docs push. Batches 33 to 44 are committed locally and not pushed.
-- Batch records: `odd/tasks/content-library-batch-42.md`, `-43.md` and `-44.md`.
+  the batch 32 docs push. Batches 33 to 45 are committed locally and not pushed.
+- Batch records: `odd/tasks/content-library-batch-43.md`, `-44.md` and `-45.md`.
 
 ## Gates
 
 ```powershell
-npm run check:copy   # 22,491/22,491
-npm run build        # 898 pages
-npm run check:i18n   # 14,012/14,012, 894 sitemap URLs
+npm run check:copy   # 23,001/23,001
+npm run build        # 918 pages
+npm run check:i18n   # 14,322/14,322, 914 sitemap URLs
 npm run verify       # all three, in that order
 npm run dev          # http://localhost:4321
 ```
@@ -63,9 +64,11 @@ library and breaks every Python process that imports Pillow.
 ## Gotchas that keep costing time
 
 - **Heroes.** dHash 0 is a duplicate, crops have measured up to 14, and a distance of 7 can still be the
-  same photograph. Open the closest hero before vendoring, always. The obvious Commons gym photos are
-  spent; Everkinetic's `Category:Weight training diagrams` is the fallback, rendered through
-  `thumb.wikimedia.org/.../<1280>px-<File>.svg.png` (1600 returns 400 on tall SVGs).
+  same photograph. Open the closest hero before vendoring, always. White Everkinetic line art scores 4-7
+  against other line art because empty space dominates the hash; open both drawings. The obvious Commons
+  gym photos are spent; Everkinetic's `Category:Weight training diagrams` is the fallback, rendered
+  through `thumb.wikimedia.org/.../<1280>px-<File>.svg.png` (1600 returns 400 on tall SVGs). Pexels is a
+  working second source when Commons has no honest photo.
 - **Tables.** The routine grid is 58/21/21 and clips any long header or long middle cell at 360–390 px.
   Schedules, week maps, phase tables, decision tables and hub summaries are `<table class="text-table">`.
 - **Section casing.** `section` must match `src/data/guides-nav.ts` and the published pages, not the
@@ -82,10 +85,11 @@ library and breaks every Python process that imports Pillow.
 ## What is built
 
 The per-page record in `content-pages.md` is authoritative; this section summarises the blocks. At
-**441 pages**, Por Músculo (80/80) and Rutinas (80/80) are closed, Entrenamiento is effectively closed
-(217/222 with five settled rows), and the Ejercicios block is at **64/196**: Espalda complete, Tríceps
-complete at 17/17, the four catalogue hubs live, and Pecho, Femoral, Hombro, Bíceps, Cuádriceps,
-Gemelo, Trapecios and Básicos in progress.
+**451 pages**, Por Músculo (80/80) and Rutinas (80/80) are closed, Entrenamiento is effectively closed
+(217/222 with five settled rows), and the Ejercicios block is at **74/196**: Espalda complete, Tríceps
+complete at 17/17, Femoral y glúteos complete at 12/12, the four catalogue hubs live, the bench press
+flagship page published, and Pecho (6/27), Hombro, Bíceps, Cuádriceps, Gemelo, Trapecios and Básicos in
+progress.
 
 The list below describes the blocks finished before batch 42; the checklist and the batch records carry
 the current per-page state.
@@ -142,15 +146,15 @@ the current per-page state.
 
 ## Next 10
 
-1. Ejercicios de Femoral y Glúteos continues at `/femoral-maquina-sentado-2/`, then `abductores-maquina-2`,
-   `peso-muerto-rumano-mancuernas`, `flexion-femoral-acostado-con-mancuerna`,
-   `sentadillas-con-mancuerna-por-encima-de-la-cabeza` and `peso-muerto-rumano`; after those, the
-   Ejercicios de Pecho block starts at `/fondos-pecho/`. Write the batch 45 brief after mapping the ten
-   sources.
+1. Ejercicios de Pecho continues at `/press-inclinado-mancuernas/`, then `press-inclinado-barra`,
+   `aperturas-mancuernas-banco-inclinado`, `press-declinado-mancuernas`,
+   `aperturas-mancuernas-banco-declinado`, `press-declinado-barra`, `aperturas-planas-mancuernas`,
+   `press-plano-mancuernas`, `cruces-polea` and `aperturas-peck-deck`. Write the batch 46 brief after
+   mapping the ten sources.
 2. Keep the same copy, unique-hero and gate flow.
 3. Before publishing another photo from Shixart1985, Nenad Stojkovic, Miguel Angel Omaña Rojas, the
    InjuryMap family, PTPioneer, KeepActive Australia, Everkinetic or Wellcome Collection, compare the
-   Commons file title and the dHash against the 441 existing heroes. A crop of a library hero scores
+   Commons file title and the dHash against the 451 existing heroes. A crop of a library hero scores
    1-14 and is a duplicate in practice, not only at 0.
 4. The scaling architecture is deferred to PLAN Phase 7; do not implement it during content batches.
 
@@ -199,8 +203,32 @@ the current per-page state.
   published, so the bench reverse crunch page can link its floor regression when that page is next
   touched. One pre-existing 3 px clipped cell in `/rutinas-espalda/` (a nowrap numeric column) is
   documented in the batch 22 record.
-- **Push is the owner's call:** satisfied on 2026-11-16. Batches 19 to 32 were pushed from
-  `6293327` to `f7f8de1`; production serves 658 pages.
+- **Push is the owner's call:** batches 19 to 32 were pushed on 2026-11-16 from `6293327` to
+  `f7f8de1`. Batches 33 to 45, page commits and docs, remain local; production still serves 658 pages.
+
+## Session close (2026-11-19, batch 45)
+
+- Batch 45 closed Ejercicios de Femoral y Glúteos and opened Ejercicios de Pecho: 441 → **451 / 792**.
+  Ejercicios **74/196**; Femoral y glúteos **12/12 — COMPLETO**; Pecho 6/27.
+- Writers: A pages 1-5 (seated curl, abduction machine, dumbbell RDL, dumbbell lying curl, overhead
+  dumbbell squat), B pages 6-10 (RDL, chest dips, barbell bench press, incline cable fly, Smith incline),
+  disjoint files. The parent registered routes, verified 140 page/width pairs, ran the gates and
+  committed per page.
+- Gates: `check:copy` **23,001/23,001**, build **918 pages**, `check:i18n` **14,322/14,322**, sitemap
+  **914 URLs** with 2,742 alternates. 166 internal links, **0 broken**; no clipped cell from 360 to
+  1280 after the render pass.
+- Heroes: 451 files; five Pexels photos and five Wikimedia files, three Everkinetic illustrations
+  (dip, incline fly, Smith incline). Two line-art pairs at dHash 4 and 5 exist and were opened: the
+  drawings differ.
+- Commits: pages `22b1272`, `dacb871`, `1711aa7`, `8f0c182`, `064cd19`, `b8a0d69`, `4ae1917`,
+  `70616ce`, `51c4b64`, `c4867b7`; routes `19efd48`.
+- **Editorial wins:** the seated curl biases the monoarticular short head and runs to 130-140°; the
+  abductor machine gets its verdict inverted; both RDL pages stop at the pelvis tuck; the chest dip
+  owns the shoulder-to-elbow depth rule; the bench press page kills the inner/outer pectoral myth and
+  keeps the thumbless-grip warning.
+- **Gotcha:** `check:i18n` assertions grow by 31 per pair, not 51; the count that matches `check:copy`
+  is a coincidence in some batches. Read the gate output, not the copy total.
+- Next session starts at `/press-inclinado-mancuernas/`; batch 46 continues Pecho.
 
 ## Session close (2026-11-18, wrap: batches 33 to 44)
 
