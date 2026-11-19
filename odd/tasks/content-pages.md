@@ -9,9 +9,9 @@ Legend: `ES` = Spanish published, `EN` = English published.
 
 ## Progress
 
-- **Built: 451 / 792** (ES 451, EN 451).
-- Last batch: batch 45 closed femoral and glute and opened chest exercises;
-  451 pages built.
+- **Built: 461 / 792** (ES 461, EN 461).
+- Last batch: batch 46 continued chest exercises;
+  461 pages built.
 - Blocks finished end to end: Entrenamiento del Hombro (9), Físicos de leyenda (12), Entrenamiento de
   la Espalda (10), Rutinas de Espalda (4), Espalda (1), Ejercicios de Espalda (31), Ejercicio
   Cardiovascular (32), Entrenamiento de las Piernas (18), Entrenamiento del Pecho (6), Rutinas de
@@ -24,10 +24,10 @@ Legend: `ES` = Spanish published, `EN` = English published.
 | Entrenamiento | 222 | 217 |
 | Por Músculo | 80 | 80 |
 | Rutinas | 80 | 80 |
-| Ejercicios | 196 | 74 |
+| Ejercicios | 196 | 84 |
 | Nutrición | 191 | 0 |
 | Mujer Fitness | 23 | 0 |
-| **Total** | **792** | **451** |
+| **Total** | **792** | **461** |
 
 The Built column counts the archive block of each page, not the frontmatter `block` (every guide ships
 with `block: "Entrenamiento"` for the site taxonomy). Five Entrenamiento rows are settled and will
@@ -761,22 +761,22 @@ never publish: two DESCARTADA and three FUSIONADA, so the publishable total is *
 - [x] ES · [x] EN — `/sentadillas-con-mancuerna-por-encima-de-la-cabeza/` — Sentadillas con mancuerna por encima de la cabeza
 - [x] ES · [x] EN — `/peso-muerto-rumano/` — Peso Muerto Rumano \| El mejor ejercicio para tus femorales
 
-### Ejercicios de Pecho (27) — 6/27
+### Ejercicios de Pecho (27) — 16/27
 
 - [x] ES · [x] EN — `/fondos-pecho/` — Fondos en paralelas para pecho \| Gran ejercicio "Old School"
 - [x] ES · [x] EN — `/press-banca-barra/` — Press de banca con barra
 - [x] ES · [x] EN — `/aperturas-inclinadas-polea/` — Aperturas en poleas en banco inclinado \| Máxima Congestión
 - [x] ES · [x] EN — `/press-inclinado-multipower/` — Press inclinado en Multipower \| ¿El mejor ejercicio de pecho?
-- [ ] ES · [ ] EN — `/press-inclinado-mancuernas/` — Press con mancuernas en banco inclinado ⇨ Ejecución y Consejos!
-- [ ] ES · [ ] EN — `/press-inclinado-barra/` — Press con barra en banco inclinado \| Mejores pectorales
-- [ ] ES · [ ] EN — `/aperturas-mancuernas-banco-inclinado/` — Aperturas con mancuerna en banco inclinado \| Gana + Pecho
-- [ ] ES · [ ] EN — `/press-declinado-mancuernas/` — Press con mancuernas en banco declinado ⇨ HAZLO BIEN!
-- [ ] ES · [ ] EN — `/aperturas-mancuernas-banco-declinado/` — Aperturas con mancuernas en banco declinado ✔
-- [ ] ES · [ ] EN — `/press-declinado-barra/` — Press con barra en banco declinado ✔ Super Ejercicio
-- [ ] ES · [ ] EN — `/aperturas-planas-mancuernas/` — Aperturas con mancuernas en banco plano
-- [ ] ES · [ ] EN — `/press-plano-mancuernas/` — Press en banco plano con mancuernas para pecho
-- [ ] ES · [ ] EN — `/cruces-polea/` — Cruces en polea alta \| Ejercicio de pecho ULTRA efectivo ✔
-- [ ] ES · [ ] EN — `/aperturas-peck-deck/` — Aperturas en Peck-deck
+- [x] ES · [x] EN — `/press-inclinado-mancuernas/` — Press con mancuernas en banco inclinado ⇨ Ejecución y Consejos!
+- [x] ES · [x] EN — `/press-inclinado-barra/` — Press con barra en banco inclinado \| Mejores pectorales
+- [x] ES · [x] EN — `/aperturas-mancuernas-banco-inclinado/` — Aperturas con mancuerna en banco inclinado \| Gana + Pecho
+- [x] ES · [x] EN — `/press-declinado-mancuernas/` — Press con mancuernas en banco declinado ⇨ HAZLO BIEN!
+- [x] ES · [x] EN — `/aperturas-mancuernas-banco-declinado/` — Aperturas con mancuernas en banco declinado ✔
+- [x] ES · [x] EN — `/press-declinado-barra/` — Press con barra en banco declinado ✔ Super Ejercicio
+- [x] ES · [x] EN — `/aperturas-planas-mancuernas/` — Aperturas con mancuernas en banco plano
+- [x] ES · [x] EN — `/press-plano-mancuernas/` — Press en banco plano con mancuernas para pecho
+- [x] ES · [x] EN — `/cruces-polea/` — Cruces en polea alta \| Ejercicio de pecho ULTRA efectivo ✔
+- [x] ES · [x] EN — `/aperturas-peck-deck/` — Aperturas en Peck-deck
 - [x] ES · [x] EN — `/pullover-mancuerna/` — Pullover con mancuerna \| Trabaja tu pecho y espalda
 - [x] ES · [x] EN — `/pullover-barra/` — Pullover con barra \| Ejercicio avanzado para la espalda
 - [ ] ES · [ ] EN — `/press-vertical-aparato/` — Press de pecho en máquina vertical 【Ejercicio Fácil y Eficaz!】

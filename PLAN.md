@@ -19,33 +19,36 @@ Last updated: 2026-11-16.
 - The landing, the three calculators, the 404 and the legal pages all ship in both locales.
 - Measurement and the SQL recipe: see "Reading analytics" below and `COMPLETED.md` Appendix B.
 
-## Content library — 451 / 792 (2026-11-19)
+## Content library — 461 / 792 (2026-11-19)
 
-- **451 bilingual pages** (ES 451, EN 451), **451 unique hero paths**. By archive section:
-  Entrenamiento 217/222 (five rows settled), Por Músculo 80/80, **Rutinas 80/80**, Ejercicios 74/196,
+- **461 bilingual pages** (ES 461, EN 461), **461 unique hero paths**. By archive section:
+  Entrenamiento 217/222 (five rows settled), Por Músculo 80/80, **Rutinas 80/80**, Ejercicios 84/196,
   Nutrición 0/191, Mujer Fitness 0/23. Publishable total: **787**. Femoral y glúteos is closed at 12/12;
-  Pecho is 6/27.
-- **Batches 33 to 45 are built, green and committed, not pushed.** The build has **918 pages** and
-  **914 sitemap URLs**. The four exercise catalogue hubs and the barbell bench press flagship page are
-  live locally; Ejercicios is 74/196.
-- Gates: `npm run verify` = `check:copy` **23,001/23,001** + build **918 pages** + `check:i18n`
-  **14,322/14,322** (914 sitemap URLs, 2,742 alternates).
+  Pecho is 16/27.
+- **Batches 33 to 46 are built, green and committed, not pushed.** The build has **938 pages** and
+  **934 sitemap URLs**. Ejercicios is 84/196; the incline, decline and flat presses and flies plus the
+  cable crossover and pec deck are live locally.
+- Gates: `npm run verify` = `check:copy` **23,511/23,511** + build **938 pages** + `check:i18n`
+  **14,632/14,632** (934 sitemap URLs, 2,802 alternates).
 - Docs: `odd/tasks/content-library-session.md` (start here next session),
   `odd/tasks/content-pages.md` (per-page checklist + resume),
-  `odd/tasks/content-library-batch-45.md` (the last batch) and `odd/tasks/guides-page-contract.md`
+  `odd/tasks/content-library-batch-46.md` (the last batch) and `odd/tasks/guides-page-contract.md`
   (the page contract and copy gate).
-- **Next 10:** batch 46 continues Ejercicios de Pecho at `press-inclinado-mancuernas`, `press-inclinado-barra`,
-  `aperturas-mancuernas-banco-inclinado`, `press-declinado-mancuernas`,
-  `aperturas-mancuernas-banco-declinado`, `press-declinado-barra`, `aperturas-planas-mancuernas`,
-  `press-plano-mancuernas`, `cruces-polea` and `aperturas-peck-deck`.
-- **Follow-up:** five hero pairs remain under dHash 7: the pre-existing exact duplicate
+- **Next 10:** batch 47 continues Ejercicios de Pecho at `press-vertical-aparato`, then `flexiones`,
+  `press-banca-multipower`, `press-banca-cuello`, `aperturas-pecho-maquina`,
+  `aperturas-polea-banco-plano`, `press-inclinado-maquina-discos`,
+  `press-declinado-en-multipower`, `press-de-pecho-en-maquina-horizontal` and `cruces-en-polea-baja`.
+  After it, one chest row remains (`pullover-con-mancuerna-en-banco-inclinado`).
+- **Follow-up:** seven hero pairs are under dHash 7: the pre-existing exact duplicate
   (`remo-polea-sentado` with `superserie-de-espalda-para-terminar-tu-rutina`), two near pairs at 4
-  and 5, and two new pairs at 4 and 5 between `fondos-pecho` and two Everkinetic pulldown
-  illustrations, checked by eye and different drawings (white line art hashes close because empty
-  space dominates). A 1280x720 crop of a library hero hashes 1-6 from the original, so writers must
-  open the closest hero, not only check for 0. The batch 20 injury illustrations carry labels baked
-  into the image (Spanish on the plantar fascia figure, English on the spine figure), so each shows a
-  foreign label on the other locale; crop them when the Phase 5 image pipeline lands.
+  and 5, the two `fondos-pecho` line-art pairs at 4 and 5, and the Everkinetic bench pairs at 3
+  (incline bar vs incline dumbbell fly) and 6 (incline dumbbell fly vs incline cable fly), all opened
+  and confirmed as different drawings. A 1280x720 crop of a library hero hashes 1-6 from the
+  original, so writers must open the closest hero, not only check for 0. White line art hashes 3-9
+  against other line art; equipment and arm position are what distinguish them. The batch 20 injury
+  illustrations carry labels baked into the image (Spanish on the plantar fascia figure, English on
+  the spine figure), so each shows a foreign label on the other locale; crop them when the Phase 5
+  image pipeline lands.
 - **Discarded:** `/congresos-profesores-factores-clave-fivestars-fitness/` does not go to production
   (owner decision, 2026-11-07). `/aeke-s1-pro-entrenamiento-domestico-con-ia/` was published with
   batch 17 and removed the same day by owner decision (2026-11-14); its pair, hero, routes and

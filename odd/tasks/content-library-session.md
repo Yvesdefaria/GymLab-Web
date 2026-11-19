@@ -9,29 +9,27 @@ Last updated: 2026-11-19. Read this first next session.
 
 ## State
 
-- **451 / 792 bilingual pages** (ES 451, EN 451).
+- **461 / 792 bilingual pages** (ES 461, EN 461).
 - Blocks by archive section: Entrenamiento **217/222** (the five missing rows are settled: two
-  descartadas and three fusionadas), Por Músculo **80/80**, Rutinas **80/80**, Ejercicios **74/196**,
+  descartadas and three fusionadas), Por Músculo **80/80**, Rutinas **80/80**, Ejercicios **84/196**,
   Nutrición 0/191, Mujer Fitness 0/23. The publishable total is 787.
-- **451 unique hero paths.** Three pre-existing dHash pairs remain under 7 (`remo-polea-sentado` at 0,
-  two near pairs at 4 and 5), plus two new line-art pairs at 4 and 5 between `fondos-pecho` and two
-  Everkinetic pulldown illustrations, confirmed as different drawings by eye. See `PLAN.md`.
-- **Batch 45 is built, green and committed (2026-11-19).** The build has **918 pages** and **914
-  sitemap URLs**. Femoral y glúteos is closed at **12/12**; Pecho is 6/27 and the barbell bench press
-  flagship page is live locally.
+- **461 unique hero paths.** Three pre-existing dHash pairs remain under 7 (`remo-polea-sentado` at 0,
+  two near pairs at 4 and 5), plus the line-art pairs recorded in `PLAN.md`. See `PLAN.md`.
+- **Batch 46 is built, green and committed (2026-11-19).** The build has **938 pages** and **934
+  sitemap URLs**. Pecho is **16/27**.
 - Five archive rows are settled and must stay out: the FiveStars Fitness congress page (discarded),
   the AEKE S1 Pro page (discarded 2026-11-14), `/velocidad-repeticiones/` (fused into the tempo page,
   2026-11-14) and the two batch 20 fusions (2026-11-15).
 - **Production runs batch 32 (pushed 2026-11-16).** Batches 19 to 32 are live; `origin/main` is at
-  the batch 32 docs push. Batches 33 to 45 are committed locally and not pushed.
-- Batch records: `odd/tasks/content-library-batch-43.md`, `-44.md` and `-45.md`.
+  the batch 32 docs push. Batches 33 to 46 are committed locally and not pushed.
+- Batch records: `odd/tasks/content-library-batch-44.md`, `-45.md` and `-46.md`.
 
 ## Gates
 
 ```powershell
-npm run check:copy   # 23,001/23,001
-npm run build        # 918 pages
-npm run check:i18n   # 14,322/14,322, 914 sitemap URLs
+npm run check:copy   # 23,511/23,511
+npm run build        # 938 pages
+npm run check:i18n   # 14,632/14,632, 934 sitemap URLs
 npm run verify       # all three, in that order
 npm run dev          # http://localhost:4321
 ```
