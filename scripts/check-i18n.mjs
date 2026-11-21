@@ -1001,6 +1001,26 @@ const PAGES = [
   ['en', '/en/plate-front-raise/'],
   ['es', '/es/elevaciones-frontales-barra/'],
   ['en', '/en/barbell-front-raise/'],
+  ['es', '/es/elevaciones-frontales-banco-inclinado/'],
+  ['en', '/en/incline-bench-dumbbell-front-raise/'],
+  ['es', '/es/press-hombros-multipower/'],
+  ['en', '/en/smith-machine-shoulder-press/'],
+  ['es', '/es/press-cubano/'],
+  ['en', '/en/cuban-press/'],
+  ['es', '/es/elevaciones-frontales-polea-una-mano/'],
+  ['en', '/en/one-arm-cable-front-raise/'],
+  ['es', '/es/elevacion-lateral-inclinada/'],
+  ['en', '/en/leaning-cable-lateral-raise/'],
+  ['es', '/es/pajaros-polea-de-pie/'],
+  ['en', '/en/standing-cable-reverse-fly/'],
+  ['es', '/es/elevaciones-laterales-maquina/'],
+  ['en', '/en/machine-lateral-raise/'],
+  ['es', '/es/press-tras-nuca-barra/'],
+  ['en', '/en/behind-the-neck-barbell-press/'],
+  ['es', '/es/elevaciones-frontales-con-barra-en-banco-inclinado/'],
+  ['en', '/en/incline-bench-barbell-front-raise/'],
+  ['es', '/es/ejercicios-hombro/'],
+  ['en', '/en/shoulder-exercises/'],
 ];
 
 // Content routes, keyed by a stable id with the slug each locale publishes. The
@@ -2119,6 +2139,16 @@ const ROUTES = {
   alternatingDumbbellFrontRaise: { es: '/elevaciones-frontales-mancuerna-alterno', en: '/alternating-dumbbell-front-raise' },
   plateFrontRaise: { es: '/elevaciones-frontales-disco', en: '/plate-front-raise' },
   barbellFrontRaise: { es: '/elevaciones-frontales-barra', en: '/barbell-front-raise' },
+  inclineBenchDumbbellFrontRaise: { es: '/elevaciones-frontales-banco-inclinado', en: '/incline-bench-dumbbell-front-raise' },
+  smithMachineShoulderPress: { es: '/press-hombros-multipower', en: '/smith-machine-shoulder-press' },
+  cubanPress: { es: '/press-cubano', en: '/cuban-press' },
+  oneArmCableFrontRaise: { es: '/elevaciones-frontales-polea-una-mano', en: '/one-arm-cable-front-raise' },
+  leaningCableLateralRaise: { es: '/elevacion-lateral-inclinada', en: '/leaning-cable-lateral-raise' },
+  standingCableReverseFly: { es: '/pajaros-polea-de-pie', en: '/standing-cable-reverse-fly' },
+  machineLateralRaise: { es: '/elevaciones-laterales-maquina', en: '/machine-lateral-raise' },
+  behindTheNeckBarbellPress: { es: '/press-tras-nuca-barra', en: '/behind-the-neck-barbell-press' },
+  inclineBenchBarbellFrontRaise: { es: '/elevaciones-frontales-con-barra-en-banco-inclinado', en: '/incline-bench-barbell-front-raise' },
+  shoulderExercisesHub: { es: '/ejercicios-hombro', en: '/shoulder-exercises' },
 };
 
 const routeId = (path) => {
