@@ -212,6 +212,38 @@ change.
 - **Trap:** this phase is not a redesign and ships no visual change. Its only product is that the next
   redesign is cheap; mixing it with a visual refresh hides regressions in both.
 
+### Phase 11 — Related guides at the end of every article (2026-11-21)
+
+Owner question behind this phase: every article should end with a carousel of similar or interesting
+pages, without editing 1,002 files. Measured today: every article renders through `ArticleLayout.astro`,
+the frontmatter already carries `block`, `section` and 3-5 `tags`, the content has zero inline images
+and zero per-page CSS, and the route is a 24-line wrapper that already reads the collection. The
+relevance can be computed at build time and the section added once.
+
+- [ ] Build `src/components/RelatedGuides.astro`: `getCollection('articles')`, keep the same `lang`,
+      exclude the current entry, score same `section` +3, same `block` +1, each shared tag +1, take six,
+      break ties by title. Fallback to the same block when the section has fewer than six. The
+      collection is cached by Astro, so build time does not grow per page.
+- [ ] Render a `<section>` with a heading ("Más de <section>", EN "More on <section>") and a horizontal
+      scroller with `scroll-snap-type: x mandatory`; cards show the section label, the title and an
+      arrow. No autoplay, no infinite loop, no framework.
+- [ ] Text cards first. Do not put the 1280 px hero inside a 300 px card before Phase 5 produces
+      thumbnails; the waste is 40-250 KB per card.
+- [ ] Arrows as `<button>` with `aria-label`, shown only when the scroller overflows, plus
+      `prefers-reduced-motion`; keyboard users get the native scroller and focus-visible rings.
+- [ ] Clamp titles to two lines and size cards so a 45-60 character title does not overflow at 360 px.
+      The page itself must never gain horizontal scroll.
+- [ ] Optional editorial override as a later step: `related: []` in the frontmatter schema, used only
+      when present. The automatic path must ship without any content migration.
+- [ ] QA with the render pass on one page per block at 360/390/768/1280, including a page whose title
+      is exactly 60 characters.
+- **Decisions:** six cards, automatic relevance by default, manual override optional, no autoplay,
+  text-first. The section does not go on the landing, the calculators or the legal pages in this phase.
+- **Acceptance:** every article ends with six working links to same-locale pages, no content file is
+  edited, `check:copy` / build / `check:i18n` stay green, and no page overflows horizontally.
+- **Trap:** a carousel that hides the links behind an interaction, or a card grid that ships the full
+  hero in a thumbnail slot. This phase adds internal linking and navigation, not a new image pipeline.
+
 ## Open work
 
 ### T15 — SEO, open items
