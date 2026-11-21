@@ -961,6 +961,26 @@ const PAGES = [
   ['en', '/en/horizontal-chest-press-machine/'],
   ['es', '/es/cruces-en-polea-baja/'],
   ['en', '/en/low-cable-crossover/'],
+  ['es', '/es/pullover-con-mancuerna-en-banco-inclinado/'],
+  ['en', '/en/incline-bench-dumbbell-pullover/'],
+  ['es', '/es/elevaciones-posteriores-con-mancuerna/'],
+  ['en', '/en/dumbbell-rear-delt-raise/'],
+  ['es', '/es/press-militar-barra-de-pie/'],
+  ['en', '/en/standing-barbell-military-press/'],
+  ['es', '/es/remo-al-menton/'],
+  ['en', '/en/upright-row/'],
+  ['es', '/es/aperturas-invertidas-contractora/'],
+  ['en', '/en/reverse-pec-deck/'],
+  ['es', '/es/elevacion-posterior-tumbado-una-mano/'],
+  ['en', '/en/side-lying-one-arm-rear-delt-raise/'],
+  ['es', '/es/elevacion-posterior-una-mano-polea/'],
+  ['en', '/en/one-arm-cable-rear-delt-raise/'],
+  ['es', '/es/pajaros-en-banco-inclinado/'],
+  ['en', '/en/incline-bench-rear-delt-raise/'],
+  ['es', '/es/pajaros-sentado-mancuernas/'],
+  ['en', '/en/seated-dumbbell-rear-delt-raise/'],
+  ['es', '/es/press-tras-nuca-multipower/'],
+  ['en', '/en/smith-machine-behind-the-neck-press/'],
 ];
 
 // Content routes, keyed by a stable id with the slug each locale publishes. The
@@ -2059,6 +2079,16 @@ const ROUTES = {
   smithMachineDeclinePress: { es: '/press-declinado-en-multipower', en: '/smith-machine-decline-press' },
   horizontalChestPressMachine: { es: '/press-de-pecho-en-maquina-horizontal', en: '/horizontal-chest-press-machine' },
   lowCableCrossover: { es: '/cruces-en-polea-baja', en: '/low-cable-crossover' },
+  inclineBenchDumbbellPullover: { es: '/pullover-con-mancuerna-en-banco-inclinado', en: '/incline-bench-dumbbell-pullover' },
+  dumbbellRearDeltRaise: { es: '/elevaciones-posteriores-con-mancuerna', en: '/dumbbell-rear-delt-raise' },
+  standingBarbellMilitaryPress: { es: '/press-militar-barra-de-pie', en: '/standing-barbell-military-press' },
+  uprightRow: { es: '/remo-al-menton', en: '/upright-row' },
+  reversePecDeck: { es: '/aperturas-invertidas-contractora', en: '/reverse-pec-deck' },
+  sideLyingOneArmRearDeltRaise: { es: '/elevacion-posterior-tumbado-una-mano', en: '/side-lying-one-arm-rear-delt-raise' },
+  oneArmCableRearDeltRaise: { es: '/elevacion-posterior-una-mano-polea', en: '/one-arm-cable-rear-delt-raise' },
+  inclineBenchRearDeltRaise: { es: '/pajaros-en-banco-inclinado', en: '/incline-bench-rear-delt-raise' },
+  seatedDumbbellRearDeltRaise: { es: '/pajaros-sentado-mancuernas', en: '/seated-dumbbell-rear-delt-raise' },
+  smithMachineBehindTheNeckPress: { es: '/press-tras-nuca-multipower', en: '/smith-machine-behind-the-neck-press' },
 };
 
 const routeId = (path) => {
