@@ -981,6 +981,26 @@ const PAGES = [
   ['en', '/en/seated-dumbbell-rear-delt-raise/'],
   ['es', '/es/press-tras-nuca-multipower/'],
   ['en', '/en/smith-machine-behind-the-neck-press/'],
+  ['es', '/es/elevaciones-laterales/'],
+  ['en', '/en/standing-dumbbell-lateral-raise/'],
+  ['es', '/es/elevaciones-una-mano-polea/'],
+  ['en', '/en/one-arm-cable-lateral-raise/'],
+  ['es', '/es/press-arnold-2/'],
+  ['en', '/en/arnold-press/'],
+  ['es', '/es/press-hombro-mancuernas-sentado/'],
+  ['en', '/en/seated-dumbbell-shoulder-press/'],
+  ['es', '/es/press-hombros-maquina/'],
+  ['en', '/en/machine-shoulder-press/'],
+  ['es', '/es/press-mancuernas-de-pie/'],
+  ['en', '/en/standing-dumbbell-shoulder-press/'],
+  ['es', '/es/press-hombros-polea/'],
+  ['en', '/en/cable-shoulder-press/'],
+  ['es', '/es/elevaciones-frontales-mancuerna-alterno/'],
+  ['en', '/en/alternating-dumbbell-front-raise/'],
+  ['es', '/es/elevaciones-frontales-disco/'],
+  ['en', '/en/plate-front-raise/'],
+  ['es', '/es/elevaciones-frontales-barra/'],
+  ['en', '/en/barbell-front-raise/'],
 ];
 
 // Content routes, keyed by a stable id with the slug each locale publishes. The
@@ -2089,6 +2109,16 @@ const ROUTES = {
   inclineBenchRearDeltRaise: { es: '/pajaros-en-banco-inclinado', en: '/incline-bench-rear-delt-raise' },
   seatedDumbbellRearDeltRaise: { es: '/pajaros-sentado-mancuernas', en: '/seated-dumbbell-rear-delt-raise' },
   smithMachineBehindTheNeckPress: { es: '/press-tras-nuca-multipower', en: '/smith-machine-behind-the-neck-press' },
+  standingDumbbellLateralRaise: { es: '/elevaciones-laterales', en: '/standing-dumbbell-lateral-raise' },
+  oneArmCableLateralRaise: { es: '/elevaciones-una-mano-polea', en: '/one-arm-cable-lateral-raise' },
+  arnoldPress: { es: '/press-arnold-2', en: '/arnold-press' },
+  seatedDumbbellShoulderPress: { es: '/press-hombro-mancuernas-sentado', en: '/seated-dumbbell-shoulder-press' },
+  machineShoulderPress: { es: '/press-hombros-maquina', en: '/machine-shoulder-press' },
+  standingDumbbellShoulderPress: { es: '/press-mancuernas-de-pie', en: '/standing-dumbbell-shoulder-press' },
+  cableShoulderPress: { es: '/press-hombros-polea', en: '/cable-shoulder-press' },
+  alternatingDumbbellFrontRaise: { es: '/elevaciones-frontales-mancuerna-alterno', en: '/alternating-dumbbell-front-raise' },
+  plateFrontRaise: { es: '/elevaciones-frontales-disco', en: '/plate-front-raise' },
+  barbellFrontRaise: { es: '/elevaciones-frontales-barra', en: '/barbell-front-raise' },
 };
 
 const routeId = (path) => {

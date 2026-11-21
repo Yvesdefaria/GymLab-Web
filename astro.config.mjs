@@ -520,6 +520,16 @@ const ROUTE_PAIRS = [
   ['/pajaros-en-banco-inclinado', '/incline-bench-rear-delt-raise'],
   ['/pajaros-sentado-mancuernas', '/seated-dumbbell-rear-delt-raise'],
   ['/press-tras-nuca-multipower', '/smith-machine-behind-the-neck-press'],
+  ['/elevaciones-laterales', '/standing-dumbbell-lateral-raise'],
+  ['/elevaciones-una-mano-polea', '/one-arm-cable-lateral-raise'],
+  ['/press-arnold-2', '/arnold-press'],
+  ['/press-hombro-mancuernas-sentado', '/seated-dumbbell-shoulder-press'],
+  ['/press-hombros-maquina', '/machine-shoulder-press'],
+  ['/press-mancuernas-de-pie', '/standing-dumbbell-shoulder-press'],
+  ['/press-hombros-polea', '/cable-shoulder-press'],
+  ['/elevaciones-frontales-mancuerna-alterno', '/alternating-dumbbell-front-raise'],
+  ['/elevaciones-frontales-disco', '/plate-front-raise'],
+  ['/elevaciones-frontales-barra', '/barbell-front-raise'],
 ];
 
 const pairFor = (pathname) => {
