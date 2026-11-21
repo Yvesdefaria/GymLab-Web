@@ -9,9 +9,9 @@ Legend: `ES` = Spanish published, `EN` = English published.
 
 ## Progress
 
-- **Built: 481 / 792** (ES 481, EN 481).
-- Last batch: batch 48 closed chest exercises and opened shoulder
-exercises; 481 pages built.
+- **Built: 491 / 792** (ES 491, EN 491).
+- Last batch: batch 49 took shoulder exercises to 19/29;
+  491 pages built.
 - Blocks finished end to end: Entrenamiento del Hombro (9), Físicos de leyenda (12), Entrenamiento de
   la Espalda (10), Rutinas de Espalda (4), Espalda (1), Ejercicios de Espalda (31), Ejercicio
   Cardiovascular (32), Entrenamiento de las Piernas (18), Entrenamiento del Pecho (6), Ejercicios de Pecho (27), Rutinas de
@@ -24,10 +24,10 @@ exercises; 481 pages built.
 | Entrenamiento | 222 | 217 |
 | Por Músculo | 80 | 80 |
 | Rutinas | 80 | 80 |
-| Ejercicios | 196 | 104 |
+| Ejercicios | 196 | 114 |
 | Nutrición | 191 | 0 |
 | Mujer Fitness | 23 | 0 |
-| **Total** | **792** | **481** |
+| **Total** | **792** | **491** |
 
 The Built column counts the archive block of each page, not the frontmatter `block` (every guide ships
 with `block: "Entrenamiento"` for the site taxonomy). Five Entrenamiento rows are settled and will
@@ -791,7 +791,7 @@ never publish: two DESCARTADA and three FUSIONADA, so the publishable total is *
 - [x] ES · [x] EN — `/cruces-en-polea-baja/` — Cruces en polea baja \| Ejercicio de pecho muy efectivo
 - [x] ES · [x] EN — `/pullover-con-mancuerna-en-banco-inclinado/` — Pullover con mancuerna en banco inclinado
 
-### Ejercicios de Hombro (29) — 9/29
+### Ejercicios de Hombro (29) — 19/29
 
 - [x] ES · [x] EN — `/elevaciones-posteriores-con-mancuerna/` — Elevaciones posteriores con Mancuerna (Pájaros)
 - [x] ES · [x] EN — `/press-militar-barra-de-pie/` — Press militar con barra de pie \| Trabajo Máximo De Hombros
@@ -802,16 +802,16 @@ never publish: two DESCARTADA and three FUSIONADA, so the publishable total is *
 - [x] ES · [x] EN — `/pajaros-en-banco-inclinado/` — Pájaros en banco inclinado \| Trabaja tus deltoides posteriores
 - [x] ES · [x] EN — `/pajaros-sentado-mancuernas/` — Pájaros sentado con mancuernas \| Cabeza posterior del hombro
 - [x] ES · [x] EN — `/press-tras-nuca-multipower/` — Press tras nuca en multipower
-- [ ] ES · [ ] EN — `/elevaciones-laterales/` — Elevaciones laterales con mancuerna para hombros \| ¡Muy TOP!
-- [ ] ES · [ ] EN — `/elevaciones-una-mano-polea/` — Elevaciones laterales a una mano en polea
-- [ ] ES · [ ] EN — `/press-arnold-2/` — Press Arnold \| El ejercicio para los deltoides frontales
-- [ ] ES · [ ] EN — `/press-hombro-mancuernas-sentado/` — Press de hombros con mancuernas sentado
-- [ ] ES · [ ] EN — `/press-hombros-maquina/` — Press de hombros en máquina \| 100% efectivo para tus deltoides
-- [ ] ES · [ ] EN — `/press-mancuernas-de-pie/` — Press con mancuernas de pie
-- [ ] ES · [ ] EN — `/press-hombros-polea/` — Press de hombros en polea: Ejercicio clave para fuerza
-- [ ] ES · [ ] EN — `/elevaciones-frontales-mancuerna-alterno/` — Elevaciones frontales con mancuerna
-- [ ] ES · [ ] EN — `/elevaciones-frontales-disco/` — Elevaciones frontales con disco \| ¡Deltoides más grandes!
-- [ ] ES · [ ] EN — `/elevaciones-frontales-barra/` — Elevaciones frontales con barra
+- [x] ES · [x] EN — `/elevaciones-laterales/` — Elevaciones laterales con mancuerna para hombros \| ¡Muy TOP!
+- [x] ES · [x] EN — `/elevaciones-una-mano-polea/` — Elevaciones laterales a una mano en polea
+- [x] ES · [x] EN — `/press-arnold-2/` — Press Arnold \| El ejercicio para los deltoides frontales
+- [x] ES · [x] EN — `/press-hombro-mancuernas-sentado/` — Press de hombros con mancuernas sentado
+- [x] ES · [x] EN — `/press-hombros-maquina/` — Press de hombros en máquina \| 100% efectivo para tus deltoides
+- [x] ES · [x] EN — `/press-mancuernas-de-pie/` — Press con mancuernas de pie
+- [x] ES · [x] EN — `/press-hombros-polea/` — Press de hombros en polea: Ejercicio clave para fuerza
+- [x] ES · [x] EN — `/elevaciones-frontales-mancuerna-alterno/` — Elevaciones frontales con mancuerna
+- [x] ES · [x] EN — `/elevaciones-frontales-disco/` — Elevaciones frontales con disco \| ¡Deltoides más grandes!
+- [x] ES · [x] EN — `/elevaciones-frontales-barra/` — Elevaciones frontales con barra
 - [ ] ES · [ ] EN — `/elevaciones-frontales-banco-inclinado/` — Elevaciones frontales con mancuernas en banco inclinado
 - [ ] ES · [ ] EN — `/press-hombros-multipower/` — Press de Hombro en Multipower: Guía Completa y Consejos
 - [ ] ES · [ ] EN — `/press-cubano/` — Press Cubano \| Fortalece tus hombros y evita lesiones

@@ -270,3 +270,31 @@ npm run check:copy   # 491 pages expected, 25,041 assertions
 npm run build        # 998 pages expected
 npm run check:i18n   # 15,562 assertions, 994 sitemap URLs, 2,982 alternates
 ```
+
+## Result (2026-11-21)
+
+- 10 bilingual pairs, 20 files, 10 heroes. Library: 481 → **491 / 792**. Ejercicios **114/196**;
+  Hombro **19/29**.
+- Gates: `check:copy` **25,041/25,041**, build **998 pages**, `check:i18n` **15,562/15,562**, sitemap
+  **994 URLs** with 2,982 alternates.
+- Structural checks: 136 internal links, **0 broken**; 0 clipped cells across 140 page/width pairs;
+  no BOM, no em dashes, no broken slug.
+- **Corrections made:** the lateral raise owns the start-position lever trade and drops the
+  supraspinatus switch, the anti-gravity line and the "uve" claim; the cable lateral raise tests the
+  constant-tension claim and loses the supraspinatus line; the Arnold press owns the rotation question
+  and drops "recruits the posterior head more"; the seated press owns bench angle and grip and fixes
+  the neutral-grip claim; the machine press is rebuilt around the cam and the fixed path; the standing
+  press owns the brace, fixes the head-tilt causality and unifies the elbow angle; the cable press owns
+  the lockout profile and loses "constant throughout"; the alternating raise owns the grip variable;
+  the plate raise owns the two-hand constraint and stops at shoulder height; the barbell raise owns
+  the load ceiling and one endpoint.
+- **Fixed by the parent:** the mandatory `press-arnold-2` <-> `los-trucos-de-arnold-para-desarrollar-sus-hombros`
+  pair shipped one-way because the published page was outside the writer's surfaces. The history page
+  now links the new technique page in both locales.
+- **Heroes:** eight Pexels photos and two Wikimedia files (an Everkinetic Arnold press and an Aliva
+  Sahoo shoulder press machine). The closest new pair is 11; the library still has only the eight
+  pre-existing pairs at 6 or less.
+- Commits: pages `b319e3f`, `d2391a3`, `954a304`, `7f26d63`, `3698806`, `f2feeab`, `63eac73`, `92d7934`,
+  `a65bfc5`, `1df31b9`; routes `3a3352b`.
+- **Known approximation:** the one-arm cable lateral raise hero is a bilateral cable raise, because no
+  free photo of the single-arm version exists; the alt describes the frame literally.
