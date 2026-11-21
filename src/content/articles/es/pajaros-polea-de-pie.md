@@ -6,7 +6,7 @@ h1: "Pájaros en polea de pie"
 block: "Entrenamiento"
 section: "Ejercicios de hombro"
 hero: "/content/pajaros-polea-de-pie/hero.jpg"
-heroAlt: "Atleta de pie entre dos torres de poleas, con los mangos cruzados delante del cuerpo y los brazos abiertos a la altura del hombro"
+heroAlt: "Atleta de pie entre dos torres de polea, con los brazos abiertos a la altura del hombro y un agarre en cada mano"
 heroCredit: "Pexels · Asso Myron · Pexels License"
 lead: "Los **pájaros en polea de pie** empiezan en el ajuste de la máquina. La altura de las poleas elige el plano del movimiento: a la altura del hombro o por encima, el brazo barre hacia atrás en horizontal; por debajo, el mismo gesto se convierte en un remo."
 tags: ["Deltoides posterior", "Polea", "Aislamiento", "Técnica"]

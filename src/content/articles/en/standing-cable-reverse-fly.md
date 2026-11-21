@@ -6,7 +6,7 @@ h1: "Standing cable reverse fly"
 block: "Training"
 section: "Shoulder exercises"
 hero: "/content/pajaros-polea-de-pie/hero.jpg"
-heroAlt: "Athlete standing between two cable stacks with the handles crossed in front of the body and the arms open at shoulder height"
+heroAlt: "Athlete standing between two cable stacks with the arms open at shoulder height and a handle in each hand"
 heroCredit: "Pexels · Asso Myron · Pexels License"
 lead: "The **standing cable reverse fly** starts at the machine setup. The pulley height chooses the plane of the movement: at shoulder height or above, the arm sweeps back on the horizontal; lower than that, the same gesture turns into a row."
 tags: ["Rear delt", "Cable", "Isolation", "Technique"]
