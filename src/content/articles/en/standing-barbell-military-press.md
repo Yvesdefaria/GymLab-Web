@@ -35,7 +35,7 @@ Lockout ends with the bar over the mid foot, the elbows extended and the ribs wh
 
 ## Fixing the "thoracic hyperlordosis"
 
-The thoracic spine is kyphotic at rest. It cannot be hyperlordosed, because its natural curve runs the other way. The cue to "lean the upper back back" does not describe a thoracic lordosis. It describes thoracic extension.
+The thoracic spine is kyphotic at rest. It cannot be hyperlordosed, because its natural curve runs the other way. The cue to lean the upper back rearward does not describe a thoracic lordosis. It describes thoracic extension.
 
 The difference matters. Thoracic extension makes room for the bar to pass in front of the face without the neck going back. It comes from ribs down and a braced abdomen, not from arching the lower back.
 

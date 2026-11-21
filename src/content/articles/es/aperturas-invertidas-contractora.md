@@ -51,7 +51,7 @@ Si la última repetición termina con los hombros subidos o con el torso girado,
   </thead>
   <tbody>
     <tr><td><strong>Contractora invertida</strong></td><td>Pecho apoyado y escápula quieta; permite acercarse al fallo</td><td>Recorrido fijo y ajuste limitado al asiento</td></tr>
-    <tr><td><strong>Mancuerna inclinado</strong></td><td>Ángulo y recorrido libres, con el torso apoyado</td><td>Más trabajo para sostener el cuerpo y montar el peso</td></tr>
+    <tr><td><strong>Mancuerna en banco inclinado</strong></td><td>Ángulo y recorrido libres, con el torso apoyado</td><td>Más trabajo para sostener el cuerpo y montar el peso</td></tr>
     <tr><td><strong>Polea a una mano</strong></td><td>Tensión constante y un brazo cada vez</td><td>Más tiempo por serie y una línea que depende de la polea</td></tr>
   </tbody>
 </table>

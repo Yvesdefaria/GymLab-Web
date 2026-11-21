@@ -56,7 +56,7 @@ If the last rep ends with the shoulders up or the torso twisted, the weight is t
   </tbody>
 </table>
 
-All three versions train the same rear deltoid. The [dumbbell rear delt raise](/en/dumbbell-rear-delt-raise/) keeps the hinge and the isometric lower-back work; the [one-arm cable rear delt raise](/en/one-arm-cable-rear-delt-raise/) changes the line of tension and lets you adjust the height. The machine keeps the version that is easiest to take to the limit.
+All three versions train the same rear deltoid. The [dumbbell rear delt raise](/en/dumbbell-rear-delt-raise/) keeps the hinge and the isometric lower-back work; the [one-arm cable rear delt raise](/en/one-arm-cable-rear-delt-raise/) changes the line of tension and lets you adjust the height. The machine offers the version that is easiest to take to the limit.
 
 ## Mistakes that show up in the first set
 

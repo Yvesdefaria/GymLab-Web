@@ -43,7 +43,7 @@ The edge of the bench is the real limit of the movement. If the head sits below 
 
 Three sets of 10 to 12 reps with 60 or 90 seconds of rest. The load is light. The goal is to feel the stretch and the contraction, not to move weight.
 
-It goes at the end of the chest session, when the presses have done the heavy work. Put it first and the chest reaches the basics tired, which lowers the useful load of the session.
+It goes at the end of the chest session, when the presses have done the heavy work. Put it first and the chest reaches the main lifts tired, which lowers the useful load of the session.
 
 ## Mistakes that show up in the first set
 
@@ -59,7 +59,7 @@ The [flat dumbbell pullover](/en/dumbbell-pullover/) is the reference. It offers
 
 The barbell version changes the share. In the [barbell pullover](/en/barbell-pullover/) the hands are fixed and the lat works harder, which is why it is used as a back exercise.
 
-The incline sits in the middle. It keeps the pullover gesture and adds tension in the top half of the range. It does not replace the flat version; it complements it once the chest has already worked through a long range.
+The incline takes another point on the curve. It keeps the pullover gesture and adds tension in the top half of the range. It does not replace the flat version; it complements it once the chest has already worked through a long range.
 
 ## Where it fits
 

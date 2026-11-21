@@ -59,7 +59,7 @@ El [pullover con mancuerna](/es/pullover-mancuerna/) en banco plano es la versi�
 
 La versión con barra cambia el reparto. En el [pullover con barra](/es/pullover-barra/) las manos quedan fijas y el dorsal entra con más fuerza, por eso se usa como ejercicio de espalda.
 
-El inclinado se queda en el medio. Conserva el gesto del pullover y añade tensión en la parte alta del recorrido. No sustituye al plano, lo complementa cuando el pectoral ya ha recibido carga en un rango largo.
+El inclinado ocupa otro punto de la curva. Conserva el gesto del pullover y añade tensión en la parte alta del recorrido. No sustituye al plano, lo complementa cuando el pectoral ya ha recibido carga en un rango largo.
 
 ## Dónde encaja
 
