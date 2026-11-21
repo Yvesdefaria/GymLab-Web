@@ -38,14 +38,15 @@ Last updated: 2026-11-16.
   `masa-muscular-peso-muerto`, `press-con-impulso-power-jerk`, `cargadas-en-dos-tiempos`,
   `cargada-clean`, `arrancada`) and the first four Cuádriceps rows (`power-cleans`,
   `sentadillas-mancuerna-estilo-sumo`, `sentadilla-barra`, `aductores-polea`).
-- **Follow-up:** eight hero pairs score 6 or less: the pre-existing exact duplicate
-  (`remo-polea-sentado` with `superserie-de-espalda-para-terminar-tu-rutina`), and seven near pairs at
-  3-6 (`aperturas-mancuernas-banco-inclinado` vs `press-inclinado-barra` at 3; `como-respirar` vs
+- **Follow-up:** ten hero pairs score 6 or less: the pre-existing exact duplicate
+  (`remo-polea-sentado` with `superserie-de-espalda-para-terminar-tu-rutina`), and nine near pairs at
+  3-6 (`aperturas-mancuernas-banco-inclinado` vs `press-inclinado-barra` at 3;
+  `elevaciones-frontales-polea-una-mano` vs `jalones-cuerda` at 3; `como-respirar` vs
   `levantar-aumentar-peso` at 4; `fondos-pecho` vs `jalones-polea-agarre-inverso` at 4; `fondos-pecho`
   vs `jalones-cuerda` at 5; `press-banca-multipower` vs `press-inclinado-multipower` at 5;
   `pullover-barra` vs `repeticion-maxima` at 5; `aperturas-inclinadas-polea` vs
-  `aperturas-mancuernas-banco-inclinado` at 6). Every new pair was opened and the equipment or bench
-  angle differs. A 1280x720 crop of a library hero hashes 1-6 from the original, so writers must open
+  `aperturas-mancuernas-banco-inclinado` at 6; `elevaciones-frontales-polea-una-mano` vs
+  `fondos-pecho` at 6). Every new pair was opened and the equipment, bench angle or movement differs. A 1280x720 crop of a library hero hashes 1-6 from the original, so writers must open
   the closest hero, not only check for 0. White line art hashes 3-9 against other line art; equipment
   and arm position are what distinguish them. The batch 20 injury illustrations carry labels baked into
   the image (Spanish on the plantar fascia figure, English on the spine figure), so each shows a foreign

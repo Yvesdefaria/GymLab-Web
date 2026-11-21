@@ -221,10 +221,14 @@ the current per-page state.
 - **Fixed by the parent:** three mandatory pairs shipped one-way because the targets were outside the
   writer's surfaces. The reverse pec deck, the lateral raise and the Smith behind-neck press now link
   back in both locales.
-- Heroes: five Pexels photos and five Wikimedia files. The closest new pair is 13; the library still has
-  only the eight pre-existing pairs at 6 or less. The Smith shoulder press uses a guided press machine
-  because every free Smith photo is already a hero and the plate close-up is the same photograph as the
-  decline page.
+- Heroes: three Pexels photos and seven Wikimedia files. The closest new pair is 13 except for the
+  one-arm front raise, which opened as a line-art pair at 3 and 6 and was compared by eye; the drawings
+  differ. The Smith shoulder press uses a guided press machine because every free Smith photo is already
+  a hero and the plate close-up is the same photograph as the decline page.
+- **Fixed after owner review (2026-11-21):** the three cable heroes did not match their exercises. The
+  one-arm cable front raise and the leaning lateral raise now use Everkinetic illustrations of the
+  movement; the standing reverse fly keeps its photo and loses the false "crossed handles" alt. Commit
+  `8864f11`.
 - Commits: pages `3266e85`, `9180ab8`, `91a3779`, `6b73c9d`, `1547460`, `ff54a12`, `58f9332`, `ec0dd01`,
   `bf56972`, `5bb5ada`; cross-links `24669e6`; routes `8b1a130`.
 - Next session starts at `/ejercicios-basicos/`; the Básicos block and the first four Cuádriceps rows

@@ -296,11 +296,16 @@ npm run check:i18n   # 15,872 assertions, 1,014 sitemap URLs, 3,042 alternates
 - **Fixed by the parent:** three mandatory pairs shipped one-way because the targets were outside the
   writer's surfaces. The reverse pec deck, the lateral raise and the Smith behind-neck press now link
   back in both locales.
-- **Heroes:** five Pexels photos and five Wikimedia files (one Everkinetic Cuban press, one Aliva Sahoo
-  machine, one Teemeah barbell and two U.S. Army photos). The closest new pair is 13; the library still
-  has only the eight pre-existing pairs at 6 or less.
+- **Heroes:** three Pexels photos and seven Wikimedia files (three Everkinetic illustrations, one Aliva
+  Sahoo machine, one Teemeah barbell and two U.S. Army photos). The closest new pair is 13; the library
+  has the eight pre-existing pairs at 6 or less plus two more added by the owner-review fix below.
 - Commits: pages `3266e85`, `9180ab8`, `91a3779`, `6b73c9d`, `1547460`, `ff54a12`, `58f9332`, `ec0dd01`,
   `bf56972`, `5bb5ada`; cross-links `24669e6`; routes `8b1a130`.
 - **Known approximation:** the Smith shoulder press hero is a guided press machine, not a Smith, because
   every free Smith photograph that shows the machine is already a hero and the plausible plate close-up
   is the same photograph as `press-declinado-en-multipower`. The alt says "máquina de press de hombros".
+- **Fixed after owner review (2026-11-21):** the three cable pages did not show their exercise. The ones
+  with a one-arm cable front raise and a leaning cable lateral raise now use Everkinetic illustrations of
+  the movement (and a Wikimedia credit); the standing cable reverse fly keeps its photo, which is Pexels'
+  own top result for that query, and its alt no longer claims crossed handles that the image does not
+  show. Commit `8864f11`; gates stayed green at 25,551 / 1,018 / 15,872, 140 render pairs clean.
