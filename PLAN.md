@@ -19,26 +19,25 @@ Last updated: 2026-11-16.
 - The landing, the three calculators, the 404 and the legal pages all ship in both locales.
 - Measurement and the SQL recipe: see "Reading analytics" below and `COMPLETED.md` Appendix B.
 
-## Content library — 491 / 792 (2026-11-21)
+## Content library — 501 / 792 (2026-11-21)
 
-- **491 bilingual pages** (ES 491, EN 491), **491 unique hero paths**. By archive section:
-  Entrenamiento 217/222 (five rows settled), Por Músculo 80/80, **Rutinas 80/80**, Ejercicios 114/196,
-  Nutrición 0/191, Mujer Fitness 0/23. Publishable total: **787**. Pecho is closed at 27/27; Hombro is
-  19/29.
-- **Batches 33 to 49 are built, green and committed, not pushed.** The build has **998 pages** and
-  **994 sitemap URLs**. Ejercicios is 114/196; the whole chest block and nineteen shoulder exercises
-  are live locally.
-- Gates: `npm run verify` = `check:copy` **25,041/25,041** + build **998 pages** + `check:i18n`
-  **15,562/15,562** (994 sitemap URLs, 2,982 alternates).
+- **501 bilingual pages** (ES 501, EN 501), **501 unique hero paths**. By archive section:
+  Entrenamiento 217/222 (five rows settled), Por Músculo 80/80, **Rutinas 80/80**, Ejercicios 124/196,
+  Nutrición 0/191, Mujer Fitness 0/23. Publishable total: **787**. Pecho is closed at 27/27 and Hombro
+  at 29/29.
+- **Batches 33 to 50 are built, green and committed, not pushed.** The build has **1,018 pages** and
+  **1,014 sitemap URLs**. Ejercicios is 124/196; the whole chest and shoulder blocks are live locally,
+  with the shoulder hub indexing all 28 exercise pages.
+- Gates: `npm run verify` = `check:copy` **25,551/25,551** + build **1,018 pages** + `check:i18n`
+  **15,872/15,872** (1,014 sitemap URLs, 3,042 alternates).
 - Docs: `odd/tasks/content-library-session.md` (start here next session),
   `odd/tasks/content-pages.md` (per-page checklist + resume),
-  `odd/tasks/content-library-batch-49.md` (the last batch) and `odd/tasks/guides-page-contract.md`
+  `odd/tasks/content-library-batch-50.md` (the last batch) and `odd/tasks/guides-page-contract.md`
   (the page contract and copy gate).
-- **Next 10:** batch 50 closes Ejercicios de Hombro with `elevaciones-frontales-banco-inclinado`,
-  `press-hombros-multipower`, `press-cubano`, `elevaciones-frontales-polea-una-mano`,
-  `elevacion-lateral-inclinada`, `pajaros-polea-de-pie`, `elevaciones-laterales-maquina`,
-  `press-tras-nuca-barra`, `elevaciones-frontales-con-barra-en-banco-inclinado` and the
-  `ejercicios-hombro` hub, which is a full rebuild that must link all 28 exercise pages.
+- **Next 10:** batch 51 opens Ejercicios Básicos with the six rows (`ejercicios-basicos`,
+  `masa-muscular-peso-muerto`, `press-con-impulso-power-jerk`, `cargadas-en-dos-tiempos`,
+  `cargada-clean`, `arrancada`) and the first four Cuádriceps rows (`power-cleans`,
+  `sentadillas-mancuerna-estilo-sumo`, `sentadilla-barra`, `aductores-polea`).
 - **Follow-up:** eight hero pairs score 6 or less: the pre-existing exact duplicate
   (`remo-polea-sentado` with `superserie-de-espalda-para-terminar-tu-rutina`), and seven near pairs at
   3-6 (`aperturas-mancuernas-banco-inclinado` vs `press-inclinado-barra` at 3; `como-respirar` vs

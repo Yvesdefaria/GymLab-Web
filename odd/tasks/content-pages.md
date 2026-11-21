@@ -9,12 +9,12 @@ Legend: `ES` = Spanish published, `EN` = English published.
 
 ## Progress
 
-- **Built: 491 / 792** (ES 491, EN 491).
-- Last batch: batch 49 took shoulder exercises to 19/29;
-  491 pages built.
+- **Built: 501 / 792** (ES 501, EN 501).
+- Last batch: batch 50 closed shoulder exercises;
+  501 pages built.
 - Blocks finished end to end: Entrenamiento del Hombro (9), Físicos de leyenda (12), Entrenamiento de
   la Espalda (10), Rutinas de Espalda (4), Espalda (1), Ejercicios de Espalda (31), Ejercicio
-  Cardiovascular (32), Entrenamiento de las Piernas (18), Entrenamiento del Pecho (6), Ejercicios de Pecho (27), Rutinas de
+  Cardiovascular (32), Entrenamiento de las Piernas (18), Entrenamiento del Pecho (6), Ejercicios de Pecho (27), Ejercicios de Hombro (29), Rutinas de
   Pierna (3), Pierna (9), Rutinas de Tríceps (1), Rutinas de Pecho (1), Tríceps (1) and Rutinas de
   Fuerza (9). Their
   headings are marked `— COMPLETO`; partial blocks show their ratio.
@@ -24,10 +24,10 @@ Legend: `ES` = Spanish published, `EN` = English published.
 | Entrenamiento | 222 | 217 |
 | Por Músculo | 80 | 80 |
 | Rutinas | 80 | 80 |
-| Ejercicios | 196 | 114 |
+| Ejercicios | 196 | 124 |
 | Nutrición | 191 | 0 |
 | Mujer Fitness | 23 | 0 |
-| **Total** | **792** | **491** |
+| **Total** | **792** | **501** |
 
 The Built column counts the archive block of each page, not the frontmatter `block` (every guide ships
 with `block: "Entrenamiento"` for the site taxonomy). Five Entrenamiento rows are settled and will
@@ -791,7 +791,7 @@ never publish: two DESCARTADA and three FUSIONADA, so the publishable total is *
 - [x] ES · [x] EN — `/cruces-en-polea-baja/` — Cruces en polea baja \| Ejercicio de pecho muy efectivo
 - [x] ES · [x] EN — `/pullover-con-mancuerna-en-banco-inclinado/` — Pullover con mancuerna en banco inclinado
 
-### Ejercicios de Hombro (29) — 19/29
+### Ejercicios de Hombro (29) — COMPLETO
 
 - [x] ES · [x] EN — `/elevaciones-posteriores-con-mancuerna/` — Elevaciones posteriores con Mancuerna (Pájaros)
 - [x] ES · [x] EN — `/press-militar-barra-de-pie/` — Press militar con barra de pie \| Trabajo Máximo De Hombros
@@ -812,16 +812,16 @@ never publish: two DESCARTADA and three FUSIONADA, so the publishable total is *
 - [x] ES · [x] EN — `/elevaciones-frontales-mancuerna-alterno/` — Elevaciones frontales con mancuerna
 - [x] ES · [x] EN — `/elevaciones-frontales-disco/` — Elevaciones frontales con disco \| ¡Deltoides más grandes!
 - [x] ES · [x] EN — `/elevaciones-frontales-barra/` — Elevaciones frontales con barra
-- [ ] ES · [ ] EN — `/elevaciones-frontales-banco-inclinado/` — Elevaciones frontales con mancuernas en banco inclinado
-- [ ] ES · [ ] EN — `/press-hombros-multipower/` — Press de Hombro en Multipower: Guía Completa y Consejos
-- [ ] ES · [ ] EN — `/press-cubano/` — Press Cubano \| Fortalece tus hombros y evita lesiones
-- [ ] ES · [ ] EN — `/elevaciones-frontales-polea-una-mano/` — Elevaciones frontales en polea a una mano
-- [ ] ES · [ ] EN — `/elevacion-lateral-inclinada/` — Elevación lateral inclinada ⇨ ¡Revienta tus hombros!
-- [ ] ES · [ ] EN — `/pajaros-polea-de-pie/` — Pájaros en polea de pie
-- [ ] ES · [ ] EN — `/elevaciones-laterales-maquina/` — Elevaciones laterales en máquina
-- [ ] ES · [ ] EN — `/press-tras-nuca-barra/` — Press tras nuca con barra
-- [ ] ES · [ ] EN — `/elevaciones-frontales-con-barra-en-banco-inclinado/` — Elevaciones frontales con barra en banco inclinado
-- [ ] ES · [ ] EN — `/ejercicios-hombro/` — Ejercicios de Hombro \| ¡Los más efectivos para tus deltoides!
+- [x] ES · [x] EN — `/elevaciones-frontales-banco-inclinado/` — Elevaciones frontales con mancuernas en banco inclinado
+- [x] ES · [x] EN — `/press-hombros-multipower/` — Press de Hombro en Multipower: Guía Completa y Consejos
+- [x] ES · [x] EN — `/press-cubano/` — Press Cubano \| Fortalece tus hombros y evita lesiones
+- [x] ES · [x] EN — `/elevaciones-frontales-polea-una-mano/` — Elevaciones frontales en polea a una mano
+- [x] ES · [x] EN — `/elevacion-lateral-inclinada/` — Elevación lateral inclinada ⇨ ¡Revienta tus hombros!
+- [x] ES · [x] EN — `/pajaros-polea-de-pie/` — Pájaros en polea de pie
+- [x] ES · [x] EN — `/elevaciones-laterales-maquina/` — Elevaciones laterales en máquina
+- [x] ES · [x] EN — `/press-tras-nuca-barra/` — Press tras nuca con barra
+- [x] ES · [x] EN — `/elevaciones-frontales-con-barra-en-banco-inclinado/` — Elevaciones frontales con barra en banco inclinado
+- [x] ES · [x] EN — `/ejercicios-hombro/` — Ejercicios de Hombro \| ¡Los más efectivos para tus deltoides!
 
 ### Ejercicios Básicos (6)
 

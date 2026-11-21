@@ -9,27 +9,27 @@ Last updated: 2026-11-19. Read this first next session.
 
 ## State
 
-- **491 / 792 bilingual pages** (ES 491, EN 491).
+- **501 / 792 bilingual pages** (ES 501, EN 501).
 - Blocks by archive section: Entrenamiento **217/222** (the five missing rows are settled: two
-  descartadas and three fusionadas), Por Músculo **80/80**, Rutinas **80/80**, Ejercicios **114/196**,
+  descartadas and three fusionadas), Por Músculo **80/80**, Rutinas **80/80**, Ejercicios **124/196**,
   Nutrición 0/191, Mujer Fitness 0/23. The publishable total is 787.
-- **491 unique hero paths.** The dHash pairs under 7 are listed in `PLAN.md`; every new one was opened
+- **501 unique hero paths.** The dHash pairs under 7 are listed in `PLAN.md`; every new one was opened
   and the equipment differs.
-- **Batch 49 is built, green and committed (2026-11-21).** The build has **998 pages** and **994
-  sitemap URLs**. Pecho is **27/27 — COMPLETO**; Hombro is **19/29**.
+- **Batch 50 is built, green and committed (2026-11-21).** The build has **1,018 pages** and **1,014
+  sitemap URLs**. Pecho is **27/27 — COMPLETO**; Hombro is **29/29 — COMPLETO**.
 - Five archive rows are settled and must stay out: the FiveStars Fitness congress page (discarded),
   the AEKE S1 Pro page (discarded 2026-11-14), `/velocidad-repeticiones/` (fused into the tempo page,
   2026-11-14) and the two batch 20 fusions (2026-11-15).
 - **Production runs batch 32 (pushed 2026-11-16).** Batches 19 to 32 are live; `origin/main` is at
-  the batch 32 docs push. Batches 33 to 49 are committed locally and not pushed.
-- Batch records: `odd/tasks/content-library-batch-48.md`, `-49.md` and `-50.md`.
+  the batch 32 docs push. Batches 33 to 50 are committed locally and not pushed.
+- Batch records: `odd/tasks/content-library-batch-49.md`, `-50.md` and the session closes below.
 
 ## Gates
 
 ```powershell
-npm run check:copy   # 25,041/25,041
-npm run build        # 998 pages
-npm run check:i18n   # 15,562/15,562, 994 sitemap URLs
+npm run check:copy   # 25,551/25,551
+npm run build        # 1,018 pages
+npm run check:i18n   # 15,872/15,872, 1,014 sitemap URLs
 npm run verify       # all three, in that order
 npm run dev          # http://localhost:4321
 ```
@@ -83,10 +83,11 @@ library and breaks every Python process that imports Pillow.
 ## What is built
 
 The per-page record in `content-pages.md` is authoritative; this section summarises the blocks. At
-**491 pages**, Por Músculo (80/80) and Rutinas (80/80) are closed, Entrenamiento is effectively closed
-(217/222 with five settled rows), and the Ejercicios block is at **114/196**: Espalda complete, Tríceps
-complete at 17/17, Femoral y glúteos complete at 12/12, Pecho complete at 27/27, the four catalogue
-hubs live, and Hombro at 19/29, with Bíceps, Cuádriceps, Gemelo, Trapecios and Básicos in progress.
+**501 pages**, Por Músculo (80/80) and Rutinas (80/80) are closed, Entrenamiento is effectively closed
+(217/222 with five settled rows), and the Ejercicios block is at **124/196**: Espalda complete, Tríceps
+complete at 17/17, Femoral y glúteos complete at 12/12, Pecho complete at 27/27, Hombro complete at
+29/29, the four catalogue hubs live plus the shoulder hub, and Básicos, Cuádriceps, Pierna, Gemelo,
+Bíceps y Antebrazo and Trapecios in progress.
 
 The list below describes the blocks finished before batch 42; the checklist and the batch records carry
 the current per-page state.
@@ -143,18 +144,19 @@ the current per-page state.
 
 ## Next 10
 
-1. Batch 50 closes Ejercicios de Hombro with `elevaciones-frontales-banco-inclinado`,
-   `press-hombros-multipower`, `press-cubano`, `elevaciones-frontales-polea-una-mano`,
-   `elevacion-lateral-inclinada`, `pajaros-polea-de-pie`, `elevaciones-laterales-maquina`,
-   `press-tras-nuca-barra`, `elevaciones-frontales-con-barra-en-banco-inclinado` and the
-   `ejercicios-hombro` hub. Its brief is written; the hub is a full rebuild that must link all 28
-   exercise pages.
-2. Keep the same copy, unique-hero and gate flow.
-3. Before publishing another photo from Shixart1985, Nenad Stojkovic, Miguel Angel Omaña Rojas, the
+1. Batch 51 opens Ejercicios Básicos with the six rows (`ejercicios-basicos`,
+   `masa-muscular-peso-muerto`, `press-con-impulso-power-jerk`, `cargadas-en-dos-tiempos`,
+   `cargada-clean`, `arrancada`) and the first four Cuádriceps rows (`power-cleans`,
+   `sentadillas-mancuerna-estilo-sumo`, `sentadilla-barra`, `aductores-polea`). Write its source map
+   and brief first.
+2. Ejercicios is 124/196: Básicos 0/6, Cuádriceps 0/23, Pierna 0/6, Gemelo 0/9, Bíceps y Antebrazo
+   0/22, Trapecios 0/6.
+3. Keep the same copy, unique-hero and gate flow.
+4. Before publishing another photo from Shixart1985, Nenad Stojkovic, Miguel Angel Omaña Rojas, the
    InjuryMap family, PTPioneer, KeepActive Australia, Everkinetic or Wellcome Collection, compare the
-   Commons file title and the dHash against the 491 existing heroes. A crop of a library hero scores
+   Commons file title and the dHash against the 501 existing heroes. A crop of a library hero scores
    1-14 and is a duplicate in practice, not only at 0.
-4. The scaling architecture is deferred to PLAN Phase 7; do not implement it during content batches.
+5. The scaling architecture is deferred to PLAN Phase 7; do not implement it during content batches.
 
 ## Page contract (short)
 
@@ -203,6 +205,30 @@ the current per-page state.
   documented in the batch 22 record.
 - **Push is the owner's call:** batches 19 to 32 were pushed on 2026-11-16 from `6293327` to
   `f7f8de1`. Batches 33 to 47, page commits and docs, remain local; production still serves 658 pages.
+
+## Session close (2026-11-21, batch 50)
+
+- Batch 50 closed Ejercicios de Hombro: 491 → **501 / 792**, ten bilingual pairs, 20 files, ten heroes.
+  Hombro **29/29 — COMPLETO**; Ejercicios **124/196**. The block's hub is live with 28 exercise links.
+- Writers: two per batch, pages 1-5 and 6-10, disjoint files. The parent wrote the brief from one source
+  map, registered the routes, ran the gates, the render pass and committed per page.
+- Gates: `check:copy` **25,551/25,551**, build **1,018 pages**, `check:i18n` **15,872/15,872**, sitemap
+  **1,014 URLs** with 3,042 alternates. 198 internal links, **0 broken**; 0 clipped cells over 140
+  page/width pairs.
+- **Editorial win:** the hub is rebuilt as a catalogue instead of the archive's four empty sections. It
+  links all 28 shoulder exercises with honest family counts (10 press, 1 upright row, 4 lateral, 7 rear,
+  6 front), a goal table and the rear-delt argument.
+- **Fixed by the parent:** three mandatory pairs shipped one-way because the targets were outside the
+  writer's surfaces. The reverse pec deck, the lateral raise and the Smith behind-neck press now link
+  back in both locales.
+- Heroes: five Pexels photos and five Wikimedia files. The closest new pair is 13; the library still has
+  only the eight pre-existing pairs at 6 or less. The Smith shoulder press uses a guided press machine
+  because every free Smith photo is already a hero and the plate close-up is the same photograph as the
+  decline page.
+- Commits: pages `3266e85`, `9180ab8`, `91a3779`, `6b73c9d`, `1547460`, `ff54a12`, `58f9332`, `ec0dd01`,
+  `bf56972`, `5bb5ada`; cross-links `24669e6`; routes `8b1a130`.
+- Next session starts at `/ejercicios-basicos/`; the Básicos block and the first four Cuádriceps rows
+  need a source map and a brief.
 
 ## Session close (2026-11-21, batch 49)
 

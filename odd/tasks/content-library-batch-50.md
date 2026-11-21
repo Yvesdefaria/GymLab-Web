@@ -276,3 +276,31 @@ npm run check:copy   # 501 pages expected, 25,551 assertions
 npm run build        # 1,018 pages expected
 npm run check:i18n   # 15,872 assertions, 1,014 sitemap URLs, 3,042 alternates
 ```
+
+## Result (2026-11-21)
+
+- 10 bilingual pairs, 20 files, 10 heroes. Library: 491 → **501 / 792**. Ejercicios **124/196**;
+  Hombro **29/29 — COMPLETO**.
+- Gates: `check:copy` **25,551/25,551**, build **1,018 pages**, `check:i18n` **15,872/15,872**, sitemap
+  **1,014 URLs** with 3,042 alternates.
+- Structural checks: 198 internal links, **0 broken**; 0 clipped cells across 140 page/width pairs;
+  no BOM, no em dashes, no broken slug.
+- **Corrections made:** the incline dumbbell raise owns the range dial and treats the supported position
+  as comfort, not treatment; the Smith press owns setup and kills "seguro"/"garantiza"; the Cuban press
+  makes external rotation its own phase and names the cuff; the one-arm cable raise owns the cable
+  vector and stays in the sagittal plane; the leaning raise owns the gravity line and stops at shoulder
+  height; the standing cable reverse fly states the pulley height; the machine lateral raise owns pivot
+  alignment; the barbell behind-neck press owns the depth criterion and links the screen instead of
+  rearguing risk; the incline barbell raise owns the constraint trade; the hub is rebuilt with 28 links,
+  honest family counts and a decision table.
+- **Fixed by the parent:** three mandatory pairs shipped one-way because the targets were outside the
+  writer's surfaces. The reverse pec deck, the lateral raise and the Smith behind-neck press now link
+  back in both locales.
+- **Heroes:** five Pexels photos and five Wikimedia files (one Everkinetic Cuban press, one Aliva Sahoo
+  machine, one Teemeah barbell and two U.S. Army photos). The closest new pair is 13; the library still
+  has only the eight pre-existing pairs at 6 or less.
+- Commits: pages `3266e85`, `9180ab8`, `91a3779`, `6b73c9d`, `1547460`, `ff54a12`, `58f9332`, `ec0dd01`,
+  `bf56972`, `5bb5ada`; cross-links `24669e6`; routes `8b1a130`.
+- **Known approximation:** the Smith shoulder press hero is a guided press machine, not a Smith, because
+  every free Smith photograph that shows the machine is already a hero and the plausible plate close-up
+  is the same photograph as `press-declinado-en-multipower`. The alt says "máquina de press de hombros".
