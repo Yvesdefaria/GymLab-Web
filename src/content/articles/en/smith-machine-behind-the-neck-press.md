@@ -53,7 +53,7 @@ That is why this press is chosen by shoulder position, not by load. It is the ve
 
 ## The risk argument, once
 
-The comparison of the [military press and the behind-the-neck press](/en/military-press-vs-behind-neck-press/) covers the risk argument and the mobility screen that decides whether the pattern fits. Here the machine is all that gets set up; the verdict lives in that guide.
+The comparison of the [military press and the behind-the-neck press](/en/military-press-vs-behind-neck-press/) covers the risk argument and the mobility screen that decides whether the pattern fits. Here the machine is all that gets set up; the verdict lives in that guide. The free-bar version, with its depth criterion, is in [behind-the-neck barbell press](/en/behind-the-neck-barbell-press/).
 
 The [rotator cuff](/en/rotator-cuff-exercises/) holds the head of the humerus in any press above the head. Training it separately, with light sets, is part of the plan and not an extra.
 

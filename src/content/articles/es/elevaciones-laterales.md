@@ -83,6 +83,6 @@ Si la última repetición termina con un tirón de cadera o con los codos cerrad
 
 Va después de los presses y antes o después del trabajo de deltoides posterior, según el orden de la sesión. Es un ejercicio de aislamiento y no necesita llegar al fallo para dejar estímulo.
 
-La versión a una mano en polea cambia la línea de tensión y permite trabajar un lado cada vez: [elevaciones laterales en polea a una mano](/es/elevaciones-una-mano-polea/). El [press de hombros con mancuernas sentado](/es/press-hombro-mancuernas-sentado/) y el [press de hombros en máquina](/es/press-hombros-maquina/) cubren el trabajo pesado que va antes.
+La versión a una mano en polea cambia la línea de tensión y permite trabajar un lado cada vez: [elevaciones laterales en polea a una mano](/es/elevaciones-una-mano-polea/). El [press de hombros con mancuernas sentado](/es/press-hombro-mancuernas-sentado/) y el [press de hombros en máquina](/es/press-hombros-maquina/) cubren el trabajo pesado que va antes. La versión asistida con almohadillas es [elevaciones laterales en máquina](/es/elevaciones-laterales-maquina/).
 
 Las [rutinas de hombro](/es/rutinas-hombros/) ordenan la semana. La [rutina de especialización de hombros](/es/rutina-de-especializacion-de-hombros/) muestra cómo darle volumen extra al deltoides medio sin repetir el mismo estímulo cada sesión.

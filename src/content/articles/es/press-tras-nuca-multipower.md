@@ -53,7 +53,7 @@ Por eso este press se elige por la posición del hombro, no por la carga. Es la 
 
 ## El argumento del riesgo, una vez
 
-La comparación entre el [press militar y el press tras nuca](/es/press-militar-contra-press-tras-nuca/) cubre el argumento de riesgo y la prueba de movilidad que decide si el patrón encaja. Aquí solo se monta la máquina; el veredicto está en esa guía.
+La comparación entre el [press militar y el press tras nuca](/es/press-militar-contra-press-tras-nuca/) cubre el argumento de riesgo y la prueba de movilidad que decide si el patrón encaja. Aquí solo se monta la máquina; el veredicto está en esa guía. La versión con barra libre, y su criterio de profundidad, está en [press tras nuca con barra](/es/press-tras-nuca-barra/).
 
 El [manguito rotador](/es/manguito-rotadores-hombro/) sostiene la cabeza del húmero en cualquier press por encima de la cabeza. Trabajarlo aparte, con series ligeras, es parte del plan y no un extra.
 

@@ -83,6 +83,6 @@ If the last rep ends with a hip pull or with the elbows closed, the weight is to
 
 It goes after the presses and before or after rear delt work, depending on the order of the session. It is an isolation exercise and does not need to reach failure to leave a stimulus.
 
-The one-arm cable version changes the line of tension and works one side at a time: [one-arm cable lateral raise](/en/one-arm-cable-lateral-raise/). The [seated dumbbell shoulder press](/en/seated-dumbbell-shoulder-press/) and the [machine shoulder press](/en/machine-shoulder-press/) cover the heavy work that comes before.
+The one-arm cable version changes the line of tension and works one side at a time: [one-arm cable lateral raise](/en/one-arm-cable-lateral-raise/). The [seated dumbbell shoulder press](/en/seated-dumbbell-shoulder-press/) and the [machine shoulder press](/en/machine-shoulder-press/) cover the heavy work that comes before. The padded assisted version is the [machine lateral raise](/en/machine-lateral-raise/).
 
 [Shoulder routines](/en/shoulder-routines/) order the week. The [shoulder specialization routine](/en/shoulder-specialization-routine/) shows how to give the mid deltoid extra volume without repeating the same stimulus every session.

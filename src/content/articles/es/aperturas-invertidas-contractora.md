@@ -56,7 +56,7 @@ Si la última repetición termina con los hombros subidos o con el torso girado,
   </tbody>
 </table>
 
-Las tres versiones entrenan el mismo deltoides posterior. La [elevación posterior con mancuerna](/es/elevaciones-posteriores-con-mancuerna/) conserva la bisagra y el trabajo isométrico de la espalda baja; la [elevación posterior en polea](/es/elevacion-posterior-una-mano-polea/) cambia la línea de tensión y permite ajustar la altura. La contractora se queda con la versión más fácil de llevar al límite.
+Las tres versiones entrenan el mismo deltoides posterior. La [elevación posterior con mancuerna](/es/elevaciones-posteriores-con-mancuerna/) conserva la bisagra y el trabajo isométrico de la espalda baja; la [elevación posterior en polea](/es/elevacion-posterior-una-mano-polea/) cambia la línea de tensión y permite ajustar la altura. La contractora se queda con la versión más fácil de llevar al límite. La variante de pie con dos poleas a la altura de los hombros tiene su propia página: [pájaros en polea de pie](/es/pajaros-polea-de-pie/).
 
 ## Errores que aparecen en la primera serie
 
