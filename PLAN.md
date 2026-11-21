@@ -19,35 +19,39 @@ Last updated: 2026-11-16.
 - The landing, the three calculators, the 404 and the legal pages all ship in both locales.
 - Measurement and the SQL recipe: see "Reading analytics" below and `COMPLETED.md` Appendix B.
 
-## Content library — 471 / 792 (2026-11-19)
+## Content library — 481 / 792 (2026-11-21)
 
-- **471 bilingual pages** (ES 471, EN 471), **471 unique hero paths**. By archive section:
-  Entrenamiento 217/222 (five rows settled), Por Músculo 80/80, **Rutinas 80/80**, Ejercicios 94/196,
-  Nutrición 0/191, Mujer Fitness 0/23. Publishable total: **787**. Femoral y glúteos is closed at 12/12;
-  Pecho is 26/27, with only `pullover-con-mancuerna-en-banco-inclinado` left.
-- **Batches 33 to 47 are built, green and committed, not pushed.** The build has **958 pages** and
-  **954 sitemap URLs**. Ejercicios is 94/196; every chest press, fly and machine variant is live locally.
-- Gates: `npm run verify` = `check:copy` **24,021/24,021** + build **958 pages** + `check:i18n`
-  **14,942/14,942** (954 sitemap URLs, 2,862 alternates).
+- **481 bilingual pages** (ES 481, EN 481), **481 unique hero paths**. By archive section:
+  Entrenamiento 217/222 (five rows settled), Por Músculo 80/80, **Rutinas 80/80**, Ejercicios 104/196,
+  Nutrición 0/191, Mujer Fitness 0/23. Publishable total: **787**. Pecho is closed at 27/27; Hombro is
+  9/29.
+- **Batches 33 to 48 are built, green and committed, not pushed.** The build has **978 pages** and
+  **974 sitemap URLs**. Ejercicios is 104/196; the whole chest block and the first nine shoulder
+  exercises are live locally.
+- Gates: `npm run verify` = `check:copy` **24,531/24,531** + build **978 pages** + `check:i18n`
+  **15,252/15,252** (974 sitemap URLs, 2,922 alternates).
 - Docs: `odd/tasks/content-library-session.md` (start here next session),
   `odd/tasks/content-pages.md` (per-page checklist + resume),
-  `odd/tasks/content-library-batch-47.md` (the last batch) and `odd/tasks/guides-page-contract.md`
+  `odd/tasks/content-library-batch-48.md` (the last batch) and `odd/tasks/guides-page-contract.md`
   (the page contract and copy gate).
-- **Next 10:** batch 48 closes Pecho at `pullover-con-mancuerna-en-banco-inclinado`, then opens
-  Ejercicios de Hombro at `elevaciones-posteriores-con-mancuerna`, `press-militar-barra-de-pie`,
-  `remo-al-menton`, `aperturas-invertidas-contractora`, `elevacion-posterior-tumbado-una-mano`,
-  `elevacion-posterior-una-mano-polea`, `pajaros-en-banco-inclinado`,
-  `pajaros-sentado-mancuernas` and `press-tras-nuca-multipower`.
-- **Follow-up:** ten hero pairs are under dHash 7: the pre-existing exact duplicate
-  (`remo-polea-sentado` with `superserie-de-espalda-para-terminar-tu-rutina`), four earlier near
-  pairs at 4-5, and five Everkinetic line-art pairs at 3-6 added by batches 45-47 (dip, cable
-  crossover, incline and decline dumbbells, Smith flat vs incline). Every new pair was opened and the
-  equipment or bench angle differs. A 1280x720 crop of a library hero hashes 1-6 from the original,
-  so writers must open the closest hero, not only check for 0. White line art hashes 3-9 against
-  other line art; equipment and arm position are what distinguish them. The batch 20 injury
-  illustrations carry labels baked into the image (Spanish on the plantar fascia figure, English on
-  the spine figure), so each shows a foreign label on the other locale; crop them when the Phase 5
-  image pipeline lands.
+- **Next 10:** batch 49 continues Ejercicios de Hombro at `elevaciones-laterales`,
+  `elevaciones-una-mano-polea`, `press-arnold-2`, `press-hombro-mancuernas-sentado`,
+  `press-hombros-maquina`, `press-mancuernas-de-pie`, `press-hombros-polea`,
+  `elevaciones-frontales-mancuerna-alterno`, `elevaciones-frontales-disco` and
+  `elevaciones-frontales-barra`. Batch 50 closes the block and rebuilds the `ejercicios-hombro` hub.
+  Both briefs are written.
+- **Follow-up:** eight hero pairs score 6 or less: the pre-existing exact duplicate
+  (`remo-polea-sentado` with `superserie-de-espalda-para-terminar-tu-rutina`), and seven near pairs at
+  3-6 (`aperturas-mancuernas-banco-inclinado` vs `press-inclinado-barra` at 3; `como-respirar` vs
+  `levantar-aumentar-peso` at 4; `fondos-pecho` vs `jalones-polea-agarre-inverso` at 4; `fondos-pecho`
+  vs `jalones-cuerda` at 5; `press-banca-multipower` vs `press-inclinado-multipower` at 5;
+  `pullover-barra` vs `repeticion-maxima` at 5; `aperturas-inclinadas-polea` vs
+  `aperturas-mancuernas-banco-inclinado` at 6). Every new pair was opened and the equipment or bench
+  angle differs. A 1280x720 crop of a library hero hashes 1-6 from the original, so writers must open
+  the closest hero, not only check for 0. White line art hashes 3-9 against other line art; equipment
+  and arm position are what distinguish them. The batch 20 injury illustrations carry labels baked into
+  the image (Spanish on the plantar fascia figure, English on the spine figure), so each shows a foreign
+  label on the other locale; crop them when the Phase 5 image pipeline lands.
 - **Discarded:** `/congresos-profesores-factores-clave-fivestars-fitness/` does not go to production
   (owner decision, 2026-11-07). `/aeke-s1-pro-entrenamiento-domestico-con-ia/` was published with
   batch 17 and removed the same day by owner decision (2026-11-14); its pair, hero, routes and

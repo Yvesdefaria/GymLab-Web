@@ -9,12 +9,12 @@ Legend: `ES` = Spanish published, `EN` = English published.
 
 ## Progress
 
-- **Built: 471 / 792** (ES 471, EN 471).
-- Last batch: batch 47 took chest exercises to 26/27;
-  471 pages built.
+- **Built: 481 / 792** (ES 481, EN 481).
+- Last batch: batch 48 closed chest exercises and opened shoulder
+exercises; 481 pages built.
 - Blocks finished end to end: Entrenamiento del Hombro (9), Físicos de leyenda (12), Entrenamiento de
   la Espalda (10), Rutinas de Espalda (4), Espalda (1), Ejercicios de Espalda (31), Ejercicio
-  Cardiovascular (32), Entrenamiento de las Piernas (18), Entrenamiento del Pecho (6), Rutinas de
+  Cardiovascular (32), Entrenamiento de las Piernas (18), Entrenamiento del Pecho (6), Ejercicios de Pecho (27), Rutinas de
   Pierna (3), Pierna (9), Rutinas de Tríceps (1), Rutinas de Pecho (1), Tríceps (1) and Rutinas de
   Fuerza (9). Their
   headings are marked `— COMPLETO`; partial blocks show their ratio.
@@ -24,10 +24,10 @@ Legend: `ES` = Spanish published, `EN` = English published.
 | Entrenamiento | 222 | 217 |
 | Por Músculo | 80 | 80 |
 | Rutinas | 80 | 80 |
-| Ejercicios | 196 | 94 |
+| Ejercicios | 196 | 104 |
 | Nutrición | 191 | 0 |
 | Mujer Fitness | 23 | 0 |
-| **Total** | **792** | **471** |
+| **Total** | **792** | **481** |
 
 The Built column counts the archive block of each page, not the frontmatter `block` (every guide ships
 with `block: "Entrenamiento"` for the site taxonomy). Five Entrenamiento rows are settled and will
@@ -761,7 +761,7 @@ never publish: two DESCARTADA and three FUSIONADA, so the publishable total is *
 - [x] ES · [x] EN — `/sentadillas-con-mancuerna-por-encima-de-la-cabeza/` — Sentadillas con mancuerna por encima de la cabeza
 - [x] ES · [x] EN — `/peso-muerto-rumano/` — Peso Muerto Rumano \| El mejor ejercicio para tus femorales
 
-### Ejercicios de Pecho (27) — 26/27
+### Ejercicios de Pecho (27) — COMPLETO
 
 - [x] ES · [x] EN — `/fondos-pecho/` — Fondos en paralelas para pecho \| Gran ejercicio "Old School"
 - [x] ES · [x] EN — `/press-banca-barra/` — Press de banca con barra
@@ -789,19 +789,19 @@ never publish: two DESCARTADA and three FUSIONADA, so the publishable total is *
 - [x] ES · [x] EN — `/press-declinado-en-multipower/` — Press declinado en Multipower: mejora tu pectoral inferior
 - [x] ES · [x] EN — `/press-de-pecho-en-maquina-horizontal/` — Press de pecho en máquina horizontal
 - [x] ES · [x] EN — `/cruces-en-polea-baja/` — Cruces en polea baja \| Ejercicio de pecho muy efectivo
-- [ ] ES · [ ] EN — `/pullover-con-mancuerna-en-banco-inclinado/` — Pullover con mancuerna en banco inclinado
+- [x] ES · [x] EN — `/pullover-con-mancuerna-en-banco-inclinado/` — Pullover con mancuerna en banco inclinado
 
-### Ejercicios de Hombro (29)
+### Ejercicios de Hombro (29) — 9/29
 
-- [ ] ES · [ ] EN — `/elevaciones-posteriores-con-mancuerna/` — Elevaciones posteriores con Mancuerna (Pájaros)
-- [ ] ES · [ ] EN — `/press-militar-barra-de-pie/` — Press militar con barra de pie \| Trabajo Máximo De Hombros
-- [ ] ES · [ ] EN — `/remo-al-menton/` — Remo al mentón agarre abierto ✓ [Explota tus deltoides]
-- [ ] ES · [ ] EN — `/aperturas-invertidas-contractora/` — Aperturas invertidas en máquina contractora
-- [ ] ES · [ ] EN — `/elevacion-posterior-tumbado-una-mano/` — Elevación posterior tumbado a una mano \| Deltoides Posterior
-- [ ] ES · [ ] EN — `/elevacion-posterior-una-mano-polea/` — Elevación posterior a una mano en polea
-- [ ] ES · [ ] EN — `/pajaros-en-banco-inclinado/` — Pájaros en banco inclinado \| Trabaja tus deltoides posteriores
-- [ ] ES · [ ] EN — `/pajaros-sentado-mancuernas/` — Pájaros sentado con mancuernas \| Cabeza posterior del hombro
-- [ ] ES · [ ] EN — `/press-tras-nuca-multipower/` — Press tras nuca en multipower
+- [x] ES · [x] EN — `/elevaciones-posteriores-con-mancuerna/` — Elevaciones posteriores con Mancuerna (Pájaros)
+- [x] ES · [x] EN — `/press-militar-barra-de-pie/` — Press militar con barra de pie \| Trabajo Máximo De Hombros
+- [x] ES · [x] EN — `/remo-al-menton/` — Remo al mentón agarre abierto ✓ [Explota tus deltoides]
+- [x] ES · [x] EN — `/aperturas-invertidas-contractora/` — Aperturas invertidas en máquina contractora
+- [x] ES · [x] EN — `/elevacion-posterior-tumbado-una-mano/` — Elevación posterior tumbado a una mano \| Deltoides Posterior
+- [x] ES · [x] EN — `/elevacion-posterior-una-mano-polea/` — Elevación posterior a una mano en polea
+- [x] ES · [x] EN — `/pajaros-en-banco-inclinado/` — Pájaros en banco inclinado \| Trabaja tus deltoides posteriores
+- [x] ES · [x] EN — `/pajaros-sentado-mancuernas/` — Pájaros sentado con mancuernas \| Cabeza posterior del hombro
+- [x] ES · [x] EN — `/press-tras-nuca-multipower/` — Press tras nuca en multipower
 - [ ] ES · [ ] EN — `/elevaciones-laterales/` — Elevaciones laterales con mancuerna para hombros \| ¡Muy TOP!
 - [ ] ES · [ ] EN — `/elevaciones-una-mano-polea/` — Elevaciones laterales a una mano en polea
 - [ ] ES · [ ] EN — `/press-arnold-2/` — Press Arnold \| El ejercicio para los deltoides frontales
