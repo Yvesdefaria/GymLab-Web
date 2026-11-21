@@ -17,6 +17,8 @@ updated: "2026-11-15"
 
 Arnold Schwarzenegger trained shoulders with a volume that sounds excessive today and with a set of tricks that appears in almost all of his programmes. The base was simple: overhead presses and lateral raises. What changed was how he chained them and how much work he added around them.
 
+The [Arnold press](/en/arnold-press/) is the rotating variant that carries his name; that page covers what the twist buys and what it costs.
+
 These six techniques are best understood as a toolbox for a short block. None of them replaces progression, and several carry a recovery cost worth knowing before you try them.
 
 ## More sets and more exercises

@@ -17,6 +17,8 @@ updated: "2026-11-15"
 
 Arnold Schwarzenegger entrenaba los hombros con un volumen que hoy suena excesivo y con un repertorio de trucos que aparece en casi todos sus programas. La base era sencilla: presses por encima de la cabeza y elevaciones laterales. Lo que cambiaba era cómo los encadenaba y cuánto trabajo añadía alrededor.
 
+El [press Arnold](/es/press-arnold-2/) es la variante con rotación que lleva su nombre; esa página explica qué compra el giro y qué cuesta.
+
 Estas seis técnicas se entienden mejor como una caja de herramientas para un bloque corto. Ninguna sustituye a la progresión, y varias tienen un coste de recuperación que conviene conocer antes de probarlas.
 
 ## Más series y más ejercicios
