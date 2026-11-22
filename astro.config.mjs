@@ -550,6 +550,16 @@ const ROUTE_PAIRS = [
   ['/sentadillas-mancuerna-estilo-sumo', '/dumbbell-sumo-squat'],
   ['/sentadilla-barra', '/barbell-squat'],
   ['/aductores-polea', '/cable-hip-adduction'],
+  ['/sentadilla-barra-piernas-abiertas', '/sumo-barbell-squat'],
+  ['/sentadilla-frontal-barra', '/front-squat'],
+  ['/sentadilla-hack-2', '/hack-squat'],
+  ['/sentadilla-multipower', '/smith-machine-squat'],
+  ['/zancadas-laterales-barra', '/barbell-lateral-lunge'],
+  ['/zancadas-hacia-atras-mancuernas', '/dumbbell-reverse-lunge'],
+  ['/zancadas-mancuernas', '/dumbbell-lunge'],
+  ['/extensiones-cuadriceps-maquina', '/leg-extension'],
+  ['/prensa-inclinada', '/incline-leg-press'],
+  ['/prensa-horizontal', '/horizontal-leg-press'],
 ];
 
 const pairFor = (pathname) => {

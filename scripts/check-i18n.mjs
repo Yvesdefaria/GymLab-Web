@@ -1041,6 +1041,26 @@ const PAGES = [
   ['en', '/en/barbell-squat/'],
   ['es', '/es/aductores-polea/'],
   ['en', '/en/cable-hip-adduction/'],
+  ['es', '/es/sentadilla-barra-piernas-abiertas/'],
+  ['en', '/en/sumo-barbell-squat/'],
+  ['es', '/es/sentadilla-frontal-barra/'],
+  ['en', '/en/front-squat/'],
+  ['es', '/es/sentadilla-hack-2/'],
+  ['en', '/en/hack-squat/'],
+  ['es', '/es/sentadilla-multipower/'],
+  ['en', '/en/smith-machine-squat/'],
+  ['es', '/es/zancadas-laterales-barra/'],
+  ['en', '/en/barbell-lateral-lunge/'],
+  ['es', '/es/zancadas-hacia-atras-mancuernas/'],
+  ['en', '/en/dumbbell-reverse-lunge/'],
+  ['es', '/es/zancadas-mancuernas/'],
+  ['en', '/en/dumbbell-lunge/'],
+  ['es', '/es/extensiones-cuadriceps-maquina/'],
+  ['en', '/en/leg-extension/'],
+  ['es', '/es/prensa-inclinada/'],
+  ['en', '/en/incline-leg-press/'],
+  ['es', '/es/prensa-horizontal/'],
+  ['en', '/en/horizontal-leg-press/'],
 ];
 
 // Content routes, keyed by a stable id with the slug each locale publishes. The
@@ -2179,6 +2199,16 @@ const ROUTES = {
   dumbbellSumoSquat: { es: '/sentadillas-mancuerna-estilo-sumo', en: '/dumbbell-sumo-squat' },
   barbellSquat: { es: '/sentadilla-barra', en: '/barbell-squat' },
   cableHipAdduction: { es: '/aductores-polea', en: '/cable-hip-adduction' },
+  sumoBarbellSquat: { es: '/sentadilla-barra-piernas-abiertas', en: '/sumo-barbell-squat' },
+  frontSquat: { es: '/sentadilla-frontal-barra', en: '/front-squat' },
+  hackSquat: { es: '/sentadilla-hack-2', en: '/hack-squat' },
+  smithMachineSquat: { es: '/sentadilla-multipower', en: '/smith-machine-squat' },
+  barbellLateralLunge: { es: '/zancadas-laterales-barra', en: '/barbell-lateral-lunge' },
+  dumbbellReverseLunge: { es: '/zancadas-hacia-atras-mancuernas', en: '/dumbbell-reverse-lunge' },
+  dumbbellLunge: { es: '/zancadas-mancuernas', en: '/dumbbell-lunge' },
+  legExtension: { es: '/extensiones-cuadriceps-maquina', en: '/leg-extension' },
+  inclineLegPress: { es: '/prensa-inclinada', en: '/incline-leg-press' },
+  horizontalLegPress: { es: '/prensa-horizontal', en: '/horizontal-leg-press' },
 };
 
 const routeId = (path) => {
