@@ -9,9 +9,9 @@ Legend: `ES` = Spanish published, `EN` = English published.
 
 ## Progress
 
-- **Built: 501 / 792** (ES 501, EN 501).
-- Last batch: batch 50 closed shoulder exercises;
-  501 pages built.
+- **Built: 511 / 792** (ES 511, EN 511).
+- Last batch: batch 51 opened basic and quad exercises;
+  511 pages built.
 - Blocks finished end to end: Entrenamiento del Hombro (9), Físicos de leyenda (12), Entrenamiento de
   la Espalda (10), Rutinas de Espalda (4), Espalda (1), Ejercicios de Espalda (31), Ejercicio
   Cardiovascular (32), Entrenamiento de las Piernas (18), Entrenamiento del Pecho (6), Ejercicios de Pecho (27), Ejercicios de Hombro (29), Rutinas de
@@ -24,10 +24,10 @@ Legend: `ES` = Spanish published, `EN` = English published.
 | Entrenamiento | 222 | 217 |
 | Por Músculo | 80 | 80 |
 | Rutinas | 80 | 80 |
-| Ejercicios | 196 | 124 |
+| Ejercicios | 196 | 134 |
 | Nutrición | 191 | 0 |
 | Mujer Fitness | 23 | 0 |
-| **Total** | **792** | **501** |
+| **Total** | **792** | **511** |
 
 The Built column counts the archive block of each page, not the frontmatter `block` (every guide ships
 with `block: "Entrenamiento"` for the site taxonomy). Five Entrenamiento rows are settled and will
@@ -823,21 +823,21 @@ never publish: two DESCARTADA and three FUSIONADA, so the publishable total is *
 - [x] ES · [x] EN — `/elevaciones-frontales-con-barra-en-banco-inclinado/` — Elevaciones frontales con barra en banco inclinado
 - [x] ES · [x] EN — `/ejercicios-hombro/` — Ejercicios de Hombro \| ¡Los más efectivos para tus deltoides!
 
-### Ejercicios Básicos (6)
+### Ejercicios Básicos (6) — COMPLETO
 
-- [ ] ES · [ ] EN — `/ejercicios-basicos/` — Ejercicios básicos multiarticulares, los más anabólicos
-- [ ] ES · [ ] EN — `/masa-muscular-peso-muerto/` — Peso muerto, el ejercicio constructor de músculo
-- [ ] ES · [ ] EN — `/press-con-impulso-power-jerk/` — Power Jerk: domina el press con impulso correctamente
-- [ ] ES · [ ] EN — `/cargadas-en-dos-tiempos/` — Cargadas en dos tiempos (Clean and Jerk)
-- [ ] ES · [ ] EN — `/cargada-clean/` — Cargada (Clean)
-- [ ] ES · [ ] EN — `/arrancada/` — Arrancada (Snatch)
+- [x] ES · [x] EN — `/ejercicios-basicos/` — Ejercicios básicos multiarticulares, los más anabólicos
+- [x] ES · [x] EN — `/masa-muscular-peso-muerto/` — Peso muerto, el ejercicio constructor de músculo
+- [x] ES · [x] EN — `/press-con-impulso-power-jerk/` — Power Jerk: domina el press con impulso correctamente
+- [x] ES · [x] EN — `/cargadas-en-dos-tiempos/` — Cargadas en dos tiempos (Clean and Jerk)
+- [x] ES · [x] EN — `/cargada-clean/` — Cargada (Clean)
+- [x] ES · [x] EN — `/arrancada/` — Arrancada (Snatch)
 
-### Ejercicios de Cuadriceps (23)
+### Ejercicios de Cuadriceps (23) — 4/23
 
-- [ ] ES · [ ] EN — `/power-cleans/` — Power Clean: Mejora explosividad y potencia muscular
-- [ ] ES · [ ] EN — `/sentadillas-mancuerna-estilo-sumo/` — Sentadilla Sumo con mancuerna: Técnica y ventajas
-- [ ] ES · [ ] EN — `/sentadilla-barra/` — Sentadilla con barra para 2025
-- [ ] ES · [ ] EN — `/aductores-polea/` — Aductores en polea \| Ejercicio efectivo y funcional
+- [x] ES · [x] EN — `/power-cleans/` — Power Clean: Mejora explosividad y potencia muscular
+- [x] ES · [x] EN — `/sentadillas-mancuerna-estilo-sumo/` — Sentadilla Sumo con mancuerna: Técnica y ventajas
+- [x] ES · [x] EN — `/sentadilla-barra/` — Sentadilla con barra para 2025
+- [x] ES · [x] EN — `/aductores-polea/` — Aductores en polea \| Ejercicio efectivo y funcional
 - [ ] ES · [ ] EN — `/sentadilla-barra-piernas-abiertas/` — Cómo dominar la sentadilla sumo con barra
 - [ ] ES · [ ] EN — `/sentadilla-frontal-barra/` — Sentadilla frontal con barra
 - [ ] ES · [ ] EN — `/sentadilla-hack-2/` — Sentadilla Hack
