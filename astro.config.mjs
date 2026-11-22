@@ -540,6 +540,16 @@ const ROUTE_PAIRS = [
   ['/press-tras-nuca-barra', '/behind-the-neck-barbell-press'],
   ['/elevaciones-frontales-con-barra-en-banco-inclinado', '/incline-bench-barbell-front-raise'],
   ['/ejercicios-hombro', '/shoulder-exercises'],
+  ['/ejercicios-basicos', '/compound-exercises'],
+  ['/masa-muscular-peso-muerto', '/deadlift-for-muscle'],
+  ['/press-con-impulso-power-jerk', '/power-jerk'],
+  ['/cargadas-en-dos-tiempos', '/clean-and-jerk'],
+  ['/cargada-clean', '/clean'],
+  ['/arrancada', '/snatch'],
+  ['/power-cleans', '/power-clean'],
+  ['/sentadillas-mancuerna-estilo-sumo', '/dumbbell-sumo-squat'],
+  ['/sentadilla-barra', '/barbell-squat'],
+  ['/aductores-polea', '/cable-hip-adduction'],
 ];
 
 const pairFor = (pathname) => {

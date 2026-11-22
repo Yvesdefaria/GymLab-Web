@@ -1021,6 +1021,26 @@ const PAGES = [
   ['en', '/en/incline-bench-barbell-front-raise/'],
   ['es', '/es/ejercicios-hombro/'],
   ['en', '/en/shoulder-exercises/'],
+  ['es', '/es/ejercicios-basicos/'],
+  ['en', '/en/compound-exercises/'],
+  ['es', '/es/masa-muscular-peso-muerto/'],
+  ['en', '/en/deadlift-for-muscle/'],
+  ['es', '/es/press-con-impulso-power-jerk/'],
+  ['en', '/en/power-jerk/'],
+  ['es', '/es/cargadas-en-dos-tiempos/'],
+  ['en', '/en/clean-and-jerk/'],
+  ['es', '/es/cargada-clean/'],
+  ['en', '/en/clean/'],
+  ['es', '/es/arrancada/'],
+  ['en', '/en/snatch/'],
+  ['es', '/es/power-cleans/'],
+  ['en', '/en/power-clean/'],
+  ['es', '/es/sentadillas-mancuerna-estilo-sumo/'],
+  ['en', '/en/dumbbell-sumo-squat/'],
+  ['es', '/es/sentadilla-barra/'],
+  ['en', '/en/barbell-squat/'],
+  ['es', '/es/aductores-polea/'],
+  ['en', '/en/cable-hip-adduction/'],
 ];
 
 // Content routes, keyed by a stable id with the slug each locale publishes. The
@@ -2149,6 +2169,16 @@ const ROUTES = {
   behindTheNeckBarbellPress: { es: '/press-tras-nuca-barra', en: '/behind-the-neck-barbell-press' },
   inclineBenchBarbellFrontRaise: { es: '/elevaciones-frontales-con-barra-en-banco-inclinado', en: '/incline-bench-barbell-front-raise' },
   shoulderExercisesHub: { es: '/ejercicios-hombro', en: '/shoulder-exercises' },
+  basicExercises: { es: '/ejercicios-basicos', en: '/compound-exercises' },
+  deadliftForMuscle: { es: '/masa-muscular-peso-muerto', en: '/deadlift-for-muscle' },
+  powerJerk: { es: '/press-con-impulso-power-jerk', en: '/power-jerk' },
+  cleanAndJerk: { es: '/cargadas-en-dos-tiempos', en: '/clean-and-jerk' },
+  clean: { es: '/cargada-clean', en: '/clean' },
+  snatch: { es: '/arrancada', en: '/snatch' },
+  powerClean: { es: '/power-cleans', en: '/power-clean' },
+  dumbbellSumoSquat: { es: '/sentadillas-mancuerna-estilo-sumo', en: '/dumbbell-sumo-squat' },
+  barbellSquat: { es: '/sentadilla-barra', en: '/barbell-squat' },
+  cableHipAdduction: { es: '/aductores-polea', en: '/cable-hip-adduction' },
 };
 
 const routeId = (path) => {
