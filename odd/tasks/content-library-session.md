@@ -9,27 +9,27 @@ Last updated: 2026-11-19. Read this first next session.
 
 ## State
 
-- **511 / 792 bilingual pages** (ES 511, EN 511).
+- **521 / 792 bilingual pages** (ES 521, EN 521).
 - Blocks by archive section: Entrenamiento **217/222** (the five missing rows are settled: two
-  descartadas and three fusionadas), Por Músculo **80/80**, Rutinas **80/80**, Ejercicios **134/196**,
+  descartadas and three fusionadas), Por Músculo **80/80**, Rutinas **80/80**, Ejercicios **144/196**,
   Nutrición 0/191, Mujer Fitness 0/23. The publishable total is 787.
-- **511 unique hero paths.** The dHash pairs under 7 are listed in `PLAN.md`; every new one was opened
+- **521 unique hero paths.** The dHash pairs under 7 are listed in `PLAN.md`; every new one was opened
   and the equipment differs.
-- **Batch 51 is built, green and committed (2026-11-22).** The build has **1,038 pages** and **1,034
-  sitemap URLs**. Básicos is **6/6 — COMPLETO**; Cuádriceps is 4/23.
+- **Batch 52 is built, green and committed (2026-11-22).** The build has **1,058 pages** and **1,054
+  sitemap URLs**. Básicos is **6/6 — COMPLETO**; Cuádriceps is 14/23.
 - Five archive rows are settled and must stay out: the FiveStars Fitness congress page (discarded),
   the AEKE S1 Pro page (discarded 2026-11-14), `/velocidad-repeticiones/` (fused into the tempo page,
   2026-11-14) and the two batch 20 fusions (2026-11-15).
 - **Production runs batch 32 (pushed 2026-11-16).** Batches 19 to 32 are live; `origin/main` is at
-  the batch 32 docs push. Batches 33 to 51 are committed locally and not pushed.
-- Batch records: `odd/tasks/content-library-batch-50.md`, `-51.md` and the session closes below.
+  the batch 32 docs push. Batches 33 to 52 are committed locally and not pushed.
+- Batch records: `odd/tasks/content-library-batch-51.md`, `-52.md` and the session closes below.
 
 ## Gates
 
 ```powershell
-npm run check:copy   # 26,061/26,061
-npm run build        # 1,038 pages
-npm run check:i18n   # 16,182/16,182, 1,034 sitemap URLs
+npm run check:copy   # 26,571/26,571
+npm run build        # 1,058 pages
+npm run check:i18n   # 16,492/16,492, 1,054 sitemap URLs
 npm run verify       # all three, in that order
 npm run dev          # http://localhost:4321
 ```

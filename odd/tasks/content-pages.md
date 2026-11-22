@@ -9,9 +9,9 @@ Legend: `ES` = Spanish published, `EN` = English published.
 
 ## Progress
 
-- **Built: 511 / 792** (ES 511, EN 511).
-- Last batch: batch 51 opened basic and quad exercises;
-  511 pages built.
+- **Built: 521 / 792** (ES 521, EN 521).
+- Last batch: batch 52 continued quad exercises;
+  521 pages built.
 - Blocks finished end to end: Entrenamiento del Hombro (9), Físicos de leyenda (12), Entrenamiento de
   la Espalda (10), Rutinas de Espalda (4), Espalda (1), Ejercicios de Espalda (31), Ejercicio
   Cardiovascular (32), Entrenamiento de las Piernas (18), Entrenamiento del Pecho (6), Ejercicios de Pecho (27), Ejercicios de Hombro (29), Rutinas de
@@ -24,10 +24,10 @@ Legend: `ES` = Spanish published, `EN` = English published.
 | Entrenamiento | 222 | 217 |
 | Por Músculo | 80 | 80 |
 | Rutinas | 80 | 80 |
-| Ejercicios | 196 | 134 |
+| Ejercicios | 196 | 144 |
 | Nutrición | 191 | 0 |
 | Mujer Fitness | 23 | 0 |
-| **Total** | **792** | **511** |
+| **Total** | **792** | **521** |
 
 The Built column counts the archive block of each page, not the frontmatter `block` (every guide ships
 with `block: "Entrenamiento"` for the site taxonomy). Five Entrenamiento rows are settled and will
@@ -832,22 +832,22 @@ never publish: two DESCARTADA and three FUSIONADA, so the publishable total is *
 - [x] ES · [x] EN — `/cargada-clean/` — Cargada (Clean)
 - [x] ES · [x] EN — `/arrancada/` — Arrancada (Snatch)
 
-### Ejercicios de Cuadriceps (23) — 4/23
+### Ejercicios de Cuadriceps (23) — 14/23
 
 - [x] ES · [x] EN — `/power-cleans/` — Power Clean: Mejora explosividad y potencia muscular
 - [x] ES · [x] EN — `/sentadillas-mancuerna-estilo-sumo/` — Sentadilla Sumo con mancuerna: Técnica y ventajas
 - [x] ES · [x] EN — `/sentadilla-barra/` — Sentadilla con barra para 2025
 - [x] ES · [x] EN — `/aductores-polea/` — Aductores en polea \| Ejercicio efectivo y funcional
-- [ ] ES · [ ] EN — `/sentadilla-barra-piernas-abiertas/` — Cómo dominar la sentadilla sumo con barra
-- [ ] ES · [ ] EN — `/sentadilla-frontal-barra/` — Sentadilla frontal con barra
-- [ ] ES · [ ] EN — `/sentadilla-hack-2/` — Sentadilla Hack
-- [ ] ES · [ ] EN — `/sentadilla-multipower/` — Sentadilla en multipower
-- [ ] ES · [ ] EN — `/zancadas-laterales-barra/` — Zancadas laterales \| Mejores glúteos y cuádriceps
-- [ ] ES · [ ] EN — `/zancadas-hacia-atras-mancuernas/` — Zancadas hacia atrás o inversas
-- [ ] ES · [ ] EN — `/zancadas-mancuernas/` — Zancadas con mancuerna (Splits)
-- [ ] ES · [ ] EN — `/extensiones-cuadriceps-maquina/` — Extensiones de cuádriceps en máquina: Técnica perfecta
-- [ ] ES · [ ] EN — `/prensa-inclinada/` — Prensa Inclinada: Técnica y principales beneficios
-- [ ] ES · [ ] EN — `/prensa-horizontal/` — Prensa Horizontal \| ¡Aisla tus cuádriceps!
+- [x] ES · [x] EN — `/sentadilla-barra-piernas-abiertas/` — Cómo dominar la sentadilla sumo con barra
+- [x] ES · [x] EN — `/sentadilla-frontal-barra/` — Sentadilla frontal con barra
+- [x] ES · [x] EN — `/sentadilla-hack-2/` — Sentadilla Hack
+- [x] ES · [x] EN — `/sentadilla-multipower/` — Sentadilla en multipower
+- [x] ES · [x] EN — `/zancadas-laterales-barra/` — Zancadas laterales \| Mejores glúteos y cuádriceps
+- [x] ES · [x] EN — `/zancadas-hacia-atras-mancuernas/` — Zancadas hacia atrás o inversas
+- [x] ES · [x] EN — `/zancadas-mancuernas/` — Zancadas con mancuerna (Splits)
+- [x] ES · [x] EN — `/extensiones-cuadriceps-maquina/` — Extensiones de cuádriceps en máquina: Técnica perfecta
+- [x] ES · [x] EN — `/prensa-inclinada/` — Prensa Inclinada: Técnica y principales beneficios
+- [x] ES · [x] EN — `/prensa-horizontal/` — Prensa Horizontal \| ¡Aisla tus cuádriceps!
 - [ ] ES · [ ] EN — `/prensa-inclinada-a-una-pierna/` — Prensa Inclinada a una pierna \| Trabajo unilateral efectivo
 - [ ] ES · [ ] EN — `/sentadilla-sissy/` — Sentadilla Sissy
 - [ ] ES · [ ] EN — `/sentadilla-jefferson/` — Sentadilla Jefferson

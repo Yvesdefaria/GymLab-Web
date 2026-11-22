@@ -21,14 +21,13 @@ Last updated: 2026-11-16.
 
 ## Content library — 511 / 792 (2026-11-22)
 
-- **511 bilingual pages** (ES 511, EN 511), **511 unique hero paths**. By archive section:
-  Entrenamiento 217/222 (five rows settled), Por Músculo 80/80, **Rutinas 80/80**, Ejercicios 134/196,
-  Nutrición 0/191, Mujer Fitness 0/23. Publishable total: **787**. Básicos is **6/6 — COMPLETO**;
-  Cuádriceps is 4/23.
-- **Batches 33 to 51 are built, green and committed, not pushed.** The build has **1,038 pages** and
-  **1,034 sitemap URLs**. Ejercicios is 134/196; the basic and Olympic families are live locally.
-- Gates: `npm run verify` = `check:copy` **26,061/26,061** + build **1,038 pages** + `check:i18n`
-  **16,182/16,182** (1,034 sitemap URLs, 3,102 alternates).
+- **521 bilingual pages** (ES 521, EN 521), **521 unique hero paths**. By archive section:
+  Entrenamiento 217/222 (five rows settled), Por Músculo 80/80, **Rutinas 80/80**, Ejercicios 144/196,
+  Nutrición 0/191, Mujer Fitness 0/23. Publishable total: **787**. Cuádriceps is 14/23.
+- **Batches 33 to 52 are built, green and committed, not pushed.** The build has **1,058 pages** and
+  **1,054 sitemap URLs**. Ejercicios is 144/196; the squat, lunge and leg-press families are live locally.
+- Gates: `npm run verify` = `check:copy` **26,571/26,571** + build **1,058 pages** + `check:i18n`
+  **16,492/16,492** (1,054 sitemap URLs, 3,162 alternates).
 - Docs: `odd/tasks/content-library-session.md` (start here next session),
   `odd/tasks/content-pages.md` (per-page checklist + resume),
   `odd/tasks/content-library-batch-51.md` (the last batch) and `odd/tasks/guides-page-contract.md`
