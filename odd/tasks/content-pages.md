@@ -9,9 +9,9 @@ Legend: `ES` = Spanish published, `EN` = English published.
 
 ## Progress
 
-- **Built: 581 / 792** (ES 581, EN 581).
-- Last batch: batch 58 closed exercises and opened supplements;
-  581 pages built.
+- **Built: 591 / 792** (ES 591, EN 591).
+- Last batch: batch 59 continued the supplement block;
+  591 pages built.
 - Blocks finished end to end: Entrenamiento del Hombro (9), Físicos de leyenda (12), Entrenamiento de
   la Espalda (10), Rutinas de Espalda (4), Espalda (1), Ejercicios de Espalda (31), Ejercicio
   Cardiovascular (32), Entrenamiento de las Piernas (18), Entrenamiento del Pecho (6), Ejercicios de Pecho (27), Ejercicios de Hombro (29), Rutinas de
@@ -25,9 +25,9 @@ Legend: `ES` = Spanish published, `EN` = English published.
 | Por Músculo | 80 | 80 |
 | Rutinas | 80 | 80 |
 | Ejercicios | 196 | 196 |
-| Nutrición | 191 | 8 |
+| Nutrición | 191 | 18 |
 | Mujer Fitness | 23 | 0 |
-| **Total** | **792** | **581** |
+| **Total** | **792** | **591** |
 
 The Built column counts the archive block of each page, not the frontmatter `block` (every guide ships
 with `block: "Entrenamiento"` for the site taxonomy). Five Entrenamiento rows are settled and will
@@ -949,7 +949,7 @@ never publish: two DESCARTADA and three FUSIONADA, so the publishable total is *
 
 ## Nutrición (191)
 
-### Suplementos Dietéticos (35) — 8/35
+### Suplementos Dietéticos (35) — 18/35
 
 - [x] ES · [x] EN — `/errores-al-tomar-suplementos/` — Errores al tomar suplementos: mitos y verdades
 - [x] ES · [x] EN — `/carnitina/` — Carnitina \| ¿Sirve para perder peso y quemar grasa?
@@ -959,16 +959,16 @@ never publish: two DESCARTADA and three FUSIONADA, so the publishable total is *
 - [x] ES · [x] EN — `/suplementos-proteina/` — Suplementos de proteínas ⇨ Todo lo que debes saber
 - [x] ES · [x] EN — `/suplementos-creatina/` — Creatina, el mejor suplemento para ganar masa muscular y fuerza
 - [x] ES · [x] EN — `/proteina-de-suero-elaboracion/` — Proteína de suero y su elaboración paso a paso
-- [ ] ES · [ ] EN — `/pros-y-contras-de-las-proteinas/` — Pros y contras de las proteínas
-- [ ] ES · [ ] EN — `/mejor-proteina-nocturna/` — Caseína, la mejor proteína nocturna
-- [ ] ES · [ ] EN — `/proteinas-de-liberacion-sostenida-mezclas-proteicas/` — Proteínas de Liberación Sostenida (Mezclas Proteicas)
-- [ ] ES · [ ] EN — `/proteina-de-soja-contra-proteina-de-leche/` — Proteína de soja vs. leche: ¿Cuál es mejor para el anabolismo?
-- [ ] ES · [ ] EN — `/suplementos-de-proteina-vegana/` — Suplementos de Proteína Vegana \| ¿Son efectivas?
-- [ ] ES · [ ] EN — `/creatina-la-verdad/` — La Verdad sobre la Creatina ¿Quien puede obtener sus beneficios?
-- [ ] ES · [ ] EN — `/creatina-calambres-musculares/` — Creatina y calambres musculares
-- [ ] ES · [ ] EN — `/creatina-cafeina/` — Creatina y Cafeína: Efectos Combinados en el Rendimiento
-- [ ] ES · [ ] EN — `/alcohol-creatina/` — Creatina y Alcohol: Impacto en el Rendimiento y la Salud
-- [ ] ES · [ ] EN — `/creatina-rinon/` — Creatina y Daños al Riñón: Mitos y Realidades
+- [x] ES · [x] EN — `/pros-y-contras-de-las-proteinas/` — Pros y contras de las proteínas
+- [x] ES · [x] EN — `/mejor-proteina-nocturna/` — Caseína, la mejor proteína nocturna
+- [x] ES · [x] EN — `/proteinas-de-liberacion-sostenida-mezclas-proteicas/` — Proteínas de Liberación Sostenida (Mezclas Proteicas)
+- [x] ES · [x] EN — `/proteina-de-soja-contra-proteina-de-leche/` — Proteína de soja vs. leche: ¿Cuál es mejor para el anabolismo?
+- [x] ES · [x] EN — `/suplementos-de-proteina-vegana/` — Suplementos de Proteína Vegana \| ¿Son efectivas?
+- [x] ES · [x] EN — `/creatina-la-verdad/` — La Verdad sobre la Creatina ¿Quien puede obtener sus beneficios?
+- [x] ES · [x] EN — `/creatina-calambres-musculares/` — Creatina y calambres musculares
+- [x] ES · [x] EN — `/creatina-cafeina/` — Creatina y Cafeína: Efectos Combinados en el Rendimiento
+- [x] ES · [x] EN — `/alcohol-creatina/` — Creatina y Alcohol: Impacto en el Rendimiento y la Salud
+- [x] ES · [x] EN — `/creatina-rinon/` — Creatina y Daños al Riñón: Mitos y Realidades
 - [ ] ES · [ ] EN — `/aceite-de-cbd-beneficios-para-el-deportista/` — Aceite de CBD y beneficios para el deportista
 - [ ] ES · [ ] EN — `/como-empezar-a-tomar-suplementos-deportivos/` — Cómo empezar a tomar suplementos deportivos
 - [ ] ES · [ ] EN — `/como-mejorar-tus-fisico-con-estos-batidos/` — Como mejorar tu físico con batidos pre y post entrenamiento

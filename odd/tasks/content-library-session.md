@@ -9,27 +9,27 @@ Last updated: 2026-11-19. Read this first next session.
 
 ## State
 
-- **581 / 792 bilingual pages** (ES 581, EN 581).
+- **591 / 792 bilingual pages** (ES 591, EN 591).
 - Blocks by archive section: Entrenamiento **217/222** (the five missing rows are settled: two
   descartadas and three fusionadas), Por Músculo **80/80**, Rutinas **80/80**, Ejercicios
-  **196/196 — COMPLETO**, Nutrición 8/191, Mujer Fitness 0/23. The publishable total is 787.
-- **581 unique hero paths.** The dHash pairs under 7 are listed in `PLAN.md`; every new one was opened
+  **196/196 — COMPLETO**, Nutrición 18/191, Mujer Fitness 0/23. The publishable total is 787.
+- **591 unique hero paths.** The dHash pairs under 7 are listed in `PLAN.md`; every new one was opened
   and the equipment differs.
-- **Batch 58 is built, green and committed (2026-11-23).** The build has **1,178 pages** and **1,174
-  sitemap URLs**. The Ejercicios block is complete; Suplementos Dietéticos is 8/35.
+- **Batch 59 is built, green and committed (2026-11-23).** The build has **1,198 pages** and **1,194
+  sitemap URLs**. Suplementos Dietéticos is 18/35.
 - Five archive rows are settled and must stay out: the FiveStars Fitness congress page (discarded),
   the AEKE S1 Pro page (discarded 2026-11-14), `/velocidad-repeticiones/` (fused into the tempo page,
   2026-11-14) and the two batch 20 fusions (2026-11-15).
 - **Production runs batch 32 (pushed 2026-11-16).** Batches 19 to 32 are live; `origin/main` is at
-  the batch 32 docs push. Batches 33 to 58 are committed locally and not pushed.
-- Batch records: `odd/tasks/content-library-batch-57.md`, `-58.md` and the session closes below.
+  the batch 32 docs push. Batches 33 to 59 are committed locally and not pushed.
+- Batch records: `odd/tasks/content-library-batch-58.md`, `-59.md` and the session closes below.
 
 ## Gates
 
 ```powershell
-npm run check:copy   # 29,631/29,631
-npm run build        # 1,178 pages
-npm run check:i18n   # 18,352/18,352, 1,174 sitemap URLs
+npm run check:copy   # 30,141/30,141
+npm run build        # 1,198 pages
+npm run check:i18n   # 18,662/18,662, 1,194 sitemap URLs
 npm run verify       # all three, in that order
 npm run dev          # http://localhost:4321
 ```
@@ -83,8 +83,8 @@ library and breaks every Python process that imports Pillow.
 ## What is built
 
 The per-page record in `content-pages.md` is authoritative; this section summarises the blocks. At
-**581 pages**, Por Músculo (80/80), Rutinas (80/80) and **Ejercicios (196/196)** are closed, and
-Entrenamiento is effectively closed (217/222 with five settled rows). Nutrición is 8/191 and Mujer
+**591 pages**, Por Músculo (80/80), Rutinas (80/80) and **Ejercicios (196/196)** are closed, and
+Entrenamiento is effectively closed (217/222 with five settled rows). Nutrición is 18/191 and Mujer
 Fitness 0/23.
 
 The list below describes the blocks finished before batch 42; the checklist and the batch records carry
@@ -142,11 +142,11 @@ the current per-page state.
 
 ## Next 10
 
-1. Batch 59 continues Suplementos Dietéticos at `/pros-y-contras-de-las-proteinas/`,
-   `mejor-proteina-nocturna`, `proteinas-de-liberacion-sostenida-mezclas-proteicas`,
-   `proteina-de-soja-contra-proteina-de-leche`, `suplementos-de-proteina-vegana`, `creatina-la-verdad`,
-   `creatina-calambres-musculares`, `creatina-cafeina`, `alcohol-creatina` and `creatina-rinon`.
-2. Ejercicios is closed at 196/196. Nutrición is 8/191; Mujer Fitness 0/23.
+1. Batch 60 continues Suplementos Dietéticos at `/aminoacidos-bcaas/`, then `aminoacidos`,
+   `reemplazo-comidas`, `glucosamina`, `esteroides`, `bloqueadores-de-carbohidratos`,
+   `gaba-neotropico-para-la-calma-y-relajacion`, `vitargo`, `ganadores-de-peso-mass-gainers` and
+   `cafeina-suplemento`.
+2. Ejercicios is closed at 196/196. Nutrición is 18/191; Mujer Fitness 0/23.
 3. Keep the same copy, unique-hero and gate flow.
 4. Before publishing another photo from Shixart1985, Nenad Stojkovic, Miguel Angel Omaña Rojas, the
    InjuryMap family, PTPioneer, KeepActive Australia, Everkinetic or Wellcome Collection, compare the
@@ -201,6 +201,19 @@ the current per-page state.
   documented in the batch 22 record.
 - **Push is the owner's call:** batches 19 to 32 were pushed on 2026-11-16 from `6293327` to
   `f7f8de1`. Batches 33 to 47, page commits and docs, remain local; production still serves 658 pages.
+
+## Session close (2026-11-23, batch 59)
+
+- Batch 59 continued the supplement block: 581 → **591 / 792**, 10 pairs, 20 files, 10 heroes.
+  Suplementos Dietéticos 18/35; Nutrición 18/191.
+- Gates: `check:copy` **30,141/30,141**, build **1,198 pages**, `check:i18n` **18,662/18,662**, sitemap
+  **1,194 URLs** with 3,582 alternates. 132 links, 0 broken; 140 render pairs clean.
+- **Fixed by the parent:** the published `ganar-masa-muscular` and `build-muscle` claimed creatine
+  stimulates growth hormone and beats whey alone; both sentences now match the evidence (`9e210b5`).
+- **Heroes:** eight Wikimedia and two CC0/CC-BY images. The creatine evidence page uses a molecule
+  render because Commons has only three creatine photos and the unbranded one is already the hub hero.
+- Commits: pages `09cbb23`-`25f8f52`, routes `ada040b`.
+- Next session starts at `/aminoacidos-bcaas/`; Ejercicios is closed, Nutrición is the remaining block.
 
 ## Session close (2026-11-23, batch 58)
 

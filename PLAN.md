@@ -21,13 +21,13 @@ Last updated: 2026-11-16.
 
 ## Content library — 511 / 792 (2026-11-22)
 
-- **581 bilingual pages** (ES 581, EN 581), **581 unique hero paths**. By archive section:
+- **591 bilingual pages** (ES 591, EN 591), **591 unique hero paths**. By archive section:
   Entrenamiento 217/222 (five rows settled), Por Músculo 80/80, **Rutinas 80/80**, Ejercicios
-  **196/196 — COMPLETO**, Nutrición 8/191, Mujer Fitness 0/23. Publishable total: **787**.
-- **Batches 33 to 58 are built, green and committed, not pushed.** The build has **1,178 pages** and
-  **1,174 sitemap URLs**.
-- Gates: `npm run verify` = `check:copy` **29,631/29,631** + build **1,178 pages** + `check:i18n`
-  **18,352/18,352** (1,174 sitemap URLs, 3,522 alternates).
+  **196/196 — COMPLETO**, Nutrición 18/191, Mujer Fitness 0/23. Publishable total: **787**.
+- **Batches 33 to 59 are built, green and committed, not pushed.** The build has **1,198 pages** and
+  **1,194 sitemap URLs**.
+- Gates: `npm run verify` = `check:copy` **30,141/30,141** + build **1,198 pages** + `check:i18n`
+  **18,662/18,662** (1,194 sitemap URLs, 3,582 alternates).
 - Docs: `odd/tasks/content-library-session.md` (start here next session),
   `odd/tasks/content-pages.md` (per-page checklist + resume),
   `odd/tasks/content-library-batch-51.md` (the last batch) and `odd/tasks/guides-page-contract.md`
