@@ -9,27 +9,27 @@ Last updated: 2026-11-19. Read this first next session.
 
 ## State
 
-- **571 / 792 bilingual pages** (ES 571, EN 571).
+- **581 / 792 bilingual pages** (ES 581, EN 581).
 - Blocks by archive section: Entrenamiento **217/222** (the five missing rows are settled: two
-  descartadas and three fusionadas), Por Músculo **80/80**, Rutinas **80/80**, Ejercicios **194/196**,
-  Nutrición 0/191, Mujer Fitness 0/23. The publishable total is 787.
-- **571 unique hero paths.** The dHash pairs under 7 are listed in `PLAN.md`; every new one was opened
+  descartadas and three fusionadas), Por Músculo **80/80**, Rutinas **80/80**, Ejercicios
+  **196/196 — COMPLETO**, Nutrición 8/191, Mujer Fitness 0/23. The publishable total is 787.
+- **581 unique hero paths.** The dHash pairs under 7 are listed in `PLAN.md`; every new one was opened
   and the equipment differs.
-- **Batch 57 is built, green and committed (2026-11-23).** The build has **1,158 pages** and **1,154
-  sitemap URLs**. Bíceps y Antebrazo is **22/22 — COMPLETO**; Trapecios 4/6.
+- **Batch 58 is built, green and committed (2026-11-23).** The build has **1,178 pages** and **1,174
+  sitemap URLs**. The Ejercicios block is complete; Suplementos Dietéticos is 8/35.
 - Five archive rows are settled and must stay out: the FiveStars Fitness congress page (discarded),
   the AEKE S1 Pro page (discarded 2026-11-14), `/velocidad-repeticiones/` (fused into the tempo page,
   2026-11-14) and the two batch 20 fusions (2026-11-15).
 - **Production runs batch 32 (pushed 2026-11-16).** Batches 19 to 32 are live; `origin/main` is at
-  the batch 32 docs push. Batches 33 to 57 are committed locally and not pushed.
-- Batch records: `odd/tasks/content-library-batch-56.md`, `-57.md` and the session closes below.
+  the batch 32 docs push. Batches 33 to 58 are committed locally and not pushed.
+- Batch records: `odd/tasks/content-library-batch-57.md`, `-58.md` and the session closes below.
 
 ## Gates
 
 ```powershell
-npm run check:copy   # 29,121/29,121
-npm run build        # 1,158 pages
-npm run check:i18n   # 18,042/18,042, 1,154 sitemap URLs
+npm run check:copy   # 29,631/29,631
+npm run build        # 1,178 pages
+npm run check:i18n   # 18,352/18,352, 1,174 sitemap URLs
 npm run verify       # all three, in that order
 npm run dev          # http://localhost:4321
 ```
@@ -83,9 +83,9 @@ library and breaks every Python process that imports Pillow.
 ## What is built
 
 The per-page record in `content-pages.md` is authoritative; this section summarises the blocks. At
-**571 pages**, Por Músculo (80/80) and Rutinas (80/80) are closed, Entrenamiento is effectively closed
-(217/222 with five settled rows), and the Ejercicios block is at **194/196**: everything is complete
-except the last two Trapecios rows. Bíceps y Antebrazo closed at 22/22.
+**581 pages**, Por Músculo (80/80), Rutinas (80/80) and **Ejercicios (196/196)** are closed, and
+Entrenamiento is effectively closed (217/222 with five settled rows). Nutrición is 8/191 and Mujer
+Fitness 0/23.
 
 The list below describes the blocks finished before batch 42; the checklist and the batch records carry
 the current per-page state.
@@ -142,15 +142,11 @@ the current per-page state.
 
 ## Next 10
 
-1. Batch 58 closes Ejercicios with `/encogimientos-trapecio-polea/` and `encogimientos-multipower`, then
-   opens Suplementos Dietéticos with `errores-al-tomar-suplementos`, `carnitina`,
-   `bloquear-miostatina`, `comprar-proteinas`, `hmb-protector-de-masa-muscular`,
-   `suplementos-proteina`, `suplementos-creatina` and `proteina-de-suero-elaboracion`. Batch 59
-   continues with `pros-y-contras-de-las-proteinas`, `mejor-proteina-nocturna`,
-   `proteinas-de-liberacion-sostenida-mezclas-proteicas`,
+1. Batch 59 continues Suplementos Dietéticos at `/pros-y-contras-de-las-proteinas/`,
+   `mejor-proteina-nocturna`, `proteinas-de-liberacion-sostenida-mezclas-proteicas`,
    `proteina-de-soja-contra-proteina-de-leche`, `suplementos-de-proteina-vegana`, `creatina-la-verdad`,
    `creatina-calambres-musculares`, `creatina-cafeina`, `alcohol-creatina` and `creatina-rinon`.
-2. Ejercicios is 194/196: Trapecios 2/6 left. Nutrición starts at 0/191.
+2. Ejercicios is closed at 196/196. Nutrición is 8/191; Mujer Fitness 0/23.
 3. Keep the same copy, unique-hero and gate flow.
 4. Before publishing another photo from Shixart1985, Nenad Stojkovic, Miguel Angel Omaña Rojas, the
    InjuryMap family, PTPioneer, KeepActive Australia, Everkinetic or Wellcome Collection, compare the
@@ -205,6 +201,19 @@ the current per-page state.
   documented in the batch 22 record.
 - **Push is the owner's call:** batches 19 to 32 were pushed on 2026-11-16 from `6293327` to
   `f7f8de1`. Batches 33 to 47, page commits and docs, remain local; production still serves 658 pages.
+
+## Session close (2026-11-23, batch 58)
+
+- Batch 58 closed the Ejercicios block at **196/196** and opened Suplementos Dietéticos at 8/35:
+  571 → **581 / 792**, 10 pairs, 20 files, 10 heroes.
+- Gates: `check:copy` **29,631/29,631**, build **1,178 pages**, `check:i18n` **18,352/18,352**, sitemap
+  **1,174 URLs** with 3,522 alternates. 126 links, 0 broken; 140 render pairs clean.
+- **Fixed by the parent:** the carnitine pages linked the calorie calculator, which the article-only link
+  check flags; the link was removed. The behind-the-back shrug wording was polished in `285fee5`.
+- **Heroes:** eight Wikimedia and two Pexels. The creatine hero is the weakest visually (white powder on
+  a white tub); labelled alternatives showed brands.
+- Commits: pages `341d3f7`-`e7eab24`, polish `285fee5`, routes `e295408`.
+- Next session continues the supplement block at `/pros-y-contras-de-las-proteinas/`.
 
 ## Session close (2026-11-23, batch 57)
 

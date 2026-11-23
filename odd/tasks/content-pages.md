@@ -9,14 +9,14 @@ Legend: `ES` = Spanish published, `EN` = English published.
 
 ## Progress
 
-- **Built: 571 / 792** (ES 571, EN 571).
-- Last batch: batch 57 closed biceps and opened trapezius;
-  571 pages built.
+- **Built: 581 / 792** (ES 581, EN 581).
+- Last batch: batch 58 closed exercises and opened supplements;
+  581 pages built.
 - Blocks finished end to end: Entrenamiento del Hombro (9), Físicos de leyenda (12), Entrenamiento de
   la Espalda (10), Rutinas de Espalda (4), Espalda (1), Ejercicios de Espalda (31), Ejercicio
   Cardiovascular (32), Entrenamiento de las Piernas (18), Entrenamiento del Pecho (6), Ejercicios de Pecho (27), Ejercicios de Hombro (29), Rutinas de
   Pierna (3), Pierna (9), Rutinas de Tríceps (1), Rutinas de Pecho (1), Tríceps (1), Rutinas de
-  Fuerza (9), Ejercicios Básicos (6), Ejercicios de Cuádriceps (23), Ejercicios de Pierna (6) and Ejercicios de Gemelo (9) and Ejercicios de Bíceps y Antebrazo (22). Their
+  Fuerza (9), Ejercicios Básicos (6), Ejercicios de Cuádriceps (23), Ejercicios de Pierna (6) and Ejercicios de Gemelo (9) and Ejercicios de Bíceps y Antebrazo (22) and Ejercicios de Trapecios (6). Their
   headings are marked `— COMPLETO`; partial blocks show their ratio.
 
 | Block | Articles | Built |
@@ -24,10 +24,10 @@ Legend: `ES` = Spanish published, `EN` = English published.
 | Entrenamiento | 222 | 217 |
 | Por Músculo | 80 | 80 |
 | Rutinas | 80 | 80 |
-| Ejercicios | 196 | 194 |
-| Nutrición | 191 | 0 |
+| Ejercicios | 196 | 196 |
+| Nutrición | 191 | 8 |
 | Mujer Fitness | 23 | 0 |
-| **Total** | **792** | **571** |
+| **Total** | **792** | **581** |
 
 The Built column counts the archive block of each page, not the frontmatter `block` (every guide ships
 with `block: "Entrenamiento"` for the site taxonomy). Five Entrenamiento rows are settled and will
@@ -938,27 +938,27 @@ never publish: two DESCARTADA and three FUSIONADA, so the publishable total is *
 - [x] ES · [x] EN — `/curl-inclinado-polea/` — Curl de bíceps en polea en banco inclinado
 - [x] ES · [x] EN — `/curl-en-polea-alta/` — Curl en polea alta
 
-### Ejercicios de Trapecios (6) — 4/6
+### Ejercicios de Trapecios (6) — COMPLETO
 
 - [x] ES · [x] EN — `/remo-menton-barra/` — Remo al mentón agarre cerrado \| Ejercicio TOP en 2025
 - [x] ES · [x] EN — `/encogimientos-mancuernas/` — Encogimientos con mancuernas: Fortalece tus trapecios
 - [x] ES · [x] EN — `/encogimientos-barra/` — Encogimientos con barra
 - [x] ES · [x] EN — `/encogimientos-tras-nuca-barra/` — Encogimientos tras nuca con barra
-- [ ] ES · [ ] EN — `/encogimientos-trapecio-polea/` — Encogimientos en polea para trapecios
-- [ ] ES · [ ] EN — `/encogimientos-multipower/` — Encogimientos en multipower
+- [x] ES · [x] EN — `/encogimientos-trapecio-polea/` — Encogimientos en polea para trapecios
+- [x] ES · [x] EN — `/encogimientos-multipower/` — Encogimientos en multipower
 
 ## Nutrición (191)
 
-### Suplementos Dietéticos (35)
+### Suplementos Dietéticos (35) — 8/35
 
-- [ ] ES · [ ] EN — `/errores-al-tomar-suplementos/` — Errores al tomar suplementos: mitos y verdades
-- [ ] ES · [ ] EN — `/carnitina/` — Carnitina \| ¿Sirve para perder peso y quemar grasa?
-- [ ] ES · [ ] EN — `/bloquear-miostatina/` — Bloquear la miostatina para ganar músculo
-- [ ] ES · [ ] EN — `/comprar-proteinas/` — Comprar Batidos de Proteínas \| ¡Las mejores de 2026!
-- [ ] ES · [ ] EN — `/hmb-protector-de-masa-muscular/` — Guía del HMB: Protege tu Músculo y Mejora la Recuperación
-- [ ] ES · [ ] EN — `/suplementos-proteina/` — Suplementos de proteínas ⇨ Todo lo que debes saber
-- [ ] ES · [ ] EN — `/suplementos-creatina/` — Creatina, el mejor suplemento para ganar masa muscular y fuerza
-- [ ] ES · [ ] EN — `/proteina-de-suero-elaboracion/` — Proteína de suero y su elaboración paso a paso
+- [x] ES · [x] EN — `/errores-al-tomar-suplementos/` — Errores al tomar suplementos: mitos y verdades
+- [x] ES · [x] EN — `/carnitina/` — Carnitina \| ¿Sirve para perder peso y quemar grasa?
+- [x] ES · [x] EN — `/bloquear-miostatina/` — Bloquear la miostatina para ganar músculo
+- [x] ES · [x] EN — `/comprar-proteinas/` — Comprar Batidos de Proteínas \| ¡Las mejores de 2026!
+- [x] ES · [x] EN — `/hmb-protector-de-masa-muscular/` — Guía del HMB: Protege tu Músculo y Mejora la Recuperación
+- [x] ES · [x] EN — `/suplementos-proteina/` — Suplementos de proteínas ⇨ Todo lo que debes saber
+- [x] ES · [x] EN — `/suplementos-creatina/` — Creatina, el mejor suplemento para ganar masa muscular y fuerza
+- [x] ES · [x] EN — `/proteina-de-suero-elaboracion/` — Proteína de suero y su elaboración paso a paso
 - [ ] ES · [ ] EN — `/pros-y-contras-de-las-proteinas/` — Pros y contras de las proteínas
 - [ ] ES · [ ] EN — `/mejor-proteina-nocturna/` — Caseína, la mejor proteína nocturna
 - [ ] ES · [ ] EN — `/proteinas-de-liberacion-sostenida-mezclas-proteicas/` — Proteínas de Liberación Sostenida (Mezclas Proteicas)
