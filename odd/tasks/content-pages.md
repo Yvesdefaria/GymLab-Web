@@ -9,14 +9,14 @@ Legend: `ES` = Spanish published, `EN` = English published.
 
 ## Progress
 
-- **Built: 561 / 792** (ES 561, EN 561).
-- Last batch: batch 56 continued biceps and forearm;
-  561 pages built.
+- **Built: 571 / 792** (ES 571, EN 571).
+- Last batch: batch 57 closed biceps and opened trapezius;
+  571 pages built.
 - Blocks finished end to end: Entrenamiento del Hombro (9), Físicos de leyenda (12), Entrenamiento de
   la Espalda (10), Rutinas de Espalda (4), Espalda (1), Ejercicios de Espalda (31), Ejercicio
   Cardiovascular (32), Entrenamiento de las Piernas (18), Entrenamiento del Pecho (6), Ejercicios de Pecho (27), Ejercicios de Hombro (29), Rutinas de
   Pierna (3), Pierna (9), Rutinas de Tríceps (1), Rutinas de Pecho (1), Tríceps (1), Rutinas de
-  Fuerza (9), Ejercicios Básicos (6), Ejercicios de Cuádriceps (23), Ejercicios de Pierna (6) and Ejercicios de Gemelo (9). Their
+  Fuerza (9), Ejercicios Básicos (6), Ejercicios de Cuádriceps (23), Ejercicios de Pierna (6) and Ejercicios de Gemelo (9) and Ejercicios de Bíceps y Antebrazo (22). Their
   headings are marked `— COMPLETO`; partial blocks show their ratio.
 
 | Block | Articles | Built |
@@ -24,10 +24,10 @@ Legend: `ES` = Spanish published, `EN` = English published.
 | Entrenamiento | 222 | 217 |
 | Por Músculo | 80 | 80 |
 | Rutinas | 80 | 80 |
-| Ejercicios | 196 | 184 |
+| Ejercicios | 196 | 194 |
 | Nutrición | 191 | 0 |
 | Mujer Fitness | 23 | 0 |
-| **Total** | **792** | **561** |
+| **Total** | **792** | **571** |
 
 The Built column counts the archive block of each page, not the frontmatter `block` (every guide ships
 with `block: "Entrenamiento"` for the site taxonomy). Five Entrenamiento rows are settled and will
@@ -913,7 +913,7 @@ never publish: two DESCARTADA and three FUSIONADA, so the publishable total is *
 - [x] ES · [x] EN — `/elevacion-de-gemelos-con-mancuernas-sentado/` — Elevación de gemelos con mancuernas sentado
 - [x] ES · [x] EN — `/curl-de-tibiales/` — Curl de Tibiales: Técnica, Beneficios y Consejos
 
-### Ejercicios de Bíceps y Antebrazo (22) — 16/22
+### Ejercicios de Bíceps y Antebrazo (22) — COMPLETO
 
 - [x] ES · [x] EN — `/curl-barra/` — Curl con barra: técnica, errores y beneficios clave
 - [x] ES · [x] EN — `/curl-barra-z/` — Curl con barra Z: potencia tus bíceps sin lesiones
@@ -931,19 +931,19 @@ never publish: two DESCARTADA and three FUSIONADA, so the publishable total is *
 - [x] ES · [x] EN — `/curl-mancuernas-sentado-adosmanos/` — Curl con mancuernas sentado: guía paso a paso
 - [x] ES · [x] EN — `/curl-predicador-mancuernas-a-dos-manos/` — Curl predicador con mancuernas\| Técnica y beneficios
 - [x] ES · [x] EN — `/curl-zottman-mancuernas-de-pie/` — Curl Zottman \| Ejercicio de bíceps de la vieja escuela
-- [ ] ES · [ ] EN — `/curl-invertido-barra/` — Curl invertido con barra \| El mejor ejercicio de antebrazo
-- [ ] ES · [ ] EN — `/curl-arrastre-barra/` — Curl de arrastre con barra
-- [ ] ES · [ ] EN — `/curl-con-barra-sentado/` — Curl con barra sentado
-- [ ] ES · [ ] EN — `/curl-concentrado-polea/` — Curl concentrado en polea \| Bíceps más grandes
-- [ ] ES · [ ] EN — `/curl-inclinado-polea/` — Curl de bíceps en polea en banco inclinado
-- [ ] ES · [ ] EN — `/curl-en-polea-alta/` — Curl en polea alta
+- [x] ES · [x] EN — `/curl-invertido-barra/` — Curl invertido con barra \| El mejor ejercicio de antebrazo
+- [x] ES · [x] EN — `/curl-arrastre-barra/` — Curl de arrastre con barra
+- [x] ES · [x] EN — `/curl-con-barra-sentado/` — Curl con barra sentado
+- [x] ES · [x] EN — `/curl-concentrado-polea/` — Curl concentrado en polea \| Bíceps más grandes
+- [x] ES · [x] EN — `/curl-inclinado-polea/` — Curl de bíceps en polea en banco inclinado
+- [x] ES · [x] EN — `/curl-en-polea-alta/` — Curl en polea alta
 
-### Ejercicios de Trapecios (6)
+### Ejercicios de Trapecios (6) — 4/6
 
-- [ ] ES · [ ] EN — `/remo-menton-barra/` — Remo al mentón agarre cerrado \| Ejercicio TOP en 2025
-- [ ] ES · [ ] EN — `/encogimientos-mancuernas/` — Encogimientos con mancuernas: Fortalece tus trapecios
-- [ ] ES · [ ] EN — `/encogimientos-barra/` — Encogimientos con barra
-- [ ] ES · [ ] EN — `/encogimientos-tras-nuca-barra/` — Encogimientos tras nuca con barra
+- [x] ES · [x] EN — `/remo-menton-barra/` — Remo al mentón agarre cerrado \| Ejercicio TOP en 2025
+- [x] ES · [x] EN — `/encogimientos-mancuernas/` — Encogimientos con mancuernas: Fortalece tus trapecios
+- [x] ES · [x] EN — `/encogimientos-barra/` — Encogimientos con barra
+- [x] ES · [x] EN — `/encogimientos-tras-nuca-barra/` — Encogimientos tras nuca con barra
 - [ ] ES · [ ] EN — `/encogimientos-trapecio-polea/` — Encogimientos en polea para trapecios
 - [ ] ES · [ ] EN — `/encogimientos-multipower/` — Encogimientos en multipower
 
