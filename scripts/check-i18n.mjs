@@ -1101,6 +1101,26 @@ const PAGES = [
   ['en', '/en/hack-squat-calf-raise/'],
   ['es', '/es/elevacion-gemelos-barra/'],
   ['en', '/en/barbell-calf-raise/'],
+  ['es', '/es/gemelo-maquina-depie/'],
+  ['en', '/en/standing-calf-raise-machine/'],
+  ['es', '/es/elevaciones-de-gemelo-burro/'],
+  ['en', '/en/donkey-calf-raise/'],
+  ['es', '/es/elevacion-de-gemelos-con-mancuernas-sentado/'],
+  ['en', '/en/seated-dumbbell-calf-raise/'],
+  ['es', '/es/curl-de-tibiales/'],
+  ['en', '/en/tibialis-curl/'],
+  ['es', '/es/curl-barra/'],
+  ['en', '/en/barbell-curl/'],
+  ['es', '/es/curl-barra-z/'],
+  ['en', '/en/ez-bar-curl/'],
+  ['es', '/es/curl-arana/'],
+  ['en', '/en/spider-curl/'],
+  ['es', '/es/curl-scott-barraz/'],
+  ['en', '/en/preacher-curl-ez-bar/'],
+  ['es', '/es/curl-cuerda-agarre-martillo/'],
+  ['en', '/en/rope-hammer-curl/'],
+  ['es', '/es/curl-polea-alta-tumbado-banco/'],
+  ['en', '/en/high-cable-lying-curl/'],
 ];
 
 // Content routes, keyed by a stable id with the slug each locale publishes. The
@@ -2269,6 +2289,16 @@ const ROUTES = {
   seatedCalfRaiseMachine: { es: '/elevacion-gemelo-maquina-sentado', en: '/seated-calf-raise-machine' },
   hackSquatCalfRaise: { es: '/elevacion-gemelos-maquina-hack', en: '/hack-squat-calf-raise' },
   barbellCalfRaise: { es: '/elevacion-gemelos-barra', en: '/barbell-calf-raise' },
+  standingCalfRaiseMachine: { es: '/gemelo-maquina-depie', en: '/standing-calf-raise-machine' },
+  donkeyCalfRaise: { es: '/elevaciones-de-gemelo-burro', en: '/donkey-calf-raise' },
+  seatedDumbbellCalfRaise: { es: '/elevacion-de-gemelos-con-mancuernas-sentado', en: '/seated-dumbbell-calf-raise' },
+  tibialisCurl: { es: '/curl-de-tibiales', en: '/tibialis-curl' },
+  barbellCurl: { es: '/curl-barra', en: '/barbell-curl' },
+  ezBarCurl: { es: '/curl-barra-z', en: '/ez-bar-curl' },
+  spiderCurl: { es: '/curl-arana', en: '/spider-curl' },
+  preacherCurlEzBar: { es: '/curl-scott-barraz', en: '/preacher-curl-ez-bar' },
+  ropeHammerCurl: { es: '/curl-cuerda-agarre-martillo', en: '/rope-hammer-curl' },
+  highCableLyingCurl: { es: '/curl-polea-alta-tumbado-banco', en: '/high-cable-lying-curl' },
 };
 
 const routeId = (path) => {

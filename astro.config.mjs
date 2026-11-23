@@ -580,6 +580,16 @@ const ROUTE_PAIRS = [
   ['/elevacion-gemelo-maquina-sentado', '/seated-calf-raise-machine'],
   ['/elevacion-gemelos-maquina-hack', '/hack-squat-calf-raise'],
   ['/elevacion-gemelos-barra', '/barbell-calf-raise'],
+  ['/gemelo-maquina-depie', '/standing-calf-raise-machine'],
+  ['/elevaciones-de-gemelo-burro', '/donkey-calf-raise'],
+  ['/elevacion-de-gemelos-con-mancuernas-sentado', '/seated-dumbbell-calf-raise'],
+  ['/curl-de-tibiales', '/tibialis-curl'],
+  ['/curl-barra', '/barbell-curl'],
+  ['/curl-barra-z', '/ez-bar-curl'],
+  ['/curl-arana', '/spider-curl'],
+  ['/curl-scott-barraz', '/preacher-curl-ez-bar'],
+  ['/curl-cuerda-agarre-martillo', '/rope-hammer-curl'],
+  ['/curl-polea-alta-tumbado-banco', '/high-cable-lying-curl'],
 ];
 
 const pairFor = (pathname) => {
