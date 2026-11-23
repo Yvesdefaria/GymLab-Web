@@ -560,6 +560,16 @@ const ROUTE_PAIRS = [
   ['/extensiones-cuadriceps-maquina', '/leg-extension'],
   ['/prensa-inclinada', '/incline-leg-press'],
   ['/prensa-horizontal', '/horizontal-leg-press'],
+  ['/prensa-inclinada-a-una-pierna', '/single-leg-leg-press'],
+  ['/sentadilla-sissy', '/sissy-squat'],
+  ['/sentadilla-jefferson', '/jefferson-squat'],
+  ['/prensa-vertical', '/vertical-leg-press'],
+  ['/sentadilla-hack-con-barra', '/barbell-hack-squat'],
+  ['/sentadilla-profunda', '/deep-squat'],
+  ['/sentadilla-con-barra-por-encima-de-la-cabeza', '/overhead-barbell-squat'],
+  ['/sentadilla-con-salto', '/jump-squat'],
+  ['/sentadilla-con-el-peso-corporal', '/bodyweight-squat'],
+  ['/aductores-en-maquina', '/hip-adduction-machine'],
 ];
 
 const pairFor = (pathname) => {

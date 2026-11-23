@@ -1061,6 +1061,26 @@ const PAGES = [
   ['en', '/en/incline-leg-press/'],
   ['es', '/es/prensa-horizontal/'],
   ['en', '/en/horizontal-leg-press/'],
+  ['es', '/es/prensa-inclinada-a-una-pierna/'],
+  ['en', '/en/single-leg-leg-press/'],
+  ['es', '/es/sentadilla-sissy/'],
+  ['en', '/en/sissy-squat/'],
+  ['es', '/es/sentadilla-jefferson/'],
+  ['en', '/en/jefferson-squat/'],
+  ['es', '/es/prensa-vertical/'],
+  ['en', '/en/vertical-leg-press/'],
+  ['es', '/es/sentadilla-hack-con-barra/'],
+  ['en', '/en/barbell-hack-squat/'],
+  ['es', '/es/sentadilla-profunda/'],
+  ['en', '/en/deep-squat/'],
+  ['es', '/es/sentadilla-con-barra-por-encima-de-la-cabeza/'],
+  ['en', '/en/overhead-barbell-squat/'],
+  ['es', '/es/sentadilla-con-salto/'],
+  ['en', '/en/jump-squat/'],
+  ['es', '/es/sentadilla-con-el-peso-corporal/'],
+  ['en', '/en/bodyweight-squat/'],
+  ['es', '/es/aductores-en-maquina/'],
+  ['en', '/en/hip-adduction-machine/'],
 ];
 
 // Content routes, keyed by a stable id with the slug each locale publishes. The
@@ -2209,6 +2229,16 @@ const ROUTES = {
   legExtension: { es: '/extensiones-cuadriceps-maquina', en: '/leg-extension' },
   inclineLegPress: { es: '/prensa-inclinada', en: '/incline-leg-press' },
   horizontalLegPress: { es: '/prensa-horizontal', en: '/horizontal-leg-press' },
+  singleLegLegPress: { es: '/prensa-inclinada-a-una-pierna', en: '/single-leg-leg-press' },
+  sissySquat: { es: '/sentadilla-sissy', en: '/sissy-squat' },
+  jeffersonSquat: { es: '/sentadilla-jefferson', en: '/jefferson-squat' },
+  verticalLegPress: { es: '/prensa-vertical', en: '/vertical-leg-press' },
+  barbellHackSquat: { es: '/sentadilla-hack-con-barra', en: '/barbell-hack-squat' },
+  deepSquat: { es: '/sentadilla-profunda', en: '/deep-squat' },
+  overheadBarbellSquat: { es: '/sentadilla-con-barra-por-encima-de-la-cabeza', en: '/overhead-barbell-squat' },
+  jumpSquat: { es: '/sentadilla-con-salto', en: '/jump-squat' },
+  bodyweightSquat: { es: '/sentadilla-con-el-peso-corporal', en: '/bodyweight-squat' },
+  hipAdductionMachine: { es: '/aductores-en-maquina', en: '/hip-adduction-machine' },
 };
 
 const routeId = (path) => {
