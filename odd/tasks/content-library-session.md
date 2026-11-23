@@ -9,27 +9,27 @@ Last updated: 2026-11-19. Read this first next session.
 
 ## State
 
-- **521 / 792 bilingual pages** (ES 521, EN 521).
+- **531 / 792 bilingual pages** (ES 531, EN 531).
 - Blocks by archive section: Entrenamiento **217/222** (the five missing rows are settled: two
-  descartadas and three fusionadas), Por Músculo **80/80**, Rutinas **80/80**, Ejercicios **144/196**,
+  descartadas and three fusionadas), Por Músculo **80/80**, Rutinas **80/80**, Ejercicios **154/196**,
   Nutrición 0/191, Mujer Fitness 0/23. The publishable total is 787.
-- **521 unique hero paths.** The dHash pairs under 7 are listed in `PLAN.md`; every new one was opened
+- **531 unique hero paths.** The dHash pairs under 7 are listed in `PLAN.md`; every new one was opened
   and the equipment differs.
-- **Batch 52 is built, green and committed (2026-11-22).** The build has **1,058 pages** and **1,054
-  sitemap URLs**. Básicos is **6/6 — COMPLETO**; Cuádriceps is 14/23.
+- **Batch 53 is built, green and committed (2026-11-22).** The build has **1,078 pages** and **1,074
+  sitemap URLs**. Cuádriceps is **23/23 — COMPLETO**; Pierna is 1/6.
 - Five archive rows are settled and must stay out: the FiveStars Fitness congress page (discarded),
   the AEKE S1 Pro page (discarded 2026-11-14), `/velocidad-repeticiones/` (fused into the tempo page,
   2026-11-14) and the two batch 20 fusions (2026-11-15).
 - **Production runs batch 32 (pushed 2026-11-16).** Batches 19 to 32 are live; `origin/main` is at
-  the batch 32 docs push. Batches 33 to 52 are committed locally and not pushed.
-- Batch records: `odd/tasks/content-library-batch-51.md`, `-52.md` and the session closes below.
+  the batch 32 docs push. Batches 33 to 53 are committed locally and not pushed.
+- Batch records: `odd/tasks/content-library-batch-52.md`, `-53.md` and the session closes below.
 
 ## Gates
 
 ```powershell
-npm run check:copy   # 26,571/26,571
-npm run build        # 1,058 pages
-npm run check:i18n   # 16,492/16,492, 1,054 sitemap URLs
+npm run check:copy   # 27,081/27,081
+npm run build        # 1,078 pages
+npm run check:i18n   # 16,802/16,802, 1,074 sitemap URLs
 npm run verify       # all three, in that order
 npm run dev          # http://localhost:4321
 ```
@@ -83,11 +83,11 @@ library and breaks every Python process that imports Pillow.
 ## What is built
 
 The per-page record in `content-pages.md` is authoritative; this section summarises the blocks. At
-**511 pages**, Por Músculo (80/80) and Rutinas (80/80) are closed, Entrenamiento is effectively closed
-(217/222 with five settled rows), and the Ejercicios block is at **134/196**: Espalda complete, Tríceps
+**531 pages**, Por Músculo (80/80) and Rutinas (80/80) are closed, Entrenamiento is effectively closed
+(217/222 with five settled rows), and the Ejercicios block is at **154/196**: Espalda complete, Tríceps
 complete at 17/17, Femoral y glúteos complete at 12/12, Pecho complete at 27/27, Hombro complete at
-29/29, Básicos complete at 6/6, the catalogue hubs live, and Cuádriceps 4/23, Pierna, Gemelo,
-Bíceps y Antebrazo and Trapecios in progress.
+29/29, Básicos complete at 6/6, Cuádriceps complete at 23/23, the catalogue hubs live, and Pierna 1/6,
+Gemelo, Bíceps y Antebrazo and Trapecios in progress.
 
 The list below describes the blocks finished before batch 42; the checklist and the batch records carry
 the current per-page state.
@@ -144,17 +144,16 @@ the current per-page state.
 
 ## Next 10
 
-1. Batch 51 opens Ejercicios Básicos with the six rows (`ejercicios-basicos`,
-   `masa-muscular-peso-muerto`, `press-con-impulso-power-jerk`, `cargadas-en-dos-tiempos`,
-   `cargada-clean`, `arrancada`) and the first four Cuádriceps rows (`power-cleans`,
-   `sentadillas-mancuerna-estilo-sumo`, `sentadilla-barra`, `aductores-polea`). Write its source map
-   and brief first.
-2. Ejercicios is 124/196: Básicos 0/6, Cuádriceps 0/23, Pierna 0/6, Gemelo 0/9, Bíceps y Antebrazo
-   0/22, Trapecios 0/6.
+1. Ejercicios de Pierna continues at `/hip-thrust-guia-completa-de-entrenamiento/`, then
+   `hip-thrust-en-maquina`, `sentadilla-bulgara`, `sentadilla-zercher` and `sentadilla-con-mancuernas`;
+   after those, Ejercicios de Gemelo starts at `gemelo-prensa`, `elevacion-gemelo-una-pierna`,
+   `elevacion-gemelo-maquina-sentado`, `elevacion-gemelos-maquina-hack` and `elevacion-gemelos-barra`.
+   Write the batch 54 brief after mapping the ten sources.
+2. Ejercicios is 154/196: Pierna 1/6, Gemelo 0/9, Bíceps y Antebrazo 0/22, Trapecios 0/6.
 3. Keep the same copy, unique-hero and gate flow.
 4. Before publishing another photo from Shixart1985, Nenad Stojkovic, Miguel Angel Omaña Rojas, the
    InjuryMap family, PTPioneer, KeepActive Australia, Everkinetic or Wellcome Collection, compare the
-   Commons file title and the dHash against the 501 existing heroes. A crop of a library hero scores
+   Commons file title and the dHash against the 531 existing heroes. A crop of a library hero scores
    1-14 and is a duplicate in practice, not only at 0.
 5. The scaling architecture is deferred to PLAN Phase 7; do not implement it during content batches.
 
@@ -205,6 +204,26 @@ the current per-page state.
   documented in the batch 22 record.
 - **Push is the owner's call:** batches 19 to 32 were pushed on 2026-11-16 from `6293327` to
   `f7f8de1`. Batches 33 to 47, page commits and docs, remain local; production still serves 658 pages.
+
+## Session close (2026-11-22, batches 51, 52 and 53)
+
+- Three leg blocks in one session: 501 → **531 / 792**, 30 bilingual pairs, 60 files, 30 heroes.
+  Básicos **6/6 — COMPLETO**, Cuádriceps **23/23 — COMPLETO**, Pierna 1/6, Ejercicios 154/196.
+- Writers: two per batch, pages 1-5 and 6-10, disjoint files. The parent wrote three briefs from three
+  source maps, registered routes, ran the gates, the render pass and committed per page.
+- Gates: `check:copy` **27,081/27,081**, build **1,078 pages**, `check:i18n` **16,802/16,802**, sitemap
+  **1,074 URLs** with 3,222 alternates. 474 internal links across the 60 files, **0 broken**.
+- **Fixed by the parent:** three competition heroes with identifiable lifters and sponsors were replaced
+  (snatch, clean, clean and jerk) with an anonymous photo, an Everkinetic front rack and a CC0 split-jerk
+  sequence. Four pages closed under the 600-word floor and gained one real cue each (English bodyweight,
+  English jump squat, both adduction pages). The English horizontal leg press description was fixed from
+  148 to 159 chars. The batch 53 writers died on the provider's weekly limit and were relaunched the next
+  day from the same briefs.
+- Heroes: 30 new, mostly Everkinetic and Pexels. Three known approximations: the single-leg press shows a
+  two-leg press, the vertical press shows a leg press, the jump squat shows a box jump; alts are literal.
+- Commits: batch 51 pages `1b35098`-`b2925e1` plus `9b2b74d` (hero fix), routes `c7542a3`; batch 52 pages
+  `d3a44e7`-`19c387a`, routes `da198b0`; batch 53 pages `42aeee9`-`0598337`, routes `bff8486`.
+- Next session starts at `/hip-thrust-guia-completa-de-entrenamiento/` and then opens Gemelo.
 
 ## Session close (2026-11-21, batch 50)
 

@@ -21,21 +21,22 @@ Last updated: 2026-11-16.
 
 ## Content library — 511 / 792 (2026-11-22)
 
-- **521 bilingual pages** (ES 521, EN 521), **521 unique hero paths**. By archive section:
-  Entrenamiento 217/222 (five rows settled), Por Músculo 80/80, **Rutinas 80/80**, Ejercicios 144/196,
-  Nutrición 0/191, Mujer Fitness 0/23. Publishable total: **787**. Cuádriceps is 14/23.
-- **Batches 33 to 52 are built, green and committed, not pushed.** The build has **1,058 pages** and
-  **1,054 sitemap URLs**. Ejercicios is 144/196; the squat, lunge and leg-press families are live locally.
-- Gates: `npm run verify` = `check:copy` **26,571/26,571** + build **1,058 pages** + `check:i18n`
-  **16,492/16,492** (1,054 sitemap URLs, 3,162 alternates).
+- **531 bilingual pages** (ES 531, EN 531), **531 unique hero paths**. By archive section:
+  Entrenamiento 217/222 (five rows settled), Por Músculo 80/80, **Rutinas 80/80**, Ejercicios 154/196,
+  Nutrición 0/191, Mujer Fitness 0/23. Publishable total: **787**. Cuádriceps is **23/23 — COMPLETO**;
+  Pierna is 1/6.
+- **Batches 33 to 53 are built, green and committed, not pushed.** The build has **1,078 pages** and
+  **1,074 sitemap URLs**. Ejercicios is 154/196.
+- Gates: `npm run verify` = `check:copy` **27,081/27,081** + build **1,078 pages** + `check:i18n`
+  **16,802/16,802** (1,074 sitemap URLs, 3,222 alternates).
 - Docs: `odd/tasks/content-library-session.md` (start here next session),
   `odd/tasks/content-pages.md` (per-page checklist + resume),
   `odd/tasks/content-library-batch-51.md` (the last batch) and `odd/tasks/guides-page-contract.md`
   (the page contract and copy gate).
-- **Next 10:** batch 52 continues Cuádriceps (`sentadilla-barra-piernas-abiertas`,
-  `sentadilla-frontal-barra`, `sentadilla-hack-2`, `sentadilla-multipower`, `zancadas-laterales-barra`,
-  `zancadas-hacia-atras-mancuernas`, `zancadas-mancuernas`, `extensiones-cuadriceps-maquina`,
-  `prensa-inclinada`, `prensa-horizontal`), then batch 53 closes the block.
+- **Next 10:** batch 54 closes Pierna (`hip-thrust-guia-completa-de-entrenamiento`,
+  `hip-thrust-en-maquina`, `sentadilla-bulgara`, `sentadilla-zercher`, `sentadilla-con-mancuernas`) and
+  opens Gemelo (`gemelo-prensa`, `elevacion-gemelo-una-pierna`, `elevacion-gemelo-maquina-sentado`,
+  `elevacion-gemelos-maquina-hack`, `elevacion-gemelos-barra`).
 - **Follow-up:** ten hero pairs score 6 or less: the pre-existing exact duplicate
   (`remo-polea-sentado` with `superserie-de-espalda-para-terminar-tu-rutina`), and nine near pairs at
   3-6 (`aperturas-mancuernas-banco-inclinado` vs `press-inclinado-barra` at 3;

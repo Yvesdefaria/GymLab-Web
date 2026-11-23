@@ -9,14 +9,14 @@ Legend: `ES` = Spanish published, `EN` = English published.
 
 ## Progress
 
-- **Built: 521 / 792** (ES 521, EN 521).
-- Last batch: batch 52 continued quad exercises;
-  521 pages built.
+- **Built: 531 / 792** (ES 531, EN 531).
+- Last batch: batch 53 closed quad exercises and opened leg exercises;
+  531 pages built.
 - Blocks finished end to end: Entrenamiento del Hombro (9), Físicos de leyenda (12), Entrenamiento de
   la Espalda (10), Rutinas de Espalda (4), Espalda (1), Ejercicios de Espalda (31), Ejercicio
   Cardiovascular (32), Entrenamiento de las Piernas (18), Entrenamiento del Pecho (6), Ejercicios de Pecho (27), Ejercicios de Hombro (29), Rutinas de
-  Pierna (3), Pierna (9), Rutinas de Tríceps (1), Rutinas de Pecho (1), Tríceps (1) and Rutinas de
-  Fuerza (9). Their
+  Pierna (3), Pierna (9), Rutinas de Tríceps (1), Rutinas de Pecho (1), Tríceps (1), Rutinas de
+  Fuerza (9), Ejercicios Básicos (6) and Ejercicios de Cuádriceps (23). Their
   headings are marked `— COMPLETO`; partial blocks show their ratio.
 
 | Block | Articles | Built |
@@ -24,10 +24,10 @@ Legend: `ES` = Spanish published, `EN` = English published.
 | Entrenamiento | 222 | 217 |
 | Por Músculo | 80 | 80 |
 | Rutinas | 80 | 80 |
-| Ejercicios | 196 | 144 |
+| Ejercicios | 196 | 154 |
 | Nutrición | 191 | 0 |
 | Mujer Fitness | 23 | 0 |
-| **Total** | **792** | **521** |
+| **Total** | **792** | **531** |
 
 The Built column counts the archive block of each page, not the frontmatter `block` (every guide ships
 with `block: "Entrenamiento"` for the site taxonomy). Five Entrenamiento rows are settled and will
@@ -832,7 +832,7 @@ never publish: two DESCARTADA and three FUSIONADA, so the publishable total is *
 - [x] ES · [x] EN — `/cargada-clean/` — Cargada (Clean)
 - [x] ES · [x] EN — `/arrancada/` — Arrancada (Snatch)
 
-### Ejercicios de Cuadriceps (23) — 14/23
+### Ejercicios de Cuadriceps (23) — COMPLETO
 
 - [x] ES · [x] EN — `/power-cleans/` — Power Clean: Mejora explosividad y potencia muscular
 - [x] ES · [x] EN — `/sentadillas-mancuerna-estilo-sumo/` — Sentadilla Sumo con mancuerna: Técnica y ventajas
@@ -848,19 +848,19 @@ never publish: two DESCARTADA and three FUSIONADA, so the publishable total is *
 - [x] ES · [x] EN — `/extensiones-cuadriceps-maquina/` — Extensiones de cuádriceps en máquina: Técnica perfecta
 - [x] ES · [x] EN — `/prensa-inclinada/` — Prensa Inclinada: Técnica y principales beneficios
 - [x] ES · [x] EN — `/prensa-horizontal/` — Prensa Horizontal \| ¡Aisla tus cuádriceps!
-- [ ] ES · [ ] EN — `/prensa-inclinada-a-una-pierna/` — Prensa Inclinada a una pierna \| Trabajo unilateral efectivo
-- [ ] ES · [ ] EN — `/sentadilla-sissy/` — Sentadilla Sissy
-- [ ] ES · [ ] EN — `/sentadilla-jefferson/` — Sentadilla Jefferson
-- [ ] ES · [ ] EN — `/prensa-vertical/` — Prensa Vertical: Ejecución Perfecta para Grandes Piernas
-- [ ] ES · [ ] EN — `/sentadilla-hack-con-barra/` — Sentadilla Hack con Barra: Guía y Ejercicios para Piernas Fuertes
-- [ ] ES · [ ] EN — `/sentadilla-profunda/` — Sentadilla Profunda (Completa)
-- [ ] ES · [ ] EN — `/sentadilla-con-barra-por-encima-de-la-cabeza/` — Sentadilla con barra por encima de la cabeza
-- [ ] ES · [ ] EN — `/sentadilla-con-salto/` — Sentadilla con salto
-- [ ] ES · [ ] EN — `/sentadilla-con-el-peso-corporal/` — Sentadilla con el peso corporal
+- [x] ES · [x] EN — `/prensa-inclinada-a-una-pierna/` — Prensa Inclinada a una pierna \| Trabajo unilateral efectivo
+- [x] ES · [x] EN — `/sentadilla-sissy/` — Sentadilla Sissy
+- [x] ES · [x] EN — `/sentadilla-jefferson/` — Sentadilla Jefferson
+- [x] ES · [x] EN — `/prensa-vertical/` — Prensa Vertical: Ejecución Perfecta para Grandes Piernas
+- [x] ES · [x] EN — `/sentadilla-hack-con-barra/` — Sentadilla Hack con Barra: Guía y Ejercicios para Piernas Fuertes
+- [x] ES · [x] EN — `/sentadilla-profunda/` — Sentadilla Profunda (Completa)
+- [x] ES · [x] EN — `/sentadilla-con-barra-por-encima-de-la-cabeza/` — Sentadilla con barra por encima de la cabeza
+- [x] ES · [x] EN — `/sentadilla-con-salto/` — Sentadilla con salto
+- [x] ES · [x] EN — `/sentadilla-con-el-peso-corporal/` — Sentadilla con el peso corporal
 
-### Ejercicios de Pierna (6)
+### Ejercicios de Pierna (6) — 1/6
 
-- [ ] ES · [ ] EN — `/aductores-en-maquina/` — Aductores en máquina \| Fortalece la zona de la cadera
+- [x] ES · [x] EN — `/aductores-en-maquina/` — Aductores en máquina \| Fortalece la zona de la cadera
 - [ ] ES · [ ] EN — `/hip-thrust-guia-completa-de-entrenamiento/` — Hip Thrust con barra: Guía Completa para Glúteos de Acero
 - [ ] ES · [ ] EN — `/hip-thrust-en-maquina/` — Hip thrust en máquina: técnica correcta, ajustes y progresión
 - [ ] ES · [ ] EN — `/sentadilla-bulgara/` — Sentadilla Búlgara: Fortalece y Tonifica Tus Piernas y Glúteos
