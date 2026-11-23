@@ -1161,6 +1161,26 @@ const PAGES = [
   ['en', '/en/barbell-shrug/'],
   ['es', '/es/encogimientos-tras-nuca-barra/'],
   ['en', '/en/behind-the-back-barbell-shrug/'],
+  ['es', '/es/encogimientos-trapecio-polea/'],
+  ['en', '/en/cable-shrug/'],
+  ['es', '/es/encogimientos-multipower/'],
+  ['en', '/en/smith-machine-shrug/'],
+  ['es', '/es/errores-al-tomar-suplementos/'],
+  ['en', '/en/supplement-mistakes/'],
+  ['es', '/es/carnitina/'],
+  ['en', '/en/carnitine/'],
+  ['es', '/es/bloquear-miostatina/'],
+  ['en', '/en/myostatin-inhibition/'],
+  ['es', '/es/comprar-proteinas/'],
+  ['en', '/en/protein-powder-guide/'],
+  ['es', '/es/hmb-protector-de-masa-muscular/'],
+  ['en', '/en/hmb-supplement/'],
+  ['es', '/es/suplementos-proteina/'],
+  ['en', '/en/protein-supplements/'],
+  ['es', '/es/suplementos-creatina/'],
+  ['en', '/en/creatine-supplement/'],
+  ['es', '/es/proteina-de-suero-elaboracion/'],
+  ['en', '/en/whey-protein-production/'],
 ];
 
 // Content routes, keyed by a stable id with the slug each locale publishes. The
@@ -2359,6 +2379,16 @@ const ROUTES = {
   dumbbellShrug: { es: '/encogimientos-mancuernas', en: '/dumbbell-shrug' },
   barbellShrug: { es: '/encogimientos-barra', en: '/barbell-shrug' },
   behindTheBackBarbellShrug: { es: '/encogimientos-tras-nuca-barra', en: '/behind-the-back-barbell-shrug' },
+  cableShrug: { es: '/encogimientos-trapecio-polea', en: '/cable-shrug' },
+  smithMachineShrug: { es: '/encogimientos-multipower', en: '/smith-machine-shrug' },
+  supplementMistakes: { es: '/errores-al-tomar-suplementos', en: '/supplement-mistakes' },
+  carnitine: { es: '/carnitina', en: '/carnitine' },
+  myostatinInhibition: { es: '/bloquear-miostatina', en: '/myostatin-inhibition' },
+  proteinPowderGuide: { es: '/comprar-proteinas', en: '/protein-powder-guide' },
+  hmbSupplement: { es: '/hmb-protector-de-masa-muscular', en: '/hmb-supplement' },
+  proteinSupplements: { es: '/suplementos-proteina', en: '/protein-supplements' },
+  creatineSupplement: { es: '/suplementos-creatina', en: '/creatine-supplement' },
+  wheyProteinProduction: { es: '/proteina-de-suero-elaboracion', en: '/whey-protein-production' },
 };
 
 const routeId = (path) => {

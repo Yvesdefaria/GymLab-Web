@@ -610,6 +610,16 @@ const ROUTE_PAIRS = [
   ['/encogimientos-mancuernas', '/dumbbell-shrug'],
   ['/encogimientos-barra', '/barbell-shrug'],
   ['/encogimientos-tras-nuca-barra', '/behind-the-back-barbell-shrug'],
+  ['/encogimientos-trapecio-polea', '/cable-shrug'],
+  ['/encogimientos-multipower', '/smith-machine-shrug'],
+  ['/errores-al-tomar-suplementos', '/supplement-mistakes'],
+  ['/carnitina', '/carnitine'],
+  ['/bloquear-miostatina', '/myostatin-inhibition'],
+  ['/comprar-proteinas', '/protein-powder-guide'],
+  ['/hmb-protector-de-masa-muscular', '/hmb-supplement'],
+  ['/suplementos-proteina', '/protein-supplements'],
+  ['/suplementos-creatina', '/creatine-supplement'],
+  ['/proteina-de-suero-elaboracion', '/whey-protein-production'],
 ];
 
 const pairFor = (pathname) => {
