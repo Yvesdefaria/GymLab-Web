@@ -590,6 +590,16 @@ const ROUTE_PAIRS = [
   ['/curl-scott-barraz', '/preacher-curl-ez-bar'],
   ['/curl-cuerda-agarre-martillo', '/rope-hammer-curl'],
   ['/curl-polea-alta-tumbado-banco', '/high-cable-lying-curl'],
+  ['/curl-maquina-predicador', '/preacher-curl-machine'],
+  ['/curl-polea-de-pie', '/standing-cable-curl'],
+  ['/curl-alterno-mancuerna', '/alternating-dumbbell-curl'],
+  ['/curl-concentracion', '/concentration-curl'],
+  ['/curl-mancuernas-banco-inclinado-a-dos-manos', '/incline-dumbbell-curl'],
+  ['/curl-mancuernas-agarre-martillo', '/dumbbell-hammer-curl'],
+  ['/curl-predicador-mancuernas-agarre-martillo', '/preacher-hammer-curl'],
+  ['/curl-mancuernas-sentado-adosmanos', '/seated-dumbbell-curl'],
+  ['/curl-predicador-mancuernas-a-dos-manos', '/two-arm-preacher-curl'],
+  ['/curl-zottman-mancuernas-de-pie', '/zottman-curl'],
 ];
 
 const pairFor = (pathname) => {

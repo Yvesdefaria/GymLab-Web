@@ -1121,6 +1121,26 @@ const PAGES = [
   ['en', '/en/rope-hammer-curl/'],
   ['es', '/es/curl-polea-alta-tumbado-banco/'],
   ['en', '/en/high-cable-lying-curl/'],
+  ['es', '/es/curl-maquina-predicador/'],
+  ['en', '/en/preacher-curl-machine/'],
+  ['es', '/es/curl-polea-de-pie/'],
+  ['en', '/en/standing-cable-curl/'],
+  ['es', '/es/curl-alterno-mancuerna/'],
+  ['en', '/en/alternating-dumbbell-curl/'],
+  ['es', '/es/curl-concentracion/'],
+  ['en', '/en/concentration-curl/'],
+  ['es', '/es/curl-mancuernas-banco-inclinado-a-dos-manos/'],
+  ['en', '/en/incline-dumbbell-curl/'],
+  ['es', '/es/curl-mancuernas-agarre-martillo/'],
+  ['en', '/en/dumbbell-hammer-curl/'],
+  ['es', '/es/curl-predicador-mancuernas-agarre-martillo/'],
+  ['en', '/en/preacher-hammer-curl/'],
+  ['es', '/es/curl-mancuernas-sentado-adosmanos/'],
+  ['en', '/en/seated-dumbbell-curl/'],
+  ['es', '/es/curl-predicador-mancuernas-a-dos-manos/'],
+  ['en', '/en/two-arm-preacher-curl/'],
+  ['es', '/es/curl-zottman-mancuernas-de-pie/'],
+  ['en', '/en/zottman-curl/'],
 ];
 
 // Content routes, keyed by a stable id with the slug each locale publishes. The
@@ -2299,6 +2319,16 @@ const ROUTES = {
   preacherCurlEzBar: { es: '/curl-scott-barraz', en: '/preacher-curl-ez-bar' },
   ropeHammerCurl: { es: '/curl-cuerda-agarre-martillo', en: '/rope-hammer-curl' },
   highCableLyingCurl: { es: '/curl-polea-alta-tumbado-banco', en: '/high-cable-lying-curl' },
+  preacherCurlMachine: { es: '/curl-maquina-predicador', en: '/preacher-curl-machine' },
+  standingCableCurl: { es: '/curl-polea-de-pie', en: '/standing-cable-curl' },
+  alternatingDumbbellCurl: { es: '/curl-alterno-mancuerna', en: '/alternating-dumbbell-curl' },
+  concentrationCurl: { es: '/curl-concentracion', en: '/concentration-curl' },
+  inclineDumbbellCurl: { es: '/curl-mancuernas-banco-inclinado-a-dos-manos', en: '/incline-dumbbell-curl' },
+  dumbbellHammerCurl: { es: '/curl-mancuernas-agarre-martillo', en: '/dumbbell-hammer-curl' },
+  preacherHammerCurl: { es: '/curl-predicador-mancuernas-agarre-martillo', en: '/preacher-hammer-curl' },
+  seatedDumbbellCurl: { es: '/curl-mancuernas-sentado-adosmanos', en: '/seated-dumbbell-curl' },
+  twoArmPreacherCurl: { es: '/curl-predicador-mancuernas-a-dos-manos', en: '/two-arm-preacher-curl' },
+  zottmanCurl: { es: '/curl-zottman-mancuernas-de-pie', en: '/zottman-curl' },
 };
 
 const routeId = (path) => {
