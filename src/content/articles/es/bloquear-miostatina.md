@@ -25,7 +25,7 @@ El nombre sugiere una puerta que se abre. En el músculo, la miostatina funciona
 
 En 1997, un equipo de investigación eliminó el gen de la miostatina en ratones. Los animales crecieron con el doble de masa muscular y fibras más grandes. El hallazgo mezcló hipertrofia, que es el crecimiento de cada fibra, con hiperplasia, que es el aumento del número de fibras.
 
-Ese resultado es la base de casi todo el interés. Los animales también tenían menos grasa con la misma comida, un detalle que abrió la puerta a estudiar la obesidad. También es la base de casi todas las exageraciones: un ratón sin el gen no es un humano que toma una cápsula.
+Ese resultado es la base de casi todo el interés. Los animales también acumulaban menos grasa con la misma comida, un detalle que abrió la puerta a estudiar la obesidad. El mismo resultado alimenta casi todas las exageraciones: un ratón sin el gen no es un humano que toma una cápsula.
 
 ## La vía farmacológica
 
@@ -46,7 +46,7 @@ Ninguna de esas vías es oral ni está pensada para una persona sana que entrena
 
 ## Por qué no existe un bloqueador de consumo
 
-Un suplemento tendría que llegar al músculo, unirse a la miostatina y reducir su señal de forma medible. Ningún producto de venta libre ha demostrado eso en humanos. Las propuestas que circulan, como la glucosamina o el extracto de algas, no tienen ensayos publicados que muestren el efecto.
+Un suplemento tendría que llegar al músculo, unirse a la miostatina y reducir su señal de forma medible. Ningún producto de venta libre ha demostrado eso en humanos. No existe un ensayo en humanos con un bloqueador de miostatina de venta libre. Las propuestas que circulan, como la glucosamina o el extracto de algas, no tienen ensayos publicados que muestren el efecto.
 
 Tampoco hay una dosis que copiar. La tabla de dosis que circula en internet no sale de un ensayo. Es una extrapolación. Por eso esta página no la reproduce.
 

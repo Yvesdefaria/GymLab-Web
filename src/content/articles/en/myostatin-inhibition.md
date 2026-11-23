@@ -25,7 +25,7 @@ The name suggests a door that opens. In muscle, myostatin works as a brake that 
 
 In 1997, a research team deleted the myostatin gene in mice. The animals grew with twice the muscle mass and larger fibres. The finding mixed hypertrophy, the growth of each fibre, with hyperplasia, an increase in fibre number.
 
-That result is the basis of almost all the interest. The animals also carried less fat on the same food, a detail that opened the door to studying obesity. It is also the basis of almost all the exaggeration: a mouse without the gene is not a human taking a capsule.
+That result is the basis of almost all the interest. The animals also carried less fat on the same food, a detail that opened the door to studying obesity. The same result feeds almost all of the exaggeration: a mouse without the gene is not a human taking a capsule.
 
 ## The drug pipeline
 
@@ -46,7 +46,7 @@ None of those routes is oral or intended for a healthy person who trains. They a
 
 ## Why no consumer blocker exists
 
-A supplement would have to reach muscle, bind myostatin and reduce its signal in a measurable way. No over-the-counter product has shown that in humans. The proposals in circulation, such as glucosamine or algae extract, have no published trials showing the effect.
+A supplement would have to reach muscle, bind myostatin and reduce its signal in a measurable way. No over-the-counter product has shown that in humans. No human trial exists for an over-the-counter myostatin blocker. The proposals in circulation, such as glucosamine or algae extract, have no published trials showing the effect.
 
 There is no dose to copy either. The dosing table that circulates online does not come from a trial. It is an extrapolation. That is why this page does not reproduce it.
 
