@@ -600,6 +600,16 @@ const ROUTE_PAIRS = [
   ['/curl-mancuernas-sentado-adosmanos', '/seated-dumbbell-curl'],
   ['/curl-predicador-mancuernas-a-dos-manos', '/two-arm-preacher-curl'],
   ['/curl-zottman-mancuernas-de-pie', '/zottman-curl'],
+  ['/curl-invertido-barra', '/reverse-barbell-curl'],
+  ['/curl-arrastre-barra', '/drag-curl'],
+  ['/curl-con-barra-sentado', '/seated-barbell-curl'],
+  ['/curl-concentrado-polea', '/cable-concentration-curl'],
+  ['/curl-inclinado-polea', '/incline-cable-curl'],
+  ['/curl-en-polea-alta', '/high-cable-curl'],
+  ['/remo-menton-barra', '/close-grip-upright-row'],
+  ['/encogimientos-mancuernas', '/dumbbell-shrug'],
+  ['/encogimientos-barra', '/barbell-shrug'],
+  ['/encogimientos-tras-nuca-barra', '/behind-the-back-barbell-shrug'],
 ];
 
 const pairFor = (pathname) => {

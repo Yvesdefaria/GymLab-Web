@@ -1141,6 +1141,26 @@ const PAGES = [
   ['en', '/en/two-arm-preacher-curl/'],
   ['es', '/es/curl-zottman-mancuernas-de-pie/'],
   ['en', '/en/zottman-curl/'],
+  ['es', '/es/curl-invertido-barra/'],
+  ['en', '/en/reverse-barbell-curl/'],
+  ['es', '/es/curl-arrastre-barra/'],
+  ['en', '/en/drag-curl/'],
+  ['es', '/es/curl-con-barra-sentado/'],
+  ['en', '/en/seated-barbell-curl/'],
+  ['es', '/es/curl-concentrado-polea/'],
+  ['en', '/en/cable-concentration-curl/'],
+  ['es', '/es/curl-inclinado-polea/'],
+  ['en', '/en/incline-cable-curl/'],
+  ['es', '/es/curl-en-polea-alta/'],
+  ['en', '/en/high-cable-curl/'],
+  ['es', '/es/remo-menton-barra/'],
+  ['en', '/en/close-grip-upright-row/'],
+  ['es', '/es/encogimientos-mancuernas/'],
+  ['en', '/en/dumbbell-shrug/'],
+  ['es', '/es/encogimientos-barra/'],
+  ['en', '/en/barbell-shrug/'],
+  ['es', '/es/encogimientos-tras-nuca-barra/'],
+  ['en', '/en/behind-the-back-barbell-shrug/'],
 ];
 
 // Content routes, keyed by a stable id with the slug each locale publishes. The
@@ -2329,6 +2349,16 @@ const ROUTES = {
   seatedDumbbellCurl: { es: '/curl-mancuernas-sentado-adosmanos', en: '/seated-dumbbell-curl' },
   twoArmPreacherCurl: { es: '/curl-predicador-mancuernas-a-dos-manos', en: '/two-arm-preacher-curl' },
   zottmanCurl: { es: '/curl-zottman-mancuernas-de-pie', en: '/zottman-curl' },
+  reverseBarbellCurl: { es: '/curl-invertido-barra', en: '/reverse-barbell-curl' },
+  dragCurl: { es: '/curl-arrastre-barra', en: '/drag-curl' },
+  seatedBarbellCurl: { es: '/curl-con-barra-sentado', en: '/seated-barbell-curl' },
+  cableConcentrationCurl: { es: '/curl-concentrado-polea', en: '/cable-concentration-curl' },
+  inclineCableCurl: { es: '/curl-inclinado-polea', en: '/incline-cable-curl' },
+  highCableCurl: { es: '/curl-en-polea-alta', en: '/high-cable-curl' },
+  closeGripUprightRow: { es: '/remo-menton-barra', en: '/close-grip-upright-row' },
+  dumbbellShrug: { es: '/encogimientos-mancuernas', en: '/dumbbell-shrug' },
+  barbellShrug: { es: '/encogimientos-barra', en: '/barbell-shrug' },
+  behindTheBackBarbellShrug: { es: '/encogimientos-tras-nuca-barra', en: '/behind-the-back-barbell-shrug' },
 };
 
 const routeId = (path) => {
