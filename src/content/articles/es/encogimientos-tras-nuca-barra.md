@@ -25,7 +25,7 @@ Antes de la primera repetición, lleva los hombros hacia atrás y saca el pecho.
 
 La barra detrás del cuerpo limita cuánto pueden subir los hombros antes de chocar con los glúteos. El recorrido es más corto que en la versión delantera y la posición mantiene los hombros atrás, que es lo que busca la variante. Esa combinación la hace útil para sentir la elevación con la escápula ya retraída, no para mover más peso.
 
-La posición de los hombros atrás es la diferencia con la versión delantera. En la delantera, la barra tira hacia delante y los hombros tienden a redondearse; aquí la barra queda detrás y el pecho se abre. Esa postura es la que da sentido a la variante, y también la que limita el recorrido.
+El contraste con la versión delantera está en la dirección del tirón. En la delantera, la barra tira hacia delante y los hombros tienden a redondearse; aquí la barra queda detrás y el pecho se abre. Esa postura es la que da sentido a la variante, y también la que limita el recorrido.
 
 El recorrido corto tiene una consecuencia práctica: el peso tiene que ser ligero. Con carga alta, el rango se acorta todavía más y la barra se queda en un temblor. La [versión delantera](/es/encogimientos-barra/) es la que admite carga; esta se queda con la postura.
 

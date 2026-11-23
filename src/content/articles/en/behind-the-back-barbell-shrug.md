@@ -25,7 +25,7 @@ Before the first rep, bring the shoulders back and lift the chest. That position
 
 The bar behind the body limits how far the shoulders can rise before they hit the glutes. The range is shorter than in the front version and the position keeps the shoulders back, which is what the variant is for. That combination makes it useful for feeling the elevation with the scapula already retracted, not for moving more weight.
 
-The shoulder position is the difference from the front version. In the front version, the bar pulls forward and the shoulders tend to round; here the bar sits behind and the chest opens. That posture is what gives the variant its point, and it is also what limits the range.
+The contrast with the front version is the direction of the pull. In the front version, the bar pulls forward and the shoulders tend to round; here the bar sits behind and the chest opens. That posture is what gives the variant its point, and it is also what limits the range.
 
 The short range has a practical consequence: the weight has to be light. With a heavy load, the range shrinks further and the bar ends in a tremor. The [front version](/en/barbell-shrug/) is the one that takes load; this one keeps the posture.
 
