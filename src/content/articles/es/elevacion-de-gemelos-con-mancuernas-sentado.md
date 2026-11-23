@@ -33,7 +33,7 @@ El borde del banco se queda detrás de las rodillas, con la espalda recta y el t
 
 Las mancuernas se apoyan sobre la parte baja de los muslos, cerca de la rodilla. Ahí el peso queda sobre el hueso y no sobre el tendón, y la mano solo lo estabiliza. Con una mancuerna por pierna el reparto es más cómodo que con una sola cruzada.
 
-El límite es evidente: las mancuernas que puedes sostener sobre el muslo son mucho más ligeras que el peso de una máquina sentada. No es un defecto del ejercicio, es su condición. La carga se compensa con una pausa más larga y un recorrido completo, y si el peso se queda corto, una barra cruzada sobre los muslos admite más discos.
+El límite es evidente: las mancuernas que puedes sostener sobre el muslo son mucho más ligeras que el peso de una máquina sentada. Esa carga ligera es la condición del ejercicio. Se compensa con una pausa más larga y un recorrido completo, y si el peso se queda corto, una barra cruzada sobre los muslos admite más discos.
 
 ## La pausa que compensa el peso
 

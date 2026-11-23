@@ -62,7 +62,7 @@ La barra recta es la referencia; el resto de los agarres cambia el reparto y el 
   </tbody>
 </table>
 
-Los otros dos miembros de la familia aparecen en sus propias páginas: el [curl araña](/es/curl-arana/) trabaja con el hombro flexionado y el brazo colgando, y el [curl Scott con barra Z](/es/curl-scott-barraz/) apoya el codo en una almohadilla. Los dos quitan el impulso del torso, que es justo lo que la barra recta permite cuando la carga aprieta.
+Los otros dos miembros de la familia aparecen en sus propias páginas: el [curl araña](/es/curl-arana/) trabaja con el hombro flexionado y el brazo colgando, y el [curl Scott con barra Z](/es/curl-scott-barraz/) apoya el codo en una almohadilla. Los dos quitan el impulso del torso, el recurso que aparece en la barra recta cuando la carga aprieta.
 
 ## Errores que roban tensión
 

@@ -15,7 +15,7 @@ alternate: "/es/elevaciones-de-gemelo-burro/"
 updated: "2026-11-23"
 ---
 
-The donkey position is the oldest version of calf work and the one least seen in a gym full of machines. The body folds forward, the hips rest on a support and the heels rise on a block. What separates it from a standing raise is not the muscle, which is the same, but how the load arrives and how far the ankle can travel.
+The donkey position is the oldest version of calf work and the one least seen in a gym full of machines. The body folds forward, the hips rest on a support and the heels rise on a block. It uses the same muscle as a standing raise. What changes is how the load arrives and how far the ankle can travel.
 
 ## Why the tilted torso changes the exercise
 
@@ -52,7 +52,7 @@ The position takes a fair amount of weight because the body is supported. Even s
 - **Bending the knee on the way up.** The gastrocnemius shortens from above and the soleus takes over without the set asking for it.
 - **Resting the weight on the lower back.** The support goes on the hips; if the weight sits higher, the back arches and the movement turns uncomfortable.
 - **Cutting the stretch.** Without the heel below the block, the rep starts halfway.
-- **Watching the toes.** Toe direction changes emphasis very little; what changes the stimulus is range and the pause.
+- **Chasing toe direction.** Toe direction changes emphasis very little; what changes the stimulus is range and the pause.
 
 ## What to pair it with
 

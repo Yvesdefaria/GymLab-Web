@@ -6,22 +6,22 @@ h1: "Standing calf raise machine"
 block: "Training"
 section: "Calf exercises"
 hero: "/content/gemelo-maquina-depie/hero.jpg"
-heroAlt: "Illustration of a person standing under the pads of a calf raise machine with both hands on the side handles"
+heroAlt: "Illustration of a person standing under the pads of a calf raise machine, torso upright and one hand on the side handle"
 heroCredit: "Wikimedia Commons · Everkinetic · CC BY-SA 3.0"
-lead: "The **standing calf raise machine** locks the shoulders and the hips in place, so the only free joint left is the ankle. The knee stays extended without locking, and the range is measured below the platform."
+lead: "The **standing calf raise machine** holds the shoulders and keeps the torso still, so the only joint that moves is the ankle. The knee stays extended without locking, and the range is measured below the platform."
 tags: ["Calves", "Gastrocnemius", "Machine", "Technique"]
 meta: "Exercise · Technique"
 alternate: "/es/gemelo-maquina-depie/"
 updated: "2026-11-23"
 ---
 
-The calf has two engines and the standing machine is built for one of them. The frame holds the torso still, fixes the hips and leaves the ankle as the only lever. That restriction turns the set into a test of range and load rather than balance.
+The calf has two engines and the standing machine is built for one of them. The frame holds the torso still and leaves the ankle as the only lever. That restriction turns the set into a test of range and load rather than balance.
 
 ## Which muscle the standing machine trains
 
 The gastrocnemius starts at the femoral condyles, above the knee, and ends at the Achilles tendon. Because it crosses both the knee and the ankle, its length depends on both joints. With the knee extended it reaches the ankle with room to contract through the full range. With the knee bent it loses tension from above and the soleus takes over plantar flexion.
 
-The standing machine keeps the knee extended, which is why it loads the gastrocnemius, the muscle that draws the curve behind the knee. The seated version does the opposite: it bends the knee about ninety degrees and shifts the work to the soleus. They are not two ways of doing the same thing; they are two muscles on the same joint.
+The standing machine keeps the knee extended, which is why it loads the gastrocnemius, the muscle that draws the curve behind the knee. The seated version does the opposite: it bends the knee about ninety degrees and shifts the work to the soleus. Each position loads a different muscle on the same joint.
 
 <table class="text-table">
   <thead>
@@ -51,7 +51,7 @@ The difference shows in the support. With the knee locked backwards, the weight 
 
 The rep starts at the bottom, with the heel below the level of the platform and the calf stretched. From there the ankle rises to full plantar flexion, with the weight on the base of the toes. At the top you hold for one or two seconds before coming back.
 
-The descent is the part most people rush. If the heel falls uncontrolled, the bounce does the work and the set loses the stretch stimulus. The count is simple: two seconds up, two or three down, without letting go.
+The descent is the part most people rush. If the heel falls uncontrolled, the bounce does the work and the set loses the stretch stimulus. The count is simple: a two second pause at the top, two or three seconds down, without letting go.
 
 ## How much weight and how many sets
 

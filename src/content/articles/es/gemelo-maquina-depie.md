@@ -6,22 +6,22 @@ h1: "Gemelo en máquina de pie"
 block: "Entrenamiento"
 section: "Ejercicios de gemelo"
 hero: "/content/gemelo-maquina-depie/hero.jpg"
-heroAlt: "Ilustración de una persona de pie bajo las almohadillas de una máquina de gemelos, con las manos en los agarres laterales"
+heroAlt: "Ilustración de una persona de pie bajo las almohadillas de una máquina de gemelos, con el torso erguido y una mano en el agarre lateral"
 heroCredit: "Wikimedia Commons · Everkinetic · CC BY-SA 3.0"
-lead: "El **gemelo en máquina de pie** sujeta los hombros y la cadera, así que la única articulación que queda libre es el tobillo. La rodilla se mantiene extendida, sin bloquear, y el recorrido se mide por debajo de la plataforma."
+lead: "El **gemelo en máquina de pie** sujeta los hombros y deja el torso fijo, así que la única articulación que se mueve es el tobillo. La rodilla se mantiene extendida, sin bloquear, y el recorrido se mide por debajo de la plataforma."
 tags: ["Gemelos", "Gastrocnemio", "Máquina", "Técnica"]
 meta: "Ejercicio · Técnica"
 alternate: "/en/standing-calf-raise-machine/"
 updated: "2026-11-23"
 ---
 
-La pantorrilla tiene dos motores y la máquina de pie está construida para uno de ellos. El aparato inmoviliza el torso, fija la cadera y deja el tobillo como única palanca. Esa restricción convierte la serie en una prueba de recorrido y carga, no de equilibrio.
+La pantorrilla tiene dos motores y la máquina de pie está construida para uno de ellos. El aparato inmoviliza el torso y deja el tobillo como única palanca. Esa restricción convierte la serie en una prueba de recorrido y carga, no de equilibrio.
 
 ## Qué músculo trabaja la máquina de pie
 
-El gastrocnemio nace en los cóndilos del fémur, por encima de la rodilla, y termina en el tendón de Aquiles. Como cruza la rodilla y el tobillo, su longitud depende de las dos articulaciones. Con la rodilla extendida llega abajo con margen para contraerse en todo el recorrido. Con la rodilla doblada pierde tensión por arriba y el sóleo asume la flexión plantar.
+El gastrocnemio nace en los cóndilos del fémur, por encima de la rodilla, y termina en el tendón de Aquiles. Como cruza la rodilla y el tobillo, su longitud depende de las dos articulaciones. Con la rodilla extendida llega al tobillo con margen para contraerse en todo el recorrido. Con la rodilla doblada pierde tensión por arriba y el sóleo asume la flexión plantar.
 
-La máquina de pie mantiene la rodilla extendida, y por eso carga el gastrocnemio, el músculo que dibuja la curva detrás de la rodilla. La versión sentada hace lo contrario: flexiona la rodilla unos noventa grados y desplaza el trabajo al sóleo. No son dos formas de hacer lo mismo, son dos músculos distintos con la misma articulación.
+La máquina de pie mantiene la rodilla extendida, y por eso carga el gastrocnemio, el músculo que dibuja la curva detrás de la rodilla. La versión sentada hace lo contrario: flexiona la rodilla unos noventa grados y desplaza el trabajo al sóleo. Cada posición carga un músculo distinto sobre la misma articulación.
 
 <table class="text-table">
   <thead>
@@ -51,7 +51,7 @@ La diferencia se nota en el apoyo. Con la rodilla bloqueada hacia atrás, el pes
 
 La repetición empieza abajo, con el talón por debajo del nivel de la plataforma y la pantorrilla estirada. Desde ahí, el tobillo sube hasta la flexión plantar máxima, con el peso sobre la base de los dedos. Arriba se aguantan uno o dos segundos antes de volver.
 
-La bajada es la parte que más se descuida. Si el talón cae sin control, el rebote hace el trabajo y la serie pierde el estímulo del estiramiento. La cuenta es simple: dos segundos arriba, dos o tres abajo, sin soltar.
+La bajada es la parte que más se descuida. Si el talón cae sin control, el rebote hace el trabajo y la serie pierde el estímulo del estiramiento. La cuenta es simple: pausa de dos segundos arriba, dos o tres abajo, sin soltar.
 
 ## Cuánto peso y cuántas series
 

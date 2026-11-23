@@ -15,7 +15,7 @@ alternate: "/en/donkey-calf-raise/"
 updated: "2026-11-23"
 ---
 
-La posición de burro es la versión más antigua del trabajo de pantorrilla y también la que menos se practica en un gimnasio con máquinas. El cuerpo se dobla hacia delante, la cadera se apoya y los talones suben sobre un bloque. La diferencia con una elevación de pie no está en el músculo, que es el mismo, sino en cómo llega la carga y cuánto puede viajar el tobillo.
+La posición de burro es la versión más antigua del trabajo de pantorrilla y también la que menos se practica en un gimnasio con máquinas. El cuerpo se dobla hacia delante, la cadera se apoya y los talones suben sobre un bloque. El músculo es el mismo que en una elevación de pie. Lo que cambia es cómo llega la carga y cuánto puede viajar el tobillo.
 
 ## Por qué el torso inclinado cambia el ejercicio
 

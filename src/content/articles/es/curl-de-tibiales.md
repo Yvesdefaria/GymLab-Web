@@ -1,7 +1,7 @@
 ---
 lang: es
 title: "Curl de tibiales: los músculos correctos y su dosis"
-description: "Curl de tibiales: qué músculos trabajan de verdad, cómo ajustar el aparato, por qué el recorrido lo limita el tendón de Aquiles y la dosis de 2 x 12 a 15."
+description: "Curl de tibiales: qué músculos trabajan de verdad, cómo ajustar el aparato, por qué el recorrido lo limita el tendón de Aquiles y la dosis de 2 o 3 x 12 a 15."
 h1: "Curl de tibiales"
 block: "Entrenamiento"
 section: "Ejercicios de gemelo"
@@ -37,7 +37,7 @@ Ese control es más importante aquí que en casi cualquier otro ejercicio de pie
 
 ## El límite lo pone el tendón de Aquiles
 
-El pie no sube hasta donde quiere el músculo, sino hasta donde lo permite la rigidez del tendón de Aquiles y del sóleo. Por eso el recorrido de un principiante es más corto que el de alguien con años de movilidad de tobillo, y por eso el peso no arregla la diferencia.
+El recorrido del pie lo limita la rigidez del tendón de Aquiles y del sóleo. Por eso el rango de un principiante es más corto que el de alguien con años de movilidad de tobillo, y por eso el peso no arregla la diferencia.
 
 Antes de la serie conviene soltar la parte posterior de la pierna. De pie frente a una pared, a unos treinta o cuarenta centímetros, se apoya el cuerpo con las manos, se adelanta la rodilla y se mantiene el talón en el suelo. Un minuto por lado basta para ganar unos grados de recorrido. La [elevación de gemelos con mancuernas sentado](/es/elevacion-de-gemelos-con-mancuernas-sentado/) y las [elevaciones de burro](/es/elevaciones-de-gemelo-burro/) trabajan la parte que después limita este ejercicio.
 

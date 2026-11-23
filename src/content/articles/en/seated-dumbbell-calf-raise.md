@@ -33,13 +33,13 @@ The edge of the bench stays behind the knees, with the back straight and the tor
 
 The dumbbells rest on the lower thigh, near the knee. There the weight sits on bone rather than tendon, and the hand only steadies it. One dumbbell per leg spreads the load more comfortably than a single one across both.
 
-The limit is obvious: the dumbbells you can hold on your thigh are far lighter than the weight of a seated machine. That is not a flaw in the exercise, it is its condition. Load is compensated with a longer pause and a full range, and if the weight runs short, a bar across both thighs takes more plates.
+The limit is obvious: the dumbbells you can hold on your thigh are far lighter than the weight of a seated machine. That light load is the condition of the exercise. It is compensated with a longer pause and a full range, and if the weight runs short, a bar across both thighs takes more plates.
 
 ## The pause that pays for the weight
 
 At the top you hold for a second, with the ankle in full plantar flexion and the weight on the base of the toes. That second turns a light set into a useful one: the soleus spends more time under tension and the stimulus does not depend on kilos alone.
 
-At the bottom you lower into the stretch without letting the heel drop. Full range and the pause are the part of the exercise that more weight cannot replace, and the part most often lost when the set gets fast.
+At the bottom you lower into the stretch without letting the heel fall. Full range and the pause are the part of the exercise that more weight cannot replace, and the part most often lost when the set gets fast.
 
 ## How much weight and how many sets
 

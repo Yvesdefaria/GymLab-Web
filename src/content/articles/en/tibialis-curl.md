@@ -15,7 +15,7 @@ alternate: "/es/curl-de-tibiales/"
 updated: "2026-11-23"
 ---
 
-The calf gets most of the attention on leg day and the shin gets no direct work at all. The tibialis curl covers that other half: it flexes the ankle in the opposite direction to the calf raise and loads the front of the lower leg, the part that almost never meets resistance.
+The calf gets most of the attention on leg day and the shin rarely gets direct work. The tibialis curl covers that other half: it flexes the ankle in the opposite direction to the calf raise and loads the front of the lower leg, the part that almost never meets resistance.
 
 ## The muscles that work
 
@@ -37,7 +37,7 @@ That control matters more here than in almost any other leg exercise. The ankle 
 
 ## The Achilles tendon sets the limit
 
-The foot does not rise as far as the muscle wants, only as far as the stiffness of the Achilles tendon and the soleus allows. That is why a beginner's range is shorter than that of someone with years of ankle mobility, and why weight does not close the gap.
+The rise of the foot is limited by the stiffness of the Achilles tendon and the soleus. That is why a beginner's range is shorter than that of someone with years of ankle mobility, and why weight does not close the gap.
 
 Before the set, loosen the back of the lower leg. Stand facing a wall about thirty to forty centimetres away, put the hands on it, move the knee forward and keep the heel on the floor. A minute per side is enough to gain a few degrees of range. The [seated dumbbell calf raise](/en/seated-dumbbell-calf-raise/) and the [donkey raise](/en/donkey-calf-raise/) train the part that then limits this exercise.
 

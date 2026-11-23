@@ -62,7 +62,7 @@ The straight bar is the reference; the other grips change the share and the weak
   </tbody>
 </table>
 
-The other two members of the family have their own pages: the [spider curl](/en/spider-curl/) works with the shoulder flexed and the arm hanging, and the [EZ bar preacher curl](/en/preacher-curl-ez-bar/) rests the elbow on a pad. Both remove momentum from the torso, which is exactly what the straight bar allows when the load gets heavy.
+The other two members of the family have their own pages: the [spider curl](/en/spider-curl/) works with the shoulder flexed and the arm hanging, and the [EZ bar preacher curl](/en/preacher-curl-ez-bar/) rests the elbow on a pad. Both remove momentum from the torso, the shortcut that appears on the straight bar when the load gets heavy.
 
 ## Mistakes that steal tension
 
