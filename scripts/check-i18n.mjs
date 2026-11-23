@@ -1081,6 +1081,26 @@ const PAGES = [
   ['en', '/en/bodyweight-squat/'],
   ['es', '/es/aductores-en-maquina/'],
   ['en', '/en/hip-adduction-machine/'],
+  ['es', '/es/hip-thrust-guia-completa-de-entrenamiento/'],
+  ['en', '/en/barbell-hip-thrust/'],
+  ['es', '/es/hip-thrust-en-maquina/'],
+  ['en', '/en/hip-thrust-machine/'],
+  ['es', '/es/sentadilla-bulgara/'],
+  ['en', '/en/bulgarian-split-squat/'],
+  ['es', '/es/sentadilla-zercher/'],
+  ['en', '/en/zercher-squat/'],
+  ['es', '/es/sentadilla-con-mancuernas/'],
+  ['en', '/en/dumbbell-squat/'],
+  ['es', '/es/gemelo-prensa/'],
+  ['en', '/en/calf-press/'],
+  ['es', '/es/elevacion-gemelo-una-pierna/'],
+  ['en', '/en/single-leg-calf-raise/'],
+  ['es', '/es/elevacion-gemelo-maquina-sentado/'],
+  ['en', '/en/seated-calf-raise-machine/'],
+  ['es', '/es/elevacion-gemelos-maquina-hack/'],
+  ['en', '/en/hack-squat-calf-raise/'],
+  ['es', '/es/elevacion-gemelos-barra/'],
+  ['en', '/en/barbell-calf-raise/'],
 ];
 
 // Content routes, keyed by a stable id with the slug each locale publishes. The
@@ -2239,6 +2259,16 @@ const ROUTES = {
   jumpSquat: { es: '/sentadilla-con-salto', en: '/jump-squat' },
   bodyweightSquat: { es: '/sentadilla-con-el-peso-corporal', en: '/bodyweight-squat' },
   hipAdductionMachine: { es: '/aductores-en-maquina', en: '/hip-adduction-machine' },
+  barbellHipThrust: { es: '/hip-thrust-guia-completa-de-entrenamiento', en: '/barbell-hip-thrust' },
+  hipThrustMachine: { es: '/hip-thrust-en-maquina', en: '/hip-thrust-machine' },
+  bulgarianSplitSquat: { es: '/sentadilla-bulgara', en: '/bulgarian-split-squat' },
+  zercherSquat: { es: '/sentadilla-zercher', en: '/zercher-squat' },
+  dumbbellSquat: { es: '/sentadilla-con-mancuernas', en: '/dumbbell-squat' },
+  calfPress: { es: '/gemelo-prensa', en: '/calf-press' },
+  singleLegCalfRaise: { es: '/elevacion-gemelo-una-pierna', en: '/single-leg-calf-raise' },
+  seatedCalfRaiseMachine: { es: '/elevacion-gemelo-maquina-sentado', en: '/seated-calf-raise-machine' },
+  hackSquatCalfRaise: { es: '/elevacion-gemelos-maquina-hack', en: '/hack-squat-calf-raise' },
+  barbellCalfRaise: { es: '/elevacion-gemelos-barra', en: '/barbell-calf-raise' },
 };
 
 const routeId = (path) => {

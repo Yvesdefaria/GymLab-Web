@@ -570,6 +570,16 @@ const ROUTE_PAIRS = [
   ['/sentadilla-con-salto', '/jump-squat'],
   ['/sentadilla-con-el-peso-corporal', '/bodyweight-squat'],
   ['/aductores-en-maquina', '/hip-adduction-machine'],
+  ['/hip-thrust-guia-completa-de-entrenamiento', '/barbell-hip-thrust'],
+  ['/hip-thrust-en-maquina', '/hip-thrust-machine'],
+  ['/sentadilla-bulgara', '/bulgarian-split-squat'],
+  ['/sentadilla-zercher', '/zercher-squat'],
+  ['/sentadilla-con-mancuernas', '/dumbbell-squat'],
+  ['/gemelo-prensa', '/calf-press'],
+  ['/elevacion-gemelo-una-pierna', '/single-leg-calf-raise'],
+  ['/elevacion-gemelo-maquina-sentado', '/seated-calf-raise-machine'],
+  ['/elevacion-gemelos-maquina-hack', '/hack-squat-calf-raise'],
+  ['/elevacion-gemelos-barra', '/barbell-calf-raise'],
 ];
 
 const pairFor = (pathname) => {
