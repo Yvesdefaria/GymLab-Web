@@ -9,9 +9,9 @@ Legend: `ES` = Spanish published, `EN` = English published.
 
 ## Progress
 
-- **Built: 551 / 792** (ES 551, EN 551).
-- Last batch: batch 55 closed calf exercises and opened biceps;
-  551 pages built.
+- **Built: 561 / 792** (ES 561, EN 561).
+- Last batch: batch 56 continued biceps and forearm;
+  561 pages built.
 - Blocks finished end to end: Entrenamiento del Hombro (9), Físicos de leyenda (12), Entrenamiento de
   la Espalda (10), Rutinas de Espalda (4), Espalda (1), Ejercicios de Espalda (31), Ejercicio
   Cardiovascular (32), Entrenamiento de las Piernas (18), Entrenamiento del Pecho (6), Ejercicios de Pecho (27), Ejercicios de Hombro (29), Rutinas de
@@ -24,10 +24,10 @@ Legend: `ES` = Spanish published, `EN` = English published.
 | Entrenamiento | 222 | 217 |
 | Por Músculo | 80 | 80 |
 | Rutinas | 80 | 80 |
-| Ejercicios | 196 | 174 |
+| Ejercicios | 196 | 184 |
 | Nutrición | 191 | 0 |
 | Mujer Fitness | 23 | 0 |
-| **Total** | **792** | **551** |
+| **Total** | **792** | **561** |
 
 The Built column counts the archive block of each page, not the frontmatter `block` (every guide ships
 with `block: "Entrenamiento"` for the site taxonomy). Five Entrenamiento rows are settled and will
@@ -913,7 +913,7 @@ never publish: two DESCARTADA and three FUSIONADA, so the publishable total is *
 - [x] ES · [x] EN — `/elevacion-de-gemelos-con-mancuernas-sentado/` — Elevación de gemelos con mancuernas sentado
 - [x] ES · [x] EN — `/curl-de-tibiales/` — Curl de Tibiales: Técnica, Beneficios y Consejos
 
-### Ejercicios de Bíceps y Antebrazo (22) — 6/22
+### Ejercicios de Bíceps y Antebrazo (22) — 16/22
 
 - [x] ES · [x] EN — `/curl-barra/` — Curl con barra: técnica, errores y beneficios clave
 - [x] ES · [x] EN — `/curl-barra-z/` — Curl con barra Z: potencia tus bíceps sin lesiones
@@ -921,16 +921,16 @@ never publish: two DESCARTADA and three FUSIONADA, so the publishable total is *
 - [x] ES · [x] EN — `/curl-scott-barraz/` — Curl Scott con barra Z \| Banco de predicador 100% efectivo
 - [x] ES · [x] EN — `/curl-cuerda-agarre-martillo/` — Curl con cuerda agarre martillo
 - [x] ES · [x] EN — `/curl-polea-alta-tumbado-banco/` — Curl en polea alta tumbado en banco
-- [ ] ES · [ ] EN — `/curl-maquina-predicador/` — Curl en máquina \| Una elección inteligente en tu rutina
-- [ ] ES · [ ] EN — `/curl-polea-de-pie/` — Curl en polea de pie \| Tensión Constante para tus Bíceps
-- [ ] ES · [ ] EN — `/curl-alterno-mancuerna/` — Curl con mancuernas
-- [ ] ES · [ ] EN — `/curl-concentracion/` — Curl concentrado
-- [ ] ES · [ ] EN — `/curl-mancuernas-banco-inclinado-a-dos-manos/` — Curl con mancuernas en banco inclinado
-- [ ] ES · [ ] EN — `/curl-mancuernas-agarre-martillo/` — Curl con mancuernas agarre martillo
-- [ ] ES · [ ] EN — `/curl-predicador-mancuernas-agarre-martillo/` — Curl predicador con mancuernas agarre martillo
-- [ ] ES · [ ] EN — `/curl-mancuernas-sentado-adosmanos/` — Curl con mancuernas sentado: guía paso a paso
-- [ ] ES · [ ] EN — `/curl-predicador-mancuernas-a-dos-manos/` — Curl predicador con mancuernas\| Técnica y beneficios
-- [ ] ES · [ ] EN — `/curl-zottman-mancuernas-de-pie/` — Curl Zottman \| Ejercicio de bíceps de la vieja escuela
+- [x] ES · [x] EN — `/curl-maquina-predicador/` — Curl en máquina \| Una elección inteligente en tu rutina
+- [x] ES · [x] EN — `/curl-polea-de-pie/` — Curl en polea de pie \| Tensión Constante para tus Bíceps
+- [x] ES · [x] EN — `/curl-alterno-mancuerna/` — Curl con mancuernas
+- [x] ES · [x] EN — `/curl-concentracion/` — Curl concentrado
+- [x] ES · [x] EN — `/curl-mancuernas-banco-inclinado-a-dos-manos/` — Curl con mancuernas en banco inclinado
+- [x] ES · [x] EN — `/curl-mancuernas-agarre-martillo/` — Curl con mancuernas agarre martillo
+- [x] ES · [x] EN — `/curl-predicador-mancuernas-agarre-martillo/` — Curl predicador con mancuernas agarre martillo
+- [x] ES · [x] EN — `/curl-mancuernas-sentado-adosmanos/` — Curl con mancuernas sentado: guía paso a paso
+- [x] ES · [x] EN — `/curl-predicador-mancuernas-a-dos-manos/` — Curl predicador con mancuernas\| Técnica y beneficios
+- [x] ES · [x] EN — `/curl-zottman-mancuernas-de-pie/` — Curl Zottman \| Ejercicio de bíceps de la vieja escuela
 - [ ] ES · [ ] EN — `/curl-invertido-barra/` — Curl invertido con barra \| El mejor ejercicio de antebrazo
 - [ ] ES · [ ] EN — `/curl-arrastre-barra/` — Curl de arrastre con barra
 - [ ] ES · [ ] EN — `/curl-con-barra-sentado/` — Curl con barra sentado

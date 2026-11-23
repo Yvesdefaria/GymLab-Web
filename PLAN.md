@@ -21,14 +21,14 @@ Last updated: 2026-11-16.
 
 ## Content library — 511 / 792 (2026-11-22)
 
-- **551 bilingual pages** (ES 551, EN 551), **551 unique hero paths**. By archive section:
-  Entrenamiento 217/222 (five rows settled), Por Músculo 80/80, **Rutinas 80/80**, Ejercicios 174/196,
-  Nutrición 0/191, Mujer Fitness 0/23. Publishable total: **787**. Gemelo is **9/9 — COMPLETO**;
-  Bíceps y Antebrazo 6/22.
-- **Batches 33 to 55 are built, green and committed, not pushed.** The build has **1,118 pages** and
-  **1,114 sitemap URLs**.
-- Gates: `npm run verify` = `check:copy` **28,101/28,101** + build **1,118 pages** + `check:i18n`
-  **17,422/17,422** (1,114 sitemap URLs, 3,342 alternates).
+- **561 bilingual pages** (ES 561, EN 561), **561 unique hero paths**. By archive section:
+  Entrenamiento 217/222 (five rows settled), Por Músculo 80/80, **Rutinas 80/80**, Ejercicios 184/196,
+  Nutrición 0/191, Mujer Fitness 0/23. Publishable total: **787**. Bíceps y Antebrazo is 16/22;
+  Trapecios 0/6.
+- **Batches 33 to 56 are built, green and committed, not pushed.** The build has **1,138 pages** and
+  **1,134 sitemap URLs**.
+- Gates: `npm run verify` = `check:copy` **28,611/28,611** + build **1,138 pages** + `check:i18n`
+  **17,732/17,732** (1,134 sitemap URLs, 3,402 alternates).
 - Docs: `odd/tasks/content-library-session.md` (start here next session),
   `odd/tasks/content-pages.md` (per-page checklist + resume),
   `odd/tasks/content-library-batch-51.md` (the last batch) and `odd/tasks/guides-page-contract.md`
