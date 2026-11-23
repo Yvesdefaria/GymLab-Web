@@ -32,10 +32,10 @@ Last updated: 2026-11-16.
   `odd/tasks/content-pages.md` (per-page checklist + resume),
   `odd/tasks/content-library-batch-51.md` (the last batch) and `odd/tasks/guides-page-contract.md`
   (the page contract and copy gate).
-- **Next 10:** batch 54 closes Pierna (`hip-thrust-guia-completa-de-entrenamiento`,
-  `hip-thrust-en-maquina`, `sentadilla-bulgara`, `sentadilla-zercher`, `sentadilla-con-mancuernas`) and
-  opens Gemelo (`gemelo-prensa`, `elevacion-gemelo-una-pierna`, `elevacion-gemelo-maquina-sentado`,
-  `elevacion-gemelos-maquina-hack`, `elevacion-gemelos-barra`).
+- **Next 10:** batch 59 continues Suplementos Dietéticos with `pros-y-contras-de-las-proteinas`,
+  `mejor-proteina-nocturna`, `proteinas-de-liberacion-sostenida-mezclas-proteicas`,
+  `proteina-de-soja-contra-proteina-de-leche`, `suplementos-de-proteina-vegana`, `creatina-la-verdad`,
+  `creatina-calambres-musculares`, `creatina-cafeina`, `alcohol-creatina` and `creatina-rinon`.
 - **Follow-up:** ten hero pairs score 6 or less: the pre-existing exact duplicate
   (`remo-polea-sentado` with `superserie-de-espalda-para-terminar-tu-rutina`), and nine near pairs at
   3-6 (`aperturas-mancuernas-banco-inclinado` vs `press-inclinado-barra` at 3;

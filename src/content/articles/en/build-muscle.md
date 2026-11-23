@@ -198,6 +198,6 @@ Meal replacement formulas are a practical alternative to the fatty products from
 
 Protein supplements such as whey make it easier to reach 2 grams per kilogram without cooking as much. They come as powders, bottles, cans and bars.
 
-Creatine stands out when sports supplements are compared: it restores energy stores, improves muscle cell volume, activates protein synthesis and stimulates growth hormone. If you take it with whey protein after training, gains are higher than with either one alone.
+Creatine is the supplement with the strongest evidence: it restores phosphocreatine stores, improves strength and training volume, and through that the training stimulus. It does not stimulate growth hormone and it does not replace the synergy with protein: the daily total decides the result.
 
 If you want to calculate your calories before building the plan, use the [calorie calculator](/en/calorie-calculator/).

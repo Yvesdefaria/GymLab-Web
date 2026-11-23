@@ -198,6 +198,6 @@ Las fórmulas de reemplazo de comida son una alternativa práctica a los product
 
 Los suplementos de proteína, como los sueros, facilitan llegar a 2 gramos por kilo sin cocinar tanto. Hay polvos, botellas, latas y barritas.
 
-La creatina destaca cuando se comparan suplementos deportivos: repone almacenes de energía, mejora el volumen de la célula muscular, activa la síntesis proteica y estimula la hormona del crecimiento. Si la tomas junto con proteína de suero después de entrenar, las ganancias son superiores a las de usar cada uno por separado.
+La creatina es el suplemento con más respaldo: repone los almacenes de fosfocreatina, mejora la fuerza y el volumen de trabajo, y con ello el estímulo del entrenamiento. No estimula la hormona del crecimiento ni sustituye la sinergia con la proteína: lo que decide el resultado es el total diario.
 
 Si quieres calcular cuántas calorías te corresponden antes de montar el plan, usa la [calculadora de calorías](/es/calcular-calorias/).
