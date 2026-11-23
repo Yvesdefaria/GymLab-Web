@@ -620,6 +620,16 @@ const ROUTE_PAIRS = [
   ['/suplementos-proteina', '/protein-supplements'],
   ['/suplementos-creatina', '/creatine-supplement'],
   ['/proteina-de-suero-elaboracion', '/whey-protein-production'],
+  ['/pros-y-contras-de-las-proteinas', '/protein-pros-and-cons'],
+  ['/mejor-proteina-nocturna', '/casein-protein'],
+  ['/proteinas-de-liberacion-sostenida-mezclas-proteicas', '/sustained-release-protein'],
+  ['/proteina-de-soja-contra-proteina-de-leche', '/soy-vs-milk-protein'],
+  ['/suplementos-de-proteina-vegana', '/vegan-protein'],
+  ['/creatina-la-verdad', '/creatine-evidence'],
+  ['/creatina-calambres-musculares', '/creatine-and-cramps'],
+  ['/creatina-cafeina', '/creatine-and-caffeine'],
+  ['/alcohol-creatina', '/creatine-and-alcohol'],
+  ['/creatina-rinon', '/creatine-and-kidneys'],
 ];
 
 const pairFor = (pathname) => {

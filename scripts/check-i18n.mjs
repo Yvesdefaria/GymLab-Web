@@ -1181,6 +1181,26 @@ const PAGES = [
   ['en', '/en/creatine-supplement/'],
   ['es', '/es/proteina-de-suero-elaboracion/'],
   ['en', '/en/whey-protein-production/'],
+  ['es', '/es/pros-y-contras-de-las-proteinas/'],
+  ['en', '/en/protein-pros-and-cons/'],
+  ['es', '/es/mejor-proteina-nocturna/'],
+  ['en', '/en/casein-protein/'],
+  ['es', '/es/proteinas-de-liberacion-sostenida-mezclas-proteicas/'],
+  ['en', '/en/sustained-release-protein/'],
+  ['es', '/es/proteina-de-soja-contra-proteina-de-leche/'],
+  ['en', '/en/soy-vs-milk-protein/'],
+  ['es', '/es/suplementos-de-proteina-vegana/'],
+  ['en', '/en/vegan-protein/'],
+  ['es', '/es/creatina-la-verdad/'],
+  ['en', '/en/creatine-evidence/'],
+  ['es', '/es/creatina-calambres-musculares/'],
+  ['en', '/en/creatine-and-cramps/'],
+  ['es', '/es/creatina-cafeina/'],
+  ['en', '/en/creatine-and-caffeine/'],
+  ['es', '/es/alcohol-creatina/'],
+  ['en', '/en/creatine-and-alcohol/'],
+  ['es', '/es/creatina-rinon/'],
+  ['en', '/en/creatine-and-kidneys/'],
 ];
 
 // Content routes, keyed by a stable id with the slug each locale publishes. The
@@ -2389,6 +2409,16 @@ const ROUTES = {
   proteinSupplements: { es: '/suplementos-proteina', en: '/protein-supplements' },
   creatineSupplement: { es: '/suplementos-creatina', en: '/creatine-supplement' },
   wheyProteinProduction: { es: '/proteina-de-suero-elaboracion', en: '/whey-protein-production' },
+  proteinProsAndCons: { es: '/pros-y-contras-de-las-proteinas', en: '/protein-pros-and-cons' },
+  caseinProtein: { es: '/mejor-proteina-nocturna', en: '/casein-protein' },
+  sustainedReleaseProtein: { es: '/proteinas-de-liberacion-sostenida-mezclas-proteicas', en: '/sustained-release-protein' },
+  soyVsMilkProtein: { es: '/proteina-de-soja-contra-proteina-de-leche', en: '/soy-vs-milk-protein' },
+  veganProtein: { es: '/suplementos-de-proteina-vegana', en: '/vegan-protein' },
+  creatineEvidence: { es: '/creatina-la-verdad', en: '/creatine-evidence' },
+  creatineAndCramps: { es: '/creatina-calambres-musculares', en: '/creatine-and-cramps' },
+  creatineAndCaffeine: { es: '/creatina-cafeina', en: '/creatine-and-caffeine' },
+  creatineAndAlcohol: { es: '/alcohol-creatina', en: '/creatine-and-alcohol' },
+  creatineAndKidneys: { es: '/creatina-rinon', en: '/creatine-and-kidneys' },
 };
 
 const routeId = (path) => {
