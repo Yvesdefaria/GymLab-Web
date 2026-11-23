@@ -78,7 +78,7 @@ La fatiga es un factor de riesgo. Cuando la técnica se degrada, la serie termin
 6. Mantén la columna recta.
 7. Baja solo hasta que los muslos queden paralelos al suelo.
 8. Mantén los pies planos y apoyados por completo.
-9. Como norma general, evita que las rodillas sobrepasen la punta de los pies.
+9. Deja que las rodillas avancen sobre la punta del pie si tu tobillo lo permite; lo que no debe pasar es que se metan hacia dentro.
 10. Progresa en peso y profundidad de forma gradual, sin exceder la capacidad de adaptación. El dolor de espalda o de rodilla avisa de que vas demasiado rápido.
 11. Trata la fatiga como un factor de riesgo.
 12. Mantén la técnica o deja el ejercicio.

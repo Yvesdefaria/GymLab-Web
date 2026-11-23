@@ -78,7 +78,7 @@ Fatigue is a risk factor. When technique breaks down, the set is over.
 6. Keep your spine straight.
 7. Descend only until your thighs are parallel to the floor.
 8. Keep your feet flat and fully planted.
-9. As a general rule, keep your knees from passing your toes.
+9. Let the knees travel over the toes if your ankle allows it; what must not happen is the knees collapsing inward.
 10. Progress weight and depth gradually, without exceeding your capacity to adapt. Back or knee pain tells you the pace is too fast.
 11. Treat fatigue as a risk factor.
 12. Keep your technique or stop the exercise.
