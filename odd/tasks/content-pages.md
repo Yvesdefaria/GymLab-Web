@@ -9,14 +9,14 @@ Legend: `ES` = Spanish published, `EN` = English published.
 
 ## Progress
 
-- **Built: 531 / 792** (ES 531, EN 531).
-- Last batch: batch 53 closed quad exercises and opened leg exercises;
-  531 pages built.
+- **Built: 541 / 792** (ES 541, EN 541).
+- Last batch: batch 54 closed leg exercises and opened calf exercises;
+  541 pages built.
 - Blocks finished end to end: Entrenamiento del Hombro (9), Físicos de leyenda (12), Entrenamiento de
   la Espalda (10), Rutinas de Espalda (4), Espalda (1), Ejercicios de Espalda (31), Ejercicio
   Cardiovascular (32), Entrenamiento de las Piernas (18), Entrenamiento del Pecho (6), Ejercicios de Pecho (27), Ejercicios de Hombro (29), Rutinas de
   Pierna (3), Pierna (9), Rutinas de Tríceps (1), Rutinas de Pecho (1), Tríceps (1), Rutinas de
-  Fuerza (9), Ejercicios Básicos (6) and Ejercicios de Cuádriceps (23). Their
+  Fuerza (9), Ejercicios Básicos (6), Ejercicios de Cuádriceps (23) and Ejercicios de Pierna (6). Their
   headings are marked `— COMPLETO`; partial blocks show their ratio.
 
 | Block | Articles | Built |
@@ -24,10 +24,10 @@ Legend: `ES` = Spanish published, `EN` = English published.
 | Entrenamiento | 222 | 217 |
 | Por Músculo | 80 | 80 |
 | Rutinas | 80 | 80 |
-| Ejercicios | 196 | 154 |
+| Ejercicios | 196 | 164 |
 | Nutrición | 191 | 0 |
 | Mujer Fitness | 23 | 0 |
-| **Total** | **792** | **531** |
+| **Total** | **792** | **541** |
 
 The Built column counts the archive block of each page, not the frontmatter `block` (every guide ships
 with `block: "Entrenamiento"` for the site taxonomy). Five Entrenamiento rows are settled and will
@@ -858,14 +858,14 @@ never publish: two DESCARTADA and three FUSIONADA, so the publishable total is *
 - [x] ES · [x] EN — `/sentadilla-con-salto/` — Sentadilla con salto
 - [x] ES · [x] EN — `/sentadilla-con-el-peso-corporal/` — Sentadilla con el peso corporal
 
-### Ejercicios de Pierna (6) — 1/6
+### Ejercicios de Pierna (6) — COMPLETO
 
 - [x] ES · [x] EN — `/aductores-en-maquina/` — Aductores en máquina \| Fortalece la zona de la cadera
-- [ ] ES · [ ] EN — `/hip-thrust-guia-completa-de-entrenamiento/` — Hip Thrust con barra: Guía Completa para Glúteos de Acero
-- [ ] ES · [ ] EN — `/hip-thrust-en-maquina/` — Hip thrust en máquina: técnica correcta, ajustes y progresión
-- [ ] ES · [ ] EN — `/sentadilla-bulgara/` — Sentadilla Búlgara: Fortalece y Tonifica Tus Piernas y Glúteos
-- [ ] ES · [ ] EN — `/sentadilla-zercher/` — Sentadilla Zercher: Técnica y beneficios clave
-- [ ] ES · [ ] EN — `/sentadilla-con-mancuernas/` — Sentadilla con mancuernas
+- [x] ES · [x] EN — `/hip-thrust-guia-completa-de-entrenamiento/` — Hip Thrust con barra: Guía Completa para Glúteos de Acero
+- [x] ES · [x] EN — `/hip-thrust-en-maquina/` — Hip thrust en máquina: técnica correcta, ajustes y progresión
+- [x] ES · [x] EN — `/sentadilla-bulgara/` — Sentadilla Búlgara: Fortalece y Tonifica Tus Piernas y Glúteos
+- [x] ES · [x] EN — `/sentadilla-zercher/` — Sentadilla Zercher: Técnica y beneficios clave
+- [x] ES · [x] EN — `/sentadilla-con-mancuernas/` — Sentadilla con mancuernas
 
 ### Ejercicios de Espalda (31) — COMPLETO
 
@@ -901,13 +901,13 @@ never publish: two DESCARTADA and three FUSIONADA, so the publishable total is *
 - [x] ES · [x] EN — `/jalon-dorsal-a-una-mano/` — Jalón dorsal a una mano
 - [x] ES · [x] EN — `/jalones-tras-nuca/` — Jalones tras nuca \| Efectivo pero... ¿Lesivo?
 
-### Ejercicios de Gemelo (9)
+### Ejercicios de Gemelo (9) — 5/9
 
-- [ ] ES · [ ] EN — `/gemelo-prensa/` — Gemelo en prensa \| Machaca tus gemelos al 100%
-- [ ] ES · [ ] EN — `/elevacion-gemelo-una-pierna/` — Elevación de gemelos a una pierna, con mancuerna
-- [ ] ES · [ ] EN — `/elevacion-gemelo-maquina-sentado/` — Elevación de gemelo en máquina sentado
-- [ ] ES · [ ] EN — `/elevacion-gemelos-maquina-hack/` — Elevación de gemelos en máquina hack \| Consigue mejores gemelos
-- [ ] ES · [ ] EN — `/elevacion-gemelos-barra/` — Elevación de gemelos con barra
+- [x] ES · [x] EN — `/gemelo-prensa/` — Gemelo en prensa \| Machaca tus gemelos al 100%
+- [x] ES · [x] EN — `/elevacion-gemelo-una-pierna/` — Elevación de gemelos a una pierna, con mancuerna
+- [x] ES · [x] EN — `/elevacion-gemelo-maquina-sentado/` — Elevación de gemelo en máquina sentado
+- [x] ES · [x] EN — `/elevacion-gemelos-maquina-hack/` — Elevación de gemelos en máquina hack \| Consigue mejores gemelos
+- [x] ES · [x] EN — `/elevacion-gemelos-barra/` — Elevación de gemelos con barra
 - [ ] ES · [ ] EN — `/gemelo-maquina-depie/` — Gemelo en máquina de pie
 - [ ] ES · [ ] EN — `/elevaciones-de-gemelo-burro/` — Elevaciones de gemelo tipo burro
 - [ ] ES · [ ] EN — `/elevacion-de-gemelos-con-mancuernas-sentado/` — Elevación de gemelos con mancuernas sentado

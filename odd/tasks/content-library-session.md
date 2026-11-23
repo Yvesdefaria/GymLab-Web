@@ -9,27 +9,27 @@ Last updated: 2026-11-19. Read this first next session.
 
 ## State
 
-- **531 / 792 bilingual pages** (ES 531, EN 531).
+- **541 / 792 bilingual pages** (ES 541, EN 541).
 - Blocks by archive section: Entrenamiento **217/222** (the five missing rows are settled: two
-  descartadas and three fusionadas), Por Músculo **80/80**, Rutinas **80/80**, Ejercicios **154/196**,
+  descartadas and three fusionadas), Por Músculo **80/80**, Rutinas **80/80**, Ejercicios **164/196**,
   Nutrición 0/191, Mujer Fitness 0/23. The publishable total is 787.
-- **531 unique hero paths.** The dHash pairs under 7 are listed in `PLAN.md`; every new one was opened
+- **541 unique hero paths.** The dHash pairs under 7 are listed in `PLAN.md`; every new one was opened
   and the equipment differs.
-- **Batch 53 is built, green and committed (2026-11-22).** The build has **1,078 pages** and **1,074
-  sitemap URLs**. Cuádriceps is **23/23 — COMPLETO**; Pierna is 1/6.
+- **Batch 54 is built, green and committed (2026-11-23).** The build has **1,098 pages** and **1,094
+  sitemap URLs**. Pierna is **6/6 — COMPLETO**; Gemelo is 5/9.
 - Five archive rows are settled and must stay out: the FiveStars Fitness congress page (discarded),
   the AEKE S1 Pro page (discarded 2026-11-14), `/velocidad-repeticiones/` (fused into the tempo page,
   2026-11-14) and the two batch 20 fusions (2026-11-15).
 - **Production runs batch 32 (pushed 2026-11-16).** Batches 19 to 32 are live; `origin/main` is at
-  the batch 32 docs push. Batches 33 to 53 are committed locally and not pushed.
-- Batch records: `odd/tasks/content-library-batch-52.md`, `-53.md` and the session closes below.
+  the batch 32 docs push. Batches 33 to 54 are committed locally and not pushed.
+- Batch records: `odd/tasks/content-library-batch-53.md`, `-54.md` and the session closes below.
 
 ## Gates
 
 ```powershell
-npm run check:copy   # 27,081/27,081
-npm run build        # 1,078 pages
-npm run check:i18n   # 16,802/16,802, 1,074 sitemap URLs
+npm run check:copy   # 27,591/27,591
+npm run build        # 1,098 pages
+npm run check:i18n   # 17,112/17,112, 1,094 sitemap URLs
 npm run verify       # all three, in that order
 npm run dev          # http://localhost:4321
 ```
@@ -83,11 +83,10 @@ library and breaks every Python process that imports Pillow.
 ## What is built
 
 The per-page record in `content-pages.md` is authoritative; this section summarises the blocks. At
-**531 pages**, Por Músculo (80/80) and Rutinas (80/80) are closed, Entrenamiento is effectively closed
-(217/222 with five settled rows), and the Ejercicios block is at **154/196**: Espalda complete, Tríceps
-complete at 17/17, Femoral y glúteos complete at 12/12, Pecho complete at 27/27, Hombro complete at
-29/29, Básicos complete at 6/6, Cuádriceps complete at 23/23, the catalogue hubs live, and Pierna 1/6,
-Gemelo, Bíceps y Antebrazo and Trapecios in progress.
+**541 pages**, Por Músculo (80/80) and Rutinas (80/80) are closed, Entrenamiento is effectively closed
+(217/222 with five settled rows), and the Ejercicios block is at **164/196**: Espalda, Tríceps,
+Femoral y glúteos, Pecho, Hombro, Básicos, Cuádriceps and Pierna complete; Gemelo 5/9 and Bíceps y
+Antebrazo and Trapecios pending.
 
 The list below describes the blocks finished before batch 42; the checklist and the batch records carry
 the current per-page state.
@@ -144,12 +143,15 @@ the current per-page state.
 
 ## Next 10
 
-1. Ejercicios de Pierna continues at `/hip-thrust-guia-completa-de-entrenamiento/`, then
-   `hip-thrust-en-maquina`, `sentadilla-bulgara`, `sentadilla-zercher` and `sentadilla-con-mancuernas`;
-   after those, Ejercicios de Gemelo starts at `gemelo-prensa`, `elevacion-gemelo-una-pierna`,
-   `elevacion-gemelo-maquina-sentado`, `elevacion-gemelos-maquina-hack` and `elevacion-gemelos-barra`.
-   Write the batch 54 brief after mapping the ten sources.
-2. Ejercicios is 154/196: Pierna 1/6, Gemelo 0/9, Bíceps y Antebrazo 0/22, Trapecios 0/6.
+1. Batch 55 closes Ejercicios de Gemelo at `/gemelo-maquina-depie/`,
+   `elevaciones-de-gemelo-burro`, `elevacion-de-gemelos-con-mancuernas-sentado` and `curl-de-tibiales`,
+   then opens Bíceps y Antebrazo at `curl-barra`, `curl-barra-z`, `curl-arana`, `curl-scott-barraz`,
+   `curl-cuerda-agarre-martillo` and `curl-polea-alta-tumbado-banco`. Batch 56 continues Bíceps with
+   `curl-maquina-predicador`, `curl-polea-de-pie`, `curl-alterno-mancuerna`, `curl-concentracion`,
+   `curl-mancuernas-banco-inclinado-a-dos-manos`, `curl-mancuernas-agarre-martillo`,
+   `curl-predicador-mancuernas-agarre-martillo`, `curl-mancuernas-sentado-adosmanos`,
+   `curl-predicador-mancuernas-a-dos-manos` and `curl-zottman-mancuernas-de-pie`.
+2. Ejercicios is 164/196: Gemelo 5/9, Bíceps y Antebrazo 0/22, Trapecios 0/6.
 3. Keep the same copy, unique-hero and gate flow.
 4. Before publishing another photo from Shixart1985, Nenad Stojkovic, Miguel Angel Omaña Rojas, the
    InjuryMap family, PTPioneer, KeepActive Australia, Everkinetic or Wellcome Collection, compare the
