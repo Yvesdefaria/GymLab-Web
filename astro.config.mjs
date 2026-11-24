@@ -640,6 +640,16 @@ const ROUTE_PAIRS = [
   ['/aminoacidos-bcaas', '/bcaa-supplements'],
   ['/reemplazo-comidas', '/meal-replacement-shakes'],
   ['/glucosamina', '/glucosamine-for-joints'],
+  ['/esteroides', '/steroids'],
+  ['/bloqueadores-de-carbohidratos', '/carb-blockers'],
+  ['/gaba-neotropico-para-la-calma-y-relajacion', '/gaba-supplement'],
+  ['/vitargo', '/vitargo'],
+  ['/ganadores-de-peso-mass-gainers', '/mass-gainers'],
+  ['/cafeina-suplemento', '/caffeine-supplement'],
+  ['/aminoacidos', '/amino-acids'],
+  ['/almuerzos-saludables-altos-en-proteinas', '/high-protein-lunches'],
+  ['/combinar-proteinas-carbohidratos', '/protein-and-carbs-together'],
+  ['/cenar-verdura', '/vegetables-or-fruit-for-dinner'],
 ];
 
 const pairFor = (pathname) => {

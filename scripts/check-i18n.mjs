@@ -1221,6 +1221,26 @@ const PAGES = [
   ['en', '/en/meal-replacement-shakes/'],
   ['es', '/es/glucosamina/'],
   ['en', '/en/glucosamine-for-joints/'],
+  ['es', '/es/esteroides/'],
+  ['en', '/en/steroids/'],
+  ['es', '/es/bloqueadores-de-carbohidratos/'],
+  ['en', '/en/carb-blockers/'],
+  ['es', '/es/gaba-neotropico-para-la-calma-y-relajacion/'],
+  ['en', '/en/gaba-supplement/'],
+  ['es', '/es/vitargo/'],
+  ['en', '/en/vitargo/'],
+  ['es', '/es/ganadores-de-peso-mass-gainers/'],
+  ['en', '/en/mass-gainers/'],
+  ['es', '/es/cafeina-suplemento/'],
+  ['en', '/en/caffeine-supplement/'],
+  ['es', '/es/aminoacidos/'],
+  ['en', '/en/amino-acids/'],
+  ['es', '/es/almuerzos-saludables-altos-en-proteinas/'],
+  ['en', '/en/high-protein-lunches/'],
+  ['es', '/es/combinar-proteinas-carbohidratos/'],
+  ['en', '/en/protein-and-carbs-together/'],
+  ['es', '/es/cenar-verdura/'],
+  ['en', '/en/vegetables-or-fruit-for-dinner/'],
 ];
 
 // Content routes, keyed by a stable id with the slug each locale publishes. The
@@ -2449,6 +2469,16 @@ const ROUTES = {
   bcaaSupplement: { es: '/aminoacidos-bcaas', en: '/bcaa-supplements' },
   mealReplacement: { es: '/reemplazo-comidas', en: '/meal-replacement-shakes' },
   glucosamine: { es: '/glucosamina', en: '/glucosamine-for-joints' },
+  steroids: { es: '/esteroides', en: '/steroids' },
+  carbBlockers: { es: '/bloqueadores-de-carbohidratos', en: '/carb-blockers' },
+  gabaSupplement: { es: '/gaba-neotropico-para-la-calma-y-relajacion', en: '/gaba-supplement' },
+  vitargo: { es: '/vitargo', en: '/vitargo' },
+  massGainers: { es: '/ganadores-de-peso-mass-gainers', en: '/mass-gainers' },
+  caffeineSupplement: { es: '/cafeina-suplemento', en: '/caffeine-supplement' },
+  aminoAcids: { es: '/aminoacidos', en: '/amino-acids' },
+  highProteinLunches: { es: '/almuerzos-saludables-altos-en-proteinas', en: '/high-protein-lunches' },
+  proteinAndCarbs: { es: '/combinar-proteinas-carbohidratos', en: '/protein-and-carbs-together' },
+  dinnerVegetables: { es: '/cenar-verdura', en: '/vegetables-or-fruit-for-dinner' },
 };
 
 const routeId = (path) => {
