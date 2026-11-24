@@ -650,6 +650,16 @@ const ROUTE_PAIRS = [
   ['/almuerzos-saludables-altos-en-proteinas', '/high-protein-lunches'],
   ['/combinar-proteinas-carbohidratos', '/protein-and-carbs-together'],
   ['/cenar-verdura', '/vegetables-or-fruit-for-dinner'],
+  ['/carbohidratos', '/carbohydrates'],
+  ['/guia-definitiva-de-recomposicion-corporal', '/body-recomposition-guide'],
+  ['/culturismo-la-cura-para-el-envejecimiento', '/bodybuilding-and-aging'],
+  ['/suplementacion-deportiva-alcanzar-objetivos', '/sports-supplementation-guide'],
+  ['/engordan-los-hidratos-en-las-cenas', '/carbs-at-night-and-fat-gain'],
+  ['/sistema-inmune-con-vitaminas', '/immune-system-vitamins'],
+  ['/quieres-perder-grasa-no-solo-perder-peso', '/lose-fat-not-weight'],
+  ['/ayuno-intermitente', '/intermittent-fasting-and-weights'],
+  ['/insulina-y-culturismo-aliada-ganar-masa-muscular', '/insulin-and-bodybuilding'],
+  ['/vino-es-realmente-saludable', '/is-wine-healthy'],
 ];
 
 const pairFor = (pathname) => {

@@ -1241,6 +1241,26 @@ const PAGES = [
   ['en', '/en/protein-and-carbs-together/'],
   ['es', '/es/cenar-verdura/'],
   ['en', '/en/vegetables-or-fruit-for-dinner/'],
+  ['es', '/es/carbohidratos/'],
+  ['en', '/en/carbohydrates/'],
+  ['es', '/es/guia-definitiva-de-recomposicion-corporal/'],
+  ['en', '/en/body-recomposition-guide/'],
+  ['es', '/es/culturismo-la-cura-para-el-envejecimiento/'],
+  ['en', '/en/bodybuilding-and-aging/'],
+  ['es', '/es/suplementacion-deportiva-alcanzar-objetivos/'],
+  ['en', '/en/sports-supplementation-guide/'],
+  ['es', '/es/engordan-los-hidratos-en-las-cenas/'],
+  ['en', '/en/carbs-at-night-and-fat-gain/'],
+  ['es', '/es/sistema-inmune-con-vitaminas/'],
+  ['en', '/en/immune-system-vitamins/'],
+  ['es', '/es/quieres-perder-grasa-no-solo-perder-peso/'],
+  ['en', '/en/lose-fat-not-weight/'],
+  ['es', '/es/ayuno-intermitente/'],
+  ['en', '/en/intermittent-fasting-and-weights/'],
+  ['es', '/es/insulina-y-culturismo-aliada-ganar-masa-muscular/'],
+  ['en', '/en/insulin-and-bodybuilding/'],
+  ['es', '/es/vino-es-realmente-saludable/'],
+  ['en', '/en/is-wine-healthy/'],
 ];
 
 // Content routes, keyed by a stable id with the slug each locale publishes. The
@@ -2479,6 +2499,16 @@ const ROUTES = {
   highProteinLunches: { es: '/almuerzos-saludables-altos-en-proteinas', en: '/high-protein-lunches' },
   proteinAndCarbs: { es: '/combinar-proteinas-carbohidratos', en: '/protein-and-carbs-together' },
   dinnerVegetables: { es: '/cenar-verdura', en: '/vegetables-or-fruit-for-dinner' },
+  carbohydrates: { es: '/carbohidratos', en: '/carbohydrates' },
+  bodyRecomposition: { es: '/guia-definitiva-de-recomposicion-corporal', en: '/body-recomposition-guide' },
+  bodybuildingAging: { es: '/culturismo-la-cura-para-el-envejecimiento', en: '/bodybuilding-and-aging' },
+  sportsSupplementation: { es: '/suplementacion-deportiva-alcanzar-objetivos', en: '/sports-supplementation-guide' },
+  carbsAtNight: { es: '/engordan-los-hidratos-en-las-cenas', en: '/carbs-at-night-and-fat-gain' },
+  immuneVitamins: { es: '/sistema-inmune-con-vitaminas', en: '/immune-system-vitamins' },
+  loseFatNotWeight: { es: '/quieres-perder-grasa-no-solo-perder-peso', en: '/lose-fat-not-weight' },
+  intermittentFasting: { es: '/ayuno-intermitente', en: '/intermittent-fasting-and-weights' },
+  insulinBodybuilding: { es: '/insulina-y-culturismo-aliada-ganar-masa-muscular', en: '/insulin-and-bodybuilding' },
+  wineHealth: { es: '/vino-es-realmente-saludable', en: '/is-wine-healthy' },
 };
 
 const routeId = (path) => {
