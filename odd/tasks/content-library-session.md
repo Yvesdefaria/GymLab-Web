@@ -9,29 +9,29 @@ Last updated: 2026-11-24. Read this first next session.
 
 ## State
 
-- **651 / 792 bilingual pages** (ES 651, EN 651).
+- **681 / 792 bilingual pages** (ES 681, EN 681).
 - Blocks by archive section: Entrenamiento **217/222** (the five missing rows are settled: two
   descartadas and three fusionadas), Por Músculo **80/80**, Rutinas **80/80**, Ejercicios
-  **196/196 — COMPLETO**, Nutrición 78/191, Mujer Fitness 0/23. The publishable total is 787.
-  Suplementos Dietéticos is **35/35 — COMPLETO**; Nutrición Aplicada is 30/111.
-- **651 unique hero paths.** The dHash pairs under 7 are listed in `PLAN.md`; every new one was opened
+  **196/196 — COMPLETO**, Nutrición 108/191, Mujer Fitness 0/23. The publishable total is 787.
+  Suplementos Dietéticos is **35/35 — COMPLETO**; Nutrición Aplicada is 60/111.
+- **681 unique hero paths.** The dHash pairs under 7 are listed in `PLAN.md`; every new one was opened
   and the equipment or subject differs.
-- **Batch 65 is built, green and committed (2026-11-24).** The build has **1,318 pages** and **1,314
-  sitemap URLs**. Batches 63-65 added 30 Nutrición Aplicada pairs.
+- **Batch 68 is built, green and committed (2026-11-24).** The build has **1,378 pages** and **1,374
+  sitemap URLs**. Batches 63-68 added 60 Nutrición Aplicada pairs.
 - Five archive rows are settled and must stay out: the FiveStars Fitness congress page (discarded),
   the AEKE S1 Pro page (discarded 2026-11-14), `/velocidad-repeticiones/` (fused into the tempo page,
   2026-11-14) and the two batch 20 fusions (2026-11-15).
 - **Production runs batch 32 (pushed 2026-11-16).** Batches 19 to 32 are live; `origin/main` is at
-  the batch 32 docs push. Batches 33 to 65 are committed locally and not pushed.
-- Batch records: `odd/tasks/content-library-batch-63.md`, `-64.md`, `-65.md` and the session closes
+  the batch 32 docs push. Batches 33 to 68 are committed locally and not pushed.
+- Batch records: `odd/tasks/content-library-batch-66.md`, `-67.md`, `-68.md` and the session closes
   below.
 
 ## Gates
 
 ```powershell
-npm run check:copy   # 33,201/33,201
-npm run build        # 1,318 pages
-npm run check:i18n   # 20,522/20,522, 1,314 sitemap URLs
+npm run check:copy   # 34,731/34,731
+npm run build        # 1,378 pages
+npm run check:i18n   # 21,452/21,452, 1,374 sitemap URLs
 npm run verify       # all three, in that order
 npm run dev          # http://localhost:4321
 ```
@@ -93,9 +93,9 @@ library and breaks every Python process that imports Pillow.
 ## What is built
 
 The per-page record in `content-pages.md` is authoritative; this section summarises the blocks. At
-**651 pages**, Por Músculo (80/80), Rutinas (80/80) and **Ejercicios (196/196)** are closed, and
-Entrenamiento is effectively closed (217/222 with five settled rows). Nutrición is 78/191
-(Suplementos **35/35 — COMPLETO**, Nutrición Aplicada 30/111) and Mujer Fitness 0/23.
+**681 pages**, Por Músculo (80/80), Rutinas (80/80) and **Ejercicios (196/196)** are closed, and
+Entrenamiento is effectively closed (217/222 with five settled rows). Nutrición is 108/191
+(Suplementos **35/35 — COMPLETO**, Nutrición Aplicada 60/111) and Mujer Fitness 0/23.
 
 The list below describes the blocks finished before batch 42; the checklist and the batch records carry
 the current per-page state.
@@ -152,17 +152,18 @@ the current per-page state.
 
 ## Next 10
 
-1. Batch 66 takes the next Nutrición Aplicada rows: `/verdura-masa-muscular/`,
-   `/errores-a-evitar-en-la-dieta/`, `/dieta-culturista-ocho-semanas/`,
-   `/vitaminas-minerales-para-el-gimnasio/`, `/como-limitar-el-sodio/`, `/bebida-isotonica-casera/`,
-   `/batidos-para-volumen-muscular/`, `/comidas-perfectas-culturistas/`,
-   `/nutricion-para-estar-en-forma/` and `/prepara-tu-cocina-para-una-dieta-anabolica/`.
-2. Ejercicios is closed at 196/196 and Suplementos Dietéticos at 35/35. Nutrición is 78/191; Mujer
+1. Batch 69 takes the next Nutrición Aplicada rows: `/mejores-diureticos-naturales/`,
+   `/protegete-con-el-acido-fitico/`, `/menu-saludable-con-carbohidratos-y-proteinas/`,
+   `/dieta-vegetariana-para-adelgazar-sin-pasar-hambre/`, `/comer-limpio/`,
+   `/diferencias-entre-verduras-y-hortalizas/`, `/deporte-cafe-de-especialidad/`,
+   `/la-mejor-forma-de-controlar-lo-que-comes/`, `/radicales-libres/` and
+   `/evita-los-agentes-cancerigenos-de-la-carne/`.
+2. Ejercicios is closed at 196/196 and Suplementos Dietéticos at 35/35. Nutrición is 108/191; Mujer
    Fitness 0/23.
 3. Keep the same copy, unique-hero and gate flow.
 4. Before publishing another photo from Shixart1985, Nenad Stojkovic, Miguel Angel Omaña Rojas, the
    InjuryMap family, PTPioneer, KeepActive Australia, Everkinetic or Wellcome Collection, compare the
-   Commons file title and the dHash against the 651 existing heroes. A crop of a library hero scores
+   Commons file title and the dHash against the 681 existing heroes. A crop of a library hero scores
    1-14 and is a duplicate in practice, not only at 0.
 5. The scaling architecture is deferred to PLAN Phase 7; do not implement it during content batches.
 
@@ -213,6 +214,32 @@ the current per-page state.
   documented in the batch 22 record.
 - **Push is the owner's call:** batches 19 to 32 were pushed on 2026-11-16 from `6293327` to
   `f7f8de1`. Batches 33 to 47, page commits and docs, remain local; production still serves 658 pages.
+
+## Session close (2026-11-24, wrap: batches 66 to 68)
+
+- Three batches in one session: **651 → 681 / 792**, 30 bilingual pairs, 60 files, 30 heroes.
+  Nutrición 78 → **108/191**; Nutrición Aplicada is 60/111.
+- Final gates: `check:copy` **34,731/34,731**, build **1,378 pages**, `check:i18n` **21,452/21,452**,
+  sitemap **1,374 URLs** with 4,122 alternates. 348 internal links across the 60 files, **0 broken**;
+  420 page/width pairs clean across the three batches.
+- **Editorial rules settled in this stretch:** vegetables are satiety, not hormones; micronutrients are
+  food-first with documented gaps; sodium is a processed-food lever, not a water cut; the homemade
+  isotonic is water, sugar and a pinch of salt; sushi is a rice vehicle; clenbuterol in meat is a
+  contamination and doping-risk page with no protocol; cured meat is a condiment under IARC Group 1;
+  casein and whey differ in speed; excess protein costs money and fibre, not kidneys; carb cycling is
+  calorie cycling; de novo lipogenesis is modest; loading and depletion is published as risk; fat type
+  drives cardiovascular risk while calories drive weight; trans fats are the one class with clear harm;
+  lentils are cheap protein and fibre; "light" is a label; the liver and kidneys detoxify; pizza fits by
+  portion; stretch marks are largely genetic and no cream prevents them.
+- **Gotchas that cost time:** a library hero reappears as an exact duplicate from a different Commons
+  file (lentils, bread, milk, tape measure) and the dHash catches it only if it runs on the final crop;
+  `check:copy` can be red on another writer's page while yours is green, so failures must be filtered by
+  slug; a dev-server restart during concurrent writes produced 74 navigation errors in the first render
+  pass, all transient; the archive's YMYL pages need full rebuilds, not edits.
+- **Fixed by the parent:** nothing content-side across the three batches; the writers corrected their own
+  descriptions before close, and every internal link resolved on the first parent pass.
+- **Next session starts at `/mejores-diureticos-naturales/`** (batch 69). Batches 33 to 68 are committed
+  locally and not pushed; production runs batch 32. Push is the owner's call.
 
 ## Session close (2026-11-24, wrap: batches 63 to 65)
 

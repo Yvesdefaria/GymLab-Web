@@ -9,9 +9,9 @@ Legend: `ES` = Spanish published, `EN` = English published.
 
 ## Progress
 
-- **Built: 651 / 792** (ES 651, EN 651).
-- Last batch: batch 65 closed thirty Nutrición Aplicada rows across batches 63-65;
-  651 pages built.
+- **Built: 681 / 792** (ES 681, EN 681).
+- Last batch: batch 68 closed sixty Nutrición Aplicada rows across batches 63-68;
+  681 pages built.
 - Blocks finished end to end: Entrenamiento del Hombro (9), Físicos de leyenda (12), Entrenamiento de
   la Espalda (10), Rutinas de Espalda (4), Espalda (1), Ejercicios de Espalda (31), Ejercicio
   Cardiovascular (32), Entrenamiento de las Piernas (18), Entrenamiento del Pecho (6), Ejercicios de Pecho (27), Ejercicios de Hombro (29), Rutinas de
@@ -25,9 +25,9 @@ Legend: `ES` = Spanish published, `EN` = English published.
 | Por Músculo | 80 | 80 |
 | Rutinas | 80 | 80 |
 | Ejercicios | 196 | 196 |
-| Nutrición | 191 | 78 |
+| Nutrición | 191 | 108 |
 | Mujer Fitness | 23 | 0 |
-| **Total** | **792** | **651** |
+| **Total** | **792** | **681** |
 
 The Built column counts the archive block of each page, not the frontmatter `block` (every guide ships
 with `block: "Entrenamiento"` for the site taxonomy). Five Entrenamiento rows are settled and will
@@ -987,7 +987,7 @@ never publish: two DESCARTADA and three FUSIONADA, so the publishable total is *
 - [x] ES · [x] EN — `/cafeina-suplemento/` — Cafeína como suplemento \| ¡Potencia tu entreno!
 - [x] ES · [x] EN — `/aminoacidos/` — Aminoácidos, los cimientos de nuestros músculos
 
-### Nutrición Aplicada (111) — 30/111
+### Nutrición Aplicada (111) — 60/111
 
 - [x] ES · [x] EN — `/almuerzos-saludables-altos-en-proteinas/` — Almuerzos saludables y altos en proteínas
 - [x] ES · [x] EN — `/combinar-proteinas-carbohidratos/` — Tomar proteínas y carbohidratos en la misma comida, ¿Incorrecto?
@@ -1032,36 +1032,36 @@ never publish: two DESCARTADA and three FUSIONADA, so the publishable total is *
 - [x] ES · [x] EN — `/ganar-musculo-vegetarianos/` — Ganar musculo y ser vegetariano
 - [x] ES · [x] EN — `/remediar-intolerancia-lactosa/` — Como remediar la intolerancia a la lactosa
 - [x] ES · [x] EN — `/cerezas-post-entrenamiento/` — Cerezas post-entrenamiento
-- [ ] ES · [ ] EN — `/verdura-masa-muscular/` — Más verdura, más masa muscular
-- [ ] ES · [ ] EN — `/errores-a-evitar-en-la-dieta/` — Errores a evitar en la dieta
-- [ ] ES · [ ] EN — `/dieta-culturista-ocho-semanas/` — Dieta Culturista en ocho semanas \| La mejor dieta de 2026
-- [ ] ES · [ ] EN — `/vitaminas-minerales-para-el-gimnasio/` — Vitaminas y minerales clave para mejorar en el gimnasio
-- [ ] ES · [ ] EN — `/como-limitar-el-sodio/` — Estrategias para eliminar el exceso de sodio
-- [ ] ES · [ ] EN — `/bebida-isotonica-casera/` — Como hacernos nuestra propia bebida isotónica casera
-- [ ] ES · [ ] EN — `/batidos-para-volumen-muscular/` — Los Mejores Batidos para Volumen Muscular: Recetas Fáciles
-- [ ] ES · [ ] EN — `/comidas-perfectas-culturistas/` — Comidas perfectas para culturistas
-- [ ] ES · [ ] EN — `/nutricion-para-estar-en-forma/` — Nutrición para estar en forma
-- [ ] ES · [ ] EN — `/prepara-tu-cocina-para-una-dieta-anabolica/` — Prepara tu cocina para una dieta anabólica
-- [ ] ES · [ ] EN — `/sushi-alimento-saludable-alto-en-proteinas/` — Sushi, un alimento saludable con proteínas de la más alta calidad
-- [ ] ES · [ ] EN — `/comer-carne-positivo-por-esteroides/` — Comer carne puede provocar "positivos" por esteroides
-- [ ] ES · [ ] EN — `/dietas-muy-bajas-en-carbohidratos-culturismo/` — Dietas muy bajas en carbohidratos, un error para el culturismo
-- [ ] ES · [ ] EN — `/mejores-embutidos-para-la-dieta/` — Cuáles son los embutidos que puedes comer si estás a dieta
-- [ ] ES · [ ] EN — `/proteinas/` — Proteínas \| Cuantas tomar y mejores alimentos con proteínas
-- [ ] ES · [ ] EN — `/caseina-suero-leche/` — Caseína y suero: Las dos proteínas estrella de la leche
-- [ ] ES · [ ] EN — `/consumo-excesivo-de-proteinas/` — Exceso de proteínas en la dieta ¿Es Realmente Peligroso? ✔
-- [ ] ES · [ ] EN — `/ciclado-carbohidratos/` — Ciclado de Carbohidratos: Quema Grasa y Define tu Cuerpo
-- [ ] ES · [ ] EN — `/exceso-de-carbohidratos-se-convierte-en-grasa/` — El exceso de carbohidratos se convierte en grasa
-- [ ] ES · [ ] EN — `/carga-descarga-carbohidratos/` — Carga y Descarga de Hidratos ⇨ Puesta a Punto 100%
-- [ ] ES · [ ] EN — `/mezcla-de-carbohidratos-post-entrenamiento/` — Mezcla de carbohidratos post-entrenamiento
-- [ ] ES · [ ] EN — `/enfermedades-exceso-grasa/` — Enfermedades por exceso de grasa
-- [ ] ES · [ ] EN — `/grasa-y-testosterona/` — Grasa y Testosterona: ¡El Impacto Secreto en tu Cuerpo!
-- [ ] ES · [ ] EN — `/grasas-transaturadas/` — Grasas transaturadas, el enemigo a evitar
-- [ ] ES · [ ] EN — `/grasas/` — Grasas \| ¿Cuáles debes tomar y en que cantidad?
-- [ ] ES · [ ] EN — `/lenteja-dieta/` — La lenteja en tu dieta
-- [ ] ES · [ ] EN — `/guia-productos-light/` — Guía práctica para elegir productos light saludables
-- [ ] ES · [ ] EN — `/necesitas-desintoxicarte/` — Mejores alimentos para desintoxicar tu cuerpo
-- [ ] ES · [ ] EN — `/pizza-saludable/` — Pizza Saludable \| ¿Realidad o fantasía?
-- [ ] ES · [ ] EN — `/evitar-estrias/` — Cómo evitar las estrías: tips efectivos y sencillos
+- [x] ES · [x] EN — `/verdura-masa-muscular/` — Más verdura, más masa muscular
+- [x] ES · [x] EN — `/errores-a-evitar-en-la-dieta/` — Errores a evitar en la dieta
+- [x] ES · [x] EN — `/dieta-culturista-ocho-semanas/` — Dieta Culturista en ocho semanas \| La mejor dieta de 2026
+- [x] ES · [x] EN — `/vitaminas-minerales-para-el-gimnasio/` — Vitaminas y minerales clave para mejorar en el gimnasio
+- [x] ES · [x] EN — `/como-limitar-el-sodio/` — Estrategias para eliminar el exceso de sodio
+- [x] ES · [x] EN — `/bebida-isotonica-casera/` — Como hacernos nuestra propia bebida isotónica casera
+- [x] ES · [x] EN — `/batidos-para-volumen-muscular/` — Los Mejores Batidos para Volumen Muscular: Recetas Fáciles
+- [x] ES · [x] EN — `/comidas-perfectas-culturistas/` — Comidas perfectas para culturistas
+- [x] ES · [x] EN — `/nutricion-para-estar-en-forma/` — Nutrición para estar en forma
+- [x] ES · [x] EN — `/prepara-tu-cocina-para-una-dieta-anabolica/` — Prepara tu cocina para una dieta anabólica
+- [x] ES · [x] EN — `/sushi-alimento-saludable-alto-en-proteinas/` — Sushi, un alimento saludable con proteínas de la más alta calidad
+- [x] ES · [x] EN — `/comer-carne-positivo-por-esteroides/` — Comer carne puede provocar "positivos" por esteroides
+- [x] ES · [x] EN — `/dietas-muy-bajas-en-carbohidratos-culturismo/` — Dietas muy bajas en carbohidratos, un error para el culturismo
+- [x] ES · [x] EN — `/mejores-embutidos-para-la-dieta/` — Cuáles son los embutidos que puedes comer si estás a dieta
+- [x] ES · [x] EN — `/proteinas/` — Proteínas \| Cuantas tomar y mejores alimentos con proteínas
+- [x] ES · [x] EN — `/caseina-suero-leche/` — Caseína y suero: Las dos proteínas estrella de la leche
+- [x] ES · [x] EN — `/consumo-excesivo-de-proteinas/` — Exceso de proteínas en la dieta ¿Es Realmente Peligroso? ✔
+- [x] ES · [x] EN — `/ciclado-carbohidratos/` — Ciclado de Carbohidratos: Quema Grasa y Define tu Cuerpo
+- [x] ES · [x] EN — `/exceso-de-carbohidratos-se-convierte-en-grasa/` — El exceso de carbohidratos se convierte en grasa
+- [x] ES · [x] EN — `/carga-descarga-carbohidratos/` — Carga y Descarga de Hidratos ⇨ Puesta a Punto 100%
+- [x] ES · [x] EN — `/mezcla-de-carbohidratos-post-entrenamiento/` — Mezcla de carbohidratos post-entrenamiento
+- [x] ES · [x] EN — `/enfermedades-exceso-grasa/` — Enfermedades por exceso de grasa
+- [x] ES · [x] EN — `/grasa-y-testosterona/` — Grasa y Testosterona: ¡El Impacto Secreto en tu Cuerpo!
+- [x] ES · [x] EN — `/grasas-transaturadas/` — Grasas transaturadas, el enemigo a evitar
+- [x] ES · [x] EN — `/grasas/` — Grasas \| ¿Cuáles debes tomar y en que cantidad?
+- [x] ES · [x] EN — `/lenteja-dieta/` — La lenteja en tu dieta
+- [x] ES · [x] EN — `/guia-productos-light/` — Guía práctica para elegir productos light saludables
+- [x] ES · [x] EN — `/necesitas-desintoxicarte/` — Mejores alimentos para desintoxicar tu cuerpo
+- [x] ES · [x] EN — `/pizza-saludable/` — Pizza Saludable \| ¿Realidad o fantasía?
+- [x] ES · [x] EN — `/evitar-estrias/` — Cómo evitar las estrías: tips efectivos y sencillos
 - [ ] ES · [ ] EN — `/mejores-diureticos-naturales/` — Diuréticos naturales \| Los más efectivos en 2025
 - [ ] ES · [ ] EN — `/protegete-con-el-acido-fitico/` — Legumbres, cereales y semillas: El poder del ácido fítico
 - [ ] ES · [ ] EN — `/menu-saludable-con-carbohidratos-y-proteinas/` — Menú saludable: carbohidratos, proteínas y antioxidantes.
