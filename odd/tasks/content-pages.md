@@ -9,9 +9,9 @@ Legend: `ES` = Spanish published, `EN` = English published.
 
 ## Progress
 
-- **Built: 611 / 792** (ES 611, EN 611).
-- Last batch: batch 61 closed the supplement block;
-  611 pages built.
+- **Built: 621 / 792** (ES 621, EN 621).
+- Last batch: batch 62 closed the first ten Nutrición Aplicada rows;
+  621 pages built.
 - Blocks finished end to end: Entrenamiento del Hombro (9), Físicos de leyenda (12), Entrenamiento de
   la Espalda (10), Rutinas de Espalda (4), Espalda (1), Ejercicios de Espalda (31), Ejercicio
   Cardiovascular (32), Entrenamiento de las Piernas (18), Entrenamiento del Pecho (6), Ejercicios de Pecho (27), Ejercicios de Hombro (29), Rutinas de
@@ -25,9 +25,9 @@ Legend: `ES` = Spanish published, `EN` = English published.
 | Por Músculo | 80 | 80 |
 | Rutinas | 80 | 80 |
 | Ejercicios | 196 | 196 |
-| Nutrición | 191 | 38 |
+| Nutrición | 191 | 48 |
 | Mujer Fitness | 23 | 0 |
-| **Total** | **792** | **611** |
+| **Total** | **792** | **621** |
 
 The Built column counts the archive block of each page, not the frontmatter `block` (every guide ships
 with `block: "Entrenamiento"` for the site taxonomy). Five Entrenamiento rows are settled and will
@@ -992,16 +992,16 @@ never publish: two DESCARTADA and three FUSIONADA, so the publishable total is *
 - [x] ES · [x] EN — `/almuerzos-saludables-altos-en-proteinas/` — Almuerzos saludables y altos en proteínas
 - [x] ES · [x] EN — `/combinar-proteinas-carbohidratos/` — Tomar proteínas y carbohidratos en la misma comida, ¿Incorrecto?
 - [x] ES · [x] EN — `/cenar-verdura/` — ¿Verdura o fruta para cenar?
-- [ ] ES · [ ] EN — `/carbohidratos/` — Carbohidratos, como dominar el combustible de tus músculos
-- [ ] ES · [ ] EN — `/guia-definitiva-de-recomposicion-corporal/` — La guía definitiva de la recomposición corporal
-- [ ] ES · [ ] EN — `/culturismo-la-cura-para-el-envejecimiento/` — Cómo el culturismo combate el envejecimiento
-- [ ] ES · [ ] EN — `/suplementacion-deportiva-alcanzar-objetivos/` — Suplementación Deportiva: Guía para Alcanzar tus Objetivos
-- [ ] ES · [ ] EN — `/engordan-los-hidratos-en-las-cenas/` — ¿Engordan los hidratos en las cenas? \| ¡No, si haces esto!
-- [ ] ES · [ ] EN — `/sistema-inmune-con-vitaminas/` — Fortalece tu sistema inmune con vitaminas y progresa más
-- [ ] ES · [ ] EN — `/quieres-perder-grasa-no-solo-perder-peso/` — Quieres perder grasa, no solo perder peso. ¡Descubre cómo!
-- [ ] ES · [ ] EN — `/ayuno-intermitente/` — Ayuno Intermitente y Pesas: Guía para Maximizar Resultados
-- [ ] ES · [ ] EN — `/insulina-y-culturismo-aliada-ganar-masa-muscular/` — Insulina y culturismo: ¿Clave para más masa muscular?
-- [ ] ES · [ ] EN — `/vino-es-realmente-saludable/` — El vino... ¿Es realmente saludable?
+- [x] ES · [x] EN — `/carbohidratos/` — Carbohidratos, como dominar el combustible de tus músculos
+- [x] ES · [x] EN — `/guia-definitiva-de-recomposicion-corporal/` — La guía definitiva de la recomposición corporal
+- [x] ES · [x] EN — `/culturismo-la-cura-para-el-envejecimiento/` — Cómo el culturismo combate el envejecimiento
+- [x] ES · [x] EN — `/suplementacion-deportiva-alcanzar-objetivos/` — Suplementación Deportiva: Guía para Alcanzar tus Objetivos
+- [x] ES · [x] EN — `/engordan-los-hidratos-en-las-cenas/` — ¿Engordan los hidratos en las cenas? \| ¡No, si haces esto!
+- [x] ES · [x] EN — `/sistema-inmune-con-vitaminas/` — Fortalece tu sistema inmune con vitaminas y progresa más
+- [x] ES · [x] EN — `/quieres-perder-grasa-no-solo-perder-peso/` — Quieres perder grasa, no solo perder peso. ¡Descubre cómo!
+- [x] ES · [x] EN — `/ayuno-intermitente/` — Ayuno Intermitente y Pesas: Guía para Maximizar Resultados
+- [x] ES · [x] EN — `/insulina-y-culturismo-aliada-ganar-masa-muscular/` — Insulina y culturismo: ¿Clave para más masa muscular?
+- [x] ES · [x] EN — `/vino-es-realmente-saludable/` — El vino... ¿Es realmente saludable?
 - [ ] ES · [ ] EN — `/efecto-rebote-perder-peso/` — Efecto Rebote al Perder Peso: ¡Evita Recuperar Kilos Perdidos!
 - [ ] ES · [ ] EN — `/anabolismo-muscular/` — Anabolismo muscular, el estado de crecimiento en los músculos
 - [ ] ES · [ ] EN — `/utilizar-la-ventana-anabolica/` — La ventana anabólica: ¿mito o realidad?

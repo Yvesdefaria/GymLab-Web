@@ -9,32 +9,30 @@ Last updated: 2026-11-24. Read this first next session.
 
 ## State
 
-- **601 / 792 bilingual pages** (ES 601, EN 601).
+- **621 / 792 bilingual pages** (ES 621, EN 621).
 - Blocks by archive section: Entrenamiento **217/222** (the five missing rows are settled: two
   descartadas and three fusionadas), Por Músculo **80/80**, Rutinas **80/80**, Ejercicios
-  **196/196 — COMPLETO**, Nutrición 28/191, Mujer Fitness 0/23. The publishable total is 787.
-  Suplementos Dietéticos is 28/35.
-- **601 unique hero paths.** The dHash pairs under 7 are listed in `PLAN.md`; every new one was opened
-  and the equipment differs.
-- **Batch 60 is built, green and committed (2026-11-24).** The build has **1,218 pages** and **1,214
-  sitemap URLs**. Batch 60 closed CBD, supplement literacy, glutamine, tribulus, BCAAs, meal
-  replacements and glucosamine.
-- **Batch 61 is in progress in a parallel session.** Its brief (`odd/tasks/content-library-batch-61.md`)
-  and `-62.md` exist, and some pages, heroes and route edits are untracked or uncommitted. Do not
-  rebuild or overwrite those files; reconcile from the checklist and the batch 61 result when it lands.
+  **196/196 — COMPLETO**, Nutrición 48/191, Mujer Fitness 0/23. The publishable total is 787.
+  Suplementos Dietéticos is **35/35 — COMPLETO**.
+- **621 unique hero paths.** The dHash pairs under 7 are listed in `PLAN.md`; every new one was opened
+  and the equipment or subject differs.
+- **Batch 62 is built, green and committed (2026-11-24).** The build has **1,258 pages** and **1,254
+  sitemap URLs**. Batch 62 closed the first ten Nutrición Aplicada rows; batch 61 closed the supplement
+  block at 35/35.
 - Five archive rows are settled and must stay out: the FiveStars Fitness congress page (discarded),
   the AEKE S1 Pro page (discarded 2026-11-14), `/velocidad-repeticiones/` (fused into the tempo page,
   2026-11-14) and the two batch 20 fusions (2026-11-15).
 - **Production runs batch 32 (pushed 2026-11-16).** Batches 19 to 32 are live; `origin/main` is at
-  the batch 32 docs push. Batches 33 to 60 are committed locally and not pushed.
-- Batch records: `odd/tasks/content-library-batch-59.md`, `-60.md` and the session closes below.
+  the batch 32 docs push. Batches 33 to 62 are committed locally and not pushed.
+- Batch records: `odd/tasks/content-library-batch-60.md`, `-61.md`, `-62.md` and the session closes
+  below.
 
 ## Gates
 
 ```powershell
-npm run check:copy   # 30,651/30,651
-npm run build        # 1,218 pages
-npm run check:i18n   # 18,972/18,972, 1,214 sitemap URLs
+npm run check:copy   # 31,671/31,671
+npm run build        # 1,258 pages
+npm run check:i18n   # 19,592/19,592, 1,254 sitemap URLs
 npm run verify       # all three, in that order
 npm run dev          # http://localhost:4321
 ```
@@ -81,16 +79,24 @@ library and breaks every Python process that imports Pillow.
 - **Parallel writers.** A writer's gate can fail on the other writer's half-written files; verify your
   own files with a grep and report, never fix them.
 - **Dev server.** A long render loop can fail transiently while Astro recompiles; re-run before chasing
-  a layout bug.
+  a layout bug. Restart it before the render pass; a direct write can leave it serving stale content,
+  and a restart during writes can throw a transient `EPERM` on `.astro/data-store.json`.
+- **check:i18n and unbuilt routes.** The gate reads `dist` and throws `ENOENT` when `PAGES` lists a route
+  whose page is not built yet. Register the routes per batch, or remove the not-yet-built ones before
+  running it.
+- **Calculator links.** The article-only link pass flags `/es/calcular-calorias/` and
+  `/en/calorie-calculator/`; guide pages link articles only.
+- **Slug typos.** A link with a double m (`sistema-immunologico` instead of `sistema-inmunologico`)
+  passed `check:copy` and the build; only the parent link pass caught it.
 - **Repo state.** The local branch is more than 150 commits ahead of origin; production runs batch 32.
   The 18 untracked files (six stray images in the root, twelve mockups) predate this work.
 
 ## What is built
 
 The per-page record in `content-pages.md` is authoritative; this section summarises the blocks. At
-**601 pages**, Por Músculo (80/80), Rutinas (80/80) and **Ejercicios (196/196)** are closed, and
-Entrenamiento is effectively closed (217/222 with five settled rows). Nutrición is 28/191 (Suplementos
-28/35) and Mujer Fitness 0/23.
+**621 pages**, Por Músculo (80/80), Rutinas (80/80) and **Ejercicios (196/196)** are closed, and
+Entrenamiento is effectively closed (217/222 with five settled rows). Nutrición is 48/191
+(Suplementos **35/35 — COMPLETO**) and Mujer Fitness 0/23.
 
 The list below describes the blocks finished before batch 42; the checklist and the batch records carry
 the current per-page state.
@@ -147,16 +153,17 @@ the current per-page state.
 
 ## Next 10
 
-1. Batch 61 is already in progress in a parallel session: `/aminoacidos/`, `esteroides`,
-   `bloqueadores-de-carbohidratos`, `gaba-neotropico-para-la-calma-y-relajacion`, `vitargo`,
-   `ganadores-de-peso-mass-gainers`, `cafeina-suplemento`, `almuerzos-saludables-altos-en-proteinas`,
-   `combinar-proteinas-carbohidratos` and `cenar-verdura`. Batch 62 has a brief too. Reconcile from the
-   checklist and those batch results instead of rebuilding them.
-2. Ejercicios is closed at 196/196. Nutrición is 28/191; Mujer Fitness 0/23.
+1. Batch 63 takes the next Nutrición Aplicada rows: `/efecto-rebote-perder-peso/`,
+   `/anabolismo-muscular/`, `/utilizar-la-ventana-anabolica/`, `/dieta-ideal-para-adelgazar-perder-peso/`,
+   `/deficit-calorico-clave-para-perder-peso/`, `/legumbres-beneficiosas-dieta/`,
+   `/calculo-calorias-masa-muscular/`, `/cocinar-pollo-jugoso/`,
+   `/como-llevar-un-estilo-de-vida-fitness/` and `/nutricion-en-el-deporte-rendimiento-optimo/`.
+2. Ejercicios is closed at 196/196 and Suplementos Dietéticos at 35/35. Nutrición is 48/191; Mujer
+   Fitness 0/23.
 3. Keep the same copy, unique-hero and gate flow.
 4. Before publishing another photo from Shixart1985, Nenad Stojkovic, Miguel Angel Omaña Rojas, the
    InjuryMap family, PTPioneer, KeepActive Australia, Everkinetic or Wellcome Collection, compare the
-   Commons file title and the dHash against the 531 existing heroes. A crop of a library hero scores
+   Commons file title and the dHash against the 621 existing heroes. A crop of a library hero scores
    1-14 and is a duplicate in practice, not only at 0.
 5. The scaling architecture is deferred to PLAN Phase 7; do not implement it during content batches.
 
@@ -207,6 +214,34 @@ the current per-page state.
   documented in the batch 22 record.
 - **Push is the owner's call:** batches 19 to 32 were pushed on 2026-11-16 from `6293327` to
   `f7f8de1`. Batches 33 to 47, page commits and docs, remain local; production still serves 658 pages.
+
+## Session close (2026-11-24, wrap: batches 60 to 62)
+
+- Three batches in one session: **591 → 621 / 792**, 30 bilingual pairs, 60 files, 30 heroes.
+  Suplementos Dietéticos closed at **35/35 — COMPLETO**; Nutrición Aplicada opened at 10/111 and
+  Nutrición is now 48/191.
+- Final gates: `check:copy` **31,671/31,671**, build **1,258 pages**, `check:i18n` **19,592/19,592**,
+  sitemap **1,254 URLs** with 3,762 alternates. 398 internal links across the 60 files, **0 broken**;
+  420 page/width pairs clean.
+- **Editorial rules settled in this stretch:** steroids are published as a risk page with no protocol,
+  dose, PCT or sourcing detail; CBD is a label and THC-trace problem with no recovery claim; glutamine
+  is the honest "do not buy it" page; tribulus carries the corrected WADA line and no "dangerous list";
+  BCAAs are a subset of EAAs and add nothing at 1.6-2.2 g/kg; caffeine is 3-6 mg/kg with the 400 mg
+  daily ceiling; night carbs do not become fat by the clock; wine is alcohol and an IARC Group 1
+  carcinogen; training after 50 is strength work, not a cure; fasting is a calorie tool; insulin
+  transports and does not build.
+- **Gotchas that cost time:** `check:i18n` crashes with `ENOENT` when `PAGES` lists a route whose page
+  is not built yet, so routes are registered per batch; the article-only link pass flags
+  `/es/calcular-calorias/` and `/en/calorie-calculator/`, and two batch 62 pages needed that fix; a
+  double-m slug (`sistema-immunologico` instead of `sistema-inmunologico`) passed `check:copy` and the
+  build and was caught only by the parent link pass; `check:copy` asserts hero existence only for ES
+  entries, so an EN hero path still needs the parent check; the dev server had to be restarted before
+  each render pass and once hit a transient `EPERM` on its data store.
+- **Fixed by the parent:** four calculator links removed from `reemplazo-comidas` and the two batch 62
+  pages; one broken slug fixed on the immune page; short sections added to `reemplazo-comidas` and
+  `glucosamina` so the prose floor held.
+- **Next session starts at `/efecto-rebote-perder-peso/`** (batch 63). Batches 33 to 62 are committed
+  locally and not pushed; production runs batch 32. Push is the owner's call.
 
 ## Session close (2026-11-24, wrap: batches 51 to 60)
 

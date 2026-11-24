@@ -19,25 +19,24 @@ Last updated: 2026-11-16.
 - The landing, the three calculators, the 404 and the legal pages all ship in both locales.
 - Measurement and the SQL recipe: see "Reading analytics" below and `COMPLETED.md` Appendix B.
 
-## Content library — 601 / 792 (2026-11-24)
+## Content library — 621 / 792 (2026-11-24)
 
-- **601 bilingual pages** (ES 601, EN 601), **601 unique hero paths**. By archive section:
+- **621 bilingual pages** (ES 621, EN 621), **621 unique hero paths**. By archive section:
   Entrenamiento 217/222 (five rows settled), Por Músculo 80/80, **Rutinas 80/80**, Ejercicios
-  **196/196 — COMPLETO**, Nutrición 28/191, Mujer Fitness 0/23. Publishable total: **787**.
-  Suplementos Dietéticos is 28/35.
-- **Batches 33 to 60 are built, green and committed, not pushed.** The build has **1,218 pages** and
-  **1,214 sitemap URLs**.
-- Gates: `npm run verify` = `check:copy` **30,651/30,651** + build **1,218 pages** + `check:i18n`
-  **18,972/18,972** (1,214 sitemap URLs, 3,642 alternates).
+  **196/196 — COMPLETO**, Nutrición 48/191, Mujer Fitness 0/23. Publishable total: **787**.
+  Suplementos Dietéticos is **35/35 — COMPLETO**.
+- **Batches 33 to 62 are built, green and committed, not pushed.** The build has **1,258 pages** and
+  **1,254 sitemap URLs**.
+- Gates: `npm run verify` = `check:copy` **31,671/31,671** + build **1,258 pages** + `check:i18n`
+  **19,592/19,592** (1,254 sitemap URLs, 3,762 alternates).
 - Docs: `odd/tasks/content-library-session.md` (start here next session),
   `odd/tasks/content-pages.md` (per-page checklist + resume),
-  `odd/tasks/content-library-batch-60.md` (the last batch) and `odd/tasks/guides-page-contract.md`
+  `odd/tasks/content-library-batch-62.md` (the last batch) and `odd/tasks/guides-page-contract.md`
   (the page contract and copy gate).
-- **Next 10:** batch 61 is in progress in a parallel session: `aminoacidos`, `esteroides`,
-  `bloqueadores-de-carbohidratos`, `gaba-neotropico-para-la-calma-y-relajacion`, `vitargo`,
-  `ganadores-de-peso-mass-gainers`, `cafeina-suplemento`, and the first three Nutrición Aplicada pages
-  (`almuerzos-saludables-altos-en-proteinas`, `combinar-proteinas-carbohidratos`, `cenar-verdura`).
-  Batch 62 has a brief written.
+- **Next 10:** `efecto-rebote-perder-peso`, `anabolismo-muscular`, `utilizar-la-ventana-anabolica`,
+  `dieta-ideal-para-adelgazar-perder-peso`, `deficit-calorico-clave-para-perder-peso`,
+  `legumbres-beneficiosas-dieta`, `calculo-calorias-masa-muscular`, `cocinar-pollo-jugoso`,
+  `como-llevar-un-estilo-de-vida-fitness`, `nutricion-en-el-deporte-rendimiento-optimo`.
 - **Follow-up:** ten hero pairs score 6 or less: the pre-existing exact duplicate
   (`remo-polea-sentado` with `superserie-de-espalda-para-terminar-tu-rutina`), and nine near pairs at
   3-6 (`aperturas-mancuernas-banco-inclinado` vs `press-inclinado-barra` at 3;
