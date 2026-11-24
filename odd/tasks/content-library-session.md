@@ -7,6 +7,24 @@ Last updated: 2026-11-24. Read this first next session.
 - Repo rules: `AGENTS.md`
 - Engram project: `webgymlab`
 
+## Resume in one screen (2026-11-24)
+
+- Library **711 / 792** (711 ES + 711 EN), 711 unique heroes. Publishable left: **76** (Nutrición 53 +
+  Mujer Fitness 23). The five settled Entrenamiento rows stay out.
+- Last batch **71**; next batch **72**, starting at `/marisco-minerales-proteinas/`. The ten rows are in
+  `Next 10` below.
+- Production runs **batch 32** (pushed 2026-11-16). Batches 33-71 are local and green; push is the
+  owner's call.
+- Gates: `check:copy` **36,261/36,261**, build **1,438 pages**, `check:i18n` **22,382/22,382**, sitemap
+  **1,434 URLs**. Run `npm run verify`.
+- Flow: first unchecked row in `content-pages.md` -> one explorer maps the sources -> write
+  `odd/tasks/content-library-batch-NN.md` -> register routes in `astro.config.mjs` and
+  `scripts/check-i18n.mjs` -> two writers on disjoint files -> parent gates, link check, render and
+  dHash -> commit per page, then routes, then docs -> update this file, `PLAN.md` and the checklist.
+- Never: publish a row the owner has not authorized; write a how-to for a controlled substance or a
+  water/sodium cut; invent a dose; add an external, affiliate or brand link; reuse a hero; skip the
+  render pass or the parent link check.
+
 ## State
 
 - **711 / 792 bilingual pages** (ES 711, EN 711).
@@ -213,6 +231,24 @@ the current per-page state.
   documented in the batch 22 record.
 - **Push is the owner's call:** batches 19 to 32 were pushed on 2026-11-16 from `6293327` to
   `f7f8de1`. Batches 33 to 47, page commits and docs, remain local; production still serves 658 pages.
+
+## Session close (2026-11-24, day wrap: batches 60 to 71)
+
+- Twelve batches in one day: **591 → 711 / 792**, 120 bilingual pairs, 240 files, 120 heroes.
+  Suplementos Dietéticos closed at **35/35 — COMPLETO**; Nutrición Aplicada went from 0 to **90/111**;
+  Nutrición is **138/191**. Mujer Fitness remains 0/23.
+- Gates, opening (batch 59) vs closing (batch 71): `check:copy` **30,141 → 36,261**, build
+  **1,198 → 1,438 pages**, `check:i18n` **18,662 → 22,382**, sitemap **1,194 → 1,434 URLs**. 240 new
+  pages and 240 new sitemap URLs, all committed locally.
+- **Editorial policy applied:** safety and YMYL first (no injection, water-cut, diuretic, megadose or
+  steroid protocol), then false or fabricated claims, unsourced numbers, commercial/affiliate content,
+  legal/defamation risk, and register/format. Legitimate debate is qualified, not deleted; training
+  prescriptions are preserved; rows are not unpublished without the owner. The four stretch closes below
+  (60-62, 63-65, 66-68, 69-71) list the concrete corrections.
+- **Batch docs:** `odd/tasks/content-library-batch-60.md` through `-71.md`, each with scope, binding
+  conflicts, writer split and result. The checklist is authoritative.
+- **Next session starts at `/marisco-minerales-proteinas/`** (batch 72). Production still runs batch 32;
+  the push is the owner's call.
 
 ## Session close (2026-11-24, wrap: batches 69 to 71)
 
