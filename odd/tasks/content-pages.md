@@ -9,9 +9,8 @@ Legend: `ES` = Spanish published, `EN` = English published.
 
 ## Progress
 
-- **Built: 721 / 792** (ES 721, EN 721).
-- Last batch: batch 72 closed the Nutrición Aplicada food rows and opened Dietas de volumen;
-  721 pages built.
+- **Built: 731 / 792** (ES 731, EN 731).
+- Last batch: batch 73 closed ten Dietas de volumen rows; 731 pages built.
 - Blocks finished end to end: Entrenamiento del Hombro (9), Físicos de leyenda (12), Entrenamiento de
   la Espalda (10), Rutinas de Espalda (4), Espalda (1), Ejercicios de Espalda (31), Ejercicio
   Cardiovascular (32), Entrenamiento de las Piernas (18), Entrenamiento del Pecho (6), Ejercicios de Pecho (27), Ejercicios de Hombro (29), Rutinas de
@@ -25,9 +24,9 @@ Legend: `ES` = Spanish published, `EN` = English published.
 | Por Músculo | 80 | 80 |
 | Rutinas | 80 | 80 |
 | Ejercicios | 196 | 196 |
-| Nutrición | 191 | 148 |
+| Nutrición | 191 | 158 |
 | Mujer Fitness | 23 | 0 |
-| **Total** | **792** | **721** |
+| **Total** | **792** | **731** |
 
 The Built column counts the archive block of each page, not the frontmatter `block` (every guide ships
 with `block: "Entrenamiento"` for the site taxonomy). Five Entrenamiento rows are settled and will
@@ -1101,20 +1100,20 @@ never publish: two DESCARTADA and three FUSIONADA, so the publishable total is *
 - [x] ES · [x] EN — `/alubias-excelente-alimento-para-tus-musculos/` — Alubias, excelente alimento para tus músculos
 - [x] ES · [x] EN — `/comer-carne-roja/` — La carne roja
 
-### Dietas de Volumen Muscular (13) — 2/13
+### Dietas de Volumen Muscular (13) — 12/13
 
 - [x] ES · [x] EN — `/programa-de-entrenamiento-para-aumentar-testosterona/` — Programa de entrenamiento para aumentar la testosterona
 - [x] ES · [x] EN — `/dieta-de-hipertrofia-muscular/` — Dieta de Hipertrofia Muscular \| Como comer para ganar músculo
-- [ ] ES · [ ] EN — `/rutina-y-dieta-de-nick-olsen/` — Rutina y dieta de Nick Olsen
-- [ ] ES · [ ] EN — `/ganar-musculo-ectomorfos/` — Dieta para ganar músculo en ectomorfos \| Gana Peso en 2026
-- [ ] ES · [ ] EN — `/dietas-ganar-masa-muscular/` — Dietas para ganar masa muscular \| Más músculo en menos tiempo
-- [ ] ES · [ ] EN — `/dieta-volumen-muscular-3000-calorias/` — Dieta de Volumen de 3000 calorías \| +Volumen en 2025
-- [ ] ES · [ ] EN — `/dieta-volumen-phil-heath/` — Dieta de Phil Heath para volumen muscular
-- [ ] ES · [ ] EN — `/dieta-lee-haney/` — La dieta de Lee Haney para ganar músculo y definición
-- [ ] ES · [ ] EN — `/dieta-muscular-dorian-yates/` — Dieta y consejos nutricionales de Dorian Yates para ganar músculo
-- [ ] ES · [ ] EN — `/dieta-herculea/` — Dieta Hercúlea de volumen muscular
-- [ ] ES · [ ] EN — `/dieta-hiperproteica-ganar-musculo/` — Dieta hiperproteica para ganar músculo
-- [ ] ES · [ ] EN — `/dieta-ganar-musculo-limpio/` — Dieta para ganar músculo limpiamente \| La mejor en 2025 ©
+- [x] ES · [x] EN — `/rutina-y-dieta-de-nick-olsen/` — Rutina y dieta de Nick Olsen
+- [x] ES · [x] EN — `/ganar-musculo-ectomorfos/` — Dieta para ganar músculo en ectomorfos \| Gana Peso en 2026
+- [x] ES · [x] EN — `/dietas-ganar-masa-muscular/` — Dietas para ganar masa muscular \| Más músculo en menos tiempo
+- [x] ES · [x] EN — `/dieta-volumen-muscular-3000-calorias/` — Dieta de Volumen de 3000 calorías \| +Volumen en 2025
+- [x] ES · [x] EN — `/dieta-volumen-phil-heath/` — Dieta de Phil Heath para volumen muscular
+- [x] ES · [x] EN — `/dieta-lee-haney/` — La dieta de Lee Haney para ganar músculo y definición
+- [x] ES · [x] EN — `/dieta-muscular-dorian-yates/` — Dieta y consejos nutricionales de Dorian Yates para ganar músculo
+- [x] ES · [x] EN — `/dieta-herculea/` — Dieta Hercúlea de volumen muscular
+- [x] ES · [x] EN — `/dieta-hiperproteica-ganar-musculo/` — Dieta hiperproteica para ganar músculo
+- [x] ES · [x] EN — `/dieta-ganar-musculo-limpio/` — Dieta para ganar músculo limpiamente \| La mejor en 2025 ©
 - [ ] ES · [ ] EN — `/dieta-de-volumen-con-alimentos-para-maxima-energia/` — Dieta de volumen con alimentos para máxima energia
 
 ### Dietas de Definición Muscular (17)

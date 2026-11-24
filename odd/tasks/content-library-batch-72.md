@@ -228,9 +228,10 @@ heroes, 140 page/width pairs with no clipped cell.
 
 - 10 bilingual pairs, 20 files, 10 heroes. Library 711 → **721 / 792**. Nutrición **148/191**;
   Nutrición Aplicada 98/111; Dietas de volumen 2/13.
-- Gates: `check:copy` **36,771/36,771**, build **1,458 pages**, `check:i18n` **22,692/22,692**.
-  Sitemap measured **1,455 URLs** because one batch 73 page was already on disk; the batch-72 clean
-  count is 1,454.
+- Gates: `check:copy` **36,771/36,771**, build **1,457 clean pages**, `check:i18n` **22,692/22,692**.
+  The parent's `index.html` count read 1,458 and the sitemap 1,455 because one batch 73 page was
+  already on disk; the clean batch-72 numbers are 1,457 pages and 1,454 sitemap URLs. The real formula
+  is pages = articles × 2 + 15 and sitemap = articles × 2 + 12, not the ×2+16 the older records used.
 - Structural checks: 106 internal links, **0 broken**; 0 files with problems in the parent verifier,
   which covers word floor, title, description, alternate, BOM, em dash, register and hero size.
 - **Corrections made:** shellfish is protein, zinc and iodine with salt and purine limits, not a
