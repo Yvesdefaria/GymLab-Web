@@ -630,6 +630,16 @@ const ROUTE_PAIRS = [
   ['/creatina-cafeina', '/creatine-and-caffeine'],
   ['/alcohol-creatina', '/creatine-and-alcohol'],
   ['/creatina-rinon', '/creatine-and-kidneys'],
+  ['/aceite-de-cbd-beneficios-para-el-deportista', '/cbd-oil-for-athletes'],
+  ['/como-empezar-a-tomar-suplementos-deportivos', '/how-to-start-taking-supplements'],
+  ['/como-mejorar-tus-fisico-con-estos-batidos', '/pre-and-post-workout-shakes'],
+  ['/suplementos-dieteticos', '/best-supplements-for-the-gym'],
+  ['/los-dos-mejores-suplementos-para-ganar-masa-muscular', '/best-supplements-for-muscle-growth'],
+  ['/suplementos-glutamina', '/glutamine-supplement'],
+  ['/tribulus-terrestris', '/tribulus-terrestris'],
+  ['/aminoacidos-bcaas', '/bcaa-supplements'],
+  ['/reemplazo-comidas', '/meal-replacement-shakes'],
+  ['/glucosamina', '/glucosamine-for-joints'],
 ];
 
 const pairFor = (pathname) => {

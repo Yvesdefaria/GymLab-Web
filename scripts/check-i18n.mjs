@@ -1201,6 +1201,26 @@ const PAGES = [
   ['en', '/en/creatine-and-alcohol/'],
   ['es', '/es/creatina-rinon/'],
   ['en', '/en/creatine-and-kidneys/'],
+  ['es', '/es/aceite-de-cbd-beneficios-para-el-deportista/'],
+  ['en', '/en/cbd-oil-for-athletes/'],
+  ['es', '/es/como-empezar-a-tomar-suplementos-deportivos/'],
+  ['en', '/en/how-to-start-taking-supplements/'],
+  ['es', '/es/como-mejorar-tus-fisico-con-estos-batidos/'],
+  ['en', '/en/pre-and-post-workout-shakes/'],
+  ['es', '/es/suplementos-dieteticos/'],
+  ['en', '/en/best-supplements-for-the-gym/'],
+  ['es', '/es/los-dos-mejores-suplementos-para-ganar-masa-muscular/'],
+  ['en', '/en/best-supplements-for-muscle-growth/'],
+  ['es', '/es/suplementos-glutamina/'],
+  ['en', '/en/glutamine-supplement/'],
+  ['es', '/es/tribulus-terrestris/'],
+  ['en', '/en/tribulus-terrestris/'],
+  ['es', '/es/aminoacidos-bcaas/'],
+  ['en', '/en/bcaa-supplements/'],
+  ['es', '/es/reemplazo-comidas/'],
+  ['en', '/en/meal-replacement-shakes/'],
+  ['es', '/es/glucosamina/'],
+  ['en', '/en/glucosamine-for-joints/'],
 ];
 
 // Content routes, keyed by a stable id with the slug each locale publishes. The
@@ -2419,6 +2439,16 @@ const ROUTES = {
   creatineAndCaffeine: { es: '/creatina-cafeina', en: '/creatine-and-caffeine' },
   creatineAndAlcohol: { es: '/alcohol-creatina', en: '/creatine-and-alcohol' },
   creatineAndKidneys: { es: '/creatina-rinon', en: '/creatine-and-kidneys' },
+  cbdOil: { es: '/aceite-de-cbd-beneficios-para-el-deportista', en: '/cbd-oil-for-athletes' },
+  howToStartSupplements: { es: '/como-empezar-a-tomar-suplementos-deportivos', en: '/how-to-start-taking-supplements' },
+  prePostWorkoutShakes: { es: '/como-mejorar-tus-fisico-con-estos-batidos', en: '/pre-and-post-workout-shakes' },
+  bestSupplements: { es: '/suplementos-dieteticos', en: '/best-supplements-for-the-gym' },
+  bestSupplementsMuscle: { es: '/los-dos-mejores-suplementos-para-ganar-masa-muscular', en: '/best-supplements-for-muscle-growth' },
+  glutamineSupplement: { es: '/suplementos-glutamina', en: '/glutamine-supplement' },
+  tribulus: { es: '/tribulus-terrestris', en: '/tribulus-terrestris' },
+  bcaaSupplement: { es: '/aminoacidos-bcaas', en: '/bcaa-supplements' },
+  mealReplacement: { es: '/reemplazo-comidas', en: '/meal-replacement-shakes' },
+  glucosamine: { es: '/glucosamina', en: '/glucosamine-for-joints' },
 };
 
 const routeId = (path) => {
