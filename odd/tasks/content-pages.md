@@ -9,9 +9,9 @@ Legend: `ES` = Spanish published, `EN` = English published.
 
 ## Progress
 
-- **Built: 591 / 792** (ES 591, EN 591).
-- Last batch: batch 59 continued the supplement block;
-  591 pages built.
+- **Built: 601 / 792** (ES 601, EN 601).
+- Last batch: batch 60 continued the supplement block;
+  601 pages built.
 - Blocks finished end to end: Entrenamiento del Hombro (9), Físicos de leyenda (12), Entrenamiento de
   la Espalda (10), Rutinas de Espalda (4), Espalda (1), Ejercicios de Espalda (31), Ejercicio
   Cardiovascular (32), Entrenamiento de las Piernas (18), Entrenamiento del Pecho (6), Ejercicios de Pecho (27), Ejercicios de Hombro (29), Rutinas de
@@ -25,9 +25,9 @@ Legend: `ES` = Spanish published, `EN` = English published.
 | Por Músculo | 80 | 80 |
 | Rutinas | 80 | 80 |
 | Ejercicios | 196 | 196 |
-| Nutrición | 191 | 18 |
+| Nutrición | 191 | 28 |
 | Mujer Fitness | 23 | 0 |
-| **Total** | **792** | **591** |
+| **Total** | **792** | **601** |
 
 The Built column counts the archive block of each page, not the frontmatter `block` (every guide ships
 with `block: "Entrenamiento"` for the site taxonomy). Five Entrenamiento rows are settled and will
@@ -949,7 +949,7 @@ never publish: two DESCARTADA and three FUSIONADA, so the publishable total is *
 
 ## Nutrición (191)
 
-### Suplementos Dietéticos (35) — 18/35
+### Suplementos Dietéticos (35) — 28/35
 
 - [x] ES · [x] EN — `/errores-al-tomar-suplementos/` — Errores al tomar suplementos: mitos y verdades
 - [x] ES · [x] EN — `/carnitina/` — Carnitina \| ¿Sirve para perder peso y quemar grasa?
@@ -969,16 +969,16 @@ never publish: two DESCARTADA and three FUSIONADA, so the publishable total is *
 - [x] ES · [x] EN — `/creatina-cafeina/` — Creatina y Cafeína: Efectos Combinados en el Rendimiento
 - [x] ES · [x] EN — `/alcohol-creatina/` — Creatina y Alcohol: Impacto en el Rendimiento y la Salud
 - [x] ES · [x] EN — `/creatina-rinon/` — Creatina y Daños al Riñón: Mitos y Realidades
-- [ ] ES · [ ] EN — `/aceite-de-cbd-beneficios-para-el-deportista/` — Aceite de CBD y beneficios para el deportista
-- [ ] ES · [ ] EN — `/como-empezar-a-tomar-suplementos-deportivos/` — Cómo empezar a tomar suplementos deportivos
-- [ ] ES · [ ] EN — `/como-mejorar-tus-fisico-con-estos-batidos/` — Como mejorar tu físico con batidos pre y post entrenamiento
-- [ ] ES · [ ] EN — `/suplementos-dieteticos/` — Los mejores suplementos dietéticos si vas al gimnasio
-- [ ] ES · [ ] EN — `/los-dos-mejores-suplementos-para-ganar-masa-muscular/` — Los dos mejores suplementos para ganar masa muscular
-- [ ] ES · [ ] EN — `/suplementos-glutamina/` — Suplementos de Glutamina: Beneficios y Uso en el Deporte
-- [ ] ES · [ ] EN — `/tribulus-terrestris/` — Tribulus Terrestris
-- [ ] ES · [ ] EN — `/aminoacidos-bcaas/` — BCAAS (Aminoácidos ramificados)
-- [ ] ES · [ ] EN — `/reemplazo-comidas/` — Reemplazos o Sustitutivos de comidas
-- [ ] ES · [ ] EN — `/glucosamina/` — Glucosamina, suplemento para las articulaciones
+- [x] ES · [x] EN — `/aceite-de-cbd-beneficios-para-el-deportista/` — Aceite de CBD y beneficios para el deportista
+- [x] ES · [x] EN — `/como-empezar-a-tomar-suplementos-deportivos/` — Cómo empezar a tomar suplementos deportivos
+- [x] ES · [x] EN — `/como-mejorar-tus-fisico-con-estos-batidos/` — Como mejorar tu físico con batidos pre y post entrenamiento
+- [x] ES · [x] EN — `/suplementos-dieteticos/` — Los mejores suplementos dietéticos si vas al gimnasio
+- [x] ES · [x] EN — `/los-dos-mejores-suplementos-para-ganar-masa-muscular/` — Los dos mejores suplementos para ganar masa muscular
+- [x] ES · [x] EN — `/suplementos-glutamina/` — Suplementos de Glutamina: Beneficios y Uso en el Deporte
+- [x] ES · [x] EN — `/tribulus-terrestris/` — Tribulus Terrestris
+- [x] ES · [x] EN — `/aminoacidos-bcaas/` — BCAAS (Aminoácidos ramificados)
+- [x] ES · [x] EN — `/reemplazo-comidas/` — Reemplazos o Sustitutivos de comidas
+- [x] ES · [x] EN — `/glucosamina/` — Glucosamina, suplemento para las articulaciones
 - [ ] ES · [ ] EN — `/esteroides/` — Esteroides
 - [ ] ES · [ ] EN — `/bloqueadores-de-carbohidratos/` — Bloqueadores de carbohidratos \| ¿Milagro o pérdida de dinero?
 - [ ] ES · [ ] EN — `/gaba-neotropico-para-la-calma-y-relajacion/` — Gaba, el Neotrópico para la calma y la relajación
