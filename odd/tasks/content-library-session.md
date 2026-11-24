@@ -1,6 +1,6 @@
 # Content library — session handoff
 
-Last updated: 2026-11-19. Read this first next session.
+Last updated: 2026-11-24. Read this first next session.
 
 - Per-page record: `odd/tasks/content-pages.md`
 - Page contract and copy gate: `odd/tasks/guides-page-contract.md`
@@ -201,6 +201,30 @@ the current per-page state.
   documented in the batch 22 record.
 - **Push is the owner's call:** batches 19 to 32 were pushed on 2026-11-16 from `6293327` to
   `f7f8de1`. Batches 33 to 47, page commits and docs, remain local; production still serves 658 pages.
+
+## Session close (2026-11-24, wrap: batches 51 to 59)
+
+- Nine batches in this stretch: **501 → 591 / 792**, 90 bilingual pairs, 180 files, 90 heroes.
+  Closed end to end: Básicos (6), Cuádriceps (23), Pierna (6), Gemelo (9) and Bíceps y Antebrazo (22).
+  The **Ejercicios block is complete at 196/196**; only Nutrición (18/191) and Mujer Fitness (0/23)
+  remain in the whole library.
+- Final gates: `check:copy` **30,141/30,141**, build **1,198 pages**, `check:i18n` **18,662/18,662**,
+  sitemap **1,194 URLs** with 3,582 alternates. Every batch closed with 0 broken links and 0 clipped
+  cells across 140 page/width pairs.
+- **Editorial rules settled in this stretch:** grip width does not choose a biceps head (shoulder angle
+  does); the calf rule is straight knee for the gastrocnemius and bent knee for the soleus; creatine is
+  monohydrate 3-5 g/day with no rituals; protein is 1.6-2.2 g/kg; supplements carry no purchase CTAs,
+  brands or medical claims. The published `sentadilla-sin-lesiones` knee-travel sentence and the
+  `ganar-masa-muscular` creatine/GH sentence were corrected to match.
+- **Gotchas that cost time:** the dev server can keep serving stale content after a direct file write,
+  so restart it before the render pass; the article-only link check flags calculator routes, so pages
+  link articles only; four shrug pages and several thin sources closed under the 600-word floor and
+  needed one substantive section each; the provider's weekly limit killed both writers mid-batch and
+  relaunching the next day from the same briefs worked without duplicate pages.
+- **Next session starts at `/aminoacidos-bcaas/`** (batch 60) and continues Suplementos Dietéticos
+  (18/35), then the rest of Nutrición and Mujer Fitness.
+- Batches 33 to 59 are committed locally and not pushed; production runs batch 32. Push is the owner's
+  call.
 
 ## Session close (2026-11-23, batch 59)
 
