@@ -9,9 +9,9 @@ Legend: `ES` = Spanish published, `EN` = English published.
 
 ## Progress
 
-- **Built: 711 / 792** (ES 711, EN 711).
-- Last batch: batch 71 closed ninety Nutrición Aplicada rows across batches 63-71;
-  711 pages built.
+- **Built: 721 / 792** (ES 721, EN 721).
+- Last batch: batch 72 closed the Nutrición Aplicada food rows and opened Dietas de volumen;
+  721 pages built.
 - Blocks finished end to end: Entrenamiento del Hombro (9), Físicos de leyenda (12), Entrenamiento de
   la Espalda (10), Rutinas de Espalda (4), Espalda (1), Ejercicios de Espalda (31), Ejercicio
   Cardiovascular (32), Entrenamiento de las Piernas (18), Entrenamiento del Pecho (6), Ejercicios de Pecho (27), Ejercicios de Hombro (29), Rutinas de
@@ -25,9 +25,9 @@ Legend: `ES` = Spanish published, `EN` = English published.
 | Por Músculo | 80 | 80 |
 | Rutinas | 80 | 80 |
 | Ejercicios | 196 | 196 |
-| Nutrición | 191 | 138 |
+| Nutrición | 191 | 148 |
 | Mujer Fitness | 23 | 0 |
-| **Total** | **792** | **711** |
+| **Total** | **792** | **721** |
 
 The Built column counts the archive block of each page, not the frontmatter `block` (every guide ships
 with `block: "Entrenamiento"` for the site taxonomy). Five Entrenamiento rows are settled and will
@@ -987,7 +987,7 @@ never publish: two DESCARTADA and three FUSIONADA, so the publishable total is *
 - [x] ES · [x] EN — `/cafeina-suplemento/` — Cafeína como suplemento \| ¡Potencia tu entreno!
 - [x] ES · [x] EN — `/aminoacidos/` — Aminoácidos, los cimientos de nuestros músculos
 
-### Nutrición Aplicada (111) — 90/111
+### Nutrición Aplicada (111) — 98/111
 
 - [x] ES · [x] EN — `/almuerzos-saludables-altos-en-proteinas/` — Almuerzos saludables y altos en proteínas
 - [x] ES · [x] EN — `/combinar-proteinas-carbohidratos/` — Tomar proteínas y carbohidratos en la misma comida, ¿Incorrecto?
@@ -1092,19 +1092,19 @@ never publish: two DESCARTADA and three FUSIONADA, so the publishable total is *
 - [x] ES · [x] EN — `/mitos-dieta-saludable/` — Mitos a evitar en tu dieta saludable
 - [x] ES · [x] EN — `/la-piramide-alimentaria-falla/` — La pirámide alimentaria falla
 - [x] ES · [x] EN — `/guia-definitiva-sobre-el-consumo-de-pescado/` — Guía definitiva sobre el consumo de pescado
-- [ ] ES · [ ] EN — `/marisco-minerales-proteinas/` — Marisco, fuente de minerales y proteínas
-- [ ] ES · [ ] EN — `/problema-raciones-de-comida/` — El gran problema del tamaño de las raciones de comida
-- [ ] ES · [ ] EN — `/como-identificar-y-evitar-una-dieta-milagro/` — Como identificar y evitar una "dieta milagro"
-- [ ] ES · [ ] EN — `/sustituir-batidos-por-comida-natural/` — Sustituye los batidos proteicos por comida natural
-- [ ] ES · [ ] EN — `/frutos-secos/` — Frutos secos, beneficios y nutrientes
-- [ ] ES · [ ] EN — `/combinaciones-de-alimentos-saludables-y-no-saludables/` — Combinaciones de alimentos saludables y no saludables
-- [ ] ES · [ ] EN — `/alubias-excelente-alimento-para-tus-musculos/` — Alubias, excelente alimento para tus músculos
-- [ ] ES · [ ] EN — `/comer-carne-roja/` — La carne roja
+- [x] ES · [x] EN — `/marisco-minerales-proteinas/` — Marisco, fuente de minerales y proteínas
+- [x] ES · [x] EN — `/problema-raciones-de-comida/` — El gran problema del tamaño de las raciones de comida
+- [x] ES · [x] EN — `/como-identificar-y-evitar-una-dieta-milagro/` — Como identificar y evitar una "dieta milagro"
+- [x] ES · [x] EN — `/sustituir-batidos-por-comida-natural/` — Sustituye los batidos proteicos por comida natural
+- [x] ES · [x] EN — `/frutos-secos/` — Frutos secos, beneficios y nutrientes
+- [x] ES · [x] EN — `/combinaciones-de-alimentos-saludables-y-no-saludables/` — Combinaciones de alimentos saludables y no saludables
+- [x] ES · [x] EN — `/alubias-excelente-alimento-para-tus-musculos/` — Alubias, excelente alimento para tus músculos
+- [x] ES · [x] EN — `/comer-carne-roja/` — La carne roja
 
-### Dietas de Volumen Muscular (13)
+### Dietas de Volumen Muscular (13) — 2/13
 
-- [ ] ES · [ ] EN — `/programa-de-entrenamiento-para-aumentar-testosterona/` — Programa de entrenamiento para aumentar la testosterona
-- [ ] ES · [ ] EN — `/dieta-de-hipertrofia-muscular/` — Dieta de Hipertrofia Muscular \| Como comer para ganar músculo
+- [x] ES · [x] EN — `/programa-de-entrenamiento-para-aumentar-testosterona/` — Programa de entrenamiento para aumentar la testosterona
+- [x] ES · [x] EN — `/dieta-de-hipertrofia-muscular/` — Dieta de Hipertrofia Muscular \| Como comer para ganar músculo
 - [ ] ES · [ ] EN — `/rutina-y-dieta-de-nick-olsen/` — Rutina y dieta de Nick Olsen
 - [ ] ES · [ ] EN — `/ganar-musculo-ectomorfos/` — Dieta para ganar músculo en ectomorfos \| Gana Peso en 2026
 - [ ] ES · [ ] EN — `/dietas-ganar-masa-muscular/` — Dietas para ganar masa muscular \| Más músculo en menos tiempo
