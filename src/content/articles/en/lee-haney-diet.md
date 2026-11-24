@@ -40,7 +40,7 @@ The original breakfast adds up to 800 calories, but its own food gives 880: 390 
 
 ## How much protein that is
 
-All five meals carry protein: eggs, tuna, chicken, yoghurt, milk and mozzarella. With standard portions, the estimate puts the day between 170 and 190 grams, close to 20 percent of calories. That is a high figure and fits a large bodybuilder. The original text does not give Haney's weight at the time, so it cannot be turned into grams per kilo. At 95 kilos, the same 180 grams work out to about 1.9 g/kg, inside the useful range; the menu only reads as excessive because the body weight is never printed.
+All five meals carry protein: eggs, tuna, chicken, yoghurt, milk and mozzarella. With standard portions, the estimate puts the day between 170 and 190 grams, close to 20 percent of calories. That is high in absolute terms and normal for a large bodybuilder: 180 g at 95 kilos is 1.9 g/kg. The original text does not give Haney's weight at the time, so the sum cannot be closed.
 
 ## The contest version, without a source
 

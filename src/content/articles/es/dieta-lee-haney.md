@@ -40,7 +40,7 @@ El desayuno del texto original suma 800 calorías, pero sus propios alimentos da
 
 ## Cuánta proteína sale
 
-Las cinco comidas llevan proteína: huevos, atún, pollo, yogur, leche y mozzarella. Con raciones estándar, la estimación deja el día entre 170 y 190 gramos, cerca del 20 por ciento de las calorías. Es una cifra alta y encaja con un culturista grande. El texto original no dice el peso de Haney en esa época, así que no se puede convertir en gramos por kilo. Con 95 kilos, esos 180 gramos quedan en unos 1,9 g/kg, dentro del rango útil; el menú solo parece excesivo porque el artículo nunca indica el peso corporal.
+Las cinco comidas llevan proteína: huevos, atún, pollo, yogur, leche y mozzarella. Con raciones estándar, la estimación deja el día entre 170 y 190 gramos, cerca del 20 por ciento de las calorías. Es una cifra alta en términos absolutos y normal para un culturista grande: 180 g en 95 kilos son 1,9 g/kg. El texto original no dice el peso de Haney en esa época, así que la cuenta no se puede cerrar.
 
 ## La versión de definición, sin fuente
 
