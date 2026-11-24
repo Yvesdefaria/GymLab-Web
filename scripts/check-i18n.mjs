@@ -1441,6 +1441,26 @@ const PAGES = [
   ['en', '/en/food-pyramid/'],
   ['es', '/es/guia-definitiva-sobre-el-consumo-de-pescado/'],
   ['en', '/en/fish-consumption-guide/'],
+  ['es', '/es/marisco-minerales-proteinas/'],
+  ['en', '/en/shellfish-nutrition/'],
+  ['es', '/es/problema-raciones-de-comida/'],
+  ['en', '/en/portion-sizes/'],
+  ['es', '/es/como-identificar-y-evitar-una-dieta-milagro/'],
+  ['en', '/en/fad-diets/'],
+  ['es', '/es/sustituir-batidos-por-comida-natural/'],
+  ['en', '/en/shakes-vs-whole-foods/'],
+  ['es', '/es/frutos-secos/'],
+  ['en', '/en/nuts-nutrition/'],
+  ['es', '/es/combinaciones-de-alimentos-saludables-y-no-saludables/'],
+  ['en', '/en/food-combinations/'],
+  ['es', '/es/alubias-excelente-alimento-para-tus-musculos/'],
+  ['en', '/en/beans-for-muscle/'],
+  ['es', '/es/comer-carne-roja/'],
+  ['en', '/en/red-meat/'],
+  ['es', '/es/programa-de-entrenamiento-para-aumentar-testosterona/'],
+  ['en', '/en/testosterone-training/'],
+  ['es', '/es/dieta-de-hipertrofia-muscular/'],
+  ['en', '/en/muscle-hypertrophy-diet/'],
 ];
 
 // Content routes, keyed by a stable id with the slug each locale publishes. The
@@ -2779,6 +2799,22 @@ const ROUTES = {
   dietMyths: { es: '/mitos-dieta-saludable', en: '/healthy-diet-myths' },
   foodPyramid: { es: '/la-piramide-alimentaria-falla', en: '/food-pyramid' },
   fishGuide: { es: '/guia-definitiva-sobre-el-consumo-de-pescado', en: '/fish-consumption-guide' },
+  shellfishNutrition: { es: '/marisco-minerales-proteinas', en: '/shellfish-nutrition' },
+  portionSizes: { es: '/problema-raciones-de-comida', en: '/portion-sizes' },
+  fadDiets: { es: '/como-identificar-y-evitar-una-dieta-milagro', en: '/fad-diets' },
+  shakesVsFood: { es: '/sustituir-batidos-por-comida-natural', en: '/shakes-vs-whole-foods' },
+  nutsNutrition: { es: '/frutos-secos', en: '/nuts-nutrition' },
+  foodCombinations: {
+    es: '/combinaciones-de-alimentos-saludables-y-no-saludables',
+    en: '/food-combinations',
+  },
+  beansForMuscle: { es: '/alubias-excelente-alimento-para-tus-musculos', en: '/beans-for-muscle' },
+  redMeat: { es: '/comer-carne-roja', en: '/red-meat' },
+  testosteroneTraining: {
+    es: '/programa-de-entrenamiento-para-aumentar-testosterona',
+    en: '/testosterone-training',
+  },
+  hypertrophyDiet: { es: '/dieta-de-hipertrofia-muscular', en: '/muscle-hypertrophy-diet' },
 };
 
 const routeId = (path) => {

@@ -750,6 +750,16 @@ const ROUTE_PAIRS = [
   ['/mitos-dieta-saludable', '/healthy-diet-myths'],
   ['/la-piramide-alimentaria-falla', '/food-pyramid'],
   ['/guia-definitiva-sobre-el-consumo-de-pescado', '/fish-consumption-guide'],
+  ['/marisco-minerales-proteinas', '/shellfish-nutrition'],
+  ['/problema-raciones-de-comida', '/portion-sizes'],
+  ['/como-identificar-y-evitar-una-dieta-milagro', '/fad-diets'],
+  ['/sustituir-batidos-por-comida-natural', '/shakes-vs-whole-foods'],
+  ['/frutos-secos', '/nuts-nutrition'],
+  ['/combinaciones-de-alimentos-saludables-y-no-saludables', '/food-combinations'],
+  ['/alubias-excelente-alimento-para-tus-musculos', '/beans-for-muscle'],
+  ['/comer-carne-roja', '/red-meat'],
+  ['/programa-de-entrenamiento-para-aumentar-testosterona', '/testosterone-training'],
+  ['/dieta-de-hipertrofia-muscular', '/muscle-hypertrophy-diet'],
 ];
 
 const pairFor = (pathname) => {
