@@ -770,6 +770,16 @@ const ROUTE_PAIRS = [
   ['/dieta-herculea', '/herculean-diet'],
   ['/dieta-hiperproteica-ganar-musculo', '/high-protein-diet-for-muscle'],
   ['/dieta-ganar-musculo-limpio', '/clean-bulk-diet'],
+  ['/dieta-de-volumen-con-alimentos-para-maxima-energia', '/high-energy-bulking-foods'],
+  ['/definicion-muscular', '/muscle-definition'],
+  ['/dietas-definicion-muscular', '/cutting-diets'],
+  ['/quemar-grasa', '/fat-burning'],
+  ['/perder-peso', '/weight-loss-guide'],
+  ['/dieta-dash-guia-completa', '/dash-diet'],
+  ['/dieta-baja-en-grasas', '/low-fat-diet'],
+  ['/ejemplos-de-dietas-de-definicion-muscular-para-culturistas', '/bodybuilder-cutting-diet'],
+  ['/dieta-maxima-definicion-muscular', '/maximum-definition-diet'],
+  ['/dieta-estacional', '/diet-by-goals'],
 ];
 
 const pairFor = (pathname) => {

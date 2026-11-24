@@ -1481,6 +1481,26 @@ const PAGES = [
   ['en', '/en/high-protein-diet-for-muscle/'],
   ['es', '/es/dieta-ganar-musculo-limpio/'],
   ['en', '/en/clean-bulk-diet/'],
+  ['es', '/es/dieta-de-volumen-con-alimentos-para-maxima-energia/'],
+  ['en', '/en/high-energy-bulking-foods/'],
+  ['es', '/es/definicion-muscular/'],
+  ['en', '/en/muscle-definition/'],
+  ['es', '/es/dietas-definicion-muscular/'],
+  ['en', '/en/cutting-diets/'],
+  ['es', '/es/quemar-grasa/'],
+  ['en', '/en/fat-burning/'],
+  ['es', '/es/perder-peso/'],
+  ['en', '/en/weight-loss-guide/'],
+  ['es', '/es/dieta-dash-guia-completa/'],
+  ['en', '/en/dash-diet/'],
+  ['es', '/es/dieta-baja-en-grasas/'],
+  ['en', '/en/low-fat-diet/'],
+  ['es', '/es/ejemplos-de-dietas-de-definicion-muscular-para-culturistas/'],
+  ['en', '/en/bodybuilder-cutting-diet/'],
+  ['es', '/es/dieta-maxima-definicion-muscular/'],
+  ['en', '/en/maximum-definition-diet/'],
+  ['es', '/es/dieta-estacional/'],
+  ['en', '/en/diet-by-goals/'],
 ];
 
 // Content routes, keyed by a stable id with the slug each locale publishes. The
@@ -2848,6 +2868,22 @@ const ROUTES = {
   herculeanDiet: { es: '/dieta-herculea', en: '/herculean-diet' },
   highProteinDiet: { es: '/dieta-hiperproteica-ganar-musculo', en: '/high-protein-diet-for-muscle' },
   cleanBulkDiet: { es: '/dieta-ganar-musculo-limpio', en: '/clean-bulk-diet' },
+  highEnergyBulking: {
+    es: '/dieta-de-volumen-con-alimentos-para-maxima-energia',
+    en: '/high-energy-bulking-foods',
+  },
+  muscleDefinition: { es: '/definicion-muscular', en: '/muscle-definition' },
+  cuttingDiets: { es: '/dietas-definicion-muscular', en: '/cutting-diets' },
+  fatBurning: { es: '/quemar-grasa', en: '/fat-burning' },
+  weightLossGuide: { es: '/perder-peso', en: '/weight-loss-guide' },
+  dashDiet: { es: '/dieta-dash-guia-completa', en: '/dash-diet' },
+  lowFatDiet: { es: '/dieta-baja-en-grasas', en: '/low-fat-diet' },
+  bodybuilderCutting: {
+    es: '/ejemplos-de-dietas-de-definicion-muscular-para-culturistas',
+    en: '/bodybuilder-cutting-diet',
+  },
+  maximumDefinition: { es: '/dieta-maxima-definicion-muscular', en: '/maximum-definition-diet' },
+  dietByGoals: { es: '/dieta-estacional', en: '/diet-by-goals' },
 };
 
 const routeId = (path) => {
