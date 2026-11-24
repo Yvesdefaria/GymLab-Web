@@ -9,9 +9,9 @@ Legend: `ES` = Spanish published, `EN` = English published.
 
 ## Progress
 
-- **Built: 681 / 792** (ES 681, EN 681).
-- Last batch: batch 68 closed sixty Nutrición Aplicada rows across batches 63-68;
-  681 pages built.
+- **Built: 711 / 792** (ES 711, EN 711).
+- Last batch: batch 71 closed ninety Nutrición Aplicada rows across batches 63-71;
+  711 pages built.
 - Blocks finished end to end: Entrenamiento del Hombro (9), Físicos de leyenda (12), Entrenamiento de
   la Espalda (10), Rutinas de Espalda (4), Espalda (1), Ejercicios de Espalda (31), Ejercicio
   Cardiovascular (32), Entrenamiento de las Piernas (18), Entrenamiento del Pecho (6), Ejercicios de Pecho (27), Ejercicios de Hombro (29), Rutinas de
@@ -25,9 +25,9 @@ Legend: `ES` = Spanish published, `EN` = English published.
 | Por Músculo | 80 | 80 |
 | Rutinas | 80 | 80 |
 | Ejercicios | 196 | 196 |
-| Nutrición | 191 | 108 |
+| Nutrición | 191 | 138 |
 | Mujer Fitness | 23 | 0 |
-| **Total** | **792** | **681** |
+| **Total** | **792** | **711** |
 
 The Built column counts the archive block of each page, not the frontmatter `block` (every guide ships
 with `block: "Entrenamiento"` for the site taxonomy). Five Entrenamiento rows are settled and will
@@ -987,7 +987,7 @@ never publish: two DESCARTADA and three FUSIONADA, so the publishable total is *
 - [x] ES · [x] EN — `/cafeina-suplemento/` — Cafeína como suplemento \| ¡Potencia tu entreno!
 - [x] ES · [x] EN — `/aminoacidos/` — Aminoácidos, los cimientos de nuestros músculos
 
-### Nutrición Aplicada (111) — 60/111
+### Nutrición Aplicada (111) — 90/111
 
 - [x] ES · [x] EN — `/almuerzos-saludables-altos-en-proteinas/` — Almuerzos saludables y altos en proteínas
 - [x] ES · [x] EN — `/combinar-proteinas-carbohidratos/` — Tomar proteínas y carbohidratos en la misma comida, ¿Incorrecto?
@@ -1062,36 +1062,36 @@ never publish: two DESCARTADA and three FUSIONADA, so the publishable total is *
 - [x] ES · [x] EN — `/necesitas-desintoxicarte/` — Mejores alimentos para desintoxicar tu cuerpo
 - [x] ES · [x] EN — `/pizza-saludable/` — Pizza Saludable \| ¿Realidad o fantasía?
 - [x] ES · [x] EN — `/evitar-estrias/` — Cómo evitar las estrías: tips efectivos y sencillos
-- [ ] ES · [ ] EN — `/mejores-diureticos-naturales/` — Diuréticos naturales \| Los más efectivos en 2025
-- [ ] ES · [ ] EN — `/protegete-con-el-acido-fitico/` — Legumbres, cereales y semillas: El poder del ácido fítico
-- [ ] ES · [ ] EN — `/menu-saludable-con-carbohidratos-y-proteinas/` — Menú saludable: carbohidratos, proteínas y antioxidantes.
-- [ ] ES · [ ] EN — `/dieta-vegetariana-para-adelgazar-sin-pasar-hambre/` — Dieta vegetariana para adelgazar sin pasar hambre
-- [ ] ES · [ ] EN — `/comer-limpio/` — Comer limpio \| Qué es, beneficios y como lograrlo
-- [ ] ES · [ ] EN — `/diferencias-entre-verduras-y-hortalizas/` — ¿Cuál es la diferencia entre Verduras y Hortalizas?
-- [ ] ES · [ ] EN — `/deporte-cafe-de-especialidad/` — Si haces deporte deberías estar tomando café de especialidad
-- [ ] ES · [ ] EN — `/la-mejor-forma-de-controlar-lo-que-comes/` — La mejor forma de controlar lo que comes \| ¡Simple y efectivo!
-- [ ] ES · [ ] EN — `/radicales-libres/` — Los radicales libres
-- [ ] ES · [ ] EN — `/evita-los-agentes-cancerigenos-de-la-carne/` — Evita los agentes cancerígenos de la carne
-- [ ] ES · [ ] EN — `/tortas-de-arroz/` — Tortas de Arroz: ¿Amigas o Enemigas? ¡Descúbrelo!
-- [ ] ES · [ ] EN — `/alimentos-transgenicos/` — ¿Son Seguros los Alimentos Transgénicos? Descubre la Verdad
-- [ ] ES · [ ] EN — `/comer-deprisa-engorda/` — Comer Deprisa Engorda: Efectos y Consejos para Evitarlo
-- [ ] ES · [ ] EN — `/alcohol-el-enemigo-a-evitar/` — Alcohol, el peor enemigo para tus progresos en el gimnasio
-- [ ] ES · [ ] EN — `/sexo-rendimiento-deportivo/` — Sexo y rendimiento deportivo
-- [ ] ES · [ ] EN — `/dividir-comidas-dieta/` — Como dividir las comidas en tu dieta
-- [ ] ES · [ ] EN — `/cuanta-energia-calorias-necesita-nuestro-cuerpo/` — ¿Cuanta energía (calorías) necesita nuestro cuerpo?
-- [ ] ES · [ ] EN — `/fruta-cortada-propiedades/` — La fruta fresca cortada no pierde propiedades
-- [ ] ES · [ ] EN — `/antioxidantes-sinteticos-veneno-alimentos/` — Antioxidantes sintéticos, el veneno de los alimentos
-- [ ] ES · [ ] EN — `/alimentos-congelados-son-beneficiosos/` — Alimentos congelados en tu dieta de gimnasio
-- [ ] ES · [ ] EN — `/alimentos-con-vitamina-d/` — Alimentos con vitamina D \| ¡Lo mejor para tu dieta!
-- [ ] ES · [ ] EN — `/vitamina-b6-piridoxina/` — Alimentos con Vitamina B6 o Piridoxina
-- [ ] ES · [ ] EN — `/vitamina-b3-niacina/` — Alimentos con Vitamina B3 o Niacina
-- [ ] ES · [ ] EN — `/guia-basica-belleza-masculina/` — Guía básica de belleza masculina
-- [ ] ES · [ ] EN — `/nunca-es-tarde-para-empezar-a-hacer-ejercicio/` — Nunca es tarde para empezar a hacer ejercicio
-- [ ] ES · [ ] EN — `/el-complejo-de-adonis-un-problema-de-nuestro-tiempo/` — El Complejo de Adonis, un problema de nuestro tiempo
-- [ ] ES · [ ] EN — `/ginecomastia-lo-que-debes-saber/` — Ginecomastia, lo que debes saber
-- [ ] ES · [ ] EN — `/mitos-dieta-saludable/` — Mitos a evitar en tu dieta saludable
-- [ ] ES · [ ] EN — `/la-piramide-alimentaria-falla/` — La pirámide alimentaria falla
-- [ ] ES · [ ] EN — `/guia-definitiva-sobre-el-consumo-de-pescado/` — Guía definitiva sobre el consumo de pescado
+- [x] ES · [x] EN — `/mejores-diureticos-naturales/` — Diuréticos naturales \| Los más efectivos en 2025
+- [x] ES · [x] EN — `/protegete-con-el-acido-fitico/` — Legumbres, cereales y semillas: El poder del ácido fítico
+- [x] ES · [x] EN — `/menu-saludable-con-carbohidratos-y-proteinas/` — Menú saludable: carbohidratos, proteínas y antioxidantes.
+- [x] ES · [x] EN — `/dieta-vegetariana-para-adelgazar-sin-pasar-hambre/` — Dieta vegetariana para adelgazar sin pasar hambre
+- [x] ES · [x] EN — `/comer-limpio/` — Comer limpio \| Qué es, beneficios y como lograrlo
+- [x] ES · [x] EN — `/diferencias-entre-verduras-y-hortalizas/` — ¿Cuál es la diferencia entre Verduras y Hortalizas?
+- [x] ES · [x] EN — `/deporte-cafe-de-especialidad/` — Si haces deporte deberías estar tomando café de especialidad
+- [x] ES · [x] EN — `/la-mejor-forma-de-controlar-lo-que-comes/` — La mejor forma de controlar lo que comes \| ¡Simple y efectivo!
+- [x] ES · [x] EN — `/radicales-libres/` — Los radicales libres
+- [x] ES · [x] EN — `/evita-los-agentes-cancerigenos-de-la-carne/` — Evita los agentes cancerígenos de la carne
+- [x] ES · [x] EN — `/tortas-de-arroz/` — Tortas de Arroz: ¿Amigas o Enemigas? ¡Descúbrelo!
+- [x] ES · [x] EN — `/alimentos-transgenicos/` — ¿Son Seguros los Alimentos Transgénicos? Descubre la Verdad
+- [x] ES · [x] EN — `/comer-deprisa-engorda/` — Comer Deprisa Engorda: Efectos y Consejos para Evitarlo
+- [x] ES · [x] EN — `/alcohol-el-enemigo-a-evitar/` — Alcohol, el peor enemigo para tus progresos en el gimnasio
+- [x] ES · [x] EN — `/sexo-rendimiento-deportivo/` — Sexo y rendimiento deportivo
+- [x] ES · [x] EN — `/dividir-comidas-dieta/` — Como dividir las comidas en tu dieta
+- [x] ES · [x] EN — `/cuanta-energia-calorias-necesita-nuestro-cuerpo/` — ¿Cuanta energía (calorías) necesita nuestro cuerpo?
+- [x] ES · [x] EN — `/fruta-cortada-propiedades/` — La fruta fresca cortada no pierde propiedades
+- [x] ES · [x] EN — `/antioxidantes-sinteticos-veneno-alimentos/` — Antioxidantes sintéticos, el veneno de los alimentos
+- [x] ES · [x] EN — `/alimentos-congelados-son-beneficiosos/` — Alimentos congelados en tu dieta de gimnasio
+- [x] ES · [x] EN — `/alimentos-con-vitamina-d/` — Alimentos con vitamina D \| ¡Lo mejor para tu dieta!
+- [x] ES · [x] EN — `/vitamina-b6-piridoxina/` — Alimentos con Vitamina B6 o Piridoxina
+- [x] ES · [x] EN — `/vitamina-b3-niacina/` — Alimentos con Vitamina B3 o Niacina
+- [x] ES · [x] EN — `/guia-basica-belleza-masculina/` — Guía básica de belleza masculina
+- [x] ES · [x] EN — `/nunca-es-tarde-para-empezar-a-hacer-ejercicio/` — Nunca es tarde para empezar a hacer ejercicio
+- [x] ES · [x] EN — `/el-complejo-de-adonis-un-problema-de-nuestro-tiempo/` — El Complejo de Adonis, un problema de nuestro tiempo
+- [x] ES · [x] EN — `/ginecomastia-lo-que-debes-saber/` — Ginecomastia, lo que debes saber
+- [x] ES · [x] EN — `/mitos-dieta-saludable/` — Mitos a evitar en tu dieta saludable
+- [x] ES · [x] EN — `/la-piramide-alimentaria-falla/` — La pirámide alimentaria falla
+- [x] ES · [x] EN — `/guia-definitiva-sobre-el-consumo-de-pescado/` — Guía definitiva sobre el consumo de pescado
 - [ ] ES · [ ] EN — `/marisco-minerales-proteinas/` — Marisco, fuente de minerales y proteínas
 - [ ] ES · [ ] EN — `/problema-raciones-de-comida/` — El gran problema del tamaño de las raciones de comida
 - [ ] ES · [ ] EN — `/como-identificar-y-evitar-una-dieta-milagro/` — Como identificar y evitar una "dieta milagro"

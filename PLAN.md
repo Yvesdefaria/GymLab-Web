@@ -19,25 +19,25 @@ Last updated: 2026-11-16.
 - The landing, the three calculators, the 404 and the legal pages all ship in both locales.
 - Measurement and the SQL recipe: see "Reading analytics" below and `COMPLETED.md` Appendix B.
 
-## Content library — 681 / 792 (2026-11-24)
+## Content library — 711 / 792 (2026-11-24)
 
-- **681 bilingual pages** (ES 681, EN 681), **681 unique hero paths**. By archive section:
+- **711 bilingual pages** (ES 711, EN 711), **711 unique hero paths**. By archive section:
   Entrenamiento 217/222 (five rows settled), Por Músculo 80/80, **Rutinas 80/80**, Ejercicios
-  **196/196 — COMPLETO**, Nutrición 108/191, Mujer Fitness 0/23. Publishable total: **787**.
+  **196/196 — COMPLETO**, Nutrición 138/191, Mujer Fitness 0/23. Publishable total: **787**.
   Suplementos Dietéticos is **35/35 — COMPLETO**.
-- **Batches 33 to 68 are built, green and committed, not pushed.** The build has **1,378 pages** and
-  **1,374 sitemap URLs**.
-- Gates: `npm run verify` = `check:copy` **34,731/34,731** + build **1,378 pages** + `check:i18n`
-  **21,452/21,452** (1,374 sitemap URLs, 4,122 alternates).
+- **Batches 33 to 71 are built, green and committed, not pushed.** The build has **1,438 pages** and
+  **1,434 sitemap URLs**.
+- Gates: `npm run verify` = `check:copy` **36,261/36,261** + build **1,438 pages** + `check:i18n`
+  **22,382/22,382** (1,434 sitemap URLs, 4,302 alternates).
 - Docs: `odd/tasks/content-library-session.md` (start here next session),
   `odd/tasks/content-pages.md` (per-page checklist + resume),
-  `odd/tasks/content-library-batch-68.md` (the last batch) and `odd/tasks/guides-page-contract.md`
+  `odd/tasks/content-library-batch-71.md` (the last batch) and `odd/tasks/guides-page-contract.md`
   (the page contract and copy gate).
-- **Next 10:** `mejores-diureticos-naturales`, `protegete-con-el-acido-fitico`,
-  `menu-saludable-con-carbohidratos-y-proteinas`, `dieta-vegetariana-para-adelgazar-sin-pasar-hambre`,
-  `comer-limpio`, `diferencias-entre-verduras-y-hortalizas`, `deporte-cafe-de-especialidad`,
-  `la-mejor-forma-de-controlar-lo-que-comes`, `radicales-libres`,
-  `evita-los-agentes-cancerigenos-de-la-carne`.
+- **Next 10:** `marisco-minerales-proteinas`, `problema-raciones-de-comida`,
+  `como-identificar-y-evitar-una-dieta-milagro`, `sustituir-batidos-por-comida-natural`,
+  `frutos-secos`, `combinaciones-de-alimentos-saludables-y-no-saludables`,
+  `alubias-excelente-alimento-para-tus-musculos`, `comer-carne-roja`,
+  `programa-de-entrenamiento-para-aumentar-testosterona`, `dieta-de-hipertrofia-muscular`.
 - **Follow-up:** ten hero pairs score 6 or less: the pre-existing exact duplicate
   (`remo-polea-sentado` with `superserie-de-espalda-para-terminar-tu-rutina`), and nine near pairs at
   3-6 (`aperturas-mancuernas-banco-inclinado` vs `press-inclinado-barra` at 3;
