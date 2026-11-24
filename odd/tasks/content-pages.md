@@ -9,8 +9,8 @@ Legend: `ES` = Spanish published, `EN` = English published.
 
 ## Progress
 
-- **Built: 731 / 792** (ES 731, EN 731).
-- Last batch: batch 73 closed ten Dietas de volumen rows; 731 pages built.
+- **Built: 741 / 792** (ES 741, EN 741).
+- Last batch: batch 74 closed Dietas de volumen and opened Dietas de definición; 741 pages built.
 - Blocks finished end to end: Entrenamiento del Hombro (9), Físicos de leyenda (12), Entrenamiento de
   la Espalda (10), Rutinas de Espalda (4), Espalda (1), Ejercicios de Espalda (31), Ejercicio
   Cardiovascular (32), Entrenamiento de las Piernas (18), Entrenamiento del Pecho (6), Ejercicios de Pecho (27), Ejercicios de Hombro (29), Rutinas de
@@ -24,9 +24,9 @@ Legend: `ES` = Spanish published, `EN` = English published.
 | Por Músculo | 80 | 80 |
 | Rutinas | 80 | 80 |
 | Ejercicios | 196 | 196 |
-| Nutrición | 191 | 158 |
+| Nutrición | 191 | 168 |
 | Mujer Fitness | 23 | 0 |
-| **Total** | **792** | **731** |
+| **Total** | **792** | **741** |
 
 The Built column counts the archive block of each page, not the frontmatter `block` (every guide ships
 with `block: "Entrenamiento"` for the site taxonomy). Five Entrenamiento rows are settled and will
@@ -1100,7 +1100,7 @@ never publish: two DESCARTADA and three FUSIONADA, so the publishable total is *
 - [x] ES · [x] EN — `/alubias-excelente-alimento-para-tus-musculos/` — Alubias, excelente alimento para tus músculos
 - [x] ES · [x] EN — `/comer-carne-roja/` — La carne roja
 
-### Dietas de Volumen Muscular (13) — 12/13
+### Dietas de Volumen Muscular (13) — COMPLETO
 
 - [x] ES · [x] EN — `/programa-de-entrenamiento-para-aumentar-testosterona/` — Programa de entrenamiento para aumentar la testosterona
 - [x] ES · [x] EN — `/dieta-de-hipertrofia-muscular/` — Dieta de Hipertrofia Muscular \| Como comer para ganar músculo
@@ -1114,19 +1114,19 @@ never publish: two DESCARTADA and three FUSIONADA, so the publishable total is *
 - [x] ES · [x] EN — `/dieta-herculea/` — Dieta Hercúlea de volumen muscular
 - [x] ES · [x] EN — `/dieta-hiperproteica-ganar-musculo/` — Dieta hiperproteica para ganar músculo
 - [x] ES · [x] EN — `/dieta-ganar-musculo-limpio/` — Dieta para ganar músculo limpiamente \| La mejor en 2025 ©
-- [ ] ES · [ ] EN — `/dieta-de-volumen-con-alimentos-para-maxima-energia/` — Dieta de volumen con alimentos para máxima energia
+- [x] ES · [x] EN — `/dieta-de-volumen-con-alimentos-para-maxima-energia/` — Dieta de volumen con alimentos para máxima energia
 
-### Dietas de Definición Muscular (17)
+### Dietas de Definición Muscular (17) — 9/17
 
-- [ ] ES · [ ] EN — `/definicion-muscular/` — Definición muscular, como comer y entrenar para definir
-- [ ] ES · [ ] EN — `/dietas-definicion-muscular/` — Dietas de Definición Muscular \| Pierde grasa en 2026
-- [ ] ES · [ ] EN — `/quemar-grasa/` — Quemar Grasa, los mejores consejos para eliminarla
-- [ ] ES · [ ] EN — `/perder-peso/` — Perder peso, la guía mas completa para adelgazar
-- [ ] ES · [ ] EN — `/dieta-dash-guia-completa/` — Dieta DASH: Qué es, beneficios y cómo hacerla en 2026
-- [ ] ES · [ ] EN — `/dieta-baja-en-grasas/` — Dieta baja en grasas ⇨ Consejos y ejemplos de menús sin grasa
-- [ ] ES · [ ] EN — `/ejemplos-de-dietas-de-definicion-muscular-para-culturistas/` — Guía para una dieta de definición culturista perfecta
-- [ ] ES · [ ] EN — `/dieta-maxima-definicion-muscular/` — Dieta para máxima definición muscular ✓
-- [ ] ES · [ ] EN — `/dieta-estacional/` — Dieta por Objetivos: el camino hacia tus resultados
+- [x] ES · [x] EN — `/definicion-muscular/` — Definición muscular, como comer y entrenar para definir
+- [x] ES · [x] EN — `/dietas-definicion-muscular/` — Dietas de Definición Muscular \| Pierde grasa en 2026
+- [x] ES · [x] EN — `/quemar-grasa/` — Quemar Grasa, los mejores consejos para eliminarla
+- [x] ES · [x] EN — `/perder-peso/` — Perder peso, la guía mas completa para adelgazar
+- [x] ES · [x] EN — `/dieta-dash-guia-completa/` — Dieta DASH: Qué es, beneficios y cómo hacerla en 2026
+- [x] ES · [x] EN — `/dieta-baja-en-grasas/` — Dieta baja en grasas ⇨ Consejos y ejemplos de menús sin grasa
+- [x] ES · [x] EN — `/ejemplos-de-dietas-de-definicion-muscular-para-culturistas/` — Guía para una dieta de definición culturista perfecta
+- [x] ES · [x] EN — `/dieta-maxima-definicion-muscular/` — Dieta para máxima definición muscular ✓
+- [x] ES · [x] EN — `/dieta-estacional/` — Dieta por Objetivos: el camino hacia tus resultados
 - [ ] ES · [ ] EN — `/dietas-culturistas-segun-objetivos-volumen-definicion-y-mantenimiento/` — Dieta culturista: Volumen, definición y mantenimiento
 - [ ] ES · [ ] EN — `/dieta-definicion-culturista/` — Dieta extrema de definición culturista
 - [ ] ES · [ ] EN — `/dieta-disociada/` — Dieta Disociada
