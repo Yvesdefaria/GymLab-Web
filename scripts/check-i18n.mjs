@@ -1461,6 +1461,26 @@ const PAGES = [
   ['en', '/en/testosterone-training/'],
   ['es', '/es/dieta-de-hipertrofia-muscular/'],
   ['en', '/en/muscle-hypertrophy-diet/'],
+  ['es', '/es/rutina-y-dieta-de-nick-olsen/'],
+  ['en', '/en/nick-olsen-routine-diet/'],
+  ['es', '/es/ganar-musculo-ectomorfos/'],
+  ['en', '/en/ectomorph-muscle-gain/'],
+  ['es', '/es/dietas-ganar-masa-muscular/'],
+  ['en', '/en/diets-to-build-muscle/'],
+  ['es', '/es/dieta-volumen-muscular-3000-calorias/'],
+  ['en', '/en/3000-calorie-bulking-diet/'],
+  ['es', '/es/dieta-volumen-phil-heath/'],
+  ['en', '/en/phil-heath-diet/'],
+  ['es', '/es/dieta-lee-haney/'],
+  ['en', '/en/lee-haney-diet/'],
+  ['es', '/es/dieta-muscular-dorian-yates/'],
+  ['en', '/en/dorian-yates-diet/'],
+  ['es', '/es/dieta-herculea/'],
+  ['en', '/en/herculean-diet/'],
+  ['es', '/es/dieta-hiperproteica-ganar-musculo/'],
+  ['en', '/en/high-protein-diet-for-muscle/'],
+  ['es', '/es/dieta-ganar-musculo-limpio/'],
+  ['en', '/en/clean-bulk-diet/'],
 ];
 
 // Content routes, keyed by a stable id with the slug each locale publishes. The
@@ -2815,6 +2835,19 @@ const ROUTES = {
     en: '/testosterone-training',
   },
   hypertrophyDiet: { es: '/dieta-de-hipertrofia-muscular', en: '/muscle-hypertrophy-diet' },
+  nickOlsen: { es: '/rutina-y-dieta-de-nick-olsen', en: '/nick-olsen-routine-diet' },
+  ectomorphGain: { es: '/ganar-musculo-ectomorfos', en: '/ectomorph-muscle-gain' },
+  buildMuscleDiets: { es: '/dietas-ganar-masa-muscular', en: '/diets-to-build-muscle' },
+  bulking3000: {
+    es: '/dieta-volumen-muscular-3000-calorias',
+    en: '/3000-calorie-bulking-diet',
+  },
+  philHeathDiet: { es: '/dieta-volumen-phil-heath', en: '/phil-heath-diet' },
+  leeHaneyDiet: { es: '/dieta-lee-haney', en: '/lee-haney-diet' },
+  dorianYatesDiet: { es: '/dieta-muscular-dorian-yates', en: '/dorian-yates-diet' },
+  herculeanDiet: { es: '/dieta-herculea', en: '/herculean-diet' },
+  highProteinDiet: { es: '/dieta-hiperproteica-ganar-musculo', en: '/high-protein-diet-for-muscle' },
+  cleanBulkDiet: { es: '/dieta-ganar-musculo-limpio', en: '/clean-bulk-diet' },
 };
 
 const routeId = (path) => {

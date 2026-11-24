@@ -760,6 +760,16 @@ const ROUTE_PAIRS = [
   ['/comer-carne-roja', '/red-meat'],
   ['/programa-de-entrenamiento-para-aumentar-testosterona', '/testosterone-training'],
   ['/dieta-de-hipertrofia-muscular', '/muscle-hypertrophy-diet'],
+  ['/rutina-y-dieta-de-nick-olsen', '/nick-olsen-routine-diet'],
+  ['/ganar-musculo-ectomorfos', '/ectomorph-muscle-gain'],
+  ['/dietas-ganar-masa-muscular', '/diets-to-build-muscle'],
+  ['/dieta-volumen-muscular-3000-calorias', '/3000-calorie-bulking-diet'],
+  ['/dieta-volumen-phil-heath', '/phil-heath-diet'],
+  ['/dieta-lee-haney', '/lee-haney-diet'],
+  ['/dieta-muscular-dorian-yates', '/dorian-yates-diet'],
+  ['/dieta-herculea', '/herculean-diet'],
+  ['/dieta-hiperproteica-ganar-musculo', '/high-protein-diet-for-muscle'],
+  ['/dieta-ganar-musculo-limpio', '/clean-bulk-diet'],
 ];
 
 const pairFor = (pathname) => {
