@@ -9,9 +9,9 @@ Legend: `ES` = Spanish published, `EN` = English published.
 
 ## Progress
 
-- **Built: 621 / 792** (ES 621, EN 621).
-- Last batch: batch 62 closed the first ten Nutrición Aplicada rows;
-  621 pages built.
+- **Built: 651 / 792** (ES 651, EN 651).
+- Last batch: batch 65 closed thirty Nutrición Aplicada rows across batches 63-65;
+  651 pages built.
 - Blocks finished end to end: Entrenamiento del Hombro (9), Físicos de leyenda (12), Entrenamiento de
   la Espalda (10), Rutinas de Espalda (4), Espalda (1), Ejercicios de Espalda (31), Ejercicio
   Cardiovascular (32), Entrenamiento de las Piernas (18), Entrenamiento del Pecho (6), Ejercicios de Pecho (27), Ejercicios de Hombro (29), Rutinas de
@@ -25,9 +25,9 @@ Legend: `ES` = Spanish published, `EN` = English published.
 | Por Músculo | 80 | 80 |
 | Rutinas | 80 | 80 |
 | Ejercicios | 196 | 196 |
-| Nutrición | 191 | 48 |
+| Nutrición | 191 | 78 |
 | Mujer Fitness | 23 | 0 |
-| **Total** | **792** | **621** |
+| **Total** | **792** | **651** |
 
 The Built column counts the archive block of each page, not the frontmatter `block` (every guide ships
 with `block: "Entrenamiento"` for the site taxonomy). Five Entrenamiento rows are settled and will
@@ -987,7 +987,7 @@ never publish: two DESCARTADA and three FUSIONADA, so the publishable total is *
 - [x] ES · [x] EN — `/cafeina-suplemento/` — Cafeína como suplemento \| ¡Potencia tu entreno!
 - [x] ES · [x] EN — `/aminoacidos/` — Aminoácidos, los cimientos de nuestros músculos
 
-### Nutrición Aplicada (111)
+### Nutrición Aplicada (111) — 30/111
 
 - [x] ES · [x] EN — `/almuerzos-saludables-altos-en-proteinas/` — Almuerzos saludables y altos en proteínas
 - [x] ES · [x] EN — `/combinar-proteinas-carbohidratos/` — Tomar proteínas y carbohidratos en la misma comida, ¿Incorrecto?
@@ -1002,36 +1002,36 @@ never publish: two DESCARTADA and three FUSIONADA, so the publishable total is *
 - [x] ES · [x] EN — `/ayuno-intermitente/` — Ayuno Intermitente y Pesas: Guía para Maximizar Resultados
 - [x] ES · [x] EN — `/insulina-y-culturismo-aliada-ganar-masa-muscular/` — Insulina y culturismo: ¿Clave para más masa muscular?
 - [x] ES · [x] EN — `/vino-es-realmente-saludable/` — El vino... ¿Es realmente saludable?
-- [ ] ES · [ ] EN — `/efecto-rebote-perder-peso/` — Efecto Rebote al Perder Peso: ¡Evita Recuperar Kilos Perdidos!
-- [ ] ES · [ ] EN — `/anabolismo-muscular/` — Anabolismo muscular, el estado de crecimiento en los músculos
-- [ ] ES · [ ] EN — `/utilizar-la-ventana-anabolica/` — La ventana anabólica: ¿mito o realidad?
-- [ ] ES · [ ] EN — `/dieta-ideal-para-adelgazar-perder-peso/` — Descubre la dieta ideal para adelgazar y alcanzar tu peso deseado
-- [ ] ES · [ ] EN — `/deficit-calorico-clave-para-perder-peso/` — Déficit Calórico \| ¿El único camino para perder peso?
-- [ ] ES · [ ] EN — `/legumbres-beneficiosas-dieta/` — Legumbres, beneficiosas para nuestra dieta
-- [ ] ES · [ ] EN — `/calculo-calorias-masa-muscular/` — Cálculo de calorías para ganar masa muscular
-- [ ] ES · [ ] EN — `/cocinar-pollo-jugoso/` — Consejos para cocinar el pollo y hacerlo más jugoso
-- [ ] ES · [ ] EN — `/como-llevar-un-estilo-de-vida-fitness/` — Como llevar un estilo de vida Fitness
-- [ ] ES · [ ] EN — `/nutricion-en-el-deporte-rendimiento-optimo/` — Nutrición en el deporte, las claves para un rendimiento óptimo
-- [ ] ES · [ ] EN — `/dieta-antiinflamatoria-claves-y-beneficios/` — Dieta antiinflamatoria: claves y beneficios esenciales
-- [ ] ES · [ ] EN — `/proteina-de-clara-de-huevo-aliada-para-mas-fuerza-y-menos-grasa/` — Clara de huevo: proteína ideal para fuerza y definición
-- [ ] ES · [ ] EN — `/que-comer-para-ganar-masa-muscular/` — ¿Qué debes comer para ganar masa muscular?
-- [ ] ES · [ ] EN — `/agua-hidratacion-deporte/` — La mejor hidratación para el entrenamiento \| Cuanto y que beber
-- [ ] ES · [ ] EN — `/requieren-los-deportistas-mas-proteinas/` — Necesitas más proteínas si haces deporte, ¡Descubre cuantas!
-- [ ] ES · [ ] EN — `/calculo-calorico-mantenimiento/` — Cálculo calórico para mantenimiento
-- [ ] ES · [ ] EN — `/elaborar-dieta/` — Cómo Elaborar una Dieta Efectiva: Pasos y Consejos Prácticos
-- [ ] ES · [ ] EN — `/carne-culturismo/` — La carne en el culturismo
-- [ ] ES · [ ] EN — `/construir-masa-muscular-limpia/` — Como construir masa muscular limpia
-- [ ] ES · [ ] EN — `/toque-final-competir/` — El toque final antes de competir
-- [ ] ES · [ ] EN — `/nutricion-culturista-reglas-basicas/` — Reglas básicas de nutrición culturista
-- [ ] ES · [ ] EN — `/comida-segun-hora-entrenar/` — Adapta tus comidas a tu hora de entrenamiento
-- [ ] ES · [ ] EN — `/comida-pre-entrenamiento/` — Que comer antes del entrenamiento
-- [ ] ES · [ ] EN — `/comida-post-entrenamiento/` — Que comer después del entrenamiento
-- [ ] ES · [ ] EN — `/como-ser-disciplinado-dieta/` — Como ser disciplinado en la dieta
-- [ ] ES · [ ] EN — `/comida-trampa/` — La comida trampa
-- [ ] ES · [ ] EN — `/guia-basica-de-nutricion-culturista/` — Guía básica de nutrición culturista
-- [ ] ES · [ ] EN — `/ganar-musculo-vegetarianos/` — Ganar musculo y ser vegetariano
-- [ ] ES · [ ] EN — `/remediar-intolerancia-lactosa/` — Como remediar la intolerancia a la lactosa
-- [ ] ES · [ ] EN — `/cerezas-post-entrenamiento/` — Cerezas post-entrenamiento
+- [x] ES · [x] EN — `/efecto-rebote-perder-peso/` — Efecto Rebote al Perder Peso: ¡Evita Recuperar Kilos Perdidos!
+- [x] ES · [x] EN — `/anabolismo-muscular/` — Anabolismo muscular, el estado de crecimiento en los músculos
+- [x] ES · [x] EN — `/utilizar-la-ventana-anabolica/` — La ventana anabólica: ¿mito o realidad?
+- [x] ES · [x] EN — `/dieta-ideal-para-adelgazar-perder-peso/` — Descubre la dieta ideal para adelgazar y alcanzar tu peso deseado
+- [x] ES · [x] EN — `/deficit-calorico-clave-para-perder-peso/` — Déficit Calórico \| ¿El único camino para perder peso?
+- [x] ES · [x] EN — `/legumbres-beneficiosas-dieta/` — Legumbres, beneficiosas para nuestra dieta
+- [x] ES · [x] EN — `/calculo-calorias-masa-muscular/` — Cálculo de calorías para ganar masa muscular
+- [x] ES · [x] EN — `/cocinar-pollo-jugoso/` — Consejos para cocinar el pollo y hacerlo más jugoso
+- [x] ES · [x] EN — `/como-llevar-un-estilo-de-vida-fitness/` — Como llevar un estilo de vida Fitness
+- [x] ES · [x] EN — `/nutricion-en-el-deporte-rendimiento-optimo/` — Nutrición en el deporte, las claves para un rendimiento óptimo
+- [x] ES · [x] EN — `/dieta-antiinflamatoria-claves-y-beneficios/` — Dieta antiinflamatoria: claves y beneficios esenciales
+- [x] ES · [x] EN — `/proteina-de-clara-de-huevo-aliada-para-mas-fuerza-y-menos-grasa/` — Clara de huevo: proteína ideal para fuerza y definición
+- [x] ES · [x] EN — `/que-comer-para-ganar-masa-muscular/` — ¿Qué debes comer para ganar masa muscular?
+- [x] ES · [x] EN — `/agua-hidratacion-deporte/` — La mejor hidratación para el entrenamiento \| Cuanto y que beber
+- [x] ES · [x] EN — `/requieren-los-deportistas-mas-proteinas/` — Necesitas más proteínas si haces deporte, ¡Descubre cuantas!
+- [x] ES · [x] EN — `/calculo-calorico-mantenimiento/` — Cálculo calórico para mantenimiento
+- [x] ES · [x] EN — `/elaborar-dieta/` — Cómo Elaborar una Dieta Efectiva: Pasos y Consejos Prácticos
+- [x] ES · [x] EN — `/carne-culturismo/` — La carne en el culturismo
+- [x] ES · [x] EN — `/construir-masa-muscular-limpia/` — Como construir masa muscular limpia
+- [x] ES · [x] EN — `/toque-final-competir/` — El toque final antes de competir
+- [x] ES · [x] EN — `/nutricion-culturista-reglas-basicas/` — Reglas básicas de nutrición culturista
+- [x] ES · [x] EN — `/comida-segun-hora-entrenar/` — Adapta tus comidas a tu hora de entrenamiento
+- [x] ES · [x] EN — `/comida-pre-entrenamiento/` — Que comer antes del entrenamiento
+- [x] ES · [x] EN — `/comida-post-entrenamiento/` — Que comer después del entrenamiento
+- [x] ES · [x] EN — `/como-ser-disciplinado-dieta/` — Como ser disciplinado en la dieta
+- [x] ES · [x] EN — `/comida-trampa/` — La comida trampa
+- [x] ES · [x] EN — `/guia-basica-de-nutricion-culturista/` — Guía básica de nutrición culturista
+- [x] ES · [x] EN — `/ganar-musculo-vegetarianos/` — Ganar musculo y ser vegetariano
+- [x] ES · [x] EN — `/remediar-intolerancia-lactosa/` — Como remediar la intolerancia a la lactosa
+- [x] ES · [x] EN — `/cerezas-post-entrenamiento/` — Cerezas post-entrenamiento
 - [ ] ES · [ ] EN — `/verdura-masa-muscular/` — Más verdura, más masa muscular
 - [ ] ES · [ ] EN — `/errores-a-evitar-en-la-dieta/` — Errores a evitar en la dieta
 - [ ] ES · [ ] EN — `/dieta-culturista-ocho-semanas/` — Dieta Culturista en ocho semanas \| La mejor dieta de 2026

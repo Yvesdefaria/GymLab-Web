@@ -19,24 +19,24 @@ Last updated: 2026-11-16.
 - The landing, the three calculators, the 404 and the legal pages all ship in both locales.
 - Measurement and the SQL recipe: see "Reading analytics" below and `COMPLETED.md` Appendix B.
 
-## Content library — 621 / 792 (2026-11-24)
+## Content library — 651 / 792 (2026-11-24)
 
-- **621 bilingual pages** (ES 621, EN 621), **621 unique hero paths**. By archive section:
+- **651 bilingual pages** (ES 651, EN 651), **651 unique hero paths**. By archive section:
   Entrenamiento 217/222 (five rows settled), Por Músculo 80/80, **Rutinas 80/80**, Ejercicios
-  **196/196 — COMPLETO**, Nutrición 48/191, Mujer Fitness 0/23. Publishable total: **787**.
+  **196/196 — COMPLETO**, Nutrición 78/191, Mujer Fitness 0/23. Publishable total: **787**.
   Suplementos Dietéticos is **35/35 — COMPLETO**.
-- **Batches 33 to 62 are built, green and committed, not pushed.** The build has **1,258 pages** and
-  **1,254 sitemap URLs**.
-- Gates: `npm run verify` = `check:copy` **31,671/31,671** + build **1,258 pages** + `check:i18n`
-  **19,592/19,592** (1,254 sitemap URLs, 3,762 alternates).
+- **Batches 33 to 65 are built, green and committed, not pushed.** The build has **1,318 pages** and
+  **1,314 sitemap URLs**.
+- Gates: `npm run verify` = `check:copy` **33,201/33,201** + build **1,318 pages** + `check:i18n`
+  **20,522/20,522** (1,314 sitemap URLs, 3,942 alternates).
 - Docs: `odd/tasks/content-library-session.md` (start here next session),
   `odd/tasks/content-pages.md` (per-page checklist + resume),
-  `odd/tasks/content-library-batch-62.md` (the last batch) and `odd/tasks/guides-page-contract.md`
+  `odd/tasks/content-library-batch-65.md` (the last batch) and `odd/tasks/guides-page-contract.md`
   (the page contract and copy gate).
-- **Next 10:** `efecto-rebote-perder-peso`, `anabolismo-muscular`, `utilizar-la-ventana-anabolica`,
-  `dieta-ideal-para-adelgazar-perder-peso`, `deficit-calorico-clave-para-perder-peso`,
-  `legumbres-beneficiosas-dieta`, `calculo-calorias-masa-muscular`, `cocinar-pollo-jugoso`,
-  `como-llevar-un-estilo-de-vida-fitness`, `nutricion-en-el-deporte-rendimiento-optimo`.
+- **Next 10:** `verdura-masa-muscular`, `errores-a-evitar-en-la-dieta`, `dieta-culturista-ocho-semanas`,
+  `vitaminas-minerales-para-el-gimnasio`, `como-limitar-el-sodio`, `bebida-isotonica-casera`,
+  `batidos-para-volumen-muscular`, `comidas-perfectas-culturistas`, `nutricion-para-estar-en-forma`,
+  `prepara-tu-cocina-para-una-dieta-anabolica`.
 - **Follow-up:** ten hero pairs score 6 or less: the pre-existing exact duplicate
   (`remo-polea-sentado` with `superserie-de-espalda-para-terminar-tu-rutina`), and nine near pairs at
   3-6 (`aperturas-mancuernas-banco-inclinado` vs `press-inclinado-barra` at 3;
