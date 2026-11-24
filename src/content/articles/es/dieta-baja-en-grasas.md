@@ -6,7 +6,7 @@ h1: "Dieta baja en grasas"
 block: "Entrenamiento"
 section: "Dietas de definición"
 hero: "/content/dieta-baja-en-grasas/hero.jpg"
-heroAlt: "Filete de pescado blanco a la plancha con brócoli, zanahoria y limón"
+heroAlt: "Filete de pescado blanco a la plancha con brócoli, zanahoria, calabacín y limón"
 heroCredit: "Wikimedia Commons · Armineaghayan · CC BY-SA 4.0"
 lead: "Una **dieta baja en grasas** mantiene la grasa entre el 20 y el 30 % de las calorías diarias, con un mínimo del 10 %, y cada comida se puede pesar en gramos para saber dónde estás."
 tags: ["Baja en grasas", "Macros", "Menú", "Definición"]

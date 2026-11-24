@@ -6,7 +6,7 @@ h1: "Bodybuilder cutting diet"
 block: "Training"
 section: "Cutting diets"
 hero: "/content/ejemplos-de-dietas-de-definicion-muscular-para-culturistas/hero.jpg"
-heroAlt: "Three glass meal containers with quinoa, chickpeas, tomato and olives"
+heroAlt: "Three glass meal containers with red rice, corn, lentils, cucumber and tomato"
 heroCredit: "Pexels · Ella Olsson · Pexels licence"
 lead: "A **bodybuilder cutting diet** is organised in calorie steps: eight levels, from 1,354 to 2,790 kcal, each with its share of protein, carbohydrate and fat. You pick the step by body weight and adjust every two weeks. The two lowest are contest preparation under supervision."
 tags: ["Cutting", "Macros", "Calories", "Bodybuilding"]
@@ -16,7 +16,7 @@ updated: "2026-11-24"
 ---
 The scheme comes from classic contest preparation: instead of a fixed menu, a ladder of calorie totals you move along as the body responds. The macros at each level are worked out with 4 calories per gram of protein and carbohydrate and 9 per gram of fat.
 
-## What a calorie step is and how to pick one
+## How to pick a step in a bodybuilder cutting diet
 
 The usual starting point is multiplying body weight in kilos by a number between 20 and 30. A 25 works for most people: 75 kg x 25 = 1,875 kcal. The 20 is kept for someone starting with a lot of fat and little activity; the 30, for someone who already has muscle and wants to lose slowly.
 
@@ -50,7 +50,7 @@ The arithmetic holds. The first step adds up to 560 + 420 + 373.5 = 1,353.5 kcal
 
 ## The limit: the two contest steps
 
-The first two levels, 1,354 and 1,434 kcal, sit below the floor recommended to a general reader: 1,400 kcal a day for a man and 1,200 for a woman. They are contest preparation levels, with professional supervision, not a starting point. They are not a plan for someone who wants to get lean without competing.
+The first level, 1,354 kcal, sits below the floor recommended to a general reader: 1,400 kcal a day for a man and 1,200 for a woman. The second, 1,434, only just clears it. Both are contest preparation levels, with professional supervision, not a starting point. They are not a plan for someone who wants to get lean without competing.
 
 At those figures the margin for error is small. Energy available for training drops, session quality falls and the risk of losing muscle rises. They are used for a few weeks, with outside review and a clear plan for returning to maintenance.
 

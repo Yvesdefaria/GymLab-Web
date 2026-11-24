@@ -6,7 +6,7 @@ h1: "Dieta para máxima definición muscular"
 block: "Entrenamiento"
 section: "Dietas de definición"
 hero: "/content/dieta-maxima-definicion-muscular/hero.jpg"
-heroAlt: "Dos pechugas de pollo doradas en una sartén de acero"
+heroAlt: "Pechugas de pollo doradas en una sartén de acero"
 heroCredit: "Pexels · Alleksana · licencia Pexels"
 lead: "Una **dieta de máxima definición** es un plan corto para quien ya tiene poca grasa y quiere afinar el último tramo. El ejemplo de esta página son 1.900 kcal para 80 kg, con 240 g de proteína, 100 de carbohidrato y 60 de grasa. Es agresiva y temporal."
 tags: ["Máxima definición", "Proteína", "Macros", "Avanzado"]
@@ -16,7 +16,7 @@ updated: "2026-11-24"
 ---
 La cifra de proteína es la que llama la atención: 3 g por kilo de peso. Está por encima de lo que necesita un lector general y solo tiene sentido en un culturista avanzado, durante pocas semanas y con el resto del plan bien armado.
 
-## Para quién es este día
+## Para quién es esta dieta de máxima definición
 
 Está pensado para un culturista de unos 80 kg con un porcentaje de grasa bajo, que entrena cinco o seis días y lleva meses en déficit. No es un plan de inicio. A 1.900 kcal el margen es pequeño y el hambre aparece pronto, así que tampoco sirve para bajar los primeros kilos.
 
@@ -44,7 +44,7 @@ Antes de empezar conviene tener tres cosas: el peso de las últimas semanas, una
 
 Los 240 g son 3 g por kilo de peso. Esa cifra ayuda a conservar músculo con muy poca energía, pero no aporta más crecimiento: por encima de 2,2 g por kilo el beneficio extra es pequeño y el presupuesto de calorías se estrecha.
 
-Los 100 g de carbohidrato son el mínimo para entrenar con carga y evitar la cetosis. Los 60 g de grasa son 0,75 g por kilo, por encima del mínimo de 0,5. Bajar de ahí compromete las hormonas y la absorción de las vitaminas liposolubles.
+Los 100 g de carbohidrato permiten entrenar con carga y quedan por encima del umbral de cetosis. Los 60 g de grasa son 0,75 g por kilo, por encima del mínimo de 0,5. Bajar de ahí compromete las hormonas y la absorción de las vitaminas liposolubles.
 
 ## El día, con verdura y fibra
 

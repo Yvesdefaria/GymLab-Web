@@ -6,7 +6,7 @@ h1: "Low-fat diet"
 block: "Training"
 section: "Cutting diets"
 hero: "/content/dieta-baja-en-grasas/hero.jpg"
-heroAlt: "Pan-fried white fish fillet with broccoli, carrot and lemon"
+heroAlt: "Pan-fried white fish fillet with broccoli, carrot, courgette and lemon"
 heroCredit: "Wikimedia Commons · Armineaghayan · CC BY-SA 4.0"
 lead: "A **low-fat diet** keeps fat between 20 and 30 % of daily calories, with a 10 % floor, and every meal can be weighed in grams so you know where you stand."
 tags: ["Low fat", "Macros", "Menu", "Definition"]

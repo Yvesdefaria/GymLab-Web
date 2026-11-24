@@ -6,7 +6,7 @@ h1: "Maximum definition diet"
 block: "Training"
 section: "Cutting diets"
 hero: "/content/dieta-maxima-definicion-muscular/hero.jpg"
-heroAlt: "Two golden chicken breasts in a steel pan"
+heroAlt: "Golden chicken breasts in a steel pan"
 heroCredit: "Pexels · Alleksana · Pexels licence"
 lead: "A **maximum definition diet** is a short plan for someone who already carries little fat and wants to sharpen the last stretch. The example on this page is 1,900 kcal at 80 kg, with 240 g of protein, 100 of carbohydrate and 60 of fat. It is aggressive and temporary."
 tags: ["Maximum definition", "Protein", "Macros", "Advanced"]
@@ -16,9 +16,9 @@ updated: "2026-11-24"
 ---
 The protein figure is the one that stands out: 3 g per kilo of body weight. That is above what a general reader needs and only makes sense in an advanced bodybuilder, for a few weeks and with the rest of the plan in place.
 
-## Who this day is for
+## Who this maximum definition diet is for
 
-It is built for a bodybuilder of about 80 kg with a low body-fat percentage, training five or six days a week and already months into a deficit. It is not a starting plan. At 1,900 kcal the margin is small and hunger arrives early, so it is also no way to lose the first kilos.
+It is built for a bodybuilder of about 80 kg with a low body-fat percentage, training five or six days a week and already months into a deficit. It is not a starting plan. At 1,900 kcal the margin is small and hunger arrives early, so it will not work for the first kilos either.
 
 A general reader who wants to get lean starts from a moderate deficit, with 1.6 to 2.2 g of protein per kilo and a loss of 0.5 to 1 % of body weight a week. For that starting point, the guide to a [calorie deficit](/en/calorie-deficit-for-weight-loss/) does the maths, and the one on [very low-carb diets](/en/low-carb-diets-for-bodybuilding/) explains why cutting carbohydrate further is not the answer.
 
@@ -44,7 +44,7 @@ Before starting, have three things ready: your weight from the last few weeks, a
 
 The 240 g are 3 g per kilo. That figure helps hold on to muscle on very little energy, but it does not add growth: above 2.2 g per kilo the extra benefit is small and the calorie budget gets tighter.
 
-The 100 g of carbohydrate is the minimum for training with load and staying out of ketosis. The 60 g of fat is 0.75 g per kilo, above the 0.5 minimum. Going below that compromises hormones and the absorption of fat-soluble vitamins.
+The 100 g of carbohydrate allows training with load and sits above the ketosis threshold. The 60 g of fat is 0.75 g per kilo, above the 0.5 minimum. Going below that compromises hormones and the absorption of fat-soluble vitamins.
 
 ## The day, with vegetables and fibre
 

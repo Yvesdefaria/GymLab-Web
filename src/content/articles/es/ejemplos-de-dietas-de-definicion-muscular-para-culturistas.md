@@ -6,7 +6,7 @@ h1: "Dieta de definición para culturistas"
 block: "Entrenamiento"
 section: "Dietas de definición"
 hero: "/content/ejemplos-de-dietas-de-definicion-muscular-para-culturistas/hero.jpg"
-heroAlt: "Tres fiambreras de cristal con quinoa, garbanzos, tomate y aceitunas"
+heroAlt: "Tres fiambreras de cristal con arroz rojo, maíz, lentejas, pepino y tomate"
 heroCredit: "Pexels · Ella Olsson · licencia Pexels"
 lead: "Una **dieta de definición para culturistas** se organiza por pasos de calorías: ocho niveles, de 1.354 a 2.790 kcal, cada uno con su reparto de proteína, carbohidrato y grasa. El paso se elige por peso corporal y se ajusta cada dos semanas. Los dos más bajos son preparación de competición bajo supervisión."
 tags: ["Definición", "Macros", "Calorías", "Culturismo"]
@@ -16,7 +16,7 @@ updated: "2026-11-24"
 ---
 El esquema viene de la preparación clásica: en lugar de un menú fijo, una escalera de totales calóricos que se recorre según cómo responde el cuerpo. Los macros de cada escalón están calculados con 4 calorías por gramo de proteína y carbohidrato y 9 por gramo de grasa.
 
-## Qué es un paso de calorías y cómo se elige
+## Cómo se elige el paso en una dieta de definición
 
 El punto de partida habitual es multiplicar el peso en kilos por un número entre 20 y 30. Un 25 sirve para la mayoría: 75 kg x 25 = 1.875 kcal. El 20 se reserva para quien parte con bastante grasa y poca actividad; el 30, para quien ya tiene músculo y quiere bajar despacio.
 
@@ -50,7 +50,7 @@ Las cuentas cuadran. El primer paso suma 560 + 420 + 373,5 = 1.353,5 kcal, y el 
 
 ## El límite: los dos pasos de competición
 
-Los dos primeros escalones, 1.354 y 1.434 kcal, quedan por debajo del suelo que se recomienda a un lector general: 1.400 kcal al día para un hombre y 1.200 para una mujer. Son niveles de preparación de competición, con seguimiento profesional, y no un punto de partida. No son un plan para quien quiere definir sin competir.
+El primer escalón, 1.354 kcal, queda por debajo del suelo que se recomienda a un lector general: 1.400 kcal al día para un hombre y 1.200 para una mujer. El segundo, 1.434, apenas lo supera. Los dos son niveles de preparación de competición, con seguimiento profesional, y no un punto de partida. No son un plan para quien quiere definir sin competir.
 
 En esas cifras el margen de error es pequeño. La energía disponible para entrenar baja, la calidad de las sesiones cae y el riesgo de perder músculo sube. Se usan durante pocas semanas, con revisión externa y con un plan claro de vuelta a mantenimiento.
 

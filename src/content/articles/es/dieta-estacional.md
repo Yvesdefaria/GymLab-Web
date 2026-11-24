@@ -6,7 +6,7 @@ h1: "Dieta por objetivos"
 block: "Entrenamiento"
 section: "Dietas de definición"
 hero: "/content/dieta-estacional/hero.jpg"
-heroAlt: "Rodajas de pepino, tomate, zanahoria y cebolla alineadas sobre fondo beige"
+heroAlt: "Pepinos, tomates, zanahorias y cebollas cortados y alineados sobre fondo beige"
 heroCredit: "Pexels · Mali Maeder · licencia Pexels"
 lead: "Una **dieta por objetivos** reparte el año en bloques de tres meses: uno de pérdida de grasa y otro de mantenimiento, y se alternan. El plan no prohíbe alimentos; cambia las raciones y el total de calorías de cada bloque, y deja el resto del año para sostener lo conseguido."
 tags: ["Objetivos", "Bloques", "Mantenimiento", "Menú"]
@@ -16,15 +16,15 @@ updated: "2026-11-24"
 ---
 La idea es sencilla y se olvida a menudo: después de dos o tres meses en déficit, el cuerpo se adapta y el plan deja de funcionar igual. Alternar con un bloque estable devuelve energía y permite comprobar qué se ha conseguido antes de volver a recortar. El plan se juzga por lo que aguanta, no por lo rápido que baja la primera semana.
 
-## Por qué la dieta se organiza en bloques
+## Por qué una dieta por objetivos va en bloques
 
-El peso no baja en línea recta. Después de ocho o doce semanas en déficit, el hambre sube, el entrenamiento pierde fuelle y la báscula se estanca. Un bloque de mantenimiento estabiliza el peso, recupera la energía y enseña a comer con las calorías que se van a necesitar el resto del año.
+El peso no baja en línea recta ni al ritmo que promete una calculadora. Después de ocho o doce semanas en déficit, el hambre sube, el entrenamiento pierde fuelle y la báscula se estanca. Un bloque de mantenimiento estabiliza el peso, recupera la energía y enseña a comer con las calorías que se van a necesitar el resto del año.
 
 El orden importa: primero se aprende a mantener, después se vuelve a bajar. Quien encadena déficit tras déficit sin una fase estable termina recuperando lo perdido, y la guía del [efecto rebote](/es/efecto-rebote-perder-peso/) explica por qué. La constancia pesa más que la velocidad, y la guía para [ser disciplinado con la dieta](/es/como-ser-disciplinado-dieta/) trabaja esa parte.
 
 ## El bloque de pérdida, con medidas
 
-El día está pensado para una persona de 75 a 80 kg que entrena cuatro días y quiere perder grasa sin quedarse sin energía.
+El día está pensado para una persona de 75 a 80 kg que entrena cuatro días por semana y quiere perder grasa sin quedarse sin energía.
 
 <table class="text-table">
   <thead>
@@ -43,7 +43,7 @@ El día está pensado para una persona de 75 a 80 kg que entrena cuatro días y 
   </tbody>
 </table>
 
-El día ronda las 2.100 kcal, con unos 150 g de proteína, 215 de carbohidrato y 65 de grasa. La fruta aparece tres veces y no se recorta: aporta fibra, potasio y vitamina C, y quita hambre entre horas. Esa es la diferencia con los planes que la eliminan y luego no se sostienen.
+El día ronda las 2.100 kcal, con unos 150 g de proteína, 220 de carbohidrato y 66 de grasa. La fruta aparece tres veces y no se recorta: aporta fibra, potasio y vitamina C, y quita hambre entre horas. Esa es la diferencia con los planes que la eliminan y luego no se sostienen.
 
 ## El bloque de mantenimiento, con medidas
 

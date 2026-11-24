@@ -6,7 +6,7 @@ h1: "DASH diet: what it is and how to apply it"
 block: "Training"
 section: "Cutting diets"
 hero: "/content/dieta-dash-guia-completa/hero.jpg"
-heroAlt: "Lentils, beans, tomatoes, garlic and onion on a dark table"
+heroAlt: "Tomatoes, onion, garlic, almonds and chickpeas on a dark table"
 heroCredit: "Pexels · Mike · Pexels licence"
 lead: "The **DASH diet** is an eating pattern with numbers: 1,500 to 2,300 mg of sodium a day, 3,500 to 5,000 mg of potassium and set servings for each food group. It was studied in 1997 to lower blood pressure and it remains a reference when you want a way of eating that lasts for years."
 tags: ["DASH", "Sodium", "Blood pressure", "Menu"]
@@ -24,7 +24,7 @@ That third pattern is what is now called the DASH diet. It leans on vegetables, 
 
 ## The food groups and their servings
 
-The servings in the table match a plan of about 2,000 calories. At 2,500 the grains and fruit go up; at 1,600 they go down.
+The servings in the table match a plan of about 2,000 calories. At 2,500 the wholegrain and fruit servings go up; at 1,600 they go down.
 
 <table class="text-table">
   <thead>
@@ -76,7 +76,7 @@ Potassium is the other half. The plan supplies between 3,500 and 5,000 mg a day,
 
 The day lands near 2,000 calories, with under 1,500 mg of sodium if no salt is added in cooking and about 30 g of fibre. Protein sits around 105 g. The numbers are an estimate: they change with the cut, the brand and the hand that dresses the salad.
 
-Salmon brings omega-3 fat and olive oil completes the fat for the day. The pattern keeps total fat between 25 and 30 % of calories, with saturated fat below 10 %. A lower version is also possible, and the guide to a [low-fat diet](/en/low-fat-diet/) shows how to go below 30 % without falling short.
+Salmon brings omega-3 fat and olive oil completes the fat for the day; the guide to [dietary fats](/en/dietary-fats/) explains how much of each type to aim for. The pattern keeps total fat between 25 and 30 % of calories, with saturated fat below 10 %. A lower version is also possible, and the guide to a [low-fat diet](/en/low-fat-diet/) shows how to go below 30 % without falling short.
 
 ## How to start without changing the whole shop
 

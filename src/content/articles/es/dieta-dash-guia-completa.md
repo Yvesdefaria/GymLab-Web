@@ -6,7 +6,7 @@ h1: "Dieta DASH: qué es y cómo se aplica"
 block: "Entrenamiento"
 section: "Dietas de definición"
 hero: "/content/dieta-dash-guia-completa/hero.jpg"
-heroAlt: "Lentejas, alubias, tomate, ajo y cebolla sobre una mesa oscura"
+heroAlt: "Tomates, cebolla, ajos, almendras y garbanzos sobre una mesa oscura"
 heroCredit: "Pexels · Mike · licencia Pexels"
 lead: "La **dieta DASH** es un patrón de alimentación con números: 1.500 a 2.300 mg de sodio al día, 3.500 a 5.000 mg de potasio y unas raciones concretas por grupo de alimentos. Se estudió en 1997 para bajar la tensión arterial y sigue siendo una referencia cuando se busca una forma de comer que aguante años."
 tags: ["DASH", "Sodio", "Tensión", "Menú"]
@@ -76,7 +76,7 @@ El potasio es la otra mitad. El plan aporta entre 3.500 y 5.000 mg al día, sobr
 
 El día ronda las 2.000 calorías, con menos de 1.500 mg de sodio si no se añade sal al cocinar y unos 30 g de fibra. La proteína queda en torno a 105 g. Los números son una estimación: cambian con el corte, la marca y la mano que aliña.
 
-El salmón aporta grasa omega-3 y el aceite de oliva completa la grasa del día. El patrón deja la grasa total entre el 25 y el 30 % de las calorías, con la saturada por debajo del 10 %. Una versión más baja también es posible, y la guía de [dieta baja en grasas](/es/dieta-baja-en-grasas/) muestra cómo bajar del 30 % sin quedarse corto.
+El salmón aporta grasa omega-3 y el aceite de oliva completa la grasa del día; la guía de [grasas](/es/grasas/) explica cuánto conviene de cada tipo. El patrón deja la grasa total entre el 25 y el 30 % de las calorías, con la saturada por debajo del 10 %. Una versión más baja también es posible, y la guía de [dieta baja en grasas](/es/dieta-baja-en-grasas/) muestra cómo bajar del 30 % sin quedarse corto.
 
 ## Cómo empezar sin cambiar toda la compra
 

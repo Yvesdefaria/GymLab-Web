@@ -6,7 +6,7 @@ h1: "Diet by goals"
 block: "Training"
 section: "Cutting diets"
 hero: "/content/dieta-estacional/hero.jpg"
-heroAlt: "Sliced cucumber, tomato, carrot and onion lined up on a beige surface"
+heroAlt: "Cucumbers, tomatoes, carrots and onions cut and lined up on a beige surface"
 heroCredit: "Pexels · Mali Maeder · Pexels licence"
 lead: "A **diet by goals** splits the year into three-month blocks: one for fat loss and one for maintenance, alternating. The plan bans no foods; it changes portions and the calorie total of each block, and leaves the rest of the year to hold on to what you achieved."
 tags: ["Goals", "Blocks", "Maintenance", "Menu"]
@@ -16,7 +16,7 @@ updated: "2026-11-24"
 ---
 The idea is simple and often forgotten: after two or three months in a deficit the body adapts and the plan stops working the same way. Alternating with a stable block restores energy and shows what you achieved before cutting again. The plan is judged by what it sustains, not by how fast the first week drops.
 
-## Why the diet is organised in blocks
+## Why a diet by goals runs in blocks
 
 Weight does not fall in a straight line. After eight or twelve weeks in a deficit, hunger rises, training loses power and the scale stalls. A maintenance block stabilises weight, restores energy and teaches you to eat on the calories you will need for the rest of the year.
 
@@ -43,7 +43,7 @@ The day is built for a person of 75 to 80 kg who trains four days a week and wan
   </tbody>
 </table>
 
-The day lands near 2,100 kcal, with about 150 g of protein, 215 of carbohydrate and 65 of fat. Fruit appears three times and is not cut: it brings fibre, potassium and vitamin C, and keeps hunger away between meals. That is the difference from plans that remove it and then cannot be sustained.
+The day lands near 2,100 kcal, with about 150 g of protein, 220 of carbohydrate and 66 of fat. Fruit appears three times and is not cut: it brings fibre, potassium and vitamin C, and keeps hunger away between meals. That is the difference from plans that remove it and then cannot be sustained.
 
 ## The maintenance block, with measures
 
