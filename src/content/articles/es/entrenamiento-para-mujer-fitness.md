@@ -20,12 +20,21 @@ Un plan falla cuando pide cinco días a quien tiene tres, o cuando acumula veint
 
 Empieza por tu agenda, no por la de otra persona. Dos sesiones semanales bien hechas sostienen meses de progreso, y una sola sigue siendo mejor que ninguna. La frecuencia sube cuando la recuperación lo permite, no cuando lo pide la impaciencia.
 
-| Días | Para quién | Qué te da |
-| --- | --- | --- |
-| 1 | Agenda muy ajustada o deporte aparte | Mantener o avanzar despacio |
-| 2 | Principiante o poco tiempo | Cuerpo completo, dos estímulos |
-| 3 | Tras uno o dos meses entrenando | Más series por grupo |
-| 4 | Tras tres a seis meses con tres días | Dos bloques por zona |
+<table class="text-table">
+  <thead>
+    <tr>
+      <th>Días</th>
+      <th>Para quién</th>
+      <th>Qué te da</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>1</td><td>Agenda muy ajustada o deporte aparte</td><td>Mantener o avanzar despacio</td></tr>
+    <tr><td>2</td><td>Principiante o poco tiempo</td><td>Cuerpo completo, dos estímulos</td></tr>
+    <tr><td>3</td><td>Tras uno o dos meses entrenando</td><td>Más series por grupo</td></tr>
+    <tr><td>4</td><td>Tras tres a seis meses con tres días</td><td>Dos bloques por zona</td></tr>
+  </tbody>
+</table>
 
 Separa las sesiones (lunes y jueves, martes y viernes) y evita tres días seguidos con cuatro de parón. Si solo puedes el fin de semana, sábado y domingo funcionan: el resto de la semana da la recuperación. Por encima de cuatro días hacen falta años de base, y el sobreentrenamiento cuesta más caro que entrenar de menos. Cuando la vida aprieta, una sesión semanal mantiene buena parte de la fuerza.
 
@@ -41,11 +50,20 @@ Nunca entrenes brazos antes que espalda o pecho: el bíceps cansado limita el re
 
 Las series de calentamiento no cuentan. Estas cifras son de trabajo efectivo por sesión y grupo.
 
-| Nivel | Grupos grandes | Grupos pequeños |
-| --- | --- | --- |
-| Primer mes | 2 o 3 | 1 |
-| Dos a seis meses | 3 o 4 | 1 o 2 |
-| Más de seis meses | 5 o 6 | 1 a 3 |
+<table class="text-table">
+  <thead>
+    <tr>
+      <th>Nivel</th>
+      <th>Grupos grandes</th>
+      <th>Grupos pequeños</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>Primer mes</td><td>2 o 3</td><td>1</td></tr>
+    <tr><td>Dos a seis meses</td><td>3 o 4</td><td>1 o 2</td></tr>
+    <tr><td>Más de seis meses</td><td>5 o 6</td><td>1 a 3</td></tr>
+  </tbody>
+</table>
 
 El total semanal importa más que el reparto diario: seis series de sentadilla en una sesión y cero el resto de la semana rinden menos que tres y tres. La guía de [volumen de entrenamiento](/es/volumen-de-entrenamiento/) desarrolla esa cuenta. Si un día tienes más energía, añade una serie; si llegas cansada, quita una.
 
@@ -53,11 +71,20 @@ El total semanal importa más que el reparto diario: seis series de sentadilla e
 
 RIR son las repeticiones que te quedaban en la recámara al terminar la serie. RPE es el mismo esfuerzo en una escala de 0 a 10. Sirven para elegir el peso sin depender de números mágicos.
 
-| Esfuerzo | Qué significa | Dónde encaja |
-| --- | --- | --- |
-| RIR 3 o 4 | Podrías hacer tres o cuatro más | Casi todas las series |
-| RIR 2 | Te quedaban dos | Última serie de un básico |
-| RIR 0 o 1 | Al fallo o a punto de | Aislamiento, de vez en cuando |
+<table class="text-table">
+  <thead>
+    <tr>
+      <th>Esfuerzo</th>
+      <th>Qué significa</th>
+      <th>Dónde encaja</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>RIR 3 o 4</td><td>Podrías hacer tres o cuatro más</td><td>Casi todas las series</td></tr>
+    <tr><td>RIR 2</td><td>Te quedaban dos</td><td>Última serie de un básico</td></tr>
+    <tr><td>RIR 0 o 1</td><td>Al fallo o a punto de</td><td>Aislamiento, de vez en cuando</td></tr>
+  </tbody>
+</table>
 
 Empieza con una carga que parezca ligera y úsala de calentamiento. Si la primera repetición ya te cuesta, para y baja el peso. Si pasas del objetivo con margen, sube la carga en la serie siguiente. Anota peso, repeticiones y RIR: sin registro, la progresión se decide de memoria, y la [sobrecarga progresiva](/es/principio-adaptacion-sobrecarga-progresiva/) convierte esas notas en resultados.
 

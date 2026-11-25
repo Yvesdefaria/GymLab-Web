@@ -18,12 +18,21 @@ La misma tabla todo el mes funciona para algunas personas y se queda corta para 
 
 ## Qué cambia en el ciclo y qué no
 
-| Fase | Días aproximados | Qué suele notarse |
-| --- | --- | --- |
-| Menstruación | 1 a 5 | Cólicos, fatiga, menos energía en algunas |
-| Folicular | 6 a 13 | La fuerza y la energía suelen subir |
-| Ovulación | Alrededor del 14 | Pico de estradiol, sin efecto fijo en la fuerza |
-| Lútea | 15 a 28 | Temperatura basal más alta, peor sueño, más esfuerzo percibido |
+<table class="text-table">
+  <thead>
+    <tr>
+      <th>Fase</th>
+      <th>Días aproximados</th>
+      <th>Qué suele notarse</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>Menstruación</td><td>1 a 5</td><td>Cólicos, fatiga, menos energía en algunas</td></tr>
+    <tr><td>Folicular</td><td>6 a 13</td><td>La fuerza y la energía suelen subir</td></tr>
+    <tr><td>Ovulación</td><td>Alrededor del 14</td><td>Pico de estradiol, sin efecto fijo en la fuerza</td></tr>
+    <tr><td>Lútea</td><td>15 a 28</td><td>Temperatura basal más alta, peor sueño, más esfuerzo percibido</td></tr>
+  </tbody>
+</table>
 
 Los días son la media de un ciclo de 28 y el tuyo puede moverse. La investigación sobre fuerza y fase del ciclo es pequeña y desigual: algunos estudios encuentran diferencias y otros no. Lo que sí se repite es que la variación entre personas supera a la variación entre fases. El mapa sirve para observarte, no para programar por decreto.
 

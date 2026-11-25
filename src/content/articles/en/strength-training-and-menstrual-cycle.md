@@ -18,12 +18,21 @@ The same table every month works for some people and falls short for others. Str
 
 ## What changes in the cycle and what does not
 
-| Phase | Approximate days | What tends to show |
-| --- | --- | --- |
-| Menstruation | 1 to 5 | Cramps, fatigue, less energy for some |
-| Follicular | 6 to 13 | Strength and energy usually rise |
-| Ovulation | Around day 14 | Oestradiol peak, no fixed effect on strength |
-| Luteal | 15 to 28 | Higher basal temperature, worse sleep, more perceived effort |
+<table class="text-table">
+  <thead>
+    <tr>
+      <th>Phase</th>
+      <th>Approximate days</th>
+      <th>What tends to show</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>Menstruation</td><td>1 to 5</td><td>Cramps, fatigue, less energy for some</td></tr>
+    <tr><td>Follicular</td><td>6 to 13</td><td>Strength and energy usually rise</td></tr>
+    <tr><td>Ovulation</td><td>Around day 14</td><td>Oestradiol peak, no fixed effect on strength</td></tr>
+    <tr><td>Luteal</td><td>15 to 28</td><td>Higher basal temperature, worse sleep, more perceived effort</td></tr>
+  </tbody>
+</table>
 
 The days are the average of a 28-day cycle and yours may move. Research on strength and cycle phase is small and uneven: some studies find differences and others do not. What does repeat is that variation between people exceeds variation between phases. The map is for observing yourself, not for programming by decree.
 
