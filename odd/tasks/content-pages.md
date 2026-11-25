@@ -9,8 +9,8 @@ Legend: `ES` = Spanish published, `EN` = English published.
 
 ## Progress
 
-- **Built: 771 / 792** (ES 771, EN 771).
-- Last batch: batch 77 closed Nutrición at 191/191 and opened Mujer Fitness; 771 pages built.
+- **Built: 787 / 792** (ES 787, EN 787) — the publishable total.
+- Last batch: batches 78 and 79 closed Mujer Fitness at 23/23; the library is finished.
 - Blocks finished end to end: Entrenamiento del Hombro (9), Físicos de leyenda (12), Entrenamiento de
   la Espalda (10), Rutinas de Espalda (4), Espalda (1), Ejercicios de Espalda (31), Ejercicio
   Cardiovascular (32), Entrenamiento de las Piernas (18), Entrenamiento del Pecho (6), Ejercicios de Pecho (27), Ejercicios de Hombro (29), Rutinas de
@@ -25,8 +25,8 @@ Legend: `ES` = Spanish published, `EN` = English published.
 | Rutinas | 80 | 80 |
 | Ejercicios | 196 | 196 |
 | Nutrición | 191 | 191 |
-| Mujer Fitness | 23 | 7 |
-| **Total** | **792** | **771** |
+| Mujer Fitness | 23 | 23 |
+| **Total** | **792** | **787** |
 
 The Built column counts the archive block of each page, not the frontmatter `block` (every guide ships
 with `block: "Entrenamiento"` for the site taxonomy). Five Entrenamiento rows are settled and will
@@ -1157,9 +1157,9 @@ never publish: two DESCARTADA and three FUSIONADA, so the publishable total is *
 - [x] ES · [x] EN — `/tentempies-para-dieta-de-definicion-muscular/` — Tentempiés para tu dieta de definición muscular
 - [x] ES · [x] EN — `/psicologia-de-la-definicion/` — Psicología de la definición, como gestionar el hambre
 
-## Mujer Fitness (23)
+## Mujer Fitness (23) — COMPLETO
 
-### Fitness y Bienestar para mujeres (23) — 7/23
+### Fitness y Bienestar para mujeres (23) — COMPLETO
 
 - [x] ES · [x] EN — `/rutina-piernas-mujeres/` — Rutina de piernas con pesas para mujer \| Simple y efectiva
 - [x] ES · [x] EN — `/rutina-gimnasio-para-mujer/` — Rutina de gimnasio para mujer
@@ -1168,20 +1168,20 @@ never publish: two DESCARTADA and three FUSIONADA, so the publishable total is *
 - [x] ES · [x] EN — `/rutinas-para-mujer/` — Rutinas de pesas para mujeres: tonifica y gana fuerza
 - [x] ES · [x] EN — `/pesas-y-la-mujer/` — Pesas para mujeres \| Como entrenar para ser Chica Fitness
 - [x] ES · [x] EN — `/dietas-para-mujer/` — Dietas para mujeres que van al gimnasio: guía y menús
-- [ ] ES · [ ] EN — `/cuerpo-completo/` — Rutina de cuerpo completo para mujer \| Efectividad 100%
-- [ ] ES · [ ] EN — `/como-redondear-tus-gluteos/` — Cómo Redondear tus Glúteos: Ejercicios y Consejos Efectivos
-- [ ] ES · [ ] EN — `/ejercicios-gluteos-mujeres/` — Guía completa de los mejores ejercicios de glúteos
-- [ ] ES · [ ] EN — `/rutina-gluteos-duros-tonificados/` — Rutina para unos glúteos duros y tonificados
-- [ ] ES · [ ] EN — `/entrenamiento-de-piernas-mujer/` — Entrenamiento de piernas para mujer
-- [ ] ES · [ ] EN — `/entrenamiento-pesas-circuito/` — Entrenamiento de Pesas en Circuito \| Simple y Efectivo 100%
-- [ ] ES · [ ] EN — `/rutina-de-media-hora/` — Rutina de ejercicios para tonificar
-- [ ] ES · [ ] EN — `/rutina-dividida/` — Rutina dividida de 3 días para mujer principiante
-- [ ] ES · [ ] EN — `/ejercicios-mujer/` — Ejercicios más recomendados a mujeres
-- [ ] ES · [ ] EN — `/ejercicio-pechos-firmes/` — Ejercicio para pechos firmes
-- [ ] ES · [ ] EN — `/retencion-de-liquidos-en-mujeres/` — Retención de líquidos en mujeres
-- [ ] ES · [ ] EN — `/tipos-de-genetica-mujer/` — Somatipos glandulares femeninos (Tipos genéticos)
-- [ ] ES · [ ] EN — `/tacones-celulitis-y-otros-problemas/` — Tacones, celulitis y otros problemas
-- [ ] ES · [ ] EN — `/fitness-mujeres-principiantes/` — Fitness en mujeres principiantes
-- [ ] ES · [ ] EN — `/chicas-fitness/` — Chicas Fitness \| Entrenamiento, Nutrición y Consejos en 2026
-- [ ] ES · [ ] EN — `/eliminar-grasa-localizada-de-los-gluteos/` — Eliminar grasa localizada de los glúteos \| ¡Haz esto!
+- [x] ES · [x] EN — `/cuerpo-completo/` — Rutina de cuerpo completo para mujer \| Efectividad 100%
+- [x] ES · [x] EN — `/como-redondear-tus-gluteos/` — Cómo Redondear tus Glúteos: Ejercicios y Consejos Efectivos
+- [x] ES · [x] EN — `/ejercicios-gluteos-mujeres/` — Guía completa de los mejores ejercicios de glúteos
+- [x] ES · [x] EN — `/rutina-gluteos-duros-tonificados/` — Rutina para unos glúteos duros y tonificados
+- [x] ES · [x] EN — `/entrenamiento-de-piernas-mujer/` — Entrenamiento de piernas para mujer
+- [x] ES · [x] EN — `/entrenamiento-pesas-circuito/` — Entrenamiento de Pesas en Circuito \| Simple y Efectivo 100%
+- [x] ES · [x] EN — `/rutina-de-media-hora/` — Rutina de ejercicios para tonificar
+- [x] ES · [x] EN — `/rutina-dividida/` — Rutina dividida de 3 días para mujer principiante
+- [x] ES · [x] EN — `/ejercicios-mujer/` — Ejercicios más recomendados a mujeres
+- [x] ES · [x] EN — `/ejercicio-pechos-firmes/` — Ejercicio para pechos firmes
+- [x] ES · [x] EN — `/retencion-de-liquidos-en-mujeres/` — Retención de líquidos en mujeres
+- [x] ES · [x] EN — `/tipos-de-genetica-mujer/` — Somatipos glandulares femeninos (Tipos genéticos)
+- [x] ES · [x] EN — `/tacones-celulitis-y-otros-problemas/` — Tacones, celulitis y otros problemas
+- [x] ES · [x] EN — `/fitness-mujeres-principiantes/` — Fitness en mujeres principiantes
+- [x] ES · [x] EN — `/chicas-fitness/` — Chicas Fitness \| Entrenamiento, Nutrición y Consejos en 2026
+- [x] ES · [x] EN — `/eliminar-grasa-localizada-de-los-gluteos/` — Eliminar grasa localizada de los glúteos \| ¡Haz esto!
 

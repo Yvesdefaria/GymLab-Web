@@ -19,26 +19,23 @@ Last updated: 2026-11-16.
 - The landing, the three calculators, the 404 and the legal pages all ship in both locales.
 - Measurement and the SQL recipe: see "Reading analytics" below and `COMPLETED.md` Appendix B.
 
-## Content library — 771 / 792 (2026-11-25)
+## Content library — 787 / 792 (2026-11-25) — COMPLETE
 
-- **771 bilingual pages** (ES 771, EN 771), **771 unique hero paths**. By archive section:
-  Entrenamiento 217/222 (five rows settled), Por Músculo 80/80, **Rutinas 80/80**, Ejercicios
-  **196/196**, **Nutrición 191/191 — COMPLETO**, Mujer Fitness 7/23. Publishable total: **787**.
-  Closed inside Nutrición: Suplementos 35/35, **Dietas de volumen 13/13**, **Dietas de definición 17/17**,
-  **Alimentos funcionales 12/12**, **Dietas y planes 3/3** and Nutrición Aplicada 98/111.
-- **Batches 33 to 77 are built, green and committed, not pushed.** The build has **1,557 pages** and
-  **1,554 sitemap URLs**. The formula is pages = articles × 2 + 15 and sitemap = articles × 2 + 12.
-- Gates: `npm run verify` = `check:copy` **39,321/39,321** + build **1,557 pages** + `check:i18n`
-  **24,242/24,242** (1,554 sitemap URLs). The batches 75-77 render pass covered 420 page/width pairs with
-  0 clipped cells.
-- Docs: `odd/tasks/content-library-session.md` (start here next session),
-  `odd/tasks/content-pages.md` (per-page checklist + resume),
-  `odd/tasks/content-library-batch-77.md` (the last batch) and `odd/tasks/guides-page-contract.md`
-  (the page contract and copy gate).
-- **Next 10:** `cuerpo-completo`, `como-redondear-tus-gluteos`, `ejercicios-gluteos-mujeres`,
-  `rutina-gluteos-duros-tonificados`, `entrenamiento-de-piernas-mujer`,
-  `entrenamiento-pesas-circuito`, `rutina-de-media-hora`, `rutina-dividida`, `ejercicios-mujer`,
-  `ejercicio-pechos-firmes`. The remaining 21 rows are all Mujer Fitness.
+- **787 bilingual pages** (ES 787, EN 787), **787 unique hero paths**. Every publishable row is built:
+  Entrenamiento 217/222 (the five missing rows are settled: two DESCARTADA and three FUSIONADA),
+  Por Músculo 80/80, Rutinas 80/80, Ejercicios 196/196, Nutrición 191/191, Mujer Fitness 23/23.
+  The five settled rows are the only unchecked boxes and they never publish.
+- **Batches 33 to 79 are built, green and committed, not pushed.** The build has **1,589 pages** and
+  **1,586 sitemap URLs**. The formula is pages = articles × 2 + 15 and sitemap = articles × 2 + 12.
+- Gates: `npm run verify` = `check:copy` **40,137/40,137** + build **1,589 pages** + `check:i18n`
+  **24,738/24,738** (1,586 sitemap URLs). The batches 78-79 render pass covered 224 page/width pairs
+  with 0 clipped cells.
+- Docs: `odd/tasks/content-library-session.md` (the handoff), `odd/tasks/content-pages.md` (the closed
+  checklist), `odd/tasks/content-library-batch-79.md` (the last batch) and
+  `odd/tasks/guides-page-contract.md` (the page contract and copy gate).
+- **No content rows are pending.** What is left is the phased work, not more pages: Phase 1 JSON-LD and
+  per-article OG, Phase 2 hubs and internal links, Phase 3 CTA, Phase 5 image pipeline, Phase 6 the
+  Search Console reading, Phase 7 the scaling architecture, and the owner's push of batches 33-79.
 - **Follow-up:** ten hero pairs score 6 or less: the pre-existing exact duplicate
   (`remo-polea-sentado` with `superserie-de-espalda-para-terminar-tu-rutina`), and nine near pairs at
   3-6 (`aperturas-mancuernas-banco-inclinado` vs `press-inclinado-barra` at 3;
