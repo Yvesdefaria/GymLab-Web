@@ -810,6 +810,22 @@ const ROUTE_PAIRS = [
   ['/rutinas-para-mujer', '/women-weight-routines'],
   ['/pesas-y-la-mujer', '/women-and-weights'],
   ['/dietas-para-mujer', '/womens-diet-guide'],
+  ['/cuerpo-completo', '/full-body-womens-workout'],
+  ['/como-redondear-tus-gluteos', '/round-glutes'],
+  ['/ejercicios-gluteos-mujeres', '/glute-exercises-for-women'],
+  ['/rutina-gluteos-duros-tonificados', '/glute-routine'],
+  ['/entrenamiento-de-piernas-mujer', '/womens-leg-training'],
+  ['/entrenamiento-pesas-circuito', '/circuit-training'],
+  ['/rutina-de-media-hora', '/30-minute-workout'],
+  ['/rutina-dividida', '/3-day-split-for-women'],
+  ['/ejercicios-mujer', '/exercises-for-women'],
+  ['/ejercicio-pechos-firmes', '/firm-breasts-exercise'],
+  ['/retencion-de-liquidos-en-mujeres', '/water-retention'],
+  ['/tipos-de-genetica-mujer', '/female-body-types'],
+  ['/tacones-celulitis-y-otros-problemas', '/high-heels'],
+  ['/fitness-mujeres-principiantes', '/beginner-women-fitness'],
+  ['/chicas-fitness', '/womens-fitness-culture'],
+  ['/eliminar-grasa-localizada-de-los-gluteos', '/glute-spot-reduction'],
 ];
 
 const pairFor = (pathname) => {
