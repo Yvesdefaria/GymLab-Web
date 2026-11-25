@@ -800,6 +800,16 @@ const ROUTE_PAIRS = [
   ['/huevos-un-poderoso-alimento-para-tu-dieta', '/eggs'],
   ['/sardina-dieta-fitness', '/sardines'],
   ['/sulforafano', '/sulforaphane'],
+  ['/dieta-paleo-que-es-beneficios-reales', '/paleo-diet'],
+  ['/tentempies-para-dieta-de-definicion-muscular', '/cutting-snacks'],
+  ['/psicologia-de-la-definicion', '/diet-psychology'],
+  ['/rutina-piernas-mujeres', '/women-leg-workout'],
+  ['/rutina-gimnasio-para-mujer', '/women-gym-workout'],
+  ['/entrenamiento-para-mujer-fitness', '/womens-fitness-training'],
+  ['/entrenamiento-de-fuerza-y-ciclo-menstrual', '/strength-training-and-menstrual-cycle'],
+  ['/rutinas-para-mujer', '/women-weight-routines'],
+  ['/pesas-y-la-mujer', '/women-and-weights'],
+  ['/dietas-para-mujer', '/womens-diet-guide'],
 ];
 
 const pairFor = (pathname) => {

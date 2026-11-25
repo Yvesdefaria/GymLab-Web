@@ -1541,6 +1541,26 @@ const PAGES = [
   ['en', '/en/sardines/'],
   ['es', '/es/sulforafano/'],
   ['en', '/en/sulforaphane/'],
+  ['es', '/es/dieta-paleo-que-es-beneficios-reales/'],
+  ['en', '/en/paleo-diet/'],
+  ['es', '/es/tentempies-para-dieta-de-definicion-muscular/'],
+  ['en', '/en/cutting-snacks/'],
+  ['es', '/es/psicologia-de-la-definicion/'],
+  ['en', '/en/diet-psychology/'],
+  ['es', '/es/rutina-piernas-mujeres/'],
+  ['en', '/en/women-leg-workout/'],
+  ['es', '/es/rutina-gimnasio-para-mujer/'],
+  ['en', '/en/women-gym-workout/'],
+  ['es', '/es/entrenamiento-para-mujer-fitness/'],
+  ['en', '/en/womens-fitness-training/'],
+  ['es', '/es/entrenamiento-de-fuerza-y-ciclo-menstrual/'],
+  ['en', '/en/strength-training-and-menstrual-cycle/'],
+  ['es', '/es/rutinas-para-mujer/'],
+  ['en', '/en/women-weight-routines/'],
+  ['es', '/es/pesas-y-la-mujer/'],
+  ['en', '/en/women-and-weights/'],
+  ['es', '/es/dietas-para-mujer/'],
+  ['en', '/en/womens-diet-guide/'],
 ];
 
 // Content routes, keyed by a stable id with the slug each locale publishes. The
@@ -2956,6 +2976,22 @@ const ROUTES = {
   eggs: { es: '/huevos-un-poderoso-alimento-para-tu-dieta', en: '/eggs' },
   sardines: { es: '/sardina-dieta-fitness', en: '/sardines' },
   sulforaphane: { es: '/sulforafano', en: '/sulforaphane' },
+  paleoDiet: { es: '/dieta-paleo-que-es-beneficios-reales', en: '/paleo-diet' },
+  cuttingSnacks: { es: '/tentempies-para-dieta-de-definicion-muscular', en: '/cutting-snacks' },
+  dietPsychology: { es: '/psicologia-de-la-definicion', en: '/diet-psychology' },
+  womenLegWorkout: { es: '/rutina-piernas-mujeres', en: '/women-leg-workout' },
+  womenGymWorkout: { es: '/rutina-gimnasio-para-mujer', en: '/women-gym-workout' },
+  womensFitnessTraining: {
+    es: '/entrenamiento-para-mujer-fitness',
+    en: '/womens-fitness-training',
+  },
+  cycleStrength: {
+    es: '/entrenamiento-de-fuerza-y-ciclo-menstrual',
+    en: '/strength-training-and-menstrual-cycle',
+  },
+  womenRoutines: { es: '/rutinas-para-mujer', en: '/women-weight-routines' },
+  womenAndWeights: { es: '/pesas-y-la-mujer', en: '/women-and-weights' },
+  womensDiet: { es: '/dietas-para-mujer', en: '/womens-diet-guide' },
 };
 
 const routeId = (path) => {
