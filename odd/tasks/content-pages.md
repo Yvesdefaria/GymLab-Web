@@ -9,8 +9,8 @@ Legend: `ES` = Spanish published, `EN` = English published.
 
 ## Progress
 
-- **Built: 761 / 792** (ES 761, EN 761).
-- Last batch: batches 75 and 76 closed Dietas de definición and Alimentos funcionales; 761 pages built.
+- **Built: 771 / 792** (ES 771, EN 771).
+- Last batch: batch 77 closed Nutrición at 191/191 and opened Mujer Fitness; 771 pages built.
 - Blocks finished end to end: Entrenamiento del Hombro (9), Físicos de leyenda (12), Entrenamiento de
   la Espalda (10), Rutinas de Espalda (4), Espalda (1), Ejercicios de Espalda (31), Ejercicio
   Cardiovascular (32), Entrenamiento de las Piernas (18), Entrenamiento del Pecho (6), Ejercicios de Pecho (27), Ejercicios de Hombro (29), Rutinas de
@@ -24,9 +24,9 @@ Legend: `ES` = Spanish published, `EN` = English published.
 | Por Músculo | 80 | 80 |
 | Rutinas | 80 | 80 |
 | Ejercicios | 196 | 196 |
-| Nutrición | 191 | 188 |
-| Mujer Fitness | 23 | 0 |
-| **Total** | **792** | **761** |
+| Nutrición | 191 | 191 |
+| Mujer Fitness | 23 | 7 |
+| **Total** | **792** | **771** |
 
 The Built column counts the archive block of each page, not the frontmatter `block` (every guide ships
 with `block: "Entrenamiento"` for the site taxonomy). Five Entrenamiento rows are settled and will
@@ -946,7 +946,7 @@ never publish: two DESCARTADA and three FUSIONADA, so the publishable total is *
 - [x] ES · [x] EN — `/encogimientos-trapecio-polea/` — Encogimientos en polea para trapecios
 - [x] ES · [x] EN — `/encogimientos-multipower/` — Encogimientos en multipower
 
-## Nutrición (191)
+## Nutrición (191) — COMPLETO
 
 ### Suplementos Dietéticos (35) — COMPLETO
 
@@ -1151,23 +1151,23 @@ never publish: two DESCARTADA and three FUSIONADA, so the publishable total is *
 - [x] ES · [x] EN — `/sardina-dieta-fitness/` — Sardina: El súper alimento para tu dieta fitness
 - [x] ES · [x] EN — `/sulforafano/` — El sulforafano, todos a comer brecol
 
-### Dietas y planes de alimentación (3)
+### Dietas y planes de alimentación (3) — COMPLETO
 
-- [ ] ES · [ ] EN — `/dieta-paleo-que-es-beneficios-reales/` — Guía Dieta Paleo: Cómo Empezar sin Complicaciones
-- [ ] ES · [ ] EN — `/tentempies-para-dieta-de-definicion-muscular/` — Tentempiés para tu dieta de definición muscular
-- [ ] ES · [ ] EN — `/psicologia-de-la-definicion/` — Psicología de la definición, como gestionar el hambre
+- [x] ES · [x] EN — `/dieta-paleo-que-es-beneficios-reales/` — Guía Dieta Paleo: Cómo Empezar sin Complicaciones
+- [x] ES · [x] EN — `/tentempies-para-dieta-de-definicion-muscular/` — Tentempiés para tu dieta de definición muscular
+- [x] ES · [x] EN — `/psicologia-de-la-definicion/` — Psicología de la definición, como gestionar el hambre
 
 ## Mujer Fitness (23)
 
-### Fitness y Bienestar para mujeres (23)
+### Fitness y Bienestar para mujeres (23) — 7/23
 
-- [ ] ES · [ ] EN — `/rutina-piernas-mujeres/` — Rutina de piernas con pesas para mujer \| Simple y efectiva
-- [ ] ES · [ ] EN — `/rutina-gimnasio-para-mujer/` — Rutina de gimnasio para mujer
-- [ ] ES · [ ] EN — `/entrenamiento-para-mujer-fitness/` — Guía de entrenamiento para ser una mujer fitness
-- [ ] ES · [ ] EN — `/entrenamiento-de-fuerza-y-ciclo-menstrual/` — Fuerza y Ciclo Menstrual: Como adaptar tus rutinas en 2026
-- [ ] ES · [ ] EN — `/rutinas-para-mujer/` — Rutinas de pesas para mujeres: tonifica y gana fuerza
-- [ ] ES · [ ] EN — `/pesas-y-la-mujer/` — Pesas para mujeres \| Como entrenar para ser Chica Fitness
-- [ ] ES · [ ] EN — `/dietas-para-mujer/` — Dietas para mujeres que van al gimnasio: guía y menús
+- [x] ES · [x] EN — `/rutina-piernas-mujeres/` — Rutina de piernas con pesas para mujer \| Simple y efectiva
+- [x] ES · [x] EN — `/rutina-gimnasio-para-mujer/` — Rutina de gimnasio para mujer
+- [x] ES · [x] EN — `/entrenamiento-para-mujer-fitness/` — Guía de entrenamiento para ser una mujer fitness
+- [x] ES · [x] EN — `/entrenamiento-de-fuerza-y-ciclo-menstrual/` — Fuerza y Ciclo Menstrual: Como adaptar tus rutinas en 2026
+- [x] ES · [x] EN — `/rutinas-para-mujer/` — Rutinas de pesas para mujeres: tonifica y gana fuerza
+- [x] ES · [x] EN — `/pesas-y-la-mujer/` — Pesas para mujeres \| Como entrenar para ser Chica Fitness
+- [x] ES · [x] EN — `/dietas-para-mujer/` — Dietas para mujeres que van al gimnasio: guía y menús
 - [ ] ES · [ ] EN — `/cuerpo-completo/` — Rutina de cuerpo completo para mujer \| Efectividad 100%
 - [ ] ES · [ ] EN — `/como-redondear-tus-gluteos/` — Cómo Redondear tus Glúteos: Ejercicios y Consejos Efectivos
 - [ ] ES · [ ] EN — `/ejercicios-gluteos-mujeres/` — Guía completa de los mejores ejercicios de glúteos

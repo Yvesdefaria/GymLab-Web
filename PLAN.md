@@ -19,28 +19,26 @@ Last updated: 2026-11-16.
 - The landing, the three calculators, the 404 and the legal pages all ship in both locales.
 - Measurement and the SQL recipe: see "Reading analytics" below and `COMPLETED.md` Appendix B.
 
-## Content library — 741 / 792 (2026-11-24)
+## Content library — 771 / 792 (2026-11-25)
 
-- **741 bilingual pages** (ES 741, EN 741), **741 unique hero paths**. By archive section:
+- **771 bilingual pages** (ES 771, EN 771), **771 unique hero paths**. By archive section:
   Entrenamiento 217/222 (five rows settled), Por Músculo 80/80, **Rutinas 80/80**, Ejercicios
-  **196/196 — COMPLETO**, Nutrición 168/191, Mujer Fitness 0/23. Publishable total: **787**.
-  Suplementos Dietéticos **35/35**, **Dietas de volumen 13/13**, and Nutrición Aplicada 98/111.
-  Dietas de definición is 9/17.
-- **Batches 33 to 74 are built, green and committed, not pushed.** The build has **1,497 pages** and
-  **1,494 sitemap URLs**. The formula is pages = articles × 2 + 15 and sitemap = articles × 2 + 12;
-  the older ×2+16 figure counted `404.html`.
-- Gates: `npm run verify` = `check:copy` **37,791/37,791** + build **1,497 pages** + `check:i18n`
-  **23,312/23,312** (1,494 sitemap URLs). The three batch-72/73/74 render pass covered 420 page/width
-  pairs with 0 clipped cells.
+  **196/196**, **Nutrición 191/191 — COMPLETO**, Mujer Fitness 7/23. Publishable total: **787**.
+  Closed inside Nutrición: Suplementos 35/35, **Dietas de volumen 13/13**, **Dietas de definición 17/17**,
+  **Alimentos funcionales 12/12**, **Dietas y planes 3/3** and Nutrición Aplicada 98/111.
+- **Batches 33 to 77 are built, green and committed, not pushed.** The build has **1,557 pages** and
+  **1,554 sitemap URLs**. The formula is pages = articles × 2 + 15 and sitemap = articles × 2 + 12.
+- Gates: `npm run verify` = `check:copy` **39,321/39,321** + build **1,557 pages** + `check:i18n`
+  **24,242/24,242** (1,554 sitemap URLs). The batches 75-77 render pass covered 420 page/width pairs with
+  0 clipped cells.
 - Docs: `odd/tasks/content-library-session.md` (start here next session),
   `odd/tasks/content-pages.md` (per-page checklist + resume),
-  `odd/tasks/content-library-batch-74.md` (the last batch) and `odd/tasks/guides-page-contract.md`
+  `odd/tasks/content-library-batch-77.md` (the last batch) and `odd/tasks/guides-page-contract.md`
   (the page contract and copy gate).
-- **Next 10:** `dietas-culturistas-segun-objetivos-volumen-definicion-y-mantenimiento`,
-  `dieta-definicion-culturista`, `dieta-disociada`, `dieta-sencilla-para-vida-fitness`,
-  `definicion-muscular-dieta`, `dieta-eliminar-exceso-grasa`, `dieta-culturismo-profesional`,
-  `dieta-sana-sin-errores-controlando-el-indice-glucemico`, `guacamole-como-comerlo-sin-engordar`,
-  `pan-de-wasa`.
+- **Next 10:** `cuerpo-completo`, `como-redondear-tus-gluteos`, `ejercicios-gluteos-mujeres`,
+  `rutina-gluteos-duros-tonificados`, `entrenamiento-de-piernas-mujer`,
+  `entrenamiento-pesas-circuito`, `rutina-de-media-hora`, `rutina-dividida`, `ejercicios-mujer`,
+  `ejercicio-pechos-firmes`. The remaining 21 rows are all Mujer Fitness.
 - **Follow-up:** ten hero pairs score 6 or less: the pre-existing exact duplicate
   (`remo-polea-sentado` with `superserie-de-espalda-para-terminar-tu-rutina`), and nine near pairs at
   3-6 (`aperturas-mancuernas-banco-inclinado` vs `press-inclinado-barra` at 3;
