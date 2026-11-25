@@ -12,9 +12,10 @@ Last updated: 2026-11-16.
   TypeScript strict, fully static. Languages `es` (default) and `en-GB`, both under a locale prefix.
 - Production is **live** at `https://gymlab.dev`, served by the Worker `gymlab-web` with static assets.
   It is not Cloudflare Pages. Deploy with `npx wrangler deploy`.
-- Production is **live with batch 32** (pushed 2026-11-16): **658 pages** and **654 sitemap URLs**
-  with 1,962 alternates. Gates at the push: `check:copy` **16,371/16,371**, build **658 pages**,
-  `check:i18n` **10,292/10,292**. Nothing is pending locally.
+- Production is **live with the full content library** (pushed 2026-11-25): **1,589 pages** and
+  **1,586 sitemap URLs** with 4,758 alternates. Gates at the push: `check:copy` **40,137/40,137**,
+  build **1,589 pages**, `check:i18n` **24,738/24,738**. Verified live after the deploy:
+  `/es/cuerpo-completo/` and `/en/oats/` return `200`, and `sitemap-0.xml` lists 1,586 URLs.
 - `app.gymlab.dev` is `noindex` with a real `robots.txt`.
 - The landing, the three calculators, the 404 and the legal pages all ship in both locales.
 - Measurement and the SQL recipe: see "Reading analytics" below and `COMPLETED.md` Appendix B.
@@ -616,8 +617,10 @@ sequence is now explicit: fix measurement, ship the 20-exercise pilot, measure, 
 1. Read `AGENTS.md`, this file and `COMPLETED.md`; then `odd/tasks/` for the task at hand.
 2. Optional memory context: Engram project `webgymlab`.
 3. `npm install` if `node_modules` is missing → `npm run dev` to preview.
-4. Pick the first unchecked item above; follow repo conventions (work-unit commits, no AI attribution).
-5. Verify with `npm run build` **then** `npm run check:i18n`.
+4. **The content library is finished (787/792, fully deployed).** Start from *Legal and compliance* and
+   then Phase 2 in this file; there are no content rows left.
+5. Pick the first unchecked item above; follow repo conventions (work-unit commits, no AI attribution).
+6. Verify with `npm run build` **then** `npm run check:i18n`.
 
 ## Useful commands
 

@@ -22,6 +22,7 @@
 | T16a | Cloudflare P0: WAF, rate limit, TLS, HSTS, DMARC, CAA, `security.txt` | 2026-10-24 | Hardening applied and verified in production |
 | T16b | Cloudflare P1/P2: RUM, `early_hints`, favicon 404, cache rules | 2026-10-24 | Measurement base and the fixes it justified |
 | T17 | Structured data, 404, favicon and brand mark | 2026-10-29 | Honest `@graph` per page, a 404 that renders, a legible icon |
+| T18 | Content library: 787 bilingual pages | 2026-11-25 | 79 batches, 1,589 pages live, 1,586 sitemap URLs |
 
 ---
 
@@ -178,6 +179,35 @@ Merged to `main` (`f89b637`, merging `feat/seo-structured-data` and `feat/404-y-
 - **Gate**: `check:i18n` now has **308 assertions** and covers the `@graph` shape,
   `operatingSystem === 'Web'`, `url === canonical`, the absence of `FAQPage`, and that no `@id`
   reference dangles on a calculator page.
+
+## T18 — Content library: 787 bilingual pages (2026-11-25)
+
+- **Scope:** rebuilt the archive at `cambiatufisico.com` (792 rows) into the site, one bilingual pair per
+  row, in 79 batches. **787 pairs built** (1,574 article files + 16 base pages = **1,589 pages**), 787
+  unique heroes. The five missing rows are settled and never publish: two DESCARTADA (the FiveStars
+  congress page and the AEKE S1 Pro page) and three FUSIONADA (`velocidad-repeticiones`,
+  `recuperacion-para-mas-musculo-rendimiento`, `ejecucion-estricta-y-concentracion`).
+- **Blocks:** Entrenamiento 217/222, Por Músculo 80/80, Rutinas 80/80, Ejercicios 196/196,
+  **Nutrición 191/191** (Suplementos 35/35, Volumen 13/13, Definición 17/17, Alimentos funcionales
+  12/12, Dietas y planes 3/3, Aplicada 98/111) and **Mujer Fitness 23/23**.
+- **Gates at the close:** `check:copy` **40,137/40,137**, build **1,589 pages**, `check:i18n`
+  **24,738/24,738**, sitemap **1,586 URLs**, render pass **0 clipped cells** over 224 page/width pairs.
+- **Editorial method:** every page is a rebuild, not a copy. YMYL first (no steroid, diuretic, water-cut
+  or megadose protocol; no cancer cure; no crash-diet floor), then fabricated numbers, invented
+  mechanisms, commercial content and register. From batch 75 the owner set the rule that still applies:
+  **keep the archive's information wherever it survives as fact, correct the number, name the evidence
+  and change the angle**; only promotional links, newsletter CTAs, brand endorsements and harmful
+  claims are removed.
+- **Production:** pushed 2026-11-25 (`902a182..5cd0d91`, 343 commits) and deployed by Workers Builds.
+  Verified live: `/es/cuerpo-completo/` and `/en/oats/` return `200`, `sitemap-0.xml` lists 1,586 URLs.
+- **Repeatable flow (in `odd/tasks/content-library-session.md`):** map the source -> write the batch
+  brief -> register routes -> two writers on disjoint files -> parent gates, link check, render and
+  dHash -> commit per page, then routes, then docs.
+- **Cost of the last stretch:** batches 72-79 added 46 pairs in two sessions, with four writers alive at
+  once for the last 26. The recurring defects were decision tables in the routine grid (clipped cells),
+  brief slugs that did not exist on disk, and the moving hero pool between parallel writers.
+
+---
 
 ## Appendix A — SEO audit of the copy (2026-10-23)
 

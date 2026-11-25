@@ -11,11 +11,13 @@ Last updated: 2026-11-24. Read this first next session.
 
 - **The content library is finished: 787 / 792** (787 ES + 787 EN), 787 unique heroes. The five
   unchecked rows are the settled Entrenamiento ones (two DESCARTADA, three FUSIONADA) and never publish.
-- **No next batch.** There is nothing left to write. What remains is phased work, not pages: Phase 1
-  JSON-LD and per-article OG, Phase 2 hubs and internal links, Phase 3 CTA, Phase 5 the image pipeline,
-  Phase 6 the Search Console reading, Phase 7 the scaling architecture, and the owner's push.
-- Production runs **batch 32** (pushed 2026-11-16). Batches 33-79 are local and green; push is the
-  owner's call.
+- **No next batch.** There is nothing left to write. What remains is phased work, not pages: the
+  **Legal and compliance audit** (Aviso Legal, controller identity, cookie decision), Phase 1 JSON-LD
+  and per-article OG, Phase 2 hubs and internal links, Phase 3 CTA, Phase 5 the image pipeline, Phase 6
+  the Search Console reading, Phase 7 the scaling architecture, and T17's 768 px overflow.
+- **Production is live with the whole library** (pushed 2026-11-25, `902a182..5cd0d91`): **1,589 pages**
+  and **1,586 sitemap URLs**. Verified after the deploy: `/es/cuerpo-completo/` and `/en/oats/` return
+  200. The deploy ran on Workers Builds; no manual `wrangler deploy` was needed.
 - Gates: `check:copy` **40,137/40,137**, build **1,589 pages**, `check:i18n` **24,738/24,738**, sitemap
   **1,586 URLs**. The formula is pages = articles × 2 + 15 and sitemap = articles × 2 + 12. Run
   `npm run verify`.
@@ -39,8 +41,8 @@ Last updated: 2026-11-24. Read this first next session.
 - Five archive rows are settled and must stay out: the FiveStars Fitness congress page (discarded),
   the AEKE S1 Pro page (discarded 2026-11-14), `/velocidad-repeticiones/` (fused into the tempo page,
   2026-11-14) and the two batch 20 fusions (2026-11-15).
-- **Production runs batch 32 (pushed 2026-11-16).** Batches 19 to 32 are live; `origin/main` is at the
-  batch 32 docs push. Batches 33 to 79 are committed locally and not pushed.
+- **Production is live with the full library (pushed 2026-11-25).** `origin/main` is at the library
+  close and every batch is deployed and verified. Nothing content-side is pending locally.
 - Batch records: `odd/tasks/content-library-batch-78.md`, `-79.md` and the session closes below.
 
 ## Gates
@@ -104,7 +106,8 @@ library and breaks every Python process that imports Pillow.
   `/en/calorie-calculator/`; guide pages link articles only.
 - **Slug typos.** A link with a double m (`sistema-immunologico` instead of `sistema-inmunologico`)
   passed `check:copy` and the build; only the parent link pass caught it.
-- **Repo state.** The local branch is more than 150 commits ahead of origin; production runs batch 32.
+- **Repo state.** `main` and `origin/main` are in sync at the library close; production serves the full
+  library.
   The 18 untracked files (six stray images in the root, twelve mockups) predate this work.
 
 ## What is built
@@ -219,8 +222,8 @@ plan in `PLAN.md`, not content.
   published, so the bench reverse crunch page can link its floor regression when that page is next
   touched. One pre-existing 3 px clipped cell in `/rutinas-espalda/` (a nowrap numeric column) is
   documented in the batch 22 record.
-- **Push is the owner's call:** batches 19 to 32 were pushed on 2026-11-16 from `6293327` to
-  `f7f8de1`. Batches 33 to 79, page commits and docs, remain local; production still serves 658 pages.
+- **Push done (2026-11-25):** `902a182..5cd0d91`, 343 commits, deployed by Workers Builds. Production
+  serves the full library: 1,589 pages, 1,586 sitemap URLs. Later pushes are ordinary repo policy.
 
 ## Session close (2026-11-25, batches 78 and 79 — library complete)
 
@@ -247,8 +250,8 @@ plan in `PLAN.md`, not content.
   to be dHash-checked immediately before vendoring; two heroes came in at 3:2 and render fine through
   `object-fit: cover`; `check:copy` verifies the ES hero path only, so the EN article needs its own
   check.
-- **Next: no content batches.** The remaining work is `PLAN.md` Phases 1, 2, 3, 5, 6 and 7, and the
-  owner's push of batches 33-79.
+- **Next: no content batches.** Pushed and deployed on 2026-11-25. The remaining work is in `PLAN.md`:
+  the *Legal and compliance* audit, Phases 1, 2, 3, 5, 6 and 7, and T17's 768 px overflow.
 
 ## Session close (2026-11-25, batches 75 to 77)
 
