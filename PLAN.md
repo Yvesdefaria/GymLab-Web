@@ -242,6 +242,36 @@ relevance can be computed at build time and the section added once.
 - **Trap:** a carousel that hides the links behind an interaction, or a card grid that ships the full
   hero in a thumbnail slot. This phase adds internal linking and navigation, not a new image pipeline.
 
+## Legal and compliance — audit (2026-11-25)
+
+Measured today: the site sets **no cookies**. The live response carries no `set-cookie`, and the source
+has zero third-party scripts (`gtag`, Plausible, Matomo, Fathom), zero `<form>`/`<input>` and zero
+`document.cookie`/`localStorage`/`sessionStorage`. The cookie question is therefore a decision about
+analytics, not a technical debt.
+
+- [ ] **Aviso Legal (LSSI art. 10).** The site has no provider identification; the only contact published
+      is `gymlab@gymlab.dev`. Add `/es/aviso-legal/` + `/en/legal-notice/` with titular, NIF, domicilio,
+      correo y actividad. **Blocked by owner data**: a NIF and an address cannot be invented.
+- [ ] **Privacy policy: the controller and the website.** Section 1 says the app is "developed independently"
+      but never names the controller, which art. 13.1.a RGPD requires, and the policy describes only the
+      app (IndexedDB, Health Connect, Sentry, PostHog). Add the identity and one website section: no
+      cookies, no analytics, no forms; the only personal data is the email a reader sends; Cloudflare
+      processes technical logs for security. Keep it true or do not publish it.
+- [ ] **Cookie policy and consent banner only when non-exempt cookies exist.** If Phase 8 adds GA4, then
+      and only then: a page with a real inventory (name, provider, purpose, expiry) and a banner where
+      reject is as easy as accept, default denied, nothing fires before the choice. Do not publish a
+      cookie policy for cookies the site does not set: an inaccurate inventory is worse than none.
+- **Verified, nothing to do:** slugs are already translated per locale in all 787 pairs (the `/content/`
+      path is the hero folder, not a route); hreflang is reciprocal with `x-default` pointing at the
+      Spanish URL and `check:i18n` asserts it; `/` answers `302 → /es/` and every pair carries its
+      alternates in the sitemap.
+- **Rejected:** one Search Console property per subdirectory (`/es/`, `/en/`). The Domain property
+      already covers both; the language split is a filter or a regex in the Pages report, not a second
+      property that needs its own verification and divides the data.
+- **Reference reviewed (2026-11-25):** `gymlab-ibiza.com/politica-de-cookies/` belongs to a different
+      business (a gym in Ibiza). Its page names no concrete cookie, no provider and no duration, only
+      categories, which is exactly what the AEPD requires. Useful as a section list, not as a model.
+
 ## Open work
 
 ### T15 — SEO, open items
@@ -302,6 +332,8 @@ relevance can be computed at build time and the section added once.
       insecure". Read a few days of reports in `gymlab@gymlab.dev` first, then tighten. Doing it blind
       can drop legitimate mail from any sender that is not aligned.
 - [ ] **Play Console declarations** (Health apps + Data safety), tied to the app beacon below.
+- [ ] **Datos del Aviso Legal**: nombre o razón social, NIF y domicilio para publicar el aviso legal que
+      exige el art. 10 de la LSSI. Sin esos datos la página no se puede escribir.
 
 ### Search Console — get the site indexed
 
