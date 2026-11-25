@@ -45,9 +45,9 @@ A carbohydrate sitting is 40-50 g: one cup of cooked rice, one medium potato, tw
 
 The archive said no counting was needed. That is half true: you do not weigh every gram, but choosing the portion is already counting. A palm for protein, a fist for vegetables and a cup for rice are measures that work without a scale.
 
-## Protein: 200 g is the ceiling
+## Protein: 200 g is the top of the range
 
-The plan asks for a minimum of 200 g of protein a day, about 40 g per meal. At 80 kg that is 2.5 g per kilo, the ceiling of what is used in contest prep. The range with the best support is 1.6-2.2 g/kg, so 200 g is an advanced athlete's figure, not a minimum for everyone.
+The plan asks for a minimum of 200 g of protein a day, about 40 g per meal. At 80 kg that is 2.5 g per kilo, at the top of what is used in contest prep. The range with the best support is 1.6-2.2 g/kg, so 200 g is an advanced athlete's figure, not a minimum for everyone.
 
 For most people, 1.6-2.2 g/kg is enough: 128-176 g at 80 kg. If the plan asks for 200 g and you weigh 80 kg, you can drop to 176 g without losing muscle and gain room for vegetables and fruit.
 

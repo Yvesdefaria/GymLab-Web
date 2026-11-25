@@ -6,7 +6,7 @@ h1: "The glycaemic index diet"
 block: "Training"
 section: "Cutting diets"
 hero: "/content/dieta-sana-sin-errores-controlando-el-indice-glucemico/hero.jpg"
-heroAlt: "Green bowl of lentils with tomato and parsley on a light table"
+heroAlt: "Green bowl of lentils with tomato and parsley on a green background"
 heroCredit: "Wikimedia Commons · James Sutton · CC0"
 lead: "The **glycaemic index diet** orders carbohydrates by the glucose response, not by reputation. The archive that gave it a name included no values at all, so this version starts with the table and then corrects five claims that do not hold."
 tags: ["Carbs", "Glucose", "Legumes", "Menus"]
@@ -92,7 +92,7 @@ The archive breakfast holds: wholemeal or rye bread, wholegrain cereal, fruit an
   </tbody>
 </table>
 
-Drinks are water, tea, coffee and infusions. A glass of wine fits if it counts in the total. The fat-free menus survive with olive oil.
+Drinks are water, tea, coffee and infusions. A glass of wine fits if it counts in the total. The archive's fat-free menus still work, with olive oil standing in for the missing fat.
 
 ## For the athlete
 

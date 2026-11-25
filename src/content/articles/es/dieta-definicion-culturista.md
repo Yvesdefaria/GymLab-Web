@@ -6,7 +6,7 @@ h1: "Dieta de definición culturista"
 block: "Entrenamiento"
 section: "Dietas de definición"
 hero: "/content/dieta-definicion-culturista/hero.jpg"
-heroAlt: "Agenda abierta en una página semanal con un vaso de agua, un lápiz y ovillos de lana sobre una mesa de madera"
+heroAlt: "Agenda abierta en una página de calendario, con un vaso de agua, un lápiz y ovillos de lana sobre una mesa de madera"
 heroCredit: "Wikimedia Commons · Giulia Bertelli · CC0"
 lead: "La **dieta de definición culturista** busca bajar grasa y conservar músculo. La parte que más se copia es la última semana: descarga y carga de carbohidratos, comidas de arroz y pollo y una manipulación de agua que es peligrosa. Aquí se describe como práctica documentada, con sus riesgos."
 tags: ["Definición", "Competición", "Carbohidratos", "Última semana"]
@@ -35,19 +35,19 @@ El punto de partida del archivo es una dieta de volumen a la que se le quitan la
   <tbody>
     <tr><td>1</td><td>Avena, leche y claras</td><td>60 g de avena, 250 ml de leche, 6 claras</td></tr>
     <tr><td>2</td><td>Arroz y pollo</td><td>200 g de arroz cocido, 200 g de pollo</td></tr>
-    <tr><td>3</td><td>Pasta o patata con atún o pavo</td><td>200 g de pasta cocida, 200 g de atún</td></tr>
+    <tr><td>3</td><td>Pasta o patata con atún o pavo, ensalada y naranja</td><td>200 g de pasta cocida, 200 g de atún, 1 cucharada de aceite, 1 naranja</td></tr>
     <tr><td>4</td><td>Tortilla de claras con fruta</td><td>6 claras, 1 pieza de fruta</td></tr>
     <tr><td>5</td><td>Verdura y pollo o pescado</td><td>Verdura, 200 g de pollo o pescado</td></tr>
   </tbody>
 </table>
 
-La proteína ronda 180-200 g al día y la grasa se queda en 0,6-0,8 g por kilo. La fruta no se elimina: dos piezas al día cubren fibra y micronutrientes. El total ronda 2.000-2.200 kcal, por encima del suelo de 1.400 para un hombre y 1.200 para una mujer.
+La proteína ronda 180-200 g al día y la grasa se queda en 35-40 g, cerca de 0,5 g por kilo para un atleta de 80 kg. Es un mínimo práctico para las hormonas y para absorber las vitaminas liposolubles. La fruta no se elimina: dos piezas al día cubren fibra y micronutrientes. El total ronda 2.100-2.300 kcal, por encima del suelo de 1.400 para un hombre y 1.200 para una mujer.
 
 ## La última semana: descarga y carga
 
 En la última semana se hace una descarga de carbohidratos de dos o tres días, con entrenamiento y sin bajar de 150 g diarios. Después llega la carga, que dura hasta el día de la competición: se deja de entrenar y se suben los carbohidratos.
 
-El resultado que buscan es un músculo lleno y una piel fina. Lo que ocurre es glucógeno y agua: cada gramo de glucógeno arrastra unos tres gramos de agua, y el cambio se ve en el espejo. No es grasa perdida.
+El resultado que buscan es un músculo lleno y una piel fina. El cambio que se produce es glucógeno y agua: cada gramo de glucógeno arrastra unos tres gramos de agua, y se ve en el espejo. No es grasa perdida.
 
 El archivo describe las cuatro últimas semanas con arroz y pollo casi como única comida. Es una simplificación: la variedad se reduce, pero la verdura y la fruta siguen siendo necesarias para la fibra y los micronutrientes.
 

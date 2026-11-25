@@ -98,8 +98,8 @@ The diary mentions Dorian Yates and his two daily half-hour sessions. That is a 
 
 ## What the diary teaches and what not to copy
 
-The drop from 4,420 to 2,810 kcal over 17 weeks was a stepped cut. The real rate depends on the fat lost and on activity, and the diary does not record it. A reasonable rate for an experienced lifter sits near 0.5 kg per week; the final phase runs faster because the stage is close. That last phase is something else: 2,810 kcal with 384 g of protein and two cardio sessions a day describes a competitor in the weeks before the stage.
+The drop from 4,420 to 2,810 kcal over 17 weeks was a stepped cut. The real rate depends on the fat lost and on activity, and the diary does not record it. A reasonable rate for an experienced lifter sits near 0.5 kg per week. The final phase runs faster because the stage is close: 2,810 kcal with 384 g of protein and two cardio sessions a day describes a competitor in the last weeks.
 
-This document does not discuss steroids or diuretics, and this page follows the same line. A calorie template does not come out of it either: two people of the same weight can need 500 kcal of difference. If your goal is to lose fat without competing, the useful frame is the [eight-week diet](/en/eight-week-bodybuilding-diet/), with carb loading explained in the [loading and depletion](/en/carb-loading-and-depletion/) guide.
+This document stays with food, training and cardio. A calorie template does not come out of it either: two people of the same weight can need 500 kcal of difference. If your goal is to lose fat without competing, the useful frame is the [eight-week diet](/en/eight-week-bodybuilding-diet/), with carb loading explained in the [loading and depletion](/en/carb-loading-and-depletion/) guide.
 
 For the final week of a contest, the diary is a reference for what some competitors do. The [maximum definition diet](/en/maximum-definition-diet/) and the [Dorian Yates diet](/en/dorian-yates-diet/) complete the map. Copying phase three without the context of a stage is the fastest way to lose muscle and go hungry for no reason.

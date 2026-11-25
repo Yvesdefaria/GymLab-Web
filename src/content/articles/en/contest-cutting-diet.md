@@ -6,7 +6,7 @@ h1: "Contest cutting diet"
 block: "Training"
 section: "Cutting diets"
 hero: "/content/dieta-definicion-culturista/hero.jpg"
-heroAlt: "Open weekly planner with a glass of water, a pencil and balls of yarn on a wooden table"
+heroAlt: "Open planner on a calendar page with a glass of water, a pencil and balls of yarn on a wooden table"
 heroCredit: "Wikimedia Commons · Giulia Bertelli · CC0"
 lead: "A **contest cutting diet** aims to lose fat and keep muscle. The part most people copy is the final week: carb depletion and loading, rice and chicken meals and water manipulation that is dangerous. Here it is described as documented practice, with its risks."
 tags: ["Definition", "Competition", "Carbohydrate", "Final week"]
@@ -35,19 +35,19 @@ The archive's starting point is a volume diet with the obvious fats and sugars r
   <tbody>
     <tr><td>1</td><td>Oats, milk and egg whites</td><td>60 g oats, 250 ml milk, 6 egg whites</td></tr>
     <tr><td>2</td><td>Rice and chicken</td><td>200 g cooked rice, 200 g chicken</td></tr>
-    <tr><td>3</td><td>Pasta or potato with tuna or turkey</td><td>200 g cooked pasta, 200 g tuna</td></tr>
+    <tr><td>3</td><td>Pasta or potato with tuna or turkey, salad and orange</td><td>200 g cooked pasta, 200 g tuna, 1 tbsp oil, 1 orange</td></tr>
     <tr><td>4</td><td>Egg white omelette with fruit</td><td>6 egg whites, 1 piece of fruit</td></tr>
     <tr><td>5</td><td>Vegetables and chicken or fish</td><td>Vegetables, 200 g chicken or fish</td></tr>
   </tbody>
 </table>
 
-Protein sits at 180-200 g a day and fat at 0.6-0.8 g per kilo. Fruit is not removed: two pieces a day cover fibre and micronutrients. The total lands near 2,000-2,200 kcal, above the 1,400 floor for a man and 1,200 for a woman.
+Protein sits at 180-200 g a day and fat at 35-40 g, close to 0.5 g per kilo for an 80 kg athlete. That is a practical minimum for hormones and for absorbing fat-soluble vitamins. Fruit is not removed: two pieces a day cover fibre and micronutrients. The total lands near 2,100-2,300 kcal, above the 1,400 floor for a man and 1,200 for a woman.
 
 ## The final week: depletion and loading
 
 In the final week, carbohydrate is depleted for two or three days with training, and intake does not go below 150 g a day. Then comes the load, which lasts until contest day: training stops and carbohydrate rises.
 
-The result they aim for is full muscles and thin skin. What happens is glycogen and water: each gram of glycogen pulls about three grams of water, and the change shows in the mirror. It is not fat lost.
+The result they aim for is full muscles and thin skin. The change is glycogen and water: each gram of glycogen pulls about three grams of water, and it shows in the mirror. It is not fat lost.
 
 The archive describes the last four weeks as almost nothing but rice and chicken. That is a simplification: variety shrinks, but vegetables and fruit are still needed for fibre and micronutrients.
 

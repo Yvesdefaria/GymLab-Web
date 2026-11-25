@@ -45,9 +45,9 @@ Una toma de hidratos son 40-50 g: una taza de arroz cocido, una patata mediana, 
 
 El archivo decía que no hace falta contar. Es media verdad: no hay que pesar cada gramo, pero elegir la porción ya es contar. La palma de la mano para la proteína, el puño para la verdura y una taza para el arroz son medidas que funcionan sin báscula.
 
-## La proteína: 200 g es el techo
+## La proteína: 200 g es el extremo alto
 
-El plan pide un mínimo de 200 g de proteína al día, unos 40 g por comida. Para una persona de 80 kg eso son 2,5 g por kilo, el techo de lo que se llega a usar en preparación. La horquilla con mejor respaldo es 1,6-2,2 g/kg, así que 200 g es una cifra de atleta avanzado y no un mínimo para todo el mundo.
+El plan pide un mínimo de 200 g de proteína al día, unos 40 g por comida. Para una persona de 80 kg eso son 2,5 g por kilo, en el extremo alto de lo que se usa en preparación. La horquilla con mejor respaldo es 1,6-2,2 g/kg, así que 200 g es una cifra de atleta avanzado y no un mínimo para todo el mundo.
 
 Para la mayoría, 1,6-2,2 g/kg es suficiente: 128-176 g a 80 kg. Si el plan te pide 200 g y pesas 80 kg, puedes bajar a 176 g sin perder músculo y ganar margen para la verdura y la fruta.
 

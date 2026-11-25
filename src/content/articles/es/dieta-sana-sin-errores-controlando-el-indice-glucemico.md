@@ -6,7 +6,7 @@ h1: "La dieta del índice glucémico"
 block: "Entrenamiento"
 section: "Dietas de definición"
 hero: "/content/dieta-sana-sin-errores-controlando-el-indice-glucemico/hero.jpg"
-heroAlt: "Bol verde de lentejas con tomate y perejil sobre una mesa clara"
+heroAlt: "Bol verde de lentejas con tomate y perejil sobre fondo verde"
 heroCredit: "Wikimedia Commons · James Sutton · CC0"
 lead: "La **dieta del índice glucémico** ordena los hidratos por la respuesta de la glucosa, no por su fama. El archivo que le dio nombre no incluía ni un valor, así que esta versión empieza por la tabla y después corrige cinco afirmaciones que no se sostienen."
 tags: ["Hidratos", "Glucosa", "Legumbres", "Menús"]
@@ -50,9 +50,9 @@ Los valores varían entre tablas y métodos de cocción. Sirven para ordenar dec
 
 ## La cocción y la ración cambian el número
 
-La patata cocida está en 78 y la asada en 85 por la pérdida de agua y la concentración del almidón. La pasta al dente digiere más despacio que la pasada. Las legumbres de bote y las caseras se parecen, aunque el tiempo de cocción mueve el resultado. Un plátano muy maduro sube más que uno verde.
+La patata cocida está en 78 y la asada en 85: pierde agua y concentra el almidón. La pasta al dente digiere más despacio que la pasada. Las legumbres de bote y las caseras se parecen, aunque el tiempo de cocción mueve el resultado. Un plátano muy maduro sube más que uno verde.
 
-El archivo tenía razón en una cosa: la cocina y la compañía del plato importan. Su ejemplo del cordero con patatas, pan y vino frente al cordero con ensalada describe dos comidas distintas. La guía de [hidratos por la noche](/es/engordan-los-hidratos-en-las-cenas/) desmonta la parte que culpaba al horario.
+El archivo acertaba en una cosa: la cocina y la compañía del plato importan. Su ejemplo del cordero con patatas, pan y vino frente al cordero con ensalada describe dos comidas distintas. La guía de [hidratos por la noche](/es/engordan-los-hidratos-en-las-cenas/) desmonta la parte que culpaba al horario.
 
 ## La leche de oveja no es una leche sin lactosa
 
@@ -74,7 +74,7 @@ El pan no está prohibido en la comida ni en la cena. El archivo lo limitaba al 
 
 ## Cómo montar el día
 
-El desayuno del archivo se sostiene: pan integral o de centeno, cereales completos, fruta y proteína. Los menús de comida y cena también, con una condición: la ración de hidrato se ajusta al gasto y al objetivo. El [guacamole](/es/guacamole-como-comerlo-sin-engordar/) es otra grasa que cabe en el plato.
+El desayuno del archivo se sostiene: pan integral o de centeno, cereales completos, fruta y proteína. Los menús de comida y cena también, con una condición: la ración de hidrato se ajusta al gasto y al objetivo. El [guacamole](/es/guacamole-como-comerlo-sin-engordar/) aporta otra grasa al plato.
 
 <table class="text-table">
   <thead>
@@ -92,7 +92,7 @@ El desayuno del archivo se sostiene: pan integral o de centeno, cereales complet
   </tbody>
 </table>
 
-Las bebidas son agua, té, café e infusiones. Una copa de vino entra si cuenta en el total. Los menús sin grasa se mantienen, con aceite de oliva.
+Las bebidas son agua, té, café e infusiones. Una copa de vino entra si cuenta en el total. Los menús sin grasa del archivo siguen valiendo, con aceite de oliva en lugar de la grasa que faltaba.
 
 ## Para el deportista
 
