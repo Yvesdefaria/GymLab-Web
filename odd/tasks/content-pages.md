@@ -9,8 +9,8 @@ Legend: `ES` = Spanish published, `EN` = English published.
 
 ## Progress
 
-- **Built: 741 / 792** (ES 741, EN 741).
-- Last batch: batch 74 closed Dietas de volumen and opened Dietas de definición; 741 pages built.
+- **Built: 761 / 792** (ES 761, EN 761).
+- Last batch: batches 75 and 76 closed Dietas de definición and Alimentos funcionales; 761 pages built.
 - Blocks finished end to end: Entrenamiento del Hombro (9), Físicos de leyenda (12), Entrenamiento de
   la Espalda (10), Rutinas de Espalda (4), Espalda (1), Ejercicios de Espalda (31), Ejercicio
   Cardiovascular (32), Entrenamiento de las Piernas (18), Entrenamiento del Pecho (6), Ejercicios de Pecho (27), Ejercicios de Hombro (29), Rutinas de
@@ -24,9 +24,9 @@ Legend: `ES` = Spanish published, `EN` = English published.
 | Por Músculo | 80 | 80 |
 | Rutinas | 80 | 80 |
 | Ejercicios | 196 | 196 |
-| Nutrición | 191 | 168 |
+| Nutrición | 191 | 188 |
 | Mujer Fitness | 23 | 0 |
-| **Total** | **792** | **741** |
+| **Total** | **792** | **761** |
 
 The Built column counts the archive block of each page, not the frontmatter `block` (every guide ships
 with `block: "Entrenamiento"` for the site taxonomy). Five Entrenamiento rows are settled and will
@@ -1116,7 +1116,7 @@ never publish: two DESCARTADA and three FUSIONADA, so the publishable total is *
 - [x] ES · [x] EN — `/dieta-ganar-musculo-limpio/` — Dieta para ganar músculo limpiamente \| La mejor en 2025 ©
 - [x] ES · [x] EN — `/dieta-de-volumen-con-alimentos-para-maxima-energia/` — Dieta de volumen con alimentos para máxima energia
 
-### Dietas de Definición Muscular (17) — 9/17
+### Dietas de Definición Muscular (17) — COMPLETO
 
 - [x] ES · [x] EN — `/definicion-muscular/` — Definición muscular, como comer y entrenar para definir
 - [x] ES · [x] EN — `/dietas-definicion-muscular/` — Dietas de Definición Muscular \| Pierde grasa en 2026
@@ -1127,29 +1127,29 @@ never publish: two DESCARTADA and three FUSIONADA, so the publishable total is *
 - [x] ES · [x] EN — `/ejemplos-de-dietas-de-definicion-muscular-para-culturistas/` — Guía para una dieta de definición culturista perfecta
 - [x] ES · [x] EN — `/dieta-maxima-definicion-muscular/` — Dieta para máxima definición muscular ✓
 - [x] ES · [x] EN — `/dieta-estacional/` — Dieta por Objetivos: el camino hacia tus resultados
-- [ ] ES · [ ] EN — `/dietas-culturistas-segun-objetivos-volumen-definicion-y-mantenimiento/` — Dieta culturista: Volumen, definición y mantenimiento
-- [ ] ES · [ ] EN — `/dieta-definicion-culturista/` — Dieta extrema de definición culturista
-- [ ] ES · [ ] EN — `/dieta-disociada/` — Dieta Disociada
-- [ ] ES · [ ] EN — `/dieta-sencilla-para-vida-fitness/` — Dieta Fitness, sencilla y fácil de aplicar
-- [ ] ES · [ ] EN — `/definicion-muscular-dieta/` — Dieta de definición muscular sin contar calorías
-- [ ] ES · [ ] EN — `/dieta-eliminar-exceso-grasa/` — Dieta para eliminar el exceso de grasa \| 100% Quema Grasa ©
-- [ ] ES · [ ] EN — `/dieta-culturismo-profesional/` — Dieta para culturismo profesional
-- [ ] ES · [ ] EN — `/dieta-sana-sin-errores-controlando-el-indice-glucemico/` — La dieta del Índice Glucémico
+- [x] ES · [x] EN — `/dietas-culturistas-segun-objetivos-volumen-definicion-y-mantenimiento/` — Dieta culturista: Volumen, definición y mantenimiento
+- [x] ES · [x] EN — `/dieta-definicion-culturista/` — Dieta extrema de definición culturista
+- [x] ES · [x] EN — `/dieta-disociada/` — Dieta Disociada
+- [x] ES · [x] EN — `/dieta-sencilla-para-vida-fitness/` — Dieta Fitness, sencilla y fácil de aplicar
+- [x] ES · [x] EN — `/definicion-muscular-dieta/` — Dieta de definición muscular sin contar calorías
+- [x] ES · [x] EN — `/dieta-eliminar-exceso-grasa/` — Dieta para eliminar el exceso de grasa \| 100% Quema Grasa ©
+- [x] ES · [x] EN — `/dieta-culturismo-profesional/` — Dieta para culturismo profesional
+- [x] ES · [x] EN — `/dieta-sana-sin-errores-controlando-el-indice-glucemico/` — La dieta del Índice Glucémico
 
-### Alimentos funcionales (12)
+### Alimentos funcionales (12) — COMPLETO
 
-- [ ] ES · [ ] EN — `/guacamole-como-comerlo-sin-engordar/` — Guacamole: Beneficios y Cómo Comerlo Sin Engordar
-- [ ] ES · [ ] EN — `/pan-de-wasa/` — Pan de Wasa \| Que es, beneficios y cúal comprar
-- [ ] ES · [ ] EN — `/salvado-de-avena-perder-peso/` — Salvado de Avena para perder peso
-- [ ] ES · [ ] EN — `/boniato-carbohidrato-perfecto/` — Boniato, ¿Un buen carbohidrato? \| ¡Todas sus propiedades!
-- [ ] ES · [ ] EN — `/crema-de-cacahuete/` — Crema de cacahuete en el gym: ¿Músculo o grasa?
-- [ ] ES · [ ] EN — `/aguacate-en-dieta-fitness-por-que-se-ha-ganado-su-sitio/` — Aguacate en la dieta fitness: por qué se ha ganado su sitio
-- [ ] ES · [ ] EN — `/sepia-excelente-fuente-de-proteinas-para-el-culturista/` — Sepia, excelente fuente de proteínas para el culturista
-- [ ] ES · [ ] EN — `/avena/` — La avena, excelente para ganar masa muscular
-- [ ] ES · [ ] EN — `/pan-y-musculos/` — Pan y Músculos: Beneficios y Desventajas en tu Dieta
-- [ ] ES · [ ] EN — `/huevos-un-poderoso-alimento-para-tu-dieta/` — Huevos, un poderoso alimento para tu dieta ⇨ Descúbrelo todo!!
-- [ ] ES · [ ] EN — `/sardina-dieta-fitness/` — Sardina: El súper alimento para tu dieta fitness
-- [ ] ES · [ ] EN — `/sulforafano/` — El sulforafano, todos a comer brecol
+- [x] ES · [x] EN — `/guacamole-como-comerlo-sin-engordar/` — Guacamole: Beneficios y Cómo Comerlo Sin Engordar
+- [x] ES · [x] EN — `/pan-de-wasa/` — Pan de Wasa \| Que es, beneficios y cúal comprar
+- [x] ES · [x] EN — `/salvado-de-avena-perder-peso/` — Salvado de Avena para perder peso
+- [x] ES · [x] EN — `/boniato-carbohidrato-perfecto/` — Boniato, ¿Un buen carbohidrato? \| ¡Todas sus propiedades!
+- [x] ES · [x] EN — `/crema-de-cacahuete/` — Crema de cacahuete en el gym: ¿Músculo o grasa?
+- [x] ES · [x] EN — `/aguacate-en-dieta-fitness-por-que-se-ha-ganado-su-sitio/` — Aguacate en la dieta fitness: por qué se ha ganado su sitio
+- [x] ES · [x] EN — `/sepia-excelente-fuente-de-proteinas-para-el-culturista/` — Sepia, excelente fuente de proteínas para el culturista
+- [x] ES · [x] EN — `/avena/` — La avena, excelente para ganar masa muscular
+- [x] ES · [x] EN — `/pan-y-musculos/` — Pan y Músculos: Beneficios y Desventajas en tu Dieta
+- [x] ES · [x] EN — `/huevos-un-poderoso-alimento-para-tu-dieta/` — Huevos, un poderoso alimento para tu dieta ⇨ Descúbrelo todo!!
+- [x] ES · [x] EN — `/sardina-dieta-fitness/` — Sardina: El súper alimento para tu dieta fitness
+- [x] ES · [x] EN — `/sulforafano/` — El sulforafano, todos a comer brecol
 
 ### Dietas y planes de alimentación (3)
 
