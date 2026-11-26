@@ -1,0 +1,220 @@
+---
+// Guides hub: the index of the whole article library, grouped by block and
+// section. It is the link target of the header cascade. The English URL lives in
+// `src/pages/en/guides.astro`; this route only emits the Spanish page.
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getLang, useTranslations } from '../../i18n';
+import { getGuideNav } from '../../lib/guides-nav';
+
+export function getStaticPaths() {
+  return [{ params: { lang: 'es' } }];
+}
+
+const lang = getLang(Astro.url.pathname);
+const t = useTranslations(lang);
+const h = t.guidesHub;
+
+const blocks = await getGuideNav(lang);
+const total = blocks.reduce((sum, block) => sum + block.total, 0);
+const unit = (count: number): string =>
+  `${count} ${count === 1 ? h.unitOne : h.unitMany}`;
+---
+
+<BaseLayout title={h.meta.title} description={h.meta.description}>
+  <section class="floor-section guides-hub">
+    <div class="frame">
+      <header class="section-frame">
+        <div class="section-frame__rule">
+          <span class="section-frame__label">{h.label}</span>
+          <span class="section-frame__meta">{unit(total)}</span>
+        </div>
+        <h1>{h.title}</h1>
+        <p class="guides-hub__sub">{h.sub}</p>
+      </header>
+
+      <nav class="guides-hub__toc" aria-label={h.tocLabel}>
+        {
+          blocks.map((block) => (
+            <a href={`#${block.id}`}>
+              <b>{block.label}</b>
+              <span>{unit(block.total)}</span>
+            </a>
+          ))
+        }
+      </nav>
+
+      {
+        blocks.map((block) => (
+          <section class="guides-hub__block" id={block.id}>
+            <h2>
+              {block.label}
+              <span>{unit(block.total)}</span>
+            </h2>
+
+            {block.sections.map((section) => (
+              <section class="guides-hub__section" id={`s-${section.id}`}>
+                <h3>
+                  {section.label}
+                  <span>{unit(section.articles.length)}</span>
+                </h3>
+                <ul class="guides-hub__list">
+                  {section.articles.map((article) => (
+                    <li>
+                      <a href={article.href}>{article.title}</a>
+                    </li>
+                  ))}
+                </ul>
+              </section>
+            ))}
+          </section>
+        ))
+      }
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .section-frame h1 {
+    margin: clamp(1.4rem, 2.5vw, 2rem) 0 0;
+    max-width: 18ch;
+    font-family: var(--font-display);
+    font-size: clamp(2.2rem, 4.6vw, 4.4rem);
+    font-weight: 600;
+    letter-spacing: 0.005em;
+    line-height: 0.96;
+    text-wrap: balance;
+  }
+
+  .guides-hub__sub {
+    margin-top: 1rem;
+    max-width: 56ch;
+    color: var(--color-muted);
+    font-size: 1.05rem;
+  }
+
+  /* Blocks ------------------------------------------------------ */
+
+  .guides-hub__toc {
+    display: grid;
+    gap: 0 2rem;
+    margin-top: clamp(2rem, 4vw, 3rem);
+    border-top: 1px solid var(--floor-rule-strong);
+  }
+
+  .guides-hub__toc a {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 0.7rem 0;
+    border-bottom: 1px solid var(--floor-rule);
+    color: var(--color-fg);
+    text-decoration: none;
+  }
+
+  .guides-hub__toc b {
+    font-family: var(--font-display);
+    font-size: 1.05rem;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+  }
+
+  .guides-hub__toc a:hover b {
+    color: var(--color-accent-soft);
+  }
+
+  .guides-hub__toc span,
+  .guides-hub__block h2 span,
+  .guides-hub__section h3 span {
+    color: var(--color-muted);
+    font-family: var(--font-body);
+    font-size: 0.58rem;
+    font-weight: 600;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    font-variant-numeric: tabular-nums;
+    white-space: nowrap;
+  }
+
+  /* Each block is an anchor target for the header menu. */
+  .guides-hub__block {
+    margin-top: var(--floor-section);
+    scroll-margin-top: 6rem;
+  }
+
+  .guides-hub__block h2,
+  .guides-hub__section h3 {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+
+  .guides-hub__block h2 {
+    margin: 0;
+    padding-bottom: 0.55rem;
+    border-bottom: 1px solid var(--floor-rule-strong);
+    font-family: var(--font-display);
+    font-size: clamp(1.9rem, 3.4vw, 2.8rem);
+    font-weight: 600;
+    line-height: 1;
+    color: var(--color-accent-soft);
+  }
+
+  /* Section ids use the `s-` prefix so they can never collide with a block id. */
+  .guides-hub__section {
+    margin-top: 1.75rem;
+    scroll-margin-top: 6rem;
+  }
+
+  .guides-hub__section h3 {
+    margin: 0;
+    padding-bottom: 0.45rem;
+    border-bottom: 1px solid var(--floor-rule);
+    font-family: var(--font-display);
+    font-size: 1.15rem;
+    font-weight: 500;
+    letter-spacing: 0.01em;
+  }
+
+  .guides-hub__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .guides-hub__list li {
+    border-bottom: 1px solid var(--floor-rule);
+  }
+
+  .guides-hub__list a {
+    display: block;
+    padding: 0.6rem 0;
+    color: var(--color-muted);
+    font-size: 0.92rem;
+    line-height: 1.35;
+    text-decoration: none;
+  }
+
+  .guides-hub__list a:hover {
+    color: var(--color-accent-soft);
+  }
+
+  @media (min-width: 768px) {
+    .guides-hub__toc,
+    .guides-hub__list {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .guides-hub__list {
+      display: grid;
+      column-gap: 2.5rem;
+    }
+  }
+
+  @media (min-width: 1100px) {
+    .guides-hub__toc {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }
+</style>

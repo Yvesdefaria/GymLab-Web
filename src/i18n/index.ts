@@ -44,7 +44,7 @@ export function localeSwitchPath(pathname: string, target: Lang): string {
  * Every content route, keyed by a stable id with its slug per locale. The locales
  * do not share slugs: the English URLs carry the English keyword.
  */
-export type RouteId = 'home' | 'privacy' | 'terms' | 'oneRm' | 'bmi' | 'calories';
+export type RouteId = 'home' | 'privacy' | 'terms' | 'oneRm' | 'bmi' | 'calories' | 'guides';
 
 export const ROUTES: Record<RouteId, Record<Lang, string>> = {
   home: { es: '/', en: '/' },
@@ -53,6 +53,7 @@ export const ROUTES: Record<RouteId, Record<Lang, string>> = {
   oneRm: { es: '/calculadora-1rm', en: '/one-rep-max-calculator' },
   bmi: { es: '/calculadora-imc', en: '/bmi-calculator' },
   calories: { es: '/calcular-calorias', en: '/calorie-calculator' },
+  guides: { es: '/guias', en: '/guides' },
 };
 
 /** Calculator route ids, in the order of `calculators.items` in the dictionaries. */

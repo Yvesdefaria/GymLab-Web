@@ -419,6 +419,20 @@ export const es = {
     ],
   },
 
+  guidesHub: {
+    meta: {
+      title: 'Guías de entrenamiento y nutrición — GymLab',
+      description:
+        'La biblioteca de GymLab: musculación, rutinas, ejercicios y nutrición, ordenados por bloque y sección.',
+    },
+    label: 'Guías',
+    title: 'Todas las guías de entrenamiento',
+    sub: 'Musculación, rutinas, ejercicios y nutrición, ordenados por bloque y sección. El índice completo de la biblioteca.',
+    tocLabel: 'Bloques',
+    unitOne: 'guía',
+    unitMany: 'guías',
+  },
+
   legalChrome: {
     kicker: 'Legal',
     updated: 'Última actualización',

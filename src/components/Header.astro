@@ -2,8 +2,9 @@
 // Sticky marketing header: brand mark, section links, guides menu, language
 // selector and app CTA. The landing uses the transparent overlay variant over the
 // hero atmosphere; legal pages keep the solid, readable variant.
-import { getLang, localePath, localeSwitchPath, useTranslations } from '../i18n';
-import { GUIDE_BLOCKS, GUIDES_ENABLED } from '../data/guides-nav';
+import { getLang, localePath, localeSwitchPath, ROUTES, useTranslations } from '../i18n';
+import { GUIDES_ENABLED } from '../data/guides-nav';
+import { getGuideNav } from '../lib/guides-nav';
 
 interface Props {
   /** Explicit alternate paths for pages whose slug changes per locale. */
@@ -36,6 +37,10 @@ const guidesLabel = lang === 'es' ? 'Guías' : 'Guides';
 const guidesAll = lang === 'es' ? 'Ver todo' : 'View all';
 const guidesUnit = lang === 'es' ? 'guías' : 'guides';
 const guidesMenuLabel = lang === 'es' ? 'Guías de entrenamiento' : 'Training guides';
+
+const guideBlocks = GUIDES_ENABLED ? await getGuideNav(lang) : [];
+const guidesPath = localePath(lang, ROUTES.guides[lang]);
+const guidesTotal = guideBlocks.reduce((total, block) => total + block.total, 0);
 ---
 <header
   class:list={[
@@ -149,7 +154,7 @@ const guidesMenuLabel = lang === 'es' ? 'Guías de entrenamiento' : 'Training gu
   GUIDES_ENABLED && (
     <div class="guides__menu" id="guides-menu" data-guides-menu hidden>
       <div class="guides__level1" role="menu" aria-label={guidesMenuLabel}>
-        {GUIDE_BLOCKS.map((block, index) => (
+        {guideBlocks.map((block, index) => (
           <button
             type="button"
             role="menuitem"
@@ -157,38 +162,38 @@ const guidesMenuLabel = lang === 'es' ? 'Guías de entrenamiento' : 'Training gu
             data-guides-block={block.id}
             aria-expanded={index === 0 ? 'true' : 'false'}
           >
-            <b>{block[lang]}</b>
+            <b>{block.label}</b>
             <span>{block.total}</span>
             <i aria-hidden="true" />
           </button>
         ))}
-        <p class="guides__foot">792 {guidesUnit}</p>
+        <p class="guides__foot">{guidesTotal} {guidesUnit}</p>
       </div>
 
       <div class="guides__level2">
-        {GUIDE_BLOCKS.map((block, index) => (
+        {guideBlocks.map((block, index) => (
           <div
             class:list={['guides__panel', index === 0 && 'is-active']}
             data-guides-panel={block.id}
           >
             <div class="guides__head">
-              <b>{block[lang]}</b>
+              <b>{block.label}</b>
               <span>
                 {block.total} {guidesUnit}
               </span>
             </div>
             <ul>
-              {block.sections.slice(0, 8).map((section) => (
+              {block.sections.map((section) => (
                 <li>
-                  <a href={section.href}>
-                    <b>{section[lang]}</b>
-                    <span>{section.count}</span>
+                  <a href={`${guidesPath}#s-${section.id}`}>
+                    <b>{section.label}</b>
+                    <span>{section.articles.length}</span>
                   </a>
                 </li>
               ))}
             </ul>
-            <a class="guides__all" href={block.href}>
-              {guidesAll} {block[lang]}
+            <a class="guides__all" href={`${guidesPath}#${block.id}`}>
+              {guidesAll} {block.label}
             </a>
           </div>
         ))}
@@ -356,6 +361,9 @@ const guidesMenuLabel = lang === 'es' ? 'Guías de entrenamiento' : 'Training gu
 
   .guides__level2 {
     width: 316px;
+    /* Twelve sections no longer fit a short viewport: scroll the panel, not the page. */
+    max-height: calc(100dvh - 7.25rem);
+    overflow-y: auto;
     border-left: 1px solid var(--color-border);
   }
 
@@ -548,6 +556,8 @@ const guidesMenuLabel = lang === 'es' ? 'Guías de entrenamiento' : 'Training gu
 
     .guides__level2 {
       width: 100%;
+      max-height: none;
+      overflow: visible;
       border-left: 0;
       border-top: 1px solid var(--color-border);
     }

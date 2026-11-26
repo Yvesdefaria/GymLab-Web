@@ -15,6 +15,7 @@ const ROUTE_PAIRS = [
   ['/calculadora-1rm', '/one-rep-max-calculator'],
   ['/calculadora-imc', '/bmi-calculator'],
   ['/calcular-calorias', '/calorie-calculator'],
+  ['/guias', '/guides'],
   ['/rutinas-espalda', '/back-routines'],
   ['/ejercicios-espalda', '/back-exercises'],
   ['/anatomia-de-la-espalda', '/back-anatomy'],

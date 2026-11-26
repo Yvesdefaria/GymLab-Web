@@ -421,6 +421,20 @@ export const en: Dict = {
     ],
   },
 
+  guidesHub: {
+    meta: {
+      title: 'Training and nutrition guides — GymLab',
+      description:
+        'The GymLab library: bodybuilding, routines, exercises and nutrition, organised by block and section.',
+    },
+    label: 'Guides',
+    title: 'Every training guide we publish',
+    sub: 'Bodybuilding, routines, exercises and nutrition, ordered by block and section. The full library index.',
+    tocLabel: 'Blocks',
+    unitOne: 'guide',
+    unitMany: 'guides',
+  },
+
   legalChrome: {
     kicker: 'Legal',
     updated: 'Last updated',
