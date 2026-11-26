@@ -1,0 +1,339 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>GymLab — header con buscador en la barra</title>
+    <link rel="stylesheet" href="header-search.css" />
+  </head>
+  <body>
+    <main class="sheet">
+      <header class="page-head">
+        <span class="kicker">Opción A</span>
+        <h1>Buscador en la barra</h1>
+        <p>
+          El campo vive entre la navegación y el selector de idioma. Se ve siempre, se
+          enfoca con <kbd>/</kbd> y abre los resultados debajo. Es la opción más directa:
+          el visitante no tiene que descubrir que hay búsqueda.
+        </p>
+      </header>
+
+      <section class="demo">
+        <div class="caption">
+          <b>Escritorio · cerrado</b>
+          <span>El campo ocupa 196 px; la nav conserva sus cinco links.</span>
+        </div>
+        <div class="stage stage--hero">
+          <div class="topbar">
+            <div class="topbar__inner">
+              <a class="brand" href="#">
+                <img src="../../public/brand/logo_marca.svg" alt="" />
+                <span>GymLab</span>
+              </a>
+              <nav class="nav" aria-label="Secciones">
+                <a href="#">Funciones</a>
+                <a href="#">Capturas</a>
+                <button class="trigger" type="button" aria-expanded="false">
+                  Guías <i class="chev"></i>
+                </button>
+                <a href="#">Calculadoras</a>
+                <a href="#">Contacto</a>
+              </nav>
+              <div class="tail">
+                <div class="search" role="search">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <circle cx="11" cy="11" r="7" />
+                    <path d="m16.5 16.5 4 4" />
+                  </svg>
+                  <span>Buscar guías…</span>
+                  <kbd>/</kbd>
+                </div>
+                <div class="lang" role="group" aria-label="Idioma">
+                  <a href="#" aria-current="page">
+                    <svg class="flag" viewBox="0 0 60 40" aria-hidden="true">
+                      <rect width="60" height="40" fill="#c60b1e" />
+                      <rect y="10" width="60" height="20" fill="#ffc400" />
+                    </svg>
+                    ES
+                  </a>
+                  <a href="#">
+                    <svg class="flag" viewBox="0 0 60 30" aria-hidden="true">
+                      <rect width="60" height="30" fill="#012169" />
+                      <path d="M0 0l60 30m0-30L0 30" stroke="#ffffff" stroke-width="6" />
+                      <path d="M30 0v30M0 15h60" stroke="#ffffff" stroke-width="10" />
+                      <path d="M30 0v30M0 15h60" stroke="#c8102e" stroke-width="6" />
+                    </svg>
+                    EN
+                  </a>
+                </div>
+                <a class="cta" href="#">Prueba la app</a>
+              </div>
+            </div>
+          </div>
+          <div class="hero-copy">
+            <h2>Deja de entrenar <em>de memoria</em></h2>
+            <p>La app organiza la rutina, registra cada serie y muestra el progreso.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="demo">
+        <div class="caption">
+          <b>Escritorio · resultados</b>
+          <span>Panel anclado al campo, 540 px, resultados agrupados por tipo.</span>
+        </div>
+        <div class="stage" style="min-height: 560px">
+          <div class="topbar topbar--solid">
+            <div class="topbar__inner">
+              <a class="brand" href="#">
+                <img src="../../public/brand/logo_marca.svg" alt="" />
+                <span>GymLab</span>
+              </a>
+              <nav class="nav" aria-label="Secciones">
+                <a href="#">Funciones</a>
+                <a href="#">Capturas</a>
+                <button class="trigger" type="button" aria-expanded="false">
+                  Guías <i class="chev"></i>
+                </button>
+                <a href="#">Calculadoras</a>
+                <a href="#">Contacto</a>
+              </nav>
+              <div class="tail">
+                <div class="search search--focus" role="search">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <circle cx="11" cy="11" r="7" />
+                    <path d="m16.5 16.5 4 4" />
+                  </svg>
+                  <span>espalda</span>
+                  <kbd>Esc</kbd>
+                </div>
+                <div class="lang" role="group" aria-label="Idioma">
+                  <a href="#" aria-current="page">
+                    <svg class="flag" viewBox="0 0 60 40" aria-hidden="true">
+                      <rect width="60" height="40" fill="#c60b1e" />
+                      <rect y="10" width="60" height="20" fill="#ffc400" />
+                    </svg>
+                    ES
+                  </a>
+                  <a href="#">
+                    <svg class="flag" viewBox="0 0 60 30" aria-hidden="true">
+                      <rect width="60" height="30" fill="#012169" />
+                      <path d="M0 0l60 30m0-30L0 30" stroke="#ffffff" stroke-width="6" />
+                      <path d="M30 0v30M0 15h60" stroke="#ffffff" stroke-width="10" />
+                      <path d="M30 0v30M0 15h60" stroke="#c8102e" stroke-width="6" />
+                    </svg>
+                    EN
+                  </a>
+                </div>
+                <a class="cta" href="#">Prueba la app</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="pop pop--dropdown">
+            <div class="pop__head">
+              <b>espalda</b>
+              <span>24 resultados</span>
+            </div>
+            <div class="pop__group">
+              <p class="pop__label">Guías</p>
+              <a class="result result--active" href="#">
+                <span class="result__title">Rutinas de <mark>espalda</mark> y consejos de entrenamiento</span>
+                <span class="result__meta">Entrenamiento</span>
+              </a>
+              <a class="result" href="#">
+                <span class="result__title">Ejercicios de <mark>espalda</mark></span>
+                <span class="result__meta">Ejercicios</span>
+              </a>
+              <a class="result" href="#">
+                <span class="result__title">Dominadas: técnica y progresión de <mark>espalda</mark></span>
+                <span class="result__meta">Ejercicios</span>
+              </a>
+            </div>
+            <div class="pop__group">
+              <p class="pop__label">Secciones</p>
+              <a class="result" href="#">
+                <span class="result__title">Ejercicios de <mark>espalda</mark></span>
+                <span class="result__meta">31 guías</span>
+              </a>
+              <a class="result" href="#">
+                <span class="result__title">Entrenamiento de la <mark>espalda</mark></span>
+                <span class="result__meta">10 guías</span>
+              </a>
+            </div>
+            <div class="pop__group">
+              <p class="pop__label">Páginas</p>
+              <a class="result" href="#">
+                <span class="result__title">Calculadora de 1RM</span>
+                <span class="result__meta">Calculadora</span>
+              </a>
+            </div>
+            <div class="pop__foot">
+              <span><kbd>↑</kbd><kbd>↓</kbd> mover</span>
+              <span><kbd>↵</kbd> abrir</span>
+              <span><kbd>Esc</kbd> cerrar</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="demo">
+        <div class="caption">
+          <b>Móvil</b>
+          <span>El icono reemplaza al trigger de Guías: abre un sheet con buscador y bloques.</span>
+        </div>
+        <div class="phones">
+          <div class="phone">
+            <div class="phone__bar">
+              <a class="brand" href="#">
+                <img src="../../public/brand/logo_marca.svg" alt="" />
+                <span>GymLab</span>
+              </a>
+              <div class="tail">
+                <button class="icon-btn" type="button" aria-label="Buscar">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <circle cx="11" cy="11" r="7" />
+                    <path d="m16.5 16.5 4 4" />
+                  </svg>
+                </button>
+                <div class="lang" role="group" aria-label="Idioma">
+                  <a href="#" aria-current="page">
+                    <svg class="flag" viewBox="0 0 60 40" aria-hidden="true">
+                      <rect width="60" height="40" fill="#c60b1e" />
+                      <rect y="10" width="60" height="20" fill="#ffc400" />
+                    </svg>
+                    ES
+                  </a>
+                  <a href="#">
+                    <svg class="flag" viewBox="0 0 60 30" aria-hidden="true">
+                      <rect width="60" height="30" fill="#012169" />
+                      <path d="M0 0l60 30m0-30L0 30" stroke="#ffffff" stroke-width="6" />
+                      <path d="M30 0v30M0 15h60" stroke="#ffffff" stroke-width="10" />
+                      <path d="M30 0v30M0 15h60" stroke="#c8102e" stroke-width="6" />
+                    </svg>
+                    EN
+                  </a>
+                </div>
+                <a class="cta" href="#">La app</a>
+              </div>
+            </div>
+            <div class="phone__body">
+              <div class="phone__field" style="border-color: var(--border); color: var(--muted)">
+                <svg viewBox="0 0 24 24" aria-hidden="true" style="stroke: var(--muted)">
+                  <circle cx="11" cy="11" r="7" />
+                  <path d="m16.5 16.5 4 4" />
+                </svg>
+                Buscar guías…
+              </div>
+              <p class="phone__sublabel" style="margin-top: 22px">Guías por bloque</p>
+              <div class="phone__rows">
+                <a href="#"><b>Entrenamiento</b><span>222</span></a>
+                <a href="#"><b>Por músculo</b><span>80</span></a>
+                <a href="#"><b>Rutinas</b><span>80</span></a>
+                <a href="#"><b>Ejercicios</b><span>196</span></a>
+                <a href="#"><b>Nutrición</b><span>191</span></a>
+                <a href="#"><b>Mujer fitness</b><span>23</span></a>
+              </div>
+            </div>
+            <div class="phone__footer">
+              <span>Buscar o explorar</span>
+              <span>787 guías</span>
+            </div>
+          </div>
+
+          <div class="phone">
+            <div class="phone__bar">
+              <a class="brand" href="#">
+                <img src="../../public/brand/logo_marca.svg" alt="" />
+                <span>GymLab</span>
+              </a>
+              <div class="tail">
+                <button class="icon-btn" type="button" aria-label="Buscar" style="color: var(--gold-bright)">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <circle cx="11" cy="11" r="7" />
+                    <path d="m16.5 16.5 4 4" />
+                  </svg>
+                </button>
+                <div class="lang" role="group" aria-label="Idioma">
+                  <a href="#" aria-current="page">
+                    <svg class="flag" viewBox="0 0 60 40" aria-hidden="true">
+                      <rect width="60" height="40" fill="#c60b1e" />
+                      <rect y="10" width="60" height="20" fill="#ffc400" />
+                    </svg>
+                    ES
+                  </a>
+                  <a href="#">
+                    <svg class="flag" viewBox="0 0 60 30" aria-hidden="true">
+                      <rect width="60" height="30" fill="#012169" />
+                      <path d="M0 0l60 30m0-30L0 30" stroke="#ffffff" stroke-width="6" />
+                      <path d="M30 0v30M0 15h60" stroke="#ffffff" stroke-width="10" />
+                      <path d="M30 0v30M0 15h60" stroke="#c8102e" stroke-width="6" />
+                    </svg>
+                    EN
+                  </a>
+                </div>
+                <a class="cta" href="#">La app</a>
+              </div>
+            </div>
+            <div class="phone__body">
+              <div class="phone__field">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <circle cx="11" cy="11" r="7" />
+                  <path d="m16.5 16.5 4 4" />
+                </svg>
+                espalda
+                <kbd>Esc</kbd>
+              </div>
+              <div class="phone__results">
+                <div class="phone__group">
+                  <p>Guías</p>
+                  <a href="#">Rutinas de espalda y consejos de entrenamiento <span>Entrenamiento</span></a>
+                  <a href="#">Ejercicios de espalda <span>Ejercicios</span></a>
+                  <a href="#">Dominadas: técnica y progresión <span>Ejercicios</span></a>
+                </div>
+                <div class="phone__group">
+                  <p>Secciones</p>
+                  <a href="#">Ejercicios de espalda <span>31</span></a>
+                  <a href="#">Entrenamiento de la espalda <span>10</span></a>
+                </div>
+                <div class="phone__group">
+                  <p>Páginas</p>
+                  <a href="#">Calculadora de 1RM <span>Calc</span></a>
+                </div>
+              </div>
+            </div>
+            <div class="phone__footer">
+              <span>24 resultados</span>
+              <span>787 guías</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="notes">
+        <div class="note">
+          <b>Qué resuelve</b>
+          <p>
+            La búsqueda se ve sin descubrir nada. Un campo, un atajo y resultados agrupados:
+            guías, secciones y páginas en el mismo lugar.
+          </p>
+        </div>
+        <div class="note">
+          <b>Qué cuesta</b>
+          <ul>
+            <li>La nav pierde aire: a 1180 px el campo colapsa a icono.</li>
+            <li>En móvil el icono reemplaza al trigger de Guías: un solo acceso a buscar o explorar.</li>
+            <li>Requiere índice de búsqueda y debounce.</li>
+          </ul>
+        </div>
+        <div class="note">
+          <b>Riesgo</b>
+          <p>
+            Sigue habiendo dos navegaciones: los links del home y el menú Guías. La
+            búsqueda no las une, solo las acompaña.
+          </p>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

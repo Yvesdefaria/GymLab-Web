@@ -1,0 +1,382 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>GymLab — header global + buscador + índice de landing</title>
+    <link rel="stylesheet" href="header-search.css" />
+  </head>
+  <body>
+    <main class="sheet">
+      <header class="page-head">
+        <span class="kicker">Opción D · síntesis A + C</span>
+        <h1>Barra global, índice local</h1>
+        <p>
+          La barra resuelve el sitio: marca, «Explorar», buscador, idioma y CTA. Los
+          anchors de la landing (Funciones, Capturas, Calculadoras, FAQ) viven en una
+          tira contextual que solo aparece en la portada. El menú global ya no mezcla
+          navegación de página con navegación de sitio.
+        </p>
+      </header>
+
+      <section class="demo">
+        <div class="caption">
+          <b>Landing · escritorio</b>
+          <span>Barra global + tira «En esta página» debajo.</span>
+        </div>
+        <div class="stage stage--hero" style="min-height: 380px">
+          <div class="topbar">
+            <div class="topbar__inner">
+              <a class="brand" href="#">
+                <img src="../../public/brand/logo_marca.svg" alt="" />
+                <span>GymLab</span>
+              </a>
+              <button class="trigger" type="button" aria-expanded="false">
+                Explorar <i class="chev"></i>
+              </button>
+              <div class="search search--grow" role="search">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <circle cx="11" cy="11" r="7" />
+                  <path d="m16.5 16.5 4 4" />
+                </svg>
+                <span>Buscar guías, secciones y páginas…</span>
+                <kbd>/</kbd>
+              </div>
+              <div class="tail">
+                <div class="lang" role="group" aria-label="Idioma">
+                  <a href="#" aria-current="page">
+                    <svg class="flag" viewBox="0 0 60 40" aria-hidden="true">
+                      <rect width="60" height="40" fill="#c60b1e" />
+                      <rect y="10" width="60" height="20" fill="#ffc400" />
+                    </svg>
+                    ES
+                  </a>
+                  <a href="#">
+                    <svg class="flag" viewBox="0 0 60 30" aria-hidden="true">
+                      <rect width="60" height="30" fill="#012169" />
+                      <path d="M0 0l60 30m0-30L0 30" stroke="#ffffff" stroke-width="6" />
+                      <path d="M30 0v30M0 15h60" stroke="#ffffff" stroke-width="10" />
+                      <path d="M30 0v30M0 15h60" stroke="#c8102e" stroke-width="6" />
+                    </svg>
+                    EN
+                  </a>
+                </div>
+                <a class="cta" href="#">Prueba la app</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="section-nav">
+            <div class="section-nav__inner">
+              <span class="section-nav__label">En esta página</span>
+              <a href="#" aria-current="true"><b>01</b> Funciones</a>
+              <a href="#"><b>02</b> Capturas</a>
+              <a href="#"><b>03</b> Calculadoras</a>
+              <a href="#"><b>04</b> FAQ</a>
+              <span class="section-nav__meta">Portada</span>
+            </div>
+          </div>
+
+          <div class="hero-copy">
+            <h2>Deja de entrenar <em>de memoria</em></h2>
+            <p>La app organiza la rutina, registra cada serie y muestra el progreso.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="demo">
+        <div class="caption">
+          <b>Landing · Explorar abierto</b>
+          <span>Menú global: biblioteca y páginas. Sin anchors de la landing.</span>
+        </div>
+        <div class="stage" style="min-height: 620px">
+          <div class="topbar topbar--solid">
+            <div class="topbar__inner">
+              <a class="brand" href="#">
+                <img src="../../public/brand/logo_marca.svg" alt="" />
+                <span>GymLab</span>
+              </a>
+              <button class="trigger" type="button" aria-expanded="true">
+                Explorar <i class="chev"></i>
+              </button>
+              <div class="search search--grow" role="search">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <circle cx="11" cy="11" r="7" />
+                  <path d="m16.5 16.5 4 4" />
+                </svg>
+                <span>Buscar guías, secciones y páginas…</span>
+                <kbd>/</kbd>
+              </div>
+              <div class="tail">
+                <div class="lang" role="group" aria-label="Idioma">
+                  <a href="#" aria-current="page">
+                    <svg class="flag" viewBox="0 0 60 40" aria-hidden="true">
+                      <rect width="60" height="40" fill="#c60b1e" />
+                      <rect y="10" width="60" height="20" fill="#ffc400" />
+                    </svg>
+                    ES
+                  </a>
+                  <a href="#">
+                    <svg class="flag" viewBox="0 0 60 30" aria-hidden="true">
+                      <rect width="60" height="30" fill="#012169" />
+                      <path d="M0 0l60 30m0-30L0 30" stroke="#ffffff" stroke-width="6" />
+                      <path d="M30 0v30M0 15h60" stroke="#ffffff" stroke-width="10" />
+                      <path d="M30 0v30M0 15h60" stroke="#c8102e" stroke-width="6" />
+                    </svg>
+                    EN
+                  </a>
+                </div>
+                <a class="cta" href="#">Prueba la app</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="section-nav">
+            <div class="section-nav__inner">
+              <span class="section-nav__label">En esta página</span>
+              <a href="#" aria-current="true"><b>01</b> Funciones</a>
+              <a href="#"><b>02</b> Capturas</a>
+              <a href="#"><b>03</b> Calculadoras</a>
+              <a href="#"><b>04</b> FAQ</a>
+              <span class="section-nav__meta">Portada</span>
+            </div>
+          </div>
+
+          <div class="explore explore--menu">
+            <div class="explore__cols">
+              <div class="explore__col">
+                <p class="explore__label">Biblioteca</p>
+                <a class="row" href="#"><b>Entrenamiento</b><span>222</span></a>
+                <a class="row" href="#"><b>Por músculo</b><span>80</span></a>
+                <a class="row" href="#"><b>Rutinas</b><span>80</span></a>
+                <a class="row" href="#"><b>Ejercicios</b><span>196</span></a>
+                <a class="row" href="#"><b>Nutrición</b><span>191</span></a>
+                <a class="row" href="#"><b>Mujer fitness</b><span>23</span></a>
+                <a class="explore__all" href="#">Ver todas las guías</a>
+              </div>
+              <div class="explore__col">
+                <p class="explore__label">Páginas</p>
+                <a class="row" href="#"><b>Calculadora de 1RM</b></a>
+                <a class="row" href="#"><b>Calculadora de IMC</b></a>
+                <a class="row" href="#"><b>Calcular calorías</b></a>
+                <a class="row" href="#"><b>Privacidad</b></a>
+                <a class="row" href="#"><b>Términos</b></a>
+                <a class="row" href="#"><b>Contacto</b></a>
+              </div>
+            </div>
+            <div class="explore__foot">
+              <span>787 guías · 47 secciones</span>
+              <span><kbd>Esc</kbd> cerrar</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="demo">
+        <div class="caption">
+          <b>Artículo · escritorio</b>
+          <span>La misma barra, sin tira: esta página no tiene secciones de landing.</span>
+        </div>
+        <div class="stage" style="min-height: 300px">
+          <div class="topbar topbar--solid">
+            <div class="topbar__inner">
+              <a class="brand" href="#">
+                <img src="../../public/brand/logo_marca.svg" alt="" />
+                <span>GymLab</span>
+              </a>
+              <button class="trigger" type="button" aria-expanded="false">
+                Explorar <i class="chev"></i>
+              </button>
+              <div class="search search--grow" role="search">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <circle cx="11" cy="11" r="7" />
+                  <path d="m16.5 16.5 4 4" />
+                </svg>
+                <span>Buscar guías, secciones y páginas…</span>
+                <kbd>/</kbd>
+              </div>
+              <div class="tail">
+                <div class="lang" role="group" aria-label="Idioma">
+                  <a href="#" aria-current="page">
+                    <svg class="flag" viewBox="0 0 60 40" aria-hidden="true">
+                      <rect width="60" height="40" fill="#c60b1e" />
+                      <rect y="10" width="60" height="20" fill="#ffc400" />
+                    </svg>
+                    ES
+                  </a>
+                  <a href="#">
+                    <svg class="flag" viewBox="0 0 60 30" aria-hidden="true">
+                      <rect width="60" height="30" fill="#012169" />
+                      <path d="M0 0l60 30m0-30L0 30" stroke="#ffffff" stroke-width="6" />
+                      <path d="M30 0v30M0 15h60" stroke="#ffffff" stroke-width="10" />
+                      <path d="M30 0v30M0 15h60" stroke="#c8102e" stroke-width="6" />
+                    </svg>
+                    EN
+                  </a>
+                </div>
+                <a class="cta" href="#">Prueba la app</a>
+              </div>
+            </div>
+          </div>
+
+          <div style="padding: 48px 64px 56px; max-width: 960px">
+            <p style="margin: 0; color: var(--gold); font: 600 0.56rem/1 var(--font-body); letter-spacing: 0.2em; text-transform: uppercase">
+              Entrenamiento de la espalda
+            </p>
+            <h2 style="margin: 16px 0 0; font: 500 2.4rem/1.02 var(--font-display); letter-spacing: 0.01em">
+              Rutinas de espalda y consejos de entrenamiento
+            </h2>
+            <p style="margin: 14px 0 0; max-width: 60ch; color: var(--muted); font-size: 0.95rem; line-height: 1.55">
+              Once rutinas para amplitud, densidad, fuerza y definición, con series,
+              repeticiones y los mejores ejercicios para cada objetivo.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="demo">
+        <div class="caption">
+          <b>Móvil</b>
+          <span>Un solo trigger; el buscador vive dentro del panel. La tira de landing se desliza.</span>
+        </div>
+        <div class="phones">
+          <div class="phone">
+            <div class="phone__bar">
+              <a class="brand" href="#">
+                <img src="../../public/brand/logo_marca.svg" alt="" />
+                <span>GymLab</span>
+              </a>
+              <div class="tail">
+                <button class="trigger" type="button" aria-expanded="false">
+                  Explorar <i class="chev"></i>
+                </button>
+                <div class="lang" role="group" aria-label="Idioma">
+                  <a href="#" aria-current="page">
+                    <svg class="flag" viewBox="0 0 60 40" aria-hidden="true">
+                      <rect width="60" height="40" fill="#c60b1e" />
+                      <rect y="10" width="60" height="20" fill="#ffc400" />
+                    </svg>
+                    ES
+                  </a>
+                  <a href="#">
+                    <svg class="flag" viewBox="0 0 60 30" aria-hidden="true">
+                      <rect width="60" height="30" fill="#012169" />
+                      <path d="M0 0l60 30m0-30L0 30" stroke="#ffffff" stroke-width="6" />
+                      <path d="M30 0v30M0 15h60" stroke="#ffffff" stroke-width="10" />
+                      <path d="M30 0v30M0 15h60" stroke="#c8102e" stroke-width="6" />
+                    </svg>
+                    EN
+                  </a>
+                </div>
+                <a class="cta" href="#">La app</a>
+              </div>
+            </div>
+            <div class="phone__section-nav">
+              <a href="#" aria-current="true">Funciones</a>
+              <a href="#">Capturas</a>
+              <a href="#">Calculadoras</a>
+              <a href="#">FAQ</a>
+            </div>
+            <div class="phone__body">
+              <h2 style="margin: 4px 0 0; font: 500 1.9rem/1.02 var(--font-display); color: var(--fg)">
+                Deja de entrenar <em style="font-style: normal; color: var(--gold-bright)">de memoria</em>
+              </h2>
+              <p style="margin: 12px 0 0; font-size: 0.86rem; line-height: 1.5; color: var(--muted)">
+                La app organiza la rutina, registra cada serie y muestra el progreso.
+              </p>
+            </div>
+            <div class="phone__footer">
+              <span>787 guías</span>
+              <span>47 secciones</span>
+            </div>
+          </div>
+
+          <div class="phone">
+            <div class="phone__bar">
+              <a class="brand" href="#">
+                <img src="../../public/brand/logo_marca.svg" alt="" />
+                <span>GymLab</span>
+              </a>
+              <div class="tail">
+                <button class="trigger" type="button" aria-expanded="true" style="color: var(--gold-bright)">
+                  Explorar <i class="chev"></i>
+                </button>
+                <div class="lang" role="group" aria-label="Idioma">
+                  <a href="#" aria-current="page">
+                    <svg class="flag" viewBox="0 0 60 40" aria-hidden="true">
+                      <rect width="60" height="40" fill="#c60b1e" />
+                      <rect y="10" width="60" height="20" fill="#ffc400" />
+                    </svg>
+                    ES
+                  </a>
+                  <a href="#">
+                    <svg class="flag" viewBox="0 0 60 30" aria-hidden="true">
+                      <rect width="60" height="30" fill="#012169" />
+                      <path d="M0 0l60 30m0-30L0 30" stroke="#ffffff" stroke-width="6" />
+                      <path d="M30 0v30M0 15h60" stroke="#ffffff" stroke-width="10" />
+                      <path d="M30 0v30M0 15h60" stroke="#c8102e" stroke-width="6" />
+                    </svg>
+                    EN
+                  </a>
+                </div>
+                <a class="cta" href="#">La app</a>
+              </div>
+            </div>
+            <div class="phone__body">
+              <div class="phone__field" style="border-color: var(--border); color: var(--muted)">
+                <svg viewBox="0 0 24 24" aria-hidden="true" style="stroke: var(--muted)">
+                  <circle cx="11" cy="11" r="7" />
+                  <path d="m16.5 16.5 4 4" />
+                </svg>
+                Buscar guías, secciones y páginas…
+              </div>
+              <div class="phone__rows">
+                <p class="phone__sublabel" style="margin: 4px 0 0">Biblioteca</p>
+                <a href="#"><b>Entrenamiento</b><span>222</span></a>
+                <a href="#"><b>Por músculo</b><span>80</span></a>
+                <a href="#"><b>Rutinas</b><span>80</span></a>
+                <a href="#"><b>Ejercicios</b><span>196</span></a>
+                <p class="phone__sublabel">Páginas</p>
+                <a href="#"><b>Calculadora de 1RM</b></a>
+                <a href="#"><b>Calculadora de IMC</b></a>
+                <a href="#"><b>Calcular calorías</b></a>
+                <a href="#"><b>Privacidad</b></a>
+                <a href="#"><b>Contacto</b></a>
+              </div>
+            </div>
+            <div class="phone__footer">
+              <span>787 guías</span>
+              <span><kbd>Esc</kbd> cerrar</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="notes">
+        <div class="note">
+          <b>La regla</b>
+          <p>
+            La barra global navega el sitio; la tira de la landing navega la página. Nunca
+            se mezclan en el mismo menú.
+          </p>
+        </div>
+        <div class="note">
+          <b>Qué resuelve</b>
+          <ul>
+            <li>Buscador visible en desktop, dentro del panel en móvil.</li>
+            <li>«Explorar» solo tiene biblioteca y páginas: sirve en cualquier página.</li>
+            <li>Los anchors del home solo existen en el home.</li>
+          </ul>
+        </div>
+        <div class="note">
+          <b>Qué cuesta</b>
+          <ul>
+            <li>Una tira de 42 px más en la portada.</li>
+            <li>Hay que definir si la tira se queda fija al scrollear o se va.</li>
+            <li>El buscador necesita índice y debounce.</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

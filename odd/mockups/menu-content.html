@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<title>GymLab — mockups de menú de contenido</title>
+<style>
+  :root {
+    --bg: #121214; --bg-elevated: #242422; --fg: #f8fafc; --muted: #a39b8c;
+    --border: #3a352b; --accent: #d9b384; --accent-soft: #fdddb4; --cta: #b99050;
+    --display: 'Oswald', 'Arial Narrow', sans-serif; --body: 'Barlow', system-ui, sans-serif;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--fg); font-family: var(--body); }
+  .frame { width: min(1180px, 92vw); margin: 0 auto; }
+  .label { margin: 3rem 0 1rem; color: var(--accent); font: 600 0.8rem/1 var(--body); letter-spacing: .16em; text-transform: uppercase; }
+  .mock { border: 1px solid var(--border); background: #17171a; margin-bottom: 2.5rem; }
+  header { display: flex; align-items: center; gap: 2rem; padding: 1rem 1.5rem; border-bottom: 1px solid var(--border); }
+  .brand { font: 600 1.3rem/1 var(--display); letter-spacing: .02em; }
+  .brand span { color: var(--accent); }
+  nav { display: flex; gap: 1.5rem; font-size: .85rem; letter-spacing: .08em; text-transform: uppercase; }
+  nav a { color: var(--muted); text-decoration: none; }
+  nav a.on { color: var(--accent); }
+  .tail { margin-left: auto; display: flex; gap: 1rem; align-items: center; font-size: .8rem; color: var(--muted); }
+  .cta { padding: .55rem .9rem; background: var(--accent); color: #16130d; font-weight: 600; text-decoration: none; }
+  .panel { display: grid; grid-template-columns: repeat(6, 1fr); gap: 1.5rem; padding: 1.75rem 1.5rem 2rem; background: var(--bg-elevated); border-bottom: 1px solid var(--border); }
+  .panel h3 { margin: 0 0 .6rem; font: 600 .95rem/1.1 var(--display); color: var(--accent-soft); letter-spacing: .03em; }
+  .panel ul { margin: 0; padding: 0; list-style: none; }
+  .panel li { margin: .35rem 0; font-size: .82rem; color: var(--muted); }
+  .panel li b { color: var(--fg); font-weight: 500; }
+  .panel .all { display: block; margin-top: .7rem; color: var(--accent); font-size: .72rem; letter-spacing: .08em; text-transform: uppercase; text-decoration: none; }
+  .subbar { display: flex; gap: 1.75rem; padding: .8rem 1.5rem; border-bottom: 1px solid var(--border); background: #19191c; font-size: .8rem; letter-spacing: .1em; text-transform: uppercase; }
+  .subbar a { color: var(--muted); text-decoration: none; }
+  .subbar a.on { color: var(--accent); border-bottom: 1px solid var(--accent); padding-bottom: .55rem; margin-bottom: -.8rem; }
+  .wide { display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; gap: 1.5rem; padding: 1.5rem; background: var(--bg-elevated); border-bottom: 1px solid var(--border); }
+  .wide h3 { margin: 0 0 .5rem; font: 600 .9rem/1.1 var(--display); color: var(--accent-soft); }
+  .wide li { margin: .3rem 0; font-size: .8rem; color: var(--muted); }
+  .wide ul { margin: 0; padding: 0; list-style: none; }
+  .drawer { display: grid; grid-template-columns: 260px 1fr; min-height: 260px; }
+  .drawer aside { border-right: 1px solid var(--border); padding: 1.25rem; background: var(--bg-elevated); }
+  .drawer aside h3 { margin: 1rem 0 .4rem; font: 600 .8rem/1 var(--display); color: var(--accent); letter-spacing: .06em; text-transform: uppercase; }
+  .drawer aside a { display: block; padding: .25rem 0; color: var(--muted); font-size: .82rem; text-decoration: none; }
+  .drawer .body { padding: 1.5rem; color: var(--muted); font-size: .85rem; }
+  .note { color: var(--muted); font-size: .78rem; margin-top: .4rem; }
+</style>
+</head>
+<body>
+<div class="frame">
+
+  <div class="label">Variante A — mega-menú bajo “Guías”</div>
+  <div class="mock">
+    <header>
+      <div class="brand">Gym<span>Lab</span></div>
+      <nav><a>Funciones</a><a>Capturas</a><a>Calculadoras</a><a class="on">Guías</a><a>FAQ</a></nav>
+      <div class="tail"><span>ES · EN</span><a class="cta" href="#">Descargar</a></div>
+    </header>
+    <div class="panel">
+      <div><h3>Entrenamiento</h3><ul><li>Musculación · 84</li><li>Cardio · 32</li><li>Lesiones · 16</li><li>Físicos de leyenda · 12</li><li>Pecho · 6</li><li>Espalda · 10</li></ul><a class="all" href="#">Ver todo</a></div>
+      <div><h3>Por músculo</h3><ul><li>Pecho · 9</li><li>Espalda · 1</li><li>Hombro · 5</li><li>Abdomen · 39</li><li>Pierna · 9</li></ul><a class="all" href="#">Ver todo</a></div>
+      <div><h3>Rutinas</h3><ul><li>Volumen · 29</li><li>Definición · 20</li><li>Fuerza · 9</li><li>Full body · 5</li><li>Principiantes · 9</li></ul><a class="all" href="#">Ver todo</a></div>
+      <div><h3>Ejercicios</h3><ul><li>Pecho · 27</li><li>Espalda · 31</li><li>Bíceps · 22</li><li>Hombro · 29</li><li>Cuádriceps · 23</li></ul><a class="all" href="#">Ver todo</a></div>
+      <div><h3>Nutrición</h3><ul><li>Aplicada · 111</li><li>Alimentos · 12</li><li>Dietas · 3</li><li>Volumen · 13</li><li>Definición · 17</li><li>Suplementos · 35</li></ul><a class="all" href="#">Ver todo</a></div>
+      <div><h3>Mujer fitness</h3><ul><li>Fitness y bienestar · 23</li></ul><a class="all" href="#">Ver todo</a></div>
+    </div>
+  </div>
+
+  <div class="label">Variante B — segunda barra de bloques</div>
+  <div class="mock">
+    <header>
+      <div class="brand">Gym<span>Lab</span></div>
+      <nav><a>Funciones</a><a>Capturas</a><a>Calculadoras</a><a>FAQ</a></nav>
+      <div class="tail"><span>ES · EN</span><a class="cta" href="#">Descargar</a></div>
+    </header>
+    <div class="subbar"><a class="on">Entrenamiento</a><a>Por músculo</a><a>Rutinas</a><a>Ejercicios</a><a>Nutrición</a><a>Mujer fitness</a></div>
+    <div class="wide">
+      <div><h3>Musculación</h3><ul><li>Plantillas de entrenamiento</li><li>Frecuencia por músculo</li><li>Sentadilla sin lesiones</li></ul></div>
+      <div><h3>Cardio</h3><ul><li>HIIT para perder grasa</li><li>Cardio en ayunas</li><li>Zona 2</li></ul></div>
+      <div><h3>Lesiones</h3><ul><li>Manguito rotador</li><li>Lumbalgia</li><li>Rodilla</li></ul></div>
+      <div><h3>Físicos de leyenda</h3><ul><li>Ronnie Coleman</li><li>Arnold</li><li>Dorian Yates</li></ul></div>
+    </div>
+  </div>
+
+  <div class="label">Variante C — drawer lateral</div>
+  <div class="mock">
+    <header>
+      <div class="brand">Gym<span>Lab</span></div>
+      <nav><a>Funciones</a><a>Capturas</a><a>Calculadoras</a><a>FAQ</a></nav>
+      <div class="tail"><span>☰ Guías</span><a class="cta" href="#">Descargar</a></div>
+    </header>
+    <div class="drawer">
+      <aside>
+        <h3>Entrenamiento</h3>
+        <a>Musculación · 84</a><a>Cardio · 32</a><a>Lesiones · 16</a>
+        <h3>Por músculo</h3>
+        <a>Abdomen · 39</a><a>Pecho · 9</a><a>Pierna · 9</a>
+        <h3>Rutinas</h3>
+        <a>Volumen · 29</a><a>Definición · 20</a><a>Fuerza · 9</a>
+      </aside>
+      <div class="body">Contenido del artículo seleccionado. El drawer queda fijo a la izquierda y el cuerpo scrollea solo.</div>
+    </div>
+  </div>
+
+  <p class="note">Mockups estáticos con los tokens de marca (oro × noche). Los conteos salen de <code>paginas.csv</code>.</p>
+</div>
+</body>
+</html>

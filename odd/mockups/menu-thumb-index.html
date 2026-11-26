@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<title>GymLab — índice de pestañas</title>
+<style>
+  @font-face { font-family: "Oswald"; font-weight: 400; font-display: swap; src: url("../../public/fonts/oswald-500.woff2") format("woff2"); }
+  @font-face { font-family: "Oswald"; font-weight: 500; font-display: swap; src: url("../../public/fonts/oswald-600.woff2") format("woff2"); }
+  @font-face { font-family: "Barlow"; font-weight: 400; font-display: swap; src: url("../../public/fonts/barlow-400.woff2") format("woff2"); }
+  @font-face { font-family: "Barlow"; font-weight: 500; font-display: swap; src: url("../../public/fonts/barlow-500.woff2") format("woff2"); }
+  @font-face { font-family: "Barlow"; font-weight: 600; font-display: swap; src: url("../../public/fonts/barlow-600.woff2") format("woff2"); }
+
+  :root {
+    --bg: #121214;
+    --surface: #242422;
+    --fg: #f8fafc;
+    --muted: #a39b8c;
+    --gold: #d9b384;
+    --gold-bright: #fdddb4;
+    --border: #3a352b;
+    --hairline: rgba(58, 53, 43, 0.6);
+    --paper: "Oswald", "Arial Narrow", sans-serif;
+    --text: "Barlow", system-ui, sans-serif;
+    --gutter: clamp(1rem, 4vw, 3rem);
+  }
+
+  * { box-sizing: border-box; }
+  ::selection { background: var(--gold); color: #121214; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font-family: var(--text);
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: inherit; text-decoration: none; }
+  :focus-visible { outline: 2px solid var(--gold); outline-offset: 3px; }
+
+  .caption {
+    max-width: 1328px;
+    margin: 4rem auto 1.25rem;
+    padding: 0 var(--gutter);
+    display: flex;
+    align-items: baseline;
+    gap: 1rem;
+  }
+  .caption b { font: 600 0.62rem/1 var(--text); letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); }
+  .caption span { font-size: 0.82rem; color: var(--muted); }
+
+  .demo { border-top: 1px solid var(--hairline); border-bottom: 1px solid var(--hairline); background: #101012; padding-bottom: 4rem; }
+
+  /* ---------- Header ---------- */
+  .bar { max-width: 1328px; margin: 0 auto; padding: 1rem var(--gutter); display: flex; align-items: center; gap: 2rem; }
+  .brand { display: flex; align-items: center; gap: 0.55rem; }
+  .brand img { width: 34px; height: 12px; }
+  .brand span { font: 500 1.05rem/1 var(--paper); letter-spacing: 0.06em; }
+  .nav { margin-left: auto; display: flex; gap: 1.75rem; }
+  .nav a { font: 600 0.66rem/1 var(--text); letter-spacing: 0.16em; text-transform: uppercase; color: var(--muted); padding: 0.6rem 0; }
+  .nav a[aria-current="true"] { color: var(--gold); }
+  .bar__cta { border: 1px solid var(--border); border-radius: 12px; padding: 0.7rem 1rem; font: 600 0.7rem/1 var(--text); color: var(--fg); }
+
+  /* ---------- Hub layout ---------- */
+  .hub {
+    max-width: 1328px;
+    margin: 0 auto;
+    padding: 2.5rem var(--gutter) 0;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: clamp(2rem, 5vw, 5rem);
+    align-items: start;
+  }
+
+  .hub__intro { max-width: 60ch; }
+  .hub__title { margin: 0; font: 400 clamp(2.4rem, 5vw, 4rem)/0.98 var(--paper); letter-spacing: 0.01em; }
+  .hub__title em { font-style: normal; color: var(--gold-bright); }
+  .hub__sub { margin: 1.25rem 0 0; color: var(--muted); font-size: 1.02rem; max-width: 46ch; }
+
+  .field { margin-top: 2rem; display: flex; align-items: center; gap: 0.75rem; height: 52px; padding: 0 1rem; background: var(--surface); border: 1px solid var(--hairline); border-radius: 12px; max-width: 460px; }
+  .field svg { width: 17px; height: 17px; stroke: var(--muted); fill: none; stroke-width: 1.6; }
+  .field span { color: var(--muted); font-size: 0.95rem; }
+  .field kbd { margin-left: auto; font: 600 0.6rem/1 var(--text); letter-spacing: 0.08em; color: var(--muted); border: 1px solid var(--border); border-radius: 5px; padding: 0.25rem 0.4rem; }
+
+  .featured { margin-top: 3rem; padding-top: 1.5rem; border-top: 1px solid var(--hairline); max-width: 60ch; }
+  .featured small { font: 600 0.62rem/1 var(--text); letter-spacing: 0.18em; text-transform: uppercase; color: var(--muted); }
+  .featured h3 { margin: 0.6rem 0 0; font: 400 1.6rem/1.15 var(--paper); }
+  .featured p { margin: 0.75rem 0 0; color: var(--muted); font-size: 0.95rem; }
+  .featured a.read { display: inline-block; margin-top: 1rem; font: 600 0.66rem/1 var(--text); letter-spacing: 0.16em; text-transform: uppercase; color: var(--gold); border-bottom: 1px solid var(--gold); padding-bottom: 0.35rem; }
+
+  /* ---------- Thumb index ---------- */
+  .thumb { position: sticky; top: 2rem; display: flex; align-items: flex-start; gap: 0; height: 540px; border-left: 1px solid var(--hairline); }
+  .thumb__tab { display: flex; height: 100%; }
+  .thumb__notch {
+    width: 46px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid var(--hairline);
+    border-top: 1px solid var(--hairline);
+    border-bottom: 1px solid var(--hairline);
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    font: 400 0.82rem/1 var(--paper);
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--muted);
+    white-space: nowrap;
+  }
+  .thumb__tab:last-child .thumb__notch { border-bottom: 1px solid var(--hairline); }
+  .thumb__tab--active .thumb__notch {
+    background: color-mix(in srgb, var(--gold) 7%, transparent);
+    color: var(--gold-bright);
+    border-color: var(--gold);
+  }
+
+  .thumb__panel { width: 300px; height: 100%; padding: 1.5rem 0 1.5rem 1.5rem; border: 1px solid var(--hairline); border-left: 0; display: grid; align-content: start; }
+  .thumb__panel h3 { margin: 0; font: 400 1.35rem/1.1 var(--paper); color: var(--gold-bright); }
+  .thumb__panel p { margin: 0.35rem 0 1.25rem; font: 500 0.62rem/1 var(--text); letter-spacing: 0.16em; text-transform: uppercase; color: var(--muted); font-variant-numeric: tabular-nums; }
+  .thumb__panel ul { margin: 0; padding: 0; list-style: none; }
+  .thumb__panel li { border-top: 1px solid var(--hairline); }
+  .thumb__panel a { display: grid; grid-template-columns: 1fr auto; gap: 1rem; align-items: baseline; padding: 0.62rem 0; font-size: 0.86rem; color: var(--muted); }
+  .thumb__panel a b { font-weight: 400; color: var(--fg); }
+  .thumb__panel a span { font-size: 0.72rem; font-variant-numeric: tabular-nums; }
+  .thumb__panel a:hover b { color: var(--gold-bright); }
+  .thumb__all { margin-top: 1.25rem; font: 600 0.64rem/1 var(--text); letter-spacing: 0.16em; text-transform: uppercase; color: var(--gold); }
+
+  /* ---------- Mobile ---------- */
+  .mobile { max-width: 1328px; margin: 0 auto; padding: 0 var(--gutter); }
+  .mobile .phone { width: 390px; border: 1px solid var(--hairline); border-radius: 24px; overflow: hidden; background: var(--bg); }
+  .mobile .bar { padding: 0.9rem 1rem; gap: 1rem; }
+  .mobile .nav { display: none; }
+  .mobile .hub-m { padding: 1.5rem 1rem 2.5rem; }
+  .mobile .hub-m h2 { margin: 0; font: 400 2rem/1 var(--paper); }
+  .mobile .hub-m h2 em { font-style: normal; color: var(--gold-bright); }
+  .mobile .field { margin-top: 1.25rem; height: 46px; }
+  .strip { display: flex; gap: 0; margin-top: 2rem; border-bottom: 1px solid var(--hairline); overflow-x: auto; mask-image: linear-gradient(90deg, #000 82%, transparent); }
+  .strip a { flex: 0 0 auto; padding: 0.85rem 1rem 0.75rem 0; margin-right: 1rem; border-bottom: 1px solid transparent; margin-bottom: -1px; font: 500 0.62rem/1 var(--text); letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted); white-space: nowrap; }
+  .strip a[aria-current="true"] { color: var(--gold-bright); border-bottom-color: var(--gold); }
+  .m-sections { margin-top: 0.5rem; }
+  .m-sections a { display: grid; grid-template-columns: 1fr auto; gap: 1rem; align-items: baseline; padding: 0.7rem 0; border-bottom: 1px solid var(--hairline); font-size: 0.9rem; color: var(--fg); min-height: 44px; }
+  .m-sections a span { color: var(--muted); font-size: 0.75rem; font-variant-numeric: tabular-nums; }
+
+  @media (max-width: 900px) {
+    .hub { grid-template-columns: 1fr; }
+    .thumb { display: none; }
+  }
+</style>
+</head>
+<body>
+
+<div class="caption"><b>Índice de pestañas</b><span>El corte lateral de un diccionario: seis pestañas en el borde, la activa se abre</span></div>
+<div class="demo">
+  <div class="bar">
+    <div class="brand"><img src="../../public/brand/logo_marca.svg" alt="" /><span>GymLab</span></div>
+    <nav class="nav"><a>Funciones</a><a>Capturas</a><a aria-current="true">Guías</a><a>Calculadoras</a><a>Contacto</a></nav>
+    <a class="bar__cta" href="#">Prueba la app</a>
+  </div>
+
+  <div class="hub">
+    <div>
+      <div class="hub__intro">
+        <h1 class="hub__title">Guías para <em>entrenar mejor</em></h1>
+        <p class="hub__sub">792 artículos sobre entrenamiento, técnica y nutrición. Sin cuenta y sin conexión, igual que la app.</p>
+        <div class="field">
+          <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+          <span>Buscar una guía</span>
+          <kbd>Ctrl K</kbd>
+        </div>
+      </div>
+
+      <article class="featured">
+        <small>Entrenamiento · Espalda</small>
+        <h3>Rutinas de espalda y consejos de entrenamiento</h3>
+        <p>Once plantillas para amplitud, densidad, fuerza y definición, con series y repeticiones. La guía más leída de la biblioteca.</p>
+        <a class="read" href="#">Leer la guía</a>
+      </article>
+    </div>
+
+    <nav class="thumb" aria-label="Bloques de guías">
+      <div class="thumb__tab thumb__tab--active">
+        <span class="thumb__notch">Entrenamiento</span>
+        <div class="thumb__panel">
+          <h3>Entrenamiento</h3>
+          <p>222 guías</p>
+          <ul>
+            <li><a href="#"><b>Musculación</b><span>84</span></a></li>
+            <li><a href="#"><b>Ejercicio cardiovascular</b><span>32</span></a></li>
+            <li><a href="#"><b>Prevención y recuperación</b><span>16</span></a></li>
+            <li><a href="#"><b>Físicos de leyenda</b><span>12</span></a></li>
+            <li><a href="#"><b>Entrenamiento de la espalda</b><span>10</span></a></li>
+            <li><a href="#"><b>Entrenamiento de piernas</b><span>18</span></a></li>
+          </ul>
+          <a class="thumb__all" href="#">Ver todo Entrenamiento</a>
+        </div>
+      </div>
+      <div class="thumb__tab"><span class="thumb__notch">Por músculo</span></div>
+      <div class="thumb__tab"><span class="thumb__notch">Rutinas</span></div>
+      <div class="thumb__tab"><span class="thumb__notch">Ejercicios</span></div>
+      <div class="thumb__tab"><span class="thumb__notch">Nutrición</span></div>
+      <div class="thumb__tab"><span class="thumb__notch">Mujer fitness</span></div>
+    </nav>
+  </div>
+</div>
+
+<div class="caption"><b>Misma pieza en móvil</b><span>Las pestañas se acuestan en una tira de hairline</span></div>
+<div class="mobile">
+  <div class="phone">
+    <div class="bar">
+      <div class="brand"><img src="../../public/brand/logo_marca.svg" alt="" /><span>GymLab</span></div>
+      <a class="bar__cta" href="#" style="margin-left:auto">App</a>
+    </div>
+    <div class="hub-m">
+      <h2>Guías para <em>entrenar mejor</em></h2>
+      <div class="field">
+        <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+        <span>Buscar una guía</span>
+      </div>
+      <div class="strip">
+        <a aria-current="true">Entrenamiento</a>
+        <a>Por músculo</a>
+        <a>Rutinas</a>
+        <a>Ejercicios</a>
+        <a>Nutrición</a>
+        <a>Mujer fitness</a>
+      </div>
+      <div class="m-sections">
+        <a href="#">Musculación <span>84</span></a>
+        <a href="#">Ejercicio cardiovascular <span>32</span></a>
+        <a href="#">Prevención y recuperación <span>16</span></a>
+        <a href="#">Físicos de leyenda <span>12</span></a>
+        <a href="#">Entrenamiento de la espalda <span>10</span></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div style="height: 5rem"></div>
+</body>
+</html>
