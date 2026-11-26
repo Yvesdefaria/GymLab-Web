@@ -1,6 +1,6 @@
 # GymLab Web — Agent Guide
 
-Public website for **GymLab** (local-first training app; app repo: `ProyectoGymLab`, app lives in `gymlab-app/`). This repo holds the marketing landing, the three calculators and the legal pages.
+Public website for **GymLab** (local-first training app; app repo: `ProyectoGymLab`, app lives in `gymlab-app/`). This repo holds the marketing landing, the three calculators, the legal pages, the 787-page bilingual guides library with its hub, and the global header with site search.
 
 - Production: `https://gymlab.dev`, served by the **Worker `gymlab-web`** with static assets declared in `wrangler.jsonc`. It is **not** Cloudflare Pages: the account's Pages project list is empty.
 - Deploy: `npx wrangler deploy`. Any change to `wrangler.jsonc` — `not_found_handling`, for example — only reaches production through it.
@@ -16,12 +16,18 @@ Public website for **GymLab** (local-first training app; app repo: `ProyectoGymL
 - `npm run dev` — dev server
 - `npm run build` — production build → `dist/`
 - `npm run preview` — preview the build
-- `npm run check:i18n` — post-build gate, 314 assertions: routes, canonical/hreflang agreement, redirects, sitemap alternates and the JSON-LD shape. Run it **after** `npm run build`.
+- `npm run check:i18n` — post-build gate, 26,373 assertions: routes, canonical/hreflang agreement, redirects, sitemap alternates, the JSON-LD shape, the search index and the header hooks. Run it **after** `npm run build`.
 
 ## Structure
 
-- `src/pages/[lang]/` — localized routes: landing, `privacidad`, `terminos`, `calculadora-1rm`, `calculadora-imc`, `calcular-calorias`
+- `src/pages/[lang]/` — localized routes: landing, legal, calculators, the guides hub (`guias`) and the library catch-all (`[...slug]`)
+- `src/pages/en/` — English wrappers for the calculator slugs and `/en/guides/`
+- `src/pages/search/[lang].json.ts` — build-time search index per locale
 - `src/pages/` — `404.astro` (served through `not_found_handling`) and the redirect stubs for `/`, `/privacidad`, `/terminos`
+- `src/content/articles/{es,en}/` — 787 guides per locale; schema in `src/content.config.ts`
+- `src/components/Header.astro` + `Search.astro` — global bar, Explorar panel and search
+- `src/lib/guides-nav.ts` — derives blocks, sections and counts; `src/data/guides-nav.ts` is the taxonomy
+- `src/lib/search.ts` — search scoring
 - `src/lib/schema.ts` — JSON-LD builders; `src/components/StructuredData.astro` renders one `@graph` per page
 - `src/styles/global.css` — Tailwind entry + brand tokens (ported from the app)
 - `public/` — fonts, `favicon.svg`, `site.webmanifest`, static assets. `public/brand/logo_marca.svg` is the emblem cropped to its content: use it for small marks, never the 600×600 source.
@@ -37,7 +43,7 @@ Public website for **GymLab** (local-first training app; app repo: `ProyectoGymL
 
 - Conventional Commits; no AI attribution in commits; work-unit commits
 - Work-unit pushes to `main` are standing-authorized by the repo owner (announced per push); force-push, PRs, and merges remain owner decisions
-- Feature plan + evidence: `odd/tasks/web-landing-legales.md`
+- Feature plan + evidence: `odd/tasks/web-landing-legales.md`, `odd/tasks/header-search.md`; session handoff: `odd/tasks/header-search-session.md`
 - Engram: project `webgymlab`
 
 ## Roadmap

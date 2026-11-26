@@ -4,7 +4,7 @@ Handoff document to continue this project in a new session. Canonical project ru
 `AGENTS.md`. Closed work and the measurement baselines are archived in `COMPLETED.md`; task-by-task
 evidence lives in `odd/tasks/*.md` and in Engram (project `webgymlab`).
 
-Last updated: 2026-11-16.
+Last updated: 2026-11-26.
 
 ## Where we are
 
@@ -12,10 +12,14 @@ Last updated: 2026-11-16.
   TypeScript strict, fully static. Languages `es` (default) and `en-GB`, both under a locale prefix.
 - Production is **live** at `https://gymlab.dev`, served by the Worker `gymlab-web` with static assets.
   It is not Cloudflare Pages. Deploy with `npx wrangler deploy`.
-- Production is **live with the full content library** (pushed 2026-11-25): **1,589 pages** and
-  **1,586 sitemap URLs** with 4,758 alternates. Gates at the push: `check:copy` **40,137/40,137**,
-  build **1,589 pages**, `check:i18n` **24,738/24,738**. Verified live after the deploy:
-  `/es/cuerpo-completo/` and `/en/oats/` return `200`, and `sitemap-0.xml` lists 1,586 URLs.
+- Production is **live with the full content library, the global header and the site search**
+  (2026-11-26): build **1,592 pages**, sitemap **1,588 URLs**. Gates: `check:copy`
+  **40,137/40,137**, `check:i18n` **26,373/26,373**. The live search index
+  (`/search/es.json`) returns **787 guides, 53 sections and 7 pages**; `/es/` and `/en/`
+  serve the new header. Runtime suite: **55/55**.
+- The header is a global bar — brand, `Explorar`, search, language, CTA — and carries no
+  landing anchors. The guides cascade was replaced by the Explorar panel; the hub lives at
+  `/es/guias/` + `/en/guides/`. Handoff: `odd/tasks/header-search-session.md`.
 - `app.gymlab.dev` is `noindex` with a real `robots.txt`.
 - The landing, the three calculators, the 404 and the legal pages all ship in both locales.
 - Measurement and the SQL recipe: see "Reading analytics" below and `COMPLETED.md` Appendix B.
@@ -26,17 +30,17 @@ Last updated: 2026-11-16.
   Entrenamiento 217/222 (the five missing rows are settled: two DESCARTADA and three FUSIONADA),
   Por Músculo 80/80, Rutinas 80/80, Ejercicios 196/196, Nutrición 191/191, Mujer Fitness 23/23.
   The five settled rows are the only unchecked boxes and they never publish.
-- **Batches 33 to 79 are built, green and committed, not pushed.** The build has **1,589 pages** and
-  **1,586 sitemap URLs**. The formula is pages = articles × 2 + 15 and sitemap = articles × 2 + 12.
-- Gates: `npm run verify` = `check:copy` **40,137/40,137** + build **1,589 pages** + `check:i18n`
-  **24,738/24,738** (1,586 sitemap URLs). The batches 78-79 render pass covered 224 page/width pairs
+- **Batches 33 to 79 are built, green, committed and pushed.** The build has **1,592 pages** and
+  **1,588 sitemap URLs** (the two hubs and two search endpoints included).
+- Gates: `npm run verify` = `check:copy` **40,137/40,137** + build **1,592 pages** + `check:i18n`
+  **26,373/26,373** (1,588 sitemap URLs). The batches 78-79 render pass covered 224 page/width pairs
   with 0 clipped cells.
 - Docs: `odd/tasks/content-library-session.md` (the handoff), `odd/tasks/content-pages.md` (the closed
   checklist), `odd/tasks/content-library-batch-79.md` (the last batch) and
   `odd/tasks/guides-page-contract.md` (the page contract and copy gate).
 - **No content rows are pending.** What is left is the phased work, not more pages: Phase 1 JSON-LD and
-  per-article OG, Phase 2 hubs and internal links, Phase 3 CTA, Phase 5 image pipeline, Phase 6 the
-  Search Console reading, Phase 7 the scaling architecture, and the owner's push of batches 33-79.
+  per-article OG, Phase 2's remaining internal links and `llms.txt`, Phase 3 CTA, Phase 5 image
+  pipeline, Phase 6 the Search Console reading, Phase 7 the scaling architecture.
 - **Follow-up:** ten hero pairs score 6 or less: the pre-existing exact duplicate
   (`remo-polea-sentado` with `superserie-de-espalda-para-terminar-tu-rutina`), and nine near pairs at
   3-6 (`aperturas-mancuernas-banco-inclinado` vs `press-inclinado-barra` at 3;
@@ -93,10 +97,12 @@ come from the app-side roadmap (2026-11-13).
 
 ### Phase 2 — Information architecture and discovery
 
-- [ ] Build the guides hub at 3–5 URLs before scaling: `/es/guias/` (index), one section hub listing
-      the article, article → hub breadcrumb. Then flip `GUIDES_ENABLED` with real hrefs.
-- [ ] The cluster has internal links but no hub; the menu is still disabled. Link it from the hub,
-      the landing and 2–3 sibling guides.
+- [x] Guides hub and global discovery shipped 2026-11-26: `/es/guias/` + `/en/guides/` with
+      block/section anchors, the Explorar header panel and the site search. The cascade and
+      `GUIDES_ENABLED` are gone. Evidence: `odd/tasks/header-search-session.md`.
+- [ ] Finish internal linking: every article is listed by the hub, but article → hub breadcrumbs
+      and 2–3 sibling links per article are still missing. Per-section hubs remain optional
+      (they would need unique copy).
 - [ ] Publish `llms.txt` (currently `404`) while AI Search already makes ~1,770 requests/30 d.
 - [ ] Deploy the redirect map with the first bulk publish: old slug → `/es/<slug>/` `301`, generated
       from the archive manifest, 20 sampled before release.
@@ -617,8 +623,9 @@ sequence is now explicit: fix measurement, ship the 20-exercise pilot, measure, 
 1. Read `AGENTS.md`, this file and `COMPLETED.md`; then `odd/tasks/` for the task at hand.
 2. Optional memory context: Engram project `webgymlab`.
 3. `npm install` if `node_modules` is missing → `npm run dev` to preview.
-4. **The content library is finished (787/792, fully deployed).** Start from *Legal and compliance* and
-   then Phase 2 in this file; there are no content rows left.
+4. **The content library is finished (787/792, fully deployed)** and the header/search shipped
+   (handoff: `odd/tasks/header-search-session.md`). Start from *Legal and compliance*, then Phase 1
+   (JSON-LD/OG), Phase 2's remaining `llms.txt` and the redirect map.
 5. Pick the first unchecked item above; follow repo conventions (work-unit commits, no AI attribution).
 6. Verify with `npm run build` **then** `npm run check:i18n`.
 

@@ -2,7 +2,7 @@
 
 > Only work that is **100% closed**: merged, deployed where it applies, every checkbox ticked.
 > Anything with an open item, an unpushed branch or a pending review stays in `PLAN.md`.
-> Last updated: 2026-10-29 · Build: 16 pages · `check:i18n`: 308 assertions · Site live since 2026-10-19, last deployed 2026-10-29
+> Last updated: 2026-11-26 · Build: 1,592 pages · `check:i18n`: 26,373 assertions · Site live since 2026-10-19, last deployed 2026-11-26
 >
 > Task-by-task detail lives in `odd/tasks/*.md`; the same history is mirrored in Engram
 > (project `webgymlab`). This file is the index, not the source of truth for evidence.

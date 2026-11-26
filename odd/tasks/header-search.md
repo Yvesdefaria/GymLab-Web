@@ -142,12 +142,16 @@ owner. About 600 authored lines, with the cascade removal offsetting part of it.
   the first result when none is active. CDP measurements at 390/360/320:
   `scrollWidth === innerWidth`, CTA inside the frame; at 800/1280 the results panel
   stays inside the viewport.
-- 2026-11-26 — Results follow-up: the bar panel starts 6px under the field's bottom
-  edge (not the header border) and shares the field's outer left edge; its width
+- 2026-11-26 — Results follow-up: the bar panel sits flush under the field's outer
+  edge (left edge equal, top equal to the field bottom, square top corners) and
   shrinks from 540px when the viewport would clip it. Verified at 1280/800/768:
-  field/panel left equal (317/317, 265/265, 248/248) and panel top = field bottom + 6.
+  field/panel left 317/317, 265/265, 248/248; panel top = field bottom (60).
 - 2026-11-26 — Escape inside the mobile panel hides the results and restores the two
   columns on the first press; the second press closes the panel. Pre-push runtime QA:
   55/55 checks (alignment, groups, combobox, keyboard, sticky header, EN locale,
   mobile panel, 320/360 bars, index counts, href/anchor resolution, sitemap). Source
   gates: `check:copy` 40137/40137, `build` 1592 pages, `check:i18n` 26373/26373.
+- 2026-11-26 — Live deploy verified after the push: `/es/` and `/en/` serve the new
+  header hooks; `/search/es.json` returns 200 with 787 guides, 53 sections and 7
+  pages; the sitemap lists 1,588 URLs and excludes `/search/`. The only open item is
+  the owner's real-device visual QA. Handoff: `odd/tasks/header-search-session.md`.
