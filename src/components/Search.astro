@@ -136,11 +136,11 @@ const resultsId = `search-results-${variant}`;
     };
 
     // The bar field sits mid-header and the panel is fixed; align it under the
-    // field, clamped to the viewport, instead of to the frame.
+    // field's outer edge, clamped to the viewport, instead of to the input box.
     const place = () => {
       if (variant !== 'bar') return;
-      const rect = input.getBoundingClientRect();
-      const header = input.closest('.site-header')?.getBoundingClientRect();
+      const rect = root.getBoundingClientRect();
+      const header = root.closest('.site-header')?.getBoundingClientRect();
       const margin = 16;
       // Left edge under the field; shrink instead of jumping left when 540px
       // would run past the viewport.
@@ -158,7 +158,7 @@ const resultsId = `search-results-${variant}`;
 
     const reposition = () => {
       if (results.hidden) return;
-      const rect = input.getBoundingClientRect();
+      const rect = root.getBoundingClientRect();
       if (rect.bottom < 0 || rect.top > window.innerHeight) {
         hide();
         return;
