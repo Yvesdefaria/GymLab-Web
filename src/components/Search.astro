@@ -151,7 +151,7 @@ const resultsId = `search-results-${variant}`;
       const left = Math.max(margin, Math.min(rect.left, window.innerWidth - margin - width));
       results.style.left = `${Math.round(left)}px`;
       results.style.width = `${Math.round(width)}px`;
-      results.style.top = `${Math.round(rect.bottom + 6)}px`;
+      results.style.top = `${Math.round(rect.bottom)}px`;
       results.style.right = 'auto';
     };
 
@@ -432,13 +432,16 @@ const resultsId = `search-results-${variant}`;
   }
 
   /* The bar field sits mid-header; the script places this panel under the field,
-     clamped to the viewport. Fixed so it survives the sticky header. */
+     clamped to the viewport. Fixed so it survives the sticky header. The top
+     corners are square so the panel meets the field's border without a seam. */
   .search-ui--bar .search-ui__results {
     position: fixed;
     top: calc(5.25rem + 0.5rem);
     left: 0;
     right: auto;
     width: min(33.75rem, calc(100vw - 2rem));
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
   }
 
   /* Results are built in the browser, so these rules hang off the scoped root. */
