@@ -647,12 +647,6 @@
     line-height: 1;
   }
 
-  .site-header__nav {
-    display: none;
-    align-items: center;
-    gap: 1.55rem;
-  }
-
   .site-header__link {
     color: var(--color-muted);
     font-size: 0.64rem;
@@ -2142,12 +2136,6 @@
     }
   }
 
-  @media (min-width: 768px) {
-    .site-header__nav {
-      display: flex;
-    }
-  }
-
   @media (max-width: 767px) {
     .site-header__inner {
       height: 4.75rem;
@@ -2176,7 +2164,6 @@
     .btn,
     .text-link,
     .site-header__link,
-    .site-header__nav a,
     .faq-item summary,
     .faq-mark::before,
     .faq-mark::after {

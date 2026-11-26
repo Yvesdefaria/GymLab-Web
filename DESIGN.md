@@ -305,10 +305,12 @@ Every component is a plate, a rule or a label; the vocabulary is deliberately sm
 - **Answer:** Barlow at 0.96rem, Dust Taupe, capped at 65ch with extra right padding so the text column does not sit under the mark.
 
 ### Navigation
-- **Style:** two variants of one bar. The landing uses the overlay variant — absolutely positioned, transparent, closed by a 10% gold hairline with a Floor Black gradient fading downward, sitting on the hero atmosphere. Legal pages use the solid variant: sticky, 88% Floor Black with a 14px backdrop blur and a Smoke Umber hairline.
-- **Content:** a 26px gold brand mark beside the Oswald wordmark, then Barlow caps links in Dust Taupe, then one small ghost call to action carrying the launch-notice ask.
-- **States:** links brighten to Warm Brass on hover, keeping their tracked caps; the call to action behaves as the small ghost button.
-- **Mobile treatment:** below 768px the section links are hidden rather than collapsed into a hamburger — there is no menu — the header height drops from 5.25rem to 4.75rem, the wordmark shrinks, and the remaining caption-sized CTA tightens its padding. The bar always carries exactly one action.
+- **Style:** two variants of one bar. The landing uses the overlay variant — absolutely positioned, transparent, closed by a 10% gold hairline with a Floor Black gradient fading downward, sitting on the hero atmosphere. Legal and content pages use the solid variant: sticky, 88% Floor Black with a 14px backdrop blur and a Smoke Umber hairline.
+- **Content:** a 26px gold brand mark beside the Oswald wordmark, an `Explorar` trigger, the search field, the ES/EN switch and one small ghost call to action. The bar navigates the site; landing sections are reached by scrolling, never from here.
+- **Explorar:** a 680px panel under the bar with two columns. `Biblioteca` lists the six blocks with their live counts and a link to the full hub; `Páginas` lists the calculators, privacy, terms and contact. No landing anchors and no cascade.
+- **Search:** a 196–360px field in the bar, focused with `/`; results drop in a fixed 540px panel aligned to the frame and group guides, sections and pages. The index is built per locale and fetched on first focus.
+- **States:** links brighten to Warm Brass on hover; the trigger turns Pale Brass and its chevron flips while open. The search field brightens its rule and shows a single gold focus ring.
+- **Mobile treatment:** below 768px the field moves inside the Explorar panel (search first, then the two columns stacked), the flags give way to the ES/EN codes, and the CTA shortens to `La app`; the wordmark stays. Below 330px the wordmark yields to the emblem alone. The bar always carries exactly one action.
 
 ### Hero Assembly (signature)
 - **Layers:** a photograph of a real gym floor at 46% opacity, desaturated and slightly contrasted; a four-layer veil of floor black gradients on top of it; an inline SVG floor plan of 1px gold strokes at 5–26% opacity with tick marks along the floor line and a hatch of gauge marks on the right edge; a blurred light shaft at 22px crossing the frame; and the film grain veil that covers the whole site.

@@ -21,6 +21,7 @@ export const es = {
     },
     contact: 'Contacto',
     cta: 'Prueba la app',
+    ctaShort: 'La app',
     language: {
       label: 'Idioma',
       es: 'Español',
@@ -431,6 +432,23 @@ export const es = {
     tocLabel: 'Bloques',
     unitOne: 'guía',
     unitMany: 'guías',
+  },
+
+  search: {
+    placeholder: 'Buscar guías, secciones y páginas…',
+    label: 'Buscar en el sitio',
+    explore: 'Explorar',
+    menuLabel: 'Menú del sitio',
+    library: 'Biblioteca',
+    pages: 'Páginas',
+    allGuides: 'Ver todas las guías',
+    guides: 'Guías',
+    sections: 'Secciones',
+    pagesGroup: 'Páginas',
+    page: 'Página',
+    empty: 'Sin resultados',
+    loading: 'Buscando…',
+    close: 'Cerrar',
   },
 
   legalChrome: {

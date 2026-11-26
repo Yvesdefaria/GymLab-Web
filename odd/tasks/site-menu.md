@@ -163,3 +163,5 @@ owner.
   24769/24769. Structural readback confirms 787 article links per hub and 47 header
   section links with matching anchors. Visual QA (390px, desktop panel scroll) remains
   for the owner.
+- 2026-11-26 — The cascade was replaced by the global Explorar menu and the search
+  index; see `odd/tasks/header-search.md`.

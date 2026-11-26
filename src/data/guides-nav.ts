@@ -15,9 +15,6 @@ export type GuideBlock = {
   sections: GuideSection[];
 };
 
-/** The guides hub exists in both locales, so the header cascade ships enabled. */
-export const GUIDES_ENABLED = true;
-
 export const GUIDE_BLOCKS: GuideBlock[] = [
   {
     id: 'entrenamiento',

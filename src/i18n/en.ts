@@ -23,6 +23,7 @@ export const en: Dict = {
     },
     contact: 'Contact',
     cta: 'Try the app',
+    ctaShort: 'Open app',
     language: {
       label: 'Language',
       es: 'Español',
@@ -433,6 +434,23 @@ export const en: Dict = {
     tocLabel: 'Blocks',
     unitOne: 'guide',
     unitMany: 'guides',
+  },
+
+  search: {
+    placeholder: 'Search guides, sections and pages…',
+    label: 'Search the site',
+    explore: 'Explore',
+    menuLabel: 'Site menu',
+    library: 'Library',
+    pages: 'Pages',
+    allGuides: 'View all guides',
+    guides: 'Guides',
+    sections: 'Sections',
+    pagesGroup: 'Pages',
+    page: 'Page',
+    empty: 'No results',
+    loading: 'Searching…',
+    close: 'Close',
   },
 
   legalChrome: {

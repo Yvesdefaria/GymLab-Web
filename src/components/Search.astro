@@ -1,0 +1,523 @@
+---
+// One search field with two placements: the bar on desktop and the top of the
+// Explorar panel on mobile. Both share the same index, ranking and result list.
+import { getLang, useTranslations } from '../i18n';
+
+interface Props {
+  variant: 'bar' | 'panel';
+}
+
+const { variant } = Astro.props;
+const lang = getLang(Astro.url.pathname);
+const t = useTranslations(lang);
+const s = t.search;
+
+const inputId = `search-${variant}`;
+const resultsId = `search-results-${variant}`;
+---
+<div
+  class:list={['search-ui', `search-ui--${variant}`]}
+  data-search={variant}
+  data-lang={lang}
+  data-group-guide={s.guides}
+  data-group-section={s.sections}
+  data-group-page={s.pagesGroup}
+  data-empty={s.empty}
+  data-loading={s.loading}
+  role="search"
+>
+  <label class="search-ui__field" for={inputId}>
+    <svg class="search-ui__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+      <circle cx="11" cy="11" r="7" />
+      <path d="m16.5 16.5 4 4" />
+    </svg>
+    <input
+      id={inputId}
+      class="search-ui__input"
+      type="search"
+      data-search-input
+      placeholder={s.placeholder}
+      aria-label={s.label}
+      aria-expanded="false"
+      aria-controls={resultsId}
+      aria-autocomplete="list"
+      role="combobox"
+      autocomplete="off"
+      spellcheck="false"
+    />
+    {variant === 'bar' && <kbd aria-hidden="true">/</kbd>}
+  </label>
+
+  <div class="search-ui__results" id={resultsId} data-search-results role="listbox" hidden></div>
+</div>
+
+<script>
+  import { normalize, searchEntries, type SearchEntry } from '../lib/search';
+
+  const indexes = new Map<string, Promise<SearchEntry[]>>();
+
+  // One fetch per locale per page, even with two fields mounted.
+  function load(lang: string): Promise<SearchEntry[]> {
+    let index = indexes.get(lang);
+    if (!index) {
+      index = fetch(`/search/${lang}.json`)
+        .then((response) => (response.ok ? response.json() : []))
+        .then((data: unknown) => (Array.isArray(data) ? (data as SearchEntry[]) : []))
+        .catch(() => [] as SearchEntry[]);
+      indexes.set(lang, index);
+    }
+    return index;
+  }
+
+  // Mark the raw query inside the title; the match itself is accent-folded, so a
+  // folded hit ("biceps" vs "Bíceps") simply renders unmarked instead of failing.
+  function highlight(title: string, query: string): DocumentFragment {
+    const fragment = document.createDocumentFragment();
+    const raw = query.trim();
+    if (!raw) {
+      fragment.append(title);
+      return fragment;
+    }
+
+    const escaped = raw.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    for (const part of title.split(new RegExp(`(${escaped})`, 'gi'))) {
+      if (!part) continue;
+      if (part.toLowerCase() === raw.toLowerCase()) {
+        const mark = document.createElement('mark');
+        mark.textContent = part;
+        fragment.append(mark);
+      } else {
+        fragment.append(part);
+      }
+    }
+    return fragment;
+  }
+
+  for (const root of document.querySelectorAll<HTMLElement>('[data-search]')) {
+    if (root.dataset.searchReady) continue;
+    root.dataset.searchReady = 'true';
+
+    const variant = root.dataset.search;
+    const lang = root.dataset.lang === 'en' ? 'en' : 'es';
+    const input = root.querySelector<HTMLInputElement>('[data-search-input]');
+    const results = root.querySelector<HTMLElement>('[data-search-results]');
+    if (!input || !results) continue;
+
+    const labels: Record<string, string> = {
+      guide: root.dataset.groupGuide ?? '',
+      section: root.dataset.groupSection ?? '',
+      page: root.dataset.groupPage ?? '',
+    };
+    const emptyLabel = root.dataset.empty ?? '';
+    const loadingLabel = root.dataset.loading ?? '';
+
+    // The columns and the footer of the mobile panel step aside while searching.
+    const panel = variant === 'panel' ? root.closest<HTMLElement>('[data-explore-menu]') : null;
+    const cols = panel?.querySelector<HTMLElement>('[data-explore-cols]') ?? null;
+    const foot = panel?.querySelector<HTMLElement>('[data-explore-foot]') ?? null;
+
+    let entries: SearchEntry[] = [];
+    let loaded = false;
+    let timer: number | undefined;
+    let items: HTMLAnchorElement[] = [];
+    let active = -1;
+
+    const setColumns = (visible: boolean) => {
+      if (cols) cols.hidden = !visible;
+      if (foot) foot.hidden = !visible;
+    };
+
+    const hide = () => {
+      results.hidden = true;
+      input.setAttribute('aria-expanded', 'false');
+      input.removeAttribute('aria-activedescendant');
+      items = [];
+      active = -1;
+    };
+
+    const message = (text: string) => {
+      results.replaceChildren();
+      const note = document.createElement('p');
+      note.className = 'search-ui__note';
+      note.setAttribute('role', 'status');
+      note.textContent = text;
+      results.append(note);
+      results.hidden = false;
+      input.setAttribute('aria-expanded', 'true');
+      items = [];
+      active = -1;
+    };
+
+    const render = (query: string) => {
+      const groups = searchEntries(entries, query, lang);
+      results.replaceChildren();
+      items = [];
+      active = -1;
+
+      if (groups.length === 0) {
+        message(emptyLabel);
+        return;
+      }
+
+      for (const group of groups) {
+        const section = document.createElement('div');
+        section.className = 'search-ui__group';
+        section.setAttribute('role', 'group');
+
+        const labelText = labels[group.group] ?? '';
+        section.setAttribute('aria-label', labelText);
+
+        const label = document.createElement('p');
+        label.className = 'search-ui__label';
+        label.setAttribute('role', 'presentation');
+        label.textContent = labelText;
+        section.append(label);
+
+        for (const entry of group.entries) {
+          const link = document.createElement('a');
+          link.className = 'search-ui__result';
+          link.href = entry.href;
+          link.setAttribute('role', 'option');
+          link.setAttribute('aria-selected', 'false');
+          link.id = `${results.id}-${items.length}`;
+
+          const title = document.createElement('span');
+          title.className = 'search-ui__title';
+          title.append(highlight(entry.title, query));
+
+          const meta = document.createElement('span');
+          meta.className = 'search-ui__meta';
+          meta.textContent = entry.meta;
+
+          link.append(title, meta);
+          section.append(link);
+          items.push(link);
+        }
+
+        results.append(section);
+      }
+
+      results.hidden = false;
+      input.setAttribute('aria-expanded', 'true');
+    };
+
+    const update = () => {
+      const query = input.value;
+      const searching = normalize(query).length >= 2;
+      setColumns(!searching);
+
+      if (!searching) {
+        hide();
+        return;
+      }
+
+      if (!loaded) message(loadingLabel);
+
+      void load(lang).then((data) => {
+        entries = data;
+        loaded = true;
+        if (input.value === query) render(query);
+      });
+    };
+
+    const move = (step: number) => {
+      if (items.length === 0) return;
+      active = (active + step + items.length) % items.length;
+      items.forEach((item, index) => {
+        const on = index === active;
+        item.classList.toggle('is-active', on);
+        item.setAttribute('aria-selected', String(on));
+      });
+      const current = items[active];
+      if (current) {
+        input.setAttribute('aria-activedescendant', current.id);
+        current.scrollIntoView({ block: 'nearest' });
+      }
+    };
+
+    input.addEventListener('focus', () => {
+      void load(lang);
+      if (input.value.trim() !== '') update();
+    });
+
+    input.addEventListener('input', () => {
+      window.clearTimeout(timer);
+      timer = window.setTimeout(update, 120);
+    });
+
+    input.addEventListener('keydown', (event) => {
+      if (event.key === 'ArrowDown' || event.key === 'ArrowUp') {
+        if (items.length === 0) return;
+        event.preventDefault();
+        move(event.key === 'ArrowDown' ? 1 : -1);
+        return;
+      }
+
+      if (event.key === 'Enter') {
+        const current = items[active] ?? items[0];
+        if (!current) return;
+        event.preventDefault();
+        window.location.assign(current.href);
+        return;
+      }
+
+      if (event.key === 'Escape') {
+        if (results.hidden) return;
+        // First Escape closes the results; the panel stays for a second Escape.
+        event.stopPropagation();
+        hide();
+        input.blur();
+      }
+    });
+
+    document.addEventListener('pointerdown', (event) => {
+      if (results.hidden || root.contains(event.target as Node)) return;
+      hide();
+    });
+  }
+
+  // `/` jumps to the visible bar field, never while typing somewhere else.
+  document.addEventListener('keydown', (event) => {
+    if (event.key !== '/' || event.metaKey || event.ctrlKey || event.altKey) return;
+    const target = event.target as HTMLElement | null;
+    if (target?.closest('input, textarea, select, [contenteditable="true"]')) return;
+
+    const bar = document.querySelector<HTMLInputElement>(
+      '[data-search="bar"] [data-search-input]',
+    );
+    if (!bar || bar.getClientRects().length === 0) return;
+
+    event.preventDefault();
+    bar.focus();
+  });
+</script>
+
+<style>
+  .search-ui {
+    position: relative;
+  }
+
+  .search-ui--bar {
+    display: none;
+    flex: 1;
+    width: 100%;
+    max-width: 22.5rem;
+  }
+
+  .search-ui__field {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    height: 2.25rem;
+    padding: 0 0.625rem;
+    border: 1px solid var(--floor-rule-strong);
+    border-radius: 2px;
+    background: color-mix(in srgb, var(--color-bg) 55%, transparent);
+    color: var(--color-muted);
+    transition:
+      border-color 0.3s var(--floor-ease),
+      box-shadow 0.3s var(--floor-ease);
+  }
+
+  .search-ui__field:focus-within {
+    border-color: var(--color-accent);
+    box-shadow: 0 0 0 1px color-mix(in srgb, var(--color-accent) 18%, transparent);
+  }
+
+  .search-ui__icon {
+    flex: none;
+    width: 0.875rem;
+    height: 0.875rem;
+    stroke: currentColor;
+    fill: none;
+    stroke-width: 1.6;
+  }
+
+  .search-ui__field:focus-within .search-ui__icon {
+    color: var(--color-accent);
+  }
+
+  .search-ui__input {
+    flex: 1;
+    min-width: 0;
+    height: 100%;
+    padding: 0;
+    border: 0;
+    background: none;
+    color: var(--color-fg);
+    font-family: var(--font-body);
+    font-size: 0.8rem;
+    appearance: none;
+  }
+
+  .search-ui__input::placeholder {
+    color: var(--color-muted);
+    opacity: 1;
+  }
+
+  .search-ui__input:focus {
+    outline: none;
+  }
+
+  /* The native clear control is light-themed and breaks the stencil look. */
+  .search-ui__input::-webkit-search-cancel-button {
+    appearance: none;
+  }
+
+  .search-ui__field kbd {
+    display: inline-flex;
+    flex: none;
+    align-items: center;
+    justify-content: center;
+    min-width: 1.125rem;
+    height: 1.125rem;
+    padding: 0 0.25rem;
+    border: 1px solid var(--color-border);
+    border-radius: 2px;
+    color: var(--color-muted);
+    font-family: var(--font-body);
+    font-size: 0.55rem;
+    font-weight: 600;
+    line-height: 1;
+    letter-spacing: 0.06em;
+  }
+
+  .search-ui__results {
+    position: absolute;
+    top: calc(100% + 0.5rem);
+    right: 0;
+    z-index: 70;
+    width: min(33.75rem, calc(100vw - 2rem));
+    max-height: min(26rem, calc(100dvh - 6rem));
+    overflow-y: auto;
+    border: 1px solid var(--color-border);
+    border-radius: 12px;
+    background: #17171a;
+    box-shadow: 0 30px 60px -24px rgb(0 0 0 / 0.85);
+  }
+
+  /* The bar field sits mid-header; anchoring a 540px panel to its right edge
+     overflows on tablets. Fix the panel to the frame instead. */
+  .search-ui--bar .search-ui__results {
+    position: fixed;
+    top: calc(5.25rem + 0.5rem);
+    right: max(var(--floor-gutter), calc((100vw - var(--floor-frame)) / 2));
+    width: min(33.75rem, calc(100vw - var(--floor-gutter) * 2));
+  }
+
+  /* Results are built in the browser, so these rules hang off the scoped root. */
+  .search-ui :global(.search-ui__group) {
+    padding: 0.5rem 0 0.625rem;
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  .search-ui :global(.search-ui__group:last-of-type) {
+    border-bottom: 0;
+  }
+
+  .search-ui :global(.search-ui__label) {
+    margin: 0;
+    padding: 0.25rem 1.125rem 0.5rem;
+    color: var(--color-muted);
+    font-family: var(--font-body);
+    font-size: 0.54rem;
+    font-weight: 600;
+    line-height: 1;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+  }
+
+  .search-ui :global(.search-ui__result) {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    align-items: baseline;
+    gap: 0.75rem;
+    padding: 0.44rem 1.125rem;
+    text-decoration: none;
+  }
+
+  .search-ui :global(.search-ui__result:hover) {
+    background: color-mix(in srgb, var(--color-accent) 6%, transparent);
+  }
+
+  .search-ui :global(.search-ui__result.is-active) {
+    background: color-mix(in srgb, var(--color-accent) 8%, transparent);
+    box-shadow: inset 2px 0 0 var(--color-accent);
+  }
+
+  .search-ui :global(.search-ui__title) {
+    overflow: hidden;
+    color: var(--color-fg);
+    font-size: 0.88rem;
+    line-height: 1.25;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .search-ui :global(.search-ui__result.is-active .search-ui__title) {
+    color: var(--color-accent-soft);
+  }
+
+  .search-ui :global(.search-ui__meta) {
+    color: var(--color-muted);
+    font-family: var(--font-body);
+    font-size: 0.54rem;
+    font-weight: 600;
+    line-height: 1;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    white-space: nowrap;
+  }
+
+  .search-ui :global(mark) {
+    background: none;
+    color: inherit;
+    font-weight: 600;
+  }
+
+  .search-ui :global(.search-ui__result.is-active mark) {
+    color: var(--color-accent-soft);
+  }
+
+  .search-ui :global(.search-ui__note) {
+    margin: 0;
+    padding: 0.9rem 1.125rem;
+    color: var(--color-muted);
+    font-size: 0.82rem;
+  }
+
+  /* Panel variant: at the top of the mobile sheet, results in the flow. */
+  .search-ui--panel .search-ui__field {
+    height: 2.75rem;
+    border-color: var(--color-accent);
+    color: var(--color-fg);
+  }
+
+  .search-ui--panel .search-ui__input {
+    font-size: 0.9rem;
+  }
+
+  .search-ui--panel .search-ui__results {
+    position: static;
+    width: auto;
+    margin-top: 0.5rem;
+    border-radius: 2px;
+    box-shadow: none;
+  }
+
+  @media (min-width: 768px) {
+    .search-ui--bar {
+      display: block;
+    }
+
+    .search-ui--panel {
+      display: none;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .search-ui__field {
+      transition: none;
+    }
+  }
+</style>

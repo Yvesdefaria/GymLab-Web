@@ -3451,6 +3451,61 @@ for (const lang of ['es', 'en']) {
   }
 }
 
+for (const lang of ['es', 'en']) {
+  const file = join(DIST, 'search', `${lang}.json`);
+  if (!existsSync(file)) {
+    check(`search/${lang}.json exists`, false);
+    continue;
+  }
+  check(`search/${lang}.json exists`, true);
+
+  let entries;
+  try {
+    entries = JSON.parse(readFileSync(file, 'utf8'));
+  } catch (error) {
+    check(`search/${lang}.json parses`, false, String(error));
+    continue;
+  }
+  check(`search/${lang}.json parses`, true);
+  check(`search/${lang}.json is an array`, Array.isArray(entries));
+
+  const list = Array.isArray(entries) ? entries : [];
+  for (const group of ['guide', 'section', 'page']) {
+    check(
+      `search/${lang}.json has ${group} entries`,
+      list.some((entry) => entry.group === group),
+    );
+  }
+
+  // Every page link must open a built file; hub anchors are checked by hand
+  // because `fileFor` only resolves full paths.
+  for (const entry of list) {
+    const href = entry.href;
+    if (
+      typeof href !== 'string' ||
+      href.startsWith('mailto:') ||
+      href.includes('#') ||
+      !href.startsWith('/')
+    ) {
+      continue;
+    }
+    check(`search/${lang}.json href ${href} resolves`, existsSync(fileFor(href)));
+  }
+}
+
+// The bar is the only site navigation now: every landing must ship the trigger
+// and the desktop search, and must not carry section anchors in the header.
+for (const landing of LANDINGS) {
+  const html = readFileSync(fileFor(landing.path), 'utf8');
+  const lang = landing.path.startsWith('/en/') ? 'en' : 'es';
+  const start = html.indexOf('<header');
+  const header = html.slice(start, html.indexOf('</header>', start));
+
+  check(`header ${landing.path} has the Explorar trigger`, header.includes('data-explore-trigger'));
+  check(`header ${landing.path} has the search bar`, header.includes('data-search="bar"'));
+  check(`header ${landing.path} has no landing anchors`, !header.includes(`href="/${lang}/#`));
+}
+
 const failed = checks.filter((c) => !c.ok);
 for (const c of checks) {
   if (!c.ok) console.log(`FAIL  ${c.name}${c.detail ? ` — ${c.detail}` : ''}`);
