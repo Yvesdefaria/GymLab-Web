@@ -302,6 +302,7 @@ const resultsId = `search-results-${variant}`;
         event.stopPropagation();
         hide();
         input.blur();
+        if (variant === 'panel') setColumns(true);
       }
     });
 

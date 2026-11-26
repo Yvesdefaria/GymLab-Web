@@ -146,3 +146,8 @@ owner. About 600 authored lines, with the cascade removal offsetting part of it.
   edge (not the header border) and shares the field's outer left edge; its width
   shrinks from 540px when the viewport would clip it. Verified at 1280/800/768:
   field/panel left equal (317/317, 265/265, 248/248) and panel top = field bottom + 6.
+- 2026-11-26 — Escape inside the mobile panel hides the results and restores the two
+  columns on the first press; the second press closes the panel. Pre-push runtime QA:
+  55/55 checks (alignment, groups, combobox, keyboard, sticky header, EN locale,
+  mobile panel, 320/360 bars, index counts, href/anchor resolution, sitemap). Source
+  gates: `check:copy` 40137/40137, `build` 1592 pages, `check:i18n` 26373/26373.
