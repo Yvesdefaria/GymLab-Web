@@ -135,6 +135,40 @@ const resultsId = `search-results-${variant}`;
       active = -1;
     };
 
+    // The bar field sits mid-header and the panel is fixed; align it under the
+    // field, clamped to the viewport, instead of to the frame.
+    const place = () => {
+      if (variant !== 'bar') return;
+      const rect = input.getBoundingClientRect();
+      const header = input.closest('.site-header')?.getBoundingClientRect();
+      const margin = 16;
+      // Left edge under the field; shrink instead of jumping left when 540px
+      // would run past the viewport.
+      const width = Math.min(
+        540,
+        window.innerWidth - margin * 2,
+        window.innerWidth - margin - rect.left,
+      );
+      const left = Math.max(margin, Math.min(rect.left, window.innerWidth - margin - width));
+      results.style.left = `${Math.round(left)}px`;
+      results.style.width = `${Math.round(width)}px`;
+      results.style.top = `${Math.round((header?.bottom ?? rect.bottom) + 8)}px`;
+      results.style.right = 'auto';
+    };
+
+    const reposition = () => {
+      if (results.hidden) return;
+      const rect = input.getBoundingClientRect();
+      if (rect.bottom < 0 || rect.top > window.innerHeight) {
+        hide();
+        return;
+      }
+      place();
+    };
+
+    window.addEventListener('resize', reposition);
+    window.addEventListener('scroll', reposition, { passive: true });
+
     const message = (text: string) => {
       results.replaceChildren();
       const note = document.createElement('p');
@@ -142,6 +176,7 @@ const resultsId = `search-results-${variant}`;
       note.setAttribute('role', 'status');
       note.textContent = text;
       results.append(note);
+      place();
       results.hidden = false;
       input.setAttribute('aria-expanded', 'true');
       items = [];
@@ -197,6 +232,7 @@ const resultsId = `search-results-${variant}`;
         results.append(section);
       }
 
+      place();
       results.hidden = false;
       input.setAttribute('aria-expanded', 'true');
     };
@@ -396,13 +432,14 @@ const resultsId = `search-results-${variant}`;
     box-shadow: 0 30px 60px -24px rgb(0 0 0 / 0.85);
   }
 
-  /* The bar field sits mid-header; anchoring a 540px panel to its right edge
-     overflows on tablets. Fix the panel to the frame instead. */
+  /* The bar field sits mid-header; the script places this panel under the field,
+     clamped to the viewport. Fixed so it survives the sticky header. */
   .search-ui--bar .search-ui__results {
     position: fixed;
     top: calc(5.25rem + 0.5rem);
-    right: max(var(--floor-gutter), calc((100vw - var(--floor-frame)) / 2));
-    width: min(33.75rem, calc(100vw - var(--floor-gutter) * 2));
+    left: 0;
+    right: auto;
+    width: min(33.75rem, calc(100vw - 2rem));
   }
 
   /* Results are built in the browser, so these rules hang off the scoped root. */
