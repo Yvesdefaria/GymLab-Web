@@ -142,8 +142,7 @@ owner. About 600 authored lines, with the cascade removal offsetting part of it.
   the first result when none is active. CDP measurements at 390/360/320:
   `scrollWidth === innerWidth`, CTA inside the frame; at 800/1280 the results panel
   stays inside the viewport.
-- 2026-11-26 — Results follow-up: the bar panel is placed under the field's outer
-  edge by the script (left edge equal to the field border, width shrinking from 540px
-  when the viewport would clip it) instead of pinned to the frame or to the input box.
-  Verified at 1280/800/768: field and panel share the outer left edge; the panel stays
-  inside the frame.
+- 2026-11-26 — Results follow-up: the bar panel starts 6px under the field's bottom
+  edge (not the header border) and shares the field's outer left edge; its width
+  shrinks from 540px when the viewport would clip it. Verified at 1280/800/768:
+  field/panel left equal (317/317, 265/265, 248/248) and panel top = field bottom + 6.

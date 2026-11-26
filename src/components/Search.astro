@@ -135,12 +135,11 @@ const resultsId = `search-results-${variant}`;
       active = -1;
     };
 
-    // The bar field sits mid-header and the panel is fixed; align it under the
-    // field's outer edge, clamped to the viewport, instead of to the input box.
+    // The bar field sits mid-header; attach the panel to its bottom edge, not to
+    // the header border, and clamp it horizontally to the viewport.
     const place = () => {
       if (variant !== 'bar') return;
       const rect = root.getBoundingClientRect();
-      const header = root.closest('.site-header')?.getBoundingClientRect();
       const margin = 16;
       // Left edge under the field; shrink instead of jumping left when 540px
       // would run past the viewport.
@@ -152,7 +151,7 @@ const resultsId = `search-results-${variant}`;
       const left = Math.max(margin, Math.min(rect.left, window.innerWidth - margin - width));
       results.style.left = `${Math.round(left)}px`;
       results.style.width = `${Math.round(width)}px`;
-      results.style.top = `${Math.round((header?.bottom ?? rect.bottom) + 8)}px`;
+      results.style.top = `${Math.round(rect.bottom + 6)}px`;
       results.style.right = 'auto';
     };
 
